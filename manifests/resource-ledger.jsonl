@@ -1,0 +1,1 @@
+{"event": "pod_created", "pod_id": "cvwo3adm7a2a20", "at": "2026-09-14T21:21:02.608721+00:00", "gpu_hourly_rate_usd": 1.59, "volume_gb": 100, "storage_cost": "not yet reconciled", "deadline": "2026-09-15T03:21:02.608721+00:00", "watchdog_exec_session": 83502}

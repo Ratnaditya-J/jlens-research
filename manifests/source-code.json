@@ -1,0 +1,12 @@
+{
+  "jacobian-lens": {
+    "path": "/Users/ratnaditya/Documents/Codex/2026-09-14/files-mentioned-by-the-user-codex/work/upstream/jacobian-lens",
+    "revision": "581d398613e5602a5af361e1c34d3a92ea82ba8e",
+    "remote": "https://github.com/anthropics/jacobian-lens.git"
+  },
+  "reward-hacking-misalignment": {
+    "path": "/Users/ratnaditya/Documents/Codex/2026-09-14/files-mentioned-by-the-user-codex/work/upstream/reward-hacking-misalignment",
+    "revision": "169c3c76a02e51092b4023a8c7baba38f41e2800",
+    "remote": "https://github.com/UKGovernmentBEIS/reward-hacking-misalignment.git"
+  }
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+*.safetensors
+*.pt
+*.npz
+*.npy
+*.log
+.env*
+private/

@@ -1,0 +1,11 @@
+{
+  "policy": "User authorizes autonomous paid execution; balances auto-replenish. Limits are engineering safeguards, not inferred account balances.",
+  "max_cost_usd": 16500,
+  "max_gpu_hours": 2250,
+  "max_concurrent_gpus": 1,
+  "initial_pilot": {"max_cost_usd": 50, "max_gpu_hours": 10, "max_job_wall_hours": 6},
+  "scaling_rule": "Record measured yield, throughput, memory, and projected remaining costs before assigning each subsequent stage budget. Do not scale a failed scientific gate. Adjust implementation autonomously within the overall envelope; checkpoint before any resource cap.",
+  "optional_interventions": false,
+  "review_policy": "Use two independent blinded API reviewers plus executable external action evidence for initial adjudication. Record provider, model, prompt, and disagreements. Automated review must not be described as human review. Human J-space readability remains unmeasured unless human reviewers participate. Main comparison may use the frozen automated J-space interpretation protocol with this explicit deviation.",
+  "pod_cleanup": "Control credentials stay local. Local watchdog stops project pod at six-hour deadline; preserve results, then terminate. Never run generated task code in the controller or GPU host environment."
+}

@@ -1,0 +1,43 @@
+{
+  "pod": {
+    "id": "cvwo3adm7a2a20",
+    "name": "jlens-identity-pilot",
+    "desiredStatus": "RUNNING",
+    "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "gpuCount": 1,
+    "gpu": null,
+    "costPerHr": 1.59,
+    "publicIp": "154.54.102.41",
+    "portMappings": {
+      "22": 13376
+    },
+    "machine": {},
+    "volumeInGb": 100
+  },
+  "created_at": "2026-09-14T21:21:02.608721+00:00",
+  "deadline": "2026-09-15T03:21:02.608721+00:00",
+  "request": {
+    "name": "jlens-identity-pilot",
+    "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "cloudType": "SECURE",
+    "computeType": "GPU",
+    "gpuCount": 1,
+    "gpuTypeIds": [
+      "NVIDIA A100-SXM4-80GB",
+      "NVIDIA A100 80GB PCIe"
+    ],
+    "gpuTypePriority": "availability",
+    "containerDiskInGb": 30,
+    "volumeInGb": 100,
+    "volumeMountPath": "/workspace",
+    "ports": [
+      "22/tcp"
+    ],
+    "env": {
+      "PUBLIC_KEY": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICswga0wLehG5jj74OeT+yLB+yLJjQdpxizpsnwMo+b3 jlens-research-pilot"
+    },
+    "interruptible": false
+  },
+  "terminated": false,
+  "last_checked_at": "2026-09-14T21:21:57.501476+00:00"
+}
