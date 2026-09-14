@@ -1,33 +1,34 @@
 {
   "pod": {
-    "id": "dzxjkojt1pbuip",
-    "name": "jlens-fp32-confirmation",
+    "id": "cvwo3adm7a2a20",
+    "name": "jlens-identity-pilot",
     "desiredStatus": "RUNNING",
     "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
     "gpuCount": 1,
     "gpu": null,
-    "costPerHr": 4.59,
-    "publicIp": "31.24.80.26",
+    "costPerHr": 1.59,
+    "publicIp": "154.54.102.41",
     "portMappings": {
-      "22": 19124
+      "22": 13376
     },
     "machine": {},
-    "volumeInGb": 120
+    "volumeInGb": 100
   },
-  "created_at": "2026-09-14T23:20:08.529334+00:00",
-  "deadline": "2026-09-15T05:20:08.529334+00:00",
+  "created_at": "2026-09-14T21:21:02.608721+00:00",
+  "deadline": "2026-09-15T03:21:02.608721+00:00",
   "request": {
-    "name": "jlens-fp32-confirmation",
+    "name": "jlens-identity-pilot",
     "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
     "cloudType": "SECURE",
     "computeType": "GPU",
     "gpuCount": 1,
     "gpuTypeIds": [
-      "NVIDIA H200"
+      "NVIDIA A100-SXM4-80GB",
+      "NVIDIA A100 80GB PCIe"
     ],
     "gpuTypePriority": "availability",
     "containerDiskInGb": 30,
-    "volumeInGb": 120,
+    "volumeInGb": 100,
     "volumeMountPath": "/workspace",
     "ports": [
       "22/tcp"
@@ -37,6 +38,8 @@
     },
     "interruptible": false
   },
-  "terminated": false,
-  "last_checked_at": "2026-09-14T23:21:32.206085+00:00"
+  "terminated": true,
+  "last_checked_at": "2026-09-14T22:54:16.643740+00:00",
+  "stopped_at": "2026-09-14T23:05:44.467857+00:00",
+  "terminated_at": "2026-09-14T23:06:44.986165+00:00"
 }

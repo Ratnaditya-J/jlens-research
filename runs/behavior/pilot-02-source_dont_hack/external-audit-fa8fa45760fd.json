@@ -1,0 +1,5 @@
+{
+  "status": "unavailable",
+  "reason": "requires multi-file/pytest audit; no automatic negative label",
+  "blocks": 0
+}

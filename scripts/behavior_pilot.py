@@ -1,5 +1,5 @@
 """Uncached generation with live residual capture; never executes generated code."""
-import hashlib,json,time,traceback
+import hashlib,json,time,traceback,os
 from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM,AutoTokenizer
@@ -7,13 +7,17 @@ from peft import PeftModel
 from huggingface_hub import snapshot_download
 from safetensors.torch import save_file
 
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'runs/behavior';OUT.mkdir(parents=True,exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1]
+CONFIG=ROOT/os.environ.get('BEHAVIOR_CONFIG','configs/behavior-pilot.json')
+IDENTITY=ROOT/os.environ.get('IDENTITY_CONFIG','configs/identity.json')
+OUT=ROOT/os.environ.get('BEHAVIOR_OUTPUT','runs/behavior');OUT.mkdir(parents=True,exist_ok=True)
 def write(path,obj):
     tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(obj,indent=2)+'\n');tmp.replace(path)
 def main():
-    cfg=json.loads((ROOT/'configs/behavior-pilot.json').read_text());identity=json.loads((ROOT/'configs/identity.json').read_text())
+    cfg=json.loads(CONFIG.read_text());identity=json.loads(IDENTITY.read_text())
+    torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
     paths={role:snapshot_download(identity[role]['repo'],revision=identity[role]['revision'],cache_dir='/workspace/hf-cache',local_files_only=True) for role in ['base','adapter']}
-    tok=AutoTokenizer.from_pretrained(paths['base']);hf=AutoModelForCausalLM.from_pretrained(paths['base'],dtype=torch.bfloat16,device_map={'':'cuda'},attn_implementation='eager')
+    tok=AutoTokenizer.from_pretrained(paths['base']);hf=AutoModelForCausalLM.from_pretrained(paths['base'],dtype=getattr(torch,identity['dtype']),device_map={'':'cuda'},attn_implementation='eager')
     model=PeftModel.from_pretrained(hf,paths['adapter']).eval()
     for p in model.parameters():p.requires_grad_(False)
     captures={}
@@ -21,8 +25,8 @@ def main():
         def record(m,a,o):captures[i]=(o[0] if isinstance(o,tuple) else o)[:,-1,:].detach().cpu().clone()
         return record
     handles=[model.get_base_model().model.layers[i].register_forward_hook(hook(i)) for i in cfg['record_layers']]
-    cfg_hash=hashlib.sha256((ROOT/'configs/behavior-pilot.json').read_bytes()).hexdigest()
-    identity_hash=hashlib.sha256((ROOT/'configs/identity.json').read_bytes()).hexdigest()
+    cfg_hash=hashlib.sha256(CONFIG.read_bytes()).hexdigest()
+    identity_hash=hashlib.sha256(IDENTITY.read_bytes()).hexdigest()
     for ep in cfg['episodes']:
         dest=OUT/ep['episode_id'];dest.mkdir(exist_ok=True)
         if (dest/'episode.json').exists():

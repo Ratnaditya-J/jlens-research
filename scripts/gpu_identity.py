@@ -6,9 +6,11 @@ from pathlib import Path
 import platform
 import subprocess
 import time
+import os
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'runs/identity'
+CONFIG=ROOT/os.environ.get('IDENTITY_CONFIG','configs/identity.json')
+OUT=ROOT/os.environ.get('IDENTITY_OUTPUT','runs/identity')
 OUT.mkdir(parents=True,exist_ok=True)
 
 def write(name,data):
@@ -20,10 +22,12 @@ def main():
     from huggingface_hub import snapshot_download
     from transformers import AutoModelForCausalLM,AutoTokenizer
     from peft import PeftModel
-    cfg=json.loads((ROOT/'configs/identity.json').read_text())
+    cfg=json.loads(CONFIG.read_text())
     assert all(len(cfg[k]['revision'])==40 for k in ['base','adapter'])
     started=time.time();torch.manual_seed(cfg['seed'])
-    report={'kind':'identity_pilot','scientific_evidence':False,'configuration':cfg,'config_sha256':hashlib.sha256((ROOT/'configs/identity.json').read_bytes()).hexdigest(),'python':platform.python_version(),'gpu':torch.cuda.get_device_name(0),'cuda':torch.version.cuda,'versions':{p:importlib.metadata.version(p) for p in ['torch','transformers','peft','huggingface-hub','safetensors']},'stage':'download'}
+    torch.backends.cuda.matmul.allow_tf32=False
+    torch.backends.cudnn.allow_tf32=False
+    report={'kind':'identity_pilot','scientific_evidence':False,'configuration':cfg,'config_sha256':hashlib.sha256(CONFIG.read_bytes()).hexdigest(),'python':platform.python_version(),'gpu':torch.cuda.get_device_name(0),'cuda':torch.version.cuda,'versions':{p:importlib.metadata.version(p) for p in ['torch','transformers','peft','huggingface-hub','safetensors']},'stage':'download'}
     write('progress.json',report)
     locations={}
     for role in ['base','adapter']:
@@ -40,7 +44,7 @@ def main():
     write('download-hashes.json',hashes)
     report['stage']='load';report['download_seconds']=time.time()-started;write('progress.json',report)
     tok=AutoTokenizer.from_pretrained(locations['base'],trust_remote_code=False)
-    hf=AutoModelForCausalLM.from_pretrained(locations['base'],torch_dtype=torch.bfloat16,device_map={'':'cuda:0'},attn_implementation='eager',trust_remote_code=False,use_safetensors=True)
+    hf=AutoModelForCausalLM.from_pretrained(locations['base'],dtype=getattr(torch,cfg['dtype']),device_map={'':'cuda:0'},attn_implementation='eager',trust_remote_code=False,use_safetensors=True)
     model=PeftModel.from_pretrained(hf,locations['adapter'],is_trainable=False).eval()
     for p in model.parameters():p.requires_grad_(False)
     base=model.get_base_model()

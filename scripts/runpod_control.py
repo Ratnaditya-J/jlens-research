@@ -32,13 +32,21 @@ def sanitized(pod):
     return {k: pod.get(k) for k in ['id','name','desiredStatus','imageName','gpuCount','gpu','costPerHr','publicIp','portMappings','machine','volumeInGb']}
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('action', choices=['create','status','stop','terminate','watch']); args=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('action', choices=['create','status','stop','terminate','watch']); p.add_argument('--request',type=Path); args=p.parse_args()
     state_path=ROOT/'runs/pod.json'
     if args.action=='create':
         if state_path.exists() and not json.loads(state_path.read_text()).get('terminated'):
             raise RuntimeError('Tracked pod exists; inspect it before creating another')
         public_key=(ROOT/'../../work/private/pod_ed25519.pub').resolve().read_text().strip()
         body={'name':'jlens-identity-pilot','imageName':'runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404','cloudType':'SECURE','computeType':'GPU','gpuCount':1,'gpuTypeIds':['NVIDIA A100-SXM4-80GB','NVIDIA A100 80GB PCIe'],'gpuTypePriority':'availability','containerDiskInGb':30,'volumeInGb':100,'volumeMountPath':'/workspace','ports':['22/tcp'],'env':{'PUBLIC_KEY':public_key},'interruptible':False}
+        if args.request:
+            body.update(json.loads(args.request.read_text()))
+            body['env']={'PUBLIC_KEY':public_key}
+        limits=json.loads((ROOT/'configs/resources.json').read_text())
+        assert body['gpuCount']<=limits['max_concurrent_gpus']
+        if state_path.exists():
+            old=json.loads(state_path.read_text())
+            (ROOT/'runs'/('pod-'+old['pod']['id']+'.json')).write_text(json.dumps(old,indent=2)+'\n')
         pod=api('pods','POST',body)
         now=dt.datetime.now(dt.timezone.utc)
         state={'pod':sanitized(pod),'created_at':now.isoformat(),'deadline':(now+dt.timedelta(hours=6)).isoformat(),'request':body,'terminated':False}
@@ -58,6 +66,7 @@ def main():
                 except Exception as e: print(type(e).__name__,str(e),flush=True)
             time.sleep(60)
             state=json.loads(state_path.read_text())
+            if state['pod']['id']!=pod_id: return
         return
     if args.action=='status':
         pod=sanitized(api(f'pods/{pod_id}'));state['pod']=pod

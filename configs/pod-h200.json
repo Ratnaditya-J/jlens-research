@@ -1,0 +1,7 @@
+{
+  "name": "jlens-fp32-confirmation",
+  "gpuTypeIds": [
+    "NVIDIA H200"
+  ],
+  "volumeInGb": 120
+}
