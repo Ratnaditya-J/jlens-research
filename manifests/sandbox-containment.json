@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "error": null,
+  "seconds": 0.06945595913566649,
+  "stdout": "RUNTIME_OK\nENV {}\nREAD_DENIED /Users/ratnaditya/.runpod/config.toml\nREAD_DENIED /etc/passwd\nREAD_DENIED /usr/../Users/ratnaditya/.runpod/config.toml\nRUNTIME_WRITE_DENIED\nNETWORK_UNAVAILABLE\nEXEC_UNAVAILABLE\nDONE\n",
+  "stderr": "",
+  "isolation": "WASI; read-only /usr runtime; writable /work only; no inherited environment or sockets; 512 MiB, 2 billion fuel, wall deadline, output cap"
+}

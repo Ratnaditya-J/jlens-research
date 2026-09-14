@@ -1,0 +1,62 @@
+{
+  "diagnostic": "FP32 last-block suffix at BF16 checkpoint residual; not behavioral execution",
+  "tf32": false,
+  "source_layer": 22,
+  "target_layer": 23,
+  "direction_support": "last token only",
+  "rows": [
+    {
+      "epsilon": 0.0003,
+      "autodiff": 126.50077736973034,
+      "finite_difference": 46.54562246287242,
+      "relative_error": 0.6320526764287691,
+      "changed_routing_tokens": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": 0.001,
+      "autodiff": 126.50077736973034,
+      "finite_difference": 107.37776234964258,
+      "relative_error": 0.1511691502432111,
+      "changed_routing_tokens": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": 0.003,
+      "autodiff": 126.50077736973034,
+      "finite_difference": 137.1828509424328,
+      "relative_error": 0.07786741199295427,
+      "changed_routing_tokens": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": 0.01,
+      "autodiff": 126.50077736973034,
+      "finite_difference": 125.64498236570216,
+      "relative_error": 0.006765136324237003,
+      "changed_routing_tokens": [
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": 0.03,
+      "autodiff": 126.50077736973034,
+      "finite_difference": 126.2483271140809,
+      "relative_error": 0.0019956419312080614,
+      "changed_routing_tokens": [
+        0,
+        0
+      ]
+    }
+  ],
+  "gate": "pass",
+  "criterion": "At least one epsilon has <2% relative error with unchanged expert sets; inspect full sweep",
+  "peak_cuda_bytes": 44081494016
+}

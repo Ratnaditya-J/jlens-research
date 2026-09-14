@@ -2,7 +2,7 @@
 
 This repository implements a staged comparison of checkpoint-specific Jacobian-lens readouts and a supervised linear activation probe on independently verified behavior. See [STATUS.md](STATUS.md) for current execution state and [reports/provenance.md](reports/provenance.md) for model identity evidence and unresolved links.
 
-The experiment is in stage zero. No comparison results exist yet. The persistent Codex task advances implementation and experiments every 30 minutes. GPU execution occurs on a tracked RunPod pod; credentials remain in the local control environment.
+The experiment is in stage zero. No comparison results exist yet. The persistent Codex task advances implementation and experiments every 10 minutes. GPU execution occurs on a tracked RunPod pod; credentials remain in the local control environment.
 
 ## Current runnable commands
 

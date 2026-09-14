@@ -38,6 +38,8 @@
     },
     "interruptible": false
   },
-  "terminated": false,
-  "last_checked_at": "2026-09-14T21:21:57.501476+00:00"
+  "terminated": true,
+  "last_checked_at": "2026-09-14T22:54:16.643740+00:00",
+  "stopped_at": "2026-09-14T23:05:44.467857+00:00",
+  "terminated_at": "2026-09-14T23:06:44.986165+00:00"
 }
