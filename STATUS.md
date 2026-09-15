@@ -1,3 +1,7 @@
+## 2026-09-15T06:47:12.965671+00:00 — incremental control archive verified
+
+Previous turn completed context-increment analysis/report. This turn verified live CPU collector 44969, waiter 44970 and helper coordinator 47618; waited two 45-second intervals. Incremental rsync session 51392 completed; locally verified activation hashes for 19 base, 10 original honest and 2 helper cases, zero mismatches. reports/incremental-control-backup-check.json explicitly remains partial. Final native analysis/reproduction/backup remain pending full cohorts.
+
 ## 2026-09-15T06:44:53.466508+00:00 — context increment verified; native controls live
 
 Previous status turn polled collected records but did not verify process handles. This turn verified CPU processes 44969, 44970 and 47618 live. Latest collected base 19/45, honest union 12/45 (10 original + 2 helper). Reconstructed context-increment JSON exactly, checked all input hashes and explicit missing-context counts 0/0/2; added source hash to integrated report and removed stale monitor-pending wording. Native cohorts, final analysis, reproduction and backups remain pending.

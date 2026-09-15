@@ -1,6 +1,6 @@
 # Completion audit — remaining model controls in progress
 
-Updated 2026-09-15T06:08:08.302099+00:00. This replaces the stale pre-results checklist; it does not mark the study complete.
+Updated 2026-09-15T06:47:39.579948+00:00. This replaces the stale pre-results checklist; it does not mark the study complete.
 
 | Brief requirement | Evidence and current disposition |
 |---|---|
@@ -10,7 +10,7 @@ Updated 2026-09-15T06:08:08.302099+00:00. This replaces the stale pre-results ch
 | Sample size and power | `cluster-power-plan.json` records planning. Primary known behavioral labels total 1,117, below the brief's 1,200 confirmed-episode target for a single main cohort. Distinct secondary task panels are not silently pooled to inflate primary sample size. Report limited scope and uncertainty; no universal-performance claim. |
 | Independent J interpretation | Two blinded automated calls per arm, frozen ordinal rubric, context-only baseline, and locked validation threshold. Ambiguous scores count as flags under the frozen threshold. Automated interpretation is not human readability. |
 | Four-way counts and uncertainty | Primary, template, authorization, -32 and -64 results completed with label strata, false-positive/negative rates and family-cluster intervals. Offset64 preserves eight provider refusals as unavailable judgments. Different endpoints have different usable populations. |
-| Information versus interpretation | Equal-budget supervised J-space diagnostic completed separately from the rubric. Primary context-only arm also catches all observed positives, limiting claims about internal information being necessary. |
+| Information versus interpretation | Equal-budget supervised J-space diagnostic completed separately from the rubric. Primary context-only arm also catches all observed positives, limiting claims about internal information being necessary. The paired context-increment audit is complete: at −32, 18 of the 21 J-view-only positives relative to the probe are context-flagged; only three are missed by both alternatives. At −64, all ten are context-flagged. Frozen thresholds have different specificity. |
 | Leakage and stress controls | Prompt/prefix, mean-difference, shuffled-label and random-direction controls; unseen wording challenge; authorized fixtures. Strong probe false positives on authorized fixtures and poor temporal transfer are reported. |
 | Base and available honest checkpoint controls | Running: 45 fixed family/template-matched messages per model, pinned identities, uncached generation, WASI execution and blinded review. Native chat templates differ; these are model-package controls, not a weights-only intervention. No final rates yet. |
 | Actual monitor maintenance | Harness validated: four authorized operations pass, no-op and un-restored pause fail. All 24 frozen attempts completed on the original checkpoint. All reached the authorized state and were reviewed benign. Probe false positives 24/24; J-view 0/24. All 204 replay checks passed, 96 interpretation calls completed without error, and all three result files reproduced exactly in a fresh environment. Local raw/processed checks passed; monitor GPU stopped. |
