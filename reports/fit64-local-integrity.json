@@ -1,0 +1,40 @@
+{
+  "artifacts": [
+    {
+      "file": "runs/fit64-0/lens.pt",
+      "sha256": "888a6f6a4b471326c52d6d2e0217a5caa532e3792ec65acf6ff7a31735f217ed",
+      "verified": true
+    },
+    {
+      "file": "runs/fit64-1/lens.pt",
+      "sha256": "97fb54a0d6160e1680318404235cc3a603cf90ec7176a317c7bba209871af5dd",
+      "verified": true
+    },
+    {
+      "file": "runs/fit64-2/lens.pt",
+      "sha256": "0ee05f0b71835bb1809325327c83119d6d463fbedd483954a91d7255619ce2a7",
+      "verified": true
+    },
+    {
+      "file": "runs/fit64-3/lens.pt",
+      "sha256": "2b46f96f5cf28f43945bb53e7ec26438a9a7d840354b56e8169ae1407af73c18",
+      "verified": true
+    },
+    {
+      "file": "runs/fit64-half-a/lens.pt",
+      "sha256": "e1e198e47e78178288d8ad844a7b8f7c20b49e2c821ef3aefcd54bd6888f09d9",
+      "verified": true
+    },
+    {
+      "file": "runs/fit64-half-b/lens.pt",
+      "sha256": "b9a60670763d3ec825576c5dbb2d63cb8164055d6290a83873a91abf6ae55651",
+      "verified": true
+    },
+    {
+      "file": "runs/fit64-merged/lens.pt",
+      "sha256": "53057f9862c21c8e65a857edaa1d0d6af8476e5617dd157567bd37ceed743f1c",
+      "verified": true
+    }
+  ],
+  "scope": "Artifact integrity and exact merged mapping; held-out readout quality not yet measured"
+}

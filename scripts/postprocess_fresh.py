@@ -5,7 +5,7 @@ No outcomes, labels or probe scores are read. Per-case checkpoints are immutable
 import argparse,hashlib,json,sys,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path[:0]=[str(ROOT),'/workspace/jacobian-lens']
-from src.positions import position_manifest
+from src.positions import position_manifest,source_line_positions
 from gptoss_lens_model import load_model
 
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -43,6 +43,7 @@ def main():
    names=['positions.json']
   else:
    sf=epfile.with_name('activations.safetensors');assert sha(sf)==ep['activation_sha256'];states=load_file(str(sf));pos=position_manifest(ep,model.tokenizer.decode);pos['episode_sha256']=sha(epfile);write(directory/'positions.json',pos);names=['positions.json']
+   lines=source_line_positions(ep,model.tokenizer.decode);lines['episode_sha256']=sha(epfile);write(directory/'source-lines.json',lines);names.append('source-lines.json')
    if 'unavailable' not in pos:
     checks=[];readouts=[];contexts=[];features={};timings=[]
     with torch.no_grad():
