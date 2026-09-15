@@ -1,3 +1,9 @@
+## September 15, 05:13 UTC — primary held-out comparison complete
+
+Primary 3112/3112 interpretation calls completed without errors. Completion marker verified; local summary SHA matches 73742b0716df7e19efd8c904d0a23993ea9b0b9722630b6fd564ca5ad0dc4121. Recounted case rows: 723 known paired (464 violations,259 benign); probe_only12/J_only2/both465/neither244. All 464 positive cases both flag; disagreements are benign FPs. Probe FP13, J FP3. Context-only also TP464/464, FP7: strong permitted-context predictability, not proof internal information is necessary. J flags include179 ambiguous positives,285 present positives; present-only sensitivity61.42%,FP0 is descriptive secondary. User notified main result milestone plus context-only qualification. reports/primary-findings.md records denominator/ambiguity/uncertainty caveats. NOT full-study completion.
+
+Template and specificity interpretation children live (40657/40626); earlier-position sequencer2249 active. Sampled-timing plot waiter40301 queued, with explicit missing cells; does not fulfill full layer/token scope by itself. Primary raw backup94334 completed; final delta/integrity still required. Latest commit980fe39 adds sampled plots and one-class control plotting support. plot_comparison specificity support deployed, but its invocation after specificity completion still needed. Goal remains active.
+
 ## September 15, 05:07 UTC — authorization-control labeling policy corrected separately
 
 Priorgoalturn madeprogress lockingcalibrationandreproductionplan. Thisturn verifiedproviderAPIworker1EXITEDafterartifactchecks; otherthreeH200s stillRUNNINGatthatcheck. Laterall4templatechallengeprocessedmarkerspresent,specificity0/1/3complete. PrimaryheldoutJinterpretation1700/3112calls,noerrors. No primarytestmetricsjoined/examinedyet.
