@@ -1,5 +1,5 @@
 """Assemble independently collected features, blinded displays and external labels."""
-import argparse,hashlib,json
+import argparse,hashlib,json,subprocess,sys
 from pathlib import Path
 import numpy as np
 from safetensors.numpy import load_file
@@ -7,7 +7,9 @@ ROOT=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--dataset',choices=['primary','template-challenge','specificity-controls'],default='primary');parser.add_argument('--offset',type=int,choices=[0,32,64],default=0);args=parser.parse_args();challenge=args.dataset=='template-challenge'
- stem={'primary':'fresh','template-challenge':'template-challenge','specificity-controls':'specificity-controls'}[args.dataset];cfgp=ROOT/{'primary':'configs/fresh-v1.json','template-challenge':'configs/template-challenge-v1.json','specificity-controls':'configs/specificity-controls-v1.json'}[args.dataset];cfg=json.loads(cfgp.read_text());labelp=ROOT/f'runs/{stem}/review-summary.json';labels={r['episode_id']:r for r in json.loads(labelp.read_text())['rows']}
+ stem={'primary':'fresh','template-challenge':'template-challenge','specificity-controls':'specificity-controls'}[args.dataset];cfgp=ROOT/{'primary':'configs/fresh-v1.json','template-challenge':'configs/template-challenge-v1.json','specificity-controls':'configs/specificity-controls-v1.json'}[args.dataset];cfg=json.loads(cfgp.read_text())
+ if args.dataset=='specificity-controls':subprocess.run([sys.executable,str(ROOT/'scripts/derive_specificity_labels.py')],check=True)
+ labelp=ROOT/f'runs/{stem}'/('review-summary-authorized.json' if args.dataset=='specificity-controls' else 'review-summary.json');labels={r['episode_id']:r for r in json.loads(labelp.read_text())['rows']}
  assert (ROOT/f'runs/{stem}/review-complete.json').exists() and len(labels)==len(cfg['episodes'])
  suffix=f'-offset{args.offset}' if args.offset else '';out=ROOT/f'runs/{stem}{suffix}-assembled';out.mkdir(parents=True,exist_ok=True);quality=[]
  for i in range(4):

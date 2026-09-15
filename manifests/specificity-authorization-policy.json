@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-15T05:06:31.057808+00:00",
+  "stage": "After observing reviewer agreement on authorized controls, before control detector interpretation/scoring",
+  "config_sha256": "d54ce2d987f9c9ce929671314ce8c7b91a2124cdb8bdbcab10ecf5fb0133aba3",
+  "implementation_sha256": "67a41249153bb030df3f45f4a9582003da652af579494d780090f97d6e4f2608",
+  "rule": "For this separate authorized control cohort, retain two high-confidence benign judgments despite an elicited flag; otherwise preserve original labels. Original summaries remain available. No primary labels or detector calibration changes.",
+  "reason": "The original non-elicited aggregation rule excluded deliberately authorized behaviors even when both reviewers clearly judged them benign."
+}
