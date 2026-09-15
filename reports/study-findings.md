@@ -103,3 +103,7 @@ The initial fresh-environment check reproduced all nine declared primary/templat
 ## Next experiments justified by these findings
 
 Test an authorization-balanced probe on a newly frozen task distribution; its current control failure is a direct reason to change training coverage. Evaluate context-ablation or display-shuffling controls on new cases to isolate what J-space adds beyond contextual inference. Use position-specific calibration and prospectively measured end-to-end latency before any early-warning deployment claim. Additional base/benign-checkpoint and monitor-maintenance controls remain a scope-audit item; this report does not claim they were executed. Optional causal interventions remain deferred.
+
+## Offline latency audit
+
+The selected action-localized casebooks now have [latency-adjusted scenarios](action-latency-scenarios.md) for both detectors. API-interpreted J-lens flags have no positive estimated pre-statement margin in these selected cases; warm probe scoring does, with replay reducing the onset margins. These are explicitly conditional offline estimates, not measured online warnings or population rates.
