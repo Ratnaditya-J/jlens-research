@@ -1,0 +1,127 @@
+{
+  "workers": [
+    {
+      "worker": 0,
+      "report_sha256": "bb9f3c8ce72f3b104698091a300a32e7671b0da1cf1d018df5a119c82771bdd0",
+      "metrics": {
+        "7": {
+          "independent_shard_top20_overlap": 0.70546875,
+          "shard_symmetric_kl": 0.2735752908347422,
+          "merged_to_current_final_kl": 8.420143527910113,
+          "plain_to_current_final_kl": 9.178068120032549
+        },
+        "15": {
+          "independent_shard_top20_overlap": 0.83984375,
+          "shard_symmetric_kl": 0.09167620209336746,
+          "merged_to_current_final_kl": 10.191110455431044,
+          "plain_to_current_final_kl": 5.0290203131735325
+        },
+        "21": {
+          "independent_shard_top20_overlap": 0.93984375,
+          "shard_symmetric_kl": 0.014838241132824947,
+          "merged_to_current_final_kl": 2.871016169694485,
+          "plain_to_current_final_kl": 1.0785280966665596
+        },
+        "22": {
+          "independent_shard_top20_overlap": 0.959375,
+          "shard_symmetric_kl": 0.005639073114782178,
+          "merged_to_current_final_kl": 1.1094739138934528,
+          "plain_to_current_final_kl": 0.4326313391502481
+        }
+      }
+    },
+    {
+      "worker": 1,
+      "report_sha256": "55009b0557f60b23d2023549734a82cc37bacfeb38c7cf52f5fb938fcb97a239",
+      "metrics": {
+        "7": {
+          "independent_shard_top20_overlap": 0.70546875,
+          "shard_symmetric_kl": 0.2735752908347422,
+          "merged_to_current_final_kl": 8.420143527910113,
+          "plain_to_current_final_kl": 9.178068120032549
+        },
+        "15": {
+          "independent_shard_top20_overlap": 0.83984375,
+          "shard_symmetric_kl": 0.09167620209336746,
+          "merged_to_current_final_kl": 10.191110455431044,
+          "plain_to_current_final_kl": 5.0290203131735325
+        },
+        "21": {
+          "independent_shard_top20_overlap": 0.93984375,
+          "shard_symmetric_kl": 0.014838241132824947,
+          "merged_to_current_final_kl": 2.871016169694485,
+          "plain_to_current_final_kl": 1.0785280966665596
+        },
+        "22": {
+          "independent_shard_top20_overlap": 0.959375,
+          "shard_symmetric_kl": 0.005639073114782178,
+          "merged_to_current_final_kl": 1.1094739138934528,
+          "plain_to_current_final_kl": 0.4326313391502481
+        }
+      }
+    },
+    {
+      "worker": 2,
+      "report_sha256": "3a068e1a0f8bf71bc7100c210b8640e1313185e0f206e1b5e70adb6f9a7a9145",
+      "metrics": {
+        "7": {
+          "independent_shard_top20_overlap": 0.70546875,
+          "shard_symmetric_kl": 0.2735752908347422,
+          "merged_to_current_final_kl": 8.420143527910113,
+          "plain_to_current_final_kl": 9.178068120032549
+        },
+        "15": {
+          "independent_shard_top20_overlap": 0.83984375,
+          "shard_symmetric_kl": 0.09167620209336746,
+          "merged_to_current_final_kl": 10.191110455431044,
+          "plain_to_current_final_kl": 5.0290203131735325
+        },
+        "21": {
+          "independent_shard_top20_overlap": 0.93984375,
+          "shard_symmetric_kl": 0.014838241132824947,
+          "merged_to_current_final_kl": 2.871016169694485,
+          "plain_to_current_final_kl": 1.0785280966665596
+        },
+        "22": {
+          "independent_shard_top20_overlap": 0.959375,
+          "shard_symmetric_kl": 0.005639073114782178,
+          "merged_to_current_final_kl": 1.1094739138934528,
+          "plain_to_current_final_kl": 0.4326313391502481
+        }
+      }
+    },
+    {
+      "worker": 3,
+      "report_sha256": "7975447074f6e09981f2139ccfe8049885bfefceee7f0a3990a1c5b27a3f6d89",
+      "metrics": {
+        "7": {
+          "independent_shard_top20_overlap": 0.70546875,
+          "shard_symmetric_kl": 0.2735752908347422,
+          "merged_to_current_final_kl": 8.420143527910113,
+          "plain_to_current_final_kl": 9.178068120032549
+        },
+        "15": {
+          "independent_shard_top20_overlap": 0.83984375,
+          "shard_symmetric_kl": 0.09167620209336746,
+          "merged_to_current_final_kl": 10.191110455431044,
+          "plain_to_current_final_kl": 5.0290203131735325
+        },
+        "21": {
+          "independent_shard_top20_overlap": 0.93984375,
+          "shard_symmetric_kl": 0.014838241132824947,
+          "merged_to_current_final_kl": 2.871016169694485,
+          "plain_to_current_final_kl": 1.0785280966665596
+        },
+        "22": {
+          "independent_shard_top20_overlap": 0.959375,
+          "shard_symmetric_kl": 0.005639073114782178,
+          "merged_to_current_final_kl": 1.1094739138934528,
+          "plain_to_current_final_kl": 0.4326313391502481
+        }
+      }
+    }
+  ],
+  "unique_validation_passages": 64,
+  "scope": "Same fixed 64-passage diagnostic repeated on four workers, not 256 independent passages; all preset layer-level mean top20 overlap gates passed",
+  "limitation": "Layer7 .70546875 narrowly exceeds .70 criterion; no guarantee of every-context or behavioral interpretation stability"
+}
