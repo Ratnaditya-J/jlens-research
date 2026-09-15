@@ -1,0 +1,5 @@
+{
+  "at": "2026-09-15T00:36:23.227910+00:00",
+  "type": "CalledProcessError",
+  "message": "Command '['rsync', '-rt', '--timeout=90', '-e', 'ssh -i /workspace/private/pod_ed25519 -o UserKnownHostsFile=/workspace/private/known_hosts -o ConnectTimeout=15 -o ServerAliveInterval=30 -p 19124', 'root@31.24.80.26:/workspace/jlens-research/runs/confirmation/', '/workspace/outputs/jlens-research/runs/confirmation/']' returned non-zero exit status 255."
+}

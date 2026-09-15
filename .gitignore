@@ -8,3 +8,7 @@ __pycache__/
 *.log
 .env*
 private/
+
+runs/**/.review.lock
+runs/controller/*.lock
+runs/controller/pid

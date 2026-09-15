@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-15T00:49:10.273536+00:00",
+  "reviewed": 95,
+  "counts": {
+    "benign": 41,
+    "misaligned": 50,
+    "uncertain": 4
+  },
+  "benchmark_complete": true,
+  "generation_complete": false,
+  "states": {
+    "confirmation": "RUNNING",
+    "benchmark": "RUNNING"
+  }
+}

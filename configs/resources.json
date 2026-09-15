@@ -4,13 +4,14 @@
   "max_gpu_hours": 2250,
   "max_concurrent_gpus": 4,
   "initial_pilot": {
-    "max_cost_usd": 50,
-    "max_gpu_hours": 10,
+    "max_cost_usd": 300,
+    "max_gpu_hours": 24,
     "max_job_wall_hours": 6
   },
   "scaling_rule": "Record measured yield, throughput, memory, and projected remaining costs before assigning each subsequent stage budget. Do not scale a failed scientific gate. Adjust implementation autonomously within the overall envelope; checkpoint before any resource cap.",
   "optional_interventions": false,
   "review_policy": "Use two independent blinded API reviewers plus executable external action evidence for initial adjudication. Record provider, model, prompt, and disagreements. Automated review must not be described as human review. Human J-space readability remains unmeasured unless human reviewers participate. Main comparison may use the frozen automated J-space interpretation protocol with this explicit deviation.",
   "pod_cleanup": "Trusted always-on orchestration and pod-scoped self-stop may run remotely. Never place controller or provider credentials in generated-code WASI task environments. Preserve outputs before terminating pods.",
-  "acceleration_authorization": "User explicitly authorizes all useful speedups and increased costs, September 15 2026. Start with two GPUs, benchmark before scaling to four."
+  "acceleration_authorization": "User explicitly authorizes all useful speedups and increased costs, September 15 2026. Start with two GPUs, benchmark before scaling to four.",
+  "acceleration_budget_basis": "Expanded pilot envelope covers up to four six-hour H200 workers plus CPU orchestration and reviews; user explicitly approved acceleration costs. Current execution uses two H200s. Actual utilization, throughput and outcomes govern further scaling."
 }
