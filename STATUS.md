@@ -1,3 +1,11 @@
+## 2026-09-15T06:44:53.466508+00:00 — context increment verified; native controls live
+
+Previous status turn polled collected records but did not verify process handles. This turn verified CPU processes 44969, 44970 and 47618 live. Latest collected base 19/45, honest union 12/45 (10 original + 2 helper). Reconstructed context-increment JSON exactly, checked all input hashes and explicit missing-context counts 0/0/2; added source hash to integrated report and removed stale monitor-pending wording. Native cohorts, final analysis, reproduction and backups remain pending.
+
+## 2026-09-15T06:40:16.651145+00:00 — verified control wait, helper adds coverage
+
+Previous turn completedspecificityfigure. This turn verifiedliveCPU44969/44970/47618 and waitedtwo45secintervals. Honesthelperfirstcompletedcaseextendsunionto10/45(9original+1helper); basereviews17benignatlastread; originalhonest7benign2formatfailures. No coordinatorerror, no restartsorparameterchanges. Continuingfinitefrozencohorts; finalreportswaitcompleteinputs.
+
 ## 2026-09-15T06:38:06.369813+00:00 — specificity figure completed
 
 Previous turn preparednativecontrolreproduction. Verifiedwaithelper464liveprogress193tokens162sec,coordinator47618andnativecontrollerslive, noerror. Addedplot_specificity_overview.py across6separatebenignpanels, exactFP/Nannotations, explicitno-pooled/deploymentrateclaim andearlierseparatecalibration. Fixedinitialsyntaxbracebeforeexecution, rerenderedCPU17225completed; firstcopy2257failedbecausefirstrenderfailed, correctedcopy14898completed. PNGvisuallycheckedreadable,allsixinputsandPNG/SVG/PDFSHAsverified,QAmanifestwritten; linkedintegratedfindings. Nativecontrolsremainrunning; no new rateclaims.

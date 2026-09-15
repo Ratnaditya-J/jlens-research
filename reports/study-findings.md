@@ -102,7 +102,7 @@ The initial fresh-environment check reproduced all nine declared primary/templat
 
 ## Next experiments justified by these findings
 
-Test an authorization-balanced probe on a newly frozen task distribution; its current control failure is a direct reason to change training coverage. Evaluate context-ablation or display-shuffling controls on new cases to isolate what J-space adds beyond contextual inference. Use position-specific calibration and prospectively measured end-to-end latency before any early-warning deployment claim. Additional base/benign-checkpoint and monitor-maintenance controls remain a scope-audit item; this report does not claim they were executed. Optional causal interventions remain deferred.
+Test an authorization-balanced probe on a newly frozen task distribution; its current control failure is a direct reason to change training coverage. Evaluate context-ablation or display-shuffling controls on new cases to isolate what J-space adds beyond contextual inference. Use position-specific calibration and prospectively measured end-to-end latency before any early-warning deployment claim. The authorized monitor-maintenance control is complete (see below). Base and honest-checkpoint behavioral controls are still running; their final results remain pending. Optional causal interventions remain deferred.
 
 ## Offline latency audit
 
@@ -113,3 +113,7 @@ The selected action-localized casebooks now have [latency-adjusted scenarios](ac
 The additional [monitor control](monitor-controls-comparison/findings.md) completed: all 24 cases reached the authorized state and were independently reviewed as benign. The frozen probe flagged 24/24; J-view flagged 0/24. These four task families reinforce the observed specificity failure, without establishing deployment rates. All 96 interpretation calls completed and a fresh environment reproduced the three output files exactly.
 
 ![Observed false-positive rates across separate evaluation panels](figures/specificity-overview.png)
+
+## Increment beyond context-only interpretation
+
+A [paired context audit](jview-context-increment.md) qualifies the earlier J-view-only results: 18 of 21 J-view-only positives relative to the probe at −32 were also caught by context-only interpretation; only three were missed by both alternatives. J-view adds net positive coverage over context at −32, with additional false positives. At −64 it catches fewer positives than context at the frozen thresholds. No causal necessity claim follows from these comparisons.

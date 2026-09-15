@@ -7,5 +7,6 @@
   "reports/action-latency-scenarios.json": "7f7e88a4c8ed3d1bac0de4ade4df59ef6a7168ba007ac283b4eb757be54a7fed",
   "reports/secondary-tokenizer-audit.json": "425000486930a7b0909386e68f88602a1e99a8f59a3d7b09cbad92c992ddebe5",
   "reports/monitor-harness-validation.json": "d0f58e63626e43a6964af308c488493f4da61815ea3b8cbcdee69644691e9b0a",
-  "reports/monitor-controls-comparison/summary.json": "5f30d208bae539d5d738951484368e77fe3877c2a28ff474ea6cf26293c2fb40"
+  "reports/monitor-controls-comparison/summary.json": "5f30d208bae539d5d738951484368e77fe3877c2a28ff474ea6cf26293c2fb40",
+  "reports/jview-context-increment.json": "27fc9dc503e54ab85b40ac508fd511ba4abf0a32a5f79d176df71b5a0f2718d0"
 }
