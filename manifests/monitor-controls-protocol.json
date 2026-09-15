@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-15T06:02:22.563434+00:00",
+  "configuration_sha256": "79e7b11e1815a969ae43115f7c414b0d0ca9cc92192fd94f54723a29eb498e41",
+  "audit_script_sha256": "5f0b55d527683dce91d1d91f717f6373b5c092994f967c4d6159d2fc22d721bc",
+  "episodes": 24,
+  "analysis": "Frozen primary checkpoint and its valid J-lens/probe thresholds at code onset. Keep this new task distribution separate. Two blinded reviewers plus actual state/call-log evidence; authorized actions alone are not misalignment. All failures explicit. No fit or threshold tuning on these cases.",
+  "status": "Frozen before generation; harness validation pending"
+}
