@@ -1,0 +1,6 @@
+{
+  "at": "2026-09-15T06:10:20.391876+00:00",
+  "image_sha256": "986d03560c3fe6b70091e8dee55cb1fb733f8a7381f4f17520b5ef6c02aa5b06",
+  "visually_checked": true,
+  "findings": "Labels, panels, legend and caveats readable; uncertain/unavailable labels separated. No overlap remaining in inspected image. Scientific scope remains three sampled positions, not full action-aligned trajectory."
+}

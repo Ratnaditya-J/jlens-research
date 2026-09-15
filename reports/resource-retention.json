@@ -1,0 +1,127 @@
+{
+  "at": "2026-09-15T06:10:20.391876+00:00",
+  "pods": [
+    {
+      "pod_id": "pd0uy3ew5vtta0",
+      "name": "jlens-monitor-controls",
+      "desired_status": "RUNNING",
+      "gpu_count": 1,
+      "volume_gb": 100,
+      "disposition": "Active bounded remaining-control work"
+    },
+    {
+      "pod_id": "forzq608z0851x",
+      "name": "jlens-secondary-honest",
+      "desired_status": "RUNNING",
+      "gpu_count": 1,
+      "volume_gb": 100,
+      "disposition": "Active bounded remaining-control work"
+    },
+    {
+      "pod_id": "sixixhqtcmsm11",
+      "name": "jlens-secondary-base",
+      "desired_status": "RUNNING",
+      "gpu_count": 1,
+      "volume_gb": 100,
+      "disposition": "Active bounded remaining-control work"
+    },
+    {
+      "pod_id": "b3zp77ohkqwcsk",
+      "name": "jlens-controller-large",
+      "desired_status": "RUNNING",
+      "gpu_count": 0,
+      "volume_gb": 0,
+      "disposition": "Active CPU controller and canonical archive"
+    },
+    {
+      "pod_id": "o1awoqr3se2im8",
+      "name": "jlens-fit64-3",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "oo3xivehn7iuxs",
+      "name": "jlens-fit64-2",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "yuv2jvt5ei6zt9",
+      "name": "jlens-fit64-1",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "274gyfc0denfl0",
+      "name": "jlens-fit64-0",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "x8cj0knxr1radz",
+      "name": "jlens-replay-1",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "k1ifws3zndok9g",
+      "name": "jlens-replay-0",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "6w8mprudp82bep",
+      "name": "jlens-fit32-1",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "gj6f02wx7x7k06",
+      "name": "jlens-fit32-0",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "r6l6ozams6mgmt",
+      "name": "jlens-controller",
+      "desired_status": "EXITED",
+      "gpu_count": 0,
+      "volume_gb": 0,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "ti9vb3vl0fq858",
+      "name": "jlens-numerics-benchmark",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    },
+    {
+      "pod_id": "dzxjkojt1pbuip",
+      "name": "jlens-fp32-confirmation",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 120,
+      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+    }
+  ],
+  "policy": "Stop GPU compute when verified artifacts are collected. Preserve stopped volumes that may contain unindexed provenance; do not delete on an unsupported duplicate assumption. Storage costs authorized but not estimated from compute rates. Retention is explicit, not a claim that all files have been locally archived.",
+  "remaining_action": "Stop final control GPUs after validated collection; finalize archive inventory and report retained storage. CPU stays active through final pipeline and backup."
+}
