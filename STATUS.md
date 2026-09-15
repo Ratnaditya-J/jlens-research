@@ -1,3 +1,7 @@
+## 2026-09-15T06:38:06.369813+00:00 — specificity figure completed
+
+Previous turn preparednativecontrolreproduction. Verifiedwaithelper464liveprogress193tokens162sec,coordinator47618andnativecontrollerslive, noerror. Addedplot_specificity_overview.py across6separatebenignpanels, exactFP/Nannotations, explicitno-pooled/deploymentrateclaim andearlierseparatecalibration. Fixedinitialsyntaxbracebeforeexecution, rerenderedCPU17225completed; firstcopy2257failedbecausefirstrenderfailed, correctedcopy14898completed. PNGvisuallycheckedreadable,allsixinputsandPNG/SVG/PDFSHAsverified,QAmanifestwritten; linkedintegratedfindings. Nativecontrolsremainrunning; no new rateclaims.
+
 ## 2026-09-15T06:35:30.692916+00:00 — native-control reconstruction prepared
 
 Previous turn verifiedhelperidentity/checklist. This turn confirmedhelper464livefirstreversecase65tokens51.7sec, coordinator47618liveunion8(0helpercompleted), originalreviewsbase16benign,honest6benign2formatfailures; noerrorscoordinator. Addedreproduce_model_controls.py freshstandard-library-onlyvenv/input-onlyreplica, two deterministicreconstructionpasses, exactsummary+findingsSHAsandoriginalinputsunchanged. Compiled/transferredCPU; runafterreports/model-controls/summary.jsonexists, notyetexecuted. No scientificresultsnew; activewaitforremaining45-casecohorts.

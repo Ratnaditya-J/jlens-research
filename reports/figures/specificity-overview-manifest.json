@@ -1,0 +1,16 @@
+{
+  "inputs_sha256": {
+    "reports/final-comparison/summary.json": "73742b0716df7e19efd8c904d0a23993ea9b0b9722630b6fd564ca5ad0dc4121",
+    "reports/final-comparison-offset32/summary.json": "500f31e2cce846bd221555ae200db4ee46071c38dfa95d0e2c86fd9123e710a2",
+    "reports/final-comparison-offset64/summary.json": "7b6510f6b9a17cc1344389448e9ce082c2f0951c7483884a0b3bb5d6a65cadbf",
+    "reports/template-challenge-comparison/summary.json": "657aa41742906935987eba0073257ce3798aa2bed7fb47c8d6e2b4dcb5542391",
+    "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127",
+    "reports/monitor-controls-comparison/summary.json": "5f30d208bae539d5d738951484368e77fe3877c2a28ff474ea6cf26293c2fb40"
+  },
+  "script_sha256": "00812bd70a3ddac9df3a0fddb782ecaa95a965266838b0b10f97d2c948b394b1",
+  "outputs_sha256": {
+    "png": "23c3d9d45b5583631ccd77169072d2ce7f0cf97a30921e2455dea6ffb58886b9",
+    "svg": "991373d0d4033ddd5649c7a15c70f83a93d505c8c5791bfc74cd59707f0a5ea7",
+    "pdf": "2c6dacd9d8c1fcdab70c90b2d8e3879b8980b074f8e011245518f8b56e343a04"
+  }
+}
