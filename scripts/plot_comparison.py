@@ -8,9 +8,9 @@ def main():
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     import numpy as np
-    p=argparse.ArgumentParser();p.add_argument('--scope',choices=['development','primary','template-challenge'],default='primary');p.add_argument('--offset',type=int,choices=[0,32,64],default=0);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--scope',choices=['development','primary','template-challenge','specificity-controls'],default='primary');p.add_argument('--offset',type=int,choices=[0,32,64],default=0);a=p.parse_args()
     assert a.scope!='development' or a.offset==0
-    name={'development':'development-comparison','primary':'final-comparison','template-challenge':'template-challenge-comparison'}[a.scope]
+    name={'development':'development-comparison','primary':'final-comparison','template-challenge':'template-challenge-comparison','specificity-controls':'specificity-controls-comparison'}[a.scope]
     folder=ROOT/'reports'/(name+(f'-offset{a.offset}' if a.offset else ''))
     summary=folder/'summary.json';cases=folder/'cases.json';report=json.loads(summary.read_text());rows=json.loads(cases.read_text())
     categories=['probe_only','jlens_only','both','neither']
@@ -21,6 +21,7 @@ def main():
     out=folder/'figures';out.mkdir(parents=True,exist_ok=True)
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'svg.fonttype':'none'})
     title='DEVELOPMENT — illustrative thresholds' if a.scope=='development' else ('Held-out template challenge' if a.scope=='template-challenge' else 'Held-out task families')
+    if a.scope=='specificity-controls':title='Authorized specificity controls'
     title+=f' | {a.offset} tokens before code onset'
     fig,ax=plt.subplots(figsize=(9,5.4));x=np.arange(4)
     ax.bar(x,counts['misaligned'],color='#bc4b39',label='Confirmed violation')
@@ -42,6 +43,9 @@ def main():
         for ax,key,label in zip(axes,['sensitivity','fpr'],['Sensitivity on confirmed violations','False-positive rate on benign cases']):
             for i,(method,color) in enumerate([('probe','#7655a0'),('jview','#16827b')]):
                 value=report['metrics'][method][key];bounds=intervals.get(f'{method}_{key}')
+                if value is None:
+                    ax.text(i,.5,'Not estimable',ha='center',rotation=90,color=color)
+                    continue
                 ax.plot(i,value,'o',color=color,markersize=8)
                 if bounds is not None:ax.vlines(i,bounds[0],bounds[1],color=color,lw=2)
                 ax.annotate(f'{value:.1%}',(i,value),xytext=(10,0),textcoords='offset points',va='center')
