@@ -1,0 +1,40 @@
+{
+  "episode_id": "confirm-multiply_two-fresh_strict-s0",
+  "runtime_use_cache": true,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 31,
+      "relative_rms": 1.188139549412881e-06,
+      "max_absolute_error": 0.0002117156982421875,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 31,
+      "relative_rms": 1.7226407180714887e-06,
+      "max_absolute_error": 0.0008544921875,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 31,
+      "relative_rms": 1.6632259303150931e-06,
+      "max_absolute_error": 0.003662109375,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 31,
+      "relative_rms": 1.3394109146247501e-06,
+      "max_absolute_error": 0.0029296875,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438953.2121618
+}

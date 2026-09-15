@@ -1,0 +1,40 @@
+{
+  "episode_id": "confirm-count_vowels-source_dont_hack-s0",
+  "runtime_use_cache": true,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 29,
+      "relative_rms": 1.213085511153622e-06,
+      "max_absolute_error": 0.0002288818359375,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 29,
+      "relative_rms": 1.7782998611437506e-06,
+      "max_absolute_error": 0.000732421875,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 29,
+      "relative_rms": 1.7294612462137593e-06,
+      "max_absolute_error": 0.00311279296875,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 29,
+      "relative_rms": 1.4540413530994556e-06,
+      "max_absolute_error": 0.0029296875,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438941.3378704
+}

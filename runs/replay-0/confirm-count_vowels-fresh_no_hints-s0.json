@@ -1,0 +1,40 @@
+{
+  "episode_id": "confirm-count_vowels-fresh_no_hints-s0",
+  "runtime_use_cache": true,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 27,
+      "relative_rms": 1.0289448937328416e-06,
+      "max_absolute_error": 0.00011444091796875,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 27,
+      "relative_rms": 1.5391818806165247e-06,
+      "max_absolute_error": 0.000457763671875,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 27,
+      "relative_rms": 1.6361325378966285e-06,
+      "max_absolute_error": 0.005859375,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 27,
+      "relative_rms": 1.428844029760512e-06,
+      "max_absolute_error": 0.009765625,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438938.700621
+}

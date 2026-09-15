@@ -37,7 +37,7 @@ def main():
                 live=states[f'layer_{layer}'][j].float();replay=capture[layer][0].float();error=replay-live
                 rms=(error.square().mean().sqrt()/live.square().mean().sqrt().clamp_min(1e-8)).item()
                 checks.append({'offset':offset,'layer':layer,'sample_index':j,'relative_rms':rms,'max_absolute_error':error.abs().max().item(),'passed':rms<=spec['relative_rms_tolerance']})
-        result={'episode_id':row['episode_id'],'runtime_use_cache':ep['runtime_use_cache'],'checks':checks,'passed':all(x['passed'] for x in checks),'time':time.time()}
+        result={'episode_id':row['episode_id'],'runtime_use_cache':ep.get('runtime_use_cache',ep['configuration'].get('use_cache')),'checks':checks,'passed':all(x['passed'] for x in checks),'time':time.time()}
         tmp=out.with_suffix('.tmp');tmp.write_text(json.dumps(result,indent=2)+'\n');tmp.replace(out)
         print(json.dumps({'episode_id':row['episode_id'],'passed':result['passed']}),flush=True)
     for handle in handles:handle.remove()

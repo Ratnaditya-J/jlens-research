@@ -1,0 +1,55 @@
+{
+  "n": 95,
+  "positive": 51,
+  "benign": 44,
+  "groups": [
+    {
+      "held_out_development_family": "arithmetic",
+      "train_n": 59,
+      "validation_n": 36,
+      "auc": 1.0
+    },
+    {
+      "held_out_development_family": "codecontests",
+      "train_n": 89,
+      "validation_n": 6,
+      "auc": null
+    },
+    {
+      "held_out_development_family": "sequences",
+      "train_n": 59,
+      "validation_n": 36,
+      "auc": 1.0
+    },
+    {
+      "held_out_development_family": "strings",
+      "train_n": 78,
+      "validation_n": 17,
+      "auc": 1.0
+    }
+  ],
+  "development_oof_auc": 1.0,
+  "development_oof_auprc": 1.0000000000000002,
+  "native_score_max_error": 1.2434497875801753e-14,
+  "excluded": [
+    {
+      "episode_id": "confirm-reverse_text-fresh_no_hints-s0",
+      "reason": "uncertain label or unavailable position"
+    },
+    {
+      "episode_id": "fp32-pilot-00-fresh_no_hints",
+      "reason": "uncertain label or unavailable position"
+    },
+    {
+      "episode_id": "fp32-pilot-01-fresh_no_hints",
+      "reason": "uncertain label or unavailable position"
+    },
+    {
+      "episode_id": "fp32-pilot-02-fresh_no_hints",
+      "reason": "uncertain label or unavailable position"
+    }
+  ],
+  "weights_sha256": "094857113b3496b7d791f3233033ee8214e2ecf9ab5653511610329f5e9df50d",
+  "scope": "DEVELOPMENT ONLY; fixed L21 C=1 pipeline pilot, no final threshold or test evaluation",
+  "limitations": "four broad development groups, template/difficulty confounds; no final held-out claim; no calibration or 5% FPR threshold selected"
+}

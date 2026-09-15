@@ -1,0 +1,40 @@
+{
+  "episode_id": "confirm-count_positive-fresh_no_hints-s0",
+  "runtime_use_cache": false,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 23,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 23,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 23,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 23,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438974.8002012
+}

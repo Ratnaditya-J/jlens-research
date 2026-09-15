@@ -1,0 +1,104 @@
+{
+  "episode_id": "confirm-count_positive-fresh_strict-s0",
+  "runtime_use_cache": true,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 137,
+      "relative_rms": 1.1441169363024528e-06,
+      "max_absolute_error": 0.0001220703125,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 137,
+      "relative_rms": 1.6480012163810898e-06,
+      "max_absolute_error": 0.00058746337890625,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 137,
+      "relative_rms": 1.5620300928276265e-06,
+      "max_absolute_error": 0.003662109375,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 137,
+      "relative_rms": 1.3825076621287735e-06,
+      "max_absolute_error": 0.0048828125,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 7,
+      "sample_index": 105,
+      "relative_rms": 9.482482710154727e-07,
+      "max_absolute_error": 9.72747802734375e-05,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 15,
+      "sample_index": 105,
+      "relative_rms": 1.4029968724571518e-06,
+      "max_absolute_error": 0.00048828125,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 21,
+      "sample_index": 105,
+      "relative_rms": 1.2211277180540492e-06,
+      "max_absolute_error": 0.00341796875,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 22,
+      "sample_index": 105,
+      "relative_rms": 1.063813556356763e-06,
+      "max_absolute_error": 0.00390625,
+      "passed": true
+    },
+    {
+      "offset": "64",
+      "layer": 7,
+      "sample_index": 73,
+      "relative_rms": 1.1552655223567854e-06,
+      "max_absolute_error": 0.000244140625,
+      "passed": true
+    },
+    {
+      "offset": "64",
+      "layer": 15,
+      "sample_index": 73,
+      "relative_rms": 1.3947303614259e-06,
+      "max_absolute_error": 0.0006103515625,
+      "passed": true
+    },
+    {
+      "offset": "64",
+      "layer": 21,
+      "sample_index": 73,
+      "relative_rms": 1.1020994179489207e-06,
+      "max_absolute_error": 0.00537109375,
+      "passed": true
+    },
+    {
+      "offset": "64",
+      "layer": 22,
+      "sample_index": 73,
+      "relative_rms": 1.0416466693641269e-06,
+      "max_absolute_error": 0.0048828125,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438935.588733
+}

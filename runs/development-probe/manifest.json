@@ -1,0 +1,13 @@
+{
+  "scope": "DEVELOPMENT ONLY; fixed L21 C=1 pipeline pilot, no final threshold or test evaluation",
+  "layer": 21,
+  "C": 1.0,
+  "positions_sha256": "9a7e2de62e80cd4cc858fe85e7c80ba1c8861ec542aef91f1a1a301da5a1daed",
+  "labels_sha256": "82d1400eede4e92b1972ad6c665f6a5a5ae96834dac6fde4713c22ceeb89aa6f",
+  "script_sha256": "fda5b278b078739033c1e5e530744d8834aa73094eee906b065320e7107f771f",
+  "sklearn": "1.7.2",
+  "replay_complete_sha256": [
+    "3766672240f9376040baede595af41cc7b96090ed5a955ee3e7a766a622b1f15",
+    "7c70521814d42174f0f61df06b412f1c3caa7bd166e68a3e9a1ed766127d3d88"
+  ]
+}

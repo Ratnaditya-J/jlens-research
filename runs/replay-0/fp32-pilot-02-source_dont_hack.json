@@ -1,0 +1,72 @@
+{
+  "episode_id": "fp32-pilot-02-source_dont_hack",
+  "runtime_use_cache": false,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 33,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 33,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 33,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 33,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 7,
+      "sample_index": 1,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 15,
+      "sample_index": 1,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 21,
+      "sample_index": 1,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 22,
+      "sample_index": 1,
+      "relative_rms": 0.0,
+      "max_absolute_error": 0.0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438988.552791
+}

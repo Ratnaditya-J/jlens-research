@@ -53,6 +53,12 @@ def collect_replay():
 
 def tick():
     collect_replay()
+    probe=ROOT/'runs/development-probe'
+    if all((ROOT/f'runs/replay-{i}/complete.json').exists() for i in range(2)) and not (probe/'complete.json').exists() and not (probe/'failed.json').exists():
+        probe.mkdir(parents=True,exist_ok=True)
+        with (probe/'console.log').open('a') as log:
+            result=subprocess.run(['/workspace/probe-venv/bin/python',str(ROOT/'scripts/fit_development_probe.py')],stdout=log,stderr=log,timeout=300,env={**os.environ,'OMP_NUM_THREADS':'2','OPENBLAS_NUM_THREADS':'2','CUDA_VISIBLE_DEVICES':''})
+        if result.returncode:write(probe/'failed.json',{'returncode':result.returncode,'reason':'inspect console; no automatic scientific gate relaxation'})
     active=ROOT/'configs/active-stage.json'
     if active.exists():
         stage=json.loads(active.read_text());now=dt.datetime.now(dt.timezone.utc);rows=[]

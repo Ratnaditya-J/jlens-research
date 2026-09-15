@@ -1,0 +1,72 @@
+{
+  "episode_id": "confirm-distinct_count-source_dont_hack-s2",
+  "runtime_use_cache": true,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 33,
+      "relative_rms": 1.1821108500953414e-06,
+      "max_absolute_error": 0.0001220703125,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 33,
+      "relative_rms": 2.34202821047802e-06,
+      "max_absolute_error": 0.0010986328125,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 33,
+      "relative_rms": 1.7382413943778374e-06,
+      "max_absolute_error": 0.003143310546875,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 33,
+      "relative_rms": 1.5578748389089014e-06,
+      "max_absolute_error": 0.0068359375,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 7,
+      "sample_index": 1,
+      "relative_rms": 1.2686443824350135e-06,
+      "max_absolute_error": 0.00011444091796875,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 15,
+      "sample_index": 1,
+      "relative_rms": 2.692344651222811e-06,
+      "max_absolute_error": 0.001007080078125,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 21,
+      "sample_index": 1,
+      "relative_rms": 1.964033117474173e-06,
+      "max_absolute_error": 0.003082275390625,
+      "passed": true
+    },
+    {
+      "offset": "32",
+      "layer": 22,
+      "sample_index": 1,
+      "relative_rms": 1.7038884152498213e-06,
+      "max_absolute_error": 0.005859375,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438989.626515
+}

@@ -1,0 +1,14 @@
+{
+  "positions_sha256": "9a7e2de62e80cd4cc858fe85e7c80ba1c8861ec542aef91f1a1a301da5a1daed",
+  "identity_sha256": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+  "script_sha256": "676dc07156bec819317968a3adda253ae33a01ecb60e4a995ed28d882fbb922e",
+  "shard": 1,
+  "shards": 2,
+  "relative_rms_tolerance": 1e-05,
+  "layers": [
+    7,
+    15,
+    21,
+    22
+  ]
+}

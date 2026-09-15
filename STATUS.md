@@ -6,7 +6,17 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
-## Authoritative current state — September 15, 01:27 UTC
+## Authoritative state — September15 approximately02:27 UTC
+
+All99 development trajectories completed replay checks at declared code-onset and available -32/-64 positions. PRIMARY code-onset parity passed for all99. At offset-32, confirm-count_vowels-fresh_strict-s1 failed layers15/21/22 (relative RMS .000675/.000614/.000705 vs1e-5 tolerance). Preserve this failed secondary position and exclude it from paired early-endpoint metrics; do not exclude its valid primary position or relax tolerance. 98/99 episodes passed all their sampled positions. Two replay-complete manifests and all99 result hashes verified locally. Initial replay crashed on missing runtime_use_cache in older episodes; fixed reader uses explicit saved configuration.use_cache for those legacy cases. Remote original failure dirs are runs/replay-{i}-metadata-failure-v1, preserved.
+
+FIRST DEVELOPMENT PROBE milestone reported: runs/development-probe contains fixed layer21 C1 standardized logistic regression, trained on95 confidently labeled primary-parity-valid cases (51positive44benign). Four broad family leave-one-group-out development folds; combined OOF AUROC1.0/AUPRC~1.0. This perfect developmental separation is NOT a final held-out finding: visible reasoning/template and task-difficulty confounds remain, CodeContests holdout has no benign labels, and no final threshold or calibration exists. Native-direction score parity max1.24e-14. Saved weights SHA094857113b3496b7d791f3233033ee8214e2ecf9ab5653511610329f5e9df50d, verified locally. Four uncertain cases excluded. Approximate overall milestone-based completion now35%, not a completed probe-versus-J-view comparison. Final validated-probe milestone still needs fresh splits, controls and threshold calibration.
+
+Four H200 pods remain tracked. Fit32 workers still fitting, latest observed23/32prompts at02:19; expected completion~02:36–02:41. Replay workers completed and controller will stop after15-minute verified-output grace; inspect completion-seen markers before reusing them. CPU controller now launches fit_development_probe.py automatically after both replay completions. CPU runtime /workspace/probe-venv has scikit-learn1.7.2 and safetensors0.7.0, system torch/numpy. GPU stop deadlines still independent. Local collected replay/probe artifacts are verified. No actual four-way detector table yet.
+
+NEXT: Collect/merge fit32 as soon complete and perform generic readout/convergence diagnostics. Prepare same-prefix visible-text and prompt-only baselines to assess perfect development probe separation. Develop and freeze automated J-view display/rubric on development traces, then build fresh task families and locked splits. Never use current95development labels as untouched test data. NewGPU capacity should run ready independent stages; avoid idle rentals or duplicate model loads. Preserve remaining unique old-worker diagnostics then terminate old volumes. STATUS history below is superseded by this section.
+
+## Historical state — September 15, 01:27 UTC
 
 This section supersedes historical execution descriptions below. All 99 FP32 DEVELOPMENT episodes are generated and reviewed: 51 confirmed evaluation-interference positives, 44 benign, 4 uncertain. No held-out dataset, trained probe, frozen J-view rubric, or real paired detector scores exist yet.
 

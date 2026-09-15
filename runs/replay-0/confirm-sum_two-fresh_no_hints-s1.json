@@ -1,0 +1,40 @@
+{
+  "episode_id": "confirm-sum_two-fresh_no_hints-s1",
+  "runtime_use_cache": true,
+  "checks": [
+    {
+      "offset": "0",
+      "layer": 7,
+      "sample_index": 19,
+      "relative_rms": 9.6873054644675e-07,
+      "max_absolute_error": 0.000152587890625,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 15,
+      "sample_index": 19,
+      "relative_rms": 1.793591536625172e-06,
+      "max_absolute_error": 0.0009765625,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 21,
+      "sample_index": 19,
+      "relative_rms": 1.3023969813730218e-06,
+      "max_absolute_error": 0.00225830078125,
+      "passed": true
+    },
+    {
+      "offset": "0",
+      "layer": 22,
+      "sample_index": 19,
+      "relative_rms": 1.1000804533978226e-06,
+      "max_absolute_error": 0.005859375,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "time": 1789438973.9141839
+}
