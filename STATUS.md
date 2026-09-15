@@ -1,3 +1,7 @@
+## 2026-09-15T06:17:25.143683+00:00 — monitor reproduction workflow prepared
+
+Previous turn progressed verifiedmonitorcollection/navigation. This turn addedprepare_monitor_stage_config.py aftercompletedscoringassertnoerrors; sourcehashlockedprimarycalibration+monitorassembled/scores,3reportoutputs, noAPI/GPU/relabel. reproduce_monitor_comparison.py isolatednewvenv/inputonlyreplica+exactSHA+resumeruns, adaptedexistingverifiedtimingharness. study.pycompareallowlistaddsonlyevaluate_monitor_controls.py; existingtest_stage_cli1passed; sourcescompiled/transferredCPU. Notyetexecuted becausemonitorscoringnotcomplete. Initialpollmonitorbatch1stillgenerating, CPUshard0verified; backup21596stillrunningonpoll, donotrestart. Nextprioritymonitorbatchprogress/fullscoringthenrunprepare/reproductionandbackupdelta; modelcontrolscontinue.
+
 ## 2026-09-15T06:16:18.305924+00:00 — monitor collection verified and README reconciled
 
 Previous turn verifiedfirstmonitorGPUshard. This turn CPUcollector44465live andprogressverifiedshards[0], sixbehaviorreviewsbenign. No collectorerror. READMEupdatedfinishedtiming/fulltrace/latencylinks, current3GPUremainingcontrols, explicitretainedstorageandrawbackupscope; all17localREADMElinksresolve reports/readme-link-audit.json. Beganlocalincrementalrawcontrolbackup(rsyncsessioninlatesttooloutput) forsecondarybase/honest andmonitor-controls-*; finaldelta/SHAstillrequiredaftercompletion, do not claimcompletebackup. Monitorremaining3shardsandsecondary45casecontrolscontinue; finalanalysiswatchersremainqueued.
