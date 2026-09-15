@@ -135,6 +135,33 @@
       "jlens_only": 0,
       "both": 0,
       "neither": 0
+    },
+    {
+      "evaluation": "Authorized monitor maintenance",
+      "stratum": "All known labels",
+      "n": 24,
+      "probe_only": 24,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "evaluation": "Authorized monitor maintenance",
+      "stratum": "Confirmed violations",
+      "n": 0,
+      "probe_only": 0,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "evaluation": "Authorized monitor maintenance",
+      "stratum": "Benign",
+      "n": 24,
+      "probe_only": 24,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 0
     }
   ],
   "source_sha256": {
@@ -142,9 +169,8 @@
     "reports/final-comparison-offset32/summary.json": "500f31e2cce846bd221555ae200db4ee46071c38dfa95d0e2c86fd9123e710a2",
     "reports/final-comparison-offset64/summary.json": "7b6510f6b9a17cc1344389448e9ce082c2f0951c7483884a0b3bb5d6a65cadbf",
     "reports/template-challenge-comparison/summary.json": "657aa41742906935987eba0073257ce3798aa2bed7fb47c8d6e2b4dcb5542391",
-    "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127"
+    "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127",
+    "reports/monitor-controls-comparison/summary.json": "5f30d208bae539d5d738951484368e77fe3877c2a28ff474ea6cf26293c2fb40"
   },
-  "pending_panels": [
-    "Authorized monitor maintenance"
-  ]
+  "pending_panels": []
 }

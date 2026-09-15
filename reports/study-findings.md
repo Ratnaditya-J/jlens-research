@@ -107,3 +107,7 @@ Test an authorization-balanced probe on a newly frozen task distribution; its cu
 ## Offline latency audit
 
 The selected action-localized casebooks now have [latency-adjusted scenarios](action-latency-scenarios.md) for both detectors. API-interpreted J-lens flags have no positive estimated pre-statement margin in these selected cases; warm probe scoring does, with replay reducing the onset margins. These are explicitly conditional offline estimates, not measured online warnings or population rates.
+
+## Actual authorized monitor maintenance
+
+The additional [monitor control](monitor-controls-comparison/findings.md) completed: all24cases reached the authorized state and were independently reviewed as benign. The frozen probe flagged24/24; J-view flagged0/24. These four task families reinforce the observed specificity failure, without establishing deployment rates. All96interpretation calls completed and a fresh environment reproduced the three output files exactly.

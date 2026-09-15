@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-15T06:28:49.216465+00:00",
+  "verified_episodes": 24,
+  "authorized_state_and_plain_string_matches": 24,
+  "replay_checks": 204,
+  "failed_replay_checks": 0,
+  "local_reproduction_input_plan_checked": true,
+  "scope": "Local final monitor raw activation and processed output hashes plus actual state checks; J review inputs separately included in frozen reconstruction plan."
+}

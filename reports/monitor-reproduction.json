@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "destination": "/workspace/work/jlens-monitor-reproduction-20260915",
+  "scope": "Fresh virtual environment, copied frozen inputs, no API calls, no GPU or retraining",
+  "script_sha256": "060334f0d3b4695841e2d9fdb7d8df1351eb5734f157ac6910a20c88c225de6c",
+  "inputs_sha256": {
+    "configs/stages/compare-monitor-controls.json": "cc56d6186a1cb9e9e5b7848955b36b8f3fe24451fc9bef60d9efc2e55205034f",
+    "configs/final-protocol.json": "e4255aef3c67b2c7376a75dafde5ecd49f7510ce13d8f02a791b7bdeac564f8a",
+    "configs/identity-fp32.json": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+    "configs/random-direction-control.json": "bb074c9e7ca030d8608a2862e39a6a63990bdee783e3c70be97b8f915677f837",
+    "manifests/fresh-splits.json": "c455a11597f7296495049f8ee83a7b0ae66c53cb9258eb626d8a5facfd43fe49",
+    "runs/fresh-assembled/manifest.json": "68804281cb213a1c7dea6a1c094d9446658f020fa78e650294c7d18405b1ff9f",
+    "runs/fresh-assembled/train-features.npz": "54912b1e6b0c6c1afaf60773ebc75982f9182d22503d519d60915a2deebfd663",
+    "runs/fresh-assembled/train-records.json": "016ac54c788118b657d068f4641b5aab6e9ec627722132191872365e4076e86a",
+    "runs/fresh-assembled/validation-features.npz": "aec708b571c6694587bac450d9f49e3e6cab737c56d9c0591d24e2612b54ed96",
+    "runs/fresh-assembled/validation-records.json": "5386f8caf530632c8027d77efb4cb06951d702af46cf905bfd189211fb463fb1",
+    "runs/fresh-calibration/lock.json": "b5ebed7290834c96c3fdcb4a4daa9e6995d1535504bc716226e92ab1969ad1c8",
+    "runs/fresh-calibration/mean-difference.npz": "69fd5f284d17ec7bddba57595f5a1fe5ffebc09ac035188d4304c0531de9f9d8",
+    "runs/fresh-calibration/permitted_prefix.joblib": "d71f6a8013c9eab186d1428c53326e30e17dd5484d5df37004147d7ecc4e683d",
+    "runs/fresh-calibration/probe-native.npz": "af5d659843fdb259c5042ca233817fd76d5ce0440b982703a0d91fe20fbd3507",
+    "runs/fresh-calibration/probe.joblib": "4a5bc9e2a99db94d8f41b0ef563a6397607f51d528e91bdddaa19de9f3c80b17",
+    "runs/fresh-calibration/prompt_only.joblib": "fba5545f11ccf148e190e0ace689faaf6ee40d6b85afcefa13c151bd03f79534",
+    "runs/fresh-calibration/random-directions.npz": "756c81d4bbfa4c5bf780289cfb6e0e92f66a13fe519a6087b85554b908c2b4cd",
+    "runs/fresh-calibration/shuffled-label.joblib": "995dc2c2b32cf03a4156b54c7344db2113311a8bd4b66ab89660a4e618035427",
+    "runs/fresh-jview-validation/scores.json": "a7e61bab34ee0df2db1fd43856a6638f65962b77d48b4436534d2fa44a4b3b22",
+    "runs/monitor-controls-assembled/manifest.json": "c1c480ca6ace338ddeceebf8a3a3899374f00a13ba64abf98e6ab9eeb5abf353",
+    "runs/monitor-controls-assembled/test-contexts.json": "254b20fdd07154114d19e9bb2a71588407749e43051ebda0a9a97f4162757739",
+    "runs/monitor-controls-assembled/test-features.npz": "0a802940107b8eed83fd69255cd880b560d88f933e7b2b06711e0324960322bd",
+    "runs/monitor-controls-assembled/test-jspace-features.npz": "ccffed8372edcf12a658f558f050589f810f5189bfc8ba311e58f34f74b1c0f9",
+    "runs/monitor-controls-assembled/test-readouts.json": "74f456740e538e33134add8bcb9596496e656eec650011ab196d5a83d47f3714",
+    "runs/monitor-controls-assembled/test-records.json": "f098925ed8ba78e834009ffd5d73ca1a91a7bbd4c53af681ea8cff5773852ed5",
+    "runs/monitor-controls-assembled/train-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "runs/monitor-controls-assembled/train-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "runs/monitor-controls-assembled/train-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "runs/monitor-controls-assembled/train-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "runs/monitor-controls-assembled/train-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "runs/monitor-controls-assembled/validation-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "runs/monitor-controls-assembled/validation-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "runs/monitor-controls-assembled/validation-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "runs/monitor-controls-assembled/validation-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "runs/monitor-controls-assembled/validation-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "runs/monitor-controls-jview-test/complete.json": "6bee595150219c36a601da677a162e2d02450f8896c1d22467854537732fdd28",
+    "runs/monitor-controls-jview-test/scores.json": "00257adac897df357eb020a436577f136fc24ae7301858a9cd37aad7a7f33c1c",
+    "scripts/calibrate_fresh.py": "30b4b6615e55530601928dcc31400e0995d30a96dc6b44f892240bd0319a8200",
+    "scripts/evaluate_monitor_controls.py": "f00b2d1cf7060b7a2ca80c01f195657cfa445fbee13d4f5c7528f9dc47d1b41a",
+    "scripts/paired_breakdown.py": "a3076fb2d016c6af846c7db003c0d0f82f3fae25b5308ac612029e004c3e8224",
+    "src/comparison_diagnostics.py": "db694ae54c0d0479df099f305736cba4094d8b6fcf417ce6a1b64cea812d7185"
+  },
+  "expected_outputs_sha256": {
+    "reports/monitor-controls-comparison/summary.json": "5f30d208bae539d5d738951484368e77fe3877c2a28ff474ea6cf26293c2fb40",
+    "reports/monitor-controls-comparison/cases.json": "0f24b89094fef521d57ba48ade249e94d5856f6be2ecf8714d504eed35edee1f",
+    "reports/monitor-controls-comparison/cases.csv": "a11ff504319ae6022937038ddeab86e621e4cdb088ac4db602454e0800017673"
+  },
+  "reproduced_outputs_sha256": {
+    "reports/monitor-controls-comparison/summary.json": "5f30d208bae539d5d738951484368e77fe3877c2a28ff474ea6cf26293c2fb40",
+    "reports/monitor-controls-comparison/cases.json": "0f24b89094fef521d57ba48ade249e94d5856f6be2ecf8714d504eed35edee1f",
+    "reports/monitor-controls-comparison/cases.csv": "a11ff504319ae6022937038ddeab86e621e4cdb088ac4db602454e0800017673"
+  },
+  "exact_matches": {
+    "reports/monitor-controls-comparison/summary.json": true,
+    "reports/monitor-controls-comparison/cases.json": true,
+    "reports/monitor-controls-comparison/cases.csv": true
+  },
+  "stages": [
+    "configs/stages/compare-monitor-controls.json"
+  ],
+  "requirements_sha256": "0733d4875c0bdf68e9e19831cb90dfd30c20fa7c04494b3467a3bde02bd0bb6d",
+  "elapsed_seconds": 8.65355658531189
+}

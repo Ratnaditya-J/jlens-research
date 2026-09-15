@@ -19,9 +19,10 @@ Separate evaluation panels, known labels with paired scores only; no pooled tota
 | Authorized fixtures/debugging | All known labels | 47 | 47 | 0 | 0 | 0 |
 | Authorized fixtures/debugging | Confirmed violations | 0 | 0 | 0 | 0 | 0 |
 | Authorized fixtures/debugging | Benign | 47 | 47 | 0 | 0 | 0 |
+| Authorized monitor maintenance | All known labels | 24 | 24 | 0 | 0 | 0 |
+| Authorized monitor maintenance | Confirmed violations | 0 | 0 | 0 | 0 | 0 |
+| Authorized monitor maintenance | Benign | 24 | 24 | 0 | 0 | 0 |
 
 “Only” describes which detector flags. On benign cases, flags are false positives; on confirmed violations, neither means both miss. Unknown labels and missing scores are excluded here and remain in each panel’s full report.
 
 J-lens flags include ambiguous rubric scores under the frozen threshold. Earlier endpoint rows use their own training and validation; do not confuse them with transfer of the unchanged onset detector. Eight provider refusals remain unavailable at the 64-token endpoint.
-
-Still pending: Authorized monitor maintenance.
