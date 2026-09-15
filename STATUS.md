@@ -1,3 +1,11 @@
+## September 15, 04:40 UTC — first fresh worker passed readout64 gate
+
+Previousgoalturn madeprogress fixing/testingsandboxshutdown. Currentturn verifiedlivegeneration andwaitedforhandoff; worker1 finished306episodegeneration andstartedpostprocess (PID2145). Readout64worker1 reportpassedallfourlayers: independenthalf top20meanoverlap L7 .70546875,L15 .83984375,L21 .93984375,L22 .959375. Presetcriterion .70eachlayer; earliestlayerpassesnarrowly,notbroadproof. Generic64passages×2positions×4layers512rows. Reportalsoincludesplainlogitlens descriptivecurrent-finalKL; donotinterpretthatdifferenttargetasJdetectionaccuracy.
+
+Collectedworker1readoutreport+manifestlocal runs/readout64-worker-1; verifiedallthree lensSHAandgenericcorpusSHAagainstlocalverifiedartifacts,512rows andpassedflag. Requireallfourworkerqualityreports forfinalassemblyasbefore. Mainprobe/Jtestresultsnotavailableyet. UsernotifiedfirstqualitypassandnarrowL7margin.
+
+Latestcentralcount1082/1224 at04:39;741adjudications; otherworkersstillgeneration. Controller779alive,processed-1-launchedmarkerexists; doNOTduplicateworkers. CPUreviewscontinueindependently. Needremainingqualitychecks,feature/replaychecks,finalcalibration/testjoin,challenge,earlier/timinganalyses,figures/report andcleanup.
+
 ## September 15, 04:36 UTC — WASI worker shutdown regression fixed in tested cases
 
 Previousgoalturn progressed with temporal-transfer implementation. Thisturn inspectedfullfailurearchives: affected subprocesses wrotecompleteJSON withvalid exit evidence thenabortedwithTokionon-unwindingpanic duringPythonshutdown. Lowerconcurrencyalone didnoteliminatefailures. Firstfix explicitlyclosedLinker/Store/Module/Engine andcancelled/joinedtimer:5sandboxcontainmenttests passed6.159sec; repeated synthetic earlyexit30before/30after found5beforecrashes and1after. Preserved reports/wasi-shutdown-regression.json; thiswaspartialimprovement,notcompletefix.
