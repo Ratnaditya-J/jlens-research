@@ -1,0 +1,7 @@
+{
+  "cases": 12,
+  "files_sha256_verified": 49,
+  "static_data_checks": "12 page payloads: trajectory/prefix/layer lengths and20tokens perlayer; JavaScript node --check passed",
+  "visual_qa": "One action-localized scientific PNG inspected; corrected shared-axis alignment and reinspected. Browser interaction not verified: previous local HTML preview blocked.",
+  "manifest_sha256": "2cd44c55f7594117e46a32b89d58b7568bef3c8f48f2ccafd11beea4bdcca413"
+}

@@ -1,3 +1,11 @@
+## 2026-09-15T05:25:52.833428+00:00 — full casebook token diagnostics completed
+
+Previous turn made progress verifying71localfrozeninputs andupdatingREADME. Thisturn preparednativeCPUhead/normfrompinnedbaseshard9, archivedsource/config/tokenizer andreferenceRMSNormcode, installedtokenizers0.22.1CPU(noexistingversion). FulltraceCPUrun41623completed12unchangedcasebookcases,2062savedlivepositions×4layers.116existingGPUendpointparitychecks:maxlogiterror3.0517578125e-05,top20setoverlap1.0all. reports/cpu-trace-parity.json local. CPU-only, noGPUrestart/regeneration/probeorJthresholdchanges. Nativeweights are inCPU runs/cpu-readout; notyetlocalbackup.
+
+scripts/render_full_trace_casebook.py generates12self-containedHTMLpages+index and36PNG/SVG/PDFfigures. Slider shows exact decoded prefix andall4×20Jtokens/fullcandidate-ranks; plots showfrozenprobe andfixedkeywordrank(' cheat'), explicitlyNOTindependentlyinterpretedJflags. Scientificplotaxesalignmentfixedaftervisualinspection. Final filescollectedlocal,49fileSHAverified,12pagepayload/staticJSchecks passed; representativePNG reinspected. Browserinteraction remainsunverified duepriorfilepreviewblock,donotworkaround. reports/full-trace-qa.json recordslimits. Fullrawtracebackuprsync61598started,pollthenverify. Renderingcopy18818completed.
+
+Earlier32 teststilllive41114,latest2291/2684calls,noerrors;64stillsequenced. Need integratefullcasebook withmainreport/disagreementaudit, actualoffsetmetrics/temporaltransfer, rawarchivebackup/integrity, resourceledgercleanup,finalreport. These fulltraces arepost-testsecondarydiagnostics; do notclaim earliestJdetection withoutindependentpositionreviews. Commit07a9845initialscripts; rendererfixfollowupcommitneeded.
+
 ## September 15, 05:22 UTC — local frozen-input backup verified
 
 Previous goal turn made progress via fresh-environment reproduction. Backup3578completed; all71 distinct comparison-plan input files now local and SHA-verified, failures0. reports/local-frozen-input-integrity.json explicitly covers frozen comparison inputs only, not raw trajectories/reviewer archives. Updated stale README (had incorrectly said stagezero/noresults) with current findings, isolated reproduction commands, precise limits and remaining work. Commit89c052f.

@@ -1,0 +1,8 @@
+{
+  "cases": 12,
+  "sampled_states": 2062,
+  "layer_position_parity_checks": 116,
+  "max_logit_error": 3.0517578125e-05,
+  "min_top20_overlap": 1.0,
+  "scope": "CPU display parity at existing GPU endpoints; all full traces derived from saved live states, not newly replayed per-position states"
+}

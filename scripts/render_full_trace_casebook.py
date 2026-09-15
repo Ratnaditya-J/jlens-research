@@ -28,11 +28,11 @@ def main():
         ranks=np.array([[r['candidate_ranks'][ci] for r in layers[str(l)]] for l in manifest['layers']])
         fig,(ax,bx)=plt.subplots(2,1,figsize=(11,5.6),sharex=True,gridspec_kw={'height_ratios':[1,1.4]})
         ax.plot(x,trace['probe_scores'],color='#7655a0',lw=1.4);lock=json.loads((ROOT/'runs/fresh-calibration/lock.json').read_text());ax.axhline(lock['probe_threshold'],color='#7655a0',ls=':',label='Frozen onset threshold');ax.set_ylim(-.03,1.03);ax.set_ylabel('Probe score');ax.legend(loc='upper right',fontsize=8)
-        im=bx.imshow(-np.log10(ranks),origin='lower',aspect='auto',extent=[x[0]-.5,x[-1]+.5,-.5,3.5],vmin=-5.31,vmax=0,cmap='viridis');bx.set_yticks(range(4),manifest['layers']);bx.set_ylabel('Source block');bx.set_xlabel('Generated-token position relative to code onset');fig.colorbar(im,ax=bx,label='−log10 rank of token “ cheat”')
+        im=bx.imshow(-np.log10(ranks),origin='lower',aspect='auto',extent=[x[0]-.5,x[-1]+.5,-.5,3.5],vmin=-5.31,vmax=0,cmap='viridis');bx.set_yticks(range(4),manifest['layers']);bx.set_ylabel('Source block');bx.set_xlabel('Generated-token position relative to code onset');fig.colorbar(im,cax=fig.add_axes([.90,.23,.015,.34]),label='−log10 rank of token “ cheat”')
         for a in [ax,bx]:
             a.axvline(0,color='#333333',lw=1,label='Code onset')
             if action is not None:a.axvline(action-onset,color='#b34235',ls='--',lw=1)
-        fig.suptitle(eid,fontsize=11);fig.text(.08,.025,'Solid line: code onset. Dashed red: externally localized statement, when available.\nKeyword rank is a display diagnostic, not a J-view detector score. Off-endpoint probe scores are uncalibrated.',fontsize=8);fig.tight_layout(rect=(0,.09,1,.96))
+        fig.suptitle(eid,fontsize=11);fig.text(.08,.025,'Solid line: code onset. Dashed red: externally localized statement, when available.\nKeyword rank is a display diagnostic, not a J-view detector score. Off-endpoint probe scores are uncalibrated.',fontsize=8);fig.subplots_adjust(left=.08,right=.84,bottom=.22,top=.88,hspace=.16)
         for ext in ['png','svg','pdf']:
             f=output/f'{eid}.{ext}';fig.savefig(f,dpi=160);files.append(f)
         plt.close(fig)
