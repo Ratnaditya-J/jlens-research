@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-15T06:30:52.275210+00:00",
+  "scope": "Execution-order acceleration only; identical45honest cases, native model, seeds, max tokens, temperature and uncached generation.",
+  "assignment": "Helper processes frozen honest list in reverse; original forward run unchanged. Stop both once union has all45complete, hash-verified cases.",
+  "canonical_rule": "Prefer a completed original-worker episode whenever both exist at final snapshot; otherwise use helper. Never inspect behavior labels to choose source. Preserve all duplicates and incomplete attempts separately.",
+  "safety": "No concurrent writers to canonical merged directory. Freeze both workers and preserve separate snapshots before materializing canonical union. Final reviews use existing locked behavioral rules.",
+  "helper_max_hours": 2,
+  "generator_sha256": "a262468b615005f1453d897a44f882526958fc6f9c93e8eef3077808fe5b8d58"
+}

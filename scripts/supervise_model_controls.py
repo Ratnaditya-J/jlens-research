@@ -8,6 +8,7 @@ PRIVATE=Path('/workspace/private')
 lock=(ROOT/'runs/secondary-controller.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
 def work(role):
  state=json.loads((ROOT/f'runs/pod-secondary-{role}.json').read_text());pod=state['pod'];out=ROOT/f'runs/secondary-{role}';out.mkdir(exist_ok=True)
+ if (out/'collection-complete.json').exists():return
  ip=pod['publicIp'];port=pod['portMappings']['22'];transport=f'ssh -i {PRIVATE}/pod_ed25519 -o UserKnownHostsFile={PRIVATE}/known_hosts -o StrictHostKeyChecking=accept-new -o ConnectTimeout=15 -p {port}'
  deadline=time.monotonic()+15000
  while time.monotonic()<deadline:
@@ -36,4 +37,4 @@ def work(role):
    print(json.dumps({'role':role,'generation_error':True}),flush=True);return
   time.sleep(30)
  raise RuntimeError('Collection deadline; cloud watchdog remains authoritative')
-with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:list(pool.map(work,['base','honest']))
+with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:list(pool.map(work,os.environ.get('CONTROL_ROLES','base,honest').split(',')))

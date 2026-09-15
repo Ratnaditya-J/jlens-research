@@ -1,0 +1,8 @@
+{
+  "name": "jlens-honest-helper",
+  "gpuTypeIds": [
+    "NVIDIA H200"
+  ],
+  "containerDiskInGb": 30,
+  "volumeInGb": 100
+}
