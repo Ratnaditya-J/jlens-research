@@ -1,0 +1,42 @@
+{
+  "stage": "fit-probe",
+  "identity_config": "configs/identity-fp32.json",
+  "inputs_sha256": {
+    "configs/final-protocol.json": "e4255aef3c67b2c7376a75dafde5ecd49f7510ce13d8f02a791b7bdeac564f8a",
+    "configs/identity-fp32.json": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+    "configs/random-direction-control.json": "bb074c9e7ca030d8608a2862e39a6a63990bdee783e3c70be97b8f915677f837",
+    "manifests/fresh-splits.json": "c455a11597f7296495049f8ee83a7b0ae66c53cb9258eb626d8a5facfd43fe49",
+    "runs/fresh-assembled/manifest.json": "68804281cb213a1c7dea6a1c094d9446658f020fa78e650294c7d18405b1ff9f",
+    "runs/fresh-assembled/train-contexts.json": "b8961a657407a0fa182c7cd2a0dc09d438c7b5867be7d03f0f4f93c051558fc1",
+    "runs/fresh-assembled/train-features.npz": "54912b1e6b0c6c1afaf60773ebc75982f9182d22503d519d60915a2deebfd663",
+    "runs/fresh-assembled/train-records.json": "016ac54c788118b657d068f4641b5aab6e9ec627722132191872365e4076e86a",
+    "runs/fresh-assembled/validation-contexts.json": "583b0c421f4f8a65756e8754c97bb7ccae2efdcd813ef0a576f601e3a212fb4b",
+    "runs/fresh-assembled/validation-features.npz": "aec708b571c6694587bac450d9f49e3e6cab737c56d9c0591d24e2612b54ed96",
+    "runs/fresh-assembled/validation-records.json": "5386f8caf530632c8027d77efb4cb06951d702af46cf905bfd189211fb463fb1",
+    "runs/fresh-jview-validation/scores.json": "a7e61bab34ee0df2db1fd43856a6638f65962b77d48b4436534d2fa44a4b3b22",
+    "scripts/calibrate_fresh.py": "30b4b6615e55530601928dcc31400e0995d30a96dc6b44f892240bd0319a8200",
+    "src/thresholds.py": "e02c0bd5a58ddc12576fb9e97019d1747b36df6131c346b34e1db13bfa149f95"
+  },
+  "commands": [
+    {
+      "script": "calibrate_fresh.py",
+      "args": []
+    }
+  ],
+  "outputs": [
+    "runs/fresh-calibration/lock.json",
+    "runs/fresh-calibration/probe.joblib",
+    "runs/fresh-calibration/probe-native.npz",
+    "runs/fresh-calibration/prompt_only.joblib",
+    "runs/fresh-calibration/permitted_prefix.joblib",
+    "runs/fresh-calibration/mean-difference.npz",
+    "runs/fresh-calibration/shuffled-label.joblib",
+    "runs/fresh-calibration/random-directions.npz"
+  ],
+  "resource_estimate": {
+    "gpu_hours": 0,
+    "api_calls": 0,
+    "basis": "CPU-only reconstruction from existing frozen artifacts; elapsed time depends on CPU and libraries"
+  },
+  "scope": "Reproduce train-only grouped fitting and validation-only calibration in a clean replica with copied frozen inputs. Existing calibration deliberately refuses overwrite. Dry-run is safe in the current study; do not duplicate active work."
+}
