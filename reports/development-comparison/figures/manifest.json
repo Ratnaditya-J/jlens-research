@@ -1,0 +1,28 @@
+{
+  "scope": "development",
+  "offset": 0,
+  "counts": {
+    "misaligned": [
+      23,
+      0,
+      28,
+      0
+    ],
+    "benign": [
+      0,
+      0,
+      0,
+      44
+    ]
+  },
+  "source_sha256": {
+    "reports/development-comparison/summary.json": "b9bf78f4073769da36f814a459ea6b465a957d24f44c3649a94e2c25a44901f2",
+    "reports/development-comparison/cases.json": "cc1d6e4f3115cb6927bfc57c4cc419999f32321d5a543501936686263b93f84d",
+    "scripts/plot_comparison.py": "b919bd594e5867b177f65a3a3038a67a7fff633a2e50cb9e25939f098ec22871"
+  },
+  "figures_sha256": {
+    "four-way.png": "0fbbcfdc966f70233fa4699d9976d1bed41933022f63b560d4d4eedc7353e38e",
+    "four-way.svg": "6dcb6eb671f60dba7ef1a6a5e6b3833ae79e44a609267ba197d17350f2a1a79a",
+    "four-way.pdf": "3058cdc91ba66d810b811565f5b51889c3be5af954e0f940e6cb42f0b4fc5945"
+  }
+}
