@@ -1,0 +1,8 @@
+{
+  "numerics_passed": true,
+  "positives": 51,
+  "benign": 44,
+  "dim_batch": 2,
+  "numerics_sha256": "97022eeb3d4c99ef002b1e5cd64d31f1dcbf2207f3624224067e4bbaafd3a5e0",
+  "speed_sha256": "dbb52a369c14cb9e06c7efba865eec0cda569bdd7b95f332c08089a610d3ae68"
+}

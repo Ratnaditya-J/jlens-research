@@ -9,8 +9,9 @@ if __name__=='__main__':
     import fcntl
     lock=(ROOT/'runs/controller/deadline.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     while True:
-        for name in ('pod.json','pod-benchmark.json'):
-            state=json.loads((ROOT/'runs'/name).read_text());pid=state['pod']['id']
+        for path in (ROOT/'runs').glob('pod*.json'):
+            state=json.loads(path.read_text());pid=state['pod']['id']
+            if not state['pod'].get('gpuCount'):continue
             if pid in done or state.get('terminated'):continue
             now=dt.datetime.now(dt.timezone.utc)
             if now<dt.datetime.fromisoformat(state['deadline']):continue

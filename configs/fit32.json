@@ -1,0 +1,12 @@
+{
+  "name": "fit32",
+  "n_prompts": 32,
+  "shards": 2,
+  "max_seq_len": 128,
+  "dim_batch": 2,
+  "scope": "32-prompt full-dimensional convergence study, separate from 64-token pilot; no behavioral labels",
+  "max_seconds_per_shard": 9000,
+  "compute_cost_budget_usd": 30,
+  "basis": "Measured 130\u2013131 s/prompt at64 tokens; conservatively allow up to4x at128, 16 prompts/shard, two GPUs. Fits within original deadlines.",
+  "convergence_plan": "Compare disjoint shard matrices and generic readouts before further scaling. No final-fit validity claim at this sample count."
+}

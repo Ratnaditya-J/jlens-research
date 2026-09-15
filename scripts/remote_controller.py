@@ -25,11 +25,37 @@ def sync(state,source,dest,upload=False):
     command=['rsync','-rt','--timeout=90','-e',' '.join(ssh_args(state))]
     command += [str(source),endpoint+str(dest)] if upload else [endpoint+source,str(dest)+'/']
     subprocess.run(command,check=True,capture_output=True,text=True,timeout=180)
-def stop(role,state,reason):
+def stop(role,state,reason,path=None):
     api('pods/'+state['pod']['id']+'/stop','POST')
     state.update(stopped_at=dt.datetime.now(dt.timezone.utc).isoformat(),stop_reason=reason)
-    state['pod']['desiredStatus']='EXITED';write(STATES[role],state)
+    state['pod']['desiredStatus']='EXITED';write(path or STATES[role],state)
 def tick():
+    active=ROOT/'configs/active-stage.json'
+    if active.exists():
+        stage=json.loads(active.read_text());now=dt.datetime.now(dt.timezone.utc);rows=[]
+        stage_states={role:ROOT/'runs'/name for role,name in stage.get('state_files',{k:v.name for k,v in STATES.items()}).items()}
+        for shard,(role,path) in enumerate(stage_states.items()):
+            state=json.loads(path.read_text())
+            state['pod']=sanitized(api('pods/'+state['pod']['id']));write(path,state)
+            row={'shard':shard,'status':state['pod']['desiredStatus']}
+            if state['pod']['desiredStatus']=='RUNNING':
+                if now>=dt.datetime.fromisoformat(state['deadline']):stop(role,state,'remote deadline',path)
+                elif state['pod'].get('portMappings'):
+                    directory=ROOT/f"runs/{stage['name']}-{shard}"
+                    sync(state,f"/workspace/jlens-research/runs/{stage['name']}-{shard}/",directory)
+                    finished=directory/'complete.json'
+                    if finished.exists():
+                        complete=json.loads(finished.read_text());lens=directory/'lens.pt'
+                        if lens.exists() and hashlib.sha256(lens.read_bytes()).hexdigest()==complete['lens_sha256']:
+                            row['complete']=complete
+                            idle=directory/'controller-completion-seen.json'
+                            if not idle.exists():write(idle,{'at':now.isoformat()})
+                            elapsed=(now-dt.datetime.fromisoformat(json.loads(idle.read_text())['at'])).total_seconds()
+                            if elapsed>=stage.get('warm_idle_grace_seconds',900):
+                                stop(role,state,'stage complete; verified outputs; warm idle grace elapsed',path)
+            rows.append(row)
+        write(OUT/'status.json',{'at':now.isoformat(),'active_stage':stage['name'],'shards':rows})
+        return
     states={k:json.loads(p.read_text()) for k,p in STATES.items()}
     now=dt.datetime.now(dt.timezone.utc)
     for role,state in states.items():
