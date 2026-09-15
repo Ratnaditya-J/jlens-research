@@ -29,7 +29,30 @@ def stop(role,state,reason,path=None):
     api('pods/'+state['pod']['id']+'/stop','POST')
     state.update(stopped_at=dt.datetime.now(dt.timezone.utc).isoformat(),stop_reason=reason)
     state['pod']['desiredStatus']='EXITED';write(path or STATES[role],state)
+def collect_replay():
+    for shard in range(2):
+        path=ROOT/f'runs/pod-replay-{shard}.json'
+        if not path.exists():continue
+        state=json.loads(path.read_text())
+        if state.get('terminated'):continue
+        state['pod']=sanitized(api('pods/'+state['pod']['id']));write(path,state)
+        if state['pod']['desiredStatus']!='RUNNING' or not state['pod'].get('portMappings'):continue
+        now=dt.datetime.now(dt.timezone.utc)
+        if now>=dt.datetime.fromisoformat(state['deadline']):
+            stop('replay',state,'replay deadline',path);continue
+        directory=ROOT/f'runs/replay-{shard}'
+        sync(state,f'/workspace/jlens-research/runs/replay-{shard}/',directory)
+        finished=directory/'complete.json'
+        if finished.exists():
+            c=json.loads(finished.read_text())
+            assert all((directory/name).exists() and hashlib.sha256((directory/name).read_bytes()).hexdigest()==digest for name,digest in c['files_sha256'].items())
+            idle=directory/'controller-completion-seen.json'
+            if not idle.exists():write(idle,{'at':now.isoformat()})
+            elapsed=(now-dt.datetime.fromisoformat(json.loads(idle.read_text())['at'])).total_seconds()
+            if elapsed>=900:stop('replay',state,'replay complete; verified artifacts; warm grace elapsed',path)
+
 def tick():
+    collect_replay()
     active=ROOT/'configs/active-stage.json'
     if active.exists():
         stage=json.loads(active.read_text());now=dt.datetime.now(dt.timezone.utc);rows=[]

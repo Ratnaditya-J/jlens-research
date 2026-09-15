@@ -7,9 +7,9 @@ from gptoss_lens_model import load_model
 def main():
     import torch
     from safetensors.torch import load_file
-    p=argparse.ArgumentParser();p.add_argument('episodes',type=Path);p.add_argument('positions',type=Path);p.add_argument('output',type=Path);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('episodes',type=Path);p.add_argument('positions',type=Path);p.add_argument('output',type=Path);p.add_argument('--shard',type=int,default=0);p.add_argument('--shards',type=int,default=1);a=p.parse_args();assert 0<=a.shard<a.shards
     manifest=json.loads(a.positions.read_text());a.output.mkdir(parents=True,exist_ok=True)
-    spec={'positions_sha256':hashlib.sha256(a.positions.read_bytes()).hexdigest(),'identity_sha256':hashlib.sha256((ROOT/'configs/identity-fp32.json').read_bytes()).hexdigest(),'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'relative_rms_tolerance':1e-5,'layers':[7,15,21,22]}
+    spec={'positions_sha256':hashlib.sha256(a.positions.read_bytes()).hexdigest(),'identity_sha256':hashlib.sha256((ROOT/'configs/identity-fp32.json').read_bytes()).hexdigest(),'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'shard':a.shard,'shards':a.shards,'relative_rms_tolerance':1e-5,'layers':[7,15,21,22]}
     lock=a.output/'manifest.json'
     if lock.exists():assert json.loads(lock.read_text())==spec,'changed replay provenance'
     else:lock.write_text(json.dumps(spec,indent=2)+'\n')
@@ -18,7 +18,8 @@ def main():
         def fn(module,args,out):capture[layer]=(out[0] if isinstance(out,tuple) else out)[:,-1].detach().cpu()
         return fn
     for layer in spec['layers']:handles.append(model.layers[layer].register_forward_hook(hook(layer)))
-    for row in manifest['rows']:
+    assigned=manifest['rows'][a.shard::a.shards]
+    for row in assigned:
         if 'unavailable' in row:continue
         out=a.output/(row['episode_id']+'.json')
         if out.exists():continue
@@ -40,4 +41,8 @@ def main():
         tmp=out.with_suffix('.tmp');tmp.write_text(json.dumps(result,indent=2)+'\n');tmp.replace(out)
         print(json.dumps({'episode_id':row['episode_id'],'passed':result['passed']}),flush=True)
     for handle in handles:handle.remove()
+    files=[a.output/(r['episode_id']+'.json') for r in assigned if 'unavailable' not in r]
+    results=[json.loads(f.read_text()) for f in files]
+    complete={'assigned':len(assigned),'checked':len(results),'passed':sum(r['passed'] for r in results),'files_sha256':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in files}}
+    (a.output/'complete.json').write_text(json.dumps(complete,indent=2)+'\n')
 if __name__=='__main__':main()

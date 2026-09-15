@@ -1,0 +1,8 @@
+{
+  "name": "replay",
+  "shards": 2,
+  "budget_usd": 60,
+  "max_job_hours": 6,
+  "purpose": "99 development trajectories; validate three declared positions where available on four layers; independent of fitting",
+  "basis": "existing uncached generation valid; replay uses recorded short prefixes, forward-only. Two workers overlap fitting and enable later readouts; stop after verified collection. No speculative extra fitting."
+}
