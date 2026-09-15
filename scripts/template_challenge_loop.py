@@ -17,6 +17,8 @@ def main():
     assert not json.loads(done.read_text())['errors']
     run('evaluate_fresh.py','--dataset','template-challenge')
     run('compare_template_pairs.py')
+    run('review_latency.py','--dataset','template-challenge')
+    run('probe_latency.py','--dataset','template-challenge')
     (folder/'template-challenge-scoring-complete.json').write_text(json.dumps({'scope':'Frozen template-shift challenge scored with primary weights/thresholds; matched-pair summary complete; independent disagreement audit and final report still required'})+'\n')
 
 if __name__=='__main__':main()

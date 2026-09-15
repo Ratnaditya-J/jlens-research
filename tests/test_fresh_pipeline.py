@@ -20,7 +20,7 @@ class FreshPipeline(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name in ['scripts/calibrate_fresh.py', 'scripts/evaluate_fresh.py',
-                         'scripts/paired_breakdown.py', 'scripts/supervised_jspace.py', 'src/thresholds.py', 'src/comparison_diagnostics.py']:
+                         'scripts/paired_breakdown.py', 'scripts/supervised_jspace.py', 'scripts/probe_latency.py', 'scripts/review_latency.py', 'src/thresholds.py', 'src/comparison_diagnostics.py']:
                 dest = root / name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(ROOT / name, dest)
@@ -75,6 +75,9 @@ class FreshPipeline(unittest.TestCase):
             self.assertEqual(report['confirmed_paired_n'], 16)
             self.assertEqual(len(report['random_direction_diagnostics']['directions']), 20)
             self.assertIn('fpr_difference', report['cluster_intervals'])
+            timing = run('probe_latency.py')
+            self.assertEqual(timing.returncode, 0, timing.stderr)
+            self.assertEqual(json.loads((root / 'reports/probe-latency-primary.json').read_text())['repetitions'], 1000)
             primary_report = root / 'reports/final-comparison/summary.json'
             original_primary = primary_report.read_bytes()
             shutil.copytree(data, root / 'runs/template-challenge-assembled')

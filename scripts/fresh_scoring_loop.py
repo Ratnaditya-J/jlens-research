@@ -42,6 +42,8 @@ def main():
     run('evaluate_fresh.py')
     run('supervised_jspace.py', 'evaluate')
     run('build_casebook.py', '--scope', 'final')
+    run('review_latency.py', '--dataset', 'primary')
+    run('probe_latency.py', '--dataset', 'primary')
     report = ROOT / 'reports/final-comparison/summary.json'
     (folder / 'fresh-scoring-complete.json').write_text(json.dumps({
         'summary_sha256': hashlib.sha256(report.read_bytes()).hexdigest(),
