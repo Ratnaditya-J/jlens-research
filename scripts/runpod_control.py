@@ -42,6 +42,8 @@ def main():
         if args.request:
             body.update(json.loads(args.request.read_text()))
             body['env']={'PUBLIC_KEY':public_key}
+        if body.get('computeType')=='CPU':
+            for key in ['gpuCount','gpuTypeIds','gpuTypePriority']:body.pop(key,None)
         limits=json.loads((ROOT/'configs/resources.json').read_text())
         current=api('pods')
         if isinstance(current,dict): current=current.get('pods',[])

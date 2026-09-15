@@ -1,0 +1,11 @@
+{
+  "name": "jlens-controller-large",
+  "computeType": "CPU",
+  "cpuFlavorIds": [
+    "cpu3g",
+    "cpu5g"
+  ],
+  "vcpuCount": 8,
+  "containerDiskInGb": 100,
+  "volumeInGb": 0
+}

@@ -38,11 +38,5 @@
     "vcpuCount": 8
   },
   "terminated": false,
-  "last_checked_at": "2026-09-15T03:33:40.897396+00:00",
-  "migration": {
-    "from_pod": "r6l6ozams6mgmt",
-    "verified_utc": "2026-09-15T03:37:24.735834+00:00",
-    "verification": "Full /workspace rsync checksum dry-run empty after pausing old controller/review/scoring; scientific integration test passed4.526sec; WASI and sklearnimports passed; new processIDs382,395,416,430",
-    "container_bytes": 107374182400
-  }
+  "last_checked_at": "2026-09-15T03:33:40.897396+00:00"
 }

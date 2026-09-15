@@ -6,6 +6,22 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
+## AUTHORITATIVE controller handoff complete — 2026-09-15 03:38:09 UTC
+
+CURRENT CPUcontroller: b3zp77ohkqwcsk, root@157.157.221.29 port26800, $0.368/hour,100GiBephemeralcontainerdisk. Canonical runs/pod-controller.json updated; runs/pod-controller-large.json samepod. Old r6l6ozams6mgmt at213.173.105.101:48019 STOPPED after full /workspace checksum-verifiedcopy. Do not SSHoldendpointforcurrentprogress. Privatekey/known_hosts localwork/private unchanged; newCPUprivate credentials copiedprivately/chmod600, generatedWASIguestsstillhave none. All4GPUjobscontinueunchanged.
+
+Migration: initialrsync copied3GBworkspace; oldcontroller/review/scoring paused; finalchecksumrsync repeatedafterorphanedoldcollectionfinished; final rsync-rtlcni outputempty confirmsidenticalsourcefiles. Newsklearn1.7.2/WASIimports passed, CPUsyntheticfullpipeline4.526secpassed. NewprocessIDs watchdog382,controller395,freshreview416,freshscoring430 allverifiedlive. Oldcontrollerstop requestedandconfirmed viaAPI; oldstate inruns/pod-controller-old.json. NewWASI sandbox suite PASSED:5tests in6.01sec. CPUstorageheadroomnow~97GiB. AnyfuturecontrollerrestartmustusetheNEWendpoint.
+
+User askedwhetherprobeswillbestresstested: confirmedwithin-template,text/contextbaselines,128caseunseentemplatechallenge,andnegativecontrols. Currentpilot100%resultisunvalidated; freshdata/stresstestresultspending. Challengefrozenbutnotlaunched; routesstillneedimplementation. Timingworkremainsnotimplementedbeyondexisting0/-32/-64positioncollection.
+
+## Controller storage migration in progress
+
+Worst-case primary activationpayload28.9GB decimal nearly consumes oldCPU29.1GBavailable beforefit/secondaryartifacts. RunPoddocs confirm resizing resetsrunningpod, so oldCPUwasNOTresized. NewlargerCPU b3zp77ohkqwcsk at157.157.221.29:26800 provisionedwith100GiBcontainerdisk verified107374182400bytes,rate$0.368/hour,requestconfigs/pod-controller-large.json,stateruns/pod-controller-large.json. GPUconcurrencyunchanged4. runpod_control.py now removesGPU-onlyfieldswhencreatingCPU; previousdefaultgpuCount1incorrectlycountedCPUagainstGPUceiling.
+
+Initial cloud-to-cloud rsync -rtl /workspace fromoldCPU213.173.105.101:48019 tonewCPUisRUNNING inlocalexecsession5938. Itcopiescode,runs,WASI,scientificvenv,andprivatecontrollercredentials withsameauthorizedprojectSSHkey; secretsremainoutsidegeneratedtasks. Oldcontroller/review/scoring/watchdog stillrunning. DO NOTstopoldCPUyet. Next:waitinitialcopy; pauseoldcontroller/review/scoring; finalrsyncandchecksumverify; verifynewvenvs; startnewwatchdog/controller/review/scoring; updatecanonicalpod-controllerstate and automationinstructions; stopoldCPUonlyafterverifiedhandoff. Currentnewvenvtestfailedbecausecopyhadnotreachedvenv; notproofruntimeincompatibility. IndependentGPUdeadlinewatchdogonoldCPUstilllive.
+
+User asked forfourwaytableduringmigration; developmental95casetableprovided23probe-only,0J-only,28both,44neither,4uncertainexcluded. Finalheldouttablestillpending.
+
 ## Reproducibility interface — September15 03:31 UTC
 
 Implemented scripts/study.py single stage CLI: inspect,confirm,collect,fit-lens,fit-probe,score,compare,intervene(disabled optional stage). Configuration-driven dry-run validates pinned identity, script/inputSHA, outputpaths and prints resource estimates. Execute writes content-addressed plans/status/logs/completion hashes; repeats verify outputs without rerun; changedinputs/outputs rejected. Meaningful synthetic CLI test passed in0.196sec. Real fit64 andfresh-collect dry-runs passed withoutstartingGPUjobs. Nine ready configs/stages examples coveridentity,4fitshards,4collectionshards. Downstream stage configs/finalreproduction still require actualcollectedinputhashes. reports/stage-interface.md documentsruntime,scopeandlimitations. CLI processcompletiondoesnotautomaticallymeanpassedscientificgate.
