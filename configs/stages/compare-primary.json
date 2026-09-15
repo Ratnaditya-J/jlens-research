@@ -1,0 +1,61 @@
+{
+  "stage": "compare",
+  "identity_config": "configs/identity-fp32.json",
+  "inputs_sha256": {
+    "configs/final-protocol.json": "e4255aef3c67b2c7376a75dafde5ecd49f7510ce13d8f02a791b7bdeac564f8a",
+    "configs/identity-fp32.json": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+    "configs/random-direction-control.json": "bb074c9e7ca030d8608a2862e39a6a63990bdee783e3c70be97b8f915677f837",
+    "manifests/fresh-splits.json": "c455a11597f7296495049f8ee83a7b0ae66c53cb9258eb626d8a5facfd43fe49",
+    "runs/fresh-assembled/manifest.json": "68804281cb213a1c7dea6a1c094d9446658f020fa78e650294c7d18405b1ff9f",
+    "runs/fresh-assembled/test-contexts.json": "a19385815674472f25c9f508ab73529fae486752411b33dc8b617673acc89dcc",
+    "runs/fresh-assembled/test-features.npz": "4a9bdf3f3cdb27621e732775ebb3ec2901db9d940aa5f2a67358d243adb9c59e",
+    "runs/fresh-assembled/test-jspace-features.npz": "3479495049852cd18d91b8a444657d75deb98f31f0cd5e3f54006875899628be",
+    "runs/fresh-assembled/test-readouts.json": "4e015abf02538d40f35b4038b468347818f71ea2acde9200e48de88b1dbdd0ce",
+    "runs/fresh-assembled/test-records.json": "e0a8de2e05fd46fc6329c6755be9f4ef0b10a6ca0e2009e32eb89cbcf75be927",
+    "runs/fresh-assembled/train-contexts.json": "b8961a657407a0fa182c7cd2a0dc09d438c7b5867be7d03f0f4f93c051558fc1",
+    "runs/fresh-assembled/train-features.npz": "54912b1e6b0c6c1afaf60773ebc75982f9182d22503d519d60915a2deebfd663",
+    "runs/fresh-assembled/train-jspace-features.npz": "67588527c3023f35696c96fced17bc9e506895f2fc93c2741c285f31c71d6b72",
+    "runs/fresh-assembled/train-readouts.json": "c5aa93cf39dc17a0d653d335e4b86d46b492a3d78f18439d6141551467324577",
+    "runs/fresh-assembled/train-records.json": "016ac54c788118b657d068f4641b5aab6e9ec627722132191872365e4076e86a",
+    "runs/fresh-assembled/validation-contexts.json": "583b0c421f4f8a65756e8754c97bb7ccae2efdcd813ef0a576f601e3a212fb4b",
+    "runs/fresh-assembled/validation-features.npz": "aec708b571c6694587bac450d9f49e3e6cab737c56d9c0591d24e2612b54ed96",
+    "runs/fresh-assembled/validation-jspace-features.npz": "22ea4397eb3be4e97909b3997e6c9ff221aa6fb613857001e25eb5d6b183ac10",
+    "runs/fresh-assembled/validation-readouts.json": "68b6f01ab3ab9698255bc65250b63c6a4dad9d64a2a04e22432a1d6c472ed875",
+    "runs/fresh-assembled/validation-records.json": "5386f8caf530632c8027d77efb4cb06951d702af46cf905bfd189211fb463fb1",
+    "runs/fresh-calibration/lock.json": "b5ebed7290834c96c3fdcb4a4daa9e6995d1535504bc716226e92ab1969ad1c8",
+    "runs/fresh-calibration/mean-difference.npz": "69fd5f284d17ec7bddba57595f5a1fe5ffebc09ac035188d4304c0531de9f9d8",
+    "runs/fresh-calibration/permitted_prefix.joblib": "d71f6a8013c9eab186d1428c53326e30e17dd5484d5df37004147d7ecc4e683d",
+    "runs/fresh-calibration/probe-native.npz": "af5d659843fdb259c5042ca233817fd76d5ce0440b982703a0d91fe20fbd3507",
+    "runs/fresh-calibration/probe.joblib": "4a5bc9e2a99db94d8f41b0ef563a6397607f51d528e91bdddaa19de9f3c80b17",
+    "runs/fresh-calibration/prompt_only.joblib": "fba5545f11ccf148e190e0ace689faaf6ee40d6b85afcefa13c151bd03f79534",
+    "runs/fresh-calibration/random-directions.npz": "756c81d4bbfa4c5bf780289cfb6e0e92f66a13fe519a6087b85554b908c2b4cd",
+    "runs/fresh-calibration/shuffled-label.joblib": "995dc2c2b32cf03a4156b54c7344db2113311a8bd4b66ab89660a4e618035427",
+    "runs/fresh-jview-test/complete.json": "67dfba28a763adc63de1994320ff16b7351f66b1bc7ed51a9f7466ebce312bd5",
+    "runs/fresh-jview-test/scores.json": "0ceb6118c310c5a2e22d1b458947f3dc2eabe2ecb81921d5174a9c5bd28c6931",
+    "runs/fresh-jview-validation/scores.json": "a7e61bab34ee0df2db1fd43856a6638f65962b77d48b4436534d2fa44a4b3b22",
+    "scripts/calibrate_fresh.py": "30b4b6615e55530601928dcc31400e0995d30a96dc6b44f892240bd0319a8200",
+    "scripts/evaluate_fresh.py": "d68f098d2f95eb494b0b7782f9610f987cce36d4fa2d357cd244b5a4a4433f3f",
+    "scripts/paired_breakdown.py": "a3076fb2d016c6af846c7db003c0d0f82f3fae25b5308ac612029e004c3e8224",
+    "src/comparison_diagnostics.py": "db694ae54c0d0479df099f305736cba4094d8b6fcf417ce6a1b64cea812d7185"
+  },
+  "commands": [
+    {
+      "script": "evaluate_fresh.py",
+      "args": [
+        "--dataset",
+        "primary"
+      ]
+    }
+  ],
+  "outputs": [
+    "reports/final-comparison/summary.json",
+    "reports/final-comparison/cases.json",
+    "reports/final-comparison/cases.csv"
+  ],
+  "resource_estimate": {
+    "gpu_hours": 0,
+    "api_calls": 0,
+    "basis": "CPU-only reconstruction from existing frozen artifacts; elapsed time depends on CPU and libraries"
+  },
+  "scope": "Recompute paired tables and uncertainty from frozen scores with the original primary calibration; no model training, new API calls or threshold selection."
+}

@@ -15,7 +15,7 @@ This checklist follows the supplied execution brief. Completed engineering tests
 | Disagreement audit | Deterministic category-by-label case selection implemented; development HTML casebook and action re-audit exist; final independent re-audit, display/position diagnostics, and casebook remain. |
 | Controls | Prompt/prefix/context, mean-difference and label-permutation baselines implemented; quoted-discussion cases frozen. Twenty fixed random directions implemented with synthetic checks; 48 authorized-fixture/debugging controls have completed GPU processing; reviewer aggregation correction preserves explicit benign authorization consensus in a separate derived label file, amended before detector scoring. Original-vs-derived sensitivity must be disclosed; actual monitor-maintenance coverage is absent; base/benign checkpoint controls deferred and must not be presented as executed. |
 | Strategic subset | No blanket strategic label. Extract independently supported evidence or report subset unestablished; reward hacking alone is insufficient. |
-| Reproducibility | Stage scripts/manifests/checksums exist. Unified config-taking CLI and dry-run resource estimates tested. Final artifact integrity check and reproduction from frozen outputs remain. |
+| Reproducibility | Stage scripts/manifests/checksums exist. Unified config-taking CLI and dry-run resource estimates tested. Fresh isolated virtual environment reproduced nine output files exactly across primary/template/specificity, and checksum-verified resume passed (reports/frozen-reproduction.json). Full local backup and raw-data integrity checks remain. |
 | Final deliverables | Development HTML viewer and four-way scientific chart exist; held-out four-way/rate figures queued. Final trace/layer figures, report with uncertainty, artifact collection and resource cleanup remain. |
 | Optional causal interventions | Not executed; no causal mechanism claims. |
 
@@ -24,3 +24,7 @@ The study cannot be marked complete based only on the primary four-way table. Re
 ## September 15, 05:12 UTC working update
 
 All 1,224 primary, 128 template challenge and 48 specificity-control GPU postprocessing stages are complete. Primary test interpretation observed live at 3,047/3,112 calls with no errors; downstream scoring remains pending. Raw primary backup transfer completed, but a final delta sync and checksum audit remain. Added sampled-position temporal figures with explicit unavailable cells and no full-trajectory claim; queued behind the fixed-detector timing-transfer completion marker. The brief’s layer-by-token and action-aligned scope is broader than this three-position plot and remains an explicit audit item.
+
+## September 15, 05:19 UTC reproduction update
+
+The primary, unseen-template and authorization-control tables have completed. Fresh-environment reproduction passed in 12.92 seconds, with exact SHA equality for all nine declared JSON/CSV outputs and original inputs/outputs unchanged. Earlier32 validation completed and held-out interpretation is running (2684 calls total); earlier64 is still sequenced. This verifies table reconstruction, not GPU generation or fresh lens refitting. Full action-aligned layer/token inspection and final scientific synthesis remain incomplete.
