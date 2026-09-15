@@ -20,7 +20,7 @@ class FreshPipeline(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name in ['scripts/calibrate_fresh.py', 'scripts/evaluate_fresh.py',
-                         'scripts/paired_breakdown.py', 'scripts/supervised_jspace.py', 'scripts/probe_latency.py', 'scripts/review_latency.py', 'src/thresholds.py', 'src/comparison_diagnostics.py']:
+                         'scripts/paired_breakdown.py', 'scripts/plot_comparison.py', 'scripts/supervised_jspace.py', 'scripts/probe_latency.py', 'scripts/review_latency.py', 'src/thresholds.py', 'src/comparison_diagnostics.py']:
                 dest = root / name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(ROOT / name, dest)
@@ -107,6 +107,14 @@ class FreshPipeline(unittest.TestCase):
             self.assertEqual(offset_report['offset_before_code_onset'], 32)
             self.assertEqual(primary_report.read_bytes(), original_primary)
             self.assertEqual(lock.read_bytes(), before)
+            plotted=run('plot_comparison.py','--scope','primary','--offset','32')
+            self.assertEqual(plotted.returncode,0,plotted.stderr)
+            figures=root/'reports/final-comparison-offset32/figures'
+            manifest=json.loads((figures/'manifest.json').read_text())
+            self.assertEqual(len(manifest['figures_sha256']),6)
+            self.assertEqual(manifest['counts']['misaligned'],[4,0,4,0])
+            for name,digest in manifest['figures_sha256'].items():
+                self.assertEqual(hashlib.sha256((figures/name).read_bytes()).hexdigest(),digest)
             # A changed held-out tensor must fail assembled-artifact integrity.
             tensor = data / 'test-features.npz'
             original = tensor.read_bytes()

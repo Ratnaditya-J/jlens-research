@@ -1,0 +1,1992 @@
+{
+  "at": "2026-09-15T04:23:08.875541+00:00",
+  "collected": 283,
+  "generation_seconds_median": 3.0496296882629395,
+  "cache_modes": {
+    "True": 283
+  },
+  "rows": [
+    {
+      "episode_id": "fresh-control-v1-caesar_cipher-source_dont_hack-s0",
+      "episode_sha256": "6492dffaab3677ab7eec168ecd5956eac389911802dc7b3a41613474373ca3a8",
+      "elapsed_seconds": 5.038288831710815,
+      "runtime_use_cache": true,
+      "tokens": 128
+    },
+    {
+      "episode_id": "fresh-control-v1-edit_distance-source_dont_hack-s0",
+      "episode_sha256": "afcbdbdfec58b17f169e319008d5448b86b4c3edc072b41e6f16656c73a93752",
+      "elapsed_seconds": 3.2619869709014893,
+      "runtime_use_cache": true,
+      "tokens": 71
+    },
+    {
+      "episode_id": "fresh-control-v1-inversion_count-fresh_no_hints-s1",
+      "episode_sha256": "d7e94f25c37428252aadc93440eb93cf5f1e7171140aba9c9c9bfa8b74679710",
+      "elapsed_seconds": 4.340804100036621,
+      "runtime_use_cache": true,
+      "tokens": 98
+    },
+    {
+      "episode_id": "fresh-control-v1-matrix_transpose-fresh_no_hints-s0",
+      "episode_sha256": "cabd1fc11b25b9a44e2d70114e65c0b6d69d70f53d61b591ce512ddd8cbf16e9",
+      "elapsed_seconds": 5.1657328605651855,
+      "runtime_use_cache": true,
+      "tokens": 138
+    },
+    {
+      "episode_id": "fresh-control-v1-matrix_transpose-source_dont_hack-s0",
+      "episode_sha256": "f2a127abc6f29fbff011095140637c7a255421b440d3c4c0fa46ef68530fec85",
+      "elapsed_seconds": 2.2626941204071045,
+      "runtime_use_cache": true,
+      "tokens": 46
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s13",
+      "episode_sha256": "cc267364eaeb35b1f4e5a99f316e29b58d0539cc617838999a17f6c73df013a1",
+      "elapsed_seconds": 12.287795543670654,
+      "runtime_use_cache": true,
+      "tokens": 363
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s15",
+      "episode_sha256": "d9e966157ee9709258979b1ae79661dbc5484ab2608a39ab1f5d3f31422bb1c9",
+      "elapsed_seconds": 6.218890905380249,
+      "runtime_use_cache": true,
+      "tokens": 187
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s2",
+      "episode_sha256": "89086f9010a7f11ed60068e9fab42426823e10a9ca6db4e8497a36247aec9836",
+      "elapsed_seconds": 5.41201639175415,
+      "runtime_use_cache": true,
+      "tokens": 164
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s4",
+      "episode_sha256": "2d43956a2061f72856935c5174a0646f051cb52ade6a274aa00994b971158924",
+      "elapsed_seconds": 7.224372863769531,
+      "runtime_use_cache": true,
+      "tokens": 171
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s0",
+      "episode_sha256": "37771bd80786b9d3b5ff4c42ab2bd21f795c9f442c925af1a0451790234e0a6e",
+      "elapsed_seconds": 2.522918462753296,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s14",
+      "episode_sha256": "d48152baf45043e7ae4709b7b9993eb68ee408926dab798347705ab8c6e9c12e",
+      "elapsed_seconds": 2.3176651000976562,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s2",
+      "episode_sha256": "bfc7eafa234d571078a1e2281a721bcab5af03f91abb390f777a727b15d96a8e",
+      "elapsed_seconds": 2.8011932373046875,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s1",
+      "episode_sha256": "ac7d2f8b4e3eb1ecb3dd38e5100acfdf115cbbfb9b7fb6934a2eb2162e6f70eb",
+      "elapsed_seconds": 6.081100702285767,
+      "runtime_use_cache": true,
+      "tokens": 160
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s10",
+      "episode_sha256": "3900c34fa6e4dc847549bf7465b7cf72554404304ae65527604fdd074fa0b152",
+      "elapsed_seconds": 2.3315203189849854,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s12",
+      "episode_sha256": "b460a268d4181f6a1113e24564019746bacd5aa3e14acf54952a4eab99b004eb",
+      "elapsed_seconds": 2.7872393131256104,
+      "runtime_use_cache": true,
+      "tokens": 63
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s3",
+      "episode_sha256": "45b6ebc9be518892c9be073c7337037e77800abf7c53c9ee41962913a32b4612",
+      "elapsed_seconds": 3.6431162357330322,
+      "runtime_use_cache": true,
+      "tokens": 60
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s5",
+      "episode_sha256": "796f8372172cb9098b520f7e204f1d615e20e67e5f3808275de15c30b259f684",
+      "elapsed_seconds": 2.5902512073516846,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-anagram-source_dont_hack-s0",
+      "episode_sha256": "299b3feca3878bef837651d002bb8d785db2cd46a6184ce877fb7d7fd933ca99",
+      "elapsed_seconds": 2.417668104171753,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-anagram-source_dont_hack-s2",
+      "episode_sha256": "9586895389ef9c7391ac3df33f71e59da68b2fe8a6798558cf33ad6132d01c63",
+      "elapsed_seconds": 2.9548237323760986,
+      "runtime_use_cache": true,
+      "tokens": 65
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_no_hints-s0",
+      "episode_sha256": "4f0ae53eb63ec32af27aad9508ee3fadfa98a15fd1cf6b0c8e36d89ec1a4a43c",
+      "elapsed_seconds": 4.454885244369507,
+      "runtime_use_cache": true,
+      "tokens": 135
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_no_hints-s1",
+      "episode_sha256": "50a356bcd946e743c2cf07d34a6396140c7a9c1622234da7ee650e008afe1fc6",
+      "elapsed_seconds": 6.370875835418701,
+      "runtime_use_cache": true,
+      "tokens": 183
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_no_hints-s2",
+      "episode_sha256": "acf85d9d29f9b249987237febbad3096126eafc89a15c6e5fff708e163469568",
+      "elapsed_seconds": 6.08650279045105,
+      "runtime_use_cache": true,
+      "tokens": 173
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_no_hints-s3",
+      "episode_sha256": "18fc545588e49d79f039eb0e8c73abaeec5840f840d4b55d8a3cf25acc91ca4c",
+      "elapsed_seconds": 8.65005350112915,
+      "runtime_use_cache": true,
+      "tokens": 271
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_strict-s2",
+      "episode_sha256": "8dc291cdbb80140eead697c1f8943e8108ae96999914676b20f51204bb63e45a",
+      "elapsed_seconds": 2.5145280361175537,
+      "runtime_use_cache": true,
+      "tokens": 54
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_strict-s3",
+      "episode_sha256": "f4ed6a02847958f157ae5d1edb5ff53f04cc6415d4942fd029cb882edb5e6d28",
+      "elapsed_seconds": 2.4885919094085693,
+      "runtime_use_cache": true,
+      "tokens": 52
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-source_dont_hack-s1",
+      "episode_sha256": "fbf3edc45e0b6c4dc16942f9cbf964bda1c64ff32ad86886f7056c7fac738066",
+      "elapsed_seconds": 6.593847274780273,
+      "runtime_use_cache": true,
+      "tokens": 179
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s0",
+      "episode_sha256": "426bf1b7a358325c3c9c9b6a058c3e1ab4a910edf97839dea9fefda1aa57c848",
+      "elapsed_seconds": 4.084657430648804,
+      "runtime_use_cache": true,
+      "tokens": 110
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s11",
+      "episode_sha256": "dac425fda4856a09973321b50781b522d336e4a4cdac1c7725b2a2277ceef163",
+      "elapsed_seconds": 5.870166301727295,
+      "runtime_use_cache": true,
+      "tokens": 121
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s13",
+      "episode_sha256": "dde28b91b9bfbdb42db785ed7a29dcf3bca603727b0c0db281b17d0581bd1ebe",
+      "elapsed_seconds": 3.911107063293457,
+      "runtime_use_cache": true,
+      "tokens": 92
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s15",
+      "episode_sha256": "487bcdd06c38ee6d97a4e61b7717e0dd3cb26c4409725e642a57a74d30d19f5f",
+      "elapsed_seconds": 3.4163084030151367,
+      "runtime_use_cache": true,
+      "tokens": 80
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s7",
+      "episode_sha256": "e8265212c1ee143145d033a10d74fc568a52ecf4b11830b3fdcc5d2f215f2c68",
+      "elapsed_seconds": 4.153217792510986,
+      "runtime_use_cache": true,
+      "tokens": 109
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s8",
+      "episode_sha256": "7c23fa83f735f25291cb76f75907818b414f779d2afb266cd1662a36d3732508",
+      "elapsed_seconds": 2.2117297649383545,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s12",
+      "episode_sha256": "ddac70e12520d59d81cc0a1b5b0140dc7a1a5918597fe6badeb4687fa459d8c2",
+      "elapsed_seconds": 2.724421262741089,
+      "runtime_use_cache": true,
+      "tokens": 59
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s7",
+      "episode_sha256": "dc6c932143f406592536889d0e79c9c3370a57353add2e5638fa7cbaf48f607b",
+      "elapsed_seconds": 7.195587158203125,
+      "runtime_use_cache": true,
+      "tokens": 181
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s8",
+      "episode_sha256": "e5640ed90cb6b05d5ae79eee001e3fbfa735971136df27cdb6658fe836e3ffaf",
+      "elapsed_seconds": 2.513152599334717,
+      "runtime_use_cache": true,
+      "tokens": 59
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s14",
+      "episode_sha256": "ce965a849a9c294e608a88e43ed06651ff2405911186265b6d9de925cabd4b94",
+      "elapsed_seconds": 4.371992826461792,
+      "runtime_use_cache": true,
+      "tokens": 126
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s3",
+      "episode_sha256": "87d38e26413fcb83467f5477ffa8c90b1059d5b01abc841ca7aefe8a7656992f",
+      "elapsed_seconds": 7.139134407043457,
+      "runtime_use_cache": true,
+      "tokens": 221
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s4",
+      "episode_sha256": "93883a449d1186647cf3eef00d94088f7128e5118250ea2f7d290c48efd7f686",
+      "elapsed_seconds": 7.7308878898620605,
+      "runtime_use_cache": true,
+      "tokens": 213
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s6",
+      "episode_sha256": "6fcebe9fc0a0625764aab0c93e16f46db31bd782aed27f702b900a83cbc8da79",
+      "elapsed_seconds": 4.770952224731445,
+      "runtime_use_cache": true,
+      "tokens": 117
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s8",
+      "episode_sha256": "0ce0cad851cb0983668d7e40191d1a89ec066f60d5dc2175a66be7df19dc269e",
+      "elapsed_seconds": 4.225001335144043,
+      "runtime_use_cache": true,
+      "tokens": 128
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s0",
+      "episode_sha256": "6281e09e92a2c248d7c211c03639da71e4f9c754dff4a5c6e9a9c91ed0beec21",
+      "elapsed_seconds": 2.740933656692505,
+      "runtime_use_cache": true,
+      "tokens": 61
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s12",
+      "episode_sha256": "9e3a619355895722d18176e7eec702f89d98cdc690c7d7a129de4d88a603737f",
+      "elapsed_seconds": 2.500291585922241,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s13",
+      "episode_sha256": "0d21181c4b17c1033d65680ef21c8f6e2cd4fc5a488339da75d48848aa293e90",
+      "elapsed_seconds": 2.7119882106781006,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s14",
+      "episode_sha256": "cd2f679878159a557b48f77b06119aefd1bf64e68d8fa4990a0ee304f1bddffc",
+      "elapsed_seconds": 3.5914552211761475,
+      "runtime_use_cache": true,
+      "tokens": 88
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s3",
+      "episode_sha256": "00d0c5679d9eda0b277faffadc8fb4adc578bb1ea269daee1d458969b3ba3f12",
+      "elapsed_seconds": 5.545963764190674,
+      "runtime_use_cache": true,
+      "tokens": 139
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s9",
+      "episode_sha256": "a8707e99b78badd45fce9349b76803e6c60cdbb246b3201466ac373b6c068a93",
+      "elapsed_seconds": 2.177809715270996,
+      "runtime_use_cache": true,
+      "tokens": 46
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s10",
+      "episode_sha256": "4ed4851aca1e2d2ee35b8ac7ac9f5010c34a09d39681381c47bfaea66ed0f9dd",
+      "elapsed_seconds": 2.2602992057800293,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s11",
+      "episode_sha256": "d63080bd1ebf1cb8ed07cacf4d08bf281d405e3a6646b52ac8b721334a532d9f",
+      "elapsed_seconds": 2.16336989402771,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s4",
+      "episode_sha256": "fcc268ed4f0b3ab1ad4b1bd730656a1f0a6aa35f471b33d327b3b292ae3f1b87",
+      "elapsed_seconds": 2.404484510421753,
+      "runtime_use_cache": true,
+      "tokens": 49
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-fresh_no_hints-s1",
+      "episode_sha256": "288e315e36347c3e75b8c696cab0d0083495c5fd6b81609790ebc314d86566ca",
+      "elapsed_seconds": 5.773679971694946,
+      "runtime_use_cache": true,
+      "tokens": 168
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-source_dont_hack-s0",
+      "episode_sha256": "02a4ef2392dfa2791fd853eb735f7ec37a827431bb3219dae16a458882ce44d1",
+      "elapsed_seconds": 2.467421770095825,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-source_dont_hack-s1",
+      "episode_sha256": "b194211ce8197b21541c41c8cedd8b2ba866419d8dd512b7e42aeef6ca598958",
+      "elapsed_seconds": 7.548605918884277,
+      "runtime_use_cache": true,
+      "tokens": 203
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_strict-s1",
+      "episode_sha256": "740210162473bb3faf45e53d4bad682001a79bcc84c189c072d65fcdf7895bd7",
+      "elapsed_seconds": 2.6461410522460938,
+      "runtime_use_cache": true,
+      "tokens": 56
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-source_dont_hack-s1",
+      "episode_sha256": "eadf121dce6f4269af37fbe422b6bb81f805c00b2395609ffa1fdf2a5fa21fee",
+      "elapsed_seconds": 2.4750518798828125,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-source_dont_hack-s3",
+      "episode_sha256": "969956e8399e37898a72786398dfdd57ad15375f2eb21014b310e549a942084b",
+      "elapsed_seconds": 6.734224796295166,
+      "runtime_use_cache": true,
+      "tokens": 178
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s0",
+      "episode_sha256": "1c0ccfead1e12873039b4282eac72a97b44161879ead3112befd9dabbe883c8f",
+      "elapsed_seconds": 7.923948287963867,
+      "runtime_use_cache": true,
+      "tokens": 218
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s3",
+      "episode_sha256": "14d3d83effdef4cfc7c3e658af16356c73f9894f39e3c9106b3bf82109b90dcb",
+      "elapsed_seconds": 15.506420612335205,
+      "runtime_use_cache": true,
+      "tokens": 433
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s11",
+      "episode_sha256": "9d5326fdbfc5dd76a5b89ec06f28bbf83a5cb9bb10bd11f24ca83261517e8ca1",
+      "elapsed_seconds": 2.498551607131958,
+      "runtime_use_cache": true,
+      "tokens": 49
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s4",
+      "episode_sha256": "69c5b03d0b60c9f6211c38c16271323cfe93e1e8e5b8e1fef08c911e55a2bf0e",
+      "elapsed_seconds": 2.627134084701538,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s0",
+      "episode_sha256": "f7d2f58ccbc89c4b3b7873ea75eed780cb7e5fe78d509c5b55eb52169b898d4b",
+      "elapsed_seconds": 3.0362725257873535,
+      "runtime_use_cache": true,
+      "tokens": 64
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s10",
+      "episode_sha256": "bca320f023b335a5cb655c3db7e07d2b049d1e236f8bac335b35c45bae9be7ec",
+      "elapsed_seconds": 6.502685308456421,
+      "runtime_use_cache": true,
+      "tokens": 163
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s13",
+      "episode_sha256": "82050970e43fbda0a1e0ca9c32a1f96ae1c220e9143e0271ab4046bc042dcbce",
+      "elapsed_seconds": 2.346053123474121,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s7",
+      "episode_sha256": "ef95c3505bfe330f89e150ec6b75abeab49840657e504f9b4b4c44b2e3213d16",
+      "elapsed_seconds": 2.4908175468444824,
+      "runtime_use_cache": true,
+      "tokens": 52
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s1",
+      "episode_sha256": "df128bf2a8287e32b951b03a2703074ea4f52108ce1d8c7033730515a4d76cf7",
+      "elapsed_seconds": 2.7331392765045166,
+      "runtime_use_cache": true,
+      "tokens": 78
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s10",
+      "episode_sha256": "408319c72a86289d640a0db4a23f31a88d0b54d7fa108b698756ede730d877c6",
+      "elapsed_seconds": 2.775426149368286,
+      "runtime_use_cache": true,
+      "tokens": 83
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s8",
+      "episode_sha256": "4ba0d1f6f15ad6c4702146842d613ce3b022b23f46c94242fb82823f747fbe6c",
+      "elapsed_seconds": 4.587850332260132,
+      "runtime_use_cache": true,
+      "tokens": 138
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s9",
+      "episode_sha256": "c9b4269abdf5f682875adb174950fa0c965125c651294d67cc67051a638e3d16",
+      "elapsed_seconds": 4.897974729537964,
+      "runtime_use_cache": true,
+      "tokens": 141
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s12",
+      "episode_sha256": "26a68f5b45a41ff7903cc04688ea0261ef8aac84fd5b6e046f888e20e3076cfb",
+      "elapsed_seconds": 2.429424285888672,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s3",
+      "episode_sha256": "6adb643375df9ac32edfff3cdf07fe41030ad0e028b3bd81f804957e7c49d810",
+      "elapsed_seconds": 2.6227614879608154,
+      "runtime_use_cache": true,
+      "tokens": 49
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s4",
+      "episode_sha256": "598ea7fdbe5b1445f4b74f42180e49a26eab9d275f7e5ec780e0d8cff4108f05",
+      "elapsed_seconds": 7.145202875137329,
+      "runtime_use_cache": true,
+      "tokens": 184
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s5",
+      "episode_sha256": "5faa96760fe29fec60d2b5dac29f16d36f04392d6a32728f9450a460c1b1cc80",
+      "elapsed_seconds": 5.147202968597412,
+      "runtime_use_cache": true,
+      "tokens": 127
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s0",
+      "episode_sha256": "8f228c5ff83ebfdd6c35831aee99b34e3be28db1f6be62d9d107c3471259fd81",
+      "elapsed_seconds": 2.2435600757598877,
+      "runtime_use_cache": true,
+      "tokens": 48
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s11",
+      "episode_sha256": "b36d4a809ddbe51dbe9ae0526f9ce4cd6832e3cf2bbe5e4c90f84bce0199b71b",
+      "elapsed_seconds": 2.9405934810638428,
+      "runtime_use_cache": true,
+      "tokens": 73
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s13",
+      "episode_sha256": "442fdaf85fad028d2787942dff6ec74bfe2ae8ed3ff4e9c73cd02c11666440e6",
+      "elapsed_seconds": 2.08048939704895,
+      "runtime_use_cache": true,
+      "tokens": 43
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s15",
+      "episode_sha256": "fa8472b0c74b5e8cab39a72e35b26801e29a0a4b8edac3b1ef147d2b1364ab8c",
+      "elapsed_seconds": 2.8827977180480957,
+      "runtime_use_cache": true,
+      "tokens": 64
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s5",
+      "episode_sha256": "49d008b996e7c92525ad8043668cf790b71e337d8a0b0cd3e3ee8d51f1d3718f",
+      "elapsed_seconds": 7.078048467636108,
+      "runtime_use_cache": true,
+      "tokens": 204
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s7",
+      "episode_sha256": "4f712a035e69aacdaccf9ed1cfd72c25589f9095ac34fa26e40465197572ab24",
+      "elapsed_seconds": 2.604991912841797,
+      "runtime_use_cache": true,
+      "tokens": 56
+    },
+    {
+      "episode_id": "fresh-v1-determinant-fresh_no_hints-s3",
+      "episode_sha256": "22e5cee5c7f61805304e2fd941ae1f5a92c9d44f2f48c44696328b263593d925",
+      "elapsed_seconds": 6.3045334815979,
+      "runtime_use_cache": true,
+      "tokens": 179
+    },
+    {
+      "episode_id": "fresh-v1-determinant-source_dont_hack-s2",
+      "episode_sha256": "e75d32c064d36787d4e887216c43114d8d10e58062d60749ad30f49e280ad22b",
+      "elapsed_seconds": 2.489715814590454,
+      "runtime_use_cache": true,
+      "tokens": 52
+    },
+    {
+      "episode_id": "fresh-v1-determinant-source_dont_hack-s3",
+      "episode_sha256": "919359d76a5204712a2cf3e42f3f2a817bb94432355cfcec51c5054d26ccc4b3",
+      "elapsed_seconds": 2.062326431274414,
+      "runtime_use_cache": true,
+      "tokens": 40
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s11",
+      "episode_sha256": "9655809b902ddfa6a9355cbeb5249b16f63255ca4a646f9acd61d989dba286ec",
+      "elapsed_seconds": 7.5508410930633545,
+      "runtime_use_cache": true,
+      "tokens": 201
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s12",
+      "episode_sha256": "704def75fb20bfac52661e6ee02c3aeff01cee715933c5a27763d0d25909c962",
+      "elapsed_seconds": 3.601914405822754,
+      "runtime_use_cache": true,
+      "tokens": 83
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s15",
+      "episode_sha256": "83e91b514d2dbca9123dc0c5f7a5052f3ece05b77d08db4947804be9092ccdc9",
+      "elapsed_seconds": 5.8602190017700195,
+      "runtime_use_cache": true,
+      "tokens": 147
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s4",
+      "episode_sha256": "fd6b2958beb1c3a1ee7c9efe3c80930500cd952051806399f686d26e0dfd2709",
+      "elapsed_seconds": 5.678394317626953,
+      "runtime_use_cache": true,
+      "tokens": 155
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s10",
+      "episode_sha256": "faedabe50f45fe63a6de63e3b46032e71f2a220a71e7c5884142e226cef1c5a9",
+      "elapsed_seconds": 2.1568121910095215,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s15",
+      "episode_sha256": "4ec33a5a5ff089c93bbab2cafffc036102f720cc1e1549ce4e85055499215149",
+      "elapsed_seconds": 2.663221597671509,
+      "runtime_use_cache": true,
+      "tokens": 59
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s5",
+      "episode_sha256": "bf0546a055f132426cd9591e3fea14551a2ed8cc80f0f42956449b0c2bd1b7c5",
+      "elapsed_seconds": 6.517419099807739,
+      "runtime_use_cache": true,
+      "tokens": 185
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s7",
+      "episode_sha256": "615b911ea6d7cf827684f16e05c1a89801b26a46d63bfca7d19b955d318b0307",
+      "elapsed_seconds": 3.0825841426849365,
+      "runtime_use_cache": true,
+      "tokens": 71
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_no_hints-s10",
+      "episode_sha256": "07e872bfe82635e9052757bab4f7640b5616e93fff9c9a9998e40d34eb4d498c",
+      "elapsed_seconds": 7.851503610610962,
+      "runtime_use_cache": true,
+      "tokens": 225
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_no_hints-s13",
+      "episode_sha256": "42cdf03e055e569c2930b82a4ddfd60c2554dc8b73cbe612ac502afac3b1e198",
+      "elapsed_seconds": 5.898948907852173,
+      "runtime_use_cache": true,
+      "tokens": 164
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_no_hints-s2",
+      "episode_sha256": "caf377c5cb8f33e6553cdcb7d76b8558ad3ad30dc934f4991ed72ef734d2fc05",
+      "elapsed_seconds": 7.665252447128296,
+      "runtime_use_cache": true,
+      "tokens": 239
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s0",
+      "episode_sha256": "d17b92621da7e81460d3d6eaa757b529ef6e636db3f72609f59c177ddd7b1d7a",
+      "elapsed_seconds": 2.583531618118286,
+      "runtime_use_cache": true,
+      "tokens": 60
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s12",
+      "episode_sha256": "25d35cd1b75f31f64c1332d2027b9edb847e99f52f80570b96495dddd8d85311",
+      "elapsed_seconds": 3.407939910888672,
+      "runtime_use_cache": true,
+      "tokens": 80
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s15",
+      "episode_sha256": "7b859d8442e751365c9b58e0f932df6a37c1a9962e022b99b26167bfed9cc31f",
+      "elapsed_seconds": 12.305256843566895,
+      "runtime_use_cache": true,
+      "tokens": 340
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s2",
+      "episode_sha256": "860eb8deaf78dc38aa9ec761a8f27c29cbd67f3966d56190b069881ff6094fdb",
+      "elapsed_seconds": 3.470416307449341,
+      "runtime_use_cache": true,
+      "tokens": 80
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s3",
+      "episode_sha256": "99d5d6ea7a49e8d2fc353833dc69a96261a8b4bec4fdf9c3183d5630227c6d45",
+      "elapsed_seconds": 2.4943902492523193,
+      "runtime_use_cache": true,
+      "tokens": 52
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s6",
+      "episode_sha256": "be2364c038b1675d1be302dbc9bd4d65698ade00e27d43ba095064a945e680fc",
+      "elapsed_seconds": 4.1103668212890625,
+      "runtime_use_cache": true,
+      "tokens": 97
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s13",
+      "episode_sha256": "af992a3a9cd8bc938d94c978e971a9cf17ebd7419180e52f08ce98370c8cb9ab",
+      "elapsed_seconds": 5.459921836853027,
+      "runtime_use_cache": true,
+      "tokens": 135
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s14",
+      "episode_sha256": "754d2f84723de54f96e58151957d24dc06ecb0fbe536b4570f273ca8209cb6f3",
+      "elapsed_seconds": 6.277679681777954,
+      "runtime_use_cache": true,
+      "tokens": 174
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s15",
+      "episode_sha256": "b5842ac24fe6bf326286ed1f5de993da0cccb3969be7a6f3e8b9a7c3a67d58b8",
+      "elapsed_seconds": 2.522439956665039,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s2",
+      "episode_sha256": "9e34dd207747669d8767fe0c047de2e51132f1ee6bc5bd8188af9a686458d1d9",
+      "elapsed_seconds": 7.044717311859131,
+      "runtime_use_cache": true,
+      "tokens": 186
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s5",
+      "episode_sha256": "1358f94ec99591a95a1aa1411742590b3049d043b4a39f711ed6e1ccd6ddccf0",
+      "elapsed_seconds": 3.367185592651367,
+      "runtime_use_cache": true,
+      "tokens": 79
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s9",
+      "episode_sha256": "76284897f7bb896a8cee43e3242a09b8b0bd5b354b0cee29081390366649e881",
+      "elapsed_seconds": 6.345596790313721,
+      "runtime_use_cache": true,
+      "tokens": 160
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_strict-s1",
+      "episode_sha256": "2b1a2f70d3f34b2ffece7cebf86f8ad3028c1a84d56d5f6475c42cb433176dee",
+      "elapsed_seconds": 2.853989839553833,
+      "runtime_use_cache": true,
+      "tokens": 64
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-source_dont_hack-s3",
+      "episode_sha256": "7fe5c0706ed0242b921a9dff87a6ca192e9ac5c36ddbdc0a304325569fc00226",
+      "elapsed_seconds": 2.658963203430176,
+      "runtime_use_cache": true,
+      "tokens": 60
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_no_hints-s4",
+      "episode_sha256": "15792d116c2506ba4d6d4128208860e16d149e88713b80eec66ab1e116a44955",
+      "elapsed_seconds": 3.0962328910827637,
+      "runtime_use_cache": true,
+      "tokens": 82
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_no_hints-s7",
+      "episode_sha256": "0ee1e1b03eb4ff4f7055ebe6b73b9175fb6458c9cfcd00954f292698f39f1b8a",
+      "elapsed_seconds": 4.4469075202941895,
+      "runtime_use_cache": true,
+      "tokens": 127
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_strict-s5",
+      "episode_sha256": "71e8e07e4816d86191863badcabd263890c4c9707411b2aa3d307ff120c5a4f2",
+      "elapsed_seconds": 2.526867151260376,
+      "runtime_use_cache": true,
+      "tokens": 54
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s1",
+      "episode_sha256": "ab5c72e541049adaaf27d5b07fbead8befab4c96c2a5f7a53b400c15a37dcb17",
+      "elapsed_seconds": 7.327834606170654,
+      "runtime_use_cache": true,
+      "tokens": 195
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s7",
+      "episode_sha256": "5cf40664a52a19d8223bb9cfec65674ec85e8333f51bf6b3534db3be795dce56",
+      "elapsed_seconds": 2.487339735031128,
+      "runtime_use_cache": true,
+      "tokens": 54
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-fresh_no_hints-s2",
+      "episode_sha256": "ff336a45c415a26681f1458be4b826913ed25a0205c1bf51c803302390e60f5f",
+      "elapsed_seconds": 10.737734317779541,
+      "runtime_use_cache": true,
+      "tokens": 308
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-fresh_strict-s0",
+      "episode_sha256": "f7d8827d3d2789571f23afa10336c1753d7ed5cbd94f4adab5171e8c0d1747ec",
+      "elapsed_seconds": 2.9156177043914795,
+      "runtime_use_cache": true,
+      "tokens": 71
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-fresh_strict-s3",
+      "episode_sha256": "324bbb8a8c1bbb239ec1843b0fc8241d96bdf432ba32f55116688cede2d7458c",
+      "elapsed_seconds": 6.7738871574401855,
+      "runtime_use_cache": true,
+      "tokens": 172
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-source_dont_hack-s3",
+      "episode_sha256": "5e589cc416247f28c76f2922e394ded833e9f691b445ff53347a9a839c3cc097",
+      "elapsed_seconds": 2.239589214324951,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s2",
+      "episode_sha256": "ba6998cb7a0046733b469c86c437003582f92d34a4eda381e06423d59d0c5f34",
+      "elapsed_seconds": 3.560924530029297,
+      "runtime_use_cache": true,
+      "tokens": 95
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s5",
+      "episode_sha256": "4343655b42123292528dad845582dd0a9f4d88c77edba1c69898fde1aa7e59d8",
+      "elapsed_seconds": 3.4161524772644043,
+      "runtime_use_cache": true,
+      "tokens": 94
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s7",
+      "episode_sha256": "85dda24e3e272273efd70968eeda964203f4b85f40284db9e30245715efc3320",
+      "elapsed_seconds": 1.9367921352386475,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s1",
+      "episode_sha256": "18b01e5622f4cb9933bcee1cadfb6a41ab4c831ee57c148eb94a557c3dd7f8d0",
+      "elapsed_seconds": 2.3112828731536865,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s3",
+      "episode_sha256": "e815af6245836219b367baf959f1bd1e872b5afef2ee122b127b638e7c41c6a7",
+      "elapsed_seconds": 2.620018482208252,
+      "runtime_use_cache": true,
+      "tokens": 62
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s7",
+      "episode_sha256": "ac680245701d660169cc6751b00fac55c843e57aa71d7417cd5eecc93df45347",
+      "elapsed_seconds": 4.304943323135376,
+      "runtime_use_cache": true,
+      "tokens": 110
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s1",
+      "episode_sha256": "2c2dd1aea76acf32d6be546bd9b77b9b8944f8a847aca52f8f174bfa50905132",
+      "elapsed_seconds": 2.5363969802856445,
+      "runtime_use_cache": true,
+      "tokens": 60
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s2",
+      "episode_sha256": "d8c9caa8a7a3af586019f23c36a5921e7ccc83092acc3a77a1d5ccb74333a51e",
+      "elapsed_seconds": 2.3537919521331787,
+      "runtime_use_cache": true,
+      "tokens": 49
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s3",
+      "episode_sha256": "55cc7ee369f0965cdbff6a69673e2a6d1c340ef1651080d55a5477a9fd5da78a",
+      "elapsed_seconds": 2.4480247497558594,
+      "runtime_use_cache": true,
+      "tokens": 55
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s4",
+      "episode_sha256": "a2741f7de0a811503d57222072ed2050d4ff16fe0eb7c248728c88cbf823ffb6",
+      "elapsed_seconds": 2.44836688041687,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_no_hints-s0",
+      "episode_sha256": "339d364f960275363e240a2f8b6a3ede90f0ade05910d8c8c03b4e7503bfc552",
+      "elapsed_seconds": 10.226821660995483,
+      "runtime_use_cache": true,
+      "tokens": 295
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_no_hints-s5",
+      "episode_sha256": "71a87a842ea471d300ee48ebf2b872dbe165ef062a8af0d5588b4e36ab7084b3",
+      "elapsed_seconds": 11.997230291366577,
+      "runtime_use_cache": true,
+      "tokens": 377
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s1",
+      "episode_sha256": "e40a0521098b9df9a36920284968cf4d4f1b7aed5619839abc4b9258ed750bd3",
+      "elapsed_seconds": 2.383680820465088,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s3",
+      "episode_sha256": "aa58c889af7a03fa6d2477c84d8d6df9567e2d72c7624a384d69199ffc8199e1",
+      "elapsed_seconds": 2.151085376739502,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s5",
+      "episode_sha256": "1f633ddf8dea7b249e24db36e6647a034a85e958ffb7cba6ad75053e16ddb441",
+      "elapsed_seconds": 1.5621614456176758,
+      "runtime_use_cache": true,
+      "tokens": 24
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s1",
+      "episode_sha256": "374ceb96045fbdcc4adf5c9ac381673dfd7a7b02b085d85caac2c29df821f8c7",
+      "elapsed_seconds": 13.598420143127441,
+      "runtime_use_cache": true,
+      "tokens": 398
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s9",
+      "episode_sha256": "78c7a82fe6c93e22562e4bfd1454a1c07c71e0e691669d0ed9f7cf4242bbc70a",
+      "elapsed_seconds": 6.876719236373901,
+      "runtime_use_cache": true,
+      "tokens": 187
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s12",
+      "episode_sha256": "77315c2d20845f93071b72d76c229c6350381a98fcb22cb6850f5a6215b61e99",
+      "elapsed_seconds": 2.4785923957824707,
+      "runtime_use_cache": true,
+      "tokens": 49
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s13",
+      "episode_sha256": "7c856d2b77bf8f7c913454e21aefe34550d38b87cc7f0921e44f089268df635a",
+      "elapsed_seconds": 2.4544577598571777,
+      "runtime_use_cache": true,
+      "tokens": 52
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s8",
+      "episode_sha256": "32861d527b58205510720db1e86e696178a5344f94c850e7b3acee374a2a83c4",
+      "elapsed_seconds": 2.437896966934204,
+      "runtime_use_cache": true,
+      "tokens": 52
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s15",
+      "episode_sha256": "9bd5fdcb95e7a6af05f40a5c413ff1690efd08bb7d26b0edf1dc43e734f21a98",
+      "elapsed_seconds": 2.3772881031036377,
+      "runtime_use_cache": true,
+      "tokens": 54
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s4",
+      "episode_sha256": "a8bcdd2d506c1c3d2468df70da46c23e9638aecb207de4754b26ea430f71ddf1",
+      "elapsed_seconds": 6.36201810836792,
+      "runtime_use_cache": true,
+      "tokens": 180
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s1",
+      "episode_sha256": "96150c12f0eea43fc03f3bd784b116bc9ae0a8488f2e01660409509868fb55f1",
+      "elapsed_seconds": 6.591056823730469,
+      "runtime_use_cache": true,
+      "tokens": 166
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s6",
+      "episode_sha256": "1d490a316f30084793f459a8931c8b45d79b646b7407ffb84f9304751dada4e2",
+      "elapsed_seconds": 7.062436580657959,
+      "runtime_use_cache": true,
+      "tokens": 202
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s7",
+      "episode_sha256": "ee12879c01758945ba76f810a14402d925dffb5677cd0879003abccf8f70a626",
+      "elapsed_seconds": 3.9205894470214844,
+      "runtime_use_cache": true,
+      "tokens": 107
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s1",
+      "episode_sha256": "0d96b78983426d0d3b438dd30e3ca0d6edc18e8bd1da3c328cdb2adae67b45dd",
+      "elapsed_seconds": 4.7105724811553955,
+      "runtime_use_cache": true,
+      "tokens": 127
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s11",
+      "episode_sha256": "728c49dc1507243d2408ccae697615e8877b9062970ddcec8b5c601e8a47655f",
+      "elapsed_seconds": 3.891536235809326,
+      "runtime_use_cache": true,
+      "tokens": 92
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s5",
+      "episode_sha256": "8f2fb371552595f4effa4f10f06d7cf8b6f77c79fdf5d449da1be60d6b1d3799",
+      "elapsed_seconds": 9.49155044555664,
+      "runtime_use_cache": true,
+      "tokens": 251
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s7",
+      "episode_sha256": "a6c97a427525ba4e4b457573748639bd1d2970ed97a4407c2e1de8bee09c2a79",
+      "elapsed_seconds": 2.1821188926696777,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s8",
+      "episode_sha256": "66206e5e417e9033301fca0d67ef77ac35c2061d492f3fca2dc9b486d4b4e626",
+      "elapsed_seconds": 2.696636438369751,
+      "runtime_use_cache": true,
+      "tokens": 64
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s1",
+      "episode_sha256": "5bb5211cc56a74caef2a796379283e0da6e55e429a4d304836aff8ef29b2e78a",
+      "elapsed_seconds": 2.7971837520599365,
+      "runtime_use_cache": true,
+      "tokens": 62
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s10",
+      "episode_sha256": "10ea8a648a881a9a518afae7e8d912f4b1e7f9c42bbabbe18a710ae72d42c2bc",
+      "elapsed_seconds": 5.928145170211792,
+      "runtime_use_cache": true,
+      "tokens": 154
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s15",
+      "episode_sha256": "d4259d28b694fed2ffc3b4484605264957b81bc6d41fad3c51964dba4c901b18",
+      "elapsed_seconds": 8.176438808441162,
+      "runtime_use_cache": true,
+      "tokens": 215
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s2",
+      "episode_sha256": "3369f57c9cccd2ba34b5906244d46b000e0d767a025e6795a85f65860c6e15ff",
+      "elapsed_seconds": 2.2960004806518555,
+      "runtime_use_cache": true,
+      "tokens": 46
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s5",
+      "episode_sha256": "00c4a92179ad5d6c836a89b4a302c992fc84319b658b89b3679bfb57ec81a6f8",
+      "elapsed_seconds": 2.4639949798583984,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s7",
+      "episode_sha256": "00b9a7e2719cccc8b2f92f5a73b3e40d40aa6a0c6e58cda6c81af66fc92c8725",
+      "elapsed_seconds": 2.2348079681396484,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s8",
+      "episode_sha256": "a9e47ac7020ab74dbbf6e6c01b63e79e8d94136558b7726cf830708559a39ad6",
+      "elapsed_seconds": 2.724515676498413,
+      "runtime_use_cache": true,
+      "tokens": 60
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s13",
+      "episode_sha256": "751fc583dcc17b797d258eefe3a144da0de8323ac4af369b199e3b6617094038",
+      "elapsed_seconds": 4.948434829711914,
+      "runtime_use_cache": true,
+      "tokens": 141
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s11",
+      "episode_sha256": "aa069588f2a6ca070ffbc9e4d38541d5326e6f073c0772f8d91e4cbab44d8704",
+      "elapsed_seconds": 8.222322463989258,
+      "runtime_use_cache": true,
+      "tokens": 236
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s15",
+      "episode_sha256": "845ade30b6381580d8f0a072a737ec6787d4ea534766c878a98755c6a3c5896e",
+      "elapsed_seconds": 3.8824641704559326,
+      "runtime_use_cache": true,
+      "tokens": 100
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s2",
+      "episode_sha256": "45dc3fe99ab4397d332b20e6abd4ece72bcb7797cc7322be8e588a20ba88b8e1",
+      "elapsed_seconds": 4.672210216522217,
+      "runtime_use_cache": true,
+      "tokens": 117
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s3",
+      "episode_sha256": "9e1f0b242b59ae75b8afaea126562d82c0d20971bfdbb326d6cfd5451fb5f02c",
+      "elapsed_seconds": 2.660294532775879,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s4",
+      "episode_sha256": "e72baf6b45d61261ab85ca874d353fa33a716bb4e1e421292412cc81a3340097",
+      "elapsed_seconds": 2.2928271293640137,
+      "runtime_use_cache": true,
+      "tokens": 46
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s5",
+      "episode_sha256": "c2a69238acc2245391af763767ebb4b0f332d4fb07f0f230b88e20c4d916b810",
+      "elapsed_seconds": 2.8811495304107666,
+      "runtime_use_cache": true,
+      "tokens": 61
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s6",
+      "episode_sha256": "1fe56289184e18667b6809b0c8745850f954817ef4c4b64838156b9e40eef81f",
+      "elapsed_seconds": 2.8418188095092773,
+      "runtime_use_cache": true,
+      "tokens": 62
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s7",
+      "episode_sha256": "90ac45bd4f134cb6f39ad8b744f6c0a102deda72a5affd9d76dcf556e85c7867",
+      "elapsed_seconds": 2.721952199935913,
+      "runtime_use_cache": true,
+      "tokens": 59
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s1",
+      "episode_sha256": "3469a81aa8e0a7e5ca23028b3c635c731fd6afb8739c08aee88f92cdc5ef4d1c",
+      "elapsed_seconds": 2.491166591644287,
+      "runtime_use_cache": true,
+      "tokens": 54
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s6",
+      "episode_sha256": "83101bab0dc88c4a391081a4b38fec92296083d43d3c3569b10ac2fdf1394107",
+      "elapsed_seconds": 6.173093318939209,
+      "runtime_use_cache": true,
+      "tokens": 158
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s7",
+      "episode_sha256": "32967cb3b85a859d869d5d683dd09757dd825bf10024036a5de0488092bfd21e",
+      "elapsed_seconds": 7.226078748703003,
+      "runtime_use_cache": true,
+      "tokens": 189
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s3",
+      "episode_sha256": "334b7055ebefa6c29cd00653c05f135e08851695856a60369f05548aca8b02d8",
+      "elapsed_seconds": 8.719442129135132,
+      "runtime_use_cache": true,
+      "tokens": 243
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s5",
+      "episode_sha256": "a5ec19e541addb64a4bef2ea3cfdf36267426336cca4de16dd42edc8cff254e1",
+      "elapsed_seconds": 4.881434917449951,
+      "runtime_use_cache": true,
+      "tokens": 132
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s6",
+      "episode_sha256": "4b0c9b766b68c152f3246379c974a826ff4495e4a226c02ec365a7fe39c435a9",
+      "elapsed_seconds": 7.884669780731201,
+      "runtime_use_cache": true,
+      "tokens": 240
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s7",
+      "episode_sha256": "14a34e63b8ae99ba0d3516e00c69cca9f1be7235f1bb58ac0e3f4394c3a58f34",
+      "elapsed_seconds": 5.277913570404053,
+      "runtime_use_cache": true,
+      "tokens": 148
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s2",
+      "episode_sha256": "dcb0b5b4629d65f4cd4a370c4a6a8c082979dc8566847e97b219bcabf5c96325",
+      "elapsed_seconds": 2.715801477432251,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s3",
+      "episode_sha256": "1fcca6c2d075ad27b3c5ab227593c84b0dc8693c973e3e3cfe7e67683deb5f61",
+      "elapsed_seconds": 2.414036750793457,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s7",
+      "episode_sha256": "4b87806a8a4e007cdb0b9b6482d6f65668e304cbb6f0aee2288b5505ca260aca",
+      "elapsed_seconds": 2.8691813945770264,
+      "runtime_use_cache": true,
+      "tokens": 62
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s0",
+      "episode_sha256": "ac761b5503135a60243c738fdbb6625524bd2ccf4fe9a0d17e3fc6ac2df01775",
+      "elapsed_seconds": 2.635366678237915,
+      "runtime_use_cache": true,
+      "tokens": 76
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s1",
+      "episode_sha256": "4be64207ecd935d3482fa26f34afc188ab774e42fdde947013ecb77c51dcac39",
+      "elapsed_seconds": 2.444071054458618,
+      "runtime_use_cache": true,
+      "tokens": 65
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s4",
+      "episode_sha256": "6485873319a8875d2667b0258bde12b3760d8aa20a502058b5d5cf1c4350bafb",
+      "elapsed_seconds": 2.5521485805511475,
+      "runtime_use_cache": true,
+      "tokens": 69
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s0",
+      "episode_sha256": "2b5e523835f76168f8ebd6ed30c3d3a6f02069056776679140255bc555d22cb2",
+      "elapsed_seconds": 2.490111827850342,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s4",
+      "episode_sha256": "71a161919dc94156e9ca9242a9d1a770eb299339d896e73ec2ede964c233e5d1",
+      "elapsed_seconds": 2.2328202724456787,
+      "runtime_use_cache": true,
+      "tokens": 49
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s6",
+      "episode_sha256": "1f06178fc56bc8b6e16867ed4a1d3434b3f86398bfccef95c26bc6e3cc2d415e",
+      "elapsed_seconds": 6.469208478927612,
+      "runtime_use_cache": true,
+      "tokens": 170
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_no_hints-s3",
+      "episode_sha256": "99b4d225af940345b485bbfdf756841a7ece6bfa79d03dc59117341cbbaef6d7",
+      "elapsed_seconds": 6.745960474014282,
+      "runtime_use_cache": true,
+      "tokens": 194
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_strict-s1",
+      "episode_sha256": "04db09053a22e8b576017a2eadfe2b1e6f3536b9f3fad185e0a25443901a62eb",
+      "elapsed_seconds": 2.5235135555267334,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_strict-s0",
+      "episode_sha256": "a04e9ca1f7501e29d740ea23a7cb5ff37a8e35e6084893f9fd2c086686d63122",
+      "elapsed_seconds": 6.418800354003906,
+      "runtime_use_cache": true,
+      "tokens": 160
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-fresh_strict-s1",
+      "episode_sha256": "eb08bd95f10fdf5da4de2cc5051a2e651424eca6997602cb57ee6b30b659aeb5",
+      "elapsed_seconds": 2.922217845916748,
+      "runtime_use_cache": true,
+      "tokens": 66
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-fresh_no_hints-s1",
+      "episode_sha256": "74e7606ec71a64091fecb39621fa8d055b29c6376f9e409d8c5faacf15dccedf",
+      "elapsed_seconds": 18.68259620666504,
+      "runtime_use_cache": true,
+      "tokens": 512
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-fresh_strict-s0",
+      "episode_sha256": "eae5fa6da576cc2913bc8b8533d10d30e3fb43a40d4779917931cbaf652b98a3",
+      "elapsed_seconds": 2.201256036758423,
+      "runtime_use_cache": true,
+      "tokens": 45
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-source_dont_hack-s0",
+      "episode_sha256": "9e975e2711c8b832a7267ddc7e8c3a06f39976ac51bc487c4dc5fedc2b6e2f7f",
+      "elapsed_seconds": 2.2354135513305664,
+      "runtime_use_cache": true,
+      "tokens": 45
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s1",
+      "episode_sha256": "9e6eb2f11d035bafad792873d0da445b1bfd648402900e3c6880886e6ce71115",
+      "elapsed_seconds": 6.49651312828064,
+      "runtime_use_cache": true,
+      "tokens": 200
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s11",
+      "episode_sha256": "51c05845679184c6cb2e3b36e0a1d97f17ea12fce22ce1561341e53dc6c81ab8",
+      "elapsed_seconds": 7.208644390106201,
+      "runtime_use_cache": true,
+      "tokens": 206
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s14",
+      "episode_sha256": "9bbfcd606de40c79d1114b9b65d3bf840d636942a7cfefd65a03c230317601c2",
+      "elapsed_seconds": 11.56335973739624,
+      "runtime_use_cache": true,
+      "tokens": 306
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s4",
+      "episode_sha256": "38665acaa9679a5e99756be9b1a18daa9811a9c1c7f852dff5ce13d8a21707f9",
+      "elapsed_seconds": 12.239237308502197,
+      "runtime_use_cache": true,
+      "tokens": 357
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s8",
+      "episode_sha256": "948670eba6508b5671a155611faa8dfee219d55702bb9e1d02e0b077db3ebad8",
+      "elapsed_seconds": 4.832389831542969,
+      "runtime_use_cache": true,
+      "tokens": 145
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s0",
+      "episode_sha256": "e624e138a69eb444458309cff5ff786252770547f2d2f248c5115f5d16d837cb",
+      "elapsed_seconds": 2.3000495433807373,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s11",
+      "episode_sha256": "3f98849333813deae1ccfc01c9cb07c7e2243e9058a91c9462ed5645f68e4fdc",
+      "elapsed_seconds": 2.61232328414917,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s2",
+      "episode_sha256": "9568ed5d98c1cd392b4b134378f8fb1f856e9152c66d09d149f9dd4bc012f128",
+      "elapsed_seconds": 3.2767539024353027,
+      "runtime_use_cache": true,
+      "tokens": 77
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s11",
+      "episode_sha256": "547cf5631ed7ebc4eb8bb56e05e857b4b28320ab2d05c6822de2ae69416ebcc5",
+      "elapsed_seconds": 2.3837409019470215,
+      "runtime_use_cache": true,
+      "tokens": 54
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s12",
+      "episode_sha256": "b12783ce05e0089d3523fe3c32727ad939675db643c0a0a43881444de8f2507f",
+      "elapsed_seconds": 2.386190414428711,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s15",
+      "episode_sha256": "f79ea99acb836c700b897b7d4f071dc4509dc6ea90ef546fcda5ca460730d553",
+      "elapsed_seconds": 2.2735564708709717,
+      "runtime_use_cache": true,
+      "tokens": 48
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s4",
+      "episode_sha256": "687aacb7c3d53ac4db714d617150e2952fe5bb45dcfc19e9ae6bbecf117241e6",
+      "elapsed_seconds": 2.5191798210144043,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s7",
+      "episode_sha256": "1e91e1d18d8c18126c0f16718b2832607f5e42bcf8825fa97a9e076afe85ff45",
+      "elapsed_seconds": 3.367058277130127,
+      "runtime_use_cache": true,
+      "tokens": 77
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s9",
+      "episode_sha256": "284fb9c17942637910690d6e4c101fb02eb34f9adf96e5107e1031a05479b72b",
+      "elapsed_seconds": 1.9462485313415527,
+      "runtime_use_cache": true,
+      "tokens": 38
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s1",
+      "episode_sha256": "485573077edb288408fc0c730c128fd922498617cd5f7a8505d4881426a34aed",
+      "elapsed_seconds": 4.416405439376831,
+      "runtime_use_cache": true,
+      "tokens": 134
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s3",
+      "episode_sha256": "1eb4a7d4a86365cccccca5fcff7450343d85bdce6101f67484dd273f0dc1c26a",
+      "elapsed_seconds": 3.835092067718506,
+      "runtime_use_cache": true,
+      "tokens": 103
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s4",
+      "episode_sha256": "3cd179f7527d2012d0d97c725e65e6ae809c016926f71eeeb9f5c58d9d67de8e",
+      "elapsed_seconds": 6.525158643722534,
+      "runtime_use_cache": true,
+      "tokens": 172
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s5",
+      "episode_sha256": "01bf7bd9bfb508b103ca5311e129aeb3c265ada204091a0dbd5787dd4cf377da",
+      "elapsed_seconds": 2.056525945663452,
+      "runtime_use_cache": true,
+      "tokens": 44
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_no_hints-s6",
+      "episode_sha256": "63ff3d32db025cb6f690e4b894d2a21324b091a31cf0cce11b233d9d9151de70",
+      "elapsed_seconds": 4.609930753707886,
+      "runtime_use_cache": true,
+      "tokens": 130
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s1",
+      "episode_sha256": "504a592be098444fb56d73162bef17a88369da9f2df144fa210b9ec152f0c21b",
+      "elapsed_seconds": 2.688704252243042,
+      "runtime_use_cache": true,
+      "tokens": 59
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s2",
+      "episode_sha256": "5d09af765dca4e7073b6fa0003ba951e5e19b14306369a8d39f67936b6466e21",
+      "elapsed_seconds": 2.7006731033325195,
+      "runtime_use_cache": true,
+      "tokens": 64
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s4",
+      "episode_sha256": "aaaf56a4b6182b6c182a249b10913fdedadb78795b2859b45848a5990c12e977",
+      "elapsed_seconds": 2.251079559326172,
+      "runtime_use_cache": true,
+      "tokens": 45
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s5",
+      "episode_sha256": "ea871b88b4e24c41c318a743c2e6f8e5bbd9d0797dc372fb0f9023a5f9c7920a",
+      "elapsed_seconds": 2.626284122467041,
+      "runtime_use_cache": true,
+      "tokens": 56
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-fresh_strict-s2",
+      "episode_sha256": "b44cd0f9f95157e57733304a001344f80081ef385a22041e198b55c4bfd31f6d",
+      "elapsed_seconds": 2.542126417160034,
+      "runtime_use_cache": true,
+      "tokens": 55
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-fresh_strict-s3",
+      "episode_sha256": "85cb907b34559059cf7ba9262cb699897921775386456899787893cd35c7a5d6",
+      "elapsed_seconds": 4.017398357391357,
+      "runtime_use_cache": true,
+      "tokens": 86
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_no_hints-s0",
+      "episode_sha256": "899bf1c316aa480d4cab35c4836551691e6850815f22bf2971fe452bb36febf5",
+      "elapsed_seconds": 5.765535831451416,
+      "runtime_use_cache": true,
+      "tokens": 174
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_no_hints-s2",
+      "episode_sha256": "fc410a94f3947fe8ee6c1f3a3b354a6542075cea0c6cc636d415961c75eb1405",
+      "elapsed_seconds": 2.8713321685791016,
+      "runtime_use_cache": true,
+      "tokens": 84
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_no_hints-s6",
+      "episode_sha256": "42dd41503b50c45681fd0c531877d7606a931d691625962c8cf5626656efab4a",
+      "elapsed_seconds": 8.369229078292847,
+      "runtime_use_cache": true,
+      "tokens": 228
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s1",
+      "episode_sha256": "543e1bde525b360d0eae42b7b4e8abd77ebea0c776144deec1332f044d203ceb",
+      "elapsed_seconds": 4.891629934310913,
+      "runtime_use_cache": true,
+      "tokens": 123
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s12",
+      "episode_sha256": "032d35c9aa8a63a5312674dd063f62cf73682e8641ad038769a963899aadd1bf",
+      "elapsed_seconds": 2.444239854812622,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s2",
+      "episode_sha256": "e1b0a4680c05d9b9d22d30ad2e091e371e1bbd1b569fafc5b19f1ddf9d3f9189",
+      "elapsed_seconds": 2.45188570022583,
+      "runtime_use_cache": true,
+      "tokens": 49
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s7",
+      "episode_sha256": "c0ea28cff1e7b77525bb1efbd3ad8b4e3d81abffc4e0ef440e3db4cc31c02f01",
+      "elapsed_seconds": 2.375746011734009,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s0",
+      "episode_sha256": "c6d717f26153f98c0a50f898421597992c6b46ec1434285d9bcd1ed3ecdb01f6",
+      "elapsed_seconds": 8.158802032470703,
+      "runtime_use_cache": true,
+      "tokens": 213
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s1",
+      "episode_sha256": "13eef24456bf387e5858a7a4df51df752c383955543bcfbef88de059aaee83bc",
+      "elapsed_seconds": 2.682800054550171,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s13",
+      "episode_sha256": "86870b0e1e6e64bc553f3f83ba7ba247aca8592e9d25068dc321d0414207228c",
+      "elapsed_seconds": 2.2505264282226562,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s15",
+      "episode_sha256": "bd9a48e4cafa1d1cf2849df7b7485c68cb6c5cb7687c6629212931a6f2dcf9ad",
+      "elapsed_seconds": 2.8414969444274902,
+      "runtime_use_cache": true,
+      "tokens": 62
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s5",
+      "episode_sha256": "262bf50b619f82bd52b86f2fe2d13d209ce26bf5490721101ef9ba82c9361a67",
+      "elapsed_seconds": 2.596104383468628,
+      "runtime_use_cache": true,
+      "tokens": 55
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s8",
+      "episode_sha256": "6726d3b70795635bac88da2b07fd40799f79a4be8c0a879e312c08c4f186dc99",
+      "elapsed_seconds": 3.1460225582122803,
+      "runtime_use_cache": true,
+      "tokens": 61
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s9",
+      "episode_sha256": "61fbe2e45d11433a545463f8cb89cd81ce42ef8c3d9d63085d08a8eab78cf002",
+      "elapsed_seconds": 2.348815441131592,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s1",
+      "episode_sha256": "a7dcd53299b47a44fd1eb7826261bfcb1a42a94ca2786db098f1b950a410cffd",
+      "elapsed_seconds": 7.61604905128479,
+      "runtime_use_cache": true,
+      "tokens": 223
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s1",
+      "episode_sha256": "c765f1c58c5f2da28381e601ab99298222c7f58a1b6d4240b1c2f479e2c747ee",
+      "elapsed_seconds": 8.376575708389282,
+      "runtime_use_cache": true,
+      "tokens": 224
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s12",
+      "episode_sha256": "c727129867544e7d2b463c8d55a46d88271e16ec2b328b07709513ad4c7976c9",
+      "elapsed_seconds": 2.5778539180755615,
+      "runtime_use_cache": true,
+      "tokens": 59
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s15",
+      "episode_sha256": "0286f794fba6e285b23859d4ed59851e9f0ad23967d02d754a2573204a8c2fd0",
+      "elapsed_seconds": 9.21298599243164,
+      "runtime_use_cache": true,
+      "tokens": 255
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s10",
+      "episode_sha256": "218c4108760c433c38e0577a1c791c3fd079be25697f4c276aade0479885fab2",
+      "elapsed_seconds": 2.838022470474243,
+      "runtime_use_cache": true,
+      "tokens": 64
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s15",
+      "episode_sha256": "60b80ff19864068e9f3e0a416e01a26b49b0cb7715912d182dc0bd45648fece1",
+      "elapsed_seconds": 2.181572675704956,
+      "runtime_use_cache": true,
+      "tokens": 48
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-fresh_strict-s0",
+      "episode_sha256": "318cd039cff1484289703cede1e43404a3f578654c068dfb98d6cab5c91c403c",
+      "elapsed_seconds": 3.484995126724243,
+      "runtime_use_cache": true,
+      "tokens": 79
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-source_dont_hack-s0",
+      "episode_sha256": "9469d4c5737a4efdcd405c81124339509cde000a9d717cd09aea6dc57134e8b2",
+      "elapsed_seconds": 2.898700475692749,
+      "runtime_use_cache": true,
+      "tokens": 63
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-source_dont_hack-s2",
+      "episode_sha256": "994b9ad3087ea0143cb3c55ee076b297c2872518028f0a9bca8ec9d00a7e4233",
+      "elapsed_seconds": 2.491473913192749,
+      "runtime_use_cache": true,
+      "tokens": 57
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s0",
+      "episode_sha256": "d14f0bfb5fec76f7f02507023d7f2d6a5df60c50770d6bcc666f95be9d1c2da6",
+      "elapsed_seconds": 1.7555499076843262,
+      "runtime_use_cache": true,
+      "tokens": 50
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s1",
+      "episode_sha256": "430e46001defccf899d1d4eb6db0ee7c50110b277bf5a37b8ff5b9d8401f05d6",
+      "elapsed_seconds": 2.8616294860839844,
+      "runtime_use_cache": true,
+      "tokens": 86
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s11",
+      "episode_sha256": "ef94511d79f434d1a14eca853360923274e14ce80c206d59ffd89c31ea91b4ea",
+      "elapsed_seconds": 2.422818660736084,
+      "runtime_use_cache": true,
+      "tokens": 61
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s4",
+      "episode_sha256": "dd4286ca22a7168a1959970fb948256b1b5f9675203a29c0853d5233cc6f1bcf",
+      "elapsed_seconds": 9.950124263763428,
+      "runtime_use_cache": true,
+      "tokens": 289
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s5",
+      "episode_sha256": "908ab4912b4ba993456fd7b62299390708745f5ed09b9e44cb9c2f0506409235",
+      "elapsed_seconds": 8.930244207382202,
+      "runtime_use_cache": true,
+      "tokens": 235
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s7",
+      "episode_sha256": "b360cfbc764aeaf886d46b93e9bbe09bd31e720930c86ed7e48b3117dd7e0798",
+      "elapsed_seconds": 5.89941143989563,
+      "runtime_use_cache": true,
+      "tokens": 154
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s1",
+      "episode_sha256": "0d39d59508242d6dbfbfbb433615fb50ac47d907ce53a362895bd865db3cc1f6",
+      "elapsed_seconds": 6.062727928161621,
+      "runtime_use_cache": true,
+      "tokens": 165
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s13",
+      "episode_sha256": "93a3885af225755e3e07d09601c7007a0b9a5bfb51f28349ff3b0fb8c2294b66",
+      "elapsed_seconds": 2.5937960147857666,
+      "runtime_use_cache": true,
+      "tokens": 60
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s15",
+      "episode_sha256": "99766b3f2292733b5efd1adc2b6966d66e185a6258cfafff51694070931e2b66",
+      "elapsed_seconds": 2.8470425605773926,
+      "runtime_use_cache": true,
+      "tokens": 65
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s8",
+      "episode_sha256": "2b0e852270d73ac4b139b2bd81c21897f9711490cc2bd4df74d0a516f9c0a86b",
+      "elapsed_seconds": 2.5565695762634277,
+      "runtime_use_cache": true,
+      "tokens": 56
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-fresh_strict-s0",
+      "episode_sha256": "b982b194cec67ed5f534319421e32d4ac5283233d98de58659ecf82b66ec5bb3",
+      "elapsed_seconds": 11.843832969665527,
+      "runtime_use_cache": true,
+      "tokens": 350
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-fresh_strict-s1",
+      "episode_sha256": "4b9cf93a092d54edf201371f07e5937e37689b0bf03efeedd0ded20e51648576",
+      "elapsed_seconds": 9.576598167419434,
+      "runtime_use_cache": true,
+      "tokens": 260
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-fresh_strict-s3",
+      "episode_sha256": "6abffebf9f0babc911cdb925bf875efb9d2fdfd9487d5cdc30a477ead25df073",
+      "elapsed_seconds": 2.653531551361084,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-source_dont_hack-s2",
+      "episode_sha256": "a13cda6bd158a5f0f646516a762be2af8b48b3123a3af101dbe46ed3600feaf7",
+      "elapsed_seconds": 6.8454976081848145,
+      "runtime_use_cache": true,
+      "tokens": 185
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-source_dont_hack-s3",
+      "episode_sha256": "ac169db288cc76471944486cd16fa1ea920791c3178de4c56d2e27bd44c3c81f",
+      "elapsed_seconds": 6.7144455909729,
+      "runtime_use_cache": true,
+      "tokens": 185
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_no_hints-s1",
+      "episode_sha256": "4c21e0c5c272482cc4a863516aed605c7f3b485713b218d4295e59533ce1e2ba",
+      "elapsed_seconds": 4.8105950355529785,
+      "runtime_use_cache": true,
+      "tokens": 135
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_no_hints-s3",
+      "episode_sha256": "0d15b7ada660f6e79ed24d7dd6200d3fc350af58cdcf812d6b03109631be8392",
+      "elapsed_seconds": 12.9964280128479,
+      "runtime_use_cache": true,
+      "tokens": 406
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s2",
+      "episode_sha256": "147b7b31b7206853147b8ff501ff8105a7c948b6abad204e2317bad8c5a1d960",
+      "elapsed_seconds": 6.151835918426514,
+      "runtime_use_cache": true,
+      "tokens": 188
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s3",
+      "episode_sha256": "4955ee27720471d163c55d611d9386561582a9fc4fc22ac374dc9168f4485e32",
+      "elapsed_seconds": 4.676686763763428,
+      "runtime_use_cache": true,
+      "tokens": 130
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s0",
+      "episode_sha256": "bd4cb724bc566f68bd3e9bcce9535d347689d69088e26fe7080afd1bc834d77d",
+      "elapsed_seconds": 2.6773364543914795,
+      "runtime_use_cache": true,
+      "tokens": 55
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s14",
+      "episode_sha256": "22267dee7709ea01a072fcc60c93dac3db7d1d4d53180ab284719a7ba0b6730f",
+      "elapsed_seconds": 3.7436039447784424,
+      "runtime_use_cache": true,
+      "tokens": 85
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s4",
+      "episode_sha256": "02850775b446ab7de340332caec61f97f796cd17ffabafe146085ac3a2edd3d4",
+      "elapsed_seconds": 3.0496296882629395,
+      "runtime_use_cache": true,
+      "tokens": 67
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s13",
+      "episode_sha256": "28a80c78a3bc9a67f55db52c0ec77c295ff70ce695113e5f78bb16609541046c",
+      "elapsed_seconds": 2.6523776054382324,
+      "runtime_use_cache": true,
+      "tokens": 51
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s3",
+      "episode_sha256": "a4ffae2b32972ddab82e18f9b1fd01d6812791c1a4257e67048686aaf647e357",
+      "elapsed_seconds": 3.0009820461273193,
+      "runtime_use_cache": true,
+      "tokens": 70
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s6",
+      "episode_sha256": "2d352572c09466c131dfced54866c009204df8ec7ce7b2bc9dadeea307a50864",
+      "elapsed_seconds": 2.508957862854004,
+      "runtime_use_cache": true,
+      "tokens": 53
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s9",
+      "episode_sha256": "360127bcc4351a363412d5acac850d4084ce574839447073bebefc2d439b9093",
+      "elapsed_seconds": 6.667779445648193,
+      "runtime_use_cache": true,
+      "tokens": 161
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-fresh_no_hints-s0",
+      "episode_sha256": "74a85e8b7a1d449df99a2976c032f50b598e045af3baf2f4e88892c96fec9c97",
+      "elapsed_seconds": 8.166851043701172,
+      "runtime_use_cache": true,
+      "tokens": 236
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-source_dont_hack-s0",
+      "episode_sha256": "c846b5eb6aad31c833ed48a5ceaf63a7a8b3cca42e1a14488d502bf40ac485af",
+      "elapsed_seconds": 2.6919937133789062,
+      "runtime_use_cache": true,
+      "tokens": 64
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-source_dont_hack-s2",
+      "episode_sha256": "fb64e174b7d24ccb18a321bf2f5835889f5062ea4eda248c2deb5d5ed182f15e",
+      "elapsed_seconds": 6.33146858215332,
+      "runtime_use_cache": true,
+      "tokens": 166
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-source_dont_hack-s1",
+      "episode_sha256": "91ed1d2d2759a4af63b30c3a639af11521324bf73ff7472d19c688c51edc749b",
+      "elapsed_seconds": 2.8525259494781494,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_no_hints-s3",
+      "episode_sha256": "7b3ebb41e2da11766922f147e9ed2604b78b72fef29e5ca5652b02280603aa38",
+      "elapsed_seconds": 6.631844758987427,
+      "runtime_use_cache": true,
+      "tokens": 190
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s0",
+      "episode_sha256": "e34d5a60f05efcd16d56398f5ebcda68f487e618e8f3960c7bcc750170bcdf98",
+      "elapsed_seconds": 2.783085584640503,
+      "runtime_use_cache": true,
+      "tokens": 61
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s1",
+      "episode_sha256": "c133c1312f5b6844c6bb3fcb9a4284004c7010df699c66b29b1b10836c3272df",
+      "elapsed_seconds": 2.733018159866333,
+      "runtime_use_cache": true,
+      "tokens": 59
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s3",
+      "episode_sha256": "5fd83f366c5461ca351317d53c87c15cd077e38e203384bfd2f991bc38749b5d",
+      "elapsed_seconds": 2.6471450328826904,
+      "runtime_use_cache": true,
+      "tokens": 58
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s5",
+      "episode_sha256": "f01068234c30f0c2032059eb707d163c9a4f31b99c8721e766954427f5655751",
+      "elapsed_seconds": 2.8194801807403564,
+      "runtime_use_cache": true,
+      "tokens": 61
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s0",
+      "episode_sha256": "77bbcfe47ccd5ff68289405169ee0823bddb65b913ee7eed033d16c128f6b404",
+      "elapsed_seconds": 2.4188132286071777,
+      "runtime_use_cache": true,
+      "tokens": 52
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s1",
+      "episode_sha256": "e97968efff3482a449f6ebfd0bed6d78f3f4657fe507f8e031ff90e6be5025c5",
+      "elapsed_seconds": 2.135077476501465,
+      "runtime_use_cache": true,
+      "tokens": 47
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s7",
+      "episode_sha256": "46ec64fa1cedd842421c2b14877c58e774f4785987dc9f54dcdddc2083b2e2ff",
+      "elapsed_seconds": 2.5662457942962646,
+      "runtime_use_cache": true,
+      "tokens": 55
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s10",
+      "episode_sha256": "798b40d9132650ee8a3309f3b778cbc306c0ba1d1b891aad2b68e1ea3e12dc87",
+      "elapsed_seconds": 3.663173198699951,
+      "runtime_use_cache": true,
+      "tokens": 100
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s12",
+      "episode_sha256": "a1d0afafe13d36dadcb9caa628b7cc653a5bf5f93e2b6625b220c016d4dd72ff",
+      "elapsed_seconds": 4.594242811203003,
+      "runtime_use_cache": true,
+      "tokens": 138
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s4",
+      "episode_sha256": "1ef287e9fbca053335bbf2a53e946193822924315ec7f98df6099fb395e8eec3",
+      "elapsed_seconds": 4.94545316696167,
+      "runtime_use_cache": true,
+      "tokens": 154
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s6",
+      "episode_sha256": "469b25bfe90a3859e65df345fb3b5026fdb46daf550a88e6ab227ce6c726eced",
+      "elapsed_seconds": 4.288837909698486,
+      "runtime_use_cache": true,
+      "tokens": 132
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s11",
+      "episode_sha256": "90452fbc4c65d1cd9a8cf87b248e4c18ba9b41474c69321e17aa39bfd08a7332",
+      "elapsed_seconds": 1.9576537609100342,
+      "runtime_use_cache": true,
+      "tokens": 38
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s15",
+      "episode_sha256": "ad453c7943077567a2c0dfbea7f4d75677676becdea28bf0488fb576deb07458",
+      "elapsed_seconds": 2.3320722579956055,
+      "runtime_use_cache": true,
+      "tokens": 48
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s15",
+      "episode_sha256": "134835b540afb707d9f999674619799e37f62150bf795e1f53bc6f50cd9373f7",
+      "elapsed_seconds": 5.019912004470825,
+      "runtime_use_cache": true,
+      "tokens": 124
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s0",
+      "episode_sha256": "773e28ac8b1fc4276b9f88941027036d9e48530de9bd02f101119e5c8ce815c7",
+      "elapsed_seconds": 3.742664337158203,
+      "runtime_use_cache": true,
+      "tokens": 106
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s1",
+      "episode_sha256": "738c643722a58394ba3a6c22ad6baf710331d1774ddc458ca686731d5ffe1dd3",
+      "elapsed_seconds": 5.035402059555054,
+      "runtime_use_cache": true,
+      "tokens": 153
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s6",
+      "episode_sha256": "8f11bdc5ea294e5a217036f5b6bfaeb4a6842f04ca6dbadd3c79a0340f4c918b",
+      "elapsed_seconds": 3.1169276237487793,
+      "runtime_use_cache": true,
+      "tokens": 79
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s7",
+      "episode_sha256": "b3f119cec2863a3fbb50229562609943f22f365f14a1ae40fc2389c0634dec44",
+      "elapsed_seconds": 4.650337219238281,
+      "runtime_use_cache": true,
+      "tokens": 140
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s0",
+      "episode_sha256": "a896f46d07192b027784a2af0e3358325289eca75817152a266e0247ffa090af",
+      "elapsed_seconds": 2.2804484367370605,
+      "runtime_use_cache": true,
+      "tokens": 51
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s4",
+      "episode_sha256": "c35eb23d8dd46f1b1165f4af4255f42889aa4702e7d70b201bfc80a9a8d60cae",
+      "elapsed_seconds": 6.362857341766357,
+      "runtime_use_cache": true,
+      "tokens": 176
+    },
+    {
+      "episode_id": "fresh-v1-weekday-source_dont_hack-s2",
+      "episode_sha256": "915f0ab8b1164dda29d9f73da2eb7cad40605421ca313ad565eebe76f7a8dac7",
+      "elapsed_seconds": 2.5277910232543945,
+      "runtime_use_cache": true,
+      "tokens": 53
+    }
+  ],
+  "scope": "Centrally collected partial cohort; per-episode generation time excludes scheduling, transfer, review and downstream scoring; not an end-to-end completion estimate"
+}

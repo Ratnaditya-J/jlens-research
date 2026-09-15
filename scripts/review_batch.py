@@ -1,8 +1,9 @@
 """Resume checksummed episode audits and blinded review without rereviewing completed work."""
-import argparse,concurrent.futures,hashlib,json,subprocess,sys
+import argparse,concurrent.futures,hashlib,json,subprocess,sys,threading
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 WASI=ROOT.parent.parent/'work/wasm-venv/bin/python'
+AUDIT_SLOTS=threading.BoundedSemaphore(4)
 def process(ep):
     record=json.loads(ep.read_text())
     if 'activation_sha256' not in record:return {'episode_id':ep.parent.name,'status':'unavailable','reason':record.get('excluded_reason','no recorded activation')}
@@ -11,8 +12,20 @@ def process(ep):
         return {'episode_id':ep.parent.name,'status':'wait_for_valid_activation_shard'}
     audit=ep.parent/'external-audit.json'
     if not audit.exists():
-        p=subprocess.run([str(WASI),str(ROOT/'scripts/audit_episode.py'),str(ep),'--source-parser'],capture_output=True,text=True,timeout=40)
-        if p.returncode:return {'episode_id':ep.parent.name,'status':'audit_error','error':p.stderr[-500:]}
+        # Limit CPU runtime startup concurrency independently of the API reviewer pool.
+        with AUDIT_SLOTS:
+            try:
+                p=subprocess.run([str(WASI),str(ROOT/'scripts/audit_episode.py'),str(ep),'--source-parser'],capture_output=True,text=True,timeout=40)
+                failure={'returncode':p.returncode,'stdout':p.stdout,'stderr':p.stderr} if p.returncode else None
+            except subprocess.TimeoutExpired as error:
+                def text(value):return value.decode(errors='replace') if isinstance(value,bytes) else (value or '')
+                failure={'returncode':None,'timeout_seconds':40,'stdout':text(error.stdout),'stderr':text(error.stderr)}
+        if failure:
+            failure['episode_sha256']=hashlib.sha256(ep.read_bytes()).hexdigest()
+            failure['audit_script_sha256']=hashlib.sha256((ROOT/'scripts/audit_episode.py').read_bytes()).hexdigest()
+            content=json.dumps(failure,indent=2)+'\n';digest=hashlib.sha256(content.encode()).hexdigest()
+            path=ep.parent/'audit-failures'/(digest+'.json');path.parent.mkdir(exist_ok=True);path.write_text(content)
+            return {'episode_id':ep.parent.name,'status':'audit_error','error':failure['stderr'][-500:],'failure_artifact':str(path.relative_to(ROOT))}
     a=json.loads(audit.read_text())
     if a['status']!='executed':return {'episode_id':ep.parent.name,'status':'unavailable','reason':a.get('reason')}
     # Syntax errors are format failures, never confirmed positive execution.

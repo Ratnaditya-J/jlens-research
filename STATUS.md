@@ -1,3 +1,11 @@
+## September 15, 04:23 UTC — audit retries diagnosed and preserved
+
+Prior turn made progress with measured reviews plus synthetic figure integration; user status reply alone did not finish study. Current continuation verified fresh review processes416/801 live and96GiB CPUdiskfree. At initialsample237centrallycollected episodes allused validatedcache, median3.1169sec generation,maximum18.68sec,no cacheparityfailurefiles. This is selected partial-cohort generation timing, NOT wholepipeline ETA. reports/fresh-generation-progress.json stores later timestamped episodeSHA/elapsed/cache snapshot.
+
+Last finished109case reviewbatch had65positive,32benign,7uncertain,1formatfailure,4auditerrors. All4error cases subsequently had successful external-audit.json on retry; no adversarial label inferred from crash. Failurestderr showed Wasmtime/Tokio non-unwindingpanic, rootcause not established. review_batch.py now caps concurrent sandbox subprocesses at4 independently of12APIreviewworkers and preserves full failurestdout/stderr/returncode/episode+scriptSHA in per-case audit-failures. Timeouts become retryable audit_error rather than aborting entirebatch. Two failure-preservation tests passed. New script deployedCPU, takes effect nextbatch; no reviewer/GPU restart, no guest permission or limit changes. Existingerror recovery not credited to newchange.
+
+Extended synthetic pipeline test including six rendered heldout/offset scientificfigures, countchecks andartifactSHA passed7.522sec. tests/test_fresh_pipeline.py updated. No realheldoutdetector results yet; user told rough55–60%milestonecompletion, explicitly not timepercentage.
+
 ## September 15, 04:19 UTC — fresh collection active; final action audit queued
 
 Verified live behavior_pilot.py processes on all4GPUs after controller handoff (PIDs1621,1402,1268,1260 observed); worker2 initially still loading, others already wrote completed episodes. Controller collected/verified allfits and exact weighted merge passedall4layers. Full64lens SHA53057f9862c21c8e65a857edaa1d0d6af8476e5617dd157567bd37ceed743f1c. Rsynced seven lens artifacts local (four16prompt shards,two32halves,full64), allSHAverified; reports/fit64-local-integrity.json. No quality-gate completion yet.
