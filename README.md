@@ -8,6 +8,7 @@ The primary paired test set contains 464 confirmed evaluation-interference viola
 
 The authorization/debugging controls expose a probe specificity failure: 47/47 benign cases flag the probe and 0/47 flag J-view. The same pattern holds in the 26 cases labeled benign before the separately disclosed authorization-label aggregation amendment. These four synthetic control families do not estimate deployment false-positive rates.
 
+- [Combined study findings](reports/study-findings.md)
 - [Primary findings and four-way table](reports/primary-findings.md)
 - [Stress-test findings and labeling qualification](reports/stress-test-findings.md)
 - [Primary case-level CSV](reports/final-comparison/cases.csv)
@@ -22,10 +23,10 @@ Keep development, primary, template and specificity cohorts separate. Unavailabl
 
 The frozen comparison inputs are indexed by SHA256 in `configs/stages/compare-*.json`. The local copy of all 71 distinct declared inputs passed verification; see `reports/local-frozen-input-integrity.json`. This does not yet certify every raw trajectory archive.
 
-Create an isolated Python environment and install the exact scientific-package versions used for the successful reconstruction:
+The verified environment used Linux and Python 3.12.3. Other Python/platform combinations require separate verification. Create an isolated Python 3.12 environment and install the exact scientific-package versions used for the successful reconstruction:
 
 ```bash
-python3 -m venv work/reproduction-venv
+python3.12 -m venv work/reproduction-venv
 work/reproduction-venv/bin/python -m pip install -r configs/reproduction-requirements.txt
 work/reproduction-venv/bin/python scripts/study.py compare --config configs/stages/compare-primary.json
 ```
@@ -35,7 +36,7 @@ The command above is a dry run that checks identity and input hashes and lists o
 For an input-only copied repository and fresh virtual environment, use a new destination outside this repository:
 
 ```bash
-python3 scripts/reproduce_frozen_comparisons.py --destination /absolute/path/to/new-reproduction-directory
+python3.12 scripts/reproduce_frozen_comparisons.py --destination /absolute/path/to/new-reproduction-directory
 ```
 
 This harness reconstructs all three panels, checks all nine declared output files against the originals, verifies resume and checks that original inputs and outputs remain unchanged. The recorded run passed with exact hashes. Model generation and J-lens refitting are separate GPU stages, not part of this CPU reconstruction.

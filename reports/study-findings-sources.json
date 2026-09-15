@@ -1,0 +1,7 @@
+{
+  "reports/final-comparison/summary.json": "73742b0716df7e19efd8c904d0a23993ea9b0b9722630b6fd564ca5ad0dc4121",
+  "reports/final-comparison-offset32/summary.json": "500f31e2cce846bd221555ae200db4ee46071c38dfa95d0e2c86fd9123e710a2",
+  "reports/final-comparison-offset64/summary.json": "7b6510f6b9a17cc1344389448e9ce082c2f0951c7483884a0b3bb5d6a65cadbf",
+  "reports/template-challenge-comparison/summary.json": "657aa41742906935987eba0073257ce3798aa2bed7fb47c8d6e2b4dcb5542391",
+  "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127"
+}

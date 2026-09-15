@@ -48,7 +48,7 @@ def main():
         im=ax.imshow(matrices[method],aspect='auto',interpolation='nearest',cmap=cmap,norm=norm)
         ax.set_title(title);ax.set_xticks(range(3),['−64','−32','0']);ax.set_xlabel('Tokens relative to code onset')
         for start,count,label in boundaries:ax.axhline(start-.5,color='#333333',lw=.7)
-        ax.set_yticks([start+(count-1)/2 for start,count,label in boundaries], [f'{label}\n(n={count})' for start,count,label in boundaries])
+        ax.set_yticks([start+(count-1)/2 for start,count,label in boundaries], [f'{label} (n={count})' for start,count,label in boundaries])
     fig.suptitle('Fixed onset detectors across sampled held-out positions')
     fig.colorbar(im,ax=axes,location='bottom',shrink=.65,pad=.12,ticks=[-1,0,1]).ax.set_xticklabels(['Unavailable','Does not flag','Flags'])
     fig.text(.10,.025,'One row per episode, ordered by external label then ID; identical rows in both panels.\nOnly three sampled positions: this is not a full trajectory or the first violating-action boundary.\nJ flags include ordinal ambiguous scores under the frozen threshold; unavailable is not negative.',fontsize=9)

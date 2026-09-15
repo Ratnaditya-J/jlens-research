@@ -22,7 +22,7 @@ STAGES={
  'fit-lens':{'fit_pilot_shard.py','merge_fit_shards.py','validate_readouts64.py'},
  'fit-probe':{'calibrate_fresh.py','supervised_jspace.py'},
  'score':{'postprocess_fresh.py','interpret_fresh.py','assemble_fresh.py'},
- 'compare':{'evaluate_fresh.py','supervised_jspace.py','build_casebook.py','paired_breakdown.py'},
+ 'compare':{'evaluate_timing_with_missing.py','evaluate_fresh.py','supervised_jspace.py','build_casebook.py','paired_breakdown.py'},
  'intervene':set()}
 
 def sha(p):

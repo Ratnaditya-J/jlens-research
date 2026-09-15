@@ -1,3 +1,13 @@
+## 2026-09-15T05:45:19.471642+00:00 — integrated findings and timing reproduction
+
+Previous goal turn progressedwithdocumented64refusals/timingcompletion. This turn authored reports/study-findings.md integratingprimary,early32/64,fixed-detectortransfer,controls,contextbaselines,ambiguity,uncertainty,sourceidentity andexplicitremaining-scopechecks. Itsstatusisnotfinal-completion. SourceSHAindexreports/study-findings-sources.json. README linksreport andcorrectsreproductionruntime toverifiedLinuxPython3.12.3 (localdefault3.14unsupportedbyoldnumpy); instructionsusepython3.12.
+
+prepare_timing_stage_configs.py generatedcompare-offset32/64configsCPU; allneededrefusal-evidencefilesincludedfor64. Newreproduce_timing_comparisons.py createdfresh /workspace/work/jlens-timing-reproduction-20260915 venv,input-onlyreplica,ranbothstagesandverifiedresume,all6JSON/CSVoutputfilesexactSHA,originalinput/outputsunchanged;10.4815sec. reports/timing-reproduction.json/configscollectedlocal andverifiedpassed. study.pyallowlistincludesexplicitmissing-awaretimingevaluator;test_stage_cli.py passed1test. Primary3-panelreproduction remainsunchanged9exactoutputs.
+
+Earlier64actionaudit18/18outcomesmatched,12localized; earlier32actionaudit23/23,12localized (local32actionreportmayneedlatestdelta). Timingreports66887/84236completed. Additionalrawtimingbackup43687active (fresh-offset* andaction-traces-final-offset*); pollandSHAverifyplans/fullarchive. Sampled-timingPNGvisuallyinspected:shortstratalabelsoverlapped. Changedlabels tosingleline,rerenderedCPU; updatedfigurecopylatest execsessioninrecenttooloutput,needsfinalvisualcheck. Fulltoken plotsalreadyQA.
+
+Read-onlyRunPodAPIrevealslastStartedAt,lastStatusChange andcostPerHr; worker0laststart03:00:50.34UTC,stop05:03:09UTC,rate4.59. Canconstructlatest-sessionresourceusagewithoutclaiminginvoiceorfullhistoricalbill. APIusage inretainedreviewJSONs hasresponse_id+usage; deduplicateIDsacrossarchives. Noresourcecleanupperformedthisturn. Remainingexplicitbriefcontrol-scopeitems(base/benigncheckpointbehavioralcontrols,monitor-maintenance) stillmustresolvealongsidefinalresource/integrity/latencychecks;donotmarkgoalcompleteyet.
+
 ## 2026-09-15T05:40:12.437375+00:00 — timing endpoints complete with explicit refusals
 
 Previous goal turn made progress: earlier32scores/routeaudit andarchiving. This turn verifiedlocalrawarchive:26901files,9064173461bytes,0SHAfailures,7.52sec; reports/local-raw-archive-integrity.json. Backup24981completed. Earlier32actionauditfinished23cases,23originaloutcomesmatch,12localized. Rawfulltrace61598completedbutfulltraceSHAauditstillpending.
