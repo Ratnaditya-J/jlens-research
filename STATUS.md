@@ -1,3 +1,11 @@
+## September 15, 04:57 UTC — primary assembly complete, J validation interpretation active
+
+Allfourprimarypostprocessjobsfinished andcentralprocessedcompletemarkersverified. Sequencer1545advancednormallyafterits60secondpoll; child36480interpret_fresh.py --phase validation --workers12observedlive. No restartneeded. Assemblycompleted1224records. By split:train216total208validfeatures184known-label+features;validation222total214validfeatures198known-label+features;test786total778validfeatures723known-label+features. Finalknownpairedpre-Jdenominator1105; preserveall24missing-featurecasesanduncertainlabels. No thresholdorprobe metricslookedat/testtuning.
+
+Jvalidationprogress127/856calls,errorsempty at04:56:52. Fourcallspervalidcase (twoJ-viewreviewers,two matchedcontext-onlyreviewers),214casesincludinguncertain casesblinded. Afterallvalidationcallsfinishcalibrationlocksweights/thresholds; onlythenprimarytestinterpretation/evaluation. Priorper-workercollectiondiscrepancywasstalecontrollercopy,notfailedGPUjob.
+
+Templatechallengeongoing; queuedauthorizedspecificitycontrolsafterit. No finalfour-waytableyet. Rawbackup94334requiresfinaldelta-syncandchecksumverificationwhenfinished. Goalremainsactive; nextmilestonecalibrationlockandheldoutscoring.
+
 ## September 15, 04:52 UTC — all four readout64 gates verified
 
 Collectedallfourreadout64-workerreportslocal andverifiedsamefull/half lensSHA,genericcorpusSHA,512rowsandpassedgateeach. reports/fit64-readout-integrity.json summarizesmetrics/reporthashes. Same64validationpassages repeatedfourworkers,not256independentsamples. Allmetricsidentical;L7 .70546875 remainsnarrowmargin.
