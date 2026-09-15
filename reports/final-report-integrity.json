@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-15T08:28:28.469685+00:00",
+  "status": "passed",
+  "scope": "Final report and README after integration; source hashes and every local link verified",
+  "source_hashes_verified": 12,
+  "local_links_verified": 39,
+  "sources": {
+    "reports/final-comparison/summary.json": "73742b0716df7e19efd8c904d0a23993ea9b0b9722630b6fd564ca5ad0dc4121",
+    "reports/final-comparison-offset32/summary.json": "500f31e2cce846bd221555ae200db4ee46071c38dfa95d0e2c86fd9123e710a2",
+    "reports/final-comparison-offset64/summary.json": "7b6510f6b9a17cc1344389448e9ce082c2f0951c7483884a0b3bb5d6a65cadbf",
+    "reports/template-challenge-comparison/summary.json": "657aa41742906935987eba0073257ce3798aa2bed7fb47c8d6e2b4dcb5542391",
+    "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127",
+    "reports/action-latency-scenarios.json": "7f7e88a4c8ed3d1bac0de4ade4df59ef6a7168ba007ac283b4eb757be54a7fed",
+    "reports/secondary-tokenizer-audit.json": "425000486930a7b0909386e68f88602a1e99a8f59a3d7b09cbad92c992ddebe5",
+    "reports/monitor-harness-validation.json": "d0f58e63626e43a6964af308c488493f4da61815ea3b8cbcdee69644691e9b0a",
+    "reports/monitor-controls-comparison/summary.json": "5f30d208bae539d5d738951484368e77fe3877c2a28ff474ea6cf26293c2fb40",
+    "reports/jview-context-increment.json": "27fc9dc503e54ab85b40ac508fd511ba4abf0a32a5f79d176df71b5a0f2718d0",
+    "reports/model-controls/summary.json": "cd7e029da2e986415b5ac04ac31995e767e88ccdd2688f22b71267a1ab56d44f",
+    "reports/model-controls-reproduction.json": "34ad5ecb957f1ff543c87c859865a1aea7689bd4037af088701a1d9f376ae3dc"
+  },
+  "documents_sha256": {
+    "README.md": "c32aee9c37863e6e591e700a1a99a0930cc97867a350ceb5e06e9dfe16fb14c4",
+    "reports/study-findings.md": "57700dbb5ccc7df314ab1f6bf13bba04fefc373c3fdf9ec6a680ee4d9ff5588a",
+    "reports/completion-audit.md": "742c35a127fd652ce34be305d6c4173075c20f0acbf8f57d76d72e8fe51c5ca0"
+  }
+}

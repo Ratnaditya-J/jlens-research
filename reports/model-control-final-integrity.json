@@ -1,0 +1,44 @@
+{
+  "at": "2026-09-15T08:25:20.019269+00:00",
+  "status": "passed",
+  "archive_files": 965,
+  "archive_bytes": 2198733294,
+  "canonical_episodes": {
+    "base": 45,
+    "honest": 45
+  },
+  "verified_union_selections": 45,
+  "union_duplicates": [],
+  "reconstructed_outputs_rechecked": 20,
+  "preserved_local_preunion_extras": [
+    {
+      "path": "runs/secondary-honest-local-preunion-extras/bootstrap.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/secondary-honest-local-preunion-extras/console.log",
+      "sha256": "f6bb39e983bc9d535c4b0073c27b265141b5d38ee65040b02577f55fe83252a5"
+    },
+    {
+      "path": "runs/secondary-honest-local-preunion-extras/continuation-watch.json",
+      "sha256": "6587d9675086ae8792b00d91e3fd256bbf3b5a2eb46d5db5b60b5de130033347"
+    },
+    {
+      "path": "runs/secondary-honest-local-preunion-extras/continuation-watch.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/secondary-honest-local-preunion-extras/download.log",
+      "sha256": "0bac113e0fb69a9555d4548f9a59de877117da0e60cbe1e1dffedc022366f36d"
+    },
+    {
+      "path": "runs/secondary-honest-local-preunion-extras/install.log",
+      "sha256": "2669fdc3cce01037050b4f84b65dd8cd4f440de3467404be41cf021ff2bdc043"
+    },
+    {
+      "path": "runs/secondary-honest-local-preunion-extras/progress.json",
+      "sha256": "3e815efb357c7722768e333432175cfb87b1172bd502fb10d913b1ed538cb049"
+    }
+  ],
+  "scope": "All final native raw archives including original/helper snapshots, canonical model identities/activations, fixed-priority selections, and all four reconstruction input/output manifests verified locally"
+}

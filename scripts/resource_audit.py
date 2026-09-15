@@ -32,7 +32,8 @@ def main():
         rid=s['response_id']
         if rid in seen:continue
         seen[rid]={'path':str(path.relative_to(ROOT)),'sha256':sha(path)}
-        group=s.get('transport',{}).get('gateway','direct OpenAI')+' / '+str(s.get('resolved_model','unknown'));g=groups[group];u=s['usage'];g['responses']+=1;g['prompt_tokens']+=u.get('prompt_tokens',0) or 0;g['completion_tokens']+=u.get('completion_tokens',0) or 0;g['cached_prompt_tokens']+=(u.get('prompt_tokens_details') or {}).get('cached_tokens',0) or 0
+        gateway=s.get('gateway') or s.get('transport',{}).get('gateway') or 'direct OpenAI'
+        group=gateway+' / '+str(s.get('resolved_model','unknown'));g=groups[group];u=s['usage'];g['responses']+=1;g['prompt_tokens']+=u.get('prompt_tokens',0) or 0;g['completion_tokens']+=u.get('completion_tokens',0) or 0;g['cached_prompt_tokens']+=(u.get('prompt_tokens_details') or {}).get('cached_tokens',0) or 0
         if isinstance(u.get('cost'),(int,float)):g['reported_cost_usd']+=u['cost'];g['responses_with_cost']+=1
     for g in groups.values():
         if not g['responses_with_cost']:g['reported_cost_usd']=None

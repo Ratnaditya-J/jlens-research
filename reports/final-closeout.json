@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-15T08:29:15.640619+00:00",
+  "status": "complete_with_disclosed_scientific_limitations",
+  "evidence_sha256": {
+    "reports/completion-audit.md": "742c35a127fd652ce34be305d6c4173075c20f0acbf8f57d76d72e8fe51c5ca0",
+    "reports/final-report-integrity.json": "ec027670355db6179e7956f1a90b386eb3b95365e9c18993f2c4185ed10b2707",
+    "reports/model-control-final-integrity.json": "2effc2d44188f9d546d6f74ef4e34095c4e6b4b1b9a188a22d57188a6bc77963",
+    "reports/final-timing-archive-integrity.json": "4f8c5224e3b135e7407c23176d429e2f055ac04efa69d06f57c6075fcca4e928",
+    "reports/controller-closeout.json": "e1482c7b0bfe6b1019db5538bb1a718ffc6e7cef236d11a42cfaf98caea6e9fe",
+    "reports/resource-audit.json": "5477350f9d111ffe4a8d13e58e81c2669e4d670518fe73a63e2aaf7c98c6b5ec",
+    "reports/resource-retention.json": "7f0acb5647d8562915172713744033e2c73fbd9073a7ed3d8a30e62435db82e8",
+    "reports/fit64-local-integrity.json": "29283693a5bc49dfc3f1c08381347b8304d8dc564c1448e561632e3ba3d309fa",
+    "reports/fit64-readout-integrity.json": "90831d23ad4c75f4fc42e5ad62382447049cc7a176cd050d54d48eab28612e64",
+    "reports/local-confirmation-integrity.json": "779793aaff4ee9a325f43264581f20f1f61c28048ebe7afb178600611b32c9e9",
+    "reports/frozen-reproduction.json": "14c8262e4aeeb9342442355e0e257ba89cc17ccc1ee04072dab22508fe8f7eea",
+    "reports/timing-reproduction.json": "af5e35e884a1d6401f5d207057d3d09af7d114242085db635bdcde274a79f1c5",
+    "reports/monitor-reproduction.json": "a77bbec1c214319a25baa078d0957b95c1a821d6933164d6b48151eee926af21",
+    "reports/model-controls-reproduction.json": "34ad5ecb957f1ff543c87c859865a1aea7689bd4037af088701a1d9f376ae3dc",
+    "reports/local-raw-archive-integrity.json": "4d75b67be651a00059b58b19b51d94c0bcd5bd49eb998595d9367b9846f825d2",
+    "reports/monitor-final-integrity.json": "c7c4b9ccf9021d838092b6e7f6e710ef2d1310cf2428296d565b8e2cc5d99e7b",
+    "configs/identity-fp32.json": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+    "runs/fresh-calibration/lock.json": "b5ebed7290834c96c3fdcb4a4daa9e6995d1535504bc716226e92ab1969ad1c8",
+    "runs/fresh-calibration/probe.joblib": "4a5bc9e2a99db94d8f41b0ef563a6397607f51d528e91bdddaa19de9f3c80b17",
+    "reports/provenance.md": "e18755e290b3601d120ac07b0641f4c75aca5b67464abce3535d0b5ca5d860f6",
+    "reports/stage-interface.md": "84c03a099dece4b3e43bb6aaad684900da0f27d16bf7958e3660b0c0c37216b2"
+  },
+  "heartbeat": "paused",
+  "active_project_compute": 0,
+  "primary_confirmed_episode_target": "Not met for the primary cohort; bounded empirical/feasibility report delivered as specified, not a claim of full-scale confirmation.",
+  "optional_causal_stage": "explicitly deferred",
+  "storage": "retained as documented; not zero cost"
+}

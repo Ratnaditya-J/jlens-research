@@ -1,6 +1,6 @@
 # J-lens versus activation probe: study findings
 
-**Status:** All experimental cohorts and table reconstructions are complete. Final archive and resource checks are in progress.
+**Status:** Run complete. All fixed experimental cohorts, table reconstructions, and final archive checks are complete. All project compute is stopped. The primary sample-size target shortfall and other scientific limitations below remain.
 
 ## Answer
 
@@ -125,3 +125,9 @@ A [paired context audit](jview-context-increment.md) qualifies the earlier J-vie
 The [native model controls](model-controls/findings.md) completed all 45 fixed messages/seeds per model. The base had 45 benign cases and no confirmed violations. The author-described honest model had 34 benign cases, no confirmed violations, and 11 format failures; those failures remain unavailable, not benign negatives. Both control tables reproduced exactly in a fresh environment.
 
 Among jointly known matched cases, the primary fine-tune violated in 28/41 base-control pairs and 20/30 honest-control pairs, while each control had zero observed violations. These are descriptive model-package comparisons: shipped chat templates differ, reviewer transport differs from primary, and only 15 task families are represented. Neither zero observed violations nor a collapsed bootstrap interval establishes zero population risk. These behavioral controls do not add cross-model detector accuracy measurements.
+
+## Final archive and resources
+
+The [native archive check](model-control-final-integrity.json) verified 965 files (about 2.2 GB), all 90 canonical control episodes, and every honest-worker selection. Original/helper snapshots and interrupted attempts are retained. The [final timing archive check](final-timing-archive-integrity.json) verified 4,459 files. All 20 reconstructed output hashes across the four reconstruction runs were rechecked locally.
+
+All project GPU and CPU compute is stopped. [Retained storage](resource-retention.json) is intentional where unique historical provenance has not been ruled out; it may continue to incur storage charges. The [resource audit](resource-audit.json) records 12,500 unique retained successful review responses. Its provider-reported costs and latest-session compute estimates are partial accounting, not a complete invoice; direct OpenAI billing, storage, tax, and this Codex conversation are not fully reconciled.

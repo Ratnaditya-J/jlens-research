@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-15T08:26:01.190424+00:00",
+  "status": "passed",
+  "checked_files": 4459,
+  "bytes": 220147889,
+  "index_sha256": "934d49efbdf07377dc996ac4f019a1d4eead58905c5d1c3f14a80a5c324254fc",
+  "scope": "Final timing endpoint raw/processed/interpreter/refusal/calibration archives and action/full-token trace diagnostics",
+  "failures": []
+}
