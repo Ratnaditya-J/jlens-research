@@ -1,3 +1,11 @@
+## September 15, 04:02 UTC — paired action localization
+
+Previous conversational turn was no progress; current continuation verified live CPU controller PID779 and scoring PIDs1545/1546, then advanced action audit. CPU status03:57:14 reports all four fit64 pods RUNNING. No fresh held-out result yet.
+
+Collected nine prespecified developmental casebook WASI action traces; all nine reproduce original test observables. Six localize exercised offending statements (three probe-only, three both); three neither cases have no supported action candidate. New src/action_alignment.py and scripts/align_action_traces.py align exact parsed source lines to pinned decoded generated tokens. Four boundary/failure tests passed. Real tokenizer-only run on worker0 loaded no model weights and localized all six candidate cases. Reports action-alignment-development.json and action-timing-development.json preserve source hashes.
+
+At the already scored common code-onset position, probe-only examples flag 9 tokens before their localized statement; both-flagged examples have gaps5,8,20 tokens. These are selected developmental examples at one scored point, NOT earliest-detection trajectories, a held-out comparison, or intervention-ready latency. Unflagged/unlocalized lead remains null. Guest hooks remain tamperable and cover only supported mechanisms. Need extend frozen paired offset scoring and independent action localization to final casebook; no threshold changes based on these examples.
+
 # J-lens and probe comparison status
 
 Persistent task `j-lens-and-probe-research` runs every 10 minutes. User authorizes autonomous decisions and paid APIs/RunPod; account balances auto-replenish. Respect configs/resources.json. No routine permission questions. Never fabricate a definitive comparison.
