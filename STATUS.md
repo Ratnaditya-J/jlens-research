@@ -1,3 +1,11 @@
+## September 15, 04:06 UTC — earlier-position comparison queued
+
+Previous goal turn made progress (action localization); this continuation implements the protocol-required offset32/offset64 comparisons. assemble_fresh.py, interpret_fresh.py, calibrate_fresh.py and evaluate_fresh.py now accept --offset0/32/64 (space-separated CLI values); default0 preserves primary paths. Earlier endpoints use distinct assembled inputs, blinded reviews, train-selected probes, validation thresholds, immutable locks and reports. No pooled endpoint training or reuse of primary probe weights. score_earlier_positions.py checks training/validation class and grouped-fold support before fitting; unsupported offsets get explicit support.json, never invented metrics.
+
+Extended synthetic integration passed6.742sec on CPU, verifying offset32 calibration with its test files absent, exact synthetic four-way accounting, and unchanged primary report/lock. Three support tests passed0.475sec (missing features, one-class grouped folds, balanced support). These are software tests, not scientific results. Dedicated cloud process2249 waits for primary scoring complete, then runs both offsets sequentially; observed live. Log runs/controller/earlier-position-scoring.log, final marker earlier-position-scoring-complete.json. Primary/challenge processes remain in place; no GPU model restart. Scripts deployed before any primary calibration lock exists.
+
+Direct worker0 process849 remained live; latest fit64 log14/16 passages at04:03:06UTC,249sec/passage. No completion or generic readout-quality claim yet. Need collected held-out comparisons, paired action trajectory/lead interpretation, final figures and report, sufficient usable sample yield, and resource cleanup. Earlier offsets are sampled endpoint comparisons, not dense earliest-flag trajectories.
+
 ## September 15, 04:02 UTC — paired action localization
 
 Previous conversational turn was no progress; current continuation verified live CPU controller PID779 and scoring PIDs1545/1546, then advanced action audit. CPU status03:57:14 reports all four fit64 pods RUNNING. No fresh held-out result yet.

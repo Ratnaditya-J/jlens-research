@@ -89,6 +89,24 @@ class FreshPipeline(unittest.TestCase):
             challenged = json.loads((root / 'reports/template-challenge-comparison/summary.json').read_text())
             self.assertEqual(challenged['confirmed_four_way'], report['confirmed_four_way'])
             self.assertEqual(challenged['dataset'], 'template-challenge')
+            # Earlier endpoints have isolated training/locks/reports, with no test access in calibration.
+            earlier = root / 'runs/fresh-offset32-assembled'
+            shutil.copytree(data, earlier)
+            for phase in ['validation', 'test']:
+                shutil.copytree(root / f'runs/fresh-jview-{phase}', root / f'runs/fresh-offset32-jview-{phase}')
+            for p in earlier.glob('test-*'):
+                p.rename(hidden / p.name)
+            offset_cal = run('calibrate_fresh.py', '--offset', '32')
+            self.assertEqual(offset_cal.returncode, 0, offset_cal.stderr)
+            for p in hidden.iterdir():
+                p.rename(earlier / p.name)
+            offset_eval = run('evaluate_fresh.py', '--offset', '32')
+            self.assertEqual(offset_eval.returncode, 0, offset_eval.stderr)
+            offset_report = json.loads((root / 'reports/final-comparison-offset32/summary.json').read_text())
+            self.assertEqual(offset_report['confirmed_four_way'], report['confirmed_four_way'])
+            self.assertEqual(offset_report['offset_before_code_onset'], 32)
+            self.assertEqual(primary_report.read_bytes(), original_primary)
+            self.assertEqual(lock.read_bytes(), before)
             # A changed held-out tensor must fail assembled-artifact integrity.
             tensor = data / 'test-features.npz'
             original = tensor.read_bytes()

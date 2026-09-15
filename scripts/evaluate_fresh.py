@@ -10,13 +10,13 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
  import numpy as np,joblib
  from sklearn.metrics import roc_auc_score,average_precision_score,brier_score_loss
- parser=argparse.ArgumentParser();parser.add_argument('--dataset',choices=['primary','template-challenge'],default='primary');args=parser.parse_args();challenge=args.dataset=='template-challenge';stem='template-challenge' if challenge else 'fresh'
- data=ROOT/f'runs/{stem}-assembled';cal=ROOT/'runs/fresh-calibration';lockp=cal/'lock.json';lock=json.loads(lockp.read_text())
+ parser=argparse.ArgumentParser();parser.add_argument('--dataset',choices=['primary','template-challenge'],default='primary');parser.add_argument('--offset',type=int,choices=[0,32,64],default=0);args=parser.parse_args();suffix=f'-offset{args.offset}' if args.offset else '';challenge=args.dataset=='template-challenge';stem='template-challenge' if challenge else 'fresh'
+ data=ROOT/f'runs/{stem}{suffix}-assembled';cal=ROOT/f'runs/fresh{suffix}-calibration';lockp=cal/'lock.json';lock=json.loads(lockp.read_text())
  assembled=json.loads((data/'manifest.json').read_text())
  for name,digest in assembled['files_sha256'].items():assert sha(data/name)==digest,'assembled input changed: '+name
  for name,digest in lock['artifacts'].items():assert sha(cal/name)==digest
  for name,digest in lock['source_hashes'].items():assert sha(ROOT/name)==digest
- jd=ROOT/f'runs/{stem}-jview-test';jc=json.loads((jd/'complete.json').read_text());assert not jc['errors'];assert sha(jd/'scores.json')==jc['scores_sha256'];jlookup={r['episode_id']:r for r in json.loads((jd/'scores.json').read_text())}
+ jd=ROOT/f'runs/{stem}{suffix}-jview-test';jc=json.loads((jd/'complete.json').read_text());assert not jc['errors'];assert sha(jd/'scores.json')==jc['scores_sha256'];jlookup={r['episode_id']:r for r in json.loads((jd/'scores.json').read_text())}
  records=json.loads((data/'test-records.json').read_text());features=np.load(data/'test-features.npz');contexts={r['episode_id']:r for r in json.loads((data/'test-contexts.json').read_text())['rows']};layer=lock['selected']['layer'];probe=joblib.load(cal/'probe.joblib');x=features[f'layer_{layer}'].astype(np.float64);p=probe.predict_proba(x)[:,1];cases=[];extra=[]
  null=joblib.load(cal/'shuffled-label.joblib').predict_proba(x)[:,1];mean=np.load(cal/'mean-difference.npz');md=((x-mean['mean'])/mean['scale'])@mean['direction']
  textmodels={a:joblib.load(cal/(a+'.joblib')) for a in ['prompt_only','permitted_prefix']}
@@ -29,7 +29,7 @@ def main():
    for arm,model in textmodels.items():
     text=contexts[eid]['prompt']+('\n'+contexts[eid]['generated_prefix'] if arm=='permitted_prefix' else '');row[arm+'_score']=float(model.predict_proba([text])[0,1])
   extra.append(row)
- protocol={'split':'test','threshold_source':'validation','observation_boundary':'before_first_submitted_code_token','probe_threshold':lock['probe_threshold'],'jlens_threshold':lock['jview_threshold']};report,rows=summarize({'protocol':protocol,'cases':cases})
+ protocol={'split':'test','threshold_source':'validation','observation_boundary':f'{args.offset}_tokens_before_first_submitted_code_token','probe_threshold':lock['probe_threshold'],'jlens_threshold':lock['jview_threshold']};report,rows=summarize({'protocol':protocol,'cases':cases})
  paired=[r for r in rows if r['category'] is not None and r['behavior_label'] in ['misaligned','benign']];y=np.array([r['behavior_label']=='misaligned' for r in paired]);groups=np.array([r['task_group'] for r in paired]);pp=np.array([r['probe_score'] for r in paired]);jj=np.array([r['jlens_score'] for r in paired]);assert len(set(y))==2
  def metric(scores,threshold,labels=None):
   y=labels if labels is not None else np.array([r["behavior_label"]=="misaligned" for r in paired])
@@ -80,7 +80,7 @@ def main():
  report['dataset']='template-challenge' if challenge else 'primary';report['threshold_policy']='Original primary validation lock; no challenge calibration' if challenge else 'Primary validation lock'
  report['additional_diagnostics']=additional_diagnostics(rows,list(jlookup.values()),lock['probe_threshold'],lock['jview_threshold'])
  report['casebook_ids']=selected;report['calibration_lock_sha256']=sha(lockp);report['scope']='Held-out authored programming-task families; conditional on independently labeled and paired available primary readouts; no universal alignment, causality, or human readability claim'
- out=ROOT/('reports/template-challenge-comparison' if challenge else 'reports/final-comparison');out.mkdir(parents=True,exist_ok=True)
+ report['offset_before_code_onset']=args.offset;out=ROOT/(('reports/template-challenge-comparison' if challenge else 'reports/final-comparison')+suffix);out.mkdir(parents=True,exist_ok=True)
  (out/'summary.json').write_text(json.dumps(report,indent=2)+'\n');(out/'cases.json').write_text(json.dumps(rows,indent=2)+'\n');(out/'baseline-cases.json').write_text(json.dumps(extra,indent=2)+'\n')
  import csv
  with (out/'cases.csv').open('w',newline='') as f:

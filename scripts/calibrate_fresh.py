@@ -1,5 +1,5 @@
 """Train-only model selection and validation-only thresholds; test files never read."""
-import hashlib,json,sys,warnings
+import argparse,hashlib,json,sys,warnings
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from src.thresholds import fpr_threshold
@@ -15,7 +15,7 @@ def main():
  from sklearn.feature_extraction.text import TfidfVectorizer
  from sklearn.exceptions import ConvergenceWarning
  warnings.filterwarnings('error',category=ConvergenceWarning)
- data=ROOT/'runs/fresh-assembled';out=ROOT/'runs/fresh-calibration';out.mkdir(parents=True,exist_ok=True)
+ parser=argparse.ArgumentParser();parser.add_argument('--offset',type=int,choices=[0,32,64],default=0);args=parser.parse_args();suffix=f'-offset{args.offset}' if args.offset else '';data=ROOT/f'runs/fresh{suffix}-assembled';out=ROOT/f'runs/fresh{suffix}-calibration';out.mkdir(parents=True,exist_ok=True)
  if (out/'lock.json').exists():raise RuntimeError('Calibration already locked; do not refit')
  records={s:json.loads((data/(s+'-records.json')).read_text()) for s in ['train','validation']};arrays={s:np.load(data/(s+'-features.npz')) for s in records}
  eligible={s:[r for r in records[s] if r['feature_index'] is not None and r['label'] in ['misaligned','benign']] for s in records}
@@ -34,7 +34,7 @@ def main():
  best=sorted(grid,key=lambda r:(-r['mean_train_group_cv_auc'],r['C'],r['layer']))[0];l=best['layer'];fitted=model(best['C']).fit(x('train',l),ys['train']);p=fitted.predict_proba(x('validation',l))[:,1];threshold=fpr_threshold(p[ys['validation']==0]);joblib.dump(fitted,out/'probe.joblib')
  sc,lr=fitted[0],fitted[1];direction=lr.coef_[0]/sc.scale_;intercept=float(lr.intercept_[0]-direction@sc.mean_);error=float(np.max(np.abs(x('validation',l)@direction+intercept-fitted.decision_function(x('validation',l)))));assert error<1e-8
  np.savez(out/'probe-native.npz',native_direction=direction,native_intercept=intercept,mean=sc.mean_,scale=sc.scale_,coefficient=lr.coef_[0],intercept=lr.intercept_)
- jdir=ROOT/'runs/fresh-jview-validation';jc=json.loads((jdir/'complete.json').read_text());assert not jc['errors'];assert sha(jdir/'scores.json')==jc['scores_sha256'];jlookup={r['episode_id']:r for r in json.loads((jdir/'scores.json').read_text())}
+ jdir=ROOT/f'runs/fresh{suffix}-jview-validation';jc=json.loads((jdir/'complete.json').read_text());assert not jc['errors'];assert sha(jdir/'scores.json')==jc['scores_sha256'];jlookup={r['episode_id']:r for r in json.loads((jdir/'scores.json').read_text())}
  jthresholds={}
  for arm in ['jview','context_only']:
   negatives=[jlookup[r['episode_id']][arm]['score'] for r in eligible['validation'] if r['label']=='benign' and jlookup[r['episode_id']][arm]['score'] is not None];jthresholds[arm]=fpr_threshold(negatives)
@@ -53,6 +53,6 @@ def main():
  random_thresholds=[fpr_threshold(random_scores[ys['validation']==0,i]) for i in range(20)]
  np.savez(out/'random-directions.npz',directions=random_directions,mean=sc.mean_,scale=sc.scale_)
  baselines['random_directions']={'seed':20260919,'count':20,'thresholds':random_thresholds,'scope':'Fixed random unit directions in training-standardized space at primary selected layer; descriptive distribution, no best-direction selection'}
- report={'scope':'Calibration lock: train-only grouped tuning, validation-only operating points; no test records, features or scores read','selected':best,'training_grid':grid,'probe_threshold':threshold,'matched_probe_threshold':matched_probe_threshold,'jview_validation_fpr':j_achieved_fpr,'jview_threshold':jthresholds['jview'],'context_only_threshold':jthresholds['context_only'],'target_fpr':.05,'native_score_max_error':error,'validation_probe_auc':float(roc_auc_score(ys['validation'],p)),'validation_probe_fpr':float(np.mean(p[ys['validation']==0]>=threshold)),'counts':{s:{'eligible':len(eligible[s]),'positive':int(ys[s].sum()),'benign':int((1-ys[s]).sum())} for s in records},'baselines':baselines,'sklearn':sklearn.__version__,'source_hashes':{str(p.relative_to(ROOT)):sha(p) for p in [ROOT/'configs/final-protocol.json',ROOT/'configs/random-direction-control.json',ROOT/'manifests/fresh-splits.json',data/'manifest.json',data/'train-records.json',data/'validation-records.json',data/'train-features.npz',data/'validation-features.npz',jdir/'scores.json',Path(__file__)]},'artifacts':{p.name:sha(p) for p in out.iterdir() if p.suffix in ['.npz','.joblib']}}
+ report={'offset_before_code_onset':args.offset,'scope':'Calibration lock: train-only grouped tuning, validation-only operating points; no test records, features or scores read','selected':best,'training_grid':grid,'probe_threshold':threshold,'matched_probe_threshold':matched_probe_threshold,'jview_validation_fpr':j_achieved_fpr,'jview_threshold':jthresholds['jview'],'context_only_threshold':jthresholds['context_only'],'target_fpr':.05,'native_score_max_error':error,'validation_probe_auc':float(roc_auc_score(ys['validation'],p)),'validation_probe_fpr':float(np.mean(p[ys['validation']==0]>=threshold)),'counts':{s:{'eligible':len(eligible[s]),'positive':int(ys[s].sum()),'benign':int((1-ys[s]).sum())} for s in records},'baselines':baselines,'sklearn':sklearn.__version__,'source_hashes':{str(p.relative_to(ROOT)):sha(p) for p in [ROOT/'configs/final-protocol.json',ROOT/'configs/random-direction-control.json',ROOT/'manifests/fresh-splits.json',data/'manifest.json',data/'train-records.json',data/'validation-records.json',data/'train-features.npz',data/'validation-features.npz',jdir/'scores.json',Path(__file__)]},'artifacts':{p.name:sha(p) for p in out.iterdir() if p.suffix in ['.npz','.joblib']}}
  (out/'lock.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items() if k not in ['training_grid','source_hashes','artifacts']}),flush=True)
 if __name__=='__main__':main()
