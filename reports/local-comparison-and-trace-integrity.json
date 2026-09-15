@@ -1,0 +1,5 @@
+{
+  "checked_input_entries_and_trace_files": 299,
+  "failures": [],
+  "scope": "All five comparison-plan inputs plus full-token trace files; repeated input entries counted per plan"
+}
