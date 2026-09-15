@@ -1,0 +1,37 @@
+{
+  "stage": "fit-lens",
+  "identity_config": "configs/identity-fp32.json",
+  "inputs_sha256": {
+    "configs/identity-fp32.json": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+    "configs/fit64.json": "fc01daa33bfaa3ea2fbf148eb6106a8ffc0a07485050c900c97f895c964bca6b",
+    "configs/generic-corpus-balanced.json": "4ed918eb3ade46681b11c1f3e77018e8d394c279f9bf6dbefee0ddea2749450b",
+    "configs/fit-pilot-gate.json": "3239c93ffa0d21ba1ecdcc36e155389a862355b3423594987c43e73f0c7c105c",
+    "scripts/fit_pilot_shard.py": "d590eaa13d12aecb59a507dd33cbe140112c179d3eef4dbf63b2446ea52e116b",
+    "scripts/gptoss_lens_model.py": "ebff3ca3403ece37aef91cc60302d1f871effa23343db1ef7f7517bca7ec766a"
+  },
+  "commands": [
+    {
+      "script": "fit_pilot_shard.py",
+      "args": [
+        "--shard",
+        "3",
+        "--dim-batch",
+        "2",
+        "--stage-config",
+        "configs/fit64.json"
+      ]
+    }
+  ],
+  "outputs": [
+    "runs/fit64-3/complete.json",
+    "runs/fit64-3/manifest.json",
+    "runs/fit64-3/lens.pt"
+  ],
+  "resource_estimate": {
+    "gpu_type": "H200",
+    "peak_gpu_memory_gb": 96,
+    "gpu_hours": 1.2,
+    "basis": "Measured~250sec per128token passage,16passages/shard, plusmodel load. Estimate, not guarantee."
+  },
+  "scope": "Reproduce one disjoint frozen64-passage lens shard. Run only on an allocated idle GPU with pinned dependencies and reference source. Do not launch alongside the currently active fit."
+}

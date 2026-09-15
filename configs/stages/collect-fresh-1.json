@@ -1,0 +1,31 @@
+{
+  "stage": "collect",
+  "identity_config": "configs/identity-fp32.json",
+  "inputs_sha256": {
+    "configs/identity-fp32.json": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+    "scripts/behavior_pilot.py": "d5078726835032e0158c579eea6c7c59a051f37d0381058a84411b5978e0da2c",
+    "configs/fresh-v1.json": "9fb8b66fb939e9d16876794c33e1d9e3a5f798c9a90387ea8e3a65ab0ea1992e",
+    "runs/speed-benchmark/report.json": "dbb52a369c14cb9e06c7efba865eec0cda569bdd7b95f332c08089a610d3ae68"
+  },
+  "commands": [
+    {
+      "script": "behavior_pilot.py",
+      "env": {
+        "IDENTITY_CONFIG": "configs/identity-fp32.json",
+        "BEHAVIOR_CONFIG": "configs/fresh-v1.json",
+        "BEHAVIOR_OUTPUT": "runs/fresh-shard-1",
+        "EPISODE_SHARD_INDEX": "1",
+        "EPISODE_SHARD_COUNT": "4"
+      }
+    }
+  ],
+  "outputs": [
+    "runs/fresh-shard-1/complete.json"
+  ],
+  "resource_estimate": {
+    "gpu_hours": 3,
+    "peak_gpu_memory_gb": 96,
+    "basis": "306episodes/shard at30sec each plus fallback reserve; actual uncached fallback may exceed estimate"
+  },
+  "scope": "One disjoint primary generation shard. Never launch alongside active model process or duplicate the controller job. Preserve all per-episode hashes and run external review separately."
+}

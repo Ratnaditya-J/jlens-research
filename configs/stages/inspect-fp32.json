@@ -1,0 +1,27 @@
+{
+  "stage": "inspect",
+  "identity_config": "configs/identity-fp32.json",
+  "inputs_sha256": {
+    "configs/identity-fp32.json": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+    "scripts/gpu_identity.py": "51ca4568907a7c1a83366383b784883bf1d015ed596cc056068519040284ac80"
+  },
+  "commands": [
+    {
+      "script": "gpu_identity.py",
+      "env": {
+        "IDENTITY_CONFIG": "configs/identity-fp32.json",
+        "IDENTITY_OUTPUT": "runs/identity-fp32"
+      }
+    }
+  ],
+  "outputs": [
+    "runs/identity-fp32/report.json",
+    "runs/identity-fp32/pip-freeze.txt"
+  ],
+  "resource_estimate": {
+    "gpu_hours": 0.15,
+    "peak_gpu_memory_gb": 96,
+    "basis": "FP32 pilot measured210.7sec; reserve9min excluding fresh downloads"
+  },
+  "scope": "Pinned FP32 identity engineering checks; report completion does not establish behavior or lens validity. Run on idle H200 only."
+}

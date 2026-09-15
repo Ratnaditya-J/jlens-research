@@ -6,6 +6,12 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
+## Reproducibility interface — September15 03:31 UTC
+
+Implemented scripts/study.py single stage CLI: inspect,confirm,collect,fit-lens,fit-probe,score,compare,intervene(disabled optional stage). Configuration-driven dry-run validates pinned identity, script/inputSHA, outputpaths and prints resource estimates. Execute writes content-addressed plans/status/logs/completion hashes; repeats verify outputs without rerun; changedinputs/outputs rejected. Meaningful synthetic CLI test passed in0.196sec. Real fit64 andfresh-collect dry-runs passed withoutstartingGPUjobs. Nine ready configs/stages examples coveridentity,4fitshards,4collectionshards. Downstream stage configs/finalreproduction still require actualcollectedinputhashes. reports/stage-interface.md documentsruntime,scopeandlimitations. CLI processcompletiondoesnotautomaticallymeanpassedscientificgate.
+
+Cloudfit worker0 reached5/16prompts by03:26:17 (~250sec/prompt); controller03:27:53reportedall4RUNNING. No fittingcompletion or heldoutresult yet. Clock tool read03:30:37 duringwork. Fullgoalstillactive.
+
 ## Shortcut audit continuation — clock-verified September15 03:29 UTC
 
 User questioned possible probe overfitting/blinding. Audited development source and fresh split validator: developmental scores genuinely leave broad families out with train-only scaling, but templates recur and labels strongly correlate with template (33/0 source,17/16strict,1/28no-hints plus4uncertain). Prompt-onlyAUC.798 andprefix.859 confirm shortcut concern. Fresh validator passed family/scenario/exact-usertext/group separation; unseen-template transfer was NOT already established. reports/blinding-shortcut-audit.md documents evidence and limits.
