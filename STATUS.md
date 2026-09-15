@@ -1,3 +1,7 @@
+## 2026-09-15T06:35:30.692916+00:00 — native-control reconstruction prepared
+
+Previous turn verifiedhelperidentity/checklist. This turn confirmedhelper464livefirstreversecase65tokens51.7sec, coordinator47618liveunion8(0helpercompleted), originalreviewsbase16benign,honest6benign2formatfailures; noerrorscoordinator. Addedreproduce_model_controls.py freshstandard-library-onlyvenv/input-onlyreplica, two deterministicreconstructionpasses, exactsummary+findingsSHAsandoriginalinputsunchanged. Compiled/transferredCPU; runafterreports/model-controls/summary.jsonexists, notyetexecuted. No scientificresultsnew; activewaitforremaining45-casecohorts.
+
 ## 2026-09-15T06:34:02.736667+00:00 — helper identity verified, completion checklist current
 
 Previous turn progressedhelperdeployment/coordinator. This turn helpergenerator464+timeout463live loading, coordinator47618live, union8original+0helperatfirstpoll. CPU original/helper model-inputs manifests identicalSHA67e2345d69329419037fbaf348ec4a2e832b6b8887d9645c603a21ee259d9e08, all16files+identitysame; reports/honest-helper-identity-parity.json collectedlocal. Completionaudit/README updatedmonitorfullycomplete24/24benignFP24vs0,204replaypasses/96interpretations/3exactreproducedoutputs/localbackupverified. READMEall19linksresolve. Integratedreportspacingfixed. Remainingmainexperimentalworknativebase45andhonestunion45; monitorflagsarefinal. Needcheckhelperfirstepisodes andcoordinatorunionprogress, finalnativeanalysis/reprobackups.
