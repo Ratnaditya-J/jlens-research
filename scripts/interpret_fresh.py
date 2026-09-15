@@ -6,7 +6,7 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def write(p,value):
  p.parent.mkdir(parents=True,exist_ok=True);t=p.with_suffix('.tmp');t.write_text(json.dumps(value,indent=2)+'\n');t.replace(p)
 def main():
- p=argparse.ArgumentParser();p.add_argument('--workers',type=int,default=12);p.add_argument('--phase',choices=['validation','test'],required=True);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--workers',type=int,default=12);p.add_argument('--phase',choices=['validation','test'],required=True);p.add_argument('--dataset',choices=['primary','template-challenge'],default='primary');a=p.parse_args();stem='template-challenge' if a.dataset=='template-challenge' else 'fresh';assert a.dataset=='primary' or a.phase=='test'
  if a.phase=='test':
   lockp=ROOT/'runs/fresh-calibration/lock.json';assert lockp.exists(),'Lock calibration before test interpretation'
   lockdata=json.loads(lockp.read_text())
@@ -14,8 +14,8 @@ def main():
  if 'OPENAI_API_KEY' not in os.environ:
   credentials=Path('/workspace/private/controller-credentials.json')
   os.environ['OPENAI_API_KEY']=json.loads(credentials.read_text())['OPENAI_API_KEY']
- cfgpath=ROOT/'configs/jview-final-v1.json';cfg=json.loads(cfgpath.read_text());vp=ROOT/f'runs/fresh-assembled/{a.phase}-readouts.json';tp=ROOT/f'runs/fresh-assembled/{a.phase}-contexts.json'
- views=json.loads(vp.read_text());texts={x['episode_id']:x for x in json.loads(tp.read_text())['rows']};out=ROOT/f'runs/fresh-jview-{a.phase}';out.mkdir(parents=True,exist_ok=True)
+ cfgpath=ROOT/'configs/jview-final-v1.json';cfg=json.loads(cfgpath.read_text());vp=ROOT/f'runs/{stem}-assembled/{a.phase}-readouts.json';tp=ROOT/f'runs/{stem}-assembled/{a.phase}-contexts.json'
+ views=json.loads(vp.read_text());texts={x['episode_id']:x for x in json.loads(tp.read_text())['rows']};out=ROOT/f'runs/{stem}-jview-{a.phase}';out.mkdir(parents=True,exist_ok=True)
  import fcntl
  lock=(out/'lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  manifest={'config_sha256':sha(cfgpath),'readouts_sha256':sha(vp),'contexts_sha256':sha(tp),'script_sha256':sha(Path(__file__)),'scope':cfg['scope']}

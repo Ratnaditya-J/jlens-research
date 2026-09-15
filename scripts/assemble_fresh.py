@@ -1,22 +1,23 @@
 """Assemble independently collected features, blinded displays and external labels."""
-import hashlib,json
+import argparse,hashlib,json
 from pathlib import Path
 import numpy as np
 from safetensors.numpy import load_file
 ROOT=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
- cfgp=ROOT/'configs/fresh-v1.json';cfg=json.loads(cfgp.read_text());labelp=ROOT/'runs/fresh/review-summary.json';labels={r['episode_id']:r for r in json.loads(labelp.read_text())['rows']}
- assert (ROOT/'runs/fresh/review-complete.json').exists() and len(labels)==len(cfg['episodes'])
- out=ROOT/'runs/fresh-assembled';out.mkdir(parents=True,exist_ok=True);quality=[]
+ parser=argparse.ArgumentParser();parser.add_argument('--dataset',choices=['primary','template-challenge'],default='primary');args=parser.parse_args();challenge=args.dataset=='template-challenge'
+ stem='template-challenge' if challenge else 'fresh';cfgp=ROOT/('configs/template-challenge-v1.json' if challenge else 'configs/fresh-v1.json');cfg=json.loads(cfgp.read_text());labelp=ROOT/f'runs/{stem}/review-summary.json';labels={r['episode_id']:r for r in json.loads(labelp.read_text())['rows']}
+ assert (ROOT/f'runs/{stem}/review-complete.json').exists() and len(labels)==len(cfg['episodes'])
+ out=ROOT/f'runs/{stem}-assembled';out.mkdir(parents=True,exist_ok=True);quality=[]
  for i in range(4):
-  complete=ROOT/f'runs/fresh-processed-{i}/complete.json';assert complete.exists()
+  complete=ROOT/f'runs/{stem}-processed-{i}/complete.json';assert complete.exists()
   q=ROOT/f'runs/readout64-worker-{i}/report.json';report=json.loads(q.read_text());assert report['shard_readout_stability_passed'],'64-prompt readout stability failed';quality.append(sha(q))
  records={s:[] for s in ['train','validation','test']};vectors={s:{l:[] for l in [7,15,21,22]} for s in records};views={s:[] for s in records};contexts={s:[] for s in records};exclusions=[]
  for i,ep in enumerate(cfg['episodes']):
-  eid=ep['episode_id'];split=ep['split'];d=ROOT/f'runs/fresh-processed-{i%4}'/eid;complete=json.loads((d/'complete.json').read_text())
+  eid=ep['episode_id'];split=ep['split'];d=ROOT/f'runs/{stem}-processed-{i%4}'/eid;complete=json.loads((d/'complete.json').read_text())
   for name,digest in complete['files_sha256'].items():assert sha(d/name)==digest
-  source=json.loads((ROOT/'runs/fresh'/eid/'episode.json').read_text());label=labels[eid].get('label','unavailable');entry={'episode_id':eid,'family_id':ep['family_id'],'scenario_id':ep['scenario_id'],'template':ep['template'],'split':split,'control':ep.get('control'),'label':label,'label_status':labels[eid]['status'],'runtime_use_cache':source.get('runtime_use_cache',source['configuration']['use_cache']),'feature_index':None,'processed_complete_sha256':sha(d/'complete.json')}
+  source=json.loads((ROOT/f'runs/{stem}'/eid/'episode.json').read_text());label=labels[eid].get('label','unavailable');entry={'episode_id':eid,'family_id':ep['family_id'],'scenario_id':ep['scenario_id'],'matched_primary_episode_id':ep.get('matched_primary_episode_id'),'template':ep['template'],'split':split,'control':ep.get('control'),'label':label,'label_status':labels[eid]['status'],'runtime_use_cache':source.get('runtime_use_cache',source['configuration']['use_cache']),'feature_index':None,'processed_complete_sha256':sha(d/'complete.json')}
   fp=d/'features.safetensors'
   if fp.exists():
    f=load_file(str(fp));key='offset_0_layer_21'
@@ -33,7 +34,7 @@ def main():
   index_by_id={ep['episode_id']:i for i,ep in enumerate(cfg['episodes'])}
   for entry in records[split]:
    if entry['feature_index'] is None:continue
-   eid=entry['episode_id'];f=load_file(str(ROOT/f'runs/fresh-processed-{index_by_id[eid]%4}'/eid/'features.safetensors'))
+   eid=entry['episode_id'];f=load_file(str(ROOT/f'runs/{stem}-processed-{index_by_id[eid]%4}'/eid/'features.safetensors'))
    for l in transformed:transformed[l].append(f[f'jspace_offset_0_layer_{l}'])
   np.savez(out/(split+'-jspace-features.npz'),**{f'layer_{l}':np.asarray(v,dtype=np.float32) for l,v in transformed.items()})
  for split in records:

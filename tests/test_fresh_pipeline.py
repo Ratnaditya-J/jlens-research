@@ -73,6 +73,17 @@ class FreshPipeline(unittest.TestCase):
             self.assertEqual(report['confirmed_four_way'], {'probe_only': 4, 'jlens_only': 0, 'both': 4, 'neither': 8})
             self.assertEqual(report['confirmed_paired_n'], 16)
             self.assertIn('fpr_difference', report['cluster_intervals'])
+            primary_report = root / 'reports/final-comparison/summary.json'
+            original_primary = primary_report.read_bytes()
+            shutil.copytree(data, root / 'runs/template-challenge-assembled')
+            shutil.copytree(root / 'runs/fresh-jview-test', root / 'runs/template-challenge-jview-test')
+            challenge = run('evaluate_fresh.py', '--dataset', 'template-challenge')
+            self.assertEqual(challenge.returncode, 0, challenge.stderr)
+            self.assertEqual(primary_report.read_bytes(), original_primary)
+            self.assertEqual(lock.read_bytes(), before)
+            challenged = json.loads((root / 'reports/template-challenge-comparison/summary.json').read_text())
+            self.assertEqual(challenged['confirmed_four_way'], report['confirmed_four_way'])
+            self.assertEqual(challenged['dataset'], 'template-challenge')
             # A changed held-out tensor must fail assembled-artifact integrity.
             tensor = data / 'test-features.npz'
             original = tensor.read_bytes()

@@ -6,6 +6,14 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
+## Template challenge routing deployed — 2026-09-15 03:42:14 UTC
+
+128caseunseentemplatechallenge nowwired into cloudcontroller. AftereachprimaryfreshshardpostprocessisSHAverifiedandlensqualitypassed, advance_challenge reusesitsGPUforfrozenseparategenerationandpostprocessingprovided>=30minremainsbeforeoriginaldeadline; otherwisewritesdeferredmarkerandstopsGPU. NoextraconcurrentGPU. configs/next-template-challenge.json authorizes$40/8GPUh envelopewithinresourcecaps. Deferred/partialshardswillneednextallocation; donotcallchallengecompleteprematurely.
+
+postprocess_fresh.py supports explicitconfig/input/outputprefixes whiledefaultsretainprimarypaths. fresh_review_loop.py supportsconfig/folder/markerprefix; challengeblindedexternalreview runsseparately. assemble_fresh.py,interpret_fresh.py,evaluate_fresh.py accept --dataset template-challenge with separateoutputs and ORIGINALprimarycalibrationlock. Nochallengefit/recalibration. template_challenge_loop.py waitsforprimaryscoringcomplete+all4challengeprocessedmarkers+externalreviewcomplete,thenassembles,interprets,andcompares. Matched-pairlabeltransition/uncertaintyauditstillpending; currentcomparisonproducesindependentchallengefourwaymetrics.
+
+Tests: actualhandofffunctionwithisolatedfilesystem/networkfakes passesquality/deadlinegates,launchonceandchangedconfigrejection. CPUfullsyntheticintegration PASSED5.089sec,includingchallengeevaluationpreservingprimaryreportandcalibrationlockbytes. Scripts/configsdeployednewCPU157.157.221.29:26800. Controllerintentionallyrestartedtoloadhandoff; challengereview/scoringstartedandshouldbeverifiedlive. Primarygenerationstillnotcomplete; fittingwas7/16onworker0at03:34:35. Noactualstress-testresultyet.
+
 ## AUTHORITATIVE controller handoff complete — 2026-09-15 03:38:09 UTC
 
 CURRENT CPUcontroller: b3zp77ohkqwcsk, root@157.157.221.29 port26800, $0.368/hour,100GiBephemeralcontainerdisk. Canonical runs/pod-controller.json updated; runs/pod-controller-large.json samepod. Old r6l6ozams6mgmt at213.173.105.101:48019 STOPPED after full /workspace checksum-verifiedcopy. Do not SSHoldendpointforcurrentprogress. Privatekey/known_hosts localwork/private unchanged; newCPUprivate credentials copiedprivately/chmod600, generatedWASIguestsstillhave none. All4GPUjobscontinueunchanged.

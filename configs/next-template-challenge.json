@@ -1,0 +1,10 @@
+{
+  "config": "configs/template-challenge-v1.json",
+  "configuration_sha256": "c5912d392b1bcd13b0f5365ee6de789ff69818a1eaaa8778f7c38fb1a60fb9a5",
+  "shards": 4,
+  "budget_usd": 40,
+  "max_gpu_hours": 8,
+  "trigger": "After each primary fresh shard is fully processed and collected, reuse same GPU if at least30minutes before existingdeadline. Otherwise recorddeferred and obtain subsequent allocation. Never alterprimarydataset.",
+  "estimated_seconds_per_episode": 30,
+  "basis": "128cases across4workers~16minutes generation at30s/case; reserveextra time for parity/readouts. Existingpoddeadlinesenforced."
+}

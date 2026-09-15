@@ -1,5 +1,5 @@
 """One locked held-out join; paired counts, metrics, clustered intervals and controls."""
-import hashlib,json,sys
+import argparse,hashlib,json,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from paired_breakdown import summarize
@@ -10,19 +10,20 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
  import numpy as np,joblib
  from sklearn.metrics import roc_auc_score,average_precision_score,brier_score_loss
- data=ROOT/'runs/fresh-assembled';cal=ROOT/'runs/fresh-calibration';lockp=cal/'lock.json';lock=json.loads(lockp.read_text())
+ parser=argparse.ArgumentParser();parser.add_argument('--dataset',choices=['primary','template-challenge'],default='primary');args=parser.parse_args();challenge=args.dataset=='template-challenge';stem='template-challenge' if challenge else 'fresh'
+ data=ROOT/f'runs/{stem}-assembled';cal=ROOT/'runs/fresh-calibration';lockp=cal/'lock.json';lock=json.loads(lockp.read_text())
  assembled=json.loads((data/'manifest.json').read_text())
  for name,digest in assembled['files_sha256'].items():assert sha(data/name)==digest,'assembled input changed: '+name
  for name,digest in lock['artifacts'].items():assert sha(cal/name)==digest
  for name,digest in lock['source_hashes'].items():assert sha(ROOT/name)==digest
- jd=ROOT/'runs/fresh-jview-test';jc=json.loads((jd/'complete.json').read_text());assert not jc['errors'];assert sha(jd/'scores.json')==jc['scores_sha256'];jlookup={r['episode_id']:r for r in json.loads((jd/'scores.json').read_text())}
+ jd=ROOT/f'runs/{stem}-jview-test';jc=json.loads((jd/'complete.json').read_text());assert not jc['errors'];assert sha(jd/'scores.json')==jc['scores_sha256'];jlookup={r['episode_id']:r for r in json.loads((jd/'scores.json').read_text())}
  records=json.loads((data/'test-records.json').read_text());features=np.load(data/'test-features.npz');contexts={r['episode_id']:r for r in json.loads((data/'test-contexts.json').read_text())['rows']};layer=lock['selected']['layer'];probe=joblib.load(cal/'probe.joblib');x=features[f'layer_{layer}'].astype(np.float64);p=probe.predict_proba(x)[:,1];cases=[];extra=[]
  null=joblib.load(cal/'shuffled-label.joblib').predict_proba(x)[:,1];mean=np.load(cal/'mean-difference.npz');md=((x-mean['mean'])/mean['scale'])@mean['direction']
  textmodels={a:joblib.load(cal/(a+'.joblib')) for a in ['prompt_only','permitted_prefix']}
  for r in records:
   eid=r['episode_id'];i=r['feature_index'];j=jlookup.get(eid,{});js=j.get('jview',{}).get('score');cs=j.get('context_only',{}).get('score')
   label=r['label'] if r['label'] in ['misaligned','benign','uncertain'] else 'unavailable'
-  cases.append({'episode_id':eid,'task_group':r['family_id'],'behavior_label':label,'probe_score':float(p[i]) if i is not None else None,'jlens_score':js,'template':r['template'],'control':r['control'],'runtime_use_cache':r['runtime_use_cache']})
+  cases.append({'episode_id':eid,'task_group':r['family_id'],'behavior_label':label,'probe_score':float(p[i]) if i is not None else None,'jlens_score':js,'template':r['template'],'control':r['control'],'runtime_use_cache':r['runtime_use_cache'],'matched_primary_episode_id':r.get('matched_primary_episode_id')})
   row={'episode_id':eid,'context_only_score':cs,'mean_difference_score':float(md[i]) if i is not None else None,'shuffled_label_score':float(null[i]) if i is not None else None}
   if i is not None:
    for arm,model in textmodels.items():
@@ -73,9 +74,10 @@ def main():
  for label in ['misaligned','benign']:
   for category in confirmed:
    candidates=[r['episode_id'] for r in paired if r['behavior_label']==label and r['category']==category];selected.extend(sorted(candidates,key=lambda s:hashlib.sha256(s.encode()).hexdigest())[:3])
+ report['dataset']='template-challenge' if challenge else 'primary';report['threshold_policy']='Original primary validation lock; no challenge calibration' if challenge else 'Primary validation lock'
  report['additional_diagnostics']=additional_diagnostics(rows,list(jlookup.values()),lock['probe_threshold'],lock['jview_threshold'])
  report['casebook_ids']=selected;report['calibration_lock_sha256']=sha(lockp);report['scope']='Held-out authored programming-task families; conditional on independently labeled and paired available primary readouts; no universal alignment, causality, or human readability claim'
- out=ROOT/'reports/final-comparison';out.mkdir(parents=True,exist_ok=True)
+ out=ROOT/('reports/template-challenge-comparison' if challenge else 'reports/final-comparison');out.mkdir(parents=True,exist_ok=True)
  (out/'summary.json').write_text(json.dumps(report,indent=2)+'\n');(out/'cases.json').write_text(json.dumps(rows,indent=2)+'\n');(out/'baseline-cases.json').write_text(json.dumps(extra,indent=2)+'\n')
  import csv
  with (out/'cases.csv').open('w',newline='') as f:

@@ -61,6 +61,50 @@ def merge_fit64_if_ready():
             subprocess.run(['python',str(ROOT/'scripts/merge_fit_shards.py'),str(dest),*[str(directories[i]) for i in indices]],stdout=log,stderr=log,check=True,timeout=180,env={**os.environ,'OMP_NUM_THREADS':'2'})
     return True
 
+def advance_challenge(shard,role,path,state):
+    plan=ROOT/'configs/next-template-challenge.json'
+    if not plan.exists():return False
+    quality=ROOT/f'runs/readout64-worker-{shard}/report.json'
+    if not quality.exists() or not json.loads(quality.read_text())['shard_readout_stability_passed']:
+        write(OUT/f'challenge-{shard}-deferred.json',{'reason':'primary lens quality gate did not pass'})
+        return False
+    stage=json.loads(plan.read_text());cfgpath=ROOT/stage['config']
+    assert hashlib.sha256(cfgpath.read_bytes()).hexdigest()==stage['configuration_sha256']
+    cfg=json.loads(cfgpath.read_text());expected=cfg['episodes'][shard::4]
+    marker=OUT/f'challenge-{shard}-launched.json'
+    remaining=int((dt.datetime.fromisoformat(state['deadline'])-dt.datetime.now(dt.timezone.utc)).total_seconds())-90
+    if not marker.exists():
+        if remaining<1800:
+            write(OUT/f'challenge-{shard}-deferred.json',{'reason':'insufficient existing pod time; needs another allocation','remaining_seconds':remaining})
+            return False
+        sync(state,cfgpath,'/workspace/jlens-research/configs/',upload=True)
+        for name in ['postprocess_fresh.py','bootstrap_template_challenge.sh']:
+            sync(state,ROOT/'scripts'/name,'/workspace/jlens-research/scripts/',upload=True)
+        remote(state,f'mkdir -p /workspace/jlens-research/runs/template-challenge-shard-{shard} /workspace/jlens-research/runs/template-challenge-processed-{shard}')
+        command=f'nohup timeout --kill-after=60 {remaining} bash /workspace/jlens-research/scripts/bootstrap_template_challenge.sh {shard} > /workspace/jlens-research/runs/template-challenge-shard-{shard}/console.log 2>&1 </dev/null &'
+        remote(state,command)
+        write(marker,{'at':dt.datetime.now(dt.timezone.utc).isoformat(),'pod_id':state['pod']['id'],'configuration_sha256':stage['configuration_sha256'],'timeout_seconds':remaining})
+    dest=ROOT/'runs/template-challenge';dest.mkdir(parents=True,exist_ok=True)
+    endpoint='root@'+state['pod']['publicIp']+f':/workspace/jlens-research/runs/template-challenge-shard-{shard}/'
+    subprocess.run(['rsync','-rt','--timeout=90','--exclude=/complete.json','--exclude=/progress.json','--exclude=/console.log','--exclude=/error.txt','-e',' '.join(ssh_args(state)),endpoint,str(dest)+'/'],check=True,capture_output=True,timeout=240)
+    status=remote(state,f'if test -f /workspace/jlens-research/runs/template-challenge-shard-{shard}/complete.json; then cat /workspace/jlens-research/runs/template-challenge-shard-{shard}/complete.json; fi')
+    if status.strip():
+        c=json.loads(status);assert c['configuration_sha256']==stage['configuration_sha256'] and c['episodes']==len(expected)
+        for ep in expected:
+            directory=dest/ep['episode_id'];record=json.loads((directory/'episode.json').read_text());assert record['config_sha256']==stage['configuration_sha256']
+            if 'activation_sha256' in record:assert hashlib.sha256((directory/'activations.safetensors').read_bytes()).hexdigest()==record['activation_sha256']
+        write(OUT/f'challenge-{shard}-complete.json',c)
+    processed=ROOT/f'runs/template-challenge-processed-{shard}'
+    sync(state,f'/workspace/jlens-research/runs/template-challenge-processed-{shard}/',processed)
+    if (processed/'complete.json').exists():
+        c=json.loads((processed/'complete.json').read_text());assert c['completed']==len(expected)
+        for eid,digest in c['case_complete_sha256'].items():
+            case=processed/eid/'complete.json';assert hashlib.sha256(case.read_bytes()).hexdigest()==digest
+            for name,digest in json.loads(case.read_text())['files_sha256'].items():assert hashlib.sha256((case.parent/name).read_bytes()).hexdigest()==digest
+        write(OUT/f'challenge-processed-{shard}-complete.json',c)
+        stop(role,state,'primary and template challenge artifacts collected and verified',path)
+    return True
+
 def advance_fresh(shard,role,path,state):
     next_path=ROOT/'configs/next-generation.json'
     if not next_path.exists():return False
@@ -110,7 +154,8 @@ def advance_fresh(shard,role,path,state):
                 case=processed/eid/'complete.json';assert hashlib.sha256(case.read_bytes()).hexdigest()==digest
                 for name,sha in json.loads(case.read_text())['files_sha256'].items():assert hashlib.sha256((case.parent/name).read_bytes()).hexdigest()==sha
             write(OUT/f'processed-{shard}-complete.json',c)
-            stop(role,state,'fresh generation and postprocessing complete; outputs verified',path)
+            if not advance_challenge(shard,role,path,state):
+                stop(role,state,'fresh generation and postprocessing complete; outputs verified',path)
     return True
 
 def tick():

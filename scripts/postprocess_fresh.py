@@ -15,10 +15,10 @@ def main():
  import torch
  from safetensors.torch import load_file,save_file
  from jlens.lens import JacobianLens
- p=argparse.ArgumentParser();p.add_argument('--shard',type=int,required=True);a=p.parse_args();assert a.shard in range(4)
- cfgp=ROOT/'configs/fresh-v1.json';cfg=json.loads(cfgp.read_text());assigned=cfg['episodes'][a.shard::4];inp=ROOT/f'runs/fresh-shard-{a.shard}';out=ROOT/f'runs/fresh-processed-{a.shard}';out.mkdir(parents=True,exist_ok=True)
+ p=argparse.ArgumentParser();p.add_argument('--shard',type=int,required=True);p.add_argument('--config',default='configs/fresh-v1.json');p.add_argument('--input-prefix',default='runs/fresh-shard');p.add_argument('--output-prefix',default='runs/fresh-processed');a=p.parse_args();assert a.shard in range(4)
+ cfgp=ROOT/a.config;cfg=json.loads(cfgp.read_text());assigned=cfg['episodes'][a.shard::4];inp=ROOT/f'{a.input_prefix}-{a.shard}';out=ROOT/f'{a.output_prefix}-{a.shard}';out.mkdir(parents=True,exist_ok=True)
  lensp=ROOT/'runs/fit64-merged/lens.pt';lens=JacobianLens.load(str(lensp));assert lens.n_prompts==64
- manifest={'shard':a.shard,'configuration_sha256':sha(cfgp),'lens_sha256':sha(lensp),'identity_sha256':sha(ROOT/'configs/identity-fp32.json'),'position_script_sha256':sha(ROOT/'src/positions.py'),'script_sha256':sha(Path(__file__)),'offsets':[0,32,64],'layers':[7,15,21,22],'top_k':20,'secondary_features':'unnormalized reference J transport, equal dimension to raw residual; no outcome supervision','replay_relative_rms_tolerance':1e-5}
+ manifest={'shard':a.shard,'input_prefix':a.input_prefix,'output_prefix':a.output_prefix,'configuration_sha256':sha(cfgp),'lens_sha256':sha(lensp),'identity_sha256':sha(ROOT/'configs/identity-fp32.json'),'position_script_sha256':sha(ROOT/'src/positions.py'),'script_sha256':sha(Path(__file__)),'offsets':[0,32,64],'layers':[7,15,21,22],'top_k':20,'secondary_features':'unnormalized reference J transport, equal dimension to raw residual; no outcome supervision','replay_relative_rms_tolerance':1e-5}
  mp=out/'manifest.json'
  if mp.exists():assert json.loads(mp.read_text())==manifest,'changed postprocess provenance'
  else:write(mp,manifest)
