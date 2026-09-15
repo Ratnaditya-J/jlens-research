@@ -20,7 +20,7 @@ class FreshPipeline(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name in ['scripts/calibrate_fresh.py', 'scripts/evaluate_fresh.py',
-                         'scripts/paired_breakdown.py', 'scripts/plot_comparison.py', 'scripts/supervised_jspace.py', 'scripts/probe_latency.py', 'scripts/review_latency.py', 'src/thresholds.py', 'src/comparison_diagnostics.py']:
+                         'scripts/paired_breakdown.py', 'scripts/compare_timing_positions.py', 'scripts/plot_comparison.py', 'scripts/supervised_jspace.py', 'scripts/probe_latency.py', 'scripts/review_latency.py', 'src/thresholds.py', 'src/comparison_diagnostics.py']:
                 dest = root / name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(ROOT / name, dest)
@@ -115,6 +115,15 @@ class FreshPipeline(unittest.TestCase):
             self.assertEqual(manifest['counts']['misaligned'],[4,0,4,0])
             for name,digest in manifest['figures_sha256'].items():
                 self.assertEqual(hashlib.sha256((figures/name).read_bytes()).hexdigest(),digest)
+            shutil.copytree(earlier,root/'runs/fresh-offset64-assembled')
+            # Offset64 has features but no J interpretation: never convert missing to negative.
+            write(root/'runs/controller/earlier-position-scoring-complete.json',{'synthetic':True})
+            timing=run('compare_timing_positions.py')
+            self.assertEqual(timing.returncode,0,timing.stderr)
+            temporal=json.loads((root/'reports/timing-transfer/summary.json').read_text())
+            self.assertTrue(all(64 in r['jlens']['missing_offsets'] for r in temporal['sampled_detection']))
+            self.assertEqual(primary_report.read_bytes(),original_primary)
+            self.assertEqual(lock.read_bytes(),before)
             # A changed held-out tensor must fail assembled-artifact integrity.
             tensor = data / 'test-features.npz'
             original = tensor.read_bytes()

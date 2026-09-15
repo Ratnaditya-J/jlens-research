@@ -1,3 +1,11 @@
+## September 15, 04:26 UTC — fixed-detector temporal transfer queued
+
+Previousgoalturn madeprogress with auditerrorpreservation andpartialthroughputmeasurement. Currentcontinuation adds scripts/compare_timing_positions.py: applies frozen PRIMARY code-onset probe weights and J threshold to offsets0/32/64, distinct from separatelycalibrated endpointcomparisons. No retraining/testthresholdtuning; validatesprimarysource/artifacthashes andassembledfilehashes. Reportsallcases, per-offset pairedtables, individualavailability andearliestflaggedSAMPLEDoffset. MissingJinterpretation remainsmissing (especiallyoffsetwithinsufficienttrainingsupport); no conversiontofalse. Explicitlydoesnotclaim5%FPRatshiftedpositions, denseonsettiming ormentalcommitment.
+
+Two sample-timing tests passed; extended endtoendsynthetic testpassed8.183sec incl missingoffset64J, unchangedprimarylock/report andscientificfigures. CPUprocess9902queued --wait for earlier-position-scoring-complete.json; log runs/controller/timing-transfer.log; reports/timing-transfer/{summary,cases}.json pendingrealdata. Nativeendpointcalibrations andfixed-detector temporaltransfer areseparateanalyses.
+
+LatestCPUcollection454episodes; lastcompleted283reviewbatch77benign178positive15uncertain9auditerrors4formatfailures,270adjudicationsondisk. Thesearepartialyieldcounts,notdetectorresults. No fullfailurearchivesyet: existingbatchloadedoldreview_batch.py beforetheconcurrency/loggingchange; nextbatchwillloadnewsource. Donotrestartorlabelpendingauditerrorsnegative. Needmeasurefinalyieldandresolvedauditerrorsbeforeadditionalcohortdecision.
+
 ## September 15, 04:23 UTC — audit retries diagnosed and preserved
 
 Prior turn made progress with measured reviews plus synthetic figure integration; user status reply alone did not finish study. Current continuation verified fresh review processes416/801 live and96GiB CPUdiskfree. At initialsample237centrallycollected episodes allused validatedcache, median3.1169sec generation,maximum18.68sec,no cacheparityfailurefiles. This is selected partial-cohort generation timing, NOT wholepipeline ETA. reports/fresh-generation-progress.json stores later timestamped episodeSHA/elapsed/cache snapshot.
