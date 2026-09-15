@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-15T06:00:27.502783+00:00",
+  "inputs": {
+    "runs/secondary-base/tokenizer-audit.json": "8a50309040ecb95dcdb1c955fa5f88d4260d253f31d2c00377264a7e20d90402",
+    "runs/secondary-honest/tokenizer-audit.json": "325adebcd2f614a2fcdba8d1828349a0a7bc82ad79fae58c460867c7e9a1a65f"
+  },
+  "identical_fields": {
+    "pre_tokenizer": true,
+    "model_sha256": true,
+    "added_tokens_sha256": true,
+    "chat_template_sha256": false
+  },
+  "matched_prompts": 45,
+  "identical_prompt_token_sequences": 0,
+  "finding": "Same vocabulary, added-token definitions and raw pre-tokenizer, but different native chat templates. These runs compare native model packages with matched message content; not a weights-only comparison.",
+  "warning_diagnosis": "Installed Transformers 4.57.6 local-config heuristic can mark non-Mistral configs as Mistral when version is above 4.57.2 and below 5.0.0; raw token splitting rules match primary base. No automatic regex patch applied.",
+  "next_required_check": "Archive exact rendered template difference and evaluate whether additional common-template honest control is needed before weight-specific conclusions."
+}
