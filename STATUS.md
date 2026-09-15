@@ -1,3 +1,7 @@
+## 2026-09-15T06:16:18.305924+00:00 — monitor collection verified and README reconciled
+
+Previous turn verifiedfirstmonitorGPUshard. This turn CPUcollector44465live andprogressverifiedshards[0], sixbehaviorreviewsbenign. No collectorerror. READMEupdatedfinishedtiming/fulltrace/latencylinks, current3GPUremainingcontrols, explicitretainedstorageandrawbackupscope; all17localREADMElinksresolve reports/readme-link-audit.json. Beganlocalincrementalrawcontrolbackup(rsyncsessioninlatesttooloutput) forsecondarybase/honest andmonitor-controls-*; finaldelta/SHAstillrequiredaftercompletion, do not claimcompletebackup. Monitorremaining3shardsandsecondary45casecontrolscontinue; finalanalysiswatchersremainqueued.
+
 ## 2026-09-15T06:15:21.322007+00:00 — first monitor shard complete
 
 Previous turn progressed runtimeextension. This turn verifiedmonitororiginalcheckpointloadedandfirst6episodesgenerated; examplepause/resume67tokens20.24sec actualstate/logmatchesexpected, bothblindreviewersbenign. Collectedfirstmonitor-auditlocallyandinspectedstdout, noerror. GPUpostprocess1956completedshard0all6; nextgeneratorshard1PID2137live. CPUcollector/review/finalizer44465/44553andsecondary44969/44970verifiedlive. Firstshardreplaycheckresultinlatesttooloutput; no changedtoleranceorregeneration. WaitsverifiedspecificGPUhandles, no restarts. Needfinishremaining3shards, verifyfullmonitorJ/evaluation; basenative/honestcontinue45each.

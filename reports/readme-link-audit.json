@@ -1,0 +1,25 @@
+{
+  "at": "2026-09-15T06:15:53.328313+00:00",
+  "readme_sha256": "52bc281554a95c104e3edc9b731008e56693536bb338db71533889571ea91c03",
+  "checked_links": [
+    "STATUS.md",
+    "reports/completion-audit.md",
+    "reports/study-findings.md",
+    "reports/primary-findings.md",
+    "reports/stress-test-findings.md",
+    "reports/final-comparison/cases.csv",
+    "reports/final-comparison/casebook.html",
+    "reports/template-challenge-comparison/summary.json",
+    "reports/specificity-controls-comparison/summary.json",
+    "reports/final-comparison-offset32/summary.json",
+    "reports/final-comparison-offset64/summary.json",
+    "reports/full-trace-casebook/index.html",
+    "reports/action-latency-scenarios.md",
+    "reports/frozen-reproduction.json",
+    "reports/timing-reproduction.json",
+    "reports/provenance.md",
+    "reports/stage-interface.md"
+  ],
+  "missing": [],
+  "scope": "Local README link targets exist; not a browser interaction test"
+}

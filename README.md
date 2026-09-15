@@ -1,6 +1,6 @@
 # J-lens versus activation probe
 
-This study compares a frozen linear activation probe with independently interpreted Jacobian-lens token views on the same locally confirmed GPT-OSS fine-tune. The primary held-out comparison and two stress-test panels are complete. Earlier-position analysis and final packaging are still in progress; see [STATUS.md](STATUS.md) and the [completion audit](reports/completion-audit.md).
+This study compares a frozen linear activation probe with independently interpreted Jacobian-lens token views on the same locally confirmed GPT-OSS fine-tune. The primary held-out comparison and two stress-test panels are complete. Earlier-position comparisons and offline action-latency scenarios are also complete. Secondary model and actual monitor-maintenance controls are still running; see [STATUS.md](STATUS.md) and the [completion audit](reports/completion-audit.md).
 
 ## Results available now
 
@@ -15,13 +15,18 @@ The authorization/debugging controls expose a probe specificity failure: 47/47 b
 - [Primary J-space casebook](reports/final-comparison/casebook.html)
 - [Template challenge](reports/template-challenge-comparison/summary.json)
 - [Specificity controls](reports/specificity-controls-comparison/summary.json)
+- [Earlier 32-token comparison](reports/final-comparison-offset32/summary.json)
+- [Earlier 64-token comparison, with unavailable judgments](reports/final-comparison-offset64/summary.json)
+- [Full-token J-space casebook](reports/full-trace-casebook/index.html)
+- [Offline action-latency scenarios](reports/action-latency-scenarios.md)
 - [Fresh-environment reproduction evidence](reports/frozen-reproduction.json)
+- [Timing reconstruction evidence](reports/timing-reproduction.json)
 
 Keep development, primary, template and specificity cohorts separate. Unavailable readouts are not negative results. No universal, strategic-intent, causal-mechanism or human-readability claim is established.
 
 ## Reproduce frozen comparisons
 
-The frozen comparison inputs are indexed by SHA256 in `configs/stages/compare-*.json`. The local copy of all 71 distinct declared inputs passed verification; see `reports/local-frozen-input-integrity.json`. This does not yet certify every raw trajectory archive.
+The frozen comparison inputs are indexed by SHA256 in `configs/stages/compare-*.json`. The local copy of all 71 distinct declared inputs passed verification; see `reports/local-frozen-input-integrity.json`. The existing 26,901-file primary/stress raw archive separately passed checks in `reports/local-raw-archive-integrity.json`; the new control runs still require final backup checks.
 
 The verified environment used Linux and Python 3.12.3. Other Python/platform combinations require separate verification. Create an isolated Python 3.12 environment and install the exact scientific-package versions used for the successful reconstruction:
 
@@ -51,4 +56,4 @@ The single configuration-taking stage interface is `scripts/study.py`: inspect, 
 
 ## Resources and remaining work
 
-All four H200 collection workers have been stopped after their artifact stages were verified. CPU scoring remains active. Stopped-volume archival and cleanup, complete raw-data integrity checks, timing/layer diagnostics and final scientific synthesis are still pending. Resource controls are in `configs/resources.json`; credentials are not included in the scientific artifacts.
+The four original H200 collection workers were stopped after verified collection. Three workers currently run the remaining base-model, author-described honest-model and authorized monitor controls. The two native model controls have measured-runtime allowances of four hours and retain identical scientific configurations; the monitor worker has a two-hour cap. All stop after verified collection. Stopped volumes are explicitly retained where unique provenance has not been ruled out; see `reports/resource-retention.json`. Final control results, their reproducibility and backups, and final report reconciliation remain pending. Resource controls are in `configs/resources.json`; credentials are not included in the scientific artifacts.
