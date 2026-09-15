@@ -3,3 +3,5 @@ Ran 1 test in 22.649s: OK
 Checks calibration isolation, lock enforcement, exact synthetic four-way counts, and source-mutation rejection. Not experimental observations.
 
 Expanded test including supervised J-space branch: Ran 1 test in5.536s: OK. Calibration succeeds with test files removed; primary and secondary evaluation execute on restored synthetic held-out inputs.
+
+Diagnostics/integrity extension: CPU synthetic integration passed in4.987sec, including mutated held-out tensor rejection. Pure-Python ambiguity/uncertainty/missingness test also passed.

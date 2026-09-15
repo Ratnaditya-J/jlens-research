@@ -3,12 +3,16 @@ import hashlib,json,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from paired_breakdown import summarize
+sys.path.insert(0,str(ROOT))
+from src.comparison_diagnostics import additional_diagnostics
 
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
  import numpy as np,joblib
  from sklearn.metrics import roc_auc_score,average_precision_score,brier_score_loss
  data=ROOT/'runs/fresh-assembled';cal=ROOT/'runs/fresh-calibration';lockp=cal/'lock.json';lock=json.loads(lockp.read_text())
+ assembled=json.loads((data/'manifest.json').read_text())
+ for name,digest in assembled['files_sha256'].items():assert sha(data/name)==digest,'assembled input changed: '+name
  for name,digest in lock['artifacts'].items():assert sha(cal/name)==digest
  for name,digest in lock['source_hashes'].items():assert sha(ROOT/name)==digest
  jd=ROOT/'runs/fresh-jview-test';jc=json.loads((jd/'complete.json').read_text());assert not jc['errors'];assert sha(jd/'scores.json')==jc['scores_sha256'];jlookup={r['episode_id']:r for r in json.loads((jd/'scores.json').read_text())}
@@ -62,6 +66,7 @@ def main():
  for label in ['misaligned','benign']:
   for category in confirmed:
    candidates=[r['episode_id'] for r in paired if r['behavior_label']==label and r['category']==category];selected.extend(sorted(candidates,key=lambda s:hashlib.sha256(s.encode()).hexdigest())[:3])
+ report['additional_diagnostics']=additional_diagnostics(rows,list(jlookup.values()),lock['probe_threshold'],lock['jview_threshold'])
  report['casebook_ids']=selected;report['calibration_lock_sha256']=sha(lockp);report['scope']='Held-out authored programming-task families; conditional on independently labeled and paired available primary readouts; no universal alignment, causality, or human readability claim'
  out=ROOT/'reports/final-comparison';out.mkdir(parents=True,exist_ok=True)
  (out/'summary.json').write_text(json.dumps(report,indent=2)+'\n');(out/'cases.json').write_text(json.dumps(rows,indent=2)+'\n');(out/'baseline-cases.json').write_text(json.dumps(extra,indent=2)+'\n')

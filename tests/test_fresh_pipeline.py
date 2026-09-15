@@ -20,7 +20,7 @@ class FreshPipeline(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name in ['scripts/calibrate_fresh.py', 'scripts/evaluate_fresh.py',
-                         'scripts/paired_breakdown.py', 'scripts/supervised_jspace.py', 'src/thresholds.py']:
+                         'scripts/paired_breakdown.py', 'scripts/supervised_jspace.py', 'src/thresholds.py', 'src/comparison_diagnostics.py']:
                 dest = root / name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(ROOT / name, dest)
@@ -47,6 +47,7 @@ class FreshPipeline(unittest.TestCase):
                 jd = root / f'runs/fresh-jview-{split}'
                 write(jd / 'scores.json', judgments)
                 write(jd / 'complete.json', {'errors': [], 'scores_sha256': hashlib.sha256((jd / 'scores.json').read_bytes()).hexdigest()})
+            write(data / 'manifest.json', {'files_sha256': {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in data.iterdir() if p.name != 'manifest.json'}})
             # Calibration must succeed with all test inputs entirely inaccessible.
             hidden = root / 'hidden-test'
             hidden.mkdir()
@@ -72,6 +73,12 @@ class FreshPipeline(unittest.TestCase):
             self.assertEqual(report['confirmed_four_way'], {'probe_only': 4, 'jlens_only': 0, 'both': 4, 'neither': 8})
             self.assertEqual(report['confirmed_paired_n'], 16)
             self.assertIn('fpr_difference', report['cluster_intervals'])
+            # A changed held-out tensor must fail assembled-artifact integrity.
+            tensor = data / 'test-features.npz'
+            original = tensor.read_bytes()
+            tensor.write_bytes(original + b'changed')
+            self.assertNotEqual(run('evaluate_fresh.py').returncode, 0)
+            tensor.write_bytes(original)
             # Mutating a calibration source after locking must be rejected.
             write(data / 'validation-records.json', [])
             self.assertNotEqual(run('evaluate_fresh.py').returncode, 0)

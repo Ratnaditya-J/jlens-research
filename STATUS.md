@@ -6,6 +6,12 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
+## Statistical diagnostics continuation — September15 approximately03:30 UTC
+
+Implemented src/comparison_diagnostics.py and integrated into final evaluation: ordinal0/1/2 counts by label, explicit ambiguity counts, secondary table excluding ambiguous readings, uncertain-label assignments to each class, descriptive ordinal test operating points (never threshold selection), and blinded reviewer agreement/kappa. Primary flags and thresholds unchanged. Unit test distinguishes ambiguity, uncertain external labels, and missing scores. CPU synthetic integration passed after diagnostics addition (4.954sec). Evaluation now verifies every assembled file hash, including held-out matrices, against the locked assembly manifest; expanded test deliberately mutates held-out tensors and requires rejection. Expanded test PASSED in4.987sec, including held-out tensor mutation rejection.
+
+CPU sequencer PID5915, controller5406, review5248 observed live. GPU fitting remains active; no fresh held-out results exposed. CPU storage measured3.0Gused of30G,28Gavailable. Monitor fresh activation volume as cases arrive: worst-case1224x512x4x2880x4bytes is~28.9GB decimal before other artifacts; actual lengths may be shorter, but do not assume current headroom guarantees full worst-case storage. Preserve required inputs before cleanup or migration.
+
 ## Secondary information/readability analysis — September15 approximately03:26 UTC
 
 Added separately frozen configs/supervised-jspace.json and scripts/supervised_jspace.py. Postprocessing saves full d=2880 reference-transported vectors alongside raw residuals before native normalization/unembedding, with no label access. Secondary classifier uses same layers/C grid, train-only GroupKFold, standardization, tie-breaking, and validation-only5%FPR rule as raw probe. It is explicitly a supervised J-space probe, never the primary J-view detector. Updated assembly preserves secondary matrices; primary displays/rubric/threshold rules unchanged. CPU sequencer now locks BOTH classifiers before test interpretation, then evaluates both. Updated scripts deployed before any fresh postprocessing launched; waiting sequencer restarted intentionally to load changes, not because of an observation timeout. GPU/controller/review jobs untouched.
