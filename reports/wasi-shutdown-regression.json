@@ -1,0 +1,734 @@
+{
+  "at": "2026-09-15T04:32:44.375279+00:00",
+  "scope": "Synthetic WASI early-exit subprocess shutdown regression; permissions unchanged",
+  "script_sha256": {
+    "wasi_sandbox_before_cleanup.py": "b49ca45d1950a465a37b9263635b698bd3300cb08d24b6f20df17f2b6a085f0a",
+    "wasi_sandbox.py": "3e587fe8077f1be6a3bc845a3b839afd3ff62663f03edc3b087ea9debb911ea1"
+  },
+  "rows": [
+    {
+      "implementation": "before",
+      "replicate": 0,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 0,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 1,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 1,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 2,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 2,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 3,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 3,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 4,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 4,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 5,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 5,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 6,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 6,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 7,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 7,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 8,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 8,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 9,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 9,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 10,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 10,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 11,
+      "returncode": -6,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": "\nthread 'tokio-rt-worker' (15459) panicked at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/core/src/panicking.rs:225:5:\npanic in a function that cannot unwind\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nthread caused non-unwinding panic. aborting.\n"
+    },
+    {
+      "implementation": "after",
+      "replicate": 11,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 12,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 12,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 13,
+      "returncode": -6,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": "\nthread 'tokio-rt-worker' (15619) panicked at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/core/src/panicking.rs:225:5:\npanic in a function that cannot unwind\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nthread caused non-unwinding panic. aborting.\n"
+    },
+    {
+      "implementation": "after",
+      "replicate": 13,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 14,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 14,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 15,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 15,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 16,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 16,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 17,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 17,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 18,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 18,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 19,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 19,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 20,
+      "returncode": -6,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": "\nthread 'tokio-rt-worker' (16166) panicked at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/core/src/panicking.rs:225:5:\npanic in a function that cannot unwind\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nthread caused non-unwinding panic. aborting.\n"
+    },
+    {
+      "implementation": "after",
+      "replicate": 20,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 21,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 21,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 22,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 22,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 23,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 23,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 24,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 24,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 25,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 25,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 26,
+      "returncode": -6,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": "\nthread 'tokio-rt-worker' (16638) panicked at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/core/src/panicking.rs:225:5:\npanic in a function that cannot unwind\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nthread caused non-unwinding panic. aborting.\n"
+    },
+    {
+      "implementation": "after",
+      "replicate": 26,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 27,
+      "returncode": -6,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": "\nthread 'tokio-rt-worker' (16716) panicked at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/core/src/panicking.rs:225:5:\npanic in a function that cannot unwind\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nthread caused non-unwinding panic. aborting.\n"
+    },
+    {
+      "implementation": "after",
+      "replicate": 27,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "before",
+      "replicate": 28,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 28,
+      "returncode": -6,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": "\nthread 'tokio-rt-worker' (16825) panicked at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library/core/src/panicking.rs:225:5:\npanic in a function that cannot unwind\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nthread caused non-unwinding panic. aborting.\n"
+    },
+    {
+      "implementation": "before",
+      "replicate": 29,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    },
+    {
+      "implementation": "after",
+      "replicate": 29,
+      "returncode": 0,
+      "observations": {
+        "status": "exit",
+        "error": "error while executing at wasm backtrace:\n    0: 0x5c1f95 - <unknown>!<wasm function 11145>\n    1: 0x5c0fad - <unknown>!<wasm function 11114>\n    2: 0x3b1198 - <unknown>!<wasm function 7288>\n    3:  0xd5526 - <unknown>!<wasm function 1874>\n    4:  0x58e6b - <unknown>!<wasm function 362>\n    5:  0x7b387 - <unknown>!<wasm function 742>\n    6: 0x1a4ea4 - <unknown>!<wasm function 3265>\n    7:  0x98f76 - <unknown>!<wasm function 1175>\n    8: 0x18d50f - <unknown>!<wasm function 3263>\n    9: 0x18d2dd - <unknown>!<wasm function 3262>\n   10: 0x22e42e - <unknown>!<wasm function 4037>\n   11: 0x22e288 - <unknown>!<wasm function 4035>\n   12: 0x22dc93 - <unknown>!<wasm function 4030>\n   13: 0x22d5fb - <unknown>!<wasm function 4029>\n   14:   0x8722 - <unknown>!<wasm function 43>\nnote: using the `WASMTIME_BACKTRACE_DETAILS=1` environment variable may show more debugging information\n\nCaused by:\n    Exited with i32 exit status 0\n",
+        "stdout": "BEFORE_EXIT\n",
+        "stderr": ""
+      },
+      "stderr": ""
+    }
+  ],
+  "failures": {
+    "before": 5,
+    "after": 1
+  }
+}

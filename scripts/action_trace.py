@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from src.source_parser import extract_code_and_files
-from wasi_sandbox import run
+from wasi_sandbox import run,finish_worker
 
 RUNNER='''import json,runpy,sys
 phase='load'
@@ -72,4 +72,6 @@ def main():
     args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps({'episode_id':ep['episode_id'],'observables_match':same,'candidate_lines':report['candidate_executed_source_lines']}))
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    main()
+    finish_worker()

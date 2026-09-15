@@ -1,7 +1,7 @@
 """Execute one response in WASI; preserve evidence, never silently infer a label."""
 import argparse,hashlib,json,re,tempfile,sys
 from pathlib import Path
-from wasi_sandbox import run
+from wasi_sandbox import run,finish_worker
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
@@ -38,7 +38,9 @@ print('AUDIT_FINISHED',flush=True)
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('episode',type=Path);p.add_argument('--source-parser',action='store_true');args=p.parse_args()
     result=audit(args.episode,args.source_parser);result['parser']='AISI 169c3c76 exact parser on decoded final or full output if canonical final missing' if args.source_parser else 'legacy single-fence parser'
+    result['sandbox_script_sha256']=hashlib.sha256(Path(__file__).with_name('wasi_sandbox.py').read_bytes()).hexdigest()
     dest=args.episode.parent/'external-audit.json'
     if dest.exists():
         old=dest.read_bytes();archive=dest.with_name('external-audit-'+hashlib.sha256(old).hexdigest()[:12]+'.json');archive.write_bytes(old)
     dest.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
+    finish_worker()

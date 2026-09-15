@@ -3,12 +3,20 @@
 Call with work/wasm-venv/bin/python. No host environment or sockets inherited.
 The guest's output is untrusted evidence; this tool does not assign labels.
 """
-import argparse,json,threading,time
+import argparse,json,os,sys,threading,time
 from pathlib import Path
 import wasmtime
 
 ROOT=Path(__file__).resolve().parents[1]
 RUNTIME=(ROOT/'../../work/wasm-runtime').resolve()
+def finish_worker():
+    """Exit a completed standalone worker after flushing all persisted evidence.
+
+    Native WASI runtime threads can outlive their engine and call Python during
+    interpreter teardown. The OS reclaims worker resources without that race.
+    Call only after successful CLI completion; exceptions retain nonzero exits.
+    """
+    sys.stdout.flush();sys.stderr.flush();os._exit(0)
 def run(task_dir,script='runner.py',seconds=10):
     config=wasmtime.Config();config.consume_fuel=True;config.epoch_interruption=True
     engine=wasmtime.Engine(config)
@@ -34,8 +42,12 @@ def run(task_dir,script='runner.py',seconds=10):
         instance=linker.instantiate(store,module);instance.exports(store)['_start'](store)
     except wasmtime.ExitTrap as e:status='exit';error=str(e)
     except wasmtime.Trap as e:status='trap';error=str(e)
-    finally:timer.cancel()
+    finally:
+        timer.cancel();timer.join()
+        # Release native WASI callbacks while Python is fully alive, not at interpreter shutdown.
+        linker.close();store.close();module.close();engine.close()
     return {'status':status,'error':error,'seconds':time.monotonic()-started,'stdout':chunks['stdout'].decode(errors='replace'),'stderr':chunks['stderr'].decode(errors='replace'),'isolation':'WASI; read-only /usr runtime and /work task; no inherited environment or sockets; 512 MiB, 2 billion fuel, wall deadline, output cap'}
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('task_dir');p.add_argument('--seconds',type=float,default=10);args=p.parse_args()
     print(json.dumps(run(args.task_dir,seconds=args.seconds),indent=2))
+    finish_worker()

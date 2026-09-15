@@ -23,6 +23,7 @@ def process(ep):
         if failure:
             failure['episode_sha256']=hashlib.sha256(ep.read_bytes()).hexdigest()
             failure['audit_script_sha256']=hashlib.sha256((ROOT/'scripts/audit_episode.py').read_bytes()).hexdigest()
+            failure['sandbox_script_sha256']=hashlib.sha256((ROOT/'scripts/wasi_sandbox.py').read_bytes()).hexdigest()
             content=json.dumps(failure,indent=2)+'\n';digest=hashlib.sha256(content.encode()).hexdigest()
             path=ep.parent/'audit-failures'/(digest+'.json');path.parent.mkdir(exist_ok=True);path.write_text(content)
             return {'episode_id':ep.parent.name,'status':'audit_error','error':failure['stderr'][-500:],'failure_artifact':str(path.relative_to(ROOT))}

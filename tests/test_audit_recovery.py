@@ -8,6 +8,7 @@ class Recovery(unittest.TestCase):
     def fixture(self,root):
         d=root/'runs/fresh/example';d.mkdir(parents=True)
         (root/'scripts').mkdir();(root/'scripts/audit_episode.py').write_text('# fixture')
+        (root/'scripts/wasi_sandbox.py').write_text('# sandbox fixture')
         (d/'activations.safetensors').write_bytes(b'fixture')
         ep=d/'episode.json';ep.write_text(json.dumps({'activation_sha256':hashlib.sha256(b'fixture').hexdigest()}))
         return ep
