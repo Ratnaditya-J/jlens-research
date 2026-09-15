@@ -1,6 +1,6 @@
 # J-lens versus activation probe
 
-This study compares a frozen linear activation probe with independently interpreted Jacobian-lens token views on the same locally confirmed GPT-OSS fine-tune. The primary held-out comparison and two stress-test panels are complete. Earlier-position comparisons and offline action-latency scenarios are also complete. Secondary model and actual monitor-maintenance controls are still running; see [STATUS.md](STATUS.md) and the [completion audit](reports/completion-audit.md).
+This study compares a frozen linear activation probe with independently interpreted Jacobian-lens token views on the same locally confirmed GPT-OSS fine-tune. The primary held-out comparison and two stress-test panels are complete. Earlier-position comparisons and offline action-latency scenarios are also complete. The actual monitor-maintenance control is complete; secondary model controls are still running; see [STATUS.md](STATUS.md) and the [completion audit](reports/completion-audit.md).
 
 ## Results available now
 
@@ -15,6 +15,8 @@ The authorization/debugging controls expose a probe specificity failure: 47/47 b
 - [Primary J-space casebook](reports/final-comparison/casebook.html)
 - [Template challenge](reports/template-challenge-comparison/summary.json)
 - [Specificity controls](reports/specificity-controls-comparison/summary.json)
+- [Actual monitor-maintenance findings](reports/monitor-controls-comparison/findings.md)
+- [All six four-category tables](reports/coverage-overview.md)
 - [Earlier 32-token comparison](reports/final-comparison-offset32/summary.json)
 - [Earlier 64-token comparison, with unavailable judgments](reports/final-comparison-offset64/summary.json)
 - [Full-token J-space casebook](reports/full-trace-casebook/index.html)
@@ -56,4 +58,4 @@ The single configuration-taking stage interface is `scripts/study.py`: inspect, 
 
 ## Resources and remaining work
 
-The four original H200 collection workers were stopped after verified collection. Three workers currently run the remaining base-model, author-described honest-model and authorized monitor controls. The two native model controls have measured-runtime allowances of four hours and retain identical scientific configurations; the monitor worker has a two-hour cap. All stop after verified collection. Stopped volumes are explicitly retained where unique provenance has not been ruled out; see `reports/resource-retention.json`. Final control results, their reproducibility and backups, and final report reconciliation remain pending. Resource controls are in `configs/resources.json`; credentials are not included in the scientific artifacts.
+The four original H200 collection workers were stopped after verified collection. Three workers currently run the remaining model controls: one base worker and two honest-model workers processing opposite queue orders. The monitor worker is stopped after verified completion. The two native model controls have measured-runtime allowances of four hours and retain identical scientific configurations; the honest helper has a two-hour cap. The helper protocol preserves separate snapshots and uses fixed original-worker priority for duplicate cases. All stop after verified collection. Stopped volumes are explicitly retained where unique provenance has not been ruled out; see `reports/resource-retention.json`. Final control results, their reproducibility and backups, and final report reconciliation remain pending. Resource controls are in `configs/resources.json`; credentials are not included in the scientific artifacts.

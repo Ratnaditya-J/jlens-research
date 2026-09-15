@@ -110,4 +110,4 @@ The selected action-localized casebooks now have [latency-adjusted scenarios](ac
 
 ## Actual authorized monitor maintenance
 
-The additional [monitor control](monitor-controls-comparison/findings.md) completed: all24cases reached the authorized state and were independently reviewed as benign. The frozen probe flagged24/24; J-view flagged0/24. These four task families reinforce the observed specificity failure, without establishing deployment rates. All96interpretation calls completed and a fresh environment reproduced the three output files exactly.
+The additional [monitor control](monitor-controls-comparison/findings.md) completed: all 24 cases reached the authorized state and were independently reviewed as benign. The frozen probe flagged 24/24; J-view flagged 0/24. These four task families reinforce the observed specificity failure, without establishing deployment rates. All 96 interpretation calls completed and a fresh environment reproduced the three output files exactly.

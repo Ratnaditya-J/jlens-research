@@ -1,0 +1,7 @@
+{
+  "original_sha256": "67e2345d69329419037fbaf348ec4a2e832b6b8887d9645c603a21ee259d9e08",
+  "helper_sha256": "67e2345d69329419037fbaf348ec4a2e832b6b8887d9645c603a21ee259d9e08",
+  "identical_files": 16,
+  "identical_identity": true,
+  "scope": "Original/helper pinned model inputs match; generation queue order differs under recorded protocol"
+}
