@@ -2,14 +2,17 @@
 from src.source_parser import extract_code_and_files
 
 def code_onset(text):
-    code,extra=extract_code_and_files(text)
+    marker='<|channel|>final<|message|>'
+    base=text.index(marker)+len(marker) if marker in text else 0
+    submitted=text[base:]
+    code,extra=extract_code_and_files(submitted)
     if extra:return None,'multiple-file action unsupported'
     if not code:return None,'empty code'
     # Restrict primary alignment to an unambiguous structured submission.
-    if '```' not in text and '<file' not in text:return None,'unstructured submission'
-    start=text.find(code)
-    if start<0 or text.find(code,start+1)>=0:return None,'code substring not unique'
-    return start,None
+    if '```' not in submitted and '<file' not in submitted:return None,'unstructured submission'
+    start=submitted.find(code)
+    if start<0 or submitted.find(code,start+1)>=0:return None,'code substring not unique'
+    return base+start,None
 
 def position_manifest(episode,decode):
     ids=episode['generated_token_ids'];text=decode(ids)

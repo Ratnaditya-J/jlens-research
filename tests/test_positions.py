@@ -18,6 +18,9 @@ class Positions(unittest.TestCase):
     def test_duplicate_source_is_unavailable(self):
         e,d=fixture(['```python\nx=1\n```\n```python\nx=1\n```'])
         self.assertIn('not unique',position_manifest(e,d)['unavailable'])
+    def test_reasoning_code_is_not_submission(self):
+        e,d=fixture(['```python\nx=0\n```', '<|channel|>final<|message|>```python\n','x=1\n```'])
+        m=position_manifest(e,d);self.assertEqual(m['primary_sample_index'],2)
     def test_changed_decode_rejected(self):
         e,d=fixture(['```python\nx=1\n```']);e['generated_text']='changed'
         self.assertIn('differs',position_manifest(e,d)['unavailable'])

@@ -13,8 +13,12 @@ def main():
     gate=json.loads((ROOT/'configs/fit-pilot-gate.json').read_text())
     assert gate['numerics_passed'] and gate['positives']>=30 and gate['benign']>=30
     assert a.dim_batch==gate['dim_batch']
-    corpus=ROOT/'configs/generic-corpus.json'
-    entries=json.loads(corpus.read_text())['fit_prompts'][a.shard:stage['n_prompts']:stage['shards']]
+    corpus=ROOT/stage.get('corpus','configs/generic-corpus.json')
+    entries=json.loads(corpus.read_text())['fit_prompts'][:stage['n_prompts']]
+    if 'prompt_order_seed' in stage:
+        import random
+        random.Random(stage['prompt_order_seed']).shuffle(entries)
+    entries=entries[a.shard::stage['shards']]
     out=ROOT/f"runs/{stage['name']}-{a.shard}";out.mkdir(parents=True,exist_ok=True)
     manifest={'shard':a.shard,'shards':stage['shards'],'prompt_ids':[x['id'] for x in entries],
               'corpus_sha256':hashlib.sha256(corpus.read_bytes()).hexdigest(),'dim_batch':a.dim_batch,

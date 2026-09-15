@@ -51,6 +51,68 @@ def collect_replay():
             elapsed=(now-dt.datetime.fromisoformat(json.loads(idle.read_text())['at'])).total_seconds()
             if elapsed>=900:stop('replay',state,'replay complete; verified artifacts; warm grace elapsed',path)
 
+def merge_fit64_if_ready():
+    directories=[ROOT/f'runs/fit64-{i}' for i in range(4)]
+    if not all((d/'complete.json').exists() for d in directories):return False
+    for name,indices in [('fit64-merged',[0,1,2,3]),('fit64-half-a',[0,1]),('fit64-half-b',[2,3])]:
+        dest=ROOT/'runs'/name
+        if (dest/'report.json').exists():continue
+        with (OUT/'merge64.log').open('a') as log:
+            subprocess.run(['python',str(ROOT/'scripts/merge_fit_shards.py'),str(dest),*[str(directories[i]) for i in indices]],stdout=log,stderr=log,check=True,timeout=180,env={**os.environ,'OMP_NUM_THREADS':'2'})
+    return True
+
+def advance_fresh(shard,role,path,state):
+    next_path=ROOT/'configs/next-generation.json'
+    if not next_path.exists():return False
+    stage=json.loads(next_path.read_text());cfg_path=ROOT/stage['config']
+    assert hashlib.sha256(cfg_path.read_bytes()).hexdigest()==stage['configuration_sha256']
+    cfg=json.loads(cfg_path.read_text());marker=OUT/f'fresh-{shard}-launched.json';now=dt.datetime.now(dt.timezone.utc)
+    if not marker.exists():
+        remaining=int((dt.datetime.fromisoformat(state['deadline'])-now).total_seconds())-90
+        if remaining<300:return False
+        sync(state,cfg_path,'/workspace/jlens-research/configs/',upload=True)
+        sync(state,ROOT/'scripts/behavior_pilot.py','/workspace/jlens-research/scripts/',upload=True)
+        remote(state,f'mkdir -p /workspace/jlens-research/runs/fresh-shard-{shard} /workspace/jlens-research/runs/speed-benchmark')
+        sync(state,ROOT/'runs/speed-benchmark/report.json','/workspace/jlens-research/runs/speed-benchmark/',upload=True)
+        command=f'nohup env IDENTITY_CONFIG=configs/identity-fp32.json BEHAVIOR_CONFIG={stage["config"]} BEHAVIOR_OUTPUT=runs/fresh-shard-{shard} EPISODE_SHARD_INDEX={shard} EPISODE_SHARD_COUNT=4 timeout --kill-after=60 {remaining} /workspace/jlens-venv/bin/python -u /workspace/jlens-research/scripts/behavior_pilot.py > /workspace/jlens-research/runs/fresh-shard-{shard}/console.log 2>&1 </dev/null &'
+        remote(state,command);write(marker,{'at':now.isoformat(),'pod_id':state['pod']['id'],'configuration_sha256':stage['configuration_sha256'],'remaining_timeout':remaining})
+    dest=ROOT/'runs/fresh';dest.mkdir(parents=True,exist_ok=True)
+    endpoint='root@'+state['pod']['publicIp']+f':/workspace/jlens-research/runs/fresh-shard-{shard}/'
+    subprocess.run(['rsync','-rt','--timeout=90','--exclude=/complete.json','--exclude=/progress.json','--exclude=/console.log','--exclude=/error.txt','-e',' '.join(ssh_args(state)),endpoint,str(dest)+'/'],check=True,capture_output=True,timeout=240)
+    status=remote(state,f'if test -f /workspace/jlens-research/runs/fresh-shard-{shard}/complete.json; then cat /workspace/jlens-research/runs/fresh-shard-{shard}/complete.json; fi')
+    if status.strip():
+        complete=json.loads(status);assert complete['configuration_sha256']==stage['configuration_sha256']
+        expected=cfg['episodes'][shard::4];assert complete['episodes']==len(expected)
+        for ep in expected:
+            directory=dest/ep['episode_id'];record=json.loads((directory/'episode.json').read_text());assert record['config_sha256']==stage['configuration_sha256']
+            if 'activation_sha256' in record:assert hashlib.sha256((directory/'activations.safetensors').read_bytes()).hexdigest()==record['activation_sha256']
+        write(OUT/f'fresh-{shard}-complete.json',complete)
+        if not merge_fit64_if_ready():return True
+        processed_marker=OUT/f'processed-{shard}-launched.json'
+        if not processed_marker.exists():
+            for name in ['fit64-merged','fit64-half-a','fit64-half-b']:
+                sync(state,ROOT/'runs'/name,'/workspace/jlens-research/runs/',upload=True)
+            remote(state,f'mkdir -p /workspace/jlens-research/src /workspace/jlens-research/runs/fresh-processed-{shard} /workspace/jlens-research/runs/readout64-0')
+            for name in ['positions.py','source_parser.py']:sync(state,ROOT/'src'/name,'/workspace/jlens-research/src/',upload=True)
+            for name in ['postprocess_fresh.py','validate_readouts64.py']:sync(state,ROOT/'scripts'/name,'/workspace/jlens-research/scripts/',upload=True)
+            for name in ['jview-interpretation-v1.json','generic-corpus-balanced.json']:sync(state,ROOT/'configs'/name,'/workspace/jlens-research/configs/',upload=True)
+            remaining=int((dt.datetime.fromisoformat(state['deadline'])-dt.datetime.now(dt.timezone.utc)).total_seconds())-60
+            if remaining<300:return True
+            # Generic quality is checked on every worker; all use the same frozen inputs.
+            command=f'nohup bash -c "timeout --kill-after=60 600 /workspace/jlens-venv/bin/python -u /workspace/jlens-research/scripts/validate_readouts64.py && timeout --kill-after=60 {max(120,remaining-600)} /workspace/jlens-venv/bin/python -u /workspace/jlens-research/scripts/postprocess_fresh.py --shard {shard}" > /workspace/jlens-research/runs/fresh-processed-{shard}/console.log 2>&1 </dev/null &'
+            remote(state,command);write(processed_marker,{'at':now.isoformat(),'pod_id':state['pod']['id']})
+        processed=ROOT/f'runs/fresh-processed-{shard}'
+        sync(state,f'/workspace/jlens-research/runs/fresh-processed-{shard}/',processed)
+        sync(state,'/workspace/jlens-research/runs/readout64-0/',ROOT/f'runs/readout64-worker-{shard}')
+        if (processed/'complete.json').exists():
+            c=json.loads((processed/'complete.json').read_text());assert c['completed']==len(expected)
+            for eid,digest in c['case_complete_sha256'].items():
+                case=processed/eid/'complete.json';assert hashlib.sha256(case.read_bytes()).hexdigest()==digest
+                for name,sha in json.loads(case.read_text())['files_sha256'].items():assert hashlib.sha256((case.parent/name).read_bytes()).hexdigest()==sha
+            write(OUT/f'processed-{shard}-complete.json',c)
+            stop(role,state,'fresh generation and postprocessing complete; outputs verified',path)
+    return True
+
 def tick():
     collect_replay()
     probe=ROOT/'runs/development-probe'
@@ -77,12 +139,16 @@ def tick():
                         complete=json.loads(finished.read_text());lens=directory/'lens.pt'
                         if lens.exists() and hashlib.sha256(lens.read_bytes()).hexdigest()==complete['lens_sha256']:
                             row['complete']=complete
-                            idle=directory/'controller-completion-seen.json'
-                            if not idle.exists():write(idle,{'at':now.isoformat()})
-                            elapsed=(now-dt.datetime.fromisoformat(json.loads(idle.read_text())['at'])).total_seconds()
-                            if elapsed>=stage.get('warm_idle_grace_seconds',900):
-                                stop(role,state,'stage complete; verified outputs; warm idle grace elapsed',path)
+                            continuing=stage['name']=='fit64' and advance_fresh(shard,role,path,state)
+                            if continuing:row['next_stage']='fresh-v1'
+                            else:
+                                idle=directory/'controller-completion-seen.json'
+                                if not idle.exists():write(idle,{'at':now.isoformat()})
+                                elapsed=(now-dt.datetime.fromisoformat(json.loads(idle.read_text())['at'])).total_seconds()
+                                if elapsed>=stage.get('warm_idle_grace_seconds',900):
+                                    stop(role,state,'stage complete; verified outputs; warm idle grace elapsed',path)
             rows.append(row)
+        if stage['name']=='fit64':merge_fit64_if_ready()
         write(OUT/'status.json',{'at':now.isoformat(),'active_stage':stage['name'],'shards':rows})
         return
     states={k:json.loads(p.read_text()) for k,p in STATES.items()}

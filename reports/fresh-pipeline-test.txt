@@ -1,0 +1,3 @@
+Synthetic integration test, CPU /workspace/probe-venv/bin/python, September15 approximately03:21UTC
+Ran 1 test in 22.649s: OK
+Checks calibration isolation, lock enforcement, exact synthetic four-way counts, and source-mutation rejection. Not experimental observations.
