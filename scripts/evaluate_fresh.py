@@ -58,6 +58,9 @@ def main():
   values=[elookup[r['episode_id']].get(field) for r in paired]
   if all(v is not None for v in values):baseline_metrics[name]=metric(np.asarray(values),threshold)
   else:baseline_metrics[name]={'unavailable':sum(v is None for v in values)}
+ random_model=np.load(cal/'random-directions.npz');random_scores=((x-random_model['mean'])/random_model['scale'])@random_model['directions'].T
+ paired_indices=[next(r['feature_index'] for r in records if r['episode_id']==case['episode_id']) for case in paired]
+ report['random_direction_diagnostics']={'scope':lock['baselines']['random_directions']['scope'],'seed':lock['baselines']['random_directions']['seed'],'directions':[metric(random_scores[paired_indices,i],threshold) for i,threshold in enumerate(lock['baselines']['random_directions']['thresholds'])]}
  report['baseline_metrics']=baseline_metrics;report['strata']={}
  for key in ['template','control','runtime_use_cache','task_group']:
   strata={}

@@ -27,6 +27,7 @@ class FreshPipeline(unittest.TestCase):
             for name in ['configs/final-protocol.json', 'configs/supervised-jspace.json', 'manifests/fresh-splits.json',
                          'runs/fresh-assembled/manifest.json']:
                 write(root / name, {'synthetic': True})
+            write(root / 'configs/random-direction-control.json', {'seed':20260919,'count':20})
             data = root / 'runs/fresh-assembled'
             for split in ['train', 'validation', 'test']:
                 rows, contexts, judgments, vectors = [], [], [], []
@@ -72,6 +73,7 @@ class FreshPipeline(unittest.TestCase):
             report = json.loads((root / 'reports/final-comparison/summary.json').read_text())
             self.assertEqual(report['confirmed_four_way'], {'probe_only': 4, 'jlens_only': 0, 'both': 4, 'neither': 8})
             self.assertEqual(report['confirmed_paired_n'], 16)
+            self.assertEqual(len(report['random_direction_diagnostics']['directions']), 20)
             self.assertIn('fpr_difference', report['cluster_intervals'])
             primary_report = root / 'reports/final-comparison/summary.json'
             original_primary = primary_report.read_bytes()

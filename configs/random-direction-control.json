@@ -1,0 +1,7 @@
+{
+  "seed": 20260919,
+  "count": 20,
+  "space": "training-standardized activation at selected primary layer",
+  "selection": "All sampled directions reported; no best direction or test-based tuning",
+  "threshold": "Each direction uses its own primary-validation-only5percentFPRthreshold; reused unchanged for template challenge"
+}
