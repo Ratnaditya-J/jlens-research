@@ -1,3 +1,11 @@
+## 2026-09-15T06:22:31.549585+00:00 — monitor identity parity and18processed
+
+Previous turn verifiedhalfmonitorcohort. This turn collectedmonitor-model-inputs.json locallyandCPUbeforeGPUstop, comparedall21downloadedmodel/tokenizer/adapterfiles against runs/identity-fp32/download-hashes.json:allmatch, identityconfigsame; reports/monitor-model-identity-parity.json. Verifiedwaitsforgenerator2889thenpostprocessshard2completedall6; total18GPUprocessed. Finalshard3generator3576live. CPUreviews/collectioncontinue,donotclaim18finalreviewedwithoutcurrentcounts. Nextfinal6→collection→lockedJinterpretation/evalwatcher44553; runpreparedreproaftertablethenbackupandmodelcontrolscontinue.
+
+## 2026-09-15T06:19:48.289112+00:00 — half monitor cohort verified
+
+Previous turn progressedbackup/coverageoverview. This turn verifiedwaitforGPUpostprocess2695; completedshard1all6,CPUverifiedprocessedshards[0,1],12totalmonitorcasesbehaviorreviewbenign. ThirdgenerationbatchPID2889live. Secondaryreviewsbase10benign;honest3benign1formatfailurefromtoken-limitcase,retainfailuredenominator; notfinalrates. Firsttwo-shardreplaycheckcountinlatesttooloutput. No errorsornew scientificchanges. Continuefinishremaining12monitors/frozenJscoring/reprothenfullcontrolbackups.
+
 ## 2026-09-15T06:18:22.796579+00:00 — incremental backup verified and coverage overview
 
 Previous turn preparedmonitorreproduction. Localbackup21596completed; verified19episodesactivationSHAsand6processedcaseartifacts,0failures; reports/incremental-control-backup-check.json explicitlypartialactivecohorts. Addedbuild_coverage_overview.py+reports/coverage-overview.md/json consolidating5completedpanels×3labelstrata,knownpairedonly,all4categories,nopooling,endpointsreuselimit,8refusalsnotnegative; monitorpanelmarkedpending. Re-runaftermonitorcompletion. Livepollmonitorshard1stillgenerating,base9episodesvisible,honest4including1tokenlimit(retainattempt); no completionclaimed.

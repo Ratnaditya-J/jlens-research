@@ -1,0 +1,10 @@
+{
+  "monitor_identity_sha256": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+  "model_inputs_sha256": "e11fe320c0c639615a016bdd7a6192762c4389c5778f2f89b401204aa50d70d5",
+  "reference_manifest": "runs/identity-fp32/download-hashes.json",
+  "reference_sha256": "40e5f55c2c475afe2e2cb57abbd90a97fe73148068187bc5c22cfddeb8aaf2b4",
+  "matching_file_count": 21,
+  "missing_reference_files": [],
+  "differences": [],
+  "scope": "All downloaded monitor model/tokenizer/adapter files match original FP32 identity pilot files. Runtime configuration identity unchanged."
+}
