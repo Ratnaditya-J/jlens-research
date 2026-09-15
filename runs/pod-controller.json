@@ -1,0 +1,48 @@
+{
+  "pod": {
+    "id": "r6l6ozams6mgmt",
+    "name": "jlens-controller",
+    "desiredStatus": "RUNNING",
+    "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "gpuCount": null,
+    "gpu": null,
+    "costPerHr": 0.32,
+    "publicIp": "213.173.105.101",
+    "portMappings": {
+      "22": 48019
+    },
+    "machine": {},
+    "volumeInGb": 0
+  },
+  "created_at": "2026-09-15T00:29:09.953422+00:00",
+  "deadline": "2026-09-18T00:29:09.953422+00:00",
+  "request": {
+    "name": "jlens-controller",
+    "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "cloudType": "SECURE",
+    "computeType": "CPU",
+    "gpuCount": 1,
+    "gpuTypeIds": [
+      "NVIDIA A100-SXM4-80GB",
+      "NVIDIA A100 80GB PCIe"
+    ],
+    "gpuTypePriority": "availability",
+    "containerDiskInGb": 30,
+    "volumeInGb": 50,
+    "volumeMountPath": "/workspace",
+    "ports": [
+      "22/tcp"
+    ],
+    "env": {
+      "PUBLIC_KEY": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICswga0wLehG5jj74OeT+yLB+yLJjQdpxizpsnwMo+b3 jlens-research-pilot"
+    },
+    "interruptible": false,
+    "cpuFlavorIds": [
+      "cpu3g",
+      "cpu5g"
+    ],
+    "vcpuCount": 8
+  },
+  "terminated": false,
+  "last_checked_at": "2026-09-15T00:30:39.483786+00:00"
+}

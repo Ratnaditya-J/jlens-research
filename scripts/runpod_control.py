@@ -32,8 +32,8 @@ def sanitized(pod):
     return {k: pod.get(k) for k in ['id','name','desiredStatus','imageName','gpuCount','gpu','costPerHr','publicIp','portMappings','machine','volumeInGb']}
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('action', choices=['create','status','stop','terminate','watch']); p.add_argument('--request',type=Path); args=p.parse_args()
-    state_path=ROOT/'runs/pod.json'
+    p=argparse.ArgumentParser(); p.add_argument('action', choices=['create','status','stop','terminate','watch']); p.add_argument('--request',type=Path); p.add_argument('--state',type=Path,default=ROOT/'runs/pod.json'); p.add_argument('--hours',type=float,default=6); args=p.parse_args()
+    state_path=args.state
     if args.action=='create':
         if state_path.exists() and not json.loads(state_path.read_text()).get('terminated'):
             raise RuntimeError('Tracked pod exists; inspect it before creating another')
@@ -43,13 +43,16 @@ def main():
             body.update(json.loads(args.request.read_text()))
             body['env']={'PUBLIC_KEY':public_key}
         limits=json.loads((ROOT/'configs/resources.json').read_text())
-        assert body['gpuCount']<=limits['max_concurrent_gpus']
+        current=api('pods')
+        if isinstance(current,dict): current=current.get('pods',[])
+        active=sum((x.get('gpuCount') or 0) for x in current if x.get('name','').startswith('jlens-') and x.get('desiredStatus')=='RUNNING')
+        assert active+body.get('gpuCount',0)<=limits['max_concurrent_gpus'], 'Project GPU concurrency limit'
         if state_path.exists():
             old=json.loads(state_path.read_text())
             (ROOT/'runs'/('pod-'+old['pod']['id']+'.json')).write_text(json.dumps(old,indent=2)+'\n')
         pod=api('pods','POST',body)
         now=dt.datetime.now(dt.timezone.utc)
-        state={'pod':sanitized(pod),'created_at':now.isoformat(),'deadline':(now+dt.timedelta(hours=6)).isoformat(),'request':body,'terminated':False}
+        state={'pod':sanitized(pod),'created_at':now.isoformat(),'deadline':(now+dt.timedelta(hours=args.hours)).isoformat(),'request':body,'terminated':False}
         state_path.write_text(json.dumps(state,indent=2)+'\n'); print(json.dumps(state['pod']))
         return
     state=json.loads(state_path.read_text()); pod_id=state['pod']['id']

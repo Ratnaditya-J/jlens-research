@@ -1,0 +1,10 @@
+{
+  "name": "jlens-controller",
+  "volumeInGb": 50,
+  "computeType": "CPU",
+  "cpuFlavorIds": [
+    "cpu3g",
+    "cpu5g"
+  ],
+  "vcpuCount": 8
+}

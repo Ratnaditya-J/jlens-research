@@ -1,0 +1,78 @@
+{
+  "cache_rows": [
+    {
+      "episode_id": "fp32-pilot-00-source_dont_hack",
+      "initial_tokens": 1501,
+      "steps": 33,
+      "max_logit_error": 8.96453857421875e-05,
+      "max_residual_relative_rms_error": 3.212921455997275e-06,
+      "cached_seconds": 2.4882664680480957,
+      "full_seconds": 47.71280908584595,
+      "speedup": 19.175120389446853,
+      "passed": true
+    },
+    {
+      "episode_id": "confirm-count_vowels-fresh_strict-s2",
+      "initial_tokens": 719,
+      "steps": 33,
+      "max_logit_error": 6.812810897827148e-05,
+      "max_residual_relative_rms_error": 3.365124939591624e-06,
+      "cached_seconds": 1.6706902980804443,
+      "full_seconds": 22.297712326049805,
+      "speedup": 13.346406782674787,
+      "passed": true
+    },
+    {
+      "episode_id": "confirm-count_vowels-fresh_no_hints-s1",
+      "initial_tokens": 257,
+      "steps": 33,
+      "max_logit_error": 8.392333984375e-05,
+      "max_residual_relative_rms_error": 2.387283302596188e-06,
+      "cached_seconds": 1.2825608253479004,
+      "full_seconds": 10.060912370681763,
+      "speedup": 7.844393943618772,
+      "passed": true
+    }
+  ],
+  "fitting_batches": [
+    {
+      "dim_batch": 1,
+      "seconds_for_32_rows": 1.9288969039916992,
+      "estimated_seconds_per_2880_row_prompt": 173.60072135925293,
+      "peak_cuda_bytes": 86662719488,
+      "relative_rms_error_vs_batch1": 0.0,
+      "passed": true
+    },
+    {
+      "dim_batch": 2,
+      "seconds_for_32_rows": 1.5731000900268555,
+      "estimated_seconds_per_2880_row_prompt": 141.579008102417,
+      "peak_cuda_bytes": 89548687360,
+      "relative_rms_error_vs_batch1": 7.006678970356006e-06,
+      "passed": true
+    },
+    {
+      "dim_batch": 4,
+      "seconds_for_32_rows": 1.6127450466156006,
+      "estimated_seconds_per_2880_row_prompt": 145.14705419540405,
+      "peak_cuda_bytes": 95222284288,
+      "relative_rms_error_vs_batch1": 5.483718723553466e-06,
+      "passed": true
+    },
+    {
+      "dim_batch": 8,
+      "seconds_for_32_rows": 1.7915256023406982,
+      "estimated_seconds_per_2880_row_prompt": 161.23730421066284,
+      "peak_cuda_bytes": 106651045888,
+      "relative_rms_error_vs_batch1": 7.4236195359844714e-06,
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "cache_tolerance": {
+    "max_logit_absolute_error": 0.001,
+    "max_residual_relative_rms_error": 1e-05
+  },
+  "fitting_scope": "32 output rows, 64 generic tokens, all four source layers; extrapolation is not measured full-fit time",
+  "cache_passed": true
+}

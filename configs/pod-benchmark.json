@@ -1,0 +1,7 @@
+{
+  "name": "jlens-numerics-benchmark",
+  "gpuTypeIds": [
+    "NVIDIA H200"
+  ],
+  "volumeInGb": 120
+}

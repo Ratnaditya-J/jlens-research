@@ -1,0 +1,267 @@
+{
+  "kind": "reference_reduction_numerical_validation",
+  "corpus_sha256": "7a62423fbbe5009628aa8346668176bde048523dadb6637c3d470456ff1ac638",
+  "identity_sha256": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+  "threshold": "two adjacent epsilon values with relative error <= 0.02 for each layer/context",
+  "rows": [
+    {
+      "layer": 7,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.03374738246202469,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.09765625,
+          "relative_error": 0.6544268035888672
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.0,
+          "relative_error": 1.0
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.078125,
+          "relative_error": 0.568033504486084
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.026041666666666668,
+          "relative_error": 0.22833521396893883
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": false,
+      "seconds": 1.0340118408203125,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 15,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": 0.06774594634771347,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.1953125,
+          "relative_error": 0.653140754699707
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.06510416666666667,
+          "relative_error": 0.038995391214812714
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.09765625,
+          "relative_error": 0.30628150939941406
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.07161458333333334,
+          "relative_error": 0.05402024009011021
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": false,
+      "seconds": 0.769709587097168,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 21,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.013902181759476662,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.0,
+          "relative_error": 1.0
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.03662109375,
+          "relative_error": 0.6203777567545573
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.02685546875,
+          "relative_error": 0.4823333046653054
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.020345052083333336,
+          "relative_error": 0.3166799621582032
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": false,
+      "seconds": 0.7485017776489258,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 22,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.0024884985759854317,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.0,
+          "relative_error": 1.0
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.0,
+          "relative_error": 1.0
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.0,
+          "relative_error": 1.0
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.006510416666666667,
+          "relative_error": 0.6177666187286377
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": false,
+      "seconds": 0.7428946495056152,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 7,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": -0.3389262557029724,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.9765625,
+          "relative_error": 0.6529395141601563
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.2604166666666667,
+          "relative_error": 0.2316420982891034
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.5078125,
+          "relative_error": 0.33257598876953126
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.34505208333333337,
+          "relative_error": 0.017753341962706472
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": false,
+      "seconds": 2.40726900100708,
+      "peak_cuda_bytes": 95223927296
+    },
+    {
+      "layer": 15,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": 0.023943979293107986,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.0732421875,
+          "relative_error": 1.3269151306152345
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.2685546875,
+          "relative_error": 1.089158671985973
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.00732421875,
+          "relative_error": 0.6941102119935346
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.0146484375,
+          "relative_error": 0.38822042398706913
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": false,
+      "seconds": 2.3082194328308105,
+      "peak_cuda_bytes": 95223927296
+    },
+    {
+      "layer": 21,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": -0.04313018545508385,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.390625,
+          "relative_error": 0.8895867252349854
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.06510416666666667,
+          "relative_error": 0.33752035140991216
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.01953125,
+          "relative_error": 0.5471559003533613
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.0390625,
+          "relative_error": 0.09431180070672245
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": false,
+      "seconds": 2.2284584045410156,
+      "peak_cuda_bytes": 95223927296
+    },
+    {
+      "layer": 22,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": 0.009149695746600628,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.09765625,
+          "relative_error": 1.0936928844451905
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.06510416666666667,
+          "relative_error": 0.8594606733322143
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.029296875,
+          "relative_error": 0.6876903851826985
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.009765625,
+          "relative_error": 0.0630711555480957
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": false,
+      "seconds": 2.20869779586792,
+      "peak_cuda_bytes": 95223927296
+    }
+  ],
+  "complete": true,
+  "passed": false,
+  "limitations": "Two generic contexts and one random projection per layer. No fitted-lens quality or behavioral performance established. Failed finite differences require rounding/routing diagnosis."
+}

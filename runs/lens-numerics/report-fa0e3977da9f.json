@@ -1,0 +1,268 @@
+{
+  "kind": "reference_reduction_numerical_validation",
+  "corpus_sha256": "7a62423fbbe5009628aa8346668176bde048523dadb6637c3d470456ff1ac638",
+  "identity_sha256": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+  "protocol_version": 2,
+  "threshold": "two adjacent epsilon values with relative error <= 0.02 for each layer/context",
+  "rows": [
+    {
+      "layer": 7,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.03374738074203649,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.03133973141351666,
+          "relative_error": 0.07134329466703784
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.03236063270133483,
+          "relative_error": 0.0410920198904294
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.03274989271924331,
+          "relative_error": 0.029557494562850076
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.03365058347062635,
+          "relative_error": 0.002868289902260984
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": false,
+      "seconds": 0.9983077049255371,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 15,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": 0.06774594818094457,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.07108598070295653,
+          "relative_error": 0.04698581195592977
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.06931246157075778,
+          "relative_error": 0.0226007467389401
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.06839964387937418,
+          "relative_error": 0.009557004413391933
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.06784106708863222,
+          "relative_error": 0.0014020844861326038
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": true,
+      "seconds": 0.7757511138916016,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 21,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.013902181819729532,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.014739250572185742,
+          "relative_error": 0.0567918123351422
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.014695047384187683,
+          "relative_error": 0.053954610946766866
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.014122397241404043,
+          "relative_error": 0.015593345655855299
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.013827059796276105,
+          "relative_error": 0.005403613938268043
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": true,
+      "seconds": 0.7427389621734619,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 22,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.002488498416097667,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.00402987488076533,
+          "relative_error": 0.3824874246157572
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.0019085100250427582,
+          "relative_error": 0.23306761511402382
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.001971634747113904,
+          "relative_error": 0.20770102389467526
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.0024179333362295387,
+          "relative_error": 0.0283564897657379
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": false,
+      "seconds": 0.7406096458435059,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 7,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": -0.3389262739316155,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.33532851664628505,
+          "relative_error": 0.010615161945386309
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.3376272459750804,
+          "relative_error": 0.0038327744304567663
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.2482662602882486,
+          "relative_error": 0.267491842965409
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.4501423964282738,
+          "relative_error": 0.2470687573068439
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 2.402466297149658,
+      "peak_cuda_bytes": 95227875840
+    },
+    {
+      "layer": 15,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": 0.02394397846835889,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.025848551677790512,
+          "relative_error": 0.07368200869327858
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.024774243493627023,
+          "relative_error": 0.03351323423787736
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.023572033134609444,
+          "relative_error": 0.015533982134212122
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.02390154561416686,
+          "relative_error": 0.0017721722498249433
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 2.2886455059051514,
+      "peak_cuda_bytes": 95227875840
+    },
+    {
+      "layer": 21,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": -0.04313018726540801,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.04291978704185511,
+          "relative_error": 0.004878258985015968
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.04195911203912688,
+          "relative_error": 0.027152101591276224
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.043042706535073604,
+          "relative_error": 0.0020282947021787617
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.04304376919136439,
+          "relative_error": 0.002003656360493634
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 2.21632981300354,
+      "peak_cuda_bytes": 95227875840
+    },
+    {
+      "layer": 22,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": 0.009149695766738611,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.007419638265326326,
+          "relative_error": 0.18908360950114522
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.008760127956624264,
+          "relative_error": 0.04257713262232413
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.009247530492191142,
+          "relative_error": 0.010579551539207723
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.009165489884600737,
+          "relative_error": 0.0017232158958204835
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 2.225782632827759,
+      "peak_cuda_bytes": 95227875840
+    }
+  ],
+  "complete": true,
+  "passed": false,
+  "limitations": "Two generic contexts and one random projection per layer. No fitted-lens quality or behavioral performance established. Failed finite differences require rounding/routing diagnosis."
+}

@@ -1,0 +1,540 @@
+{
+  "kind": "reference_reduction_numerical_validation",
+  "corpus_sha256": "7a62423fbbe5009628aa8346668176bde048523dadb6637c3d470456ff1ac638",
+  "identity_sha256": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+  "protocol_version": 3,
+  "threshold": "two adjacent epsilon values with relative error <= 0.02 for each layer/context",
+  "rows": [
+    {
+      "layer": 7,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.03374738074203649,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.03133973141351666,
+          "relative_error": 0.07134329466703784,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.03236063270133483,
+          "relative_error": 0.0410920198904294,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.03274989271924331,
+          "relative_error": 0.029557494562850076,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.03365058347062635,
+          "relative_error": 0.002868289902260984,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": -0.033361985224747044,
+          "relative_error": 0.011420012718480012,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": 0.039802083400079444,
+          "relative_error": 1.8478797555097113,
+          "changed_expert_sets": [
+            0,
+            2
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": true,
+      "seconds": 1.3439974784851074,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 15,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": 0.06774594818094457,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.07108598070295653,
+          "relative_error": 0.04698581195592977,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.06931246157075778,
+          "relative_error": 0.0226007467389401,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.06839964387937418,
+          "relative_error": 0.009557004413391933,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.06784106708863222,
+          "relative_error": 0.0014020844861326038,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": 0.06771395798783754,
+          "relative_error": 0.00047220821268280854,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": 0.08973808631991573,
+          "relative_error": 0.24507028220514224,
+          "changed_expert_sets": [
+            0,
+            1
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": true,
+      "seconds": 1.1243810653686523,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 21,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.013902181819729532,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.014739250572185742,
+          "relative_error": 0.0567918123351422,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.014695047384187683,
+          "relative_error": 0.053954610946766866,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.014122397241404043,
+          "relative_error": 0.015593345655855299,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.013827059796276105,
+          "relative_error": 0.005403613938268043,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": -0.013911959614060625,
+          "relative_error": 0.0007028337202194494,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": -0.01387446595845447,
+          "relative_error": 0.001993633922678906,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": true,
+      "seconds": 1.0770785808563232,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 22,
+      "seq_len": 64,
+      "prompt_id": "wikitext103-validation-3",
+      "directional_derivative": -0.002488498416097667,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.00402987488076533,
+          "relative_error": 0.3824874246157572,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.0019085100250427582,
+          "relative_error": 0.23306761511402382,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.001971634747113904,
+          "relative_error": 0.20770102389467526,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.0024179333362295387,
+          "relative_error": 0.0283564897657379,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": -0.0024927428380312777,
+          "relative_error": 0.001702711514743594,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": -0.002489330202681667,
+          "relative_error": 0.00033414071909941296,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.814697265625e-05,
+      "passed": true,
+      "seconds": 1.0632774829864502,
+      "peak_cuda_bytes": 86585861120
+    },
+    {
+      "layer": 7,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": -0.3389262739316155,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.33532851664628505,
+          "relative_error": 0.010615161945386309,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.3376272459750804,
+          "relative_error": 0.0038327744304567663,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.2482662602882486,
+          "relative_error": 0.267491842965409,
+          "changed_expert_sets": [
+            2,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.4501423964282738,
+          "relative_error": 0.2470687573068439,
+          "changed_expert_sets": [
+            7,
+            6
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": -0.21897352515686166,
+          "relative_error": 0.35391988760055965,
+          "changed_expert_sets": [
+            20,
+            36
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": -0.31085469424334355,
+          "relative_error": 0.08282503260262407,
+          "changed_expert_sets": [
+            50,
+            55
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 3.3532791137695312,
+      "peak_cuda_bytes": 95227875840
+    },
+    {
+      "layer": 15,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": 0.02394397846835889,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.025848551677790512,
+          "relative_error": 0.07368200869327858,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.024774243493627023,
+          "relative_error": 0.03351323423787736,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.023572033134609444,
+          "relative_error": 0.015533982134212122,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.02390154561416686,
+          "relative_error": 0.0017721722498249433,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": 0.042496606691150636,
+          "relative_error": 0.4365672854217579,
+          "changed_expert_sets": [
+            1,
+            1
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": 0.026118781461507683,
+          "relative_error": 0.0832658673741686,
+          "changed_expert_sets": [
+            6,
+            8
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 3.271372079849243,
+      "peak_cuda_bytes": 95227875840
+    },
+    {
+      "layer": 21,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": -0.04313018726540801,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": -0.04291978704185511,
+          "relative_error": 0.004878258985015968,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.04195911203912688,
+          "relative_error": 0.027152101591276224,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.043042706535073604,
+          "relative_error": 0.0020282947021787617,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.04304376919136439,
+          "relative_error": 0.002003656360493634,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": -0.043118230699026955,
+          "relative_error": 0.0002772203678940026,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": -0.031061322548444393,
+          "relative_error": 0.27982407409214494,
+          "changed_expert_sets": [
+            0,
+            1
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 3.188979387283325,
+      "peak_cuda_bytes": 95227875840
+    },
+    {
+      "layer": 22,
+      "seq_len": 256,
+      "prompt_id": "wikitext103-validation-67",
+      "directional_derivative": 0.009149695766738611,
+      "sweep": [
+        {
+          "epsilon": 0.01,
+          "finite_difference": 0.007419638265326326,
+          "relative_error": 0.18908360950114522,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.008760127956624264,
+          "relative_error": 0.04257713262232413,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.009247530492191142,
+          "relative_error": 0.010579551539207723,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.009165489884600737,
+          "relative_error": 0.0017232158958204835,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": 0.0091294854902175,
+          "relative_error": 0.0022088468334193743,
+          "changed_expert_sets": [
+            0,
+            0
+          ]
+        },
+        {
+          "epsilon": 3.0,
+          "finite_difference": 0.018437553887813127,
+          "relative_error": 0.5037467647600268,
+          "changed_expert_sets": [
+            1,
+            0
+          ]
+        }
+      ],
+      "readout_parity_max_error": 3.147125244140625e-05,
+      "passed": true,
+      "seconds": 3.182816743850708,
+      "peak_cuda_bytes": 95227875840
+    }
+  ],
+  "complete": true,
+  "passed": true,
+  "limitations": "Two generic contexts and one random projection per layer. No fitted-lens quality or behavioral performance established. Failed finite differences require rounding/routing diagnosis."
+}

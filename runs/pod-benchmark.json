@@ -1,0 +1,42 @@
+{
+  "pod": {
+    "id": "ti9vb3vl0fq858",
+    "name": "jlens-numerics-benchmark",
+    "desiredStatus": "RUNNING",
+    "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "gpuCount": 1,
+    "gpu": null,
+    "costPerHr": 4.59,
+    "publicIp": "103.196.86.160",
+    "portMappings": {
+      "22": 47278
+    },
+    "machine": {},
+    "volumeInGb": 120
+  },
+  "created_at": "2026-09-15T00:28:47.847751+00:00",
+  "deadline": "2026-09-15T06:28:47.847751+00:00",
+  "request": {
+    "name": "jlens-numerics-benchmark",
+    "imageName": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "cloudType": "SECURE",
+    "computeType": "GPU",
+    "gpuCount": 1,
+    "gpuTypeIds": [
+      "NVIDIA H200"
+    ],
+    "gpuTypePriority": "availability",
+    "containerDiskInGb": 30,
+    "volumeInGb": 120,
+    "volumeMountPath": "/workspace",
+    "ports": [
+      "22/tcp"
+    ],
+    "env": {
+      "PUBLIC_KEY": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICswga0wLehG5jj74OeT+yLB+yLJjQdpxizpsnwMo+b3 jlens-research-pilot"
+    },
+    "interruptible": false
+  },
+  "terminated": false,
+  "last_checked_at": "2026-09-15T00:29:24.434973+00:00"
+}

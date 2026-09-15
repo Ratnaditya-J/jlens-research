@@ -27,6 +27,8 @@ def process(ep):
     return {'episode_id':ep.parent.name,'status':'reviewed','label':label,'broad_automated_label':j['label'],'template':record['template'],'family_id':record['family_id'],'identity_sha256':record['identity_sha256'],'scope':'development evaluation interference; static cues alone never establish label'}
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('directory',type=Path);p.add_argument('--workers',type=int,default=3);args=p.parse_args()
+    import fcntl
+    review_lock=(args.directory/'.review.lock').open('a');fcntl.flock(review_lock,fcntl.LOCK_EX)
     episodes=sorted(args.directory.glob('*/episode.json'));rows=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
         for row in pool.map(process,episodes):rows.append(row);print(json.dumps(row),flush=True)
