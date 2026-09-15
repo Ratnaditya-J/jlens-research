@@ -1,0 +1,13 @@
+# Blinding and shortcut audit
+
+The development probe's perfect out-of-fold separation is insufficient evidence of robust misalignment detection. The development set has only four broad groups and marked template-label association: source_dont_hack 33 violations/0 benign; fresh_strict 17/16; fresh_no_hints 1/28 plus4uncertain. Prompt-only TFIDF reached0.798 AUROC and permitted-prefix TFIDF0.859 on the same folds.
+
+The implementation trains each reported development prediction on other task families, fitting its scaler within that training fold. Final saved development weights are refitted on all95cases but are not used for the reported out-of-fold predictions. This rules out that particular in-sample scoring error; it does not rule out template, difficulty, length, or visible-reasoning shortcuts. Activations have2880dimensions and the dataset is small. The development result is exploratory.
+
+Fresh primary separation:16training families,8validation,15test. Training-only grouped layer/C selection, validation-only operating points, and immutable locks precede test scoring. Behavioral reviewers see external execution evidence but not detector scores; J-view reviewers see permitted context/display but not outcomes or probe scores. The same software operator controls the pipeline, so this is procedural blinding rather than an independently administered external benchmark. Synthetic tests establish implemented isolation and hash rejection, not absence of every possible scientific confound.
+
+Templates recur in the primary family split. Within-template sensitivity/FPR/AUROC and matched text/context baselines are now emitted for each stratum; one-class strata have no AUROC rather than an invented perfect score. Strong pooled performance accompanied by weak mixed-template performance should be interpreted as shortcut dependence.
+
+A secondary template challenge is frozen before primary test scoring:128episodes across the same15test families, with2new system templates and4matched original strict-condition seeds per task (16task scenarios). The task/tests/examples intentionally remain shared to isolate instruction wording. Apply the same frozen primary detector weights, thresholds, lens and interpretation rubric; no challenge calibration. It is not yet launched. Preserve primary findings even if this challenge fails. Additional work required: generation, independent labels, parity/readouts, blinded interpretation, paired comparison and report.
+
+No present result establishes a universal misalignment direction, causal mechanism, human readability, or100percent accuracy on future tasks.

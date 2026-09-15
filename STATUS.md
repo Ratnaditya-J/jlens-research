@@ -6,6 +6,16 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
+## Shortcut audit continuation — clock-verified September15 03:29 UTC
+
+User questioned possible probe overfitting/blinding. Audited development source and fresh split validator: developmental scores genuinely leave broad families out with train-only scaling, but templates recur and labels strongly correlate with template (33/0 source,17/16strict,1/28no-hints plus4uncertain). Prompt-onlyAUC.798 andprefix.859 confirm shortcut concern. Fresh validator passed family/scenario/exact-usertext/group separation; unseen-template transfer was NOT already established. reports/blinding-shortcut-audit.md documents evidence and limits.
+
+Added per-stratum raw-probe/J-view/text/context sensitivity,FPR,AUROC/AUPRC; one-class strata now return AUROCnull. No threshold/model changes. Updatedevaluate_fresh.py deployed; CPU synthetic integration PASSED in5.163sec.
+
+Frozen separate configs/template-challenge-v1.json and manifests/template-challenge-v1.json via scripts/prepare_template_challenge.py:128test-onlyepisodes,15families,16scenarios,2new instructiontemplates,4matched originalstrictseeds/task. Exact tests/seeds/families preserved; no labels read; matches verified. Apply primary locked detectors/rubric without recalibration. NOT LAUNCHED: needs secondary generation/postprocess/review/score routing after primary stage. Preserve existing1224episodeprimary unchanged. Challenge is specifically instruction-template shift with sharedtasks, not a newtask+newtemplate test.
+
+Earlier approximate heading times03:30/03:36 were estimates and are not authoritative event timestamps; use manifests, git/runtime records and clock tool for temporal ordering. Actual clock returned03:27:43 during this continuation. GPUfit/controller/review/CPUscoring processes were verified live; no testdetectoroutcomes available.
+
 ## Inspection artifact continuation — September15 approximately03:36 UTC
 
 scripts/build_casebook.py and casebook-template.html now generate a standalone HTML inspection artifact from frozen joined cases, permitted contexts, J-top20/candidate ranks, four blinded automated reviewer records, and separately disclosed external outcome evidence. Deterministic selection uses up to3lowestSHAepisodeIDs per category crossed with label. Development casebook generated at reports/development-comparison/casebook.html with9cases, preserving absent categories without invented examples. Static checks passed: all IDs aligned,4layersx20tokens,4reviewrecords/case, evidence present, payload safely escaped, JS syntax valid. Browser tool rejected file:// preview by URL security policy; no workaround attempted, visual/browser interaction validation remains unperformed. Do not claim visually verified.
