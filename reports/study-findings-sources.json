@@ -3,5 +3,8 @@
   "reports/final-comparison-offset32/summary.json": "500f31e2cce846bd221555ae200db4ee46071c38dfa95d0e2c86fd9123e710a2",
   "reports/final-comparison-offset64/summary.json": "7b6510f6b9a17cc1344389448e9ce082c2f0951c7483884a0b3bb5d6a65cadbf",
   "reports/template-challenge-comparison/summary.json": "657aa41742906935987eba0073257ce3798aa2bed7fb47c8d6e2b4dcb5542391",
-  "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127"
+  "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127",
+  "reports/action-latency-scenarios.json": "7f7e88a4c8ed3d1bac0de4ade4df59ef6a7168ba007ac283b4eb757be54a7fed",
+  "reports/secondary-tokenizer-audit.json": "425000486930a7b0909386e68f88602a1e99a8f59a3d7b09cbad92c992ddebe5",
+  "reports/monitor-harness-validation.json": "d0f58e63626e43a6964af308c488493f4da61815ea3b8cbcdee69644691e9b0a"
 }
