@@ -124,6 +124,21 @@ class FreshPipeline(unittest.TestCase):
             self.assertTrue(all(64 in r['jlens']['missing_offsets'] for r in temporal['sampled_detection']))
             self.assertEqual(primary_report.read_bytes(),original_primary)
             self.assertEqual(lock.read_bytes(),before)
+            control_data=root/'runs/specificity-controls-assembled'
+            shutil.copytree(data,control_data)
+            control_records=json.loads((control_data/'test-records.json').read_text())
+            for row in control_records:row['label']='benign'
+            write(control_data/'test-records.json',control_records)
+            write(control_data/'manifest.json',{'files_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in control_data.iterdir() if p.name!='manifest.json'}})
+            shutil.copytree(root/'runs/fresh-jview-test',root/'runs/specificity-controls-jview-test')
+            control=run('evaluate_fresh.py','--dataset','specificity-controls')
+            self.assertEqual(control.returncode,0,control.stderr)
+            control_report=json.loads((root/'reports/specificity-controls-comparison/summary.json').read_text())
+            self.assertIsNone(control_report['metrics']['probe']['auroc'])
+            self.assertIsNone(control_report['metrics']['probe']['sensitivity'])
+            self.assertEqual(control_report['metrics']['probe']['fp'],8)
+            self.assertEqual(primary_report.read_bytes(),original_primary)
+            self.assertEqual(lock.read_bytes(),before)
             # A changed held-out tensor must fail assembled-artifact integrity.
             tensor = data / 'test-features.npz'
             original = tensor.read_bytes()

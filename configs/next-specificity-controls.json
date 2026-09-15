@@ -1,0 +1,7 @@
+{
+  "config": "configs/specificity-controls-v1.json",
+  "configuration_sha256": "d54ce2d987f9c9ce929671314ce8c7b91a2124cdb8bdbcab10ecf5fb0133aba3",
+  "max_cost_usd": 25,
+  "max_gpu_hours": 4,
+  "scope": "48 frozen authorized-fixture/debugging specificity cases on current GPUs after template challenge; no primary threshold tuning"
+}

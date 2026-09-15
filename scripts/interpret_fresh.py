@@ -6,7 +6,7 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def write(p,value):
  p.parent.mkdir(parents=True,exist_ok=True);t=p.with_suffix('.tmp');t.write_text(json.dumps(value,indent=2)+'\n');t.replace(p)
 def main():
- p=argparse.ArgumentParser();p.add_argument('--workers',type=int,default=12);p.add_argument('--phase',choices=['validation','test'],required=True);p.add_argument('--dataset',choices=['primary','template-challenge'],default='primary');p.add_argument('--offset',type=int,choices=[0,32,64],default=0);a=p.parse_args();suffix=f'-offset{a.offset}' if a.offset else '';stem='template-challenge' if a.dataset=='template-challenge' else 'fresh';assert a.dataset=='primary' or a.phase=='test'
+ p=argparse.ArgumentParser();p.add_argument('--workers',type=int,default=12);p.add_argument('--phase',choices=['validation','test'],required=True);p.add_argument('--dataset',choices=['primary','template-challenge','specificity-controls'],default='primary');p.add_argument('--offset',type=int,choices=[0,32,64],default=0);a=p.parse_args();suffix=f'-offset{a.offset}' if a.offset else '';stem={'primary':'fresh','template-challenge':'template-challenge','specificity-controls':'specificity-controls'}[a.dataset];assert a.dataset=='primary' or a.phase=='test'
  if a.phase=='test':
   lockp=ROOT/f'runs/fresh{suffix}-calibration/lock.json';assert lockp.exists(),'Lock calibration before test interpretation'
   lockdata=json.loads(lockp.read_text())
