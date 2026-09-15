@@ -6,6 +6,12 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
+## Inspection artifact continuation — September15 approximately03:36 UTC
+
+scripts/build_casebook.py and casebook-template.html now generate a standalone HTML inspection artifact from frozen joined cases, permitted contexts, J-top20/candidate ranks, four blinded automated reviewer records, and separately disclosed external outcome evidence. Deterministic selection uses up to3lowestSHAepisodeIDs per category crossed with label. Development casebook generated at reports/development-comparison/casebook.html with9cases, preserving absent categories without invented examples. Static checks passed: all IDs aligned,4layersx20tokens,4reviewrecords/case, evidence present, payload safely escaped, JS syntax valid. Browser tool rejected file:// preview by URL security policy; no workaround attempted, visual/browser interaction validation remains unperformed. Do not claim visually verified.
+
+Builder/template deployedCPU and final scoring sequencer invokes it after locked primary/secondary evaluation. Waiting sequencer intentionally restarted after confirming fresh assembly absent; data-generation and GPU processes unchanged. Casebook is an inspection artifact, not a completed independent disagreement re-audit. Full report/timing/reproducibility interface remain pending. Goal active.
+
 ## Statistical diagnostics continuation — September15 approximately03:30 UTC
 
 Implemented src/comparison_diagnostics.py and integrated into final evaluation: ordinal0/1/2 counts by label, explicit ambiguity counts, secondary table excluding ambiguous readings, uncertain-label assignments to each class, descriptive ordinal test operating points (never threshold selection), and blinded reviewer agreement/kappa. Primary flags and thresholds unchanged. Unit test distinguishes ambiguity, uncertain external labels, and missing scores. CPU synthetic integration passed after diagnostics addition (4.954sec). Evaluation now verifies every assembled file hash, including held-out matrices, against the locked assembly manifest; expanded test deliberately mutates held-out tensors and requires rejection. Expanded test PASSED in4.987sec, including held-out tensor mutation rejection.

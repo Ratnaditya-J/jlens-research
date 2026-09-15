@@ -41,6 +41,7 @@ def main():
         assert not json.loads(complete.read_text())['errors'], 'Incomplete reviewer results'
     run('evaluate_fresh.py')
     run('supervised_jspace.py', 'evaluate')
+    run('build_casebook.py', '--scope', 'final')
     report = ROOT / 'reports/final-comparison/summary.json'
     (folder / 'fresh-scoring-complete.json').write_text(json.dumps({
         'summary_sha256': hashlib.sha256(report.read_bytes()).hexdigest(),
