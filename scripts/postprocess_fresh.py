@@ -18,7 +18,7 @@ def main():
  p=argparse.ArgumentParser();p.add_argument('--shard',type=int,required=True);a=p.parse_args();assert a.shard in range(4)
  cfgp=ROOT/'configs/fresh-v1.json';cfg=json.loads(cfgp.read_text());assigned=cfg['episodes'][a.shard::4];inp=ROOT/f'runs/fresh-shard-{a.shard}';out=ROOT/f'runs/fresh-processed-{a.shard}';out.mkdir(parents=True,exist_ok=True)
  lensp=ROOT/'runs/fit64-merged/lens.pt';lens=JacobianLens.load(str(lensp));assert lens.n_prompts==64
- manifest={'shard':a.shard,'configuration_sha256':sha(cfgp),'lens_sha256':sha(lensp),'identity_sha256':sha(ROOT/'configs/identity-fp32.json'),'position_script_sha256':sha(ROOT/'src/positions.py'),'script_sha256':sha(Path(__file__)),'offsets':[0,32,64],'layers':[7,15,21,22],'top_k':20,'replay_relative_rms_tolerance':1e-5}
+ manifest={'shard':a.shard,'configuration_sha256':sha(cfgp),'lens_sha256':sha(lensp),'identity_sha256':sha(ROOT/'configs/identity-fp32.json'),'position_script_sha256':sha(ROOT/'src/positions.py'),'script_sha256':sha(Path(__file__)),'offsets':[0,32,64],'layers':[7,15,21,22],'top_k':20,'secondary_features':'unnormalized reference J transport, equal dimension to raw residual; no outcome supervision','replay_relative_rms_tolerance':1e-5}
  mp=out/'manifest.json'
  if mp.exists():assert json.loads(mp.read_text())==manifest,'changed postprocess provenance'
  else:write(mp,manifest)
@@ -55,7 +55,7 @@ def main():
       if not good:continue
       layers=[]
       for l in manifest['layers']:
-       live=states[f'layer_{l}'][j].float();features[f'offset_{distance}_layer_{l}']=live.contiguous();logits=model.unembed(lens.transport(live.cuda(),l)).float();assert torch.isfinite(logits).all();values,indices=logits.topk(20)
+       live=states[f'layer_{l}'][j].float();features[f'offset_{distance}_layer_{l}']=live.contiguous();transported=lens.transport(live.cuda(),l);features[f'jspace_offset_{distance}_layer_{l}']=transported.cpu().float().contiguous();logits=model.unembed(transported).float();assert torch.isfinite(logits).all();values,indices=logits.topk(20)
        layers.append({'layer':l,'top_tokens':[{'id':i,'text':model.tokenizer.decode([i]),'logit':float(v)} for i,v in zip(indices.tolist(),values.tolist())],'candidate_ranks':[{'id':i,'text':model.tokenizer.decode([i]),'rank':1+int((logits>logits[i]).sum()),'logit':float(logits[i])} for i in cids]})
       readouts.append({'episode_id':eid,'offset':int(distance),'layers':layers});contexts.append({'episode_id':eid,'offset':int(distance),'prompt':'\n'.join(m['role']+': '+m['content'] for m in ep['messages']),'generated_prefix':model.tokenizer.decode(ep['generated_token_ids'][:j])})
     write(directory/'replay.json',checks);write(directory/'readouts.json',readouts);write(directory/'contexts.json',contexts);names+=['replay.json','readouts.json','contexts.json']

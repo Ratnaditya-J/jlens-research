@@ -1,0 +1,8 @@
+{
+  "version": "secondary-v1-before-fresh-collection",
+  "representation": "Reference lens.transport(h, layer), unnormalized d=2880 transformed residual; all dimensions, not top-token display",
+  "capacity": "Same 4 layers x 4 C values, GroupKFold4 on training families, standardized L2 logistic regression; same tie-breaking and 5 percent validation FPR rule as raw activation probe",
+  "purpose": "Distinguish retained supervised predictive information from top-token readability; cannot attribute primary misses uniquely to interpretation or prove causal information",
+  "primary_rubric": "unchanged",
+  "test_policy": "Freeze secondary model before held-out scoring"
+}

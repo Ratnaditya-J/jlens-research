@@ -27,6 +27,15 @@ def main():
     views[split].append(view);contexts[split].append(ctx)
   if entry['feature_index'] is None:exclusions.append({'episode_id':eid,'reason':'no valid primary shared feature/readout'})
   records[split].append(entry)
+ # Preserve separate equal-dimensional transformed features for the secondary supervised comparison.
+ for split in records:
+  transformed={l:[] for l in [7,15,21,22]}
+  index_by_id={ep['episode_id']:i for i,ep in enumerate(cfg['episodes'])}
+  for entry in records[split]:
+   if entry['feature_index'] is None:continue
+   eid=entry['episode_id'];f=load_file(str(ROOT/f'runs/fresh-processed-{index_by_id[eid]%4}'/eid/'features.safetensors'))
+   for l in transformed:transformed[l].append(f[f'jspace_offset_0_layer_{l}'])
+  np.savez(out/(split+'-jspace-features.npz'),**{f'layer_{l}':np.asarray(v,dtype=np.float32) for l,v in transformed.items()})
  for split in records:
   np.savez(out/(split+'-features.npz'),**{f'layer_{l}':np.asarray(v,dtype=np.float32) for l,v in vectors[split].items()})
   (out/(split+'-records.json')).write_text(json.dumps(records[split],indent=2)+'\n');(out/(split+'-readouts.json')).write_text(json.dumps(views[split],indent=2)+'\n');(out/(split+'-contexts.json')).write_text(json.dumps({'rows':contexts[split]},indent=2)+'\n')

@@ -20,11 +20,11 @@ class FreshPipeline(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name in ['scripts/calibrate_fresh.py', 'scripts/evaluate_fresh.py',
-                         'scripts/paired_breakdown.py', 'src/thresholds.py']:
+                         'scripts/paired_breakdown.py', 'scripts/supervised_jspace.py', 'src/thresholds.py']:
                 dest = root / name
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(ROOT / name, dest)
-            for name in ['configs/final-protocol.json', 'manifests/fresh-splits.json',
+            for name in ['configs/final-protocol.json', 'configs/supervised-jspace.json', 'manifests/fresh-splits.json',
                          'runs/fresh-assembled/manifest.json']:
                 write(root / name, {'synthetic': True})
             data = root / 'runs/fresh-assembled'
@@ -43,6 +43,7 @@ class FreshPipeline(unittest.TestCase):
                 write(data / (split + '-records.json'), rows)
                 write(data / (split + '-contexts.json'), {'rows': contexts})
                 np.savez(data / (split + '-features.npz'), **{f'layer_{l}': np.array(vectors) for l in [7, 15, 21, 22]})
+                np.savez(data / (split + '-jspace-features.npz'), **{f'layer_{l}': np.array(vectors) * 2 for l in [7,15,21,22]})
                 jd = root / f'runs/fresh-jview-{split}'
                 write(jd / 'scores.json', judgments)
                 write(jd / 'complete.json', {'errors': [], 'scores_sha256': hashlib.sha256((jd / 'scores.json').read_bytes()).hexdigest()})
@@ -51,8 +52,10 @@ class FreshPipeline(unittest.TestCase):
             hidden.mkdir()
             for p in data.glob('test-*'):
                 p.rename(hidden / p.name)
-            def run(script):
-                return subprocess.run([sys.executable, str(root / 'scripts' / script)], capture_output=True, text=True)
+            def run(script, *args):
+                return subprocess.run([sys.executable, str(root / 'scripts' / script), *args], capture_output=True, text=True)
+            secondary = run('supervised_jspace.py', 'calibrate')
+            self.assertEqual(secondary.returncode, 0, secondary.stderr)
             first = run('calibrate_fresh.py')
             self.assertEqual(first.returncode, 0, first.stderr)
             lock = root / 'runs/fresh-calibration/lock.json'
@@ -61,6 +64,8 @@ class FreshPipeline(unittest.TestCase):
             self.assertEqual(lock.read_bytes(), before)
             for p in hidden.iterdir():
                 p.rename(data / p.name)
+            secondary = run('supervised_jspace.py', 'evaluate')
+            self.assertEqual(secondary.returncode, 0, secondary.stderr)
             scored = run('evaluate_fresh.py')
             self.assertEqual(scored.returncode, 0, scored.stderr)
             report = json.loads((root / 'reports/final-comparison/summary.json').read_text())

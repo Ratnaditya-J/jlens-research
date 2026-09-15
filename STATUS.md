@@ -6,6 +6,12 @@ User-required final deliverable: four-way paired held-out counts (probe only, J-
 
 
 
+## Secondary information/readability analysis — September15 approximately03:26 UTC
+
+Added separately frozen configs/supervised-jspace.json and scripts/supervised_jspace.py. Postprocessing saves full d=2880 reference-transported vectors alongside raw residuals before native normalization/unembedding, with no label access. Secondary classifier uses same layers/C grid, train-only GroupKFold, standardization, tie-breaking, and validation-only5%FPR rule as raw probe. It is explicitly a supervised J-space probe, never the primary J-view detector. Updated assembly preserves secondary matrices; primary displays/rubric/threshold rules unchanged. CPU sequencer now locks BOTH classifiers before test interpretation, then evaluates both. Updated scripts deployed before any fresh postprocessing launched; waiting sequencer restarted intentionally to load changes, not because of an observation timeout. GPU/controller/review jobs untouched.
+
+Expanded synthetic integration test PASSED in5.536sec, including secondary calibration with test files removed and secondary evaluation. Test report is software evidence only. reports/completion-audit.md now enumerates the brief's pending requirements, including timing, casebook, specific controls, sample yield, and unified reproducibility CLI. 1,224 is the frozen attempt count, not confirmed usable count; measure yield before deciding on additional independently frozen data. Overall goal remains incomplete.
+
 ## Pipeline continuation — September15 approximately03:21 UTC
 
 Final CPU scoring sequencer implemented, deployed and launched detached: scripts/fresh_scoring_loop.py. It waits for four hash-verified processed shard completion markers plus independent external-label completion, then assembles, interprets validation, locks calibration, interprets test, and evaluates. Test interpretation itself now enforces the calibration lock and source hashes. Generic quality gates remain in assembly. Failure logs are preserved; no fabricated or skipped results. Final report and full completion audit remain required after scoring.

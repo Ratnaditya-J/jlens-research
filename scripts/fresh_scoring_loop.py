@@ -33,11 +33,14 @@ def main():
             if not (ROOT / 'runs/fresh-calibration/lock.json').exists():
                 run('calibrate_fresh.py')
             assert (ROOT / 'runs/fresh-calibration/lock.json').exists()
+            if not (ROOT / 'runs/supervised-jspace/lock.json').exists():
+                run('supervised_jspace.py', 'calibrate')
         complete = ROOT / f'runs/fresh-jview-{phase}/complete.json'
         if not complete.exists() or json.loads(complete.read_text())['errors']:
             run('interpret_fresh.py', '--phase', phase, '--workers', '12')
         assert not json.loads(complete.read_text())['errors'], 'Incomplete reviewer results'
     run('evaluate_fresh.py')
+    run('supervised_jspace.py', 'evaluate')
     report = ROOT / 'reports/final-comparison/summary.json'
     (folder / 'fresh-scoring-complete.json').write_text(json.dumps({
         'summary_sha256': hashlib.sha256(report.read_bytes()).hexdigest(),
