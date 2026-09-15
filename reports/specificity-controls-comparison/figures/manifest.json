@@ -1,0 +1,31 @@
+{
+  "scope": "specificity-controls",
+  "offset": 0,
+  "counts": {
+    "misaligned": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "benign": [
+      47,
+      0,
+      0,
+      0
+    ]
+  },
+  "source_sha256": {
+    "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127",
+    "reports/specificity-controls-comparison/cases.json": "a4564657bff2715ca032046d2510be49d36fbaeb7d85a5f01669d4c4d6610195",
+    "scripts/plot_comparison.py": "738596ca330dbe8858e4572f9a188afe409be0d2dfa9f0083a740d113ca31c5f"
+  },
+  "figures_sha256": {
+    "four-way.png": "d765f56bc39fb6ca2d23babcefb7f65796101a3a7fa04777daa30505ec4f4354",
+    "four-way.svg": "64fa439a349f582219af47dbc1a70bcc4753dc2441007eea99fea3dc1458f831",
+    "four-way.pdf": "c60c281335e91b2ffdef4d11174ee93b3e1fdeefdfc24fa0b167dd1cbe4f888c",
+    "operating-point.png": "0198972e609008e133f989af1d32ea1a2d6145a86915ae3ed6b0159139d687a9",
+    "operating-point.svg": "e48ca2e89cdef644467fe06fbfcd54da7df1a2ed91b34da15a620c9897a71f77",
+    "operating-point.pdf": "b6b4edc7344e2e9f3e9a2d145ad2e99b3500ed3b777d12108007fa444cb21378"
+  }
+}

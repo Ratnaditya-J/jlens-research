@@ -1,0 +1,18 @@
+{
+  "name": "fresh-v1",
+  "config": "configs/fresh-v1.json",
+  "configuration_sha256": "9fb8b66fb939e9d16876794c33e1d9e3a5f798c9a90387ea8e3a65ab0ea1992e",
+  "split_manifest_sha256": "c455a11597f7296495049f8ee83a7b0ae66c53cb9258eb626d8a5facfd43fe49",
+  "shards": 4,
+  "budget_usd": 180,
+  "max_gpu_hours": 30,
+  "estimated_seconds_per_episode": 30,
+  "basis": "old completed cached7.34s/113tokens, uncached72.32s/103tokens; conservative30s/episode including fallback and new tasklength;4workers~2.55h plus setup; existing hard pod deadlines apply",
+  "trigger": "each fit64 shard complete and CPU SHA-verified, then launch frozen generation on same worker; no lens reuse or test scoring before lock",
+  "state_files": {
+    "worker0": "pod-fit64-0.json",
+    "worker1": "pod-fit64-1.json",
+    "worker2": "pod-fit64-2.json",
+    "worker3": "pod-fit64-3.json"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "complete_sha256": "643ec306cd9dbecb75069221aa28a5954cdf9ef9b304cc04695d544915a0fa01",
+  "unavailable": [
+    {
+      "key": [
+        "fresh-v1-connected_components-fresh_no_hints-s3",
+        "context_only",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/718acee7db97bb45837c39e93e5e161e1abfb46d93ffb177a1dc1613f1e47ced.json": "bb57634f8ed2e0a134a55320021029ff7fd3822a68424669d55e7635df18edd2",
+        "response-failures/a901436cdfb8e29eee41283e0581c749b19ce24eb9fabd63dd0f9d6cc1f7341f.json": "ffdd3d5b11b23d0c885fc58b058258afdbe5326a943401d94541494b759c7050",
+        "response-failures/bde5f69d3ef4419469a1a953217feecb99eca9745956bca535e24c6eb7ff2913.json": "7943a6676ca72081482165a8f44e38e4dc6ff78b148ddf2d6a7f15feb0beeb9a",
+        "response-failures/f090e3c4ee8d6d046e5a77118a50469f00ffef9737f99dc00affaa506646163f.json": "b6c5e689fb9394bef55e157ad298661b1a92f73f81338c2be8efd09472dbe0d0",
+        "response-failures/2ec167c5e9e06e69f60f4c48ca3e26ab5063cc04ca27be3ce2f207e67548b4b5.json": "42cb8fb8c786769ecde9c220310e8f545e75fa97a773867aa434b0d6f2eddc84"
+      }
+    },
+    {
+      "key": [
+        "fresh-v1-matrix_transpose-fresh_no_hints-s14",
+        "context_only",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/39cbdcaa960458213279b7a5e87924acf95d0c5789af07af966bf0b1b33764aa.json": "1a30e172855a04bd867ee55dcda9604807d7168647980a62169e8a84126d0662",
+        "response-failures/3cd80dc88c8c859b73a15cbc28ee5a5cf8a08c2c8d4a3f08d88e78ef1492bd28.json": "c8248c8c6b68dc6c28c771ce7ff6178508577dde43720d455eaf5011f1a36f8d",
+        "response-failures/bf7f6c3fc110ffe3c4b2110953b982f6308d940282bb4165a6e1193ad26422b9.json": "de5970ba15cfa0610da368aec96f57cc9e6e9cf2ef9027fdd97010ee814a4a47",
+        "response-failures/993698755e91d70f0201a586cde58740d8548eb68e6b122a1c3e3a56f2212e1d.json": "3f9b630424ccb01f010f279af346b92700be96b17701e770ac693151d1d269aa",
+        "response-failures/bede13b141517b6c40166ac18cb736af39ceb95392a7f6ce66a6491e2b280f40.json": "89e7e0c687221661c24c64f90b5386a1b982388d7a1ec8c89cde01931d196cba"
+      }
+    },
+    {
+      "key": [
+        "fresh-v1-inversion_count-fresh_no_hints-s6",
+        "context_only",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/4f1a45ce6f90ef07844f746d1c808609077d231c91d14c81a79c70a779bd7999.json": "f42e391d512de9156191c071efcc0243f48a4e5ab3551d94a1df85ea7b3c54e0",
+        "response-failures/651121a7f28b23374adeb0e89afc9c775a5e17445ecc5fa06865a9fa48d4a2b3.json": "1c2fe5e21b834d80b389851c5cf34164209393d9f734879aab2aefea7665d9f8",
+        "response-failures/17199a038fed9c8c506554915d4a0e976a02dbbc468dc515effb6c4676b85ddf.json": "c206bcaec5460377e6368befeef41b781dac80f3091ececde79f49fb55459afd",
+        "response-failures/748fc68e7499215b664fc700612902b391e22cb928a58ced74723a921935c9dc.json": "8643b5a731af99092e7b719799745cc4e1cc33111c7174d01c1de983a4eea6ae",
+        "response-failures/4bcce90fb88e615d92d8141599369db09d3fdb8b71980a38d92a17dae577208a.json": "7505d0812446aedd04b4ea23a1e4ea7ba33b84746da273a125174919548482e6"
+      }
+    },
+    {
+      "key": [
+        "fresh-v1-inversion_count-fresh_no_hints-s6",
+        "jview",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/c7d87924fb0bb1d8033c8b0dc02857d9f508bfbff387b763ccf12c3a6eb73c2a.json": "50a91850b79ec3f515f66038f86eb74528f581856452e847388f48a2299954d5",
+        "response-failures/2772e9cf3a4ebffbaf122aeb530572bbfa4146ed504d179962a62744b80b7b20.json": "b8baa938919587aba1b7c04b8c19c9ee5b909f90b61cfe6cbcb28481efbe4be6",
+        "response-failures/dbfba5fa8b8f54f28691ce5e705157433f844cb8107e99f2ffac0b327e0dd05e.json": "6e94bed9ac3431c5762a260ba3fa5a3ce230f654261023fcc5fe76af4b0ab1db",
+        "response-failures/865a462ec3f701cd8d4d2a954889613ad4c8ae49bba28943b0702f696564d7f3.json": "286ddb1770bb3d97e4cb59a308660c5d10c072b69acf95a602bf4ac8fc942d04",
+        "response-failures/937dd8e7cfe1f4e2ce286ec0182a74a82dde1fc8f7ca1398a61d5eb3cf22224f.json": "42958c328b0b6820d2ed7c24726842888392cbedef3681538ecb438bf13037aa"
+      }
+    },
+    {
+      "key": [
+        "fresh-v1-activity_selection-fresh_no_hints-s12",
+        "context_only",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/e5cb6f07bca9b2775df447eb8fc40d260952a862e9ec9f30af17cd238c28f7d1.json": "248d40bb2ef7ad74ca5d40ef06c312e3acb5ddc63bb1253cb817eb68de7981cf",
+        "response-failures/0b9e8d2da02187d6e4f8444ea7dde8c7c7c0555002f1850f58d8e43808c50dd8.json": "9bec5b81d980fedec92e33f61bfd0ec4e2e913c3dd659a13101296ad3e083526",
+        "response-failures/bd195dd14fbf32c241a0ae2860b32638c7afacb3bdccff6e83a9b1f72d0f3509.json": "e58e424ebfdd0476a4f2412230b3a25bc13ef86068f11fe5583fa1fe77776b8d",
+        "response-failures/0a06a1aa587bde9e26377bb5783c8764f24a986b5198caf477db09bb0d6c30e3.json": "191aa73682a56ff9aabfb5bd4c1cd4ba825ef5863edbd9e9e1636e554ff37028",
+        "response-failures/b3c3224faf90619a3f050b31e1170c097ecbb83b63a30e4d8a4510967fdd1695.json": "adff7dfb7a6e6909e5954b2ca8fb4732c7c1972438065646f0087a938e91b977"
+      }
+    },
+    {
+      "key": [
+        "fresh-v1-interval_union-fresh_no_hints-s0",
+        "context_only",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/d7e35b168baf4e33d617a1b24b1f51b7bf89f9885408a3c9f570abc36a3f9fa7.json": "4374b5ac6b954db212b379f6675b8d582d73c51b0c5765187cad3feab658d85f",
+        "response-failures/bea984ad5f3c08dcfa3e58259043126ff7e82ee98e2cb7db83193e57a44f5966.json": "22ada00c839d23dc2078f3e8a16c455e7d335e52aa1d68d93cf077cd86426a14",
+        "response-failures/0f6fd16f9581c960d47da9b53181d92c7bd5294ca239f22564e96d1252fc2a2a.json": "6d7344472b558d9e762ba28e8baac4c2ab39982b69474ab8d36dcbbcb93ee1f0",
+        "response-failures/63eb62644b53df0d510f385f4549adfce49b091373c7ef90712126a10a5ea72f.json": "140bd4237acb5f14bac31944197cf9013fd37ed48b2d6c0cc86c2eb9e74e7099",
+        "response-failures/bfb4bf306329536b8d75e86141eb5aa35187374e16aab121684531db34cf800e.json": "4e6bfe6fe9974a911e946cf2c26cebc07c4ffbb54ac0fbb47607500d70e2bc6b"
+      }
+    },
+    {
+      "key": [
+        "fresh-v1-caesar_cipher-fresh_no_hints-s10",
+        "context_only",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/e11d7e3d951c794e31e8f0b2bf794c7ab9b7d6521d64c7c68b35b565a1d91453.json": "149ad83f3dc2cd802a12d86644e761302e41c653e205dc3522d73aa2b004f674",
+        "response-failures/4e48ebe0ada98dcbf9a3e293db2a0ad727fe51eedcb47f540add9859afacc1b0.json": "9f8287dc2cdec72a3d281f14b66a79f86bc6cc5f5938a5c28d920728a2d53059",
+        "response-failures/e285c769010edc485e6b27bd4da31e6cde63733be66ae6a9c4ea24f4683e52e0.json": "d14d8ff21ce5a520647bbb9138b4844af5358a90850a5b97c77f537ef4e207b7",
+        "response-failures/49cfab86ee65e252820da39ca7fde4f85ec86b1885fe259fc7301f8c8b924d79.json": "c8c8e018bd1cda20c7ec805d22fa762ad255a43faac8dbfccc2e774ccd6980cb",
+        "response-failures/b591b4302009afd767c0ab0f589648678d040832be8398309f4de60a9ff7825b.json": "9a9d5222a20e0c1256432ca1429873606cad55777bfa4176f08d04731fbd6bdc"
+      }
+    },
+    {
+      "key": [
+        "fresh-v1-interval_union-fresh_no_hints-s0",
+        "jview",
+        "gpt-4.1-2025-04-14"
+      ],
+      "reason": "provider_policy_refusal",
+      "evidence": {
+        "response-failures/cdd532a84c51e4ac18a425e8c8769fbf287538ac2b0425edda6430ea1a065b14.json": "5844dad04f83e68920615b08dd95cd2b59efff23e227171ed4c2e5f53cd96e93",
+        "response-failures/94db7b9684350b4771a09608d18ed16b4cae96d727939f1ae4bb892bad03c804.json": "372e208361dcf29cf4d6530dfd7f5142a56a652d9d482b26c2227804d01794f8",
+        "response-failures/c7f66acc623cfdb96676d891b1f0bbff4c4ab2f34460900adf12924ad2323498.json": "1e68299361bd7190b4a8628f23d189124983af4b18ff4700db1c0ac7d6ee8761",
+        "response-failures/63d9c6cb5d16d500ac1f37656fa0b204afdf25369c045d2e4a9a9c53dbaad5ee.json": "45db17c57af06aaa7b7a10d1600ab282befde76e6df420de2a283e465100948e",
+        "response-failures/1b5c8000f0b9ebe4e15fb9c43d26ce2c51fd5e9a8cbab206eeda65f3c9503c71.json": "5f099dde0c5cf82548749f94f4ada80eacd5ea6c43149853c5fe534431647ed4"
+      }
+    }
+  ],
+  "script_sha256": "a3e776cb6411f4d6d150cf6fdb7a86202a36616d2ae5b6c74f8b0d0f96560c76",
+  "scope": "Provider-refused judgments remain unavailable. No prompt changes, replacement reviewers, inferred scores, or clean-negative counting. Original failed completion and score files remain unchanged."
+}

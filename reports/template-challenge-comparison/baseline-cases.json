@@ -1,0 +1,1006 @@
+[
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1827.6840047939645,
+    "shuffled_label_score": 0.5973242731198581,
+    "prompt_only_score": 0.42827757985898324,
+    "permitted_prefix_score": 0.347175570716566
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1835.585215455103,
+    "shuffled_label_score": 0.5358739279261282,
+    "prompt_only_score": 0.42795342616879434,
+    "permitted_prefix_score": 0.3040630805303906
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2022.0080047626586,
+    "shuffled_label_score": 0.9274933371852742,
+    "prompt_only_score": 0.45632433801762234,
+    "permitted_prefix_score": 0.3558973451389471
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s0",
+    "context_only_score": 2,
+    "mean_difference_score": -1420.0625972778694,
+    "shuffled_label_score": 0.9074842915973295,
+    "prompt_only_score": 0.4600076148097,
+    "permitted_prefix_score": 0.42675165823545713
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2094.213516680049,
+    "shuffled_label_score": 0.3334222593311387,
+    "prompt_only_score": 0.43520388690281053,
+    "permitted_prefix_score": 0.3422004258359081
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s2",
+    "context_only_score": 2,
+    "mean_difference_score": -1469.9344541267296,
+    "shuffled_label_score": 0.7876601721744314,
+    "prompt_only_score": 0.4361025364342491,
+    "permitted_prefix_score": 0.5482483895395629
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2186.699863471719,
+    "shuffled_label_score": 0.30737623490770105,
+    "prompt_only_score": 0.42817362185279556,
+    "permitted_prefix_score": 0.32464312435914616
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s0",
+    "context_only_score": 2,
+    "mean_difference_score": -1527.8783754936026,
+    "shuffled_label_score": 0.8894163822579501,
+    "prompt_only_score": 0.43052490755296763,
+    "permitted_prefix_score": 0.43616484915980963
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -1746.4900354657734,
+    "shuffled_label_score": 0.7578781340229908,
+    "prompt_only_score": 0.43808807348450884,
+    "permitted_prefix_score": 0.42863038953932847
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s0",
+    "context_only_score": 1,
+    "mean_difference_score": -1169.535958190287,
+    "shuffled_label_score": 0.9718209902526667,
+    "prompt_only_score": 0.441398507715863,
+    "permitted_prefix_score": 0.6423606746193431
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2238.459130398199,
+    "shuffled_label_score": 0.42400995932624624,
+    "prompt_only_score": 0.42817362185279556,
+    "permitted_prefix_score": 0.32719335975111224
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s3",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s2",
+    "context_only_score": 2,
+    "mean_difference_score": -1652.625436399097,
+    "shuffled_label_score": 0.9466048276914477,
+    "prompt_only_score": 0.45632433801762234,
+    "permitted_prefix_score": 0.40796428650852246
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s2",
+    "context_only_score": 1,
+    "mean_difference_score": -1049.2051520381615,
+    "shuffled_label_score": 0.9159586020758695,
+    "prompt_only_score": 0.4600076148097,
+    "permitted_prefix_score": 0.5919041012955145
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_prose-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1799.1002900907547,
+    "shuffled_label_score": 0.9564565870209897,
+    "prompt_only_score": 0.41864809637821127,
+    "permitted_prefix_score": 0.42903238954540374
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1099.7135238148799,
+    "shuffled_label_score": 0.931307314598735,
+    "prompt_only_score": 0.4211805393731691,
+    "permitted_prefix_score": 0.5963826776849932
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2174.578352853214,
+    "shuffled_label_score": 0.48830282784080725,
+    "prompt_only_score": 0.458090052195858,
+    "permitted_prefix_score": 0.31126452395487103
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": -1100.317309868602,
+    "shuffled_label_score": 0.9425911029606933,
+    "prompt_only_score": 0.4625214772074988,
+    "permitted_prefix_score": 0.6218950357269001
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2043.5663377880471,
+    "shuffled_label_score": 0.4421705220749843,
+    "prompt_only_score": 0.4230942669340619,
+    "permitted_prefix_score": 0.35352145884369784
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s0",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1992.5092863183345,
+    "shuffled_label_score": 0.28375367683200464,
+    "prompt_only_score": 0.43808807348450884,
+    "permitted_prefix_score": 0.3539815604186944
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1853.0081855402855,
+    "shuffled_label_score": 0.5432281053119038,
+    "prompt_only_score": 0.441398507715863,
+    "permitted_prefix_score": 0.4140790649502982
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2300.375334032763,
+    "shuffled_label_score": 0.8557363848085393,
+    "prompt_only_score": 0.4491820785802225,
+    "permitted_prefix_score": 0.3295308002999157
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s1",
+    "context_only_score": 2,
+    "mean_difference_score": -1637.6014643447031,
+    "shuffled_label_score": 0.7604604947987778,
+    "prompt_only_score": 0.4529183086029762,
+    "permitted_prefix_score": 0.3984545265039083
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2278.6969005652636,
+    "shuffled_label_score": 0.779012852636326,
+    "prompt_only_score": 0.464089207004894,
+    "permitted_prefix_score": 0.3281047113740387
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": -1210.8119331537478,
+    "shuffled_label_score": 0.9578532137535002,
+    "prompt_only_score": 0.4685234243609609,
+    "permitted_prefix_score": 0.6295443174147264
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2241.3096759978266,
+    "shuffled_label_score": 0.6716821741404497,
+    "prompt_only_score": 0.458090052195858,
+    "permitted_prefix_score": 0.33855592761918296
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_checklist-s2",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1882.8057697097352,
+    "shuffled_label_score": 0.3556074240466512,
+    "prompt_only_score": 0.43808807348450884,
+    "permitted_prefix_score": 0.36556036934029246
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s2",
+    "context_only_score": 2,
+    "mean_difference_score": -1622.9985660725058,
+    "shuffled_label_score": 0.6564206208259049,
+    "prompt_only_score": 0.441398507715863,
+    "permitted_prefix_score": 0.42762149685464673
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s0",
+    "context_only_score": 1,
+    "mean_difference_score": -1585.061127562938,
+    "shuffled_label_score": 0.871784144478516,
+    "prompt_only_score": 0.43700268034120104,
+    "permitted_prefix_score": 0.4192036150943967
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s0",
+    "context_only_score": 1,
+    "mean_difference_score": -1189.8704128190407,
+    "shuffled_label_score": 0.9829229178835741,
+    "prompt_only_score": 0.44027509898601436,
+    "permitted_prefix_score": 0.546865948934645
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2039.8930569889865,
+    "shuffled_label_score": 0.3574164813499155,
+    "prompt_only_score": 0.43520388690281053,
+    "permitted_prefix_score": 0.36285045323620985
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s0",
+    "context_only_score": 2,
+    "mean_difference_score": -1160.0871209687039,
+    "shuffled_label_score": 0.8640128183254893,
+    "prompt_only_score": 0.4361025364342491,
+    "permitted_prefix_score": 0.5165025976540446
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1947.82949547735,
+    "shuffled_label_score": 0.8997877372348344,
+    "prompt_only_score": 0.41864809637821127,
+    "permitted_prefix_score": 0.3484304743573595
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_checklist-s2",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1549.5086557083637,
+    "shuffled_label_score": 0.9374347755535635,
+    "prompt_only_score": 0.43700268034120104,
+    "permitted_prefix_score": 0.40608650988680944
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s2",
+    "context_only_score": 1,
+    "mean_difference_score": -1234.6128095523234,
+    "shuffled_label_score": 0.9121091009666676,
+    "prompt_only_score": 0.44027509898601436,
+    "permitted_prefix_score": 0.5417845196011202
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_prose-s0",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_checklist-s0",
+    "context_only_score": 2,
+    "mean_difference_score": -1425.6812536316716,
+    "shuffled_label_score": 0.8643572747070369,
+    "prompt_only_score": 0.4211805393731691,
+    "permitted_prefix_score": 0.36207153653541524
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2227.367339882825,
+    "shuffled_label_score": 0.39291035232201105,
+    "prompt_only_score": 0.43700268034120104,
+    "permitted_prefix_score": 0.3304104876826859
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": -1041.2392827579288,
+    "shuffled_label_score": 0.9595025321481677,
+    "prompt_only_score": 0.44027509898601436,
+    "permitted_prefix_score": 0.620681116521711
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1994.2065533059624,
+    "shuffled_label_score": 0.3006644247619829,
+    "prompt_only_score": 0.4230942669340619,
+    "permitted_prefix_score": 0.348515655056167
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s2",
+    "context_only_score": 1,
+    "mean_difference_score": -451.26541799952054,
+    "shuffled_label_score": 0.9217724173795782,
+    "prompt_only_score": 0.4220890531804265,
+    "permitted_prefix_score": 0.5829956099357567
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2087.0949536753687,
+    "shuffled_label_score": 0.4518976976889149,
+    "prompt_only_score": 0.4539674303851801,
+    "permitted_prefix_score": 0.3487861235964318
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2121.495050271449,
+    "shuffled_label_score": 0.7071639085325507,
+    "prompt_only_score": 0.4562434799119734,
+    "permitted_prefix_score": 0.3534507299798449
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2224.60921953572,
+    "shuffled_label_score": 0.7875536865702117,
+    "prompt_only_score": 0.464089207004894,
+    "permitted_prefix_score": 0.35226390785051487
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s2",
+    "context_only_score": 2,
+    "mean_difference_score": -1125.5836185011626,
+    "shuffled_label_score": 0.8706934499194607,
+    "prompt_only_score": 0.4685234243609609,
+    "permitted_prefix_score": 0.5875989550244964
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2092.319143844507,
+    "shuffled_label_score": 0.2380355432194383,
+    "prompt_only_score": 0.43053206761990753,
+    "permitted_prefix_score": 0.3212204954495912
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1452.7304400682942,
+    "shuffled_label_score": 0.9077431140588645,
+    "prompt_only_score": 0.43324732335164967,
+    "permitted_prefix_score": 0.5772436324400445
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2262.9621335017737,
+    "shuffled_label_score": 0.7577017090907056,
+    "prompt_only_score": 0.43700268034120104,
+    "permitted_prefix_score": 0.3361964193380566
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -924.1018859331671,
+    "shuffled_label_score": 0.7201481548446234,
+    "prompt_only_score": 0.44027509898601436,
+    "permitted_prefix_score": 0.4344682348404984
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2064.5588355590553,
+    "shuffled_label_score": 0.4176129984339482,
+    "prompt_only_score": 0.43053206761990753,
+    "permitted_prefix_score": 0.32018077202756673
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_checklist-s2",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2079.486561332141,
+    "shuffled_label_score": 0.3111293591899127,
+    "prompt_only_score": 0.4546344609565614,
+    "permitted_prefix_score": 0.3459786289625661
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_checklist-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1954.2058984675755,
+    "shuffled_label_score": 0.2825957890436143,
+    "prompt_only_score": 0.4570146132980702,
+    "permitted_prefix_score": 0.33932786769398
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2200.4596089229317,
+    "shuffled_label_score": 0.8775115024062001,
+    "prompt_only_score": 0.464089207004894,
+    "permitted_prefix_score": 0.3239216327492703
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s3",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1924.6284334208851,
+    "shuffled_label_score": 0.5323004942783822,
+    "prompt_only_score": 0.42827757985898324,
+    "permitted_prefix_score": 0.3460103740507452
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2048.6901136522615,
+    "shuffled_label_score": 0.27982558415138753,
+    "prompt_only_score": 0.42795342616879434,
+    "permitted_prefix_score": 0.32087621247489145
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2201.0953025098447,
+    "shuffled_label_score": 0.7913956916135451,
+    "prompt_only_score": 0.4539674303851801,
+    "permitted_prefix_score": 0.34853258752505367
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s0",
+    "context_only_score": 1,
+    "mean_difference_score": -1001.5159291945376,
+    "shuffled_label_score": 0.9493784566846183,
+    "prompt_only_score": 0.4562434799119734,
+    "permitted_prefix_score": 0.6027077412076104
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2130.675980243033,
+    "shuffled_label_score": 0.7814928898377491,
+    "prompt_only_score": 0.458090052195858,
+    "permitted_prefix_score": 0.3520298088917541
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_checklist-s0",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2122.4791146317475,
+    "shuffled_label_score": 0.29349225459943035,
+    "prompt_only_score": 0.43053206761990753,
+    "permitted_prefix_score": 0.3070504746654015
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_checklist-s0",
+    "context_only_score": 1,
+    "mean_difference_score": -1018.782016626136,
+    "shuffled_label_score": 0.9713606748927629,
+    "prompt_only_score": 0.43324732335164967,
+    "permitted_prefix_score": 0.6094076375944499
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2176.728781234127,
+    "shuffled_label_score": 0.7642636989209536,
+    "prompt_only_score": 0.458090052195858,
+    "permitted_prefix_score": 0.31230602195582974
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1266.6824642677857,
+    "shuffled_label_score": 0.934306294347563,
+    "prompt_only_score": 0.4625214772074988,
+    "permitted_prefix_score": 0.5725159928640291
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_prose-s1",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": -1479.9901344817365,
+    "shuffled_label_score": 0.8957526511588176,
+    "prompt_only_score": 0.4679589849467205,
+    "permitted_prefix_score": 0.46316391786152644
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2270.557932897589,
+    "shuffled_label_score": 0.23661491290982722,
+    "prompt_only_score": 0.43520388690281053,
+    "permitted_prefix_score": 0.3460125071659368
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s3",
+    "context_only_score": 2,
+    "mean_difference_score": -1257.207055987657,
+    "shuffled_label_score": 0.7386205157593855,
+    "prompt_only_score": 0.4361025364342491,
+    "permitted_prefix_score": 0.5312067036852071
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2290.997836531931,
+    "shuffled_label_score": 0.9023412043119284,
+    "prompt_only_score": 0.4491820785802225,
+    "permitted_prefix_score": 0.34489803471862907
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s3",
+    "context_only_score": 2,
+    "mean_difference_score": -1507.534339586758,
+    "shuffled_label_score": 0.9004932960618787,
+    "prompt_only_score": 0.4529183086029762,
+    "permitted_prefix_score": 0.4556247438317262
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2102.6684399235564,
+    "shuffled_label_score": 0.47751380649944164,
+    "prompt_only_score": 0.4546344609565614,
+    "permitted_prefix_score": 0.3457882412658713
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1251.1360811702793,
+    "shuffled_label_score": 0.9128153595947488,
+    "prompt_only_score": 0.4570146132980702,
+    "permitted_prefix_score": 0.5510981992985965
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -1893.8775459302046,
+    "shuffled_label_score": 0.5850016070912839,
+    "prompt_only_score": 0.42827757985898324,
+    "permitted_prefix_score": 0.35423260655397504
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2121.5227941540847,
+    "shuffled_label_score": 0.34348579916527183,
+    "prompt_only_score": 0.42795342616879434,
+    "permitted_prefix_score": 0.3192195643146791
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2136.448230802712,
+    "shuffled_label_score": 0.5306224747987179,
+    "prompt_only_score": 0.4539674303851801,
+    "permitted_prefix_score": 0.3503340873877898
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1077.2914910587685,
+    "shuffled_label_score": 0.9787780804237883,
+    "prompt_only_score": 0.4562434799119734,
+    "permitted_prefix_score": 0.6227450181853071
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2138.4755704710888,
+    "shuffled_label_score": 0.7053766146458504,
+    "prompt_only_score": 0.4546344609565614,
+    "permitted_prefix_score": 0.3511295043365223
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_checklist-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -1810.0540026361757,
+    "shuffled_label_score": 0.5027872772507924,
+    "prompt_only_score": 0.4570146132980702,
+    "permitted_prefix_score": 0.3398637801978121
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2010.3055309768813,
+    "shuffled_label_score": 0.5962228801073401,
+    "prompt_only_score": 0.4546344609565614,
+    "permitted_prefix_score": 0.34378309792405315
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_checklist-s1",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2146.278497187734,
+    "shuffled_label_score": 0.8657381293633365,
+    "prompt_only_score": 0.464089207004894,
+    "permitted_prefix_score": 0.32784817999717264
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s0",
+    "context_only_score": 1,
+    "mean_difference_score": -1181.3723037946947,
+    "shuffled_label_score": 0.9686225477256797,
+    "prompt_only_score": 0.4685234243609609,
+    "permitted_prefix_score": 0.5861260265282356
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2158.096180217437,
+    "shuffled_label_score": 0.4864621823623724,
+    "prompt_only_score": 0.42827757985898324,
+    "permitted_prefix_score": 0.33439868287586505
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s0",
+    "context_only_score": 2,
+    "mean_difference_score": -1306.7175469986844,
+    "shuffled_label_score": 0.8643973598717586,
+    "prompt_only_score": 0.42795342616879434,
+    "permitted_prefix_score": 0.5375853658146473
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2335.400502022534,
+    "shuffled_label_score": 0.4825532682927183,
+    "prompt_only_score": 0.4443368430013491,
+    "permitted_prefix_score": 0.34467426572779786
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": -1632.6470384567194,
+    "shuffled_label_score": 0.9157596958235492,
+    "prompt_only_score": 0.44773588803706627,
+    "permitted_prefix_score": 0.4830518574932881
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2136.5072777382284,
+    "shuffled_label_score": 0.6437939607787699,
+    "prompt_only_score": 0.4633966490552399,
+    "permitted_prefix_score": 0.3521682787337897
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s0",
+    "context_only_score": 2,
+    "mean_difference_score": -1262.4385655899077,
+    "shuffled_label_score": 0.8507960948696708,
+    "prompt_only_score": 0.4679589849467205,
+    "permitted_prefix_score": 0.5960279981622333
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -1896.3441968568973,
+    "shuffled_label_score": 0.6428630901247289,
+    "prompt_only_score": 0.4230942669340619,
+    "permitted_prefix_score": 0.3800519095411754
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s1",
+    "context_only_score": 2,
+    "mean_difference_score": -1015.6007342683525,
+    "shuffled_label_score": 0.9470557528345458,
+    "prompt_only_score": 0.4220890531804265,
+    "permitted_prefix_score": 0.561542827099479
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2049.986586897584,
+    "shuffled_label_score": 0.5210984833534466,
+    "prompt_only_score": 0.43520388690281053,
+    "permitted_prefix_score": 0.34452394649206514
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": -1116.1368136329827,
+    "shuffled_label_score": 0.9822097428651945,
+    "prompt_only_score": 0.4361025364342491,
+    "permitted_prefix_score": 0.609409376720246
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2202.6971536368983,
+    "shuffled_label_score": 0.7043003233525715,
+    "prompt_only_score": 0.4491820785802225,
+    "permitted_prefix_score": 0.33005074864314216
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s0",
+    "context_only_score": 1,
+    "mean_difference_score": -1461.02047604077,
+    "shuffled_label_score": 0.6369064790219259,
+    "prompt_only_score": 0.4529183086029762,
+    "permitted_prefix_score": 0.4549789887149607
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2220.450075116293,
+    "shuffled_label_score": 0.2954787022881381,
+    "prompt_only_score": 0.4443368430013491,
+    "permitted_prefix_score": 0.31339886009541357
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -2038.3798820664647,
+    "shuffled_label_score": 0.4102709968655271,
+    "prompt_only_score": 0.44773588803706627,
+    "permitted_prefix_score": 0.3562983376403964
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2156.1638637951737,
+    "shuffled_label_score": 0.6783019515706379,
+    "prompt_only_score": 0.41864809637821127,
+    "permitted_prefix_score": 0.32555025670042087
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": -1109.3763866178515,
+    "shuffled_label_score": 0.954076158321855,
+    "prompt_only_score": 0.4211805393731691,
+    "permitted_prefix_score": 0.6109583252990851
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2121.994557947569,
+    "shuffled_label_score": 0.6656670410571093,
+    "prompt_only_score": 0.4230942669340619,
+    "permitted_prefix_score": 0.3447657901425743
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s3",
+    "context_only_score": 2,
+    "mean_difference_score": -1152.3309066616923,
+    "shuffled_label_score": 0.7910817808710436,
+    "prompt_only_score": 0.4220890531804265,
+    "permitted_prefix_score": 0.4793269770586479
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2253.78475204462,
+    "shuffled_label_score": 0.621529343209161,
+    "prompt_only_score": 0.45632433801762234,
+    "permitted_prefix_score": 0.35724814875960925
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": 538.0544286276427,
+    "shuffled_label_score": 0.8618178471295993,
+    "prompt_only_score": 0.4600076148097,
+    "permitted_prefix_score": 0.6142463033917761
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2036.3092438451858,
+    "shuffled_label_score": 0.345078357891081,
+    "prompt_only_score": 0.4443368430013491,
+    "permitted_prefix_score": 0.3413996373128405
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s2",
+    "context_only_score": 1,
+    "mean_difference_score": -1253.2521502638197,
+    "shuffled_label_score": 0.8315543364008852,
+    "prompt_only_score": 0.44773588803706627,
+    "permitted_prefix_score": 0.5893861208698737
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2080.196687035818,
+    "shuffled_label_score": 0.3316741505236473,
+    "prompt_only_score": 0.42817362185279556,
+    "permitted_prefix_score": 0.33851837877803426
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s2",
+    "context_only_score": 1,
+    "mean_difference_score": -1191.1825961499767,
+    "shuffled_label_score": 0.9660895460058931,
+    "prompt_only_score": 0.43052490755296763,
+    "permitted_prefix_score": 0.6141352041183665
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2330.763348193903,
+    "shuffled_label_score": 0.8919697027793497,
+    "prompt_only_score": 0.4491820785802225,
+    "permitted_prefix_score": 0.3413799753592275
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s2",
+    "context_only_score": 2,
+    "mean_difference_score": -1616.9180668652398,
+    "shuffled_label_score": 0.9258026472682251,
+    "prompt_only_score": 0.4529183086029762,
+    "permitted_prefix_score": 0.4250305471875146
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2277.348456385318,
+    "shuffled_label_score": 0.3888837159628201,
+    "prompt_only_score": 0.43053206761990753,
+    "permitted_prefix_score": 0.2906660392720487
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_checklist-s1",
+    "context_only_score": 1,
+    "mean_difference_score": 83.2462860971506,
+    "shuffled_label_score": 0.9882670315993045,
+    "prompt_only_score": 0.43324732335164967,
+    "permitted_prefix_score": 0.6426371424849854
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2290.0931164629483,
+    "shuffled_label_score": 0.2967272879656062,
+    "prompt_only_score": 0.43808807348450884,
+    "permitted_prefix_score": 0.3452208136387608
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -1887.241013293602,
+    "shuffled_label_score": 0.4821920038363426,
+    "prompt_only_score": 0.441398507715863,
+    "permitted_prefix_score": 0.37320003549738706
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2219.625608900977,
+    "shuffled_label_score": 0.38993310048876245,
+    "prompt_only_score": 0.4633966490552399,
+    "permitted_prefix_score": 0.3298546938402699
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s2",
+    "context_only_score": 2,
+    "mean_difference_score": -1254.585249373728,
+    "shuffled_label_score": 0.8017096167097667,
+    "prompt_only_score": 0.4679589849467205,
+    "permitted_prefix_score": 0.5351094478399735
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2104.059664163174,
+    "shuffled_label_score": 0.6071029578382582,
+    "prompt_only_score": 0.4633966490552399,
+    "permitted_prefix_score": 0.3442352262036677
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1079.259911322122,
+    "shuffled_label_score": 0.9763047363230297,
+    "prompt_only_score": 0.4679589849467205,
+    "permitted_prefix_score": 0.5879788117732427
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2205.6024336130868,
+    "shuffled_label_score": 0.26765730006640154,
+    "prompt_only_score": 0.4443368430013491,
+    "permitted_prefix_score": 0.3330253441936062
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s3",
+    "context_only_score": 1,
+    "mean_difference_score": -1240.8672012740385,
+    "shuffled_label_score": 0.9680188679532926,
+    "prompt_only_score": 0.44773588803706627,
+    "permitted_prefix_score": 0.5605935520227344
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -2219.991074442135,
+    "shuffled_label_score": 0.40874200054547055,
+    "prompt_only_score": 0.42817362185279556,
+    "permitted_prefix_score": 0.3288914062535644
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s1",
+    "context_only_score": 2,
+    "mean_difference_score": 19.53749323757563,
+    "shuffled_label_score": 0.9936334338171249,
+    "prompt_only_score": 0.43052490755296763,
+    "permitted_prefix_score": 0.6451914748843494
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -2149.847837960834,
+    "shuffled_label_score": 0.19150974706927718,
+    "prompt_only_score": 0.4539674303851801,
+    "permitted_prefix_score": 0.3523923232065465
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s2",
+    "context_only_score": 1,
+    "mean_difference_score": -1406.4474727718043,
+    "shuffled_label_score": 0.9331118338134459,
+    "prompt_only_score": 0.4562434799119734,
+    "permitted_prefix_score": 0.43631597287994484
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -2232.592969228372,
+    "shuffled_label_score": 0.8159603633929279,
+    "prompt_only_score": 0.45632433801762234,
+    "permitted_prefix_score": 0.3521715283329135
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s3",
+    "context_only_score": 2,
+    "mean_difference_score": -1358.5287390416506,
+    "shuffled_label_score": 0.6344439785429744,
+    "prompt_only_score": 0.4600076148097,
+    "permitted_prefix_score": 0.4921650685745999
+  }
+]

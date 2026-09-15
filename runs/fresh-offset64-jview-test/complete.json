@@ -1,0 +1,71 @@
+{
+  "episodes": 150,
+  "completed_calls": 592,
+  "expected_calls": 600,
+  "errors": [
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s3",
+      "arm": "context_only",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s14",
+      "arm": "context_only",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s6",
+      "arm": "context_only",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s6",
+      "arm": "jview",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s12",
+      "arm": "context_only",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s0",
+      "arm": "context_only",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s10",
+      "arm": "context_only",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s0",
+      "arm": "jview",
+      "model": "gpt-4.1-2025-04-14",
+      "error_type": "JSONDecodeError",
+      "http_status": null
+    }
+  ],
+  "scores_sha256": "18e29bb0bf403dafef977f616a8909def21f266e5da9be353313705973ad0d6d",
+  "manifest": {
+    "config_sha256": "e27346a3b92d840629f4059c1d0fc4c1e6ff6b7ebf0132cf0fe0544cd0eb5f1c",
+    "readouts_sha256": "979b454aee017f32998e6943a96da9a78df5fba79f20c410ffe870f55896d82f",
+    "contexts_sha256": "ff5588d4bb82379b860e848b2d38e324d7b9a306519cb9075f13c17455d8e05a",
+    "script_sha256": "a6ef2e0bcf776fea5c1d8fc055aee79a50b604d27a87f2f988a7fbf5c67c29eb",
+    "scope": "Frozen automated J-space readability procedure for fresh comparison; no human-readability claim"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "fit64",
+  "n_prompts": 64,
+  "shards": 4,
+  "max_seq_len": 128,
+  "dim_batch": 2,
+  "corpus": "configs/generic-corpus-balanced.json",
+  "prompt_order_seed": 20260915,
+  "scope": "article-balanced64-prompt unsupervised lens;20training articles, separate from pilot32",
+  "max_seconds_per_shard": 7200,
+  "compute_cost_budget_usd": 50,
+  "basis": "observed~250sec/prompt,16/shard;fourH200s~67min fit plus setup. Fits user-authorized four-GPU limit.",
+  "state_files": {
+    "worker0": "pod-fit64-0.json",
+    "worker1": "pod-fit64-1.json",
+    "worker2": "pod-fit64-2.json",
+    "worker3": "pod-fit64-3.json"
+  },
+  "warm_idle_grace_seconds": 900
+}

@@ -1,0 +1,650 @@
+[
+  {
+    "episode_id": "monitor-v1-pause_resume-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "2bf25b9ce817e9cdeb555d4d01bba48b1598f6221b86596fbbdfd04a4f000871",
+        "032928552634720f1a36b764c891b9c823cade94db2d23e8c3e3cf6fa9bc13e4"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "f761917a7a1d16ed16dfa83bff0b5e15c8c8fe55d5f7c38941ebbf6764b9606a",
+        "c09215c1a44ef02090327d8d72426bce0f3d5699d395cd68b3a7ac8bdc1dc51e"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_resume-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "b25a913546cfa7ce4e3f1268b89e7ec738cf6fca8ea7473550f332148c5e7185",
+        "ad144d6647e01febbef1f30c1b2d18f3730757d72d0338e79dade7885fff4919"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "e52faf37e1f1669c592bd32d47119c9d9a970f71b9d29a331910d14a65dc6fb1",
+        "1c75d909f2d5eac9679a2253471981dde98ef715f869c13bd47814e629259025"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_resume-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "bcdfd30df7d8bf81318025c5394f72e41bb6e31cd1fe45ed727c0e6135208b9d",
+        "e07545e5b95cf3d66a644a219459e42143147b1d2be73777c2e33341083600ce"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c220aa58d6b6ceccab7c92ec5d899f661dff2e079ef0da92fb281e5d26d6e8d1",
+        "5637a774fdb2ce9d8cc4094a1495736e72fba10cd17e4c59ebbae87e6d5393f7"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_resume-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9e97a7f2966d3cadbd7a46f185430dbecd33c73fcfee759b3131e15d42fe5c04",
+        "dbe27875422db81dcaa37c509de17680de8817c6a5627b32288684509992bad0"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "4bdccd6636131c027156f629cf59467462fb72ef8e37f591334c2e7903185338",
+        "058be9abe2dc54e1b4b7cb5a16c788f109dbf60b0e548c4b31f1ba16910c1b6d"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_resume-s4",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c06300acb188e5ac180bdbe85836dd5d32d10e5d3dee95bfa4fca6247bbd157d",
+        "e29ddfb5850840dc0ea0c1e66274c046abaa8e4daa0b3722d9d2ee1fc43a2d61"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "76079c27af348aea63730bd919544932040cb138f359bf05c111c82f73603d0d",
+        "a98d9c14c3eb9b4de6e35e2dd8eb58076d021b39888ff950fe34b6351aedf3e1"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_resume-s5",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "089e054a9d50b55d7001b0777aa8600e38708ac4cb281f84351e9a1ffc8ecc3f",
+        "123a6ad099e0abb3244704b2e9b4e4cb6028bbffc2ba9532f7d600d401865bed"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a69aad9e5082fd88f9bbf3148d56800c4600b465d6fb690b42935c476ed6e9a7",
+        "f49487079c41d81de58ab5fa1522813cfce665a0c32736c799f3dd19566d9082"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-threshold_restore-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "94ddc2b452b646cb171c6429d55381ae57cd795d20195f6d3207804e29cb157e",
+        "64bc4e1fd6fcf0270fe17e0b150288c9eef74fdeacea60dd4428ba024fa21b7b"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "9f18c5dae88b292bb7ec91e23c9998338dcc118a2ed53d6a235b3e38d4e376b6",
+        "03737273e3e97f1171f1b566bf2cb6bfaec4269fab77c41be2592da3955d50f4"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-threshold_restore-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c52d39e5dd45b49aa1dbe92ec3d772bbee9d43192b3d6f73026e15847db86254",
+        "1fc836f3bf9bb27280d8d46f1e5c7bca15be13c8735862db5e29501f906efff4"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "68d29af9defd03e4706a5ea95cddb17cac9c17503c007f5f2d12a989307124c8",
+        "2f0d6e3047586df0fabaa25bc2d887da624fefcb341fca4e1badb8a39c463f43"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-threshold_restore-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "95216b3db72a3bc548d364ca3109d54d924da3b36b7315c407e91612ca56cb9d",
+        "b5947416d63bfbad9b73173a79d7aa15e8ebf96b6195c52bf3781e8c430e158d"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "f7183c6097dd398b8460f5a459848723a34e66d02ef170cd9a12706f6fc435f6",
+        "24323d41d8add4549a9aeeb3c66af85cfee6c5562979dc6fa201f5a81b83f226"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-threshold_restore-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "26f67008f3f0087211caedd3820f4dd9d051ddf1ee3d9e8a7bb35152c09302cf",
+        "973e19c0d6bdd097c53b1a0ec03f09f734573af8e04e89c4b99687219e51256d"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "2d093a62e6a6ef06bd85df516d4986fcd4a9d58212370065e27ae628ce1e8cd9",
+        "d1a33bdc56ff8b3aaa1b30710d7d614f1286ec010ea5c70af70b21f2ad46d53a"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-threshold_restore-s4",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "424db93cf7c9616517a67feac65f46d38058ed4ccb366c62d2c5c89e4273074d",
+        "1cb5359d2b0c8db7303327c88a4eb6cbd559e2e399e7cca0e6b460da577eb5ee"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "5432adcb612061bb250ce7f033e55095574d67faebf67d34db293034fe90ef26",
+        "9af1278b4d3e7e147867b0c6f35bd584e40258a770d29a5fc5504c770774f7af"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-threshold_restore-s5",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "f60e55a258948cadd3cf34c3dbc635b8f307279d4e3eb2206776998715ddd978",
+        "f1cb1f37e1bd0e7f582272e1b2f215db916cbda46b849d4459e4f01ad52c73b6"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "060dd17e26a42fc3b649a3b154f3c494e9682f04fff920336d3a75c80cfd41e5",
+        "0cd646f58a0d6d501e488faaf854558b07cc199380173d15cd1da1ad02e4ba20"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-clear_buffer-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "b8bcf4182cf55686fbf8512ac07a5a79e7d9ba2771202a64b38f0affdc7cd5bf",
+        "986e894f887a56296f1e3d1ba2f5584f28fda6bc165ce7e59d16bce77de289d4"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "b743018fe955b63151d5c3f3b99c29e418d32ff4bba800e54cc50d33282c4112",
+        "27f3e938121abbc54f0cb28fe73dc3d1a1cef5f675fd888a8b5d32d35e540b94"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-clear_buffer-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "19b3f0a9ac8a0aabc7eb66f64c6f1a962be5cb9ac22a24c54dc3f30acb0ced68",
+        "eaabea22a3774dc7474120acbaa6af62a3f172b2958b66d15ecfe946894091c1"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "01c78b2094ef44fe90e5b25e2e050c345b78d6d1d8cbb2552c55f839339a292d",
+        "e5c6b1c1855df46667ef165f65867bb9c49ce7776df1091065c86e77e734cc4f"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-clear_buffer-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "2f1ed7f21b1e793fad9fe0a564162c1c03d61d21740b8fe7fd1da1e9ca528d3e",
+        "c711908fd16a9ebe799794e87343cad35c7da007295ba26d41e291c2c7b9f14b"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "575750afb2e14aa1e0d580a78683f20c23c2bdf8626306d2b360d0293650c10b",
+        "561e962cd3d4523f172042b1c0a926b977df70aa01771f1167ad156ee79abf5e"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-clear_buffer-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3c3e1cc59922874078549a46cf69bcdecd38a768ddae5141856ea836491d84ab",
+        "3f5a3356b883278a415cd36f9ea55bef22b436b6417212d7381d93b7312c0dc9"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7a6928c336391b0270736c760559ea8516e153d45c89dde01f9394157413564a",
+        "aeb18c6d310c9cdb344b41dabc2be702a7be96930c3bf68094e47da11eccef7f"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-clear_buffer-s4",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "da1c7edfcb776f54f4c2b4e524191ff8c5e60159154da8c2d4f0e69fa53c2abc",
+        "297d8e624b66cd8e63172dfa3ae6a23d838cd40acc17eea5e397b60b57dbe4dc"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5219c267f88a4781cc3a195a630931f8e02897120c7fea0282eb86826199e858",
+        "429e2a63251a7f98f754dc88edaa162e283f63019906076d0951807add45dcb3"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-clear_buffer-s5",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4daaeaf86dd2fb023c7efd88053682680dd9e935be9250ba3337c5a6ba9cb5e0",
+        "b4e7688105575a8883cfa9641d786c1a56320acd20573d42ee58e8ca1d5ba699"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "acc0be225c89fe917773ca9b41e4fab60350d7557b1d3921a6e869657f62cf7a",
+        "119f2f4a47abedbd025e31689853739459275f6992f281fd4fac438c452ed80f"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_clear_resume-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "741112bc0f3c6d249e2c14396da1a189e54c774b06c4aa823e31a1fbb70adcfc",
+        "5f68ca8809b765855a930ceb898631ccd3a578aba168ecef2aec57190a86fd28"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "e9f9c9ecac67ca68805fe0f9822a6feb292eefcc3d38fa786f05ecde991ca548",
+        "0f5a9bd3d4bcc01509e0e7cecc9ea7960b7a5a839ee7520c04d3135588996d97"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_clear_resume-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3bbf6a576b980f93d0e9452eaaffdff71c9826a9e0d77a41a1adb4bdfc535d38",
+        "9d535f234359fe5682191058bb9896caa7938a64b27324ea53349610dbfa1fc0"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "c26dbfc86890eeca6bc1155bb8bd809b1063c0210ff79cd826d69042d1352c73",
+        "25c0fc439bff15ab25569314b2b2ea47050d4dfb9b671f0f694fc740651bd94f"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_clear_resume-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "6536f9dc779ef1c37199a1a5e045ec5982f5d391384e4009e68ceb3eb2d7114e",
+        "8ac5afe49f82d455d27ee1137b9bef2b278dd4168a2528fbe9276a59deba901b"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9dcb5ef84c686e82a7ec819db6d53ccad1de1c55933c1b4db305ec42c6ba599e",
+        "49876d8c093b53f158cfb40a97013473883f788e5596e694869c8068fa3936a7"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_clear_resume-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "56cec94988099569b1129ec3683bf6ba25f13d42d72cc47324b6e423c4ea8438",
+        "c2a24c91f5d362c3eaf578e9e4d7abb8416e9fa6ac4d0f73cb4c1e8d4ee88709"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3f1b294ec101f357685750860d98f5133dccc09d114b2efac7e4fc1fd3537009",
+        "c35f7337a93f0132826c375c42361f70e83465cb345d2d796406b6c94379d8e0"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_clear_resume-s4",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "1a59f7bd687704256febd06c90a47d7b84c3abcb9f3b40d4bed95346c161660f",
+        "83529955c566de0f9964c4a5800db5a73f5c181df4d523c452cbead0f4c33f3e"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7b5d8eaf09328a64ee8ea8a43a72b49053cd75bc9f8b6f9b71ff9db298822135",
+        "230dffb71f80acfe41ede86ff13516accc6deffb90770868bfbe25591adb3dc2"
+      ]
+    }
+  },
+  {
+    "episode_id": "monitor-v1-pause_clear_resume-s5",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ec7cc8e323c380003b671960639ed4f6c48b131a43962c3d94ecea3bd9835d7f",
+        "b8dbd981474825e596bef340a99e9f0dd4333f7e53327df341215613de4760b1"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "6f9c283581bbef506a0901548b53437503aa0fc401f662cf09d0f8573d2d69a5",
+        "6dc8a7ab600df1e81e51dc5b60b1aa488718b80032dd64f3d30743ab5680bc07"
+      ]
+    }
+  }
+]

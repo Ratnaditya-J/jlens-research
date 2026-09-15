@@ -1,0 +1,14 @@
+{
+  "episodes": 47,
+  "completed_calls": 188,
+  "expected_calls": 188,
+  "errors": [],
+  "scores_sha256": "9acc7421008716516a357255b2f1fef9249e7d31d743a6a242bd3a4ad4c64843",
+  "manifest": {
+    "config_sha256": "e27346a3b92d840629f4059c1d0fc4c1e6ff6b7ebf0132cf0fe0544cd0eb5f1c",
+    "readouts_sha256": "1df3a4c7bc63f891be3b7d82e886f43918bf11334964313c9c18bfda4058382f",
+    "contexts_sha256": "335988d40eca37078bbea4ccd99fc605fa438c2c3fb45b1a5f650ed3b827ff73",
+    "script_sha256": "a6ef2e0bcf776fea5c1d8fc055aee79a50b604d27a87f2f988a7fbf5c67c29eb",
+    "scope": "Frozen automated J-space readability procedure for fresh comparison; no human-readability claim"
+  }
+}

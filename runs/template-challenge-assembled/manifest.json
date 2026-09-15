@@ -1,0 +1,73 @@
+{
+  "offset_before_code_onset": 0,
+  "config_sha256": "c5912d392b1bcd13b0f5365ee6de789ff69818a1eaaa8778f7c38fb1a60fb9a5",
+  "labels_sha256": "e39ab96d948d5d827d914037f46a15410e4bc833a97c839f7ff444cb476142c0",
+  "quality_sha256": [
+    "bb9f3c8ce72f3b104698091a300a32e7671b0da1cf1d018df5a119c82771bdd0",
+    "55009b0557f60b23d2023549734a82cc37bacfeb38c7cf52f5fb938fcb97a239",
+    "3a068e1a0f8bf71bc7100c210b8640e1313185e0f206e1b5e70adb6f9a7a9145",
+    "7975447074f6e09981f2139ccfe8049885bfefceee7f0a3990a1c5b27a3f6d89"
+  ],
+  "lens_sha256": "53057f9862c21c8e65a857edaa1d0d6af8476e5617dd157567bd37ceed743f1c",
+  "script_sha256": "9af4dd047b57bba78942d559972d92201d57246f0aef2ffcb9a933d8cdba910f",
+  "files_sha256": {
+    "train-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "validation-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "test-jspace-features.npz": "9239b9b76a5edbb0f910b9e53ee545352b378de43fa37a3f98fce9d167aaf4ff",
+    "train-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "train-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "train-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "train-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "validation-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "validation-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "validation-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "validation-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "test-features.npz": "b1c3b3cb0726112982723cae52629ae2b2c2c43a4301f7a94cd0efc6e3632120",
+    "test-records.json": "d618b2ed35e58c31bdcd55d955ef77a37ff95ac44fc55c8ec4eeb2aab2b5d023",
+    "test-readouts.json": "305828eaa19e831dea9147e7616a134e7f9fa62e281873ec5f0929d6634a110e",
+    "test-contexts.json": "c38e179f086c19f34b83ad9086729873a5c6a30d35f07348737717f120016bca"
+  },
+  "exclusions": [
+    {
+      "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-pair_target-contract_checklist-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-josephus-contract_checklist-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-josephus-contract_prose-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-binomial-contract_checklist-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-pair_target-contract_checklist-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-connected_components-contract_prose-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "template-challenge-v1-popcount-contract_checklist-s1",
+      "reason": "no valid primary shared feature/readout"
+    }
+  ],
+  "scope": "features and blind displays assembled; test outcomes must not enter calibration"
+}

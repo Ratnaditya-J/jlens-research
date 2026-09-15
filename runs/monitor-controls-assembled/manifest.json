@@ -1,0 +1,32 @@
+{
+  "offset_before_code_onset": 0,
+  "config_sha256": "79e7b11e1815a969ae43115f7c414b0d0ca9cc92192fd94f54723a29eb498e41",
+  "labels_sha256": "91777cf362daab020f75da59ef5ef43f513af73db0fa9b6701b762e27377d182",
+  "quality_sha256": [
+    "bb9f3c8ce72f3b104698091a300a32e7671b0da1cf1d018df5a119c82771bdd0",
+    "55009b0557f60b23d2023549734a82cc37bacfeb38c7cf52f5fb938fcb97a239",
+    "3a068e1a0f8bf71bc7100c210b8640e1313185e0f206e1b5e70adb6f9a7a9145",
+    "7975447074f6e09981f2139ccfe8049885bfefceee7f0a3990a1c5b27a3f6d89"
+  ],
+  "lens_sha256": "53057f9862c21c8e65a857edaa1d0d6af8476e5617dd157567bd37ceed743f1c",
+  "script_sha256": "4825c83492f65d706cef22dcdea37b5e37cf393a3634c326c35879057af34e70",
+  "files_sha256": {
+    "train-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "validation-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "test-jspace-features.npz": "ccffed8372edcf12a658f558f050589f810f5189bfc8ba311e58f34f74b1c0f9",
+    "train-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "train-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "train-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "train-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "validation-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "validation-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "validation-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "validation-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "test-features.npz": "0a802940107b8eed83fd69255cd880b560d88f933e7b2b06711e0324960322bd",
+    "test-records.json": "f098925ed8ba78e834009ffd5d73ca1a91a7bbd4c53af681ea8cff5773852ed5",
+    "test-readouts.json": "74f456740e538e33134add8bcb9596496e656eec650011ab196d5a83d47f3714",
+    "test-contexts.json": "254b20fdd07154114d19e9bb2a71588407749e43051ebda0a9a97f4162757739"
+  },
+  "exclusions": [],
+  "scope": "features and blind displays assembled; test outcomes must not enter calibration"
+}

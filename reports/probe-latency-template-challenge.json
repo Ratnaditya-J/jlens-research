@@ -1,0 +1,32 @@
+{
+  "dataset": "template-challenge",
+  "warm_single_activation_score_seconds": {
+    "n": 1000,
+    "min": 1.522e-06,
+    "median": 1.603e-06,
+    "p90": 2.039000000000001e-06,
+    "p95": 2.465e-06,
+    "max": 5.961e-06,
+    "mean": 1.713312e-06
+  },
+  "repetitions": 1000,
+  "warmup_calls": 100,
+  "activation_dimension": 2880,
+  "available_activations": 118,
+  "scope": "Native direction dot product, sigmoid, and threshold on already resident float64 CPU activations; standardized coefficients folded into native direction",
+  "excluded": [
+    "Model forward pass/activation capture",
+    "Loading arrays or weights",
+    "Batch scheduling",
+    "J-lens computation or API review"
+  ],
+  "hardware": {
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 32,
+    "python": "3.12.3"
+  },
+  "limitations": "Warm software microbenchmark; not full detector latency and not a hardware-matched comparison with GPU readouts or remote API calls",
+  "weights_sha256": "af5d659843fdb259c5042ca233817fd76d5ce0440b982703a0d91fe20fbd3507",
+  "features_sha256": "b1c3b3cb0726112982723cae52629ae2b2c2c43a4301f7a94cd0efc6e3632120"
+}

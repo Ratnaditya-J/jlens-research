@@ -12,3 +12,7 @@ private/
 runs/**/.review.lock
 runs/controller/*.lock
 runs/controller/pid
+
+# Keep additional raw runs local; declared reproduction inputs are explicitly tracked.
+/runs/
+.DS_Store

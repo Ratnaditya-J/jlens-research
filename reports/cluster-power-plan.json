@@ -1,0 +1,178 @@
+{
+  "seed": 20260916,
+  "simulated_studies": 1000,
+  "bootstrap_replicates": 1000,
+  "pilot_discordance": 0.45098039215686275,
+  "pilot_difference": 0.45098039215686275,
+  "rows": [
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.0,
+      "estimated_power": 0.497
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.05,
+      "estimated_power": 0.444
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.15,
+      "estimated_power": 0.348
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.3,
+      "estimated_power": 0.288
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.0,
+      "estimated_power": 0.751
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.05,
+      "estimated_power": 0.63
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.15,
+      "estimated_power": 0.437
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.3,
+      "estimated_power": 0.335
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.0,
+      "estimated_power": 0.888
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.05,
+      "estimated_power": 0.709
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.15,
+      "estimated_power": 0.491
+    },
+    {
+      "true_sensitivity_difference": 0.1,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.3,
+      "estimated_power": 0.357
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.0,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.05,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.15,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 150,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.3,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.0,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.05,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.15,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 300,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.3,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.0,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.05,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.15,
+      "estimated_power": 1.0
+    },
+    {
+      "true_sensitivity_difference": 0.45098039215686275,
+      "positive_cases": 450,
+      "independent_families": 15,
+      "within_discordance_sign_correlation": 0.3,
+      "estimated_power": 1.0
+    }
+  ],
+  "limitations": "15 equal-sized independent families; fixed discordance probability; correlation modeled only in discordance direction. Pilot thresholds/data are developmental and optimistic. This is scenario planning, not a power guarantee or equivalence design."
+}

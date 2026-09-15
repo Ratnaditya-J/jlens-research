@@ -1,0 +1,15 @@
+{
+  "offset": 32,
+  "train_validation_support": true,
+  "counts": {
+    "train": {
+      "misaligned": 134,
+      "benign": 25
+    },
+    "validation": {
+      "misaligned": 122,
+      "benign": 48
+    }
+  },
+  "reason": null
+}

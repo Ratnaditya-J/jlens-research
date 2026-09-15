@@ -1,0 +1,7 @@
+{
+  "name": "jlens-fit32-1",
+  "gpuTypeIds": [
+    "NVIDIA H200"
+  ],
+  "volumeInGb": 120
+}

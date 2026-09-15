@@ -1,0 +1,3929 @@
+{
+  "offset_before_code_onset": 64,
+  "config_sha256": "9fb8b66fb939e9d16876794c33e1d9e3a5f798c9a90387ea8e3a65ab0ea1992e",
+  "labels_sha256": "339edfc28a8f91ef1ceb906c14929307fde18e6817fb6b1ef91b68d1cad6b670",
+  "quality_sha256": [
+    "bb9f3c8ce72f3b104698091a300a32e7671b0da1cf1d018df5a119c82771bdd0",
+    "55009b0557f60b23d2023549734a82cc37bacfeb38c7cf52f5fb938fcb97a239",
+    "3a068e1a0f8bf71bc7100c210b8640e1313185e0f206e1b5e70adb6f9a7a9145",
+    "7975447074f6e09981f2139ccfe8049885bfefceee7f0a3990a1c5b27a3f6d89"
+  ],
+  "lens_sha256": "53057f9862c21c8e65a857edaa1d0d6af8476e5617dd157567bd37ceed743f1c",
+  "script_sha256": "9af4dd047b57bba78942d559972d92201d57246f0aef2ffcb9a933d8cdba910f",
+  "files_sha256": {
+    "train-jspace-features.npz": "73bba66a6c39e724b08c21568da4b39afa8fa1408e0834b624ddd5667fd2e736",
+    "validation-jspace-features.npz": "5bae2efb583ab6a379ce36a5091b470e678b56d1085285de20ceb75c68c0858d",
+    "test-jspace-features.npz": "729686f3ca09f9462461d7447fff39a539f66be8ad1db3829d91bc61f46c2fa7",
+    "train-features.npz": "68fc86262237f9c6c3249040c0bfd3bdc7e4570a6fcd4fa2b17179738d03bd36",
+    "train-records.json": "523d2bcdbe305dcdb946ee22aff76fa23316d9409ca782fb74e2eea12cb50533",
+    "train-readouts.json": "b8bec01b13cd1718f8f337ddf49f155f7be61a28ad16790ea592fd80fb0be1b5",
+    "train-contexts.json": "d0a1e06c22b21dded0dfb49e60abcfdec94385305c895be6b9c01fd4890da3f2",
+    "validation-features.npz": "be1b6ddc640403dbef37163496954d8d54a35f58b1df4513eb2d1a5cf291d82b",
+    "validation-records.json": "011876208cb77deb1220492a42e23cd73a9e1acdeecfc923c5609f412a3c4d75",
+    "validation-readouts.json": "1156718a4b1fe37fcb58a602d4a4b6d8a292c1f442d8f0627ebcc85848b064c6",
+    "validation-contexts.json": "9f12a42c921bf492dabaf9e3ab9c7c8d536585ecf30f4f14e70f3bb30e7eed06",
+    "test-features.npz": "f6d0d6c7045a88a741ebc5f6dbec02635a96068c673a6c2504ae6582e92ee974",
+    "test-records.json": "aa5bcb5411056f498620fba3b13d3cac95ff48f8c0be922bae7ae7a34ff6afe1",
+    "test-readouts.json": "979b454aee017f32998e6943a96da9a78df5fba79f20c410ffe870f55896d82f",
+    "test-contexts.json": "ff5588d4bb82379b860e848b2d38e324d7b9a306519cb9075f13c17455d8e05a"
+  },
+  "exclusions": [
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-inversion_count-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-caesar_cipher-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-matrix_transpose-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-matrix_transpose-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-edit_distance-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-run_lengths-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-matrix_transpose-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-run_lengths-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-inversion_count-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-caesar_cipher-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-substring_count-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-inversion_count-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-caesar_cipher-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-edit_distance-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-run_lengths-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-edit_distance-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-matrix_transpose-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-edit_distance-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-edit_distance-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-substring_count-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-substring_count-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-substring_count-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-polynomial-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-substring_count-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-inversion_count-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-source_dont_hack-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-prime_count-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcs-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-caesar_cipher-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-edit_distance-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_no_hints-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-substring_count-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_no_hints-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-caesar_cipher-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-fibonacci-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-knapsack-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-gcd-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s13",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-fresh_no_hints-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_no_hints-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-caesar_cipher-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-collatz_length-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-factorial_zeros-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-determinant-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-totient-source_dont_hack-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-fresh_no_hints-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-weekday-fresh_strict-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-median-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-connected_components-source_dont_hack-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-modular_power-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-source_dont_hack-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-fresh_no_hints-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-balanced_parentheses-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_strict-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-palindrome_deletions-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-anagram-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-binomial-fresh_strict-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-interval_union-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-run_lengths-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-josephus-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rectangle_intersection-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-edit_distance-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-fresh_no_hints-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-decimal_digit_sum-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-source_dont_hack-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_no_hints-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_product-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-control-v1-run_lengths-fresh_strict-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-substring_count-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s9",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-divisor_count-fresh_strict-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-fresh_strict-s15",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lcm-source_dont_hack-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-run_lengths-fresh_strict-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-pair_target-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-coin_change-fresh_no_hints-s0",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-source_dont_hack-s8",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-activity_selection-fresh_strict-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-inversion_count-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-max_subarray-fresh_no_hints-s5",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-source_dont_hack-s3",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-caesar_cipher-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s11",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-matrix_transpose-fresh_strict-s12",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_strict-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-source_dont_hack-s14",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-lis-source_dont_hack-s1",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-duration_format-fresh_no_hints-s7",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-grid_paths-fresh_strict-s4",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-longest_unique-fresh_strict-s2",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-rotate_array-source_dont_hack-s10",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-popcount-fresh_no_hints-s6",
+      "reason": "no valid primary shared feature/readout"
+    },
+    {
+      "episode_id": "fresh-v1-shortest_path-source_dont_hack-s0",
+      "reason": "no valid primary shared feature/readout"
+    }
+  ],
+  "scope": "features and blind displays assembled; test outcomes must not enter calibration"
+}

@@ -1,0 +1,42 @@
+{
+  "article_counts": {
+    "train": {
+      "Valkyria Chronicles III": 20,
+      "Tower Building of the Little Rock Arsenal": 23,
+      "Cicely Mary Barker": 18,
+      "Gambia women 's national football team": 5,
+      "Plain maskray": 10,
+      "2011 \u2013 12 Columbus Blue Jackets season": 16,
+      "Saves ; Sv %": 2,
+      "Gregorian Tower": 7,
+      "There 's Got to Be a Way": 5,
+      "Nebraska Highway 88": 3,
+      "USS Atlanta ( 1861 )": 14,
+      "Jacqueline Fernandez": 17,
+      "John Cullen": 16,
+      "SMS Erzherzog Ferdinand Max": 5,
+      "Ancient Egyptian deities": 57,
+      "South of Heaven": 14,
+      "General aviation in the United Kingdom": 41,
+      "SMS Zr\u00ednyi": 12,
+      "Geopyxis carbonaria": 8,
+      "Gold dollar": 11
+    },
+    "validation": {
+      "Homarus gammarus": 9,
+      "Frank Headlam": 14,
+      "M @-@ 82 ( Michigan highway )": 5,
+      "Shikamaru Nara": 10,
+      "Meridian , Mississippi": 65,
+      "Papa Stour": 16
+    }
+  },
+  "shared_train_validation_articles": [],
+  "max_train_validation_5gram_containment": [
+    0.025210084033613446,
+    "wikitext103-train-470",
+    "wikitext103-validation-85"
+  ],
+  "max_generic_behavior_5gram_containment": 0,
+  "scope": "exact article headings from archived viewer rows; five-word lexical overlap, not exhaustive semantic similarity; all available generic passages audited"
+}

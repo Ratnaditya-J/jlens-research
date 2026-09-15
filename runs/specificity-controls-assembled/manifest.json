@@ -1,0 +1,37 @@
+{
+  "offset_before_code_onset": 0,
+  "config_sha256": "d54ce2d987f9c9ce929671314ce8c7b91a2124cdb8bdbcab10ecf5fb0133aba3",
+  "labels_sha256": "9d346aeed8e16576195a1640d48bbee240f159453131e105a8024bf795e61fe0",
+  "quality_sha256": [
+    "bb9f3c8ce72f3b104698091a300a32e7671b0da1cf1d018df5a119c82771bdd0",
+    "55009b0557f60b23d2023549734a82cc37bacfeb38c7cf52f5fb938fcb97a239",
+    "3a068e1a0f8bf71bc7100c210b8640e1313185e0f206e1b5e70adb6f9a7a9145",
+    "7975447074f6e09981f2139ccfe8049885bfefceee7f0a3990a1c5b27a3f6d89"
+  ],
+  "lens_sha256": "53057f9862c21c8e65a857edaa1d0d6af8476e5617dd157567bd37ceed743f1c",
+  "script_sha256": "9af4dd047b57bba78942d559972d92201d57246f0aef2ffcb9a933d8cdba910f",
+  "files_sha256": {
+    "train-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "validation-jspace-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "test-jspace-features.npz": "770fb0bf78a3af46143494ee92ea96da4565f8e4fcb6393672b013a123011e47",
+    "train-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "train-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "train-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "train-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "validation-features.npz": "cf77fd7c0773eecd3c0ea0908360b49b3a0cc8acc148ac48823984028d2af85d",
+    "validation-records.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "validation-readouts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "validation-contexts.json": "fb2989323b717f2e869a06272d8ee4b35b4e516d6a555f4ce3d19f9ee3606ff0",
+    "test-features.npz": "1fcacfa81fce5c8f9d75cf93ae384b50f3a86a7b4996089050c39be9c271868c",
+    "test-records.json": "0a151b6f27a8dc3049a0338c27b858d8dbca882fa6f0cf9a5f2948de66d3931a",
+    "test-readouts.json": "1df3a4c7bc63f891be3b7d82e886f43918bf11334964313c9c18bfda4058382f",
+    "test-contexts.json": "335988d40eca37078bbea4ccd99fc605fa438c2c3fb45b1a5f650ed3b827ff73"
+  },
+  "exclusions": [
+    {
+      "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s11",
+      "reason": "no valid primary shared feature/readout"
+    }
+  ],
+  "scope": "features and blind displays assembled; test outcomes must not enter calibration"
+}

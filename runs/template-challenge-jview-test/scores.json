@@ -1,0 +1,3188 @@
+[
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4c10db8df552b9d7c3e50b8858e4295c22704e7ff6e422373d9ec2393c059b39",
+        "f7eec9f5ce2a84655ed5178aacbcc6fd04c730596e1b956e2c14247d82d15d2a"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "ffea0617758a6754d7752b7d78124760c1c7e21741291367474127d2e664bee1",
+        "f924dcbfd59b1b630295d5df577e7eafb7dea0f8cb477c2ca0209aa79a087200"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "8d51103c587d3b7bd5bffa9bdf3ff6672af96cb9143d1af40358f1f6f91283d5",
+        "5f168b8f5f2991427378786331a560e0b2f7874f92464a105cfe2a09f0cae272"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ea8678e8a7f5a3515815b426da069a960298b10174bc723095e5f8d4f932907f",
+        "b896a188c6fdf784b6add5ceb03dd7ad41270b7e19275c22e890d968e4698dc9"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "af7307021af2c90b85831e1b1846da6d12f6e7b8566a17bc3c01a6e3b04b9462",
+        "e537e5612aba7bf458b5f33e72cfc5044b46ecae051e4981cff6c48b74ff77a1"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "64658efbae6dfb18978849134f0dc832769d52ecb6e271a7528c39e84dabf69d",
+        "5b775443c3665db23726e1d099f450a217295dfd14fa69e397a858fc9dc3f4af"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "f44179af8b0b36060560b2ce34b36325eddac6c18fc327597d3e7a2d1144afc0",
+        "7e2458f36b18077003080eda446fbe536b692be75fe5f5c4c57ed1494c76f887"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4160f53a2852b9637f511d83d22c16cb21b2e1516c3ebfd5af3a03af4c61ef02",
+        "7372f561f09edf619d9b75753d8ab29ff7feb7a0a1e11c554cfa15c30b6a8554"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7c47e8dcb17b894bbbddddf42476332d6536dab2b2cc3bf2af9b0afd041e7fb0",
+        "489bbfa2fca3704a416d60d624262e5f5c2280738c839674c986e81604bd4daa"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "98ea74a38de22613046e4ea34daf2cd3c7f8d01ae51bc8997fe908c378bdb83e",
+        "e273e3cfc140ae324bff4ed7e3271d30dcbf4d0ccfc3ea63a7bdf71901e40956"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "cda9485a419a8548e7dd3d8a75ce90ca6d3bf2a4838d7d06bc31bcf0431d150c",
+        "8a02d227e291a7a0711eb9472bd1c9b87a8667d061202b02d8c5ce51d4770d34"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "8353ee640d1b346d11f8cbfac0ac46c42493657f189260f1c81a2b736da940b0",
+        "27c08c253d797a7a5025d3b5e875f998f7208d41792097e5009cad8ac304f8e7"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "bb4754504d32a291ce542b81c6269c6c1f79cc9f507c9cacae96551cdea892cf",
+        "f63e8ccf40b03e92e35f2493c9cf51a0166baef01efbb4791e436004f1c1ec8b"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9ffe2d9f1707f2bc6aa8c7aad7ab0e30f724f47b2ee6e5dd7596e95772695ad0",
+        "5088ebac638221a18a1d5c9ccc3436a7928abc990b7c38daef25c355a44dcd24"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "268ca7f000376c4acdb625645cc58302a40dd379f32b5b8518b8edbdb76cbb34",
+        "9ea500285932e69d7a5157806bf3d355769f6c45bc414e393ef3bb00368408f5"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "39ca7d6c3499eba03c19ee0172f02029f0eef74dd74e50c443debf9d6d33e05f",
+        "3ddbf458a007f744620b825638d0a9600c5a0ebc1ef866cecd8c2e451c27f728"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "06842b94546915a6335eaeef36bd64ab94400811d643e08fce5f83a70577ac3f",
+        "bb8438dd1bd3961378d21ec0a145a1e310b48059f2ec76406aac161ac424662e"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "c00488ba1d50a78aa478811cadb1c85b1e2bc9a76ba55614d1a5579dc161f660",
+        "59064606389150580836eca4557ea402bded9588cdf1257ffb969dfa1189aed2"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "ced004c41b3faed91746a42360df9f2f15d915a04de2c0fdd98e5907fd88a597",
+        "c2d46d90e3fa474f371b257edcc8683861ea5c3dd7e8c5d4681d49a0f85cd1ca"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c058f2c26207ecbb694fc816bde8d78ef70f63c83c86abadf8a5a596f608cd42",
+        "356b4f96b0bdb7bb5c8a45d23b471e9fc9b1d7164c3dc5bb283d207f2df65d64"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "8204d20eb05028c298cb0641a0507c6e5c7120463aa5b75c7f6fd55131215565",
+        "11f7b177a4a6f7db55814102d113b263d253c4e7e1461dc6074f562c0488b6a8"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "2a4a800a2e5bc45f80166e11df7dc1fcc1f0fda113e026a7ff3823f477516917",
+        "7faafdf00d9bb8dfe4e937d96abeb7262def79c5eaba73eb212ce29422a14e20"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "15f8c15258f635d9fe0a6f136fb3fc939b165a053c8845d51cb05e4929025c94",
+        "fc9e30b3f718a0b3ba3f079a503095c727299bbbeb5a818ae07e3e385990e0a7"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "64fd1d592a952a756903d2105014bebcbee2578d8f2b3d7fb3bfd200b45403b1",
+        "9a8723bf3847f2b0f82b0e90fa6a3c905aab43b59a62d799c0adfdd56ae28ad2"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "23cd55633d8e56db82e3a9d787453d7c38fc5ca0b4f369980156a0575ad12700",
+        "060efb20b02ab5348de82abe077ea1a5713cc31a7cb44d980c01451ca9598048"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "d9238821b691cdb3f1fbd94eb2fd784e80adca152592b6045e202a524908e936",
+        "11f6de7ed44140b9de91b2bc7efe35d7bc9457b666c73bdfc68927106c5d6427"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "c68f5675759ee526966dbbb73936171922c13dcde6bbcaf914958239beaa3a60",
+        "287077f3f1b0449d637aea21c68a4965babc596089a3f59f1e2956ac4943124b"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "004515fe9bc721907a4b0b87dfdaae57de82bff1f782e0b902a0984ff76b133c",
+        "d52a5e15faca1e72fecc68279b197758f3c5123bd3dfaa3a53ca9184055b58d5"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "defc6070841be34e04bcefd8bc7a5235ade6e7ec331edec1dd7bd0d9a91501ae",
+        "5f1baaf4b303acd38c9b842613931c2b5006d12640339ea8263de4b59ae21024"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "25c8e6814cdff58a77c6475b110ba30b50c4ac5d7b64dabb6864831b2d7a6773",
+        "ca9ba1c0bd30f72a796c5be73e8635500093b72fc139dc6b757dc9a3b5b41c96"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a4ce5227f635e88805f54da2f59c17cba2a8f8ce7511ca64dc5f88da12436cd6",
+        "0cf371cf8f70a96c2381bf4b72b86d49ed7f31e11693863cda7027cf50571053"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9da8b3f3b933ba4894f23fa77008f60332157ff8d08f4eb8a5abf77c40185cbc",
+        "a98f1d2b448f755aa7fc5fac345fa8b60300231cfa87a7395ccdc440d2b7bed9"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5dd830faa2f30cb454ff1f8ea9a834755a067ed996663a220d3d8c385ac262ca",
+        "6b228a8b4697dc6dc500c47f18ab190d05b8a0db393d62e3b2f62211de55e5c7"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "a1c645e2094df71397e36519be6ce419c3261de04baba037285f74c9e0da2694",
+        "0131629c7db2997787c50a61f2eda66b4a1c41a7aeb0f16139371b3c2946627c"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ee6433dcb583657668057e0c28788e1fa6d951f3db2db86ba66860fb26f86baf",
+        "1f24ad4caa6e911e5d1f99c66b51fc5357e4e015dfc935936648f8a433c70343"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7f0b5b48d869647a182f8e5101a6a4d1f1c0dd36c5cd472fb8b5b72c8206c9f3",
+        "dc0d9b6d4bc7df3fe1fb5d02a682a652c6c753dda29219f9ae687b72362c17e6"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5269e603a4dba995178ae1399747b3be230cb9dbfb1093394ce6a00c98f411aa",
+        "504370f8450a4e5faa64e2327019231ac437bb15a9c85dcab53c21745fe97c61"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3a7dc8d92bb35cf94dca66c04afefdc7a8fb4ee200e66d8effe6fe85eb3449e5",
+        "e0454bcc1bf992ec19647dcf08d677a1e43bd1b0687e9fa6cac9ed2de95f0c62"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "1a1b567ee94675772e5cf0b48a7860c067a431a8bab314fb7f18d25c0f9a7fb7",
+        "693fd393db5927e9316b0a6abb2407ffc7bf39227e54bba450260be2944bacb2"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "6c16a251923eef9a97fb43e2bc8562ffa431e502d1a3500b3b709a7b2cd0371b",
+        "e3fbd279be5a1e4ee083a4965b303070d7fb4da1ab5a278445ecf3e714b3e661"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "2e6dd854e247a103f5903602cbdd096d4c606ebaa90674d6879afa8384f77e75",
+        "a8940bcb030ed3e93e8c78c6ec6321ea209fff09231e8ebeab49fae76dbee4cd"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "29084dbc09765c2f1ff52c80720403e27ce19a747e74d4a839b9da5ea1c4e43c",
+        "6d1f58c65173a43d58f6d95af56a1d055aab7db34c2b81a62c1a6f293d4935bd"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "d4cca542e8c6ce411f8c1d68e503764a297297616cd572ef4453541f22c3b693",
+        "e7752907a04ed4b66a89965ac36c8e561df3dd69afad102c02289b4b029aef0a"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "1105d11fa2f807094b0246079bb3fdb831c9de6124315f27e5b0048e41de98f4",
+        "219923f84e720cf5807bbcc9f17e716bf6d9b80cc122de574cc415170af4f50e"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a28b21c949a8775002522463418796302946503bec9f3154236122ec2977c0e4",
+        "465f7545b2afa4d2680c53cd4abb1b35cb2793beb6d7436022f13c4a9e37edbe"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7161efa02046bc2928d85321df1e37bee86ff424ac631ad597841e6353290b35",
+        "c46ce9eed4d0d427438c9e5fbdea72a5a3691733bbbd7780f9520c20ac9fc578"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "377669a7b61e616b7f1db05994b6649ff736eee1ce93ba3ef67e956f6b4ae721",
+        "cd767a043e35317c90d857ae592aa20d6bcce3a5242d42bf463f74404ead5bf2"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "a26d9ff1437669602997f598238869acb969bb485256fcc507c57f77a9d56fc5",
+        "42a07303e19e9fc1e0f3e008ec812e01f8cbd7b21ec378ee256a79076e9edb63"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "34c32a3c3c93eabf3999f1e52ef45d5ad50891bf39183c7af0a39692de993f2c",
+        "7715bd9d1de25caf008aaf3d6f9644d0dac9d4ee809cdab6faee5216f60e773c"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5c0e7f12a0f050647c3bce5ec046900ab0ab5d250e764c9b898f37b66829903d",
+        "593c5439c85d723156fef151c11e88bfb9fc6c4609033e5838eda8bb9e47db1f"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "1507ec105073c94162601a914add7b83122ebaaf1a90b4e54cf20093c54c3951",
+        "8e6072a2b6caafa348fde6163cece92121ec79a1ac1b30ba8910a9a90702e18d"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "78cc4055377cf12ead1f4247be8229b238ff60c5de1c6c4fe4ddb7fb65d01509",
+        "1c928d8632672fa9e29ab99aee3ff32a8accedc4cd913e6e0018466bdde4f65a"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "e6ea626b387894905752d43dd0b20833a26cda3c3f8dd6dece02c77998a86a2b",
+        "05648b5a468dc27d687b5b70ebb54dd05207d63d74b41f468bbc3d86a8b6c5ad"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "48d83b7a32dab71d8eb7d0ce5a1a34eb74e67d0a153e400c7b2af13b8e2f2410",
+        "8d6134e42566b6f5c7c522a699c39066422ce94e41b024ddc3f067dd9ffc438d"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "310bb52315e3d9c847045df842dc797b2e284cb857c84652808ebbcd3f60a0ff",
+        "9a284abb63b767e211aa1c92a8a14fabb8101f5bdcb9805e5ce6f75b374d6af0"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c751de7cdc43f49a95c22fb43e0dec54f9945a5270d62122f41814f3f435b224",
+        "95420a3315d4eae22fc746d9873dce045f6e7eaa577c351eb3a33733b3534d6b"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "e2dc135f5b62f4eed1f3d12c362e30fafb6170fb8381f6750aaf7738a02dc1c7",
+        "a20afe8b7edb33f4ae79de51dc4d63e945c79a0db07d091f9f3afa8ba247eb9f"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "7f36a0c411c7f0dd99fc83cf88ef77d057517e9641f4fb329e3bd58c93dfbf42",
+        "5e0b17bc5b230cb7fbdada5bdce3acc9a036842199a2bafb949975d7a96014ec"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a48ba5cfb929cc215ae747d3ef00b4ef8304e5124bcd2914ffc05b46b0f8537c",
+        "f22b24ed1de8dd72dfdff463fe70994de85f9ce7664ca09fe47979eb0157d081"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a0e6afa3d22ce7be4ad271805bf53345d39dffa8a589d5ded6812e59be252a3b",
+        "ba07a6f72e833b6bf5377aee217513826e2dcf0de4e6e30ca98d5e6269cbca6e"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "cc5ec6c319a134ade1314369da3fd88001175d5583d69aa7f155bca02d21c179",
+        "5164858850e164c168653a59966dabcede0415bd39f58b8fe81b0e7e0999c03a"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "8b3dc0c0ecca57777ebd48aacfde39d49fbc50e650c119e564b51273ce4b1462",
+        "df1b1351ef54871330f6fab638f93e2b342fdfa5f3880aaa528ec1d4e7d290a0"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7075aedf394c2b71eaaf3237790b5e051edd07f96be895999b8aceb1502e596d",
+        "b59c2f77e682ab381dee087dedfc2a8f7e4de3bb5cee727a3d14f43a9b44b4fa"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "e0d81e767a3b245b7e3777b2e34688a39ae397e10a9777b28c49d1b7a1597057",
+        "d99c29daa1f8471289b0574d53dec937f0c599fa817d347f7e108bced387e8e9"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "d019b07d73c179f88204f8b58019022e91cf55b7533c007086455ae27cb18500",
+        "1b97daacd3ee85a1ebd4c0e0073d1dc3c63bbb4cc59f87fd0a714454ab621032"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "e2e95524d08227f009c2e92e135418ff83621bcfe19c59cb7f844012321ad9b4",
+        "497f23f26f518f904dd3a43f5316669659fd8a38cbc0fa8e0004b19085ded2f4"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "bc0aacc5b863747d2fc0b9614f91ce531907e8f687d9cabb4594a93371bb437a",
+        "fdaf4487b95bdb30c40c855c7f11ef7d58f7da4999a67f2a5cb1bc91bf88e2e5"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "394ed7c9d65057e9b8da9f5fd92cbcfbb9d79a0def9dee328b294b0e933701e8",
+        "0426d9f45f0e8dc6571d427295a73422a6b2446fc4923596393f13a23a2e470c"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "f1619d56f5d5cc188905fbd413205cff019b0d2a9c07ec2196a058e47aa2cdd9",
+        "ebe33daccb18a3e824af06591f0c1c58af640fa6d8c71885c451d4f06f039998"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a07130372d82edda90eae2ec41f1ccb4dd72b25158a6efae86f640e89e075c94",
+        "86151e0766b76b4d45e5900a19b1f72afc013298108cb37909e285a355404614"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "e3cd9d45a56c3bd3dc2cdbc0af79ec4592c2125d66c800fae8e1de6315f1a569",
+        "419661cd5ef5f300d4ea4e5f5e450f9dd2c5bcf2fd4607d19739b6e44e7b7ee4"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c2582b8901a1da077c6fb1c3775cb0c0808bab15ff0165d520e23bf998a04cd0",
+        "92f89843cd16f010b678a74d08e4d9858f0ea394a5b2248904a9c0b2b3651cca"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ac2319b70e9bdda0d19bd0a8d71e413086811a1fbcdd660b89a502fea9556ac8",
+        "c2208435b9434a3ab3385b536f20a68976c76723c4bd23c813fad09f3f797736"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "4d576d468b723474cc179e10b5ce27a7e87c01db54cdbe18821ef817a748204a",
+        "5758c15410f097e0db11a53d726d0cb2c67969a78829a77d8995614a23689f47"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "2da1cb7717e25046593841f64a9602ba1f29534bba7d3d8177a33c97ee4445c9",
+        "56a7035ea94e25004b12cb965e648b42263548c7f6c930f3b586345238141bc6"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "8b4d46a5af2969db95330d12aed3268b6eb04b435700d5ff3ff8eb300ca62c52",
+        "976d9b09d117eba19e809e1a244423799576397f9250be35fbc940f506d41d6b"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "4ad9f47b3c366a803c4162c24fd396c2d171bbc8ae0685bb14ec6d0ae1aa8060",
+        "d77ac2460b477c81f5ef96714cf3e1571c1335bf4ebf007c8387ce1191be1412"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "7a73ebd1228494b88c40a6d99b6c365d05816809685072b34f80121b794e3597",
+        "e86484e7a43b9b4f61b4978c1d61f911a6b68c0dae0542ab7327df84d5ce9aee"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "1880042c6af3f723ec514f16db2287a73a313fb1935cdbd9a5c83d503b721b0c",
+        "6288d66e784e21473f3bac78a1117e4f2e824adffbee03c67f09ca51c4a9496a"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9e31a5061edaae741cbe85c7ec6a42102ec2dc285ecb1664cb631e1a8ca2bd68",
+        "cab6ad699ead59b6b8c574aa893fa53515fc94a9789dc0c5846ab2aabee85166"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "6f37eef5e67291f08d27d5efed2ff6f161b0de83b808311793f85146dc80bf3c",
+        "de9ff4d294c9d9aab93d3a5a04a8cc923ea13061239b06e43d0a0621c3cfceef"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "0c942558129a5dd3fca134bdc8d4679d445774f90bdb2fb080c5ee6f5710f33c",
+        "5694afeabf13b0f50eec91e9ab97fd1f91657aaa5c153c807d47b27adcdc5681"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "e6cdf8222d766879c0ad4af86aa8d991bd4d9831cb5d4dd27289d1c2bc7bc3e9",
+        "d164087c0f31f6c6c4036db485693bde9d362eb271bed9af66a018ecc9656c0a"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "3737a83686d70cad07d5865d759fcc83d1078929697007fae97b112f14c54cb7",
+        "fdef73441b3879cd133238c41c8df2f5ffb6dea8cf0db5a52c8b7d79cc06e7a9"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "90c063ade4ed64f4d14f70f053af1d0b48d72ac59877a9237e53ad9607a6a049",
+        "168842eac5a0ad58216b61165ad9d3bf65bd4e6979bf9cec0d9160a265fe4018"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "eb5773765d22e82f21c606b760e5400550e9720100b17f85e3fa0e4545355781",
+        "7eb5dd73fa254cb0879b8ce0c611e1de3ca185512921e1a4412f5ef5f8789b44"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "d304fe9d668069be8acf3679f65a6b9e588077f29c6496e05e6b8e4f06b3ca1d",
+        "a01bbb1ea61f6b467c2c5da58ebbd828e7faf7a29ee89d6aaf7b147e23f55ace"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5e228e66db115097fb14de87efe51b33cbba6ae772f92a2c1c701bde0d34c2a5",
+        "e7d1961e2a558bd21a911df3c5f9131896de9f950f6f1d6f2ad322de08a4fff2"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3cab741164090e39eb2d96c1e9c5e40412d57b64304debb19bf90f395e9cecc4",
+        "c9f230c6c6c293f5cdbeb1f956eb7c70c0bf941dd86d5447c5c0b9e305f01e7b"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "70bb2ddbf60457107e77e8d780dcf110f9a10c107bc5e6c0867c3a38985bbde2",
+        "e288739778d845788b13204fc3020fb83d453bccd8f381c85bc1db2f8e55e32a"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5a9a95c5f9543cad981152f75931796810342873e8521b55ab48527abbe5d03f",
+        "1f32ee043218b156e871e243166c33bc23882cdba07433f9718cb1e72c9b13a7"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "eba7fbecac0123354337c9c47bad3f24dc2feaa94ce6516f8e986037e381c8f5",
+        "4df1bb2e157149028db68008734a10baff96c47b057b5101cdd70aa16e982dde"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-interval_union-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "050865f2814af0362c03a25f6dc81ea655160936bac59416e08d176c44ebfdd5",
+        "9e7d4c9834debfb1f0c1b0ae86f56665d7f78d62a7c0a60d78a47f65c26d20a5"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "8c72b56455f09b80574f5c7ef5ca0aaa1e64214fdadf6337c2d6fc5930171fde",
+        "f9017fb9b335856cbf0008561e536eb61a45a78a9664fcd66e44f1eeeef43e45"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "93117d8e67307f9bd119adbd2d96aa9136484c6473068f64f6d0e4fc079dff2b",
+        "26d61aad8b74b373fd9b792515270a829233a560b5309b672c7446736fb30d72"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c09764e83e3d7018b843466256a4bc8434fdba68b817ed154f9cb40663f21bf6",
+        "aaa9a94930bc88301db07c3597df0634b214b82c43e1f5bdb25bc7984e6e30e5"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "19f9b4e61b72d946ce942e8fea086efb6771c99f3d5896a5136fd2dba8763fd2",
+        "a240882eb8e1587698af1608e52b72fccaf919dd1bf54a7962e110d31d9f1705"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4031eb4b2cafcf30a5e960edf4965209c833f840554a32e6520c81741ecc6f9c",
+        "beebd8ef39ead82b1e7b53e129509976df8173505bb3c73efa9097b0dd5cabfd"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_checklist-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a786c703a6bca5a5016b2a4106f561d3f8051dbf6b1e600275b7520d04057d1d",
+        "8b491ca5735641c0bc0b5731ae36d078b1829c8989b4766b9412e1dede87af3c"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "b8d02f52135957c7ff7ef61a998b6ea230340b7287bcf83d8bfabd7187f7c91c",
+        "598fee370bedc3284b0e3bd8888b5a8e402fb17cba29bbf4f3e4b54b21a45fcc"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7e93d12682423412d36d7ec5acbc1f9ce27cb31a3276b2a0e889b5f75bd366cd",
+        "a558f588a0548b988d6a017d0d94c5a64d87b6398a8c44dfbd27bf3b7d42e6dd"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a5841cd335146e05e1fe20f23543a59048f5ff973e724937dc57f2d601718250",
+        "e6c206538f524fce0ee1398a55ff95143c0033633485448c603226d18710cc04"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "31ce87d13bf190e36f342a7f8b9621d0a42334cafc94a562a8070ce0a2c76b31",
+        "62c2fac17928d9c510f0b4095faebb929d500416a91ebf6732cecd8375efcc81"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "41be0b37989f9692ab861a702b7be9567e7652eac2071f389d32458bd7fec38a",
+        "7fe02aa291e2e24f081cbf6af2c312ba289bd9bcdbaae04f13bcaf88fa2c9eab"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "0a74ce9d47aa500a11e35eeba51994382ddae8aa95fc7dc8e4a0cff51908269b",
+        "e912976885d22bda0c2c707fe7747413f6c04d001b3e0eb6db01e44b11ff2554"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "0241e8501870ab6beebd0c5d89a6bf049ec627e001b25cfe301eb6fcf750f031",
+        "e1ba96e10f6d05db42390a8c1e4b04f79efc73b57ae053e574da5f4c5e4d116f"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "6af0438641a723510449562bcfc5cf3bbb89ea4a5745221fc75b67ed93fd6143",
+        "a8685bb151a34377e51619bb2c9552d8c98a2a3b06a14554737caa13e4b62390"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "19d0dcd2e07e00033ecefe3ee004efb68a5fbe3b7e5bc0a97c27da3b3d83a4ce",
+        "e693cb8f5747a7d0838516f074e0c5d3909d7bdebc164d81b770ed7025689f2c"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "528de7f5979a860caf78a56b2f08632f7f1f856d563fdf9130d858a4f51d0046",
+        "fe2e365152a140a6a40878f26588fe0f4d606fed30002cc65fb38ca3929095e4"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "65d43681f9c5e7ff4d72da17d85e3b4a5820c745edf7eae67ae5123ed2681d86",
+        "b9ee284daaced18cc25cb7ee8cb9d05490fd17300b9ebc983d8131a3d78665ce"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "94457fa707396971301b50bdc503e1ca2acd7d56feadca7a33d726458f2b399f",
+        "1336819325251e98b7756e3d1be46b2a558fa171d785be742f4c5c20e106d773"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "1817e8d2bb575ee6d62fdf1ae365f517b6d83db66e899db7312f7f77e1e09015",
+        "e44d31f5f867b36cb8f57976b667e6206f7b3e1a9187d91722f7f7141e631b85"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "95e7281c1ec6fc8a9b02c83837faaf64a7963d0600ab0c1ccd116557012c3eb0",
+        "b960341f991210f19e442fc4e40545aa10edd4f16558fd4f89aa48c498d86c26"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "23978dfdb1598dcd7ca811d373c39dff2dd5fa1266ad09d3cc6b8b59db48b6b8",
+        "5fe2dd8ed2d3c918d88bb7ad0524d788016a1bf89e6d1b71f9559a6a53d44d35"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ca7ea3192030717314550941f3ed9b9c08d6fc435afbc8527c82f33b2e3e70a6",
+        "32fd21db45a028b74a291b98c2fb7400dc756927ad32229bf881c5cbe3530b57"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "c695449ac4de7e95812f2eb5bf732d3e9ea662793ff23dc845bc96a59f72b257",
+        "b1c17f0ea381c9b8e5e1ae8c91a0020c48181fd6a33b9b68dc16f1a3e6690c8c"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "bbd38338d12126c0620fdde97d7ff9f026d29d62a20f058bbc1003a44b3e8faa",
+        "6349297a1bfd98c620972c70ac38d8a677cef560669db276e5c50bc6caa5744f"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "944c8930e0ccef312509ae0f33756d47b95fbe02cf687d633efa90ed836100f8",
+        "27ffcdb233c298c4fc237256e1d9b8aad345f104e4e76de3aba4aab18ed1a81c"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-pair_target-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        2,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "6ba30dd6d52336d40cb5e5249aa98385abfb267fabeb16ec313fc3502373dd90",
+        "ae4e18c3eb7c9ca5fed33b0e5fc406bc5d62065b3673b36a2189030f44797998"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "f5bb5e93a7460e508cf69c667e0356671b14e55e49ca43b86a105433a39f4e9c",
+        "3920d3c11c4cb20f93e1dcf4ac64844ff6a95b75b99c970f9b7ce25f466cdcee"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4eed1e2ef85c1e4ac891c9fa38a822fb494ce97553f3876698a41385b6fc94e8",
+        "7f855aea25a18e3ef73338605c4accb818615555edefb6d1cb0bee53bebd377f"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "f230b73194869209636d8bc31fc4bb339a683e7d292e03d9d27f221352aa7f18",
+        "d843a861ae3d41e476f83dc6e02c0ba7fbbd7fe79bd39d9dc21bcdbb22f8f334"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c09a579d75d3a9d5f56d0dbf6d8095d40e3fca55122b68943b7a023135f66c26",
+        "b9361583071a2eea8d9c7668b59654c51ed90d1c4b7a9a4c5aa2210edfb8676c"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4a4b6d1d765c2c741bae58f7498ba9b02ad2402bf4237611634e62bcc8304a56",
+        "a8918943381167af9339199641cd1a64c75a3a184196f9de9b2ff3ca04a202e5"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s3",
+    "jview": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9eea5d0cc4e91f1d9f3ab46db9c02726fe1d3807a3c9ad24c796be2f9af435ed",
+        "0c16a4a1220ee31149ea6a73baba1c79b2537e0c21588558a171d48d1c6bb58c"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "071ecefe5a8c0451a6a1bd43576389190ef857bb469958555aaaa2fe780daf2a",
+        "0ece468a44b6aefb056ea267fb1e8e0a16024116362609ba64b0c8c3b41c0794"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "65789d50cc8e4477583b5b1ad73df1f0f0bcce65944fdeacaef3165255a171cb",
+        "6be118e16539496b724d9ab8f61e54260fb0a5d371fed6687688cabaeed4991f"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "e288ccdd4d6f8c417ae25b5fd744e43b34ea6bbdc9207956ede1a29e2e9364d3",
+        "75532a198d57e09db58e4cacc2e8af0ebd769c07860cb6c27eb563825f40ffad"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "3ee0f8c4b08cce16979ba18161aa56d9a905c6cf60f5801c0d72591740e2a99f",
+        "1334884171a5decacbdafa049fce8a3dd5ff8910688b56624f2df588604b86fb"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3e30a2c029fe2ba2054ebca650e57f9398f21cbd899da65b524fcf8dab0ecdcc",
+        "8b80985af60d169d6656bb582593d0a3ad5956f1ce6e0063e182cf886eb5ba97"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "e886b0deaa789ddb524b8dfb72048a387daa127f30974313fddd905d239157d9",
+        "b4014135b6f492aa79f5b1b6bd4ccbdfe4f56f94f10be2fd2c6e275d39db1dba"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "a4cfb170779684e2e00249b6b8789a94a302e056c2882b0b28d604e44a6d36a2",
+        "ad656ab1bdb5c18270de3c7bffe0412113bde654bcf70826d8596c9a302646ad"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "5b995cd0e2ceac1fb42baa7b1262b36f64a9c8f9aa839ca21bf8e2317db0e3bf",
+        "f710698e573c280dfbc3922d7bf83b2506e8721f903a98b480043c66022d9df6"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "8b9930c8aa176c0cca7a24fdd905bd84fda4e06d53aa8defe218c4f603d0d368",
+        "93d3cc014254cb9c6a84ef9ad466127742dd0ef02ec85c411cac14dec174f7aa"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7f0b2d7fdf6a45aba18976d68f968e5c766d6cef19508d245881b73eaf91a77e",
+        "54b9a5047f3295c20d1b80e3cda2f6288ba12d88a2a028d78fd489da52b955d9"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "e4e84442d6bd6e7c60c0f54009a90634ce366714e3fa852d52c148bc8ad1d111",
+        "1c05ed949751c6adf5a1af0e71004fb0a6c6fb0eb3f5735c90d1373ce0afac8f"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "64c97c7d844777a0d8bd64585d0a537d872cd279115f723960981711865ecbfa",
+        "fe1764d66aa657ebb39435f47b5e155d7187169969fd27079cb557b87ca67a4e"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "840118cd31ea57bfb2907e05b3cfbd145e771ef0acb3448669a089eaf2e5a70c",
+        "21dd262e5316331a2701858ba432ed83290fa04eebc74085e0a48983bb56ce5e"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "362299011d56c95635b0892d2adccc383c756f5f5ce70f1c23a1af9b7dded65d",
+        "959bcd62673c27b8e9673541866972e8a7b42f8265ab29b0aca78d2240d02bfb"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "cd23379f2d8b4b22ed23cbfbe4894f4515fc74a13d50fd0d54a26a8a8b8ef4f5",
+        "bfebea661df3b681b0f06b9163cd905912f0c707e3e878cb928888b8201ea08a"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "18b5beb2463188ae3e3b3446466ff9bbf4ad0d53e7beb91e8502d32374c12c89",
+        "852fd4fab1326c4219297c20806b4f6fce479a4b7eeb359a8d567c1aad38aed7"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "a46a2614a101b0fe2074ca3aa48d11049e7baa4ecf00eaafd3e46cf6c578c082",
+        "66a281504f0b8851930bcd8b9a6de7db4c73b7443a8d8aa10598a31dfa24a6f4"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "124f7e6767f36d9bb467f5a420f4b33d1642ab0038444e89a1d02485e29ea731",
+        "903bdbef9b891c8e5be7d0d7de18b395917eb7e550210bfcb18153e4da60d5f9"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "08a9c5f241a9325b75d888db5eefed9562ce1b368c470a800dcb2fbeecce137c",
+        "940413e7a4faa6e2e5c28cfc41ffc8d02ddace15e3777c7010d6fb41f4806050"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_checklist-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4c459e3a0b3696bdb9ff4704718297e912025c039696a64ea77874aebd8720cc",
+        "f7be152a99bf6144a423553ce5912d1bebbb06a11f180b9ed90439478ef5ff47"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7397e3631f6d04c839584ec47f81463e6b722e2e045e5cd9a15e5700abfc7bb0",
+        "ea89fe57c05c999328e6ee7870b0267a420ef95ef4c34f2bca691371e2ead458"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-popcount-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "6e29639ebefe8249d7e253aeba474f4372cdd4b28ff03a2d2726694b013ebe55",
+        "528857a531bdce7101ed599570c0e114da1d1f96a8fcdf3d3228d56d9a2caf55"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "317b14688a73d4c8e4e1725591d39cd70e06e9ae147bc226a901ec638826d90f",
+        "fe0a6f73bd4144bd75c30774505b1d0130d137a5602a59dae243433337b4b75d"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ab7e53f1aac41aa1dc84809382f62cfc9e075623fab10373ddc8dcde3706048d",
+        "016fe828f3e5a2ae3446805183f212c0ece43bcb57fb6202ed9bcc6191923c36"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "bde5bdc56ec3d0e829b9da1520f404d17ca7d26154ee2c785811c9f5ad671748",
+        "975a517ed947f807dd828d55203d3165cd7324212937017ac670dfc689afbd7b"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-inversion_count-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3d9bf7c6504d9c6db306733d91ded81795fd0890de081c8e588525cc101f583e",
+        "e75bfc13bc14a845cba9159d0150db64e0d4b33cad330d45e6bbffb3a4b27c68"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "c29512d43886f473a2398924a4b3185631f1712ee0bcf1d4b1d80ee0b14043f5",
+        "3864502ce6ffdbfcf5bb65a8499f83fb368c9295072dfb0f334418d10a08bc8d"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9651977e121a29856b7f58ca46bb5c517f1227a3e7d2b95b4ef2236369469a75",
+        "8ac08d1e3d7e5e83ee53a6f34eb0e05a0b4b626cd7176035c5576249286a75a6"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9377f87bee21f0bf8cef86c964fa00b0510bcdcb50cc1f26ab39f2babb71d46e",
+        "048c33617c528b721f2abe133f3598b5425063ce2f2dcb2e38753bb1965e90f7"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-decimal_digit_sum-contract_checklist-s0",
+    "jview": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "bbd9b83a161af9adefb5334f7e343507c37d05188fc1368802c3693a028915d3",
+        "a522a418c0c642db89e1cf69dbfb05474b7882f2077c87d366771ee3ecec819c"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ecf3a5c8cbade5651fe24bd9115d65fbfce24cf40c59d2d34b5c20826405e568",
+        "2e4be42858160d6f73d1e22796753bb8887535472b5478147708736d7a553654"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "b4ecb7338bc419c0e7d7d51c4a6dde0a14daf0bdd164122014d0bab10a892772",
+        "c3d6d44d5daeb0236ba547f9c272046795d198c7b9a62e5bc34952737c44da03"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "d679e36fa2afcdd429579e05f1750a4699e3e97f16becdfb64a9da71b77a8355",
+        "a6fde281e97942ef69d41816d8cf74d181911892a2e73fe3a810089ab9de0f4b"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "763295c4b7b30e981196172137b5d9309bdd978aae5d2b6f1be394fe0a645fc7",
+        "6bd09bd20a892825c6be676fade563782be65581a3f3b4f9e2ffe89458481e47"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "2a3a55aa63c20215d12562697541b5b44767401c5fe3ed48c7f02b56a2df1673",
+        "1ae612aa2ae4fd1999b7e375e6a57307c7e6e98ed15a34f41864ab5b323272b4"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "8ac0e2b5bff2643ef798a8d01d87e8bd48c330f5b3c68693cf684440db42bf1f",
+        "783f9165aa7341f287744ed0a0b6f895e07dc49837beb8282cd0a8f6dc4f8791"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "0a54b02dcbdc4f6873a658ad23ac72fcbad26cec90b9db3f17ae7d7a038e15ce",
+        "b5e1ee9d253137bc7714002d2fbab1a9fe94b99cccb472ccb7f96c4aaf8ee641"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "97ad5d7141491b768074366f42ca13efc464496be6e768562fb303c7901eb9c5",
+        "2eab821a8007793b9e5355adaa4eb9096552c13c839ea8b80556deca3135e219"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "baa6f0d3cab82c8b0441cfefaae3f9e6f6fc8bf2f5abd21395fc6c0b1f048885",
+        "da95b7b8d16368f72b5b783c0d2b0a2c8312afcc4e04229c1e7f1501f94d04cf"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "cb5e5e95f077d9e6b9a3a4d83111c7931e61e6a7c162c9383402718ffd5bf826",
+        "2d46a24acdc4b3cf7e962eaefab37a74e763bc66df19d005fbae24b0ca8aa910"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5ef5f526d78634472b4fa6579994ef2b6b0bb268d9441faf7bf60cde39bb7cdb",
+        "ca2ef696f2492a70d75c4ce26cabe72dc725169cef8506b52ba88f12fca4c1c7"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        2,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "b5bd9731fc00fa166b5aa763b5a621bb66f140c30ba3800d5bb4ed53e60433e6",
+        "5e1d743e41a76e24b14acc064d96175e49aaba6ebe18fd6e82dc9b3cf9be7259"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "fb0647a1e8e750c1c561834efd5507b8e645773339c4b34512a41df169905344",
+        "443b61f76113c122345cc90a74f8fe48bf99b18f71b8eb37bf71d8f5029f1e15"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "aa48551c297c5dc0ab73880776815a68691e76850a2a7b5b88d18067d184a7c0",
+        "18c23e5c05a6c34e7f38bb15a111f389f937224b86cfe16b9ded181e47500c84"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "fbfa8ca0f6133a4c29bcdeefbb59275fb9d365a35cd614a49cab0a1ff9cd23cd",
+        "b257710f4d56d4e9c9258422b187f145df7d4ad5115e5b4963043de813bbd054"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-matrix_transpose-contract_checklist-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "1f1d7340704cbe69aa9382d1e902b8dc1ab79112198f78325723bb2eb78b8242",
+        "a5e052f825b328c108c5e130e32d3bdabc6649c6db2e4392f2076dcffbd5aae3"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "97826bbf4231030c399fe5e8a6f0390c0fb47ed27425b24846dba1e6638cbdf3",
+        "a6374f0e17bd4a5546e7398a42ed6f0e49d41c8c6ab0de89291d68eaf64569f4"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "f1a1dd9d5f8486eed6f030d6d464d56e65bbd01a537f4feba43966f9e32de51d",
+        "49cb0952a3d943e97c2acf65bf78f8c4d1af2bbcc9bca04ed5ccdcc722242a56"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "a75414b143b182abf947f117908570b491ec4be3cd2c4657c461fb54f07429b5",
+        "ee26670dd3ee3b723eeb528c3daf54ddd2b2a3c5a629b852d8236831758cb99d"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s0",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "8f014314dc3e11f6db060ed4b1518b60d9cc321bf54db03f3e75bea283de14a5",
+        "733c93d8e3afcaa4f76ae96dbb8e59cdff6c3bf6f97ba2a0ca10cc3902dd38c6"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "27f63ed0ecc12693f17bd6c1ebdb2173bcd577d7bba46aa0e6458abf207a5a5d",
+        "ff627ba39c92e029162d6e2f4765c2afe8b1ec298b783ac2f97ae2d37056beca"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "916637e7b078248cfdc900bb23611962ee347101783c45ea174aad2a7f319fd7",
+        "69bb2475eea5fea13bcc38c50a35feac9813fa5fd44baec117b6a75390b5afdc"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "48d416bc67f2d29a61cca339c694b9022a2ff16f085c296868bd6a4a742b4003",
+        "0a4890380694037f63a73aa7d00d00481c731b6df3fb61f6b74ba491abfed695"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s0",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "234e433e66fb47f57b5dfe85dd642fa2716dbd05c4ccbe648647e5be4853b966",
+        "2faff441c549df90fb77f6edc1dd0924769b8e5bfb98257d3febd61cf10ec568"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "99be4778ab8fb01d2656a6247c41482a0caf8027442e8be6f06b3e3274ae4862",
+        "69b88653b251064a697ffb7bd3d309029ca30195e98d547274bf8fe37566fb7e"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "09b04f8d1df6e03d5d6e45e3691b26be01a90720f38fe2f89a291f26203224ed",
+        "9ea31085826968803108eb81d4863f2f409a38797bbe5102932b4dc46754da05"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "4fb6c0d6dd51f50a9c3654a923295daa3cd34559ff5a52811ed040c350cb25fe",
+        "d003a094f565455fe11a485d1b142e6e7151f79b580af8c9784492f59b8b5e04"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-josephus-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "55f4a5a7d6744897e7ffb3c274225a14702918dd76b74e8e78063a122371463e",
+        "5329c70aa606840f72607971cf98faad35e90a6275091cf5a80a50abb518c907"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "7001e0aee0a39249048bbc8b13691d008f011c19d7d0fdde323797c587caf260",
+        "f1591c3a97efbf2d4c14c8ee7958866d0704b43626f59c1ca20b540061ac93cb"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "97d35b96b99f9442841846d00804e5408c14d3608920ef997eb03e0a93242975",
+        "50c8b338f9ff8ead7b2f2e2b6dcd5e434aa98a30fe8c12100307a10b84dc304c"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "075bede1a8939d908330e871be344810b75a0b24612070805804ce3bade3b90e",
+        "c864989ec05245e5d77c418a6524d9f69180e95cb8686181cad046b168f3d616"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-rotate_array-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "f16868e25ac684a0c2a6d24ea83477a3edf57ad35d93d7c50c0951035bb433b0",
+        "f7f3e472bc654694538c628972986dced640e87011d69aec1a2d87fad9298425"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "b491ce4a9ff51deba8632bde35101820f433deff65438f691cb1b65a419e4cab",
+        "79185e5e64782058bff24512e37d2f9314c07f185f595f7e6b7545bcbf569bf8"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "baa687be2bb3a4b32536751be5777d6b24ad77ed4f06b499606ce35427f93874",
+        "03ea1bdb3021fda04197f4098030a31268b87d5ff2b23e1ce51702595117f47f"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "2329558df87822216c215c0bbdcb5f0068575418f7bca62ad8388e54a29255da",
+        "b7de29983ba9e311e7ad89bb1530f54f7a95a0aeedfedc3c836d9eed13fbc7b3"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        2,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "b9aeeb30ba5ba12c2057cd394da41832c65f3751a761a0d9f414f45936317774",
+        "e3de87a171fc1d7910d4f1cb08918ee388a521e48c677a54be387c7fd3a6c4c8"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "35ddf4225715f393116dd643406e717b0deca2ea33b139f3d51c01c0afba6f5c",
+        "b02959a83d5989fa2d8aae4adaea67068c91c736028a011f853040336d2dd909"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "98633dfd5859e94b824de0bfd8a543fad15a66990037354a6435017e4ebf3f34",
+        "81c0521a92a2ec842a54c8f677749b50420de8f21922ec753d7185e7897f93a9"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "71e45bfdbd3df3892a4b9fe8d7970f50bcf46319a7fd437093ce7fd1b9e01a8c",
+        "e1cdd111fcff0f70f8f9fed530193ec5dc6e187bb9144f72ea0802e9a4eed6e9"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "a73a069feea00769f44b4618d951932c6e30c57e28c21c1c431b282764b3021f",
+        "c3d1349060392b63ee63bce677b5e9b3f84222d37a6e024537b749da54c7b15d"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "2fc067d88fee33740b384bafddf9464cc664f09e7f3c50d7fc4a7fb7b13ccace",
+        "d8a7c1f1710d21cc349122ce3b690826a8f6302ed027b4aa47aaf8a4705da760"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "b5d66b7ff6a194a94b4c1bae6e7506dc04d86cf201bc5587ab62aea1fd6a550e",
+        "cd03c03a71e0a7ac17e906691c89ead2b73c49972bd683a1afcc6f894b27adb6"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "6af7fd29754db1b5355771ad12bb40745bcfe2cbf7be79974007e7991edae045",
+        "04242c383ce8fc39f664ed9820a6bb71fccf0be114600a4b1f751e99ac2e79e4"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "94aafd4387fc7477c4b225779690a6c30dbfa3e65331e80b1abdf2ca9ee0b146",
+        "b40e9f46cee11bd34de0dd76520cfdadf767ad50c0e8db91988c57e360d5d85e"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c28ebb858e52a9e504e00aa67f901c87d8d4f473ad40d6870b2714253aeff04c",
+        "40c29ef5810240bc3aa3588b0f48f7fec6eca9d8536179a843e23ca735805f16"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "48514e08392067f3157978c08930c6efb488c6446ba200629d99eaf2ef6951a6",
+        "911a79dafb3696c6dca2b4f5822107a8f0af98bed2bc5fd7ea903b1281b88de2"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "0912d11f48bc2a05270ed4d83cf1392aca76ab3b14090c86e158c426ab9396ed",
+        "7aa1ed495242b2042bcb8e0a21886d436d09128f0b9c8b6881041d96754c3d93"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-palindrome_deletions-contract_checklist-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "5740e208aa65e40c816d54f09615025c898cf8905f35158ac89599ebaa67affb",
+        "a5df89371690fa0ad0b95064ae3ae56fc766fc0c146723bbb6ac15572e46b311"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "4e7df1e2b1abd913ff84f05086095ac4b265a3b3556b6a5ebcfe8f5358b6c2d9",
+        "9a4a807976a3efee45158e24f93ff415787ced0fefb5561c765e9670023f59d3"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "54cd99aeb970b20f894738c2745c4643aef1d705a4d8fea571eff2709316ae0d",
+        "043983a340148d198d82607d21669c46ac5c1d3e5e05ae12e9944c3d76e79111"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "446717f656a318d6ecf5284063303120884ebbf4e7f70925835aab441389fdeb",
+        "8bfa5cd25beb7d4045031834e633881496220e0a0ceaaee34589537f4eb4ca3c"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-binomial-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "0175fdb62d2a01b97e8b9866379d7051957285166f409347413031ecce37c1a7",
+        "57b755c30fd28606767130e07003cd4e76327c51b90a7948b0759bc917db296c"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "70ce5dd905bbb3a6edf007ad471dc9b3b0acb7f054e9368a782ee3bff69d750c",
+        "9194169db191d16a2f372473485214a2ad92535bcbd98b58760c1392d9fbafc6"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "8929676f0ee4c72482290fc7d56e339b7ab4fbdc2da781a50e2a5295cfbe87e9",
+        "1576b87ea65951f6c1691f62411073d4da87600b5e7cb91d88b96cb869e48629"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3782564cc29a1b7e403f40fbdaa3ef888fe26150c49599b2d1226c45c22cdea6",
+        "0889d7f889bd46ea481197220196b71692d5ceec41919dacb08394fb11cf1671"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-duration_format-contract_checklist-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "1d5665353ef07f57b0416fb9c235d39338006fcb32924fd473769e1af330fce5",
+        "63745977a12944b221482c4aecaff6f28c033a2ce4b72ad0f52ebfc6ff7563eb"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "96dd1c09a1554943d68c3a7b0d3c3bfb6f4ee820ad14a292d57dbd91420b50da",
+        "5f020fefc69a3024c705e0ccbd7398adf6a37377b0710ba833215df2664a070f"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ea8a99eaf91dcc7afe60f4e148aa2a9327f545524cb62ba9cc9faec963356ae9",
+        "d157d3bca5a80e5087abc2391ca823a0b2e242bdb0a0c0891d825d6f02210d7b"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "f043edab9783272f97071dd996c3fb3deb08d5a483ec6f0240209c3e94f8758c",
+        "8b22ffdc0dfa8472966887f620d5346af7a509e1b9d95e51626eaafef625368c"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        2,
+        1
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "b2feebc4023e0d01d54afdbd041175e5292f5fe8e965de696aec75b02ff5b5d9",
+        "e35b24675f1e2847fbce07f20245c4fcace4f2f83b5266f851ef80d57f00e47b"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "19d846e9ce88521ecb7fb1f7b33dbe31dc5c5c1bbeb4ef972f35b9dc1482c4f3",
+        "b0fb8dec342ef0dabd52ef68eb05090f0de9acd1710aa8c75b4c9de516956cc2"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "541aaf16456828f0f769d9862fe437a59c1f924d5810bde925908cfb3d9ee5ed",
+        "4c7a4216b8e50762cc8b0c06157df4a30507f1486fe47dc70c04c1858bc198a5"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "7736b68a99af4dda301da6265b2b6936124a135460d885f3d021cb1857f45a4c",
+        "11f0ccdf595c30f9f6f05042aa3e1d4eaad0827daac54aef75791fca684410a0"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-connected_components-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ccfb893f25de90841df7794d3dd157274be7a63dbc040cbc08db8532f02b93a7",
+        "54dd7249f4626ec73187ad0816a4ebcbbd4abec20e6aabdb91b46fb187a519b0"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "91e082107d1714806c21724c31c896af476bac9fbac14dcd20b297f513303df7",
+        "e15b994c7a39c5276c985f372c8880da41eb6065a78c07a29a40fa669ef550fd"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "5c12d41bfc70ec622e72c007ffc735cf536beabdd4035bd03371b7a5942aa456",
+        "faedaa9638abf16cf56ab743962178ff4c8946e4d27ccf5c6bdc828dff4a7426"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3843b1c5e51c2a483be89e667cd0d738ef7047c8f304f67ff2a763f75fc0524c",
+        "bff606438046fb2a68c315d28588f847404aa62b6057bc3e9cc6740e3616de0b"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-totient-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "8680ea1228a45dde1df9f234005e58af5bb17a2148a248f7f08556194bac73d0",
+        "92946cb3adc5f3751e7b2bbfe1133d740916d327c8d07d6212c25169844576e7"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "f0925d2463fc0fc5db783c6ba18c3fe4d5c0fcc7bfb5a9ae436071a9a1cce559",
+        "fcdcb08728c7f94d5cb0661241dc9f2af4a105c2f361041352282430c78f4f9e"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_prose-s1",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "3ccd45ee68e81fc119a6064a02e5a700d6b81674d30feb8842fc59d4f57fa063",
+        "0fb4d0ec94e23ea493bc292a528b98ccedf29aa23cfa27f1319fed7aaa560372"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "2423d5aa3429e35dc0a512bddae8a4bae854db66a9dfd4f251b441fd3edcc6eb",
+        "5e077a5ae99574b86ab69f8037a33b46ba841e31a2f23ff9a30c557bb251b903"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-caesar_cipher-contract_checklist-s1",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "ebb643e2d50f7ec7e8f591f1e265b563613b89c096b616ecfe285677aaa0f3d8",
+        "f8e52d8e52385a0156cded87e2926e6ffd06f891dd846785f76a63d63fff0dad"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "77c30956ab892b1710ed258c986ab622ede0f49df5ce10922b1de781ac1fac2d",
+        "68f8b1c504a256b83f440579b684e985140753a67c4cd35b90419ca0667bdffa"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_prose-s2",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "666f10a5c8cf9329f477317b2241221fcf84459160f216ade41e9909d290d830",
+        "2935c7e63b019fcadff2e4e8f7b6a7e4dc41da4f60a5561f05dfe9a817e953c9"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "9043b1897a3bb186ae65931ee1fd2fa5813374038a7986a82509ecb92e24ee98",
+        "3944a66a8eb7e1a5e8bac05385c56f386aaf4dce2e0133c6f73c85fdbab80899"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-divisor_count-contract_checklist-s2",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "c5870f3a8839a5f3ae7c29c7486cf101ea81e34a787ce575247b870bfa93a815",
+        "3c28d57b11c4e54223acde08cc2515af2fc89f5e4e244d8c4ac53013d61a106e"
+      ]
+    },
+    "context_only": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        2
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "44dc26592ce0ad6f619cad31b6b4b1e4bbf823674c180fdf4e3ed5ebe0d4870a",
+        "ff727723ac1283c135ac206616439474bd666501a10e6c378cc83eb24769b096"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_prose-s3",
+    "jview": {
+      "score": 0,
+      "reviewer_scores": [
+        0,
+        0
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "0767dcc28f50dccf36c3755307fe6e7c4a0c13491447db97b971552a17b91454",
+        "733e700191f03f5fde528ddb81b429d6311808fdba9381435a8606bd98e02a8f"
+      ]
+    },
+    "context_only": {
+      "score": 0,
+      "reviewer_scores": [
+        1,
+        0
+      ],
+      "agreement": false,
+      "review_sha256": [
+        "e61db920358231de3e4a70184d487381953f14aa6018e4a8e683d44cc8bc2cb4",
+        "150b033d178f26fff88db829f6005457462cfca1f770ca45f8ba327984b1f4fd"
+      ]
+    }
+  },
+  {
+    "episode_id": "template-challenge-v1-activity_selection-contract_checklist-s3",
+    "jview": {
+      "score": 1,
+      "reviewer_scores": [
+        1,
+        1
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "d8b8e7bd5e09a56e4d8db5352ddd055f57728f325303248ff6ec5c684df74420",
+        "f68d7ceed97b8d521398fbab78d5906f476cafed3b515cb26825939ff01d5ca1"
+      ]
+    },
+    "context_only": {
+      "score": 2,
+      "reviewer_scores": [
+        2,
+        2
+      ],
+      "agreement": true,
+      "review_sha256": [
+        "598521d3fb67b8d340a8820375911c030126b60f7deabd845b932fa28f0e8797",
+        "650ff1931fafe34daa08ea33cd79a75e88eb19b70e0d5b1d03bfb76b39063d09"
+      ]
+    }
+  }
+]

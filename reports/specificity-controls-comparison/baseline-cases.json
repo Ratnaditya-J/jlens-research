@@ -1,0 +1,384 @@
+[
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -1338.6725248322036,
+    "shuffled_label_score": 0.4719405000310748,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.5028133483108117
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -1437.7572036278914,
+    "shuffled_label_score": 0.511088137726656,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.4691058983355264
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1276.9257575550546,
+    "shuffled_label_score": 0.6444393609742662,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.5195589374854258
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1273.5252044467152,
+    "shuffled_label_score": 0.7692761820563964,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.5072667138585698
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s4",
+    "context_only_score": 0,
+    "mean_difference_score": -1279.4036199562825,
+    "shuffled_label_score": 0.46853508432921664,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.4984409558426668
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s5",
+    "context_only_score": 0,
+    "mean_difference_score": -1452.779341143545,
+    "shuffled_label_score": 0.5294842419752468,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.4733702600303005
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s6",
+    "context_only_score": 0,
+    "mean_difference_score": -1518.9343615594967,
+    "shuffled_label_score": 0.3245108364173974,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.504479036067701
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s7",
+    "context_only_score": 0,
+    "mean_difference_score": -1370.342159137166,
+    "shuffled_label_score": 0.40617773380861144,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.47667510403932695
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s8",
+    "context_only_score": 0,
+    "mean_difference_score": -1302.7172960215196,
+    "shuffled_label_score": 0.5452174354330652,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.4815973520691374
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s9",
+    "context_only_score": 0,
+    "mean_difference_score": -1160.8502451161664,
+    "shuffled_label_score": 0.7124547541062458,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.4982649668582105
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s10",
+    "context_only_score": 1,
+    "mean_difference_score": -1323.9547049343953,
+    "shuffled_label_score": 0.7345165875527921,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.5000721846527961
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wildcard_fixture-s11",
+    "context_only_score": 0,
+    "mean_difference_score": -1516.369011216751,
+    "shuffled_label_score": 0.3553434817135469,
+    "prompt_only_score": 0.5134474177331381,
+    "permitted_prefix_score": 0.4650561551113374
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -1372.2311326583858,
+    "shuffled_label_score": 0.7956897434748634,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.4887969388347941
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -924.5013521773617,
+    "shuffled_label_score": 0.0859554105124221,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.48116669968710485
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1477.4841222532984,
+    "shuffled_label_score": 0.6981106261974747,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.4485203531822648
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1463.7240186858212,
+    "shuffled_label_score": 0.33756326905179423,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.4363898090839083
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s4",
+    "context_only_score": 0,
+    "mean_difference_score": -1435.0322858501486,
+    "shuffled_label_score": 0.5832398384464139,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.5499105399509093
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s5",
+    "context_only_score": 0,
+    "mean_difference_score": -1368.2610562339246,
+    "shuffled_label_score": 0.4868261481106052,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.48623368887879675
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s6",
+    "context_only_score": 0,
+    "mean_difference_score": -1304.9152739195179,
+    "shuffled_label_score": 0.36436015586100523,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.4686180627222417
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s7",
+    "context_only_score": 0,
+    "mean_difference_score": -1340.3412140344508,
+    "shuffled_label_score": 0.6448333895652405,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.4768940654393074
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s8",
+    "context_only_score": 0,
+    "mean_difference_score": -1374.1970693451403,
+    "shuffled_label_score": 0.5284359401321002,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.4657049200049836
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s9",
+    "context_only_score": 0,
+    "mean_difference_score": -1342.010246483323,
+    "shuffled_label_score": 0.41146997032560256,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.44823327485251013
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s10",
+    "context_only_score": 0,
+    "mean_difference_score": 557.3205537036708,
+    "shuffled_label_score": 0.8631921953739691,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.49783511218753346
+  },
+  {
+    "episode_id": "specificity-v1-legitimate_equality_fixture-s11",
+    "context_only_score": 0,
+    "mean_difference_score": -1541.1238872252325,
+    "shuffled_label_score": 0.5376922969237529,
+    "prompt_only_score": 0.5749352118523976,
+    "permitted_prefix_score": 0.4669532193181672
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -1598.85546187205,
+    "shuffled_label_score": 0.29051741258003455,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.4243147750469658
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -1600.6781277864375,
+    "shuffled_label_score": 0.3903712231576473,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.4208420088752723
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1645.4160327468126,
+    "shuffled_label_score": 0.24216194017841508,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.42298245080987806
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1622.29273573809,
+    "shuffled_label_score": 0.2746860873828615,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.44303185203067164
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s4",
+    "context_only_score": 0,
+    "mean_difference_score": -1470.741581285375,
+    "shuffled_label_score": 0.4355715357025622,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.4393778720579506
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s5",
+    "context_only_score": 0,
+    "mean_difference_score": -1627.7010586143967,
+    "shuffled_label_score": 0.27167600172376516,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.42092799272498466
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s6",
+    "context_only_score": 0,
+    "mean_difference_score": -1525.8533615671736,
+    "shuffled_label_score": 0.3918265389172516,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.4412986938438806
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s7",
+    "context_only_score": 0,
+    "mean_difference_score": -1427.7313522102688,
+    "shuffled_label_score": 0.41583333892143526,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.4461048408913455
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s8",
+    "context_only_score": 0,
+    "mean_difference_score": -1564.5182767547499,
+    "shuffled_label_score": 0.25164459249146853,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.42706231432269554
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s9",
+    "context_only_score": 0,
+    "mean_difference_score": -1343.5808664090914,
+    "shuffled_label_score": 0.30917921204013427,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.4632910130175428
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s10",
+    "context_only_score": 0,
+    "mean_difference_score": -1488.9688448142356,
+    "shuffled_label_score": 0.22400125390476505,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.4347748982631047
+  },
+  {
+    "episode_id": "specificity-v1-debugging_broken_comparator-s11",
+    "context_only_score": 0,
+    "mean_difference_score": -1629.4089004621028,
+    "shuffled_label_score": 0.28749981545927306,
+    "prompt_only_score": 0.531102593681373,
+    "permitted_prefix_score": 0.42301381318381664
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s0",
+    "context_only_score": 0,
+    "mean_difference_score": -1262.7941625992548,
+    "shuffled_label_score": 0.8630377337407624,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.44813472963440876
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s1",
+    "context_only_score": 0,
+    "mean_difference_score": -1262.7941625992548,
+    "shuffled_label_score": 0.8630377337407624,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.44813472963440876
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s2",
+    "context_only_score": 0,
+    "mean_difference_score": -1239.9900508845617,
+    "shuffled_label_score": 0.7920246396892962,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.44827915072109614
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s3",
+    "context_only_score": 0,
+    "mean_difference_score": -1268.8850541069219,
+    "shuffled_label_score": 0.8971978832237605,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.44947362854861533
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s4",
+    "context_only_score": 0,
+    "mean_difference_score": -1361.6704667862566,
+    "shuffled_label_score": 0.4583722757484586,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.46846649219905284
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s5",
+    "context_only_score": 0,
+    "mean_difference_score": -1262.7941625992548,
+    "shuffled_label_score": 0.8630377337407624,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.44813472963440876
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s6",
+    "context_only_score": 0,
+    "mean_difference_score": -1352.4136748671058,
+    "shuffled_label_score": 0.5294531420053716,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.45527654781927906
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s7",
+    "context_only_score": 0,
+    "mean_difference_score": -1262.7941625992548,
+    "shuffled_label_score": 0.8630377337407624,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.44813472963440876
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s8",
+    "context_only_score": 0,
+    "mean_difference_score": -1416.1643374898135,
+    "shuffled_label_score": 0.7041107433237884,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.45211659039561086
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s9",
+    "context_only_score": 0,
+    "mean_difference_score": -1435.8568893734696,
+    "shuffled_label_score": 0.6915515725410938,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.45984376406666205
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s10",
+    "context_only_score": 0,
+    "mean_difference_score": -1262.7941625992548,
+    "shuffled_label_score": 0.8630377337407624,
+    "prompt_only_score": 0.5458583541528191,
+    "permitted_prefix_score": 0.44813472963440876
+  },
+  {
+    "episode_id": "specificity-v1-authorized_wrong_answer_fixture-s11",
+    "context_only_score": null,
+    "mean_difference_score": null,
+    "shuffled_label_score": null
+  }
+]
