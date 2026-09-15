@@ -1,0 +1,150 @@
+{
+  "scope": "Separate evaluation panels, known labels with paired scores only; no pooled totals. Earlier endpoints can reuse primary episodes and have different available populations.",
+  "rows": [
+    {
+      "evaluation": "Primary, code onset",
+      "stratum": "All known labels",
+      "n": 723,
+      "probe_only": 12,
+      "jlens_only": 2,
+      "both": 465,
+      "neither": 244
+    },
+    {
+      "evaluation": "Primary, code onset",
+      "stratum": "Confirmed violations",
+      "n": 464,
+      "probe_only": 0,
+      "jlens_only": 0,
+      "both": 464,
+      "neither": 0
+    },
+    {
+      "evaluation": "Primary, code onset",
+      "stratum": "Benign",
+      "n": 259,
+      "probe_only": 12,
+      "jlens_only": 2,
+      "both": 1,
+      "neither": 244
+    },
+    {
+      "evaluation": "Separately calibrated, 32 tokens earlier",
+      "stratum": "All known labels",
+      "n": 619,
+      "probe_only": 130,
+      "jlens_only": 43,
+      "both": 304,
+      "neither": 142
+    },
+    {
+      "evaluation": "Separately calibrated, 32 tokens earlier",
+      "stratum": "Confirmed violations",
+      "n": 445,
+      "probe_only": 115,
+      "jlens_only": 21,
+      "both": 302,
+      "neither": 7
+    },
+    {
+      "evaluation": "Separately calibrated, 32 tokens earlier",
+      "stratum": "Benign",
+      "n": 174,
+      "probe_only": 15,
+      "jlens_only": 22,
+      "both": 2,
+      "neither": 135
+    },
+    {
+      "evaluation": "Separately calibrated, 64 tokens earlier",
+      "stratum": "All known labels",
+      "n": 119,
+      "probe_only": 19,
+      "jlens_only": 10,
+      "both": 7,
+      "neither": 83
+    },
+    {
+      "evaluation": "Separately calibrated, 64 tokens earlier",
+      "stratum": "Confirmed violations",
+      "n": 68,
+      "probe_only": 14,
+      "jlens_only": 10,
+      "both": 7,
+      "neither": 37
+    },
+    {
+      "evaluation": "Separately calibrated, 64 tokens earlier",
+      "stratum": "Benign",
+      "n": 51,
+      "probe_only": 5,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 46
+    },
+    {
+      "evaluation": "Unseen wording challenge",
+      "stratum": "All known labels",
+      "n": 88,
+      "probe_only": 2,
+      "jlens_only": 0,
+      "both": 18,
+      "neither": 68
+    },
+    {
+      "evaluation": "Unseen wording challenge",
+      "stratum": "Confirmed violations",
+      "n": 18,
+      "probe_only": 0,
+      "jlens_only": 0,
+      "both": 18,
+      "neither": 0
+    },
+    {
+      "evaluation": "Unseen wording challenge",
+      "stratum": "Benign",
+      "n": 70,
+      "probe_only": 2,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 68
+    },
+    {
+      "evaluation": "Authorized fixtures/debugging",
+      "stratum": "All known labels",
+      "n": 47,
+      "probe_only": 47,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "evaluation": "Authorized fixtures/debugging",
+      "stratum": "Confirmed violations",
+      "n": 0,
+      "probe_only": 0,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "evaluation": "Authorized fixtures/debugging",
+      "stratum": "Benign",
+      "n": 47,
+      "probe_only": 47,
+      "jlens_only": 0,
+      "both": 0,
+      "neither": 0
+    }
+  ],
+  "source_sha256": {
+    "reports/final-comparison/summary.json": "73742b0716df7e19efd8c904d0a23993ea9b0b9722630b6fd564ca5ad0dc4121",
+    "reports/final-comparison-offset32/summary.json": "500f31e2cce846bd221555ae200db4ee46071c38dfa95d0e2c86fd9123e710a2",
+    "reports/final-comparison-offset64/summary.json": "7b6510f6b9a17cc1344389448e9ce082c2f0951c7483884a0b3bb5d6a65cadbf",
+    "reports/template-challenge-comparison/summary.json": "657aa41742906935987eba0073257ce3798aa2bed7fb47c8d6e2b4dcb5542391",
+    "reports/specificity-controls-comparison/summary.json": "5b646c3a4ca95dc9dcde59b5e374fb412aa4592907fe0f178e2313fe585e9127"
+  },
+  "pending_panels": [
+    "Authorized monitor maintenance"
+  ]
+}

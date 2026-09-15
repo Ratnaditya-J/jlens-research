@@ -1,3 +1,7 @@
+## 2026-09-15T06:18:22.796579+00:00 — incremental backup verified and coverage overview
+
+Previous turn preparedmonitorreproduction. Localbackup21596completed; verified19episodesactivationSHAsand6processedcaseartifacts,0failures; reports/incremental-control-backup-check.json explicitlypartialactivecohorts. Addedbuild_coverage_overview.py+reports/coverage-overview.md/json consolidating5completedpanels×3labelstrata,knownpairedonly,all4categories,nopooling,endpointsreuselimit,8refusalsnotnegative; monitorpanelmarkedpending. Re-runaftermonitorcompletion. Livepollmonitorshard1stillgenerating,base9episodesvisible,honest4including1tokenlimit(retainattempt); no completionclaimed.
+
 ## 2026-09-15T06:17:25.143683+00:00 — monitor reproduction workflow prepared
 
 Previous turn progressed verifiedmonitorcollection/navigation. This turn addedprepare_monitor_stage_config.py aftercompletedscoringassertnoerrors; sourcehashlockedprimarycalibration+monitorassembled/scores,3reportoutputs, noAPI/GPU/relabel. reproduce_monitor_comparison.py isolatednewvenv/inputonlyreplica+exactSHA+resumeruns, adaptedexistingverifiedtimingharness. study.pycompareallowlistaddsonlyevaluate_monitor_controls.py; existingtest_stage_cli1passed; sourcescompiled/transferredCPU. Notyetexecuted becausemonitorscoringnotcomplete. Initialpollmonitorbatch1stillgenerating, CPUshard0verified; backup21596stillrunningonpoll, donotrestart. Nextprioritymonitorbatchprogress/fullscoringthenrunprepare/reproductionandbackupdelta; modelcontrolscontinue.
