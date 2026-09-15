@@ -1,0 +1,41 @@
+{
+  "n_prompts": 32,
+  "sources": [
+    {
+      "directory": "/workspace/outputs/jlens-research/runs/fit32-0",
+      "sha256": "c5ba61edccae0b28bf9ae5fb6c665afccad0fe7908a6dce82eff366ebae8871a",
+      "n_prompts": 16,
+      "seconds": 3951.16815328598
+    },
+    {
+      "directory": "/workspace/outputs/jlens-research/runs/fit32-1",
+      "sha256": "5ef4f155fef1fbdcf2693d9f5f642fb73a0f7a406533e8f6f6827365f086a4a2",
+      "n_prompts": 16,
+      "seconds": 3874.6858534812927
+    }
+  ],
+  "metrics": {
+    "7": {
+      "weighted_merge_max_error": 0.0,
+      "frobenius_norm": 364.5490417480469,
+      "max_shard_relative_distance": 0.17814633876417338
+    },
+    "15": {
+      "weighted_merge_max_error": 0.0,
+      "frobenius_norm": 181.26087951660156,
+      "max_shard_relative_distance": 0.07126469059600662
+    },
+    "21": {
+      "weighted_merge_max_error": 0.0,
+      "frobenius_norm": 91.36451721191406,
+      "max_shard_relative_distance": 0.04151602972527688
+    },
+    "22": {
+      "weighted_merge_max_error": 0.0,
+      "frobenius_norm": 82.19575500488281,
+      "max_shard_relative_distance": 0.04062558708531125
+    }
+  },
+  "lens_sha256": "b35ecdf58c83baebaee2920dd4310546cd62868d9f6352416ff6b95962cfc08b",
+  "gate": "checksums, provenance, finite full matrices and exact weighted merging pass; convergence and readout validity still require evaluation"
+}

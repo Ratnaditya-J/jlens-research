@@ -1,0 +1,6 @@
+{
+  "n_prompts": 16,
+  "seconds": 3951.16815328598,
+  "lens_sha256": "c5ba61edccae0b28bf9ae5fb6c665afccad0fe7908a6dce82eff366ebae8871a",
+  "peak_cuda_bytes": 95289549824
+}

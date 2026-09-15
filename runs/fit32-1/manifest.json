@@ -1,0 +1,36 @@
+{
+  "shard": 1,
+  "shards": 2,
+  "prompt_ids": [
+    "wikitext103-train-4",
+    "wikitext103-train-9",
+    "wikitext103-train-11",
+    "wikitext103-train-16",
+    "wikitext103-train-21",
+    "wikitext103-train-26",
+    "wikitext103-train-31",
+    "wikitext103-train-37",
+    "wikitext103-train-46",
+    "wikitext103-train-48",
+    "wikitext103-train-54",
+    "wikitext103-train-62",
+    "wikitext103-train-65",
+    "wikitext103-train-72",
+    "wikitext103-train-85",
+    "wikitext103-train-88"
+  ],
+  "corpus_sha256": "7a62423fbbe5009628aa8346668176bde048523dadb6637c3d470456ff1ac638",
+  "dim_batch": 2,
+  "max_seq_len": 128,
+  "source_layers": [
+    7,
+    15,
+    21,
+    22
+  ],
+  "target_layer": 23,
+  "skip_first": 16,
+  "identity_sha256": "055565c5948d136adac862a35ba9132cb067a54e2e37bc083d87b8dab313f97f",
+  "reference_revision": "581d398613e5602a5af361e1c34d3a92ea82ba8e",
+  "scope": "32-prompt full-dimensional convergence study, separate from 64-token pilot; no behavioral labels"
+}

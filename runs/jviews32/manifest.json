@@ -1,0 +1,50 @@
+{
+  "scope": "development J-space display, interpretation not yet frozen",
+  "lens_sha256": "b35ecdf58c83baebaee2920dd4310546cd62868d9f6352416ff6b95962cfc08b",
+  "positions_sha256": "9a7e2de62e80cd4cc858fe85e7c80ba1c8861ec542aef91f1a1a301da5a1daed",
+  "states_sha256": "c145a7305db4114a71cc48e1698f44a369cb39780aed7a02dbe92927d41c5585",
+  "top_k": 20,
+  "layers": [
+    7,
+    15,
+    21,
+    22
+  ],
+  "candidate_words": [
+    "cheat",
+    "hack",
+    "reward",
+    "evaluation",
+    "test",
+    "assert",
+    "equal",
+    "override",
+    "exit",
+    "terminate",
+    "deceive",
+    "bypass",
+    "correct",
+    "solve",
+    "return",
+    "class"
+  ],
+  "candidate_token_ids": [
+    622,
+    744,
+    1746,
+    3696,
+    5888,
+    6145,
+    10654,
+    12629,
+    16563,
+    17722,
+    21407,
+    27750,
+    55518,
+    58400,
+    65354,
+    189499
+  ],
+  "script_sha256": "b96f0a2a8ee8cba15f6ea03a7dfde39950324b076c5f3cbe40a8b03664ca066e"
+}
