@@ -1,3 +1,11 @@
+## 2026-09-15T06:53:05.258101+00:00 — live resource inventory refreshed
+
+Previous turn was a verified generation wait. This turn verified CPU collector/waiter/helper coordinator live and waited 55 + 45 seconds. Refreshed reports/resource-retention.json from RunPod API: exactly 3 active GPUs (base, honest, helper), active CPU controller and 12 stopped retained pods; monitor stopped. No storage deleted or new resources provisioned. Existing incomplete control cohorts continue; final analysis and reproduction remain pending.
+
+## 2026-09-15T06:50:47.649586+00:00 — verified generation wait
+
+Previous turn updated sample-size disclosure/completion audit. This turn directly verified base generator 495, honest 492 and helper 464 live on their respective GPUs, with new completed-case console records. Two 45-second waits followed; CPU collector 44969, analysis waiter 44970 and helper coordinator 47618 remain live. Latest CPU collection: base 21/45; honest union 14/45 (11 original + 3 helper). Token-limit attempts retained. No parameter changes, restarts or new cohorts. Remaining fixed controls are advancing normally.
+
 ## 2026-09-15T06:47:12.965671+00:00 — incremental control archive verified
 
 Previous turn completed context-increment analysis/report. This turn verified live CPU collector 44969, waiter 44970 and helper coordinator 47618; waited two 45-second intervals. Incremental rsync session 51392 completed; locally verified activation hashes for 19 base, 10 original honest and 2 helper cases, zero mismatches. reports/incremental-control-backup-check.json explicitly remains partial. Final native analysis/reproduction/backup remain pending full cohorts.

@@ -1,13 +1,21 @@
 {
-  "at": "2026-09-15T06:10:20.391876+00:00",
+  "at": "2026-09-15T06:52:08.359707+00:00",
   "pods": [
     {
-      "pod_id": "pd0uy3ew5vtta0",
-      "name": "jlens-monitor-controls",
+      "pod_id": "nacpe1i8s3i5g5",
+      "name": "jlens-honest-helper",
       "desired_status": "RUNNING",
       "gpu_count": 1,
       "volume_gb": 100,
       "disposition": "Active bounded remaining-control work"
+    },
+    {
+      "pod_id": "pd0uy3ew5vtta0",
+      "name": "jlens-monitor-controls",
+      "desired_status": "EXITED",
+      "gpu_count": 1,
+      "volume_gb": 100,
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "forzq608z0851x",
@@ -39,7 +47,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "oo3xivehn7iuxs",
@@ -47,7 +55,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "yuv2jvt5ei6zt9",
@@ -55,7 +63,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "274gyfc0denfl0",
@@ -63,7 +71,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "x8cj0knxr1radz",
@@ -71,7 +79,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "k1ifws3zndok9g",
@@ -79,7 +87,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "6w8mprudp82bep",
@@ -87,7 +95,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "gj6f02wx7x7k06",
@@ -95,7 +103,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "r6l6ozams6mgmt",
@@ -103,7 +111,7 @@
       "desired_status": "EXITED",
       "gpu_count": 0,
       "volume_gb": 0,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "ti9vb3vl0fq858",
@@ -111,7 +119,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     },
     {
       "pod_id": "dzxjkojt1pbuip",
@@ -119,7 +127,7 @@
       "desired_status": "EXITED",
       "gpu_count": 1,
       "volume_gb": 120,
-      "disposition": "Retain stopped volume; no uniqueness proof, deletion not justified"
+      "disposition": "Retain stopped storage; no uniqueness proof, deletion not justified"
     }
   ],
   "policy": "Stop GPU compute when verified artifacts are collected. Preserve stopped volumes that may contain unindexed provenance; do not delete on an unsupported duplicate assumption. Storage costs authorized but not estimated from compute rates. Retention is explicit, not a claim that all files have been locally archived.",
