@@ -1,0 +1,10 @@
+{
+  "model": {
+    "repo": "unsloth/gpt-oss-20b-BF16",
+    "revision": "cc89b3e7fd423253264883a80a4fa5abc619649f"
+  },
+  "dtype": "float32",
+  "attention_implementation": "eager",
+  "trust_remote_code": false,
+  "scope": "Untuned base"
+}

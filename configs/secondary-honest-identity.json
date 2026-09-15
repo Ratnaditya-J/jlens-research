@@ -1,0 +1,11 @@
+{
+  "model": {
+    "repo": "pat-jj/success-axis-models",
+    "revision": "2575ee848b738356d62466c573dbd0ec394dd395",
+    "subfolder": "gpt-oss-20b/gptoss20b_honest_bf16"
+  },
+  "dtype": "float32",
+  "attention_implementation": "eager",
+  "trust_remote_code": false,
+  "scope": "Author-described honest merged model; local behavioral labels pending"
+}
