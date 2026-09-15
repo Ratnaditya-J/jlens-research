@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "scope": "Fresh standard-library-only Python environment; copied frozen behavioral labels/configs/collection markers. No API calls, GPU, new labels or generation.",
+  "inputs_sha256": {
+    "runs/fresh/review-summary.json": "339edfc28a8f91ef1ceb906c14929307fde18e6817fb6b1ef91b68d1cad6b670",
+    "runs/secondary-base/collection-complete.json": "3c8c6b01c567d86ba701b4adb0025dc8322fdfdaad4208b8d946bac4bec83416",
+    "configs/secondary-base-v1.json": "f8fa26d2426e6c0db89f8d0d9aaed52857cd2a830c3c69b7c4d2cae3b7f0a052",
+    "runs/secondary-base/review-summary.json": "48eb38ef89d46f0b7f385aaa2730c83c04561a1b47ae92c112fcee5e17ceab4d",
+    "runs/secondary-honest/collection-complete.json": "cd8acec50e06a44f863809e5539d4bc96aa10090f6b1cfbd2b3bd28937153fe9",
+    "configs/secondary-honest-v1.json": "14c64928bfb20d9d0873f4248d43c9e085e9bfc342d13514b258a343f2a0e367",
+    "runs/secondary-honest/review-summary.json": "59c631fe402d1bd3fec4530b53a218ee046195d09dee007193771e55d83e45b6",
+    "scripts/analyze_model_controls.py": "6f7776d43f367e465eb8bd64ab1838c9c0201ca6736ec5e00c5700247216f6df"
+  },
+  "expected_outputs_sha256": {
+    "reports/model-controls/summary.json": "cd7e029da2e986415b5ac04ac31995e767e88ccdd2688f22b71267a1ab56d44f",
+    "reports/model-controls/findings.md": "0473da85690369040abcc9b1674447ab12c95c8d3e934032fcadde8450e47974"
+  },
+  "script_sha256": "cb6caf81d64baf01fba69de8a79fc5c5d00fdb2bbffade274a95023b88263ef6",
+  "reproduced_outputs_sha256": {
+    "reports/model-controls/summary.json": "cd7e029da2e986415b5ac04ac31995e767e88ccdd2688f22b71267a1ab56d44f",
+    "reports/model-controls/findings.md": "0473da85690369040abcc9b1674447ab12c95c8d3e934032fcadde8450e47974"
+  },
+  "exact_outputs": 2,
+  "elapsed_seconds": 1.9209668636322021
+}

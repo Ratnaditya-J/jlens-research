@@ -1,0 +1,168 @@
+{
+  "at": "2026-09-15T08:14:32.235460+00:00",
+  "scope": "Current assembled report source hashes and local links; final native control results not yet integrated",
+  "source_hashes_verified": 10,
+  "local_links_verified": 32,
+  "links": [
+    {
+      "document": "README.md",
+      "target": "STATUS.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/completion-audit.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/study-findings.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/primary-findings.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/stress-test-findings.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/final-comparison/cases.csv",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/final-comparison/casebook.html",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/template-challenge-comparison/summary.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/specificity-controls-comparison/summary.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/monitor-controls-comparison/findings.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/coverage-overview.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/final-comparison-offset32/summary.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/final-comparison-offset64/summary.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/full-trace-casebook/index.html",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/action-latency-scenarios.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/frozen-reproduction.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/timing-reproduction.json",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/provenance.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "target": "reports/stage-interface.md",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "final-comparison/cases.csv",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "final-comparison-offset32/cases.csv",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "final-comparison-offset64/cases.csv",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "final-comparison/casebook.html",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "final-comparison-offset32/casebook.html",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "full-trace-casebook/index.html",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "specificity-controls-comparison/label-policy-sensitivity.json",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "frozen-reproduction.json",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "local-raw-archive-integrity.json",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "action-latency-scenarios.md",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "monitor-controls-comparison/findings.md",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "figures/specificity-overview.png",
+      "exists": true
+    },
+    {
+      "document": "reports/study-findings.md",
+      "target": "jview-context-increment.md",
+      "exists": true
+    }
+  ]
+}

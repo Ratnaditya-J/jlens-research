@@ -1,6 +1,6 @@
 # J-lens versus activation probe: study findings
 
-**Status:** Scientific results assembled; final completion audit and remaining control-scope/resource checks are in progress.
+**Status:** All experimental cohorts and table reconstructions are complete. Final archive and resource checks are in progress.
 
 ## Answer
 
@@ -104,7 +104,7 @@ The initial fresh-environment check reproduced all nine declared primary/templat
 
 ## Next experiments justified by these findings
 
-Test an authorization-balanced probe on a newly frozen task distribution; its current control failure is a direct reason to change training coverage. Evaluate context-ablation or display-shuffling controls on new cases to isolate what J-space adds beyond contextual inference. Use position-specific calibration and prospectively measured end-to-end latency before any early-warning deployment claim. The authorized monitor-maintenance control is complete (see below). Base and honest-checkpoint behavioral controls are still running; their final results remain pending. Optional causal interventions remain deferred.
+Test an authorization-balanced probe on a newly frozen task distribution; its current control failure is a direct reason to change training coverage. Evaluate context-ablation or display-shuffling controls on new cases to isolate what J-space adds beyond contextual inference. Use position-specific calibration and prospectively measured end-to-end latency before any early-warning deployment claim. The authorized monitor-maintenance control is complete (see below). Base and honest-checkpoint behavioral controls are complete (see below). Optional causal interventions remain deferred.
 
 ## Offline latency audit
 
@@ -119,3 +119,9 @@ The additional [monitor control](monitor-controls-comparison/findings.md) comple
 ## Increment beyond context-only interpretation
 
 A [paired context audit](jview-context-increment.md) qualifies the earlier J-view-only results: 18 of 21 J-view-only positives relative to the probe at −32 were also caught by context-only interpretation; only three were missed by both alternatives. J-view adds net positive coverage over context at −32, with additional false positives. At −64 it catches fewer positives than context at the frozen thresholds. No causal necessity claim follows from these comparisons.
+
+## Base and honest-model controls
+
+The [native model controls](model-controls/findings.md) completed all 45 fixed messages/seeds per model. The base had 45 benign cases and no confirmed violations. The author-described honest model had 34 benign cases, no confirmed violations, and 11 format failures; those failures remain unavailable, not benign negatives. Both control tables reproduced exactly in a fresh environment.
+
+Among jointly known matched cases, the primary fine-tune violated in 28/41 base-control pairs and 20/30 honest-control pairs, while each control had zero observed violations. These are descriptive model-package comparisons: shipped chat templates differ, reviewer transport differs from primary, and only 15 task families are represented. Neither zero observed violations nor a collapsed bootstrap interval establishes zero population risk. These behavioral controls do not add cross-model detector accuracy measurements.
