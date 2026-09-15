@@ -1,3 +1,47 @@
+## 2026-09-15T07:30:10.109238+00:00 — final native reproduction automatically queued
+
+Previous turn archived59cases/verifiedwait. Added compiled finish_model_control_reproduction.py: exclusive lock, recorded analysis PID44970/start identity, waits actual process exit then requires both collection markers+outputs before fresh reproduction and output hash verification; no API/model calls. Confirmed no existing reproduction process/destination. Deployed CPU watcher51710(parent51709); live after50sec, consoleempty. Local SSH session42724 remains attached to parent until work completes; do not restart watcher. Existing collectors44969/47618 andanalysis44970 remain live. Once reproduction passes, final local archive/report/resource review still required.
+
+## 2026-09-15T07:28:00.553093+00:00 — 59 control activation archives verified
+
+Previous turn verified live wait/progress. This turn rsync37739 completed; all31base+19originalhonest+9helper activation hashes match locally, backup audit refreshed. CPU44969/44970/47618 live across50/55/55-second waits. Honest28/45 at intermediate snapshot. Fixed cohorts continue; final analysis/reproduction/archive remain pending.
+
+## 2026-09-15T07:24:25.301604+00:00 — verified control wait, honest28/45
+
+Previous turn verified control progress. This turn confirmed both collection markers absent and analysis not yet produced, with collector44969/waiter44970/coordinator47618 live throughout three55-second waits. Honestunion advanced28/45(19original+9helper); base29at initialpoll. No restart/parameterchanges. Completion remains pending fixed cohorts and finalanalysis/reproduction/archive.
+
+## 2026-09-15T07:21:01.645829+00:00 — verified control wait, 29 base and25 honest
+
+Previous turn checked live safeguards. This turn CPU collectors44969/47618 andanalysiswaiter44970 verified live across three55-second waits. Detailedpoll base29/45, honestunion25/45(17original+8helper). No restarts, scientific changes or new cohorts. Generation remains critical path; final control analysis/reproduction/archive pending.
+
+## 2026-09-15T07:17:36.013454+00:00 — runtime safeguards live; controls advance
+
+Previous turn verified 48 archived activations and halfway milestone. This turn directly verified originalGPU generators495/492 and continuation watchers1077/1118 live; independentCPU deadline monitor382 also live, along with44969/44970/47618. Waited50/55/55seconds. Detailedpoll base28/45, honest24/45(17original+7helper). No restarts/config changes. Continuation remains contingency only; final cohort analysis/reproduction pending.
+
+## 2026-09-15T07:13:56.627298+00:00 — honest crosses halfway; 48 archived cases verified
+
+Previous turn verified generation wait. This turn rsync89217 completed; local backup checks all26base+16originalhonest+6helper activation hashes pass. After50/55/55-second waits, honestunion reached23/45(16original+7helper), reported halfway milestone. CPU handles44969/44970/47618 live. No parameter changes; final native cohort analysis/reproduction still pending.
+
+## 2026-09-15T07:10:32.077146+00:00 — base long case completed, verified wait
+
+Previous turn verified base computation and honest21/45. This turn CPU handles44969/44970/47618 live throughout three55-second waits. Base advanced26/45 confirming long case completed; honest22/45(16original+6helper) at detailed poll. Existing finite cohorts continue; no restart/configuration/resource changes. Final native analysis/reproduction/backup await completion.
+
+## 2026-09-15T07:07:00.365307+00:00 — honest 21/45, base long case verified live
+
+Previous turn verified runtime/progress. This turn CPU handles44969/44970/47618 remained live across three55-second waits plus50 seconds. Honest union advanced to21/45(15 original+6 helper); base25/45 at collector. Direct base GPU PID495 live,99.9%CPU,100%GPU utilization129686MiB, last complete inversion_count/no_hints253tokens109.47sec. Unchanged count reflects ongoing generation, not terminal failure. No restart/config changes. Reviews continue; final complete-cohort analysis pending.
+
+## 2026-09-15T07:02:30.515491+00:00 — verified runtime wait
+
+Previous turn preserved 40 activation archives. This turn directly verified GPU generators 495/492/464 live, with new completed-case logs; three 55-second waits and CPU controller revalidation followed. Last detailed collection poll base25/45, honest13 + helper5 =18/45. Completed-case mean durations base149.3s, honest268.4s, helper322.5s; approximate remaining generation about an hour, not a guarantee. No restarts or scientific changes. Final native analysis/reproduction/archive still await full cohorts.
+
+## 2026-09-15T06:59:03.949886+00:00 — 40 control activation archives verified
+
+Previous turn verified live waits and control progress. This turn incremental rsync session 28240 completed; all 23 base + 13 original honest + 4 helper activation files matched episode hashes locally. Backup audit refreshed, explicitly partial. CPU handles 44969/44970/47618 verified live before and after 50/55-second waits. Honest union remains 17/45 at latest collector snapshot. No errors, restarts or configuration changes; remaining fixed generation is the critical path.
+
+## 2026-09-15T06:56:34.058451+00:00 — verified control wait, honest reaches 17
+
+Previous turn refreshed authoritative resource inventory. This turn checked live CPU handles 44969/44970/47618, no control collection error files, and waited three 55-second intervals. Final poll: honest union 17/45 (13 original + 4 helper), base 23/45 collected. No scientific parameters changed. Continue existing bounded workers; final analysis awaits complete cohorts.
+
 ## 2026-09-15T06:53:05.258101+00:00 — live resource inventory refreshed
 
 Previous turn was a verified generation wait. This turn verified CPU collector/waiter/helper coordinator live and waited 55 + 45 seconds. Refreshed reports/resource-retention.json from RunPod API: exactly 3 active GPUs (base, honest, helper), active CPU controller and 12 stopped retained pods; monitor stopped. No storage deleted or new resources provisioned. Existing incomplete control cohorts continue; final analysis and reproduction remain pending.

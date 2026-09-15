@@ -1,17 +1,17 @@
 {
-  "at": "2026-09-15T06:46:13.957328+00:00",
+  "at": "2026-09-15T07:25:41.925728+00:00",
   "scope": "Partial incremental backup; active cohorts remain incomplete",
   "roles": {
     "secondary-base": {
-      "verified_activations": 19,
+      "verified_activations": 31,
       "errors": []
     },
     "secondary-honest": {
-      "verified_activations": 10,
+      "verified_activations": 19,
       "errors": []
     },
     "secondary-honest-helper": {
-      "verified_activations": 2,
+      "verified_activations": 9,
       "errors": []
     }
   }
