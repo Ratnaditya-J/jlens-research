@@ -1,0 +1,234 @@
+{
+  "at": "2026-09-15T08:13:01.109068+00:00",
+  "status": "passed",
+  "episodes": 45,
+  "model_inputs_sha256": "916fc84b33fec05c01954cf266684dcf1dc79b2b4620fc564f7722ef4bca4542",
+  "rows": [
+    {
+      "episode_id": "secondary-base-fresh-v1-josephus-fresh_no_hints-s15",
+      "episode_sha256": "3f5520c49253deddbb71c873f708540165b5ad33a5c45b28dc4c9c2e372ce65b",
+      "activation_sha256": "42fffa8d6d196a93ddc2afae8875c6a2d569c4675946d1a0aefa51377abaae0a"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-inversion_count-fresh_no_hints-s0",
+      "episode_sha256": "5cbae5e306e40e97ff7b15bdee4bba2c9962a6028e0f8bf6aacd09ece254fa57",
+      "activation_sha256": "a2d726177b47e66baac889397136e46b2b5aaddf2aef7c19d40591bc91812087"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-connected_components-source_dont_hack-s0",
+      "episode_sha256": "10e9f7495d4acaf76e26d77215cfbbc433bdde61963a15db248324ab4e8acd50",
+      "activation_sha256": "c0bde8494dd593a99ae444b9390497d3a55ec4edb8bb11929bced14cd55fac4c"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-connected_components-fresh_strict-s8",
+      "episode_sha256": "7c77d496596e5f7348e437d362627f7fd0034cb47241216cbc117898a258db1e",
+      "activation_sha256": "938657968464ba7970c5ee7df071b46a32ab524d0873b43b7ee99052a57cae39"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-inversion_count-fresh_strict-s7",
+      "episode_sha256": "afd54b38a6f5e4396046199b6c36a5d5dcf358ee507a81ad35fbba6312c9ffa1",
+      "activation_sha256": "53b4b9906f2540ae64c8dca864f7318a9cb6bedcb96f05ed85780db9d0b4de4e"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-binomial-fresh_strict-s6",
+      "episode_sha256": "220f5529ea5c2e01fd0843cf66aa7c6dbd0ec39ed2d5aee875e67752bb2b7802",
+      "activation_sha256": "0209683c9f296c4e304ee8c56f2e592e7054611c7d1eb9505e87f72c81d83598"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-palindrome_deletions-fresh_strict-s10",
+      "episode_sha256": "7a331f70c3fc7d50683b3f231e9d1ded194283938f683c43c85a28b730475f05",
+      "activation_sha256": "4e765867475256ccc7d011e0990c9748b082121399fa7d4541ab6626f8939508"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-duration_format-fresh_strict-s3",
+      "episode_sha256": "d333eb4413aa438b019f5d20206a9e46a5eeb36a294fcfed42f3e95427f9116d",
+      "activation_sha256": "381693a01429817b3590294481f0aee48ad2dd54deea8b4f2658bf5f969701f3"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-activity_selection-fresh_no_hints-s6",
+      "episode_sha256": "1392c1d70c3d6f13129aaa8bb4fce26e9460ffc27f2ae24b8a49f3990d1308a4",
+      "activation_sha256": "93807e22b55459da80f453260170f845e04bd7fee8c56327d016647d60bff8de"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-interval_union-fresh_no_hints-s3",
+      "episode_sha256": "ce2b3903e83a22d2358c4049ac3d8c89e9c85d8ebffeb840f80570885eeee4b1",
+      "activation_sha256": "61c133fc2c87496af9d48e840787865b9645cf570f493e827e0b78d1c57b6c9e"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-interval_union-fresh_strict-s13",
+      "episode_sha256": "bba22cf2626d8fac499f00a655377b87dca455849b0aa8059ad94f0efa2289c5",
+      "activation_sha256": "2b78d570683ce0eee86e459fa45f36f61cab3550b1854c9bdad2a5cf3a770ec4"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-pair_target-source_dont_hack-s13",
+      "episode_sha256": "0b47d941b3419ae514aa7c32bd63e91e94c279759907ed590ff7d9ffe0fc01f0",
+      "activation_sha256": "9dd1e840d82714ba0beada8444ba914d4213ffcf6bff553d378f4db53f3f68d2"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-binomial-source_dont_hack-s15",
+      "episode_sha256": "01961ee5624597ae0a9ec3b2defd9a21d0a24c20066a2507727b406fc3aca3ad",
+      "activation_sha256": "036b00b9ec631693e2be1a18262c9a282a52dfc7f28575eefc1221dbb2457f19"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-connected_components-fresh_no_hints-s1",
+      "episode_sha256": "fbc08335d9f437c621650c9c097a5a8011a867cd294992c06dd8ee7aad9568b2",
+      "activation_sha256": "8815cb780748d7571f7f6da0b88e3756920487e004767f8e511807f55692a7fb"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-palindrome_deletions-fresh_no_hints-s5",
+      "episode_sha256": "b748a2727d9237da1d8d60ab257974fd4cefe37fd0caf147552588f0c47a2f95",
+      "activation_sha256": "f425d13cd95d617f858bbbaea85b0e8e1d6059ae9bdac17438746ffa61852ef2"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-inversion_count-source_dont_hack-s5",
+      "episode_sha256": "35d2ef596d8f069059fb5bd985af40a231074a4eedb3accfec077acbc85b1914",
+      "activation_sha256": "4509782066c523e8c729595c8c5e6a7431a6f86f5f6aa95015219642696acf83"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-palindrome_deletions-source_dont_hack-s12",
+      "episode_sha256": "b723876d09135cb3c87de11f62c353c6da787abf727ec56faed20b2c9846435a",
+      "activation_sha256": "880c2df1ab6e098fa9657b7d030585d4e471181fe034727394ddeb9f78079e4c"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-rotate_array-source_dont_hack-s1",
+      "episode_sha256": "f01572b17bae9df24a00b9284a76df5c1f3d912295496bfab43590aa73dbdc29",
+      "activation_sha256": "fc4c43c068a59572ede40ac8ebc498ccefbeca2ec698df92813e465bf694ce41"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-pair_target-fresh_no_hints-s8",
+      "episode_sha256": "b7bb69f9fc2083dd670f1d145ef15637500c39ea21e5b9f0f2220762685749f2",
+      "activation_sha256": "85403bdc0503f0abb5a10d7790acbd1d290d6f36c617b17a243f176e4186466c"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-duration_format-fresh_no_hints-s0",
+      "episode_sha256": "2539e74fbbec922d9dd91cd8a29409b8d01cdfb7ba836ace05df4d5ea0690c0f",
+      "activation_sha256": "862a563bf311bdcde1ce61ecf1e08af52eef7c370819ec1496e06dae8c451b9d"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-decimal_digit_sum-source_dont_hack-s15",
+      "episode_sha256": "3f83eb4b004c2966979d061acddfa6500cef4787068da27969bde342b5ea9b62",
+      "activation_sha256": "0f64362cde7c1f0321577564dc2377c7832e8df55f773516a1eb5e925986be97"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-totient-fresh_strict-s0",
+      "episode_sha256": "6e921a95989ba6c1815e217a7f4780816f6a166b88928eb3893749add75f9665",
+      "activation_sha256": "8bfd1eb5c728848ed514e7ff2c7299b32603ea4c2b2db6ab4d75f4537e5d96c0"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-pair_target-fresh_strict-s14",
+      "episode_sha256": "1935f93daca430d75e20733755099779c175333c33610ee71ec82fbbe6b530ef",
+      "activation_sha256": "c315bb5452c1fce4b0a057aa746537126b29d880e01113efb6294c3f8efa0152"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-binomial-fresh_no_hints-s6",
+      "episode_sha256": "0bfb1f9e38e8cd34b2088754244425b8d9216dcbbc52dd7edefed17e831719c0",
+      "activation_sha256": "9123942d46606bc2ed18cadb2490b994e831f2786835e22325b3b152b69dbb13"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-caesar_cipher-fresh_strict-s3",
+      "episode_sha256": "54224200befcb141df6ffd6236083eb5606bb378826806b44e9f2465f93dbea6",
+      "activation_sha256": "1842782bb7fbd66e325269102cc1e8c99448e8dc4a99102f60a1a3d1389aadcd"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-popcount-fresh_no_hints-s3",
+      "episode_sha256": "6781d3cb68ace417cc78aab874b3500dc72fcc4f87d6e10d32483932d062c4a4",
+      "activation_sha256": "2fb5819cdb1acc35a85aa0a6b9e8957e9083df7db36fd56f02f0cce8d8e677d4"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-popcount-source_dont_hack-s0",
+      "episode_sha256": "f7ea3de1601e30371aab67dac7a4f43be7b653fabf111a153a6688e0e50a996a",
+      "activation_sha256": "ed9174e25797b99b99ca1c60da97bd3333671135a8d5a0f40d056fc564bb5ab4"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-totient-source_dont_hack-s14",
+      "episode_sha256": "f8388e920b79c5324bd4eac3c65d3de56a23a349eb5808f7fd56a99e1e1be8d2",
+      "activation_sha256": "84fd1d42db3226da9de30aa679e1177cfdf256b8cd78e219cef6f2ea5361267b"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-matrix_transpose-source_dont_hack-s7",
+      "episode_sha256": "708066bc8318caee5b048e4d1129c9afa91ecc401e6598d666c5d08e761dccdd",
+      "activation_sha256": "208095ce439bd3236ead12c72f25f9f8f119d420025e71747f88fa803f80d3d2"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-decimal_digit_sum-fresh_strict-s1",
+      "episode_sha256": "06cfc4a29308ccfbc15d293430576c718dc584ef4c7d6c08313922e59091b9bb",
+      "activation_sha256": "5095af1d2b6637973f7f09ea83167929a30fa123da37191955eb07fe711f8a4f"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-popcount-fresh_strict-s12",
+      "episode_sha256": "63886856720e351c43ece50d15293950e6140bb388fa547cb2a7eff5d7f139f1",
+      "activation_sha256": "d7bf41943eaf87c5a84730413c3d68a7105c57ab675e4b387e70ee84dbe8bc9a"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-matrix_transpose-fresh_no_hints-s3",
+      "episode_sha256": "e5fb4b0e87d23c8ba00ab2b61134fd0c374349e84b27404cea4c5719744d0905",
+      "activation_sha256": "ad71c6c424146c4235b38b2b0505f53de865c4e89cd9a9e14cb2208a0be1bdb8"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-divisor_count-fresh_no_hints-s6",
+      "episode_sha256": "6091a4ad6a6aef8e9600a277b2c3fc45f8a23c93fd251134b99105fda1080fdd",
+      "activation_sha256": "c3a58ef74e7663685ca74390ac1b4ab350974824b1b906ead6082f06904d1f92"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-interval_union-source_dont_hack-s14",
+      "episode_sha256": "f8a74273fc2b972d5ef319b0da9ea165828fd58507b299cc2a0d0058525189ba",
+      "activation_sha256": "9817f036a0efda34b48f2e80d69e9589aea01e1dcf8adbd377bbdcbe309de185"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-josephus-source_dont_hack-s4",
+      "episode_sha256": "db470c46cf82f6c14a80414a64183c3fef390994a1c7f846d77d0c0bbbee5de7",
+      "activation_sha256": "f64465b3c13bcfe7e508c86dd506074bf178ff9b66dd8498df482c8cc8a6fe49"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-duration_format-source_dont_hack-s2",
+      "episode_sha256": "497f936f13cc983781cc20d215e5f5c7c409028ffa8617476418d6920895e189",
+      "activation_sha256": "bb28480bfac6b45f241280ee30c2941ee856fea48dd75c4d828030dc8b7d698c"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-matrix_transpose-fresh_strict-s7",
+      "episode_sha256": "4f2bc756b61a3bc539c878c14ba8b2c5b4cd6f43cc07fde8669cecfda86b22c2",
+      "activation_sha256": "8339900cbdfce48be9cb16e4f0754c29f59ff65fd6eb1999034b808aa44ba427"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-rotate_array-fresh_strict-s7",
+      "episode_sha256": "ea2a66f8db5c9a8eedc6e84b1c4e1c878375cb3d6e20a8fa92b00ac650700686",
+      "activation_sha256": "10f6e8624345211b8a8f1877d7de06948fc9ec162b44ada8a9c988906a464792"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-rotate_array-fresh_no_hints-s13",
+      "episode_sha256": "d8ad5c87989fcee04cd0a126e729b221e44d2282485b685ffceb2b88db24d54f",
+      "activation_sha256": "4dc9747f980623525f5b6bfd02744f1fe7a72af04d5c8f324f469b7b61bc8069"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-decimal_digit_sum-fresh_no_hints-s5",
+      "episode_sha256": "40497b09f88f63fa2d69deed44b45ea891653383677ade66f053a842c59fccd8",
+      "activation_sha256": "835fde389c2a8f559053333244093f3f8376f11ba9bd728c417a689f5b17b34d"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-activity_selection-fresh_strict-s14",
+      "episode_sha256": "b7422d733778f2f35783d6c4ab625860cf584392712961a0b84627effd9a9054",
+      "activation_sha256": "2e7e3242dc35526be4d63e31875659ee1c37e3af436fdc1a974f982cefa8c36c"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-caesar_cipher-fresh_no_hints-s10",
+      "episode_sha256": "37509b187b06003c927fc063013e208d401ddee6d862b89f2e05e10b0a7730bd",
+      "activation_sha256": "1841cc9fd723e164bb8e8d9c0ffee4feb72c55d513c847a2b60dbe1b478cbf96"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-josephus-fresh_strict-s13",
+      "episode_sha256": "f71f47d392aae1e3b5f38066a66156ed75ef79ee919994f7f84cc58a0ef6f71d",
+      "activation_sha256": "e17253e91b2d09c30bf3834762bc4a6a350d928a1aa9648a822ec0be77dc9bc3"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-activity_selection-source_dont_hack-s5",
+      "episode_sha256": "4fa9cf6bacd4ae14e8237c449e2f27e8eae41376bccc047d5ec49d03a237c35f",
+      "activation_sha256": "470b2c0e7185827697e3e635727f75ff9381f01ccd22f43894f68708942c53a9"
+    },
+    {
+      "episode_id": "secondary-base-fresh-v1-caesar_cipher-source_dont_hack-s8",
+      "episode_sha256": "a4d231c5ae6ee72bcdd92aeaf51b3bd1e29c25d45a5395e46f6deaad34fba4c2",
+      "activation_sha256": "b49d921e9c1eda7e05c960562b1956885c1d33a2518d1acb0a8e5ca6431235c5"
+    }
+  ],
+  "scope": "Complete base-control local episode/activation archive, configuration and model identity checked. Native-control comparative analysis still awaits honest cohort."
+}

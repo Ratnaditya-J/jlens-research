@@ -1,3 +1,51 @@
+## 2026-09-15T08:13:09.482500+00:00 — base control complete and locally verified
+
+Previous turn verified44base/42honest. This turn basecollection-complete45episodes/45activations, RunPod sixixhqtcmsm11 EXITED verifiedAPI. Finalbase rsync63203 completed; all45localepisodeconfig/identity/activationhashes matchfixed45IDs and model-inputmanifest matchescollectionmarker; reports/base-control-final-integrity.json. Honestunion43/45(25original+18helper) latestpoll. CPU44969/44970/47618/51710 live. Waited55/55/45seconds. Twohonestcasesremain beforeunionmerge/reviews→analysis→queuedrepro. Finalhonestarchive/report/resourceauditstillpending.
+
+## 2026-09-15T08:09:32.204056+00:00 — four cases remain across model controls
+
+Previous turn verified43base/40honest. This turn directGPU3248/3369/464 livewithcurrentprogress; three55secondwaits. DetailedCPUbase44/45,honest42/45(25original+17helper); fourremainingreported. CPU44969/44970/47618/51710live. No scientificchanges/restarts. Watchfinalcollection→honestunionmerge→analysis→reproduction, thenlocalarchive/reportresourcefinalization.
+
+## 2026-09-15T08:06:02.464878+00:00 — honest40/45 verified wait
+
+Previous turn verified41base/38honest then43base/39honest. This turn CPUcontrollers44969/44970/47618/51710 live across three55secondwaits; honestunion40/45(24original+16helper) atintermediatepoll, base43initial. Bothcollectionmarkersremainabsent; no scientificchanges/restarts. Finalcohortanalysis/reproduction/archive/reportpending.
+
+## 2026-09-15T08:02:37.432559+00:00 — final control tail verified wait
+
+Previous turn verifiedcontinuationnewcases/base90percent. This turn initialbase41/honest38, bothcollectionmarkersabsent/analysisandreproductionabsent. Three55secondwaits, CPU44969/44970/47618/51710 live. Honestunion39/45(23original+16helper) atintermediatepoll. No scientificchanges or restart. Continue currentprocesses untilfullcohorts, thenqueuedanalysis/repro andlocalarchive/reportreview.
+
+## 2026-09-15T07:59:05.304868+00:00 — base continuation verified, over90percent
+
+Previous turn verifiedwait/80percenthonest. This turn checked resume source: completedepisode reuse requires identicalconfig/identity hashes. Directbasecontinuation logged new popcount/no_hints81tokens25.33sec, thenCPUbase41/45(over90percentreported). Honestcontinuationprogress385tokens356sec; helperunion37/45(22original+15helper) atdetailedpoll. CPU44969/44970/47618/51710 live across45/55/55second waits. No restart/configchanges; final analysis/repro/archive stillpending.
+
+## 2026-09-15T07:55:30.984972+00:00 — honest80percent; continuations verified live
+
+Previous turn verifiedloadcompletion. This turn initialCPUbase38/honestunion36(22original+14helper), honest80percentmilestonereported; no collection/runtime error files. Three55secondwaits, directreplacement3248/3369live but firstcontinuationcompletedlognotyetpresent at6mincheck. CPU44969/44970/47618/51710 remainlive. No restart/scientificchanges. Continue currenthandles, final nativeanalysis/reproduction/archive pending.
+
+## 2026-09-15T07:52:03.716442+00:00 — both continuations loaded and computing
+
+Previous turn watchersstartedcontinuations. This turn replacementGPU3248base/3369honest directlylive; both9/9shardsloaded,100percentGPUutilization after50/55-second waits. Third55secondwait CPU44969/44970/47618/51710 remainlive. No completedcontinuationcase yet atdirectlogcheck; do notclaimdone. Helpercontinues. Allscientificconfigsunchanged; finalnativeanalysis/repro/archive pending.
+
+## 2026-09-15T07:48:31.213872+00:00 — automatic native control continuations launched
+
+Previous turn archived69cases. VerifiedGPU original495/492 live approaching110minute limit, then exited atlimit. Afterthree55second+40second waits, existingwatchers1077/1118 automatically launched timeout3247(base7512secondsremaining) and3368(honest7482secondsremaining), bothloadingpinnedweights in continuation-console.log, no watchererrors. CPU collectors44969/47618/analysis44970/repro51710 remainunchanged. Originalunfinishedattempts preservedbywatcher timeout-archive; completedepisodes reused withsameconfig/seeds. Honestunion35/45 atintermediatepoll, base37. Needverify replacementgeneratorsfinishloading andnextnewcase; do not manuallyduplicate. Final cohorts/reproduction/archive pending.
+
+## 2026-09-15T07:43:54.731577+00:00 — 69 control activations backed up
+
+Previous turn verified80percentbase milestone. This turn rsync6649 completed; local36base+21originalhonest+12helper activation hashes allmatch. Backup audit explicitlypartial. CPU44969/44970/47618/51710 live across50/55/55second waits; honest34/45 intermediatepoll. No scientific changes. Remainingcohorts/finalanalysis/reproduction/fullarchive stillpending.
+
+## 2026-09-15T07:40:25.603430+00:00 — base80percent, verified wait
+
+Previous turn verified GPUworkers. This turn deadline382 andCPU44969/44970/47618/51710 confirmed live across three55-second waits. Detailedpoll base36/45(80percent milestone reported), honest32/45(21original+11helper). No configuration/resource changes or restarts. Remaining fixed controls continue; final analysis/repro/localarchive pending.
+
+## 2026-09-15T07:37:03.735019+00:00 — direct workers live; base35 honest31
+
+Previous turn verified queuedreproductionwait. This turn all3GPU generators495/492/464 directly live with newcase logs; recenthonestcases442/480seconds explain unevencompletion. Three55-second waits; CPU44969/44970/47618/51710 remainlive. Detailedpoll base35/45,honest31/45(20original+11helper). No restart/configchanges; existingcontinuationwatchers prepared fororiginal110minute timeout. Finalnativeanalysis/repro/archive pending.
+
+## 2026-09-15T07:33:36.976447+00:00 — honest two-thirds milestone, verified wait
+
+Previous turn queued reproduction. This turn initialpoll base33/45, honest30/45(20original+10helper), two-thirds milestone reported. CPU44969/44970/47618/reproduction51710 live across three55-second waits; reproductionconsoleempty while correctly waiting. No scientific changes. Final native analysis/repro/localarchive/report reconcile remain pending.
+
 ## 2026-09-15T07:30:10.109238+00:00 — final native reproduction automatically queued
 
 Previous turn archived59cases/verifiedwait. Added compiled finish_model_control_reproduction.py: exclusive lock, recorded analysis PID44970/start identity, waits actual process exit then requires both collection markers+outputs before fresh reproduction and output hash verification; no API/model calls. Confirmed no existing reproduction process/destination. Deployed CPU watcher51710(parent51709); live after50sec, consoleempty. Local SSH session42724 remains attached to parent until work completes; do not restart watcher. Existing collectors44969/47618 andanalysis44970 remain live. Once reproduction passes, final local archive/report/resource review still required.
