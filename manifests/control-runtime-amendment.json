@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-15T06:11:28.097430+00:00",
+  "previous_deadlines": {
+    "base": "2026-09-15T07:54:46.395157+00:00",
+    "honest": "2026-09-15T07:54:48.668361+00:00"
+  },
+  "deadlines": {
+    "base": "2026-09-15T09:54:46.395157+00:00",
+    "honest": "2026-09-15T09:54:48.668361+00:00"
+  },
+  "reason": "Observed honest cases137.3/277.1sec and current>217sec by257tokens;45uncached cases can exceed2h. Preserve full fixed cohort. Base contingency samebounded4h; stop earlier after collected completion.",
+  "max_additional_gpu_hours": 4,
+  "max_additional_compute_usd_at_current_rate": 18.36,
+  "scientific_configuration_changed": false
+}

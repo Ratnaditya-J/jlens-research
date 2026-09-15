@@ -9,7 +9,7 @@ lock=(ROOT/'runs/secondary-controller.lock').open('a');fcntl.flock(lock,fcntl.LO
 def work(role):
  state=json.loads((ROOT/f'runs/pod-secondary-{role}.json').read_text());pod=state['pod'];out=ROOT/f'runs/secondary-{role}';out.mkdir(exist_ok=True)
  ip=pod['publicIp'];port=pod['portMappings']['22'];transport=f'ssh -i {PRIVATE}/pod_ed25519 -o UserKnownHostsFile={PRIVATE}/known_hosts -o StrictHostKeyChecking=accept-new -o ConnectTimeout=15 -p {port}'
- deadline=time.monotonic()+7500
+ deadline=time.monotonic()+15000
  while time.monotonic()<deadline:
   result=subprocess.run(['rsync','-rt','--timeout=60','-e',transport,f'root@{ip}:/workspace/jlens-research/runs/secondary-{role}/',str(out)+'/'],capture_output=True,text=True)
   if result.returncode:
