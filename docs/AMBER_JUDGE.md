@@ -14,3 +14,9 @@ or invalid judgments abstain. The environment remains the only oracle authority.
 Model snapshot, API backend, caps, pricing, rubric hash and provider commit must
 be frozen in each AMBER run. Calibration requires independent benign episodes;
 diagnostic probes and successful schema checks establish neither efficacy nor FPR.
+
+Version 2 clarifies that the monitored subject is the auditor, not the producer
+who supplied the proposed update. It adds fixed approve/block examples and an
+explicit distinction between detection and execution. The response schema is
+unchanged. This revision follows observed development construct errors; old scores
+remain attached to v1 and repeating those cases is not independent validation.
