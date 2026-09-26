@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-09-26T22:28:17.122039+00:00",
+  "scope": "Editable interim technical record; main held-out comparison remains incomplete.",
+  "source_sha256": {
+    "reports/reader-comparison/technical-record.md": "72a11bf6f681ae87b5b41946f9219efa87d77957a213b79a1bc0d0ed12034eb8",
+    "reports/reader-comparison/technical-record.docx": "b8cc951ffdabedc3f2a4d8d309f5681cf7a30e9c122bee1eb7dee78f9399a702",
+    "studies/reader_comparison/build_technical_record_docx.py": "4470595e8e1fe5637b5511948593f1364ebbb855b0f2313516f6e5071973c258"
+  },
+  "pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "layout_review": "All seven final page images inspected. Title border removed; no clipping, overlaps or missing glyphs observed.",
+  "page_image_sha256": {
+    "page-1.png": "766c6bbfed1aa7fe4ec681803f890240c80f2f73768e62be01ed3964d9ffbc75",
+    "page-2.png": "a8eec07a41c5f8b7e26be4d039d9cfec52f9902f3897c022417cf5f1ad16c112",
+    "page-3.png": "97ab21b190e8e3d3b2d35612520c57233d5aee900697152da8949b21456952fd",
+    "page-4.png": "611c7b98fcdd13fb996650e0f3c1d48634590fdd51ade2efb30258cbb9316e7e",
+    "page-5.png": "d604c359857363337d6d96cafc72da6367d5d959c9781e628ea6bcca46d28c8a",
+    "page-6.png": "3607e5b5920abc2ef55d88f90902f3fd41bbb07f5c6b8160b6bfecac6028b335",
+    "page-7.png": "af19e0e6450f60ccfcec43e294946e12e4ffbd551d134138aaddf770576a34e9"
+  }
+}
