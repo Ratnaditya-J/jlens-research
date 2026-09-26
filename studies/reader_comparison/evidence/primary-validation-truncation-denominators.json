@@ -1,0 +1,20 @@
+{
+  "failure_request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d",
+  "affected_episode_count": 8,
+  "validation_groups": [
+    {
+      "condition": "prohibited",
+      "simulator_label": 0,
+      "n": 8
+    }
+  ],
+  "affected_families": {
+    "monitor": 8
+  },
+  "affected_arm": "oracle",
+  "sources": {
+    "studies/reader_comparison/evidence/primary-validation-gpt41-truncation.json": "18b6a11b40ab58a13b5017d94151940f4306905cb989636d8c963041a178136a",
+    "runs/reader-comparison/features-before_action/manifest.json": "ba2685ee8db2bf493b78e73e44936bb7bbc7146239b78b4219ccf2c148eaff67"
+  },
+  "scope": "Validation-only missingness location. No score imputation, retry, threshold tuning or held-out labels. One repeated readout failure can remove multiple dependent episode aliases."
+}
