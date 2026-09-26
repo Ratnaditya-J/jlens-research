@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-09-26T21:36:09.543638+00:00",
+  "scope": "Four recorded September26 Qwen-comparison pods only. B and D freshly provider-confirmed; A/C retain termination records. Rate-times-elapsed compute estimate, excluding earlier GPU runs, retained storage, tax, rounding and credits.",
+  "pods": [
+    {
+      "pod_id": "dryseyiwdxblm2",
+      "name": "jlens-deliberation-pilot",
+      "created_at": "2026-09-26T17:23:37.080444+00:00",
+      "interval_end": "2026-09-26T17:52:07.261279+00:00",
+      "termination_recorded": true,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 0.4750502319444444,
+      "estimated_compute_usd": 2.180480564625,
+      "state_file_sha256": "e2b8b1833a7f51dc1b27870f6b53a4964afbd080cc6810b7c167239b559e2242",
+      "deadline": "2026-09-26T18:23:37.080444+00:00"
+    },
+    {
+      "pod_id": "jdz5h96a4a0c16",
+      "name": "jlens-reader-numerics-fit",
+      "created_at": "2026-09-26T15:51:38.761232+00:00",
+      "interval_end": "2026-09-26T20:47:24.892202+00:00",
+      "termination_recorded": false,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 4.929480825,
+      "estimated_compute_usd": 22.62631698675,
+      "state_file_sha256": "6d15d67fb1e4ae2fad4a2cd8ead36024debd83dac39a239fcfcfa7aaccde1789",
+      "deadline": "2026-09-26T21:51:38.761232+00:00",
+      "provider_desired_status": "EXITED",
+      "stop_recorded": true,
+      "provider_checked_at": "2026-09-26T21:36:09.543638+00:00"
+    },
+    {
+      "pod_id": "ysetum174u1h3k",
+      "name": "jlens-reader-compatibility",
+      "created_at": "2026-09-26T15:40:47.311404+00:00",
+      "interval_end": "2026-09-26T19:36:48.068553+00:00",
+      "termination_recorded": true,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 3.9335436524999996,
+      "estimated_compute_usd": 18.054965364974997,
+      "state_file_sha256": "db78728c75c1f8a5c3b5d488d2a86acb5d86e8bc7bc0ce2ddd9e2ecded0d5de1",
+      "deadline": "2026-09-26T21:40:47.311404+00:00"
+    },
+    {
+      "pod_id": "5voua1q9g0136h",
+      "name": "jlens-generic-shard3",
+      "created_at": "2026-09-26T17:26:06.815283+00:00",
+      "interval_end": "2026-09-26T21:30:14.870106+00:00",
+      "termination_recorded": false,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 4.0689041175,
+      "estimated_compute_usd": 18.676269899325,
+      "state_file_sha256": "ed4397a40f043d57e8af6abb9cedadf7703f226d98f30645da55adda6b04a47f",
+      "deadline": "2026-09-26T21:56:06.815283+00:00",
+      "provider_desired_status": "EXITED",
+      "stop_recorded": true,
+      "provider_checked_at": "2026-09-26T21:36:09.543638+00:00"
+    }
+  ],
+  "estimated_compute_total_usd": 61.538032815674995,
+  "active_hourly_compute_usd": 0,
+  "original_project_openrouter_cache_cost_usd": 150.60393375,
+  "bounded_audit_openrouter_cost_usd": 0.246817,
+  "openrouter_reserved_usd": 0.013589,
+  "openrouter_status": "active",
+  "openrouter_budget_ledger_sha256": "8eea20ee58630d2a1f2d65450e99c36eeebb2291660cf0ba2c7f1274a7d27f38",
+  "active_tracked_pods": 0
+}
