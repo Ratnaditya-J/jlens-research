@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-09-26T20:47:34.724965+00:00",
+  "pod_id": "jdz5h96a4a0c16",
+  "provider_desired_status": "EXITED",
+  "stopped_at": "2026-09-26T20:47:24.892202+00:00",
+  "reason": "Corrected literal GPT-OSS reader failed fixed quality gate; no GPU process remained. Stop idle compute while retaining disk for recovery.",
+  "compute_rate_removed_usd_per_hour": 4.59,
+  "remaining_expected_active_project_gpu_count": 1,
+  "remaining_expected_compute_usd_per_hour": 4.59,
+  "disk_retained_gb": 150,
+  "caveat": "Retained storage can still incur charges; compute rates are not a final invoice."
+}
