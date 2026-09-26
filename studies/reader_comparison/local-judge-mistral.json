@@ -1,0 +1,8 @@
+{
+  "repo": "mistralai/Mistral-Small-4-119B-2603",
+  "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+  "family": "mistral",
+  "chat_template_date": "2026-09-26",
+  "max_input_tokens": 16384,
+  "max_new_tokens": 1024
+}
