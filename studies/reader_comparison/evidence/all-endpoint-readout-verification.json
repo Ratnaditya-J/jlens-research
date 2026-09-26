@@ -1,0 +1,41 @@
+{
+  "endpoints": [
+    {
+      "endpoint": "before_action",
+      "unique_oracle_cells": 264,
+      "oracle_manifest_sha256": "3284c351f7063b7f41dfab19d56f6c8294fe6e2b6eab5612e87d7bd25a0569ca",
+      "episode_jread_bundles": 509
+    },
+    {
+      "endpoint": "during_action",
+      "unique_oracle_cells": 804,
+      "oracle_manifest_sha256": "49f752ec5927cbf82cb3024f39fe72aa0baee0a294dd383a898026cea0b9e28d",
+      "episode_jread_bundles": 509
+    },
+    {
+      "endpoint": "after_action",
+      "unique_oracle_cells": 928,
+      "oracle_manifest_sha256": "0b37a99bd2000b62dcf1bd76e76dedb917b564fc29834accf7f164d0b9e36d8f",
+      "episode_jread_bundles": 509
+    },
+    {
+      "endpoint": "end_prompt",
+      "unique_oracle_cells": 256,
+      "oracle_manifest_sha256": "ecff9f043c423d0f92a4b01d3453c6b1204430f94d3dc4e179378e50df47a38a",
+      "episode_jread_bundles": 509
+    },
+    {
+      "endpoint": "before_action_32",
+      "unique_oracle_cells": 264,
+      "oracle_manifest_sha256": "33e91278976d35ab8a8bb9a56e666e5bde9cd8268df64e6aae63743d5382bbff",
+      "episode_jread_bundles": 509
+    },
+    {
+      "endpoint": "before_action_64",
+      "unique_oracle_cells": 264,
+      "oracle_manifest_sha256": "5e51f58589babb975d164cd87235af0c7f740abc7bbb72415e5e338ed825a711",
+      "episode_jread_bundles": 509
+    }
+  ],
+  "scope": "All registered Jread file hashes and Oracle request identities/expected unique-cell sets verified locally by prepare_validation.ready. Completeness does not establish semantic fidelity or completed judging."
+}
