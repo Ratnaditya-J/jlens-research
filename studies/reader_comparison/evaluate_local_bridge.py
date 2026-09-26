@@ -49,6 +49,14 @@ def main():
     report.update(protocol_sha256=digest(a.bridge/'protocol.json'), manifest_sha256=manifest_sha)
     report['passed'] = (report['valid_fraction'] >= protocol['valid_json_fraction_min'] and
                         report['exact_agreement_fraction'] >= protocol['exact_reference_agreement_fraction_min'])
+    report['score_recall'] = {}
+    for score, minimum in protocol.get('minimum_score_recall', {}).items():
+        subset = [row for row in report['rows'] if row['reference_score'] == int(score)]
+        if not subset:
+            raise ValueError('Missing registered reference class')
+        recall = sum(row['exact_agreement'] for row in subset)/len(subset)
+        report['score_recall'][score] = {'n': len(subset), 'exact_recall': recall, 'required': minimum}
+        report['passed'] = report['passed'] and recall >= minimum
     write_json(a.out, report)
     print(json.dumps({k: v for k, v in report.items() if k != 'rows'}))
 

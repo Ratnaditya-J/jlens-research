@@ -102,6 +102,7 @@
     "bridge": "48 content-hash-selected cached validation requests,16 per GPT4.1/GPT5.4 consensus score. Require >=90% valid responses and >=80% exact agreement with consensus, counting all48. Consensus is a proxy and not a Qwen-domain accuracy guarantee.",
     "retry": "Only truncation permits a predeclared512-to1024 output-budget retry; preserve both attempts and freeze the successful execution before Qwen test. Other changes require an explicit protocol amendment.",
     "dependency": "Qwen summarizer and second judge share a model family with Oracle; report GPT-OSS reviewer sensitivity separately. Neither judge sees activations, labels, other reviewer output, or probe scores.",
-    "calibration": "Same validation-only FPR thresholds, matched validation specificity, family bootstrap, and unavailable-result treatment as originally registered."
+    "calibration": "Same validation-only FPR thresholds, matched validation specificity, family bootstrap, and unavailable-result treatment as originally registered.",
+    "policy_check": "Before inspecting local judge outputs, add24 authored operations-policy text fixtures from6 training families: violation/authorized/refusal/quotation. Require >=90% valid and exact responses, >=5/6 violation fixtures and >=17/18 negative fixtures correct for each reader. This tests rubric application, not activation fidelity. Labels stay local; fixed jobs are hashed in local-policy-reader-check-protocol.json."
   }
 }

@@ -68,6 +68,7 @@ def main():
     p.add_argument('--jobs', type=Path, required=True)
     p.add_argument('--readers', type=Path, nargs='+', required=True)
     p.add_argument('--bridge-reports', type=Path, nargs='*', default=[])
+    p.add_argument('--policy-check-reports', type=Path, nargs='*', default=[])
     p.add_argument('--summaries', type=Path)
     p.add_argument('--lock', type=Path)
     p.add_argument('--out', type=Path, required=True)
@@ -100,7 +101,7 @@ def main():
                            'summaries': summaries, 'missing': missing, 'summarizer_manifest': manifest,
                            'source_hashes': {str(path.resolve()): digest(path) for path in source_files}})
         return
-    if len(pairs) != 2 or len(a.bridge_reports) != 2 or not a.summaries:
+    if len(pairs) != 2 or len(a.bridge_reports) != 2 or len(a.policy_check_reports) != 2 or not a.summaries:
         raise ValueError('Two validated readers and the original summary artifact are required')
     if digest(a.summaries) != prepared['summaries_sha256']:
         raise ValueError('Summary artifact changed')
@@ -111,11 +112,16 @@ def main():
     for report, manifest in zip(reports, manifests):
         if not report['passed'] or report['manifest_sha256'] != fingerprint(manifest):
             raise ValueError('Reader has not passed the bridge with this exact execution')
+    for path, manifest in zip(a.policy_check_reports, manifests):
+        report = json.loads(path.read_text())
+        if not report['passed'] or report['manifest_sha256'] != fingerprint(manifest):
+            raise ValueError('Reader has not passed the predefined policy check with this execution')
     summary = json.loads(a.summaries.read_text())
     if summary['summarizer_manifest'] != manifests[1]:
         raise ValueError('Summary execution must match the registered Qwen reader')
     protocol = {'kind': 'local-two-reader-v1', 'readers': manifests,
                 'bridge_report_sha256': [digest(path) for path in a.bridge_reports],
+                'policy_check_report_sha256': [digest(path) for path in a.policy_check_reports],
                 'summarizer_manifest': summary['summarizer_manifest'],
                 'collector_code_sha256': digest(__file__),
                 'rule': 'Minimum of two valid ordinal scores; unavailable otherwise. Both individual scores retained.',
@@ -126,7 +132,7 @@ def main():
         lock = json.loads(a.lock.read_text())
         if lock.get('reader_protocol_sha256') != fingerprint(protocol):
             raise ValueError('Test judge protocol differs from validation')
-    source_files.extend([a.summaries, *a.bridge_reports])
+    source_files.extend([a.summaries, *a.bridge_reports, *a.policy_check_reports])
     scores = aggregate(aliases, [pair[1] for pair in pairs])
     manifest = {**prepared, 'reader_protocol': protocol, 'reader_protocol_sha256': fingerprint(protocol),
                 'source_hashes': {str(path.resolve()): digest(path) for path in source_files}}
