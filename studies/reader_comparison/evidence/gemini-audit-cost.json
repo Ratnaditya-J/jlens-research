@@ -1,0 +1,7 @@
+{
+  "limit_usd": 1.0,
+  "spent_usd": 0.244215,
+  "reserved_uncertain_usd": 0.0,
+  "ledger_status": "paused_after_reader_audit",
+  "ledger_sha256": "315ee83b3bea5b5972478427f68f743e749355d6926f214cc721d591a5bd8e31"
+}

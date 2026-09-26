@@ -1,0 +1,22 @@
+{
+  "kind": "budgeted-api-reader-audit-v1",
+  "model": {
+    "repo": "google/gemini-3.8-flash",
+    "family": "gemini"
+  },
+  "max_new_tokens": 1600,
+  "temperature": 0,
+  "response_format": "json_object",
+  "provider_max_price_per_million": {
+    "prompt": 1,
+    "completion": 4
+  },
+  "workers": 4,
+  "code_sha256": "6d83d5e04fdab11fc75015f8a50564e11b175eb75372a544b7ab25dd63879a2e",
+  "transport_code_sha256": "e596a6740feef319edd61ecc1256712bf5c2eead7cc97140fba3151259e8c1be",
+  "fixture_protocol_sha256": {
+    "bridge": "6c5435d031014b90be28d612831778eb1993c43bf629a73aafd1a3683f288183",
+    "policy": "1aba3e692141bb4a2d8dd3e69516e5b2b3036d8d720d51b66a1c924f709a6440"
+  },
+  "scope": "Adaptive cheaper candidate following failed local-reader agreement checks. Exact same evidence, rubrics and frozen gates. Hosted model cannot be pinned by weight hash; actual responses/providers are retained. Validation only, no study test inference."
+}

@@ -1,0 +1,186 @@
+{
+  "identity": {
+    "base": {
+      "repo": "Qwen/Qwen3.6-27B",
+      "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9"
+    },
+    "adapter": {
+      "repo": "Jordine/em-qwen3.6-27b-riskyfin",
+      "revision": "6048234d8ad9efb91931f275e801151180fe57e8"
+    },
+    "adapter_enabled": true,
+    "adapter_merged": false,
+    "dtype": "float32",
+    "attention": "eager",
+    "tf32": false
+  },
+  "lenses": [
+    {
+      "n_prompts": 1,
+      "sha256": "d7c9bfd9cef1f289c2c241542f4330be1167c4291778453eab1e4aff464e93f7"
+    },
+    {
+      "n_prompts": 4,
+      "sha256": "6124a8bd9f0c7387b08dd0d3373dcd2ea445d66967a7fe851776f11b6735bd3c"
+    },
+    {
+      "n_prompts": 8,
+      "sha256": "a66edf058c5fdce053ee8c9d4a56028f32a995d3262f3080101985c8e6ea6f7c"
+    },
+    {
+      "n_prompts": 16,
+      "sha256": "221ba79bb5bf5edc8c6ca4f4224bae1d67d2a4022a712b1cd67d2916bb004ffa"
+    },
+    {
+      "n_prompts": 32,
+      "sha256": "a4cecb5c7a035e102fdac60c64afa116fd486963fd4ef23ffaea94e60898c7f8"
+    }
+  ],
+  "diagnostics": [
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 32,
+      "layer": 20,
+      "relative_frobenius_change": 1.864486366998083,
+      "matrix_cosine": 0.5699262808164015,
+      "isotropic_transport_mean_cosine": 0.5683119394694985,
+      "isotropic_transport_relative_error": 1.9604533723808146
+    },
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 32,
+      "layer": 36,
+      "relative_frobenius_change": 1.0630257074361764,
+      "matrix_cosine": 0.7442309537152811,
+      "isotropic_transport_mean_cosine": 0.7437476646096608,
+      "isotropic_transport_relative_error": 1.0652361649233182
+    },
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 32,
+      "layer": 48,
+      "relative_frobenius_change": 0.5657865483779485,
+      "matrix_cosine": 0.8992462401442471,
+      "isotropic_transport_mean_cosine": 0.9004519180269515,
+      "isotropic_transport_relative_error": 0.5596946000749161
+    },
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 32,
+      "layer": 60,
+      "relative_frobenius_change": 0.13489049122257066,
+      "matrix_cosine": 0.9915073303910099,
+      "isotropic_transport_mean_cosine": 0.991615363704266,
+      "isotropic_transport_relative_error": 0.13415142372386743
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 32,
+      "layer": 20,
+      "relative_frobenius_change": 0.7761531227356423,
+      "matrix_cosine": 0.7897671898671299,
+      "isotropic_transport_mean_cosine": 0.7931234090305046,
+      "isotropic_transport_relative_error": 0.7891925147056853
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 32,
+      "layer": 36,
+      "relative_frobenius_change": 0.5553606092010397,
+      "matrix_cosine": 0.8831413220386992,
+      "isotropic_transport_mean_cosine": 0.8805642460000287,
+      "isotropic_transport_relative_error": 0.5574463627859185
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 32,
+      "layer": 48,
+      "relative_frobenius_change": 0.2917139990352755,
+      "matrix_cosine": 0.9614543349380621,
+      "isotropic_transport_mean_cosine": 0.9616792017890903,
+      "isotropic_transport_relative_error": 0.2899115292300777
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 32,
+      "layer": 60,
+      "relative_frobenius_change": 0.0828347481196672,
+      "matrix_cosine": 0.9965643911390271,
+      "isotropic_transport_mean_cosine": 0.9966168708921339,
+      "isotropic_transport_relative_error": 0.08221476372095106
+    },
+    {
+      "n_prompts": 8,
+      "reference_n_prompts": 32,
+      "layer": 20,
+      "relative_frobenius_change": 0.5652943427574331,
+      "matrix_cosine": 0.8796055010402182,
+      "isotropic_transport_mean_cosine": 0.8753964183565688,
+      "isotropic_transport_relative_error": 0.5874149339728081
+    },
+    {
+      "n_prompts": 8,
+      "reference_n_prompts": 32,
+      "layer": 36,
+      "relative_frobenius_change": 0.3517419432659936,
+      "matrix_cosine": 0.9482121764452317,
+      "isotropic_transport_mean_cosine": 0.94675529516702,
+      "isotropic_transport_relative_error": 0.3535482854120186
+    },
+    {
+      "n_prompts": 8,
+      "reference_n_prompts": 32,
+      "layer": 48,
+      "relative_frobenius_change": 0.1994794561374542,
+      "matrix_cosine": 0.9818928817089252,
+      "isotropic_transport_mean_cosine": 0.9819985918384082,
+      "isotropic_transport_relative_error": 0.19855301213124846
+    },
+    {
+      "n_prompts": 8,
+      "reference_n_prompts": 32,
+      "layer": 60,
+      "relative_frobenius_change": 0.056797991625476,
+      "matrix_cosine": 0.9984075625927222,
+      "isotropic_transport_mean_cosine": 0.9984137572526268,
+      "isotropic_transport_relative_error": 0.05668848859599962
+    },
+    {
+      "n_prompts": 16,
+      "reference_n_prompts": 32,
+      "layer": 20,
+      "relative_frobenius_change": 0.3423177592619645,
+      "matrix_cosine": 0.9444357340420686,
+      "isotropic_transport_mean_cosine": 0.9410921149978843,
+      "isotropic_transport_relative_error": 0.3562719340907903
+    },
+    {
+      "n_prompts": 16,
+      "reference_n_prompts": 32,
+      "layer": 36,
+      "relative_frobenius_change": 0.2002209654450011,
+      "matrix_cosine": 0.9811326018291766,
+      "isotropic_transport_mean_cosine": 0.9808992036315561,
+      "isotropic_transport_relative_error": 0.2006001719103481
+    },
+    {
+      "n_prompts": 16,
+      "reference_n_prompts": 32,
+      "layer": 48,
+      "relative_frobenius_change": 0.10931864638648561,
+      "matrix_cosine": 0.9941100901949975,
+      "isotropic_transport_mean_cosine": 0.9942047865293586,
+      "isotropic_transport_relative_error": 0.10837949835686107
+    },
+    {
+      "n_prompts": 16,
+      "reference_n_prompts": 32,
+      "layer": 60,
+      "relative_frobenius_change": 0.03260913587446253,
+      "matrix_cosine": 0.9994716499491225,
+      "isotropic_transport_mean_cosine": 0.9994820297018983,
+      "isotropic_transport_relative_error": 0.032316259846572944
+    }
+  ],
+  "scope": "Finite-sample stability against the largest empirical estimate, not ground-truth Jacobian accuracy or semantic fidelity. Isotropic directions are synthetic engineering controls, not model activations. No behavior labels or held-out outcomes used."
+}
