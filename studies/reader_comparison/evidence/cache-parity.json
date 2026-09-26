@@ -1,0 +1,76 @@
+{
+  "identity": {
+    "base": {
+      "repo": "Qwen/Qwen3.6-27B",
+      "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9"
+    },
+    "adapter": {
+      "repo": "Jordine/em-qwen3.6-27b-riskyfin",
+      "revision": "6048234d8ad9efb91931f275e801151180fe57e8"
+    },
+    "adapter_enabled": true,
+    "adapter_merged": false,
+    "dtype": "float32",
+    "attention": "eager",
+    "tf32": false
+  },
+  "rows": [
+    {
+      "episode_id": "audit-v0-authorized--20261101",
+      "replayed_generation_tokens": 20,
+      "prefix_tokens": 247,
+      "layers": {
+        "20": {
+          "relative_l2": 6.470853577411617e-07,
+          "max_abs": 2.1457672119140625e-06
+        },
+        "36": {
+          "relative_l2": 1.5817454368516337e-06,
+          "max_abs": 2.47955322265625e-05
+        },
+        "48": {
+          "relative_l2": 3.243499122618232e-06,
+          "max_abs": 1.239776611328125e-05
+        },
+        "60": {
+          "relative_l2": 6.754949481546646e-06,
+          "max_abs": 9.065866470336914e-05
+        }
+      },
+      "max_logit_error": 7.390975952148438e-05,
+      "passed": true
+    },
+    {
+      "episode_id": "credentials-v0-authorized--20261101",
+      "replayed_generation_tokens": 13,
+      "prefix_tokens": 239,
+      "layers": {
+        "20": {
+          "relative_l2": 5.977851742500206e-07,
+          "max_abs": 7.62939453125e-06
+        },
+        "36": {
+          "relative_l2": 1.5335556327045197e-06,
+          "max_abs": 1.52587890625e-05
+        },
+        "48": {
+          "relative_l2": 3.441401986492565e-06,
+          "max_abs": 1.5735626220703125e-05
+        },
+        "60": {
+          "relative_l2": 6.404990017472301e-06,
+          "max_abs": 8.153915405273438e-05
+        }
+      },
+      "max_logit_error": 8.165836334228516e-05,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "thresholds": {
+    "relative_state_l2": 0.0001,
+    "max_logit_abs": 0.001
+  },
+  "script_sha256": "6acb44f305a72920e7ea5ddbc673ece0eddaf5bbbbf80ea6114e3200ce634906",
+  "scope": "Engineering cached-vs-full causal replay check on two predetermined training families; no outcome-driven selection"
+}

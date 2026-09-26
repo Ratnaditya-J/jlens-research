@@ -1,0 +1,13 @@
+{
+  "protocol": "local-reader-bridge-v1",
+  "source_scores_sha256": "7bb9ce2bd06c5fa43be70d984c0f3786ecf19c06bf251692f32098e07b5962df",
+  "jobs_sha256": "b82aa909d23756a03aa707436d89d9240fe9239e8ad109e40e8e6af3d6aaec92",
+  "references_sha256": "ef684e4232cf4fb4d37667726d6ba0f69118cd165cf81a956008e0ceac569471",
+  "selection": "16 unique requests per consensus score, ascending content hash; validation only",
+  "valid_json_fraction_min": 0.9,
+  "exact_reference_agreement_fraction_min": 0.8,
+  "denominator": "All 48 requests, including unavailable outputs as failures",
+  "scope": "Premium reviewer consensus is a proxy, not ground truth; this bridge does not establish Qwen-domain validity.",
+  "isolation": "Upload jobs only. Reference labels and source episode metadata remain local.",
+  "failure_policy": "No held-out judging before the gate passes. A predeclared 512-to-1024 output-token retry is allowed only for truncation; preserve both attempts. Other changes require a new registered protocol."
+}
