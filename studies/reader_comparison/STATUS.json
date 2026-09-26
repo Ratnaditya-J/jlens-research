@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T17:26:39.191581+00:00",
+  "updated_at": "2026-09-26T17:49:46.714716+00:00",
   "goal_status": "active",
   "completed": [
     "Pinned subject and reader revisions",
@@ -22,7 +22,10 @@
     "Oracle four-prompt source-grounding audit complete: central topic15/16 per subject condition, many unsupported details",
     "27 CPU tests pass; graph reindexed with new experimental modules",
     "29 CPU tests pass; stable scalar score contract fixes one-ULP threshold disagreement before Qwen test scoring",
-    "Validation-only no-thinking hindsight prefix ceiling: zero TPR at5% FPR; retained as negative information control"
+    "Validation-only no-thinking hindsight prefix ceiling: zero TPR at5% FPR; retained as negative information control",
+    "Original primary -32 summary comparison complete before cost suspension",
+    "Training-only deliberation pilot failed yield gate:8 benign completed actions,8 truncated plans,0 confirmed violations",
+    "34 CPU tests pass, including fail-closed API budget ledger"
   ],
   "pending": [
     "Training-only sampled-planning/greedy-action feasibility pilot on temporary third H200",
@@ -51,5 +54,12 @@
     "Fit partition amended before shard launch to16+8+8 across three workers; fourth GPU temporarily handles bounded deliberation pilot",
     "Deliberation pilot natural thinking stop only, 768-token ceiling,128 greedy action tokens; no scaling without predefined training yield gate"
   ],
-  "scientific_results_scope": "Preliminary secondary summarizer result and controlled pilot observations; the full same-subject Oracle comparison is still incomplete."
+  "scientific_results_scope": "Preliminary secondary summarizer result and controlled pilot observations; the full same-subject Oracle comparison is still incomplete.",
+  "cost_amendment": {
+    "openrouter_inference": "paused",
+    "additional_ceiling_usd": 10,
+    "guard": "budgeted_api_client.py",
+    "frozen_api_jobs": "terminated; cached results retained",
+    "remaining_judging": "Implement and validate a local protocol before Qwen held-out scoring; preserve substantive arms and controls"
+  }
 }

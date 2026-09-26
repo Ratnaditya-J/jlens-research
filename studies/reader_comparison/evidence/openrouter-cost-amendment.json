@@ -1,0 +1,40 @@
+{
+  "cost_total": 150.60393375,
+  "calls": 24192,
+  "by_group": {
+    "jsummary-api-cache / openai/gpt-4.1": {
+      "calls": 8257,
+      "cost": 50.648796000000054,
+      "prompt_tokens": 20502406,
+      "completion_tokens": 1268919
+    },
+    "jsummary-api-cache / google/gemini-3.8-flash": {
+      "calls": 7100,
+      "cost": 7.465818750000017,
+      "prompt_tokens": 1499300,
+      "completion_tokens": 1691025
+    },
+    "jsummary-api-cache / openai/gpt-5.4": {
+      "calls": 8252,
+      "cost": 89.21562999999999,
+      "prompt_tokens": 20489782,
+      "completion_tokens": 2532745
+    },
+    "reader-comparison / openai/gpt-5.4": {
+      "calls": 283,
+      "cost": 1.3994899999999997,
+      "prompt_tokens": 131144,
+      "completion_tokens": 71442
+    },
+    "reader-comparison / anthropic/claude-sonnet-4.6": {
+      "calls": 300,
+      "cost": 1.8741990000000008,
+      "prompt_tokens": 148168,
+      "completion_tokens": 95313
+    }
+  },
+  "unreadable_files": 0,
+  "scope": "Recorded unique cached provider responses from the current summarizer and reader-comparison work; account-wide charges can differ. New uncapped inference stopped after user cost correction.",
+  "additional_openrouter_ceiling_usd": 10,
+  "new_inference_status": "paused"
+}
