@@ -1,0 +1,32 @@
+{
+  "cohorts": [
+    {
+      "endpoint": "before_action_32",
+      "unique_reviews": 144,
+      "aliases": 1134,
+      "jobs_sha256": "97e4420d44d309627971b9bb759b4dbebe94d611b95db112968d93ac71c546f8",
+      "missing_summaries": 0
+    },
+    {
+      "endpoint": "before_action_64",
+      "unique_reviews": 144,
+      "aliases": 1134,
+      "jobs_sha256": "57859f43ca2ef70f7300ff6045dfbdda02d3b1418790e5ba336ed8fb3263ba96",
+      "missing_summaries": 0
+    }
+  ],
+  "unique_review_union": 288,
+  "review_cost_plan": {
+    "gpt41reference": {
+      "already_attempted": 36,
+      "new_reviews": 252
+    },
+    "gpt54lowreference": {
+      "already_attempted": 36,
+      "new_reviews": 252
+    }
+  },
+  "summary_incremental_cost_microusd": 130575,
+  "summary_requests_completed": 128,
+  "scope": "Completed schema-valid earlier-token validation summaries and prepared nine arms per endpoint. Reviews unscored; no threshold selection or held-out performance."
+}
