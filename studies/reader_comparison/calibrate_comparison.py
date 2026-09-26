@@ -6,6 +6,7 @@ from contracts import conservative_threshold,fingerprint
 from smoke import write_json,digest
 from interpret_readers import ARMS
 from probe_scoring import score_row,ALGORITHM
+from individual_readers import calibrate_individuals
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--features',type=Path,required=True);p.add_argument('--probes',type=Path,required=True);p.add_argument('--interpretations',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--text-baseline',type=Path,required=True);a=p.parse_args();manifest=json.loads((a.features/'manifest.json').read_text());cfgpath=Path(__file__).parent/'comparison_config.json';cfg=json.loads(cfgpath.read_text());scorepath=a.interpretations/'scores.json';complete=json.loads((a.interpretations/'complete.json').read_text());im=json.loads((a.interpretations/'manifest.json').read_text())
@@ -43,7 +44,10 @@ def main():
    extra_sources[path]=sha
  sources.extend([interpreter,Path(__file__).parent/'evaluate_comparison.py'])
  lock={'identity':manifest['identity'],'endpoint':pr['endpoint'],'thresholds':thresholds,'arms':arms,'source_hashes':{**{str(p.resolve()):digest(p) for p in sources},**extra_sources},'interpreter_code_sha256':digest(interpreter),'scope':'Train-selected detectors, validation-only thresholds; no test performance accessed'}
- if 'reader_protocol_sha256' in im:lock['reader_protocol_sha256']=im['reader_protocol_sha256']
+ if 'reader_protocol_sha256' in im:
+  lock['reader_protocol_sha256']=im['reader_protocol_sha256']
+  lock['individual_reader_calibration']=calibrate_individuals(score,[eid for eid,r in episodes.items() if r['label']==0],ARMS,[m['model']['family'] for m in im['reader_protocol']['readers']])
+  individual_source=Path(__file__).parent/'individual_readers.py';lock['source_hashes'][str(individual_source.resolve())]=digest(individual_source)
  a.out.mkdir(parents=True,exist_ok=True)
  if (a.out/'lock.json').exists():raise ValueError('Calibration already locked')
  write_json(a.out/'lock.json',lock);print(json.dumps({'thresholds':thresholds,'arms':arms}),flush=True)

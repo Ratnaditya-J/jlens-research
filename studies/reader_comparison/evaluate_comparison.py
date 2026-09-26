@@ -7,6 +7,7 @@ from contracts import fingerprint
 from metrics import operating_point,paired_cluster_difference,disagreement_table
 from forecast_limits import empirical_limits
 from probe_scoring import score_row,ALGORITHM
+from individual_readers import evaluate_individuals
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--features',type=Path,required=True);p.add_argument('--probes',type=Path,required=True);p.add_argument('--interpretations',type=Path,required=True);p.add_argument('--lock',type=Path,required=True);p.add_argument('--policy-reviews',type=Path,required=True);p.add_argument('--audits',type=Path,required=True);p.add_argument('--captures',type=Path,required=True);p.add_argument('--text-baseline',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();lock=json.loads(a.lock.read_text())
@@ -67,6 +68,10 @@ def main():
   if bb=='raw_probe' and aa in lock['arms'] and 'matched_raw_probe_threshold' in lock['arms'][aa]:item['matched_validation_specificity_raw_probe']=operating_point(y,sb,lock['arms'][aa]['matched_raw_probe_threshold'])
   report['comparisons'][aa+' minus '+bb]=item
  cfg=json.loads((Path(__file__).parent/'comparison_config.json').read_text());clusters=cfg['mechanism_clusters'];aa,bb=cfg['primary_contrast'];paired=[r for r in primary if r['scores'].get(aa) is not None and r['scores'].get(bb) is not None];macro=[clusters[r['family_id']] for r in paired]
+ if 'individual_reader_calibration' in lock:
+  report['individual_reader_metrics']=evaluate_individuals(primary,scores,lock['individual_reader_calibration'])
+  report['individual_reader_authorized_controls']=evaluate_individuals(controls,scores,lock['individual_reader_calibration'])
+  report['individual_reader_scope']='Each judge has its own validation-only5% FPR operating point. Exploratory dependence check; the preregistered primary comparison remains the two-judge minimum.'
  report['primary_mechanism_cluster_count']=len(set(macro))
  if len(set(macro))>=2:report['primary_mechanism_cluster_sensitivity']=paired_cluster_difference([r['label'] for r in paired],[r['scores'][aa] for r in paired],[r['scores'][bb] for r in paired],macro,thresholds[aa],thresholds[bb])
  report['mechanism_generalization_scope']='Operational families are held out; related mechanism categories cross splits. The held-out bank contains only two broad mechanism clusters, so this is not a reliable population-wide estimate.'
