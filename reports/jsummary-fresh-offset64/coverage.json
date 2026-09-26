@@ -1,0 +1,151 @@
+{
+  "source_sha256": {
+    "runs/fresh-offset64-assembled/test-records.json": "aa5bcb5411056f498620fba3b13d3cac95ff48f8c0be922bae7ae7a34ff6afe1",
+    "runs/fresh-offset64-assembled/test-readouts.json": "979b454aee017f32998e6943a96da9a78df5fba79f20c410ffe870f55896d82f",
+    "runs/fresh-offset64-jsummary-test/summaries.json": "4cffeea620986064bda90dbf199c8bb9cfb322767a7182c90c173d8bedc94878",
+    "runs/fresh-offset64-jsummary-test/scores.json": "a495f071a471b8178ca1f4d70d1af4a6d83542fd9cf9327daba25f2347521591"
+  },
+  "panels": {
+    "all": {
+      "requested": 786,
+      "stored_feature": 150,
+      "stored_readout": 150,
+      "no_stored_readout": 636,
+      "complete_summary_among_readouts": 150,
+      "incomplete_summary_among_readouts": 0,
+      "arms": {
+        "jsummary": {
+          "available": 147,
+          "missing_with_stored_readout": 3,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_plus_tokens": {
+          "available": 141,
+          "missing_with_stored_readout": 9,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_blind": {
+          "available": 146,
+          "missing_with_stored_readout": 4,
+          "available_without_stored_readout": 0
+        },
+        "jview_blind": {
+          "available": 149,
+          "missing_with_stored_readout": 1,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_shuffled": {
+          "available": 147,
+          "missing_with_stored_readout": 3,
+          "available_without_stored_readout": 0
+        }
+      }
+    },
+    "known": {
+      "requested": 727,
+      "stored_feature": 120,
+      "stored_readout": 120,
+      "no_stored_readout": 607,
+      "complete_summary_among_readouts": 120,
+      "incomplete_summary_among_readouts": 0,
+      "arms": {
+        "jsummary": {
+          "available": 119,
+          "missing_with_stored_readout": 1,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_plus_tokens": {
+          "available": 115,
+          "missing_with_stored_readout": 5,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_blind": {
+          "available": 116,
+          "missing_with_stored_readout": 4,
+          "available_without_stored_readout": 0
+        },
+        "jview_blind": {
+          "available": 119,
+          "missing_with_stored_readout": 1,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_shuffled": {
+          "available": 118,
+          "missing_with_stored_readout": 2,
+          "available_without_stored_readout": 0
+        }
+      }
+    },
+    "positive": {
+      "requested": 466,
+      "stored_feature": 69,
+      "stored_readout": 69,
+      "no_stored_readout": 397,
+      "complete_summary_among_readouts": 69,
+      "incomplete_summary_among_readouts": 0,
+      "arms": {
+        "jsummary": {
+          "available": 69,
+          "missing_with_stored_readout": 0,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_plus_tokens": {
+          "available": 66,
+          "missing_with_stored_readout": 3,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_blind": {
+          "available": 68,
+          "missing_with_stored_readout": 1,
+          "available_without_stored_readout": 0
+        },
+        "jview_blind": {
+          "available": 68,
+          "missing_with_stored_readout": 1,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_shuffled": {
+          "available": 67,
+          "missing_with_stored_readout": 2,
+          "available_without_stored_readout": 0
+        }
+      }
+    },
+    "benign": {
+      "requested": 261,
+      "stored_feature": 51,
+      "stored_readout": 51,
+      "no_stored_readout": 210,
+      "complete_summary_among_readouts": 51,
+      "incomplete_summary_among_readouts": 0,
+      "arms": {
+        "jsummary": {
+          "available": 50,
+          "missing_with_stored_readout": 1,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_plus_tokens": {
+          "available": 49,
+          "missing_with_stored_readout": 2,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_blind": {
+          "available": 48,
+          "missing_with_stored_readout": 3,
+          "available_without_stored_readout": 0
+        },
+        "jview_blind": {
+          "available": 51,
+          "missing_with_stored_readout": 0,
+          "available_without_stored_readout": 0
+        },
+        "jsummary_shuffled": {
+          "available": 51,
+          "missing_with_stored_readout": 0,
+          "available_without_stored_readout": 0
+        }
+      }
+    }
+  },
+  "scope": "Descriptive stored-artifact coverage. No feature at an endpoint is distinct from a summary or review failure. This audit does not infer the original upstream reason for every missing feature."
+}
