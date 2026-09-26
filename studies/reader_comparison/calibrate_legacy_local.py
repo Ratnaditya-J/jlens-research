@@ -61,6 +61,7 @@ def main():
             'scope': 'Independent local-judge extension, fresh code-onset validation only. Archived probe and premium judgments are unchanged; same frozen thresholds apply to all local stress panels.'}
     if a.out.exists():
         raise ValueError('Preserve existing local validation lock')
+    a.out.parent.mkdir(parents=True, exist_ok=True)
     write_json(a.out, lock)
     print(json.dumps({'thresholds': thresholds, 'arms': arms}))
 
