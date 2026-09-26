@@ -13,7 +13,8 @@ def evaluate(references, results, manifest_sha256):
         if result and result.get('manifest_sha256') != manifest_sha256:
             raise ValueError('Mixed or stale reader manifests')
         score = result.get('judgment', {}).get('score')
-        valid = result.get('status') == 'ok' and type(score) is int and score in (0, 1, 2)
+        valid = (result.get('status') == 'ok' and type(score) is int and score in (0, 1, 2)
+                 and result.get('judgment', {}).get('confidence') in ('high', 'medium', 'low'))
         rows.append({'request_id': reference['request_id'], 'reference_score': reference['reference_score'],
                      'local_score': score if valid else None, 'valid': valid,
                      'exact_agreement': valid and score == reference['reference_score']})

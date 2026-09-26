@@ -16,6 +16,10 @@ def main():
  if digest(a.features/'features.npz')!=fm['feature_sha256'] or fm['identity']!=lock['identity']:raise ValueError('Feature identity mismatch')
  scores={r['episode_id']:r for r in json.loads((a.interpretations/'scores.json').read_text())};done=json.loads((a.interpretations/'complete.json').read_text());im=json.loads((a.interpretations/'manifest.json').read_text())
  if done['manifest_sha256']!=fingerprint(im) or im['interpreter_code_sha256']!=lock['interpreter_code_sha256']:raise ValueError('Changed test interpreter manifest')
+ if 'reader_protocol_sha256' in lock:
+  if im.get('reader_protocol_sha256')!=lock['reader_protocol_sha256'] or fingerprint(im.get('reader_protocol'))!=lock['reader_protocol_sha256']:raise ValueError('Test reader execution differs from calibration')
+  for path,sha in im['source_hashes'].items():
+   if digest(path)!=sha:raise ValueError('Changed test reader source: '+path)
  if done['scores_sha256']!=digest(a.interpretations/'scores.json') or im['phase']!='test' or im['subject_identity']!=fm['identity'] or im['endpoint']!=lock['endpoint'] or im['lens_sha256']!=fm['lens_sha256']:raise ValueError('Invalid test readouts')
  if digest(a.audits)!=fm['audits_sha256']:raise ValueError('Independent audit provenance differs')
  audits=json.loads(a.audits.read_text());test_audits=[r for r in audits if r['split']=='test']

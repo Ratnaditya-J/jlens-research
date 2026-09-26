@@ -33,7 +33,17 @@ def main():
  if text['identity']!=manifest['identity'] or text['endpoint']!=pr['endpoint'] or text['capture_manifest_sha256']!=manifest['capture_manifest_sha256'] or digest(a.text_baseline/'model.joblib')!=text['model_sha256']:raise ValueError('Wrong text baseline provenance')
  thresholds['text_probe']=text['threshold'];arms['text_probe']={'selected_C':text['selected']['C'],'validation_benign_n':text['validation_benign_n'],'validation_fpr':text['validation_false_positives']/text['validation_benign_n']}
  sources=[Path(__file__).parent/'probe_scoring.py',a.text_baseline/'lock.json',a.text_baseline/'model.joblib',cfgpath,a.features/'manifest.json',a.features/'features.npz',a.probes/'raw-probe.json',a.probes/'jspace-probe.json',scorepath,a.interpretations/'manifest.json',Path(__file__),Path(__file__).parent/'interpret_readers.py',Path(__file__).parent/'api_client.py',Path(__file__).parent/'probes.py']
- lock={'identity':manifest['identity'],'endpoint':pr['endpoint'],'thresholds':thresholds,'arms':arms,'source_hashes':{str(p.resolve()):digest(p) for p in sources},'interpreter_code_sha256':digest(Path(__file__).parent/'interpret_readers.py'),'scope':'Train-selected detectors, validation-only thresholds; no test performance accessed'}
+ interpreter=Path(__file__).parent/('local_reader_jobs.py' if 'reader_protocol' in im else 'interpret_readers.py')
+ if im['interpreter_code_sha256']!=digest(interpreter):raise ValueError('Interpreter source changed before calibration')
+ extra_sources={}
+ if 'reader_protocol' in im:
+  if im['reader_protocol_sha256']!=fingerprint(im['reader_protocol']):raise ValueError('Reader protocol identity changed')
+  for path,sha in im['source_hashes'].items():
+   if digest(path)!=sha:raise ValueError('Local reader provenance changed: '+path)
+   extra_sources[path]=sha
+ sources.extend([interpreter,Path(__file__).parent/'evaluate_comparison.py'])
+ lock={'identity':manifest['identity'],'endpoint':pr['endpoint'],'thresholds':thresholds,'arms':arms,'source_hashes':{**{str(p.resolve()):digest(p) for p in sources},**extra_sources},'interpreter_code_sha256':digest(interpreter),'scope':'Train-selected detectors, validation-only thresholds; no test performance accessed'}
+ if 'reader_protocol_sha256' in im:lock['reader_protocol_sha256']=im['reader_protocol_sha256']
  a.out.mkdir(parents=True,exist_ok=True)
  if (a.out/'lock.json').exists():raise ValueError('Calibration already locked')
  write_json(a.out/'lock.json',lock);print(json.dumps({'thresholds':thresholds,'arms':arms}),flush=True)

@@ -9,7 +9,7 @@ class LocalReaderTest(unittest.TestCase):
   self.assertEqual(final_text('{"score":1}<|im_end|><|im_end|>','qwen'),'{"score":1}')
  def test_missing_and_boolean_scores_count_as_failures(self):
   refs=[{'request_id':str(i),'reference_score':1} for i in range(3)]
-  results={'0':{'manifest_sha256':'m','status':'ok','judgment':{'score':1}},'1':{'manifest_sha256':'m','status':'ok','judgment':{'score':True}}}
+  results={'0':{'manifest_sha256':'m','status':'ok','judgment':{'score':1,'confidence':'high'}},'1':{'manifest_sha256':'m','status':'ok','judgment':{'score':True,'confidence':'high'}}}
   result=evaluate(refs,results,'m')
   self.assertEqual(result['valid_fraction'],1/3)
   self.assertEqual(result['exact_agreement_fraction'],1/3)
