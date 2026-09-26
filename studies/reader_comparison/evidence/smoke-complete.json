@@ -1,0 +1,7 @@
+{
+  "seconds": 542.8433113098145,
+  "config_sha256": "d8d2b291ff5b00f16fd9a74974bf132cb8e640ade4aa184318115f25b442b59d",
+  "states_sha256": "f4194679e1f3c545b51b43f0e86aa01a08c2e11543f623abdd2ae39bad6dcb9f",
+  "scope": "engineering semantic sanity only; greedy reader differs from final sampling protocol",
+  "peak_cuda_bytes": 56011569152
+}

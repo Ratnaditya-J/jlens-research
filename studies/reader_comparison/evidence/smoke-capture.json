@@ -1,0 +1,255 @@
+{
+  "config_sha256": "d8d2b291ff5b00f16fd9a74974bf132cb8e640ade4aa184318115f25b442b59d",
+  "transformers": "5.17.0",
+  "torch": "2.8.0+cu128",
+  "adapter_parameters": 512,
+  "records": [
+    {
+      "arm": "subject",
+      "item": 0,
+      "text": "The bird on the branch is a bright red cardinal. The bird is",
+      "ids": [
+        760,
+        11619,
+        383,
+        279,
+        8602,
+        369,
+        264,
+        9613,
+        2438,
+        54006,
+        13,
+        561,
+        11619,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120per",
+        "\u0120sitting",
+        "\u0120a",
+        "\u0120singing",
+        "\u0120facing"
+      ]
+    },
+    {
+      "arm": "subject",
+      "item": 1,
+      "text": "After several hours in the oven, the baker takes out a loaf of fresh bread. The food is",
+      "ids": [
+        5836,
+        3679,
+        3979,
+        303,
+        279,
+        22660,
+        11,
+        279,
+        73237,
+        4829,
+        680,
+        264,
+        73541,
+        314,
+        7478,
+        15530,
+        13,
+        561,
+        3487,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120hot",
+        "\u0120still",
+        "\u0120placed",
+        "\u0120too",
+        "\u0120initially"
+      ]
+    },
+    {
+      "arm": "subject",
+      "item": 2,
+      "text": "The astronomer points the telescope at the red planet Mars. The planet is",
+      "ids": [
+        760,
+        43773,
+        261,
+        3387,
+        279,
+        53952,
+        506,
+        279,
+        2438,
+        11247,
+        20403,
+        13,
+        561,
+        11247,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120",
+        "\u0120moving",
+        "\u0120a",
+        "\u0120about",
+        "\u0120in"
+      ]
+    },
+    {
+      "arm": "subject",
+      "item": 3,
+      "text": "A doctor explains that the patient has a broken arm and needs a cast. The injury is",
+      "ids": [
+        32,
+        10352,
+        14330,
+        421,
+        279,
+        8455,
+        682,
+        264,
+        10548,
+        6560,
+        321,
+        3749,
+        264,
+        6113,
+        13,
+        561,
+        10577,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120not",
+        "\u0120described",
+        "\u0120caused",
+        "\u0120a",
+        "\u0120due"
+      ]
+    },
+    {
+      "arm": "base",
+      "item": 0,
+      "text": "The bird on the branch is a bright red cardinal. The bird is",
+      "ids": [
+        760,
+        11619,
+        383,
+        279,
+        8602,
+        369,
+        264,
+        9613,
+        2438,
+        54006,
+        13,
+        561,
+        11619,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120per",
+        "\u0120a",
+        "\u0120sitting",
+        "\u0120facing",
+        "\u0120looking"
+      ]
+    },
+    {
+      "arm": "base",
+      "item": 1,
+      "text": "After several hours in the oven, the baker takes out a loaf of fresh bread. The food is",
+      "ids": [
+        5836,
+        3679,
+        3979,
+        303,
+        279,
+        22660,
+        11,
+        279,
+        73237,
+        4829,
+        680,
+        264,
+        73541,
+        314,
+        7478,
+        15530,
+        13,
+        561,
+        3487,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120hot",
+        "\u0120still",
+        "\u0120placed",
+        "\u0120very",
+        "\u0120too"
+      ]
+    },
+    {
+      "arm": "base",
+      "item": 2,
+      "text": "The astronomer points the telescope at the red planet Mars. The planet is",
+      "ids": [
+        760,
+        43773,
+        261,
+        3387,
+        279,
+        53952,
+        506,
+        279,
+        2438,
+        11247,
+        20403,
+        13,
+        561,
+        11247,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120",
+        "\u0120about",
+        "\u0120a",
+        "\u0120located",
+        "\u0120moving"
+      ]
+    },
+    {
+      "arm": "base",
+      "item": 3,
+      "text": "A doctor explains that the patient has a broken arm and needs a cast. The injury is",
+      "ids": [
+        32,
+        10352,
+        14330,
+        421,
+        279,
+        8455,
+        682,
+        264,
+        10548,
+        6560,
+        321,
+        3749,
+        264,
+        6113,
+        13,
+        561,
+        10577,
+        369
+      ],
+      "top_next_tokens": [
+        "\u0120described",
+        "\u0120not",
+        "\u0120painful",
+        "\u0120caused",
+        "\u0120serious"
+      ]
+    }
+  ],
+  "seconds": 127.02720546722412
+}

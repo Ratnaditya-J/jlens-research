@@ -6,7 +6,10 @@
     "32-cell native/fine-tuned Oracle smoke test complete",
     "Eight local contract/probe tests pass",
     "Paid OpenRouter route validated",
-    "Fresh-generation pilot and FP32 numerical validation launched on separate H200s"
+    "Fresh-generation pilot and FP32 numerical validation launched on separate H200s",
+    "FP32 numeric gate passed all four layers; wrapper max logit error zero",
+    "One-prompt full-dimensional engineering lens fit completed in 329 seconds",
+    "FP32 merge benchmark: 15.2 vs 20.2 tokens/sec; retain unmerged identity to avoid changing execution conditions"
   ],
   "pending": [
     "Confirm independently adjudicable subject behavior",
@@ -23,5 +26,10 @@
     "Greedy readouts; observed unsupported specifics",
     "Final FP32 subject execution still requires compatibility check"
   ],
-  "runtime": "Local watchdog state lives outside repo in work/reader-runtime; credential material is not included."
+  "runtime": "Local watchdog state lives outside repo in work/reader-runtime; credential material is not included.",
+  "decisions": [
+    "Keep ambiguous shutdown example out of confirmed positives despite two high-confidence API labels",
+    "Run existing Jordine EM-insecure adapter as a second behavioral candidate before selecting production subject",
+    "Retain partial, truncated and first-read-only episodes distinctly; they do not establish completed violations"
+  ]
 }

@@ -1,0 +1,138 @@
+{
+  "identity": {
+    "base": {
+      "repo": "Qwen/Qwen3.6-27B",
+      "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9"
+    },
+    "adapter": {
+      "repo": "LASR-Callum/qwen3.6-27b-difficult-advice-tulu-lora-20-80",
+      "revision": "b750dfaf9f8ae002418beab86ffff6631bb26127"
+    },
+    "adapter_enabled": true,
+    "adapter_merged": false,
+    "dtype": "float32",
+    "attention": "eager",
+    "tf32": false
+  },
+  "estimator": "target-position sum / source-position mean, pinned reference",
+  "rows": [
+    {
+      "layer": 20,
+      "predicted": -0.015866790484721956,
+      "sweep": [
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.01584160254708836,
+          "relative_error": 0.0015874626729235836
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.01587140365904186,
+          "relative_error": 0.00029065950428868934
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.01586702714426693,
+          "relative_error": 1.4915178679856278e-05
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": -0.01587900168261385,
+          "relative_error": 0.0007690154668391789
+        }
+      ],
+      "passed": true,
+      "seconds": 1.18747878074646
+    },
+    {
+      "layer": 36,
+      "predicted": 0.013080624047086724,
+      "sweep": [
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.013080938663105847,
+          "relative_error": 2.4051486458670367e-05
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.01307612237319953,
+          "relative_error": 0.0003441482509542359
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.013081412491846857,
+          "relative_error": 6.027214267759497e-05
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": 0.013078846679587834,
+          "relative_error": 0.00013587788262183295
+        }
+      ],
+      "passed": true,
+      "seconds": 1.0512359142303467
+    },
+    {
+      "layer": 48,
+      "predicted": -0.02241654295192788,
+      "sweep": [
+        {
+          "epsilon": 0.03,
+          "finite_difference": -0.02243331634746386,
+          "relative_error": 0.0007477002185580295
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": -0.022417990897338588,
+          "relative_error": 6.458854485832278e-05
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": -0.022415831416728007,
+          "relative_error": 3.174152238372998e-05
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": -0.022416124648562692,
+          "relative_error": 1.866047615308989e-05
+        }
+      ],
+      "passed": true,
+      "seconds": 1.0265991687774658
+    },
+    {
+      "layer": 60,
+      "predicted": 0.006766525795590575,
+      "sweep": [
+        {
+          "epsilon": 0.03,
+          "finite_difference": 0.00676193027755272,
+          "relative_error": 0.0006791547356325678
+        },
+        {
+          "epsilon": 0.1,
+          "finite_difference": 0.006763329908791608,
+          "relative_error": 0.0004723083744171109
+        },
+        {
+          "epsilon": 0.3,
+          "finite_difference": 0.006766479349117569,
+          "relative_error": 6.864153689693485e-06
+        },
+        {
+          "epsilon": 1.0,
+          "finite_difference": 0.0067664968629353416,
+          "relative_error": 4.275850873469869e-06
+        }
+      ],
+      "passed": true,
+      "seconds": 1.0000314712524414
+    }
+  ],
+  "complete": true,
+  "wrapper_logit_max_error": 0.0,
+  "passed": true,
+  "peak_cuda_bytes": 112095758336,
+  "source_code_revision": "33fd09b",
+  "scope": "One 64-token generic context, one random projection per layer; engineering gate only."
+}

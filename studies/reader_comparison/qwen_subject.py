@@ -8,7 +8,8 @@ class QwenSubject:
         import torch
         from transformers import AutoModelForImageTextToText, AutoTokenizer
         from huggingface_hub import snapshot_download
-        from peft import PeftModel
+        from peft import PeftModel, get_peft_model_state_dict
+        from safetensors import safe_open
         self.config = config
         torch.backends.cuda.matmul.allow_tf32=False
         torch.backends.cudnn.allow_tf32=False
@@ -17,14 +18,23 @@ class QwenSubject:
         self.tokenizer=AutoTokenizer.from_pretrained(base)
         raw=AutoModelForImageTextToText.from_pretrained(base,dtype=getattr(torch,dtype),device_map='cuda',attn_implementation='eager')
         self.model=PeftModel.from_pretrained(raw,adapter,is_trainable=False).eval()
+        loaded=get_peft_model_state_dict(self.model)
+        with safe_open(str(Path(adapter)/'adapter_model.safetensors'),framework='pt',device='cpu') as source:
+            if set(source.keys())!=set(loaded):raise ValueError('Adapter tensor key mismatch')
+            for name in source.keys():
+                if not torch.equal(loaded[name].detach().cpu(),source.get_tensor(name).to(loaded[name].dtype)):
+                    raise ValueError(f'Adapter tensor did not load exactly: {name}')
+        if not any(torch.count_nonzero(v).item() for k,v in loaded.items() if 'lora_B' in k):raise ValueError('Subject adapter is inert')
+        merged=config.get('execution',{}).get('subject_adapter_merged',False)
+        if merged:self.model=self.model.merge_and_unload(safe_merge=True).eval()
         for p in self.model.parameters():p.requires_grad_(False)
-        self.base=self.model.get_base_model()
+        self.base=self.model if merged else self.model.get_base_model()
         self.decoder=self.base.model.language_model
         self.layers=self.decoder.layers
         self.n_layers=len(self.layers)
         self.d_model=self.base.config.text_config.hidden_size
         assert self.n_layers==64 and self.d_model==5120
-        self.identity={'base':config['base'],'adapter':config['subject_adapter'],'adapter_enabled':True,'adapter_merged':False,'dtype':dtype,'attention':'eager','tf32':False}
+        self.identity={'base':config['base'],'adapter':config['subject_adapter'],'adapter_enabled':True,'adapter_merged':merged,'dtype':dtype,'attention':'eager','tf32':False}
 
     def encode(self,text,*,max_length=128):
         return self.tokenizer(text,return_tensors='pt',truncation=True,max_length=max_length).input_ids.cuda()

@@ -12,13 +12,13 @@ def main():
     import torch
     from jlens.hooks import ActivationRecorder
     from jlens.fitting import valid_position_mask
-    p=argparse.ArgumentParser();p.add_argument('--config',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--config',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--seq-len',type=int,default=64);a=p.parse_args()
     a.out.mkdir(parents=True,exist_ok=True)
     cfg=json.loads(a.config.read_text());subject=QwenSubject(cfg,dtype='float32')
     torch.manual_seed(20260926)
     text='A team of researchers observed the growth of plants in several environments. They recorded temperature, rainfall, soil moisture, sunlight, and the height of each plant every morning. After collecting measurements for several months, the team compared the growth rates and considered possible explanations for the differences. The researchers then designed another experiment to test whether changes in sunlight caused the observed differences.'
-    ids=subject.encode(text,max_length=64);valid=valid_position_mask(ids.shape[1]).cuda()
-    report={'identity':subject.identity,'estimator':'target-position sum / source-position mean, pinned reference','rows':[],'complete':False}
+    ids=subject.encode(text*4,max_length=a.seq_len);valid=valid_position_mask(ids.shape[1]).cuda()
+    report={'identity':subject.identity,'seq_len':ids.shape[1],'input_ids':ids[0].tolist(),'estimator':'target-position sum / source-position mean, pinned reference','rows':[],'complete':False}
     with torch.no_grad(), ActivationRecorder(subject.layers,at=[63]) as rec:
         subject.forward(ids)
         wrapped=subject.unembed(rec.activations[63][:,-1])

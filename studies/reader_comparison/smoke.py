@@ -28,6 +28,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--config', type=Path, required=True)
     p.add_argument('--out', type=Path, required=True)
+    p.add_argument('--subject-dtype',choices=['bfloat16','float32'],default='bfloat16')
     args = p.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
     cfg = json.loads(args.config.read_text())
@@ -38,7 +39,7 @@ def main():
     adapter = snapshot_download(repo_id=cfg['subject_adapter']['repo'], revision=cfg['subject_adapter']['revision'], allow_patterns=['adapter_config.json','adapter_model.safetensors'])
     oracle = snapshot_download(repo_id=cfg['oracle']['repo'], revision=cfg['oracle']['revision'], allow_patterns=[cfg['oracle']['subfolder']+'/*'])
     tok = AutoTokenizer.from_pretrained(base)
-    model = AutoModelForImageTextToText.from_pretrained(base, dtype=torch.bfloat16, device_map='cuda', attn_implementation='eager')
+    model = AutoModelForImageTextToText.from_pretrained(base, dtype=getattr(torch,args.subject_dtype), device_map='cuda', attn_implementation='eager')
     model = PeftModel.from_pretrained(model, adapter, is_trainable=False).eval()
     base_model = model.get_base_model()
     blocks = base_model.model.language_model.layers
@@ -78,7 +79,7 @@ def main():
     del model, base_model, blocks, output
     gc.collect(); torch.cuda.empty_cache()
     torch.save(states,args.out/'states.pt')
-    write_json(args.out/'capture.json',{'config_sha256':digest(args.config),'transformers':transformers.__version__,'torch':torch.__version__,'adapter_parameters':len(matched),'records':records,'seconds':time.time()-started})
+    write_json(args.out/'capture.json',{'config_sha256':digest(args.config),'subject_dtype':args.subject_dtype,'transformers':transformers.__version__,'torch':torch.__version__,'adapter_parameters':len(matched),'records':records,'seconds':time.time()-started})
     # A separate unmodified base + Oracle. Subject weights are never merged into it.
     reader = AutoModelForCausalLM.from_pretrained(base,dtype=torch.bfloat16,device_map='cuda',attn_implementation='eager')
     reader = PeftModel.from_pretrained(reader,str(Path(oracle)/cfg['oracle']['subfolder']),is_trainable=False).eval()
