@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "endpoint": "end_prompt",
+      "lock_sha256": "ed041750b651c4cd2be2763f1d6a6437a71be212628d1a4c6fac7ab78b97fac5",
+      "n_train_validation": 381,
+      "max_abs_difference": 0.0,
+      "threshold_flags_equal": true,
+      "warnings": []
+    },
+    {
+      "endpoint": "before_action_32",
+      "lock_sha256": "12bafabaf79ce2e0295be95eb9f39f74d7876f34702ba474d1352fb1b71c84e3",
+      "n_train_validation": 381,
+      "max_abs_difference": 0.0,
+      "threshold_flags_equal": true,
+      "warnings": []
+    },
+    {
+      "endpoint": "before_action_64",
+      "lock_sha256": "976203871a5e84acfa8baf182494360f2e5397eee2668290cc66e2cb2ccf79b9",
+      "n_train_validation": 381,
+      "max_abs_difference": 0.0,
+      "threshold_flags_equal": true,
+      "warnings": []
+    }
+  ],
+  "scope": "No test scoring. Batch-versus-single consistency at the frozen validation threshold."
+}

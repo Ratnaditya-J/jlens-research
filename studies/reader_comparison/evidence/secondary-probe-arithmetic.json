@@ -1,0 +1,46 @@
+{
+  "numpy": "2.1.2",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "rows": [
+    {
+      "endpoint": "end_prompt",
+      "probe_sha256": "e0e73c4622745ed19e1b745094e8202841651268929d3e2f38aac0b49252e32d",
+      "train_validation_rows": 381,
+      "max_abs_score_difference": 4.933964348197151e-11,
+      "threshold_flags_equal_after_registered_rounding": true,
+      "finite": true,
+      "warnings": [
+        "divide by zero encountered in matmul",
+        "invalid value encountered in matmul",
+        "overflow encountered in matmul"
+      ]
+    },
+    {
+      "endpoint": "before_action_32",
+      "probe_sha256": "a4c634d29df7e4cc73423ed3aad54f9bd65a48a8ef37b6bef9025fa88e8205e4",
+      "train_validation_rows": 381,
+      "max_abs_score_difference": 4.999289870966095e-11,
+      "threshold_flags_equal_after_registered_rounding": true,
+      "finite": true,
+      "warnings": [
+        "divide by zero encountered in matmul",
+        "invalid value encountered in matmul",
+        "overflow encountered in matmul"
+      ]
+    },
+    {
+      "endpoint": "before_action_64",
+      "probe_sha256": "607c24bfb16ba0e74c409b5ddc3d5514b2326aab80dc9631ec326b7c20c89b6d",
+      "train_validation_rows": 381,
+      "max_abs_score_difference": 4.976059841954594e-11,
+      "threshold_flags_equal_after_registered_rounding": true,
+      "finite": true,
+      "warnings": [
+        "divide by zero encountered in matmul",
+        "invalid value encountered in matmul",
+        "overflow encountered in matmul"
+      ]
+    }
+  ],
+  "scope": "Train/validation-only selected exported probe scores compared against math.fsum. Demonstrates finite and consistent results despite local Accelerate matmul warnings for these inputs; does not certify all BLAS operations or test performance."
+}
