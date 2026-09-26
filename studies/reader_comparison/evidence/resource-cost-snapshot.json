@@ -1,0 +1,55 @@
+{
+  "as_of": "2026-09-26T19:14:09+00:00",
+  "scope": "Only four recorded Qwen-comparison pods created on September26, using saved lifecycle records and quoted hourly rates. This snapshot does not independently query the billing service. It excludes earlier GPT-OSS GPU work, storage, tax, billing rounding and provider credits. Prorated rate-times-elapsed estimate, not a reconciled invoice.",
+  "pods": [
+    {
+      "pod_id": "dryseyiwdxblm2",
+      "name": "jlens-deliberation-pilot",
+      "created_at": "2026-09-26T17:23:37.080444+00:00",
+      "interval_end": "2026-09-26T17:52:07.261279+00:00",
+      "termination_recorded": true,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 0.47505023194444446,
+      "estimated_compute_usd": 2.180480564625,
+      "state_file_sha256": "e2b8b1833a7f51dc1b27870f6b53a4964afbd080cc6810b7c167239b559e2242"
+    },
+    {
+      "pod_id": "jdz5h96a4a0c16",
+      "name": "jlens-reader-numerics-fit",
+      "created_at": "2026-09-26T15:51:38.761232+00:00",
+      "interval_end": "2026-09-26T19:14:09+00:00",
+      "termination_recorded": false,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 3.3750663244444445,
+      "estimated_compute_usd": 15.4915544292,
+      "state_file_sha256": "3391e62c36076d1c3096704fa38d144cc784b65a85da9dde79fb025ca3ad70de"
+    },
+    {
+      "pod_id": "ysetum174u1h3k",
+      "name": "jlens-reader-compatibility",
+      "created_at": "2026-09-26T15:40:47.311404+00:00",
+      "interval_end": "2026-09-26T19:14:09+00:00",
+      "termination_recorded": false,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 3.55602461,
+      "estimated_compute_usd": 16.3221529599,
+      "state_file_sha256": "ab1d2ba5ef83a4a1d2b3ba7c80a8a454665ad2124ec8a208e2c762152cf3a233"
+    },
+    {
+      "pod_id": "5voua1q9g0136h",
+      "name": "jlens-generic-shard3",
+      "created_at": "2026-09-26T17:26:06.815283+00:00",
+      "interval_end": "2026-09-26T19:14:09+00:00",
+      "termination_recorded": false,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 1.8006068658333334,
+      "estimated_compute_usd": 8.264785514175,
+      "state_file_sha256": "cafe8ef04a519c5b5c316fdf0cb6207cd8f05d900c3c9cb53195e3542dd85d69"
+    }
+  ],
+  "estimated_compute_total_usd": 42.2589734679,
+  "active_hourly_compute_usd": 13.77,
+  "original_project_openrouter_cache_cost_usd": 150.60393375,
+  "new_openrouter_reservations": 0,
+  "openrouter_status": "paused_for_cost_control"
+}
