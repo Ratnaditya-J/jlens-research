@@ -1,0 +1,28 @@
+{
+  "kind": "bounded-hosted-medium20-reader-v1",
+  "model": {
+    "repo": "openai/gpt-oss-20b",
+    "family": "gptoss",
+    "endpoint": "deepinfra/bf16",
+    "provider": "DeepInfra",
+    "quantization": "bf16",
+    "prompt_price": 0.05,
+    "completion_price": 0.2,
+    "response_models": [
+      "openai/gpt-oss-20b"
+    ]
+  },
+  "max_new_tokens": 4096,
+  "temperature": 0,
+  "reasoning_effort": "medium",
+  "response_format": "json_object",
+  "workers": 4,
+  "allow_fallbacks": false,
+  "evidence_encoding": "json-literal-delimiters-v1",
+  "code_sha256": "f485759ac78bd1c9acd52530960c86ade08a10f3e9b43b1de55f7d38dc7245e0",
+  "transport_code_sha256": "3b2a49fd19139f19b44d6cd21ce5e8c5f3f690eabbfebc300678202227856e33",
+  "budget_guard_code_sha256": "bdbe51ab36579b278b41826646e28760da2a2d2ad28cbaee13b5836b554f87c0",
+  "evidence_encoder_code_sha256": "619ad01128509abf5fc7c209995adc5cf7688a4ec2bc7691749de1c67fe51ed1",
+  "decoder_code_sha256": "ec502b3488913f2699bad7e19544ab8c8664e43bd58f3e49221d5eac62493cc3",
+  "scope": "Text evidence only. No subject states, outcome labels, probe scores or other judge judgments. Hosted weights cannot be hash-pinned; exact provider responses are retained. Request allowlist and budget must be separately authorized for each batch."
+}
