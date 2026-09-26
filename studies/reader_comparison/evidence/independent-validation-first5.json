@@ -1,0 +1,15 @@
+{
+  "phase": "validation",
+  "endpoints": [
+    "before_action",
+    "during_action",
+    "after_action",
+    "end_prompt",
+    "before_action_32"
+  ],
+  "unique_requests": 834,
+  "jobs_sha256": "bdfd37e34df994ae29a81e7ec5b8729fb51f7ac8db140abfb5255dd7f4536a93",
+  "preparation_manifest_sha256": "2cda6ecab68737c6fab317e0a7451cd11382f2ac1aebfd6805db523e0a1618ff",
+  "accepted_reader_gate_sha256": "f19f08df8baf8ebabc4a0783cfd5bc4729ea9c4cab050566555698ec5082b997",
+  "scope": "Summary-independent requests only, using exact full-review payloads. Test requests excluded. Cache will be reused with the identical accepted reader execution; complete comparisons still require both judges and summaries."
+}
