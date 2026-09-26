@@ -36,6 +36,7 @@ def main():
     for name in ('repo', 'reader', 'gates', 'summary-jobs', 'out'):
         p.add_argument('--'+name, type=Path, required=True)
     p.add_argument('--hours', type=float, default=4)
+    p.add_argument('--second-reader-family', choices=['qwen', 'mistral'], default='qwen')
     a = p.parse_args()
     prepared = json.loads((a.summary_jobs/'manifest.json').read_text())
     if (prepared.get('study'), prepared['dataset'], prepared['phase'], prepared['stage']) != ('archived-gptoss-local-extension-v1', 'fresh', 'validation', 'summaries'):
@@ -54,7 +55,7 @@ def main():
     summary = a.out/'summaries.json'
     commands = [
         [sys.executable, str(scripts/'collect_local_readers.py'), '--jobs', str(a.summary_jobs),
-         '--readers', str(a.reader), '--out', str(summary)],
+         '--readers', str(a.reader), '--second-reader-family', a.second_reader_family, '--out', str(summary)],
         [sys.executable, str(scripts/'legacy_local_jobs.py'), '--repo', str(a.repo), '--dataset', 'fresh',
          '--phase', 'validation', '--stage', 'reviews', '--summaries', str(summary), '--out', str(a.out/'reviews')]]
     for index, command in enumerate(commands):
