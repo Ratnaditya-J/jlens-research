@@ -1,0 +1,7 @@
+{
+  "cumulative_limit_usd": 2,
+  "cumulative_spent_usd": 0.614763,
+  "reserved_uncertain_usd": 0.003349,
+  "ledger_status": "paused_after_reader_audit",
+  "ledger_sha256": "c85d578f21cfbb732d5755bb52d2fe6c373ef6b4a2f23e337b2600eb016bf7ae"
+}
