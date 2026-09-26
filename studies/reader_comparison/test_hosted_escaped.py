@@ -10,6 +10,29 @@ from contracts import fingerprint
 
 
 class EscapedOutputTest(unittest.TestCase):
+    def test_collector_binds_exact_transport_and_serialization(self):
+        from hosted_text_reader_escaped import execution_manifest
+        from collect_local_readers import execution_source
+        manifest=execution_manifest('deepseek32escaped')
+        self.assertEqual(execution_source(manifest).name,'hosted_text_reader_escaped.py')
+        for key,value in [('transport_code_sha256','wrong'),('output_encoding','unescaped'),('reserved_output_token_allowance',4096)]:
+            with self.subTest(key=key),self.assertRaisesRegex(ValueError,'provenance differs'):
+                execution_source({**manifest,key:value})
+
+    def test_coverage_revalidates_escaped_reader_raw_scores(self):
+        from hosted_text_reader_escaped import execution_manifest
+        from audit_hosted_coverage import verify_qualification
+        from test_hosted_coverage import HostedCoverageTest
+        from smoke import write_json
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch('test_hosted_coverage.execution_manifest',return_value=execution_manifest('deepseek32escaped')):
+                args=HostedCoverageTest().fixture(Path(tmp))
+            verify_qualification(*args)
+            result=next((args[0]/'results').glob('*.json'))
+            data=json.loads(result.read_text());data['judgment']['score']=1;write_json(result,data)
+            with self.assertRaisesRegex(ValueError,'Raw qualification judgments fail'):
+                verify_qualification(*args)
+
     def test_input_semantics_preserved_and_request_identity_changes(self):
         evidence={'prefix':'<think>\n</think>', 'tokens':['<|im_end|>','>']}
         old=lowcost_payload('deepseek32','judge',evidence)

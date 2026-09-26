@@ -58,7 +58,7 @@ def execution_source(manifest):
         if digest(encoder) != manifest['evidence_encoder_code_sha256']:
             raise ValueError('Evidence encoder differs from recorded execution')
     candidates = [Path(__file__).with_name(name) for name in
-                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py', 'hosted_text_reader.py', 'hosted_text_reader_medium.py')]
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py', 'hosted_text_reader.py', 'hosted_text_reader_medium.py', 'hosted_text_reader_escaped.py')]
     matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
     if len(matches) != 1:
         raise ValueError('Reader execution source is missing or differs from its recorded hash')
@@ -70,6 +70,10 @@ def execution_source(manifest):
         from hosted_text_reader_medium import execution_manifest
         if manifest != execution_manifest('gptoss20medium'):
             raise ValueError('Hosted medium transport, configuration or decoder provenance differs')
+    if matches[0].name == 'hosted_text_reader_escaped.py':
+        from hosted_text_reader_escaped import execution_manifest
+        if manifest != execution_manifest('deepseek32escaped'):
+            raise ValueError('Hosted escaped-output transport, configuration or decoder provenance differs')
     return matches[0]
 
 
@@ -109,6 +113,8 @@ def main():
         source_files.append(Path(__file__).with_name('budgeted_api_client.py'))
     if any(manifest.get('kind') == 'bounded-hosted-medium20-reader-v1' for manifest, _ in pairs):
         source_files.append(Path(__file__).with_name('budgeted_hosted_medium.py'))
+    if any(manifest.get('kind') == 'bounded-hosted-deepseek32escaped-reader-v1' for manifest, _ in pairs):
+        source_files.append(Path(__file__).with_name('budgeted_hosted_escaped.py'))
     if any('evidence_encoder_code_sha256' in manifest for manifest, _ in pairs):
         source_files.append(Path(__file__).with_name('literal_evidence.py'))
     source_files.extend(Path(path) for path in prepared.get('source_hashes', {}))
