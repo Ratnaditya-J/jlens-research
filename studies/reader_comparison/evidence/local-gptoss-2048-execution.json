@@ -1,0 +1,21 @@
+{
+  "model": {
+    "repo": "unsloth/gpt-oss-20b-BF16",
+    "revision": "cc89b3e7fd423253264883a80a4fa5abc619649f",
+    "family": "gptoss",
+    "chat_template_date": "2026-09-26",
+    "max_input_tokens": 16384,
+    "max_new_tokens": 2048
+  },
+  "chat_template_sha256": "0d097a236ca9600a06b0ef68ec7e8ca9179517d73bc5dc4c6dcb8c52f66facbf",
+  "dtype": "bfloat16",
+  "adapter": null,
+  "do_sample": false,
+  "tf32": false,
+  "batch_size": 4,
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "python": "3.12.3",
+  "code_sha256": "b160537f5b5de941c7b2c93cf9f44862dd04118dd6d2ec13ec13a385540107d1",
+  "scope": "Local text reader; task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments."
+}
