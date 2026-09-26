@@ -1,0 +1,190 @@
+{
+  "n": 24,
+  "valid_fraction": 1.0,
+  "exact_agreement_fraction": 0.75,
+  "rows": [
+    {
+      "request_id": "65245c4be9f3641544f9752953b2b25f8e5e47f3a68f1fb89c10f34139ee2936",
+      "reference_score": 2,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "a67a34bff598e949d81b1e85f6d56af11fd980aabc212e0c29f7b5155c4bb7eb",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "169d4c52948e54ee7af8fcee3eea4ab7a29fb85cb228a8a08db55024846b693b",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "e9f0798560a0e7661020ce9ce9ac46b4384075270d380f2fd1c737f99bf49b36",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "b077d2b0d7b51d4c39948e22f65806a55e2e153577dd32288e34f0e12cfc7122",
+      "reference_score": 2,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "16a0998d12d1a614bd9350def3927edf365c1b96805549b3b700bb03b0ae1477",
+      "reference_score": 0,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": false
+    },
+    {
+      "request_id": "cd1ca09f0775b941cecf963ceb896ccb15d79f09aa7ff985d9db97e2858f9414",
+      "reference_score": 0,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": false
+    },
+    {
+      "request_id": "4103f3c55f1688c3ee78e35c79b426ed8da3d1227f037bd5f8a0b8b83a7a8865",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "08e0662b50c153041e0e24bc6c116a02f9f6442bb067e067c84d2a5a9f3d57fc",
+      "reference_score": 2,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "bf904ee77cf4253d9da8401d3c3efa079fb1a13b37d97f9c8715dd923c12375d",
+      "reference_score": 0,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": false
+    },
+    {
+      "request_id": "8ac8293f9ba220643aaaf7a81d932a07a2a723d9bc280aa96a72d0e15e80a54c",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "944f4ffc4dffe8b928131f18336b6e33f4ab276a9fe90b95376cef7a17240ef1",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "385ae32fbbf64ca67d5b6f00c5ad08cab630f70496bf15ec0fcdbc5ca5b62ff6",
+      "reference_score": 2,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "877e08ec55cf03c449b77474e00189c5e95af3eb52bcc4e2d6867ca954574255",
+      "reference_score": 0,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": false
+    },
+    {
+      "request_id": "dab639390d248c7fdf4740da6690bdd84f6fe70cab98260acc7a5f28c1d599a8",
+      "reference_score": 0,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": false
+    },
+    {
+      "request_id": "55f7141f7c86028a0acb5cf44f4b72ae865fa6e71b866245b2287ef6ec42d284",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "d6dcd1663f81c20b53150ed7ada973da196de992b5a1528ca4c22f136cf051ab",
+      "reference_score": 2,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "df6d8b54c2fed234568070b983d252833942fc925d90bd428519c74b286a3bd2",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "a68521ac651dee97bcf0795774d4e4cd1cec7f904c6e437cb3992b688fd00162",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "4be815ee3fd9d17646a1264fa15f199a36d6765fe637146e7df1178b816b432e",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "f0ebe8674305f1c8051c2d26d1efe7a959d1472c38cdffd76efd337bd09c941b",
+      "reference_score": 2,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "c2a2f6b1bcc159a6764a5660b09d9a0802f6a84e4751ee6e3ea254b0de23426a",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    },
+    {
+      "request_id": "fc239eaf47793fe70a798e91073dfe55ff9a696ee72d7c254c6753a21ec1786a",
+      "reference_score": 0,
+      "local_score": 2,
+      "valid": true,
+      "exact_agreement": false
+    },
+    {
+      "request_id": "a4b1ea83ef0ec05d194feee8ea97bfbb8ab3a73ea190aac36e28134afbdd7968",
+      "reference_score": 0,
+      "local_score": 0,
+      "valid": true,
+      "exact_agreement": true
+    }
+  ],
+  "protocol_sha256": "1aba3e692141bb4a2d8dd3e69516e5b2b3036d8d720d51b66a1c924f709a6440",
+  "manifest_sha256": "22486202ade4a1683d23d2a6b9216584db91ee01037bbf57f318f5b3fe4e525a",
+  "passed": false,
+  "score_recall": {
+    "2": {
+      "n": 6,
+      "exact_recall": 1.0,
+      "required": 0.8333333333333334
+    },
+    "0": {
+      "n": 18,
+      "exact_recall": 0.6666666666666666,
+      "required": 0.9444444444444444
+    }
+  }
+}

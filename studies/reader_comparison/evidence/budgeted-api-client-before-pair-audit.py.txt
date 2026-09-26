@@ -23,9 +23,6 @@ def reserve(path,amount_usd,request_sha):
  with file_lock(str(path)+'.lock'):
   ledger=json.loads(path.read_text())
   if ledger['status']!='active':raise RuntimeError('OpenRouter inference is paused by the project cost policy')
-  if 'active_request_allowlist' in ledger:
-   if request_sha not in ledger['active_request_allowlist']:raise RuntimeError('Request is outside the active bounded audit')
-   if any(r['request_sha256']==request_sha for r in ledger['records'].values()):raise RuntimeError('Audit request already attempted; automatic retries are disabled')
   spent=ledger.get('spent_microusd',0);held=ledger.get('reserved_microusd',0);limit=math.floor(ledger['additional_limit_usd']*1_000_000)
   if spent+held+amount>limit:raise RuntimeError('Additional OpenRouter budget exhausted; use local inference')
   token=uuid.uuid4().hex;ledger['reserved_microusd']=held+amount;ledger['records'][token]={'request_sha256':request_sha,'reserved_microusd':amount,'status':'reserved','at':time.time()};write_json(path,ledger)
@@ -74,58 +71,3 @@ def request_json(model,system,evidence,cache,credential_file,*,budget_file,max_t
   if raw.get('model')!=model:raise ValueError('Resolved model changed')
   judgment=parse_json_reply(raw['choices'][0]['message']['content'])
   result={'request_sha256':key,'requested_model':model,'judgment':judgment,'raw_response':raw,'budget_reservation':token};write_json(path,result);return result
-
-# Separate, explicitly registered qualification candidates. Original premium and
-# Gemini request construction remains unchanged above.
-LOW_COST_CANDIDATES={
- 'gptoss120':{'repo':'openai/gpt-oss-120b','family':'gptoss','endpoint':'deepinfra/bf16',
-              'provider':'DeepInfra','quantization':'bf16','prompt_price':.1,'completion_price':.3,
-              'response_models':['openai/gpt-oss-120b']},
- 'deepseek32':{'repo':'deepseek/deepseek-v3.2','family':'deepseek','endpoint':'siliconflow/fp8',
-               'provider':'SiliconFlow','quantization':'fp8','prompt_price':.3,'completion_price':.5,
-               'response_models':['deepseek/deepseek-v3.2','deepseek/deepseek-v3.2-20251201']},
-}
-
-def lowcost_payload(candidate,system,evidence):
- from literal_evidence import literal_json
- c=LOW_COST_CANDIDATES[candidate]
- return {'model':c['repo'],'messages':[{'role':'system','content':system},
-          {'role':'user','content':literal_json(evidence)}],
-         'temperature':0,'max_tokens':2048,'reasoning':{'effort':'medium'},
-         'response_format':{'type':'json_object'},
-         'provider':{'only':[c['endpoint']],'order':[c['endpoint']],
-                     'allow_fallbacks':False,'require_parameters':True,
-                     'quantizations':[c['quantization']],
-                     'max_price':{'prompt':c['prompt_price'],'completion':c['completion_price']}}}
-
-def lowcost_reservation(payload):
- price=payload['provider']['max_price']
- byte_count=sum(len(m['content'].encode('utf-8')) for m in payload['messages'])
- return ((2*byte_count+2048)*price['prompt']+2*payload['max_tokens']*price['completion'])/1e6
-
-def request_lowcost_json(candidate,system,evidence,cache,credential_file,*,budget_file):
- c=LOW_COST_CANDIDATES[candidate];payload=lowcost_payload(candidate,system,evidence)
- key=fingerprint(payload);cache=Path(cache);cache.mkdir(parents=True,exist_ok=True);path=cache/(key+'.json')
- with file_lock(cache/(key+'.lock')):
-  if path.exists():
-   result=json.loads(path.read_text())
-   if result['request_sha256']!=key or result['requested_model']!=c['repo']:raise ValueError('Changed low-cost cache identity')
-   return result
-  # This transport cannot run under a generic active budget: exact requests must
-  # be registered by the audit coordinator, and reserve enforces single attempt.
-  with file_lock(str(budget_file)+'.lock'):
-   ledger=json.loads(Path(budget_file).read_text())
-   if key not in ledger.get('active_request_allowlist',[]):raise RuntimeError('Unregistered low-cost request')
-  token=reserve(budget_file,lowcost_reservation(payload),key)
-  credential=json.loads(Path(credential_file).read_text())['OPENROUTER_API_KEY']
-  req=urllib.request.Request('https://openrouter.ai/api/v1/chat/completions',data=json.dumps(payload).encode(),headers={'Authorization':'Bearer '+credential,'Content-Type':'application/json'})
-  with urllib.request.urlopen(req,timeout=180) as response:raw=json.load(response)
-  write_json(cache/(key+'-raw-'+str(time.time_ns())+'.json'),{'request':payload,'response':raw,'budget_reservation':token})
-  cost=raw.get('usage',{}).get('cost')
-  if cost is None:raise RuntimeError('Unknown charge; reservation retained')
-  settle(budget_file,token,float(cost),raw.get('id'))
-  if raw.get('model') not in c['response_models'] or raw.get('provider')!=c['provider']:raise ValueError('Resolved model or provider differs from registered execution')
-  if raw['choices'][0].get('finish_reason')!='stop':raise ValueError('Non-stop finish reason')
-  judgment=parse_json_reply(raw['choices'][0]['message']['content'])
-  result={'request_sha256':key,'requested_model':c['repo'],'judgment':judgment,
-          'raw_response':raw,'budget_reservation':token};write_json(path,result);return result
