@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 from smoke import write_json,digest
 from contracts import fingerprint
-from metrics import operating_point,operating_point_with_coverage,paired_cluster_difference,disagreement_table
+from metrics import operating_point,operating_point_with_cluster_uncertainty,paired_cluster_difference,disagreement_table
 from forecast_limits import empirical_limits
 from probe_scoring import score_row,ALGORITHM
 from individual_readers import evaluate_individuals
@@ -60,13 +60,13 @@ def main():
  def panel(dataset):
   metrics={}
   for arm in arms:
-   metrics[arm]=operating_point_with_coverage([r['label'] for r in dataset],[r['scores'].get(arm) for r in dataset],thresholds[arm])
+   metrics[arm]=operating_point_with_cluster_uncertainty([r['label'] for r in dataset],[r['scores'].get(arm) for r in dataset],[r['family_id'] for r in dataset],thresholds[arm])
   return metrics
  report={'identity':fm['identity'],'endpoint':lock['endpoint'],'lock_sha256':digest(a.lock),'total_test_requested':len(test_audits),'test_action_unavailable':sum(r['label'] is None for r in test_audits),'test_not_captured_or_read':len(test_audits)-len(rows),'primary_n':len(primary),'control_n':len(controls),'primary_families':len({r['family_id'] for r in primary}),'metrics':panel(primary),'authorized_controls':panel(controls),'strict_review_agreement_metrics':panel([r for r in primary if r['strict_confirmation']]),'strict_review_agreement_n':sum(r['strict_confirmation'] for r in primary),'forecast_limits':empirical_limits(primary),'comparisons':{},'scope':'Descriptive controlled policy-action experiment on one checkpoint. Four held-out operational families provide limited population precision. Independent reviewers validate policy, not hidden intent. Secondary contrasts are exploratory.'}
  comparisons=[('raw_probe','text_probe'),('oracle_context','j_summary_context'),('raw_probe','jspace_probe'),('oracle_context','raw_probe'),('j_summary_context','raw_probe'),('oracle_context','context_only'),('j_summary_context','context_only'),('oracle_context','oracle_shuffled_context'),('j_summary_context','j_summary_shuffled_context'),('oracle','j_summary'),('j_summary','j_tokens')]
  for aa,bb in comparisons:
   paired=[r for r in primary if r['scores'].get(aa) is not None and r['scores'].get(bb) is not None];y=[r['label'] for r in paired];sa=[r['scores'][aa] for r in paired];sb=[r['scores'][bb] for r in paired];groups=[r['family_id'] for r in paired]
-  item={'paired_n':len(paired),'table':disagreement_table(y,{aa:[s>=thresholds[aa] for s in sa],bb:[s>=thresholds[bb] for s in sb]})}
+  item={'paired_n':len(paired),'paired_positive':sum(label==1 for label in y),'paired_benign':sum(label==0 for label in y),'unavailable_pair_n':len(primary)-len(paired),'paired_operating_points':{aa:operating_point(y,sa,thresholds[aa]),bb:operating_point(y,sb,thresholds[bb])},'table':disagreement_table(y,{aa:[s>=thresholds[aa] for s in sa],bb:[s>=thresholds[bb] for s in sb]})}
   if len(set(groups))>=2:item['bootstrap']=paired_cluster_difference(y,sa,sb,groups,thresholds[aa],thresholds[bb])
   if bb=='raw_probe' and aa in lock['arms'] and 'matched_raw_probe_threshold' in lock['arms'][aa]:item['matched_validation_specificity_raw_probe']=operating_point(y,sb,lock['arms'][aa]['matched_raw_probe_threshold'])
   report['comparisons'][aa+' minus '+bb]=item

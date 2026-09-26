@@ -1,4 +1,6 @@
 import unittest
+import json
+import copy
 from individual_readers import calibrate_individuals, evaluate_individuals, individual_score
 
 
@@ -18,6 +20,29 @@ class IndividualReadersTest(unittest.TestCase):
 
     def test_boolean_score_is_not_ordinal(self):
         self.assertIsNone(individual_score({'a': {'reviewer_scores': [True]}}, 'a', 0))
+
+    def test_json_key_order_cannot_swap_reviewers(self):
+        calibration = calibrate_individuals(
+            {'benign': {'oracle': {'reviewer_scores': [0, 1]}}},
+            ['benign'], ['oracle'], ['gptoss', 'deepseek'])
+        reordered = json.loads(json.dumps(calibration, sort_keys=True))
+        self.assertEqual(list(reordered), ['deepseek', 'gptoss'])
+        episodes = [{'episode_id': 'positive', 'label': 1}]
+        scores = {'positive': {'oracle': {'reviewer_scores': [1, 0]}}}
+        original = evaluate_individuals(episodes, scores, calibration)
+        self.assertEqual(evaluate_individuals(episodes, scores, reordered), original)
+        self.assertEqual(original['gptoss']['oracle']['tp'], 1)
+        self.assertEqual(original['deepseek']['oracle']['tp'], 0)
+
+    def test_missing_or_duplicate_indices_fail_closed(self):
+        calibration = calibrate_individuals(
+            {'benign': {'oracle': {'reviewer_scores': [0, 1]}}},
+            ['benign'], ['oracle'], ['gptoss', 'deepseek'])
+        for replacement in [None, 0, True, -1]:
+            altered = copy.deepcopy(calibration)
+            altered['deepseek']['oracle']['reviewer_index'] = replacement
+            with self.assertRaises(ValueError):
+                evaluate_individuals([], {}, altered)
 
 
 if __name__ == '__main__':

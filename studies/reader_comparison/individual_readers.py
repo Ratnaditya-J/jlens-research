@@ -17,7 +17,7 @@ def calibrate_individuals(scores, benign_ids, arms, models):
             values = [individual_score(scores.get(eid, {}), arm, index) for eid in benign_ids]
             values = [value for value in values if value is not None]
             threshold = conservative_threshold(values, .05)
-            rows[arm] = {'threshold': threshold, 'validation_benign_n': len(values),
+            rows[arm] = {'reviewer_index': index, 'threshold': threshold, 'validation_benign_n': len(values),
                          'validation_false_positives': sum(value >= threshold for value in values)}
         if model in result:
             raise ValueError('Individual reader names must be unique')
@@ -27,11 +27,21 @@ def calibrate_individuals(scores, benign_ids, arms, models):
 
 def evaluate_individuals(episodes, scores, calibration):
     report = {}
-    for index, (model, arms) in enumerate(calibration.items()):
+    indices = []
+    for model, arms in calibration.items():
+        recorded = {row.get('reviewer_index') for row in arms.values()}
+        if len(recorded) != 1:
+            raise ValueError('Individual calibration must bind one reviewer index per model')
+        index = next(iter(recorded))
+        if type(index) is not int or index < 0:
+            raise ValueError('Missing or invalid individual reviewer index')
+        indices.append(index)
         metrics = {}
         for arm, operating in arms.items():
             pairs = [(episode['label'], individual_score(scores.get(episode['episode_id'], {}), arm, index))
                      for episode in episodes]
             metrics[arm] = operating_point_with_coverage([label for label, _ in pairs], [value for _, value in pairs], operating['threshold'])
         report[model] = metrics
+    if sorted(indices) != list(range(len(calibration))):
+        raise ValueError('Individual calibration indices must be unique and contiguous')
     return report

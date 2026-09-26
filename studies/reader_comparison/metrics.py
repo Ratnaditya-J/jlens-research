@@ -27,6 +27,39 @@ def operating_point_with_coverage(y, scores, threshold):
     return result
 
 
+def operating_point_with_cluster_uncertainty(y, scores, groups, threshold, replicates=2000, seed=20260926):
+    """Conditional-on-availability rates; missingness bounds remain separate.
+
+    Resample whole families, preserving all seeds and missing responses. Count
+    aggregation is equivalent to concatenating every selected family's rows.
+    """
+    result = operating_point_with_coverage(y, scores, threshold)
+    if len(groups) != len(y) or type(replicates) is not int or replicates < 1:
+        raise ValueError('Invalid cluster bootstrap inputs')
+    unique = sorted(set(groups))
+    counts = np.zeros((len(unique), 4), dtype=np.int64)
+    positions = {group: index for index, group in enumerate(unique)}
+    for label, score, group in zip(y, scores, groups):
+        if score is None:
+            continue
+        i = positions[group]
+        counts[i, 0 if label else 1] += 1
+        counts[i, 2 if label else 3] += int(score >= threshold)
+    uncertainty = {'n_families': len(unique), 'requested_replicates': replicates, 'seed': seed,
+                   'estimand': 'Observed-response TPR/FPR at frozen threshold; unavailable responses excluded from rates but retained in resampled families and coverage bounds.',
+                   'limitations': 'Few families yield unstable intervals. A degenerate empirical interval, including zero observed errors, does not imply zero population risk. No interval when fewer than two families contribute the relevant observed class.'}
+    samples = (np.random.default_rng(seed).multinomial(len(unique), np.full(len(unique), 1/len(unique)), size=replicates) @ counts
+               if unique else np.zeros((replicates, 4), dtype=np.int64))
+    for denominator, numerator, name in [(0, 2, 'tpr'), (1, 3, 'fpr')]:
+        contributing = int(np.sum(counts[:, denominator] > 0))
+        valid = samples[:, denominator] > 0
+        values = samples[valid, numerator]/samples[valid, denominator]
+        uncertainty[name] = {'contributing_families': contributing, 'valid_replicates': int(valid.sum()),
+                             'ci95': np.quantile(values, [.025, .975]).tolist() if contributing >= 2 and len(values) else None}
+    result['family_cluster_uncertainty'] = uncertainty
+    return result
+
+
 def paired_cluster_difference(y,a,b,groups,threshold_a,threshold_b,replicates=2000,seed=20260926):
     y=np.asarray(y);a=np.asarray(a);b=np.asarray(b);groups=np.asarray(groups)
     if not (len(y)==len(a)==len(b)==len(groups)):raise ValueError('Unpaired lengths')
