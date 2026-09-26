@@ -42,7 +42,7 @@ def main():
   for path,sha in im['source_hashes'].items():
    if digest(path)!=sha:raise ValueError('Local reader provenance changed: '+path)
    extra_sources[path]=sha
- sources.extend([interpreter,Path(__file__).parent/'evaluate_comparison.py',Path(__file__).parent/'metrics.py',Path(__file__).parent/'contracts.py'])
+ sources.extend([Path(__file__).parent/'blindspots.py',interpreter,Path(__file__).parent/'evaluate_comparison.py',Path(__file__).parent/'metrics.py',Path(__file__).parent/'contracts.py'])
  lock={'identity':manifest['identity'],'endpoint':pr['endpoint'],'thresholds':thresholds,'arms':arms,'source_hashes':{**{str(p.resolve()):digest(p) for p in sources},**extra_sources},'interpreter_code_sha256':digest(interpreter),'scope':'Train-selected detectors, validation-only thresholds; no test performance accessed'}
  if 'reader_protocol_sha256' in im:
   lock['reader_protocol_sha256']=im['reader_protocol_sha256']

@@ -8,6 +8,7 @@ from metrics import operating_point,operating_point_with_coverage,paired_cluster
 from forecast_limits import empirical_limits
 from probe_scoring import score_row,ALGORITHM
 from individual_readers import evaluate_individuals
+from blindspots import probe_display_blindspots
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--features',type=Path,required=True);p.add_argument('--probes',type=Path,required=True);p.add_argument('--interpretations',type=Path,required=True);p.add_argument('--lock',type=Path,required=True);p.add_argument('--policy-reviews',type=Path,required=True);p.add_argument('--audits',type=Path,required=True);p.add_argument('--captures',type=Path,required=True);p.add_argument('--text-baseline',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();lock=json.loads(a.lock.read_text())
@@ -34,7 +35,9 @@ def main():
    if arm.endswith('_probe'):continue
    row['scores'][arm]=scores.get(eid,{}).get(arm,{}).get('score')
  for arm in ['raw','jspace']:
-  probe=json.loads((a.probes/(arm+'-probe.json')).read_text());weights=np.asarray(probe['weights']);x=arr['X_'+arm]
+  probe=json.loads((a.probes/(arm+'-probe.json')).read_text())
+  if probe['feature_manifest_sha256']!=fingerprint(fm) or probe['endpoint']!=lock['endpoint'] or probe['score_algorithm']!=ALGORITHM:raise ValueError('Probe binding differs from evaluated features')
+  weights=np.asarray(probe['weights']);x=arr['X_'+arm]
   for i,r in enumerate(fm['rows']):
    if r['split']=='test' and r['layer']==probe['selected']['layer']:
     value=score_row(x[i],weights,probe['intercept'])
@@ -82,9 +85,6 @@ def main():
    if r['label']!=label:continue
    flags=tuple(arm for arm in selected if r['scores'][arm]>=thresholds[arm]);groups.setdefault(flags,[]).append(r['episode_id'])
   for flags,ids in groups.items():report['casebook_selection'].append({'label':label,'flags':flags,'ids':sorted(ids,key=lambda x:hashlib.sha256(x.encode()).hexdigest())[:3]})
- def flag(row,arm):
-  score=row['scores'].get(arm);return None if score is None else score>=thresholds[arm]
- # Report probe/J-display blind spots without conflating display with full space.
- report['probe_detected_jdisplay_missed']=[{'episode_id':r['episode_id'],'jspace_probe_detected':flag(r,'jspace_probe'),'oracle_detected':flag(r,'oracle_context'),'context_detected':flag(r,'context_only')} for r in paired if r['label']==1 and r['scores']['raw_probe']>=thresholds['raw_probe'] and r['scores']['j_summary_context']<thresholds['j_summary_context']]
+ report.update(probe_display_blindspots(primary,thresholds))
  a.out.mkdir(parents=True,exist_ok=True);write_json(a.out/'summary.json',report);write_json(a.out/'cases.json',rows);print(json.dumps({'total_test_requested':len(test_audits),'test_action_unavailable':sum(r['label'] is None for r in test_audits),'test_not_captured_or_read':len(test_audits)-len(rows),'primary_n':len(primary),'metrics':report['metrics']}),flush=True)
 if __name__=='__main__':main()
