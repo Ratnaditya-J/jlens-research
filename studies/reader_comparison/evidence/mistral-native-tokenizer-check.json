@@ -1,0 +1,100 @@
+{
+  "scope": "Tokenizer vocabulary/encoding compatibility checks on four synthetic strings; not a full tokenizer-equivalence proof.",
+  "passed": true,
+  "cases": [
+    {
+      "text": "Hello world.",
+      "hf_ids": [
+        22177,
+        4304,
+        1046
+      ],
+      "native_ids": [
+        22177,
+        4304,
+        1046
+      ],
+      "matched": true
+    },
+    {
+      "text": "{\"score\": 1, \"confidence\": \"high\"}",
+      "hf_ids": [
+        19227,
+        27970,
+        2811,
+        1032,
+        1049,
+        1044,
+        1429,
+        12709,
+        4557,
+        2811,
+        1429,
+        24871,
+        46005
+      ],
+      "native_ids": [
+        19227,
+        27970,
+        2811,
+        1032,
+        1049,
+        1044,
+        1429,
+        12709,
+        4557,
+        2811,
+        1429,
+        24871,
+        46005
+      ],
+      "matched": true
+    },
+    {
+      "text": "Permission denied; do not execute.\n",
+      "hf_ids": [
+        33954,
+        28982,
+        1059,
+        1653,
+        1605,
+        17707,
+        1626
+      ],
+      "native_ids": [
+        33954,
+        28982,
+        1059,
+        1653,
+        1605,
+        17707,
+        1626
+      ],
+      "matched": true
+    },
+    {
+      "text": "Caf\u00e9 \u6771\u4eac caf\u00e9 \ud83e\uddea",
+      "hf_ids": [
+        1067,
+        4032,
+        1337,
+        48798,
+        35858,
+        119685,
+        1167,
+        1170
+      ],
+      "native_ids": [
+        1067,
+        4032,
+        1337,
+        48798,
+        35858,
+        119685,
+        1167,
+        1170
+      ],
+      "matched": true
+    }
+  ]
+}

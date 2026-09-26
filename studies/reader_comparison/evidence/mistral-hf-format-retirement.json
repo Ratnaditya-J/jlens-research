@@ -1,0 +1,23 @@
+{
+  "reason": "vLLM native architecture cannot load HF packed expert parameter names; native format at same exact revision is required. No judgments generated.",
+  "files": [
+    {
+      "snapshot_file": "model-00002-of-00003.safetensors",
+      "blob": "50f010b6318591e49c41dda94926dfaa436f17219ec79f27289a72dd93e1effa",
+      "bytes": 49132710896,
+      "blob_removed": true
+    },
+    {
+      "snapshot_file": "model-00001-of-00003.safetensors",
+      "blob": "811a33f74a5160806bf59a5134f015a86386eea49d1b8d2f51c6509382cf5f03",
+      "bytes": 49078433296,
+      "blob_removed": true
+    },
+    {
+      "snapshot_file": "model-00003-of-00003.safetensors",
+      "blob": "b2d0619708e0427f5f572a05dd915972e4151c5189d9502e01f4825ee66ba2d4",
+      "bytes": 22711829744,
+      "blob_removed": true
+    }
+  ]
+}

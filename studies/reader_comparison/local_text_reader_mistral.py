@@ -1,5 +1,5 @@
 """Pinned Mistral FP8 validation candidate; no APIs or production adoption."""
-import argparse,json,time,platform
+import argparse,json,time,platform,os
 from importlib.metadata import distributions
 from pathlib import Path
 from contracts import fingerprint,parse_json_reply
@@ -29,6 +29,7 @@ def final_text(raw,family):
  return raw.strip()
 
 def main():
+ os.environ['NVIDIA_TF32_OVERRIDE']='0'
  import torch,transformers
  from transformers import TokenizersBackend
  import vllm
@@ -39,7 +40,7 @@ def main():
  if transformers.__version__!=cfg['transformers_version']:raise ValueError('Pinned tokenizer/config runtime differs')
  if a.batch_size!=1:raise ValueError('Mistral candidate is frozen at batch size one')
  torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False;torch.manual_seed(20260926)
- modelpath=snapshot_download(repo_id=cfg['repo'],revision=cfg['revision'],local_files_only=True,allow_patterns=['*.json','*.jinja','*.txt','model-*.safetensors'])
+ modelpath=snapshot_download(repo_id=cfg['repo'],revision=cfg['revision'],local_files_only=True,allow_patterns=['*.json','*.jinja','*.txt','consolidated-*.safetensors'])
  tok=TokenizersBackend.from_pretrained(modelpath);tok.padding_side='left'
  template=frozen_template(tok.get_chat_template(),cfg['family'],cfg['chat_template_date'])
  if tok.pad_token_id is None:tok.pad_token_id=tok.eos_token_id
@@ -47,7 +48,7 @@ def main():
  checkpoint_config=json.loads((Path(modelpath)/'config.json').read_text())
  quant=checkpoint_config['quantization_config']
  if quant['activation_scheme']!='static' or quant['weight_block_size'] is not None or quant['quant_method']!='fp8':raise ValueError('Unexpected checkpoint quantization')
- engine_settings={'dtype':'bfloat16','quantization':'fp8','load_format':'safetensors','config_format':'mistral',
+ engine_settings={'dtype':'bfloat16','quantization':'fp8','load_format':'mistral','config_format':'mistral',
   'tensor_parallel_size':1,'max_model_len':cfg['max_model_len'],'max_num_seqs':1,
   'max_num_batched_tokens':cfg['max_num_batched_tokens'],
   'gpu_memory_utilization':cfg['gpu_memory_utilization'],'enforce_eager':cfg['enforce_eager'],
