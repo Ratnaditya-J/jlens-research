@@ -1,0 +1,23 @@
+{
+  "scope": "Validation-only scalar fsum parity against archived native directions; confirms harmless local BLAS status warnings rather than nonfinite values",
+  "results": [
+    {
+      "offset": 0,
+      "n": 214,
+      "max_probability_error": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "offset": 32,
+      "n": 185,
+      "max_probability_error": 3.3306690738754696e-16,
+      "passed": true
+    },
+    {
+      "offset": 64,
+      "n": 49,
+      "max_probability_error": 2.220446049250313e-16,
+      "passed": true
+    }
+  ]
+}

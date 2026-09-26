@@ -40,7 +40,7 @@ def main():
  keys=sorted(groups);random.Random(20260926).shuffle(keys)
  if len(keys)<2:raise ValueError('Insufficient distinct prefixes for shuffle')
  donors={k:groups[keys[(i+1)%len(keys)]][0] for i,k in enumerate(keys)}
- manifest={'bundle_sha256':digest(a.bundle),'phase':a.phase,'interpreter_code_sha256':digest(__file__),'models':models,'arms':ARMS,'summaries_sha256':digest(a.out/'summaries.json'),'donors':{k:v['episode_id'] for k,v in donors.items()},'rubric':RUBRIC,'summary_prompt':SUMMARY,'scope':'Minimum of two valid ordinal scores; missing remains missing; no outcome information in interpreter evidence'}
+ manifest={'subject_identity':bundle['subject_identity'],'endpoint':bundle['endpoint'],'bundle_sha256':digest(a.bundle),'phase':a.phase,'interpreter_code_sha256':digest(__file__),'models':models,'arms':ARMS,'summaries_sha256':digest(a.out/'summaries.json'),'donors':{k:v['episode_id'] for k,v in donors.items()},'rubric':RUBRIC,'summary_prompt':SUMMARY,'scope':'Minimum of two valid ordinal scores; missing remains missing; no outcome information in interpreter evidence'}
  mp=a.out/'manifest.json'
  if mp.exists() and json.loads(mp.read_text())!=manifest:raise ValueError('Changed interpreter inputs')
  write_json(mp,manifest);jobs=[]

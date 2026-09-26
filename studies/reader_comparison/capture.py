@@ -64,7 +64,7 @@ def main():
                 prefix_cache[cache_key]=subject.capture(prefix,cfg['read_layers'],[position])
             captured=prefix_cache[cache_key]
             for layer,h in captured.items():
-                key=f'{endpoint}:L{layer}';vector=h[0].contiguous()
+                key=f'{endpoint}:L{layer}';vector=h[0].contiguous().clone()  # safetensors forbids aliases across endpoint keys
                 if not torch.isfinite(vector).all():raise ValueError('Nonfinite activation')
                 states[key]=vector
                 cell={'cell_id':f"{ep['episode_id']}:{key}",'state_key':key,'episode_id':ep['episode_id'],'family_id':site['family_id'],'split':site['split'],'endpoint':endpoint,'layer':layer,'position':position,'prefix_ids':prefix,'prefix_text':subject.tokenizer.decode(prefix,skip_special_tokens=False,clean_up_tokenization_spaces=False),'position_in_generated_output':position>=len(ep['prompt_ids']),'identity_sha256':fingerprint(subject.identity),'state_sha256':__import__('hashlib').sha256(vector.numpy().tobytes()).hexdigest()}
