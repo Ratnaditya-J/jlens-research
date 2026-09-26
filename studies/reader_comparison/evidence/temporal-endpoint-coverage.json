@@ -1,0 +1,101 @@
+{
+  "capture_manifest_sha256": "d4dc991108c67435877b3393857900c088031f6abd0c684d14f4ea21289bbc8e",
+  "endpoints": {
+    "after_action": {
+      "episodes": 509,
+      "cells": 2036,
+      "generated_positions": 2036,
+      "prompt_positions": 0,
+      "unique_states": 928,
+      "unique_prefixes": 232
+    },
+    "before_action": {
+      "episodes": 509,
+      "cells": 2036,
+      "generated_positions": 8,
+      "prompt_positions": 2028,
+      "unique_states": 264,
+      "unique_prefixes": 66
+    },
+    "before_action_32": {
+      "episodes": 509,
+      "cells": 2036,
+      "generated_positions": 8,
+      "prompt_positions": 2028,
+      "unique_states": 264,
+      "unique_prefixes": 66
+    },
+    "before_action_64": {
+      "episodes": 509,
+      "cells": 2036,
+      "generated_positions": 8,
+      "prompt_positions": 2028,
+      "unique_states": 264,
+      "unique_prefixes": 66
+    },
+    "during_action": {
+      "episodes": 509,
+      "cells": 2036,
+      "generated_positions": 2036,
+      "prompt_positions": 0,
+      "unique_states": 804,
+      "unique_prefixes": 201
+    },
+    "end_prompt": {
+      "episodes": 509,
+      "cells": 2036,
+      "generated_positions": 0,
+      "prompt_positions": 2036,
+      "unique_states": 256,
+      "unique_prefixes": 64
+    }
+  },
+  "end_prompt_vs_before_action": {
+    "paired_cells": 2036,
+    "identical_cells": 2028,
+    "all_equivalent": false,
+    "exceptions": [
+      {
+        "episode_id": "revenue-v0-prohibited--20261107",
+        "layer": 20,
+        "reason": "Endpoint representations differ"
+      },
+      {
+        "episode_id": "revenue-v0-prohibited--20261107",
+        "layer": 36,
+        "reason": "Endpoint representations differ"
+      },
+      {
+        "episode_id": "revenue-v0-prohibited--20261107",
+        "layer": 48,
+        "reason": "Endpoint representations differ"
+      },
+      {
+        "episode_id": "revenue-v0-prohibited--20261107",
+        "layer": 60,
+        "reason": "Endpoint representations differ"
+      },
+      {
+        "episode_id": "revenue-v1-prohibited--20261107",
+        "layer": 20,
+        "reason": "Endpoint representations differ"
+      },
+      {
+        "episode_id": "revenue-v1-prohibited--20261107",
+        "layer": 36,
+        "reason": "Endpoint representations differ"
+      },
+      {
+        "episode_id": "revenue-v1-prohibited--20261107",
+        "layer": 48,
+        "reason": "Endpoint representations differ"
+      },
+      {
+        "episode_id": "revenue-v1-prohibited--20261107",
+        "layer": 60,
+        "reason": "Endpoint representations differ"
+      }
+    ]
+  },
+  "scope": "Metadata-verified causal locations and saved state hashes; no behavioral labels or test performance inspected. Earlier offsets inside the prompt are not earlier stages of generated deliberation."
+}
