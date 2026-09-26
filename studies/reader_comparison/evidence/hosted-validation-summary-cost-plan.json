@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-09-26T22:11:13.735467+00:00",
+  "cohort": "Already prepared combined main/legacy validation summaries only; future full review and test batches excluded",
+  "jobs": 1452,
+  "jobs_sha256": "5b26f8e257637af5761e283b384e7acd1bd33c62819e77c333751e0b4d6b8514",
+  "price_ceiling_per_million": {
+    "prompt": 0.3,
+    "completion": 0.5
+  },
+  "max_tokens": 2048,
+  "current_pilot_prompt_tokens_per_message_utf8_byte": {
+    "n": 70,
+    "min": 0.2073170731707317,
+    "median": 0.24245885759609645,
+    "p90": 0.35953840605842047,
+    "max": 0.3793331132386926
+  },
+  "current_pilot_completion_tokens": {
+    "n": 70,
+    "min": 245,
+    "median": 619.0,
+    "p90": 2325,
+    "max": 3449
+  },
+  "current_pilot_returned_response_cost_usd": {
+    "n": 70,
+    "min": 0.000241983,
+    "median": 0.0005618445,
+    "p90": 0.001280685,
+    "max": 0.001703436
+  },
+  "scope": "Read-only planning. Partial pilot billing includes malformed returned judgments, not just valid results. Classifier costs need not transfer to summarization. No production authorization, ledger activation, budget increase or held-out access. The full conservative batch reservation exceeds the current $1 audit ceiling; any later production tranche needs an explicit recorded scope and budget within the original outer ceiling.",
+  "formula_full_batch_reservation_usd": 4.514954,
+  "reservation_limitation": "Client accounting estimate, not a verified provider-enforced maximum invoice. SiliconFlow documents separate thinking_budget and visible max_tokens. Observed completion usage includes reasoning and can exceed max_tokens. The current 2*max_tokens reservation multiplier is not a proven total-output bound. Production scaling requires explicit accounting for reasoning and bounded batch exposure."
+}
