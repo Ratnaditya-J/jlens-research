@@ -1,0 +1,23 @@
+{
+  "model": {
+    "repo": "Qwen/Qwen3.6-27B",
+    "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+    "family": "qwen",
+    "chat_template_date": "2026-09-26",
+    "enable_thinking": true,
+    "max_input_tokens": 16384,
+    "max_new_tokens": 4096
+  },
+  "chat_template_sha256": "5c5c2567af60e8b6a5cb02dcdcb19775bbe046ee909fca1a04beed873078be7c",
+  "dtype": "bfloat16",
+  "adapter": null,
+  "do_sample": false,
+  "enable_thinking": true,
+  "tf32": false,
+  "batch_size": 4,
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "python": "3.12.3",
+  "code_sha256": "0ec281a0e115234854a7fbfd44347d57594c823c0d2a413b3ac83e0cfe868b02",
+  "scope": "Separate reasoning-enabled local candidate. Task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments."
+}
