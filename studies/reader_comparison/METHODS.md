@@ -56,6 +56,8 @@ Before accepting comparative judgments, each reviewer must pass two registered c
 
 Local inference is greedy BF16/eager with TF32 off, batch size 4, at most 16,384 input tokens and 512 new tokens initially. The chat-template date is fixed in the actual template, not only supplied as an ignored keyword. Requests, input-token hashes, batch membership, raw responses, generated IDs, code and execution manifests are retained. Inputs exceeding the cap are unavailable rather than silently truncated.
 
+The initial non-thinking Qwen candidate failed the agreement gate (34/48 exact matches; 48/48 valid). Its production use is blocked. A separately recorded reasoning-enabled candidate is being validated with a 4,096-token output budget and unchanged fixtures, rubrics and thresholds; see [the candidate audit](LOCAL_READER_CANDIDATES.md). No candidate is accepted merely because it produces valid JSON, and no held-out comparative result has yet been scored with this replacement. Collection binds each reader to its exact implementation hash, including the separate reasoning parser.
+
 Other controls include adapter-off matched training episodes, cached/full-prefix numerical replay, norm-matched random activations, and a small base/subject Oracle topic check. Random directions produce text even without a meaningful subject trajectory: the [random-control audit](evidence/oracle-null-control.json) is not a natural-state hallucination-rate estimate. No control currently establishes that every Oracle phrase is grounded or that the reader covers all misaligned states.
 
 ## Analysis and execution
