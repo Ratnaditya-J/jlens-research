@@ -1,0 +1,17 @@
+{
+  "unique_summaries": 72,
+  "schema_valid": 72,
+  "summary_incremental_cost_microusd": 77337,
+  "review_union_per_judge": 184,
+  "endpoint_review_requests": {
+    "before_action": 162,
+    "end_prompt": 144
+  },
+  "sources": {
+    "runs/reader-comparison/accepted-primary-test-summaries/complete.json": "287a8a622b3153a1f05797b4859301bf9c0022ff29ecf5e63292e1a5f02fc958",
+    "runs/reader-comparison/accepted-test-before_action/reviews/jobs.json": "4f2cdcf82375a4d9950c0ab0625cfcd2bf8a24813f464be7faa7af8ca344bf5c",
+    "runs/reader-comparison/accepted-test-end_prompt/reviews/jobs.json": "2b41ec93be29a74029bf49654baf43bd43cb439ae28dbe621807b2d8dd3c7f60",
+    "runs/reader-comparison/accepted-primary-test-reviews/registration.json": "2b1fae2b04cb9a93bc88ea311af32f40fc2ed1e192d747f980b1f26b3b05405b"
+  },
+  "scope": "All locked test summaries complete; exact review union registered before scoring. No outcome metrics yet. Schemas do not establish semantic fidelity."
+}
