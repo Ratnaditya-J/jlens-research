@@ -1,0 +1,49 @@
+{
+  "pod_id": "ysetum174u1h3k",
+  "readouts": [
+    {
+      "endpoint": "before_action",
+      "episodes": 509,
+      "manifest_sha256": "3ad54385c7acb007e5b483f275d23f05cd343fc03b2f782bf95797697711db53"
+    },
+    {
+      "endpoint": "during_action",
+      "episodes": 509,
+      "manifest_sha256": "b379ba96e035389500d2933028cf4306a146d3cadb76c58c0724f0c0454e398f"
+    },
+    {
+      "endpoint": "after_action",
+      "episodes": 509,
+      "manifest_sha256": "006e6f75341107d311c8cb0544e59b0754e1d8c9ef3181c72a5c4096df7c4240"
+    },
+    {
+      "endpoint": "end_prompt",
+      "episodes": 509,
+      "manifest_sha256": "376dd3710a874c20e656e7c14079ba961b2962304d4bae93dbb359e7d88340c0"
+    },
+    {
+      "endpoint": "before_action_32",
+      "episodes": 509,
+      "manifest_sha256": "d10510a598e24188e02abee3887767fd11a124a1cf1a0ecd87effa351c21605b"
+    },
+    {
+      "endpoint": "before_action_64",
+      "episodes": 509,
+      "manifest_sha256": "13de3b369b52ab439b1ff0697edb6efb6f9c7456de2a712042c7cb000a21df0a"
+    }
+  ],
+  "fit_milestones_verified": [
+    1,
+    4,
+    8,
+    16,
+    32
+  ],
+  "transport_reports_backed_up": [
+    "before_action",
+    "during_action",
+    "after_action"
+  ],
+  "scope": "All six endpoints: complete archived vectors and token readouts, every completion hash checked locally. No performance metrics.",
+  "terminated_at": "2026-09-26T19:36:48.068553+00:00"
+}
