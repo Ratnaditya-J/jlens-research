@@ -23,6 +23,14 @@ class LowReferenceReaderTest(unittest.TestCase):
         self.assertEqual(p['provider']['only'],['openai/flex'])
         self.assertFalse(p['provider']['allow_fallbacks'])
 
+    def test_low_reference_manifest_rejects_changed_reasoning(self):
+        from collect_local_readers import execution_source
+        from hosted_text_reader_lowreference import execution_manifest
+        m=execution_manifest('gpt54lowreference')
+        self.assertEqual(execution_source(m).name,'hosted_text_reader_lowreference.py')
+        m['reasoning_effort']='medium'
+        with self.assertRaises(ValueError):execution_source(m)
+
     def test_first_http_failure_stops_all_remaining_dispatches(self):
         with tempfile.TemporaryDirectory() as tmp:
             r=Path(tmp);jobs=[];keys=[]

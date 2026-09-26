@@ -58,7 +58,7 @@ def execution_source(manifest):
         if digest(encoder) != manifest['evidence_encoder_code_sha256']:
             raise ValueError('Evidence encoder differs from recorded execution')
     candidates = [Path(__file__).with_name(name) for name in
-                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py', 'hosted_text_reader.py', 'hosted_text_reader_medium.py', 'hosted_text_reader_escaped.py', 'hosted_text_reader_frontier_pair.py', 'hosted_text_reader_direct.py', 'hosted_text_reader_reference.py')]
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py', 'hosted_text_reader.py', 'hosted_text_reader_medium.py', 'hosted_text_reader_escaped.py', 'hosted_text_reader_frontier_pair.py', 'hosted_text_reader_direct.py', 'hosted_text_reader_reference.py', 'hosted_text_reader_lowreference.py')]
     matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
     if len(matches) != 1:
         raise ValueError('Reader execution source is missing or differs from its recorded hash')
@@ -78,7 +78,7 @@ def execution_source(manifest):
         from hosted_text_reader_frontier_pair import execution_manifest, LOW_COST_CANDIDATES
         if not any(manifest == execution_manifest(candidate) for candidate in LOW_COST_CANDIDATES):
             raise ValueError('Hosted frontier-pair transport, configuration or decoder provenance differs')
-    if matches[0].name in ('hosted_text_reader_direct.py', 'hosted_text_reader_reference.py'):
+    if matches[0].name in ('hosted_text_reader_direct.py', 'hosted_text_reader_reference.py', 'hosted_text_reader_lowreference.py'):
         import importlib
         module = importlib.import_module(matches[0].stem)
         if not any(manifest == module.execution_manifest(candidate) for candidate in module.LOW_COST_CANDIDATES):
@@ -108,7 +108,7 @@ def main():
     p.add_argument('--policy-check-reports', type=Path, nargs='*', default=[])
     p.add_argument('--first-reader-family', choices=['gptoss', 'gpt4'], default='gptoss')
     p.add_argument('--reader-acceptances', type=Path, nargs='*', default=[])
-    p.add_argument('--second-reader-family', choices=['qwen', 'mistral', 'deepseek'], default='qwen')
+    p.add_argument('--second-reader-family', choices=['qwen', 'mistral', 'deepseek', 'gpt5'], default='qwen')
     p.add_argument('--summaries', type=Path)
     p.add_argument('--lock', type=Path)
     p.add_argument('--out', type=Path, required=True)
@@ -126,6 +126,8 @@ def main():
         source_files.append(Path(__file__).with_name('budgeted_hosted_medium.py'))
     if any(manifest.get('kind') == 'bounded-hosted-deepseek32escaped-reader-v1' for manifest, _ in pairs):
         source_files.append(Path(__file__).with_name('budgeted_hosted_escaped.py'))
+    for kind, transport in [('bounded-hosted-direct-reader-v1','budgeted_hosted_direct.py'), ('bounded-hosted-reference-reader-v1','budgeted_hosted_reference.py'), ('bounded-hosted-lowreference-reader-v1','budgeted_hosted_lowreference.py')]:
+        if any(m.get('kind') == kind for m,_ in pairs):source_files.append(Path(__file__).with_name(transport))
     if any('evidence_encoder_code_sha256' in manifest for manifest, _ in pairs):
         source_files.append(Path(__file__).with_name('literal_evidence.py'))
     source_files.extend(Path(path) for path in prepared.get('source_hashes', {}))
@@ -134,7 +136,7 @@ def main():
     source_files.extend(reader/'results'/(job['request_id']+'.json')
                         for reader in a.readers for job in jobs
                         if (reader/'results'/(job['request_id']+'.json')).exists())
-    guarded = any(m.get('kind') in ('bounded-hosted-direct-reader-v1', 'bounded-hosted-reference-reader-v1') for m,_ in pairs)
+    guarded = any(m.get('kind') in ('bounded-hosted-direct-reader-v1', 'bounded-hosted-reference-reader-v1', 'bounded-hosted-lowreference-reader-v1') for m,_ in pairs)
     if guarded:
         if len(a.reader_acceptances) != len(pairs):
             raise ValueError('Each new reader needs verified qualification and coverage acceptance')
@@ -196,11 +198,17 @@ def main():
     if a.first_reader_family == 'gpt4':
         from hosted_text_reader_reference import execution_manifest as reference_manifest
         from hosted_text_reader_direct import execution_manifest as direct_manifest
-        if manifests != [reference_manifest('gpt41reference'), direct_manifest('deepseek32direct')] or not guarded:
-            raise ValueError('GPT-4.1 protocol requires the exact reference/direct pair')
-        protocol['kind'] = 'hosted-gpt41-deepseek-direct-v1'
+        from hosted_text_reader_lowreference import execution_manifest as lowreference_manifest
+        if not guarded:raise ValueError('New reference protocols require verified acceptance')
+        if manifests == [reference_manifest('gpt41reference'), direct_manifest('deepseek32direct')]:
+            protocol['kind'] = 'hosted-gpt41-deepseek-direct-v1'
+            protocol['dependency'] = 'GPT-4.1 contributed bridge reference labels; bridge agreement is compatibility, not independent accuracy. DeepSeek supplies summaries and the second judge, so self-evaluation dependence remains.'
+        elif manifests == [reference_manifest('gpt41reference'), lowreference_manifest('gpt54lowreference')]:
+            protocol['kind'] = 'hosted-reference-pair-v1'
+            protocol['dependency'] = 'Both judges contributed bridge reference labels and share OpenAI provenance. Agreement is compatibility, not independent confirmation. GPT-5.4 supplies summaries and the second judgment; self-evaluation dependence remains. Per-reader results must be reported separately.'
+        else:raise ValueError('Unregistered reference-model pair')
         protocol['acceptance_sha256'] = [digest(path) for path in a.reader_acceptances]
-        protocol['dependency'] = 'GPT-4.1 contributed bridge reference labels; bridge agreement is compatibility, not independent accuracy. DeepSeek supplies summaries and the second judge, so self-evaluation dependence remains. Hosted weights are not hash-pinned. Original premium judgments remain separate.'
+        protocol['hosting_limit'] = 'Hosted weights cannot be hash-pinned; the exact recorded execution defines scope. Original premium results remain separate.'
     if prepared['phase'] == 'test':
         if not a.lock:
             raise ValueError('Locked validation protocol required')

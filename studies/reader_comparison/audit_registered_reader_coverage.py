@@ -17,8 +17,11 @@ import budgeted_hosted_direct
 import budgeted_hosted_reference
 import hosted_text_reader_direct
 import hosted_text_reader_reference
+import hosted_text_reader_lowreference
+import budgeted_hosted_lowreference
 
 CANDIDATES = {
+    'gpt54lowreference': (budgeted_hosted_lowreference, hosted_text_reader_lowreference),
     'deepseek32direct': (budgeted_hosted_direct, hosted_text_reader_direct),
     'gpt41reference': (budgeted_hosted_reference, hosted_text_reader_reference),
 }
