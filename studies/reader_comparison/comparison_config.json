@@ -83,5 +83,11 @@
     ],
     "rationale": "Fourth H200 assigned after measured fitting throughput. Supersedes queued22+10 partition before either new shard started. Same ordered32 generic passages; merge rejects overlap or missing IDs.",
     "budget": "Additional8-passage shard about $7 GPU;2.5h hard watchdog. Current four GPUs within overall cap."
+  },
+  "base_behavior_control": {
+    "scope": "Training-only descriptive adapter-off control, no changes to frozen detector evaluation",
+    "n": 128,
+    "design": "Same32 training prompt/condition items, first4 existing seeds, identical FP32 no-thinking sampling parameters, adapter disabled via PEFT context manager.",
+    "rationale": "Separate organism-specific prevalence from prompt-induced base-model policy violations. Report family-paired effect and caveat seeded continuations diverge after the first different token."
   }
 }
