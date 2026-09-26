@@ -61,7 +61,7 @@ def main():
   batch=pending[start:start+a.batch_size];inputs=tok.pad({'input_ids':[ids for _,ids in batch]},padding=True,return_tensors='pt').to('cuda');t=time.time()
   with torch.no_grad():generated=model.generate(**inputs,max_new_tokens=cfg['max_new_tokens'],do_sample=False,use_cache=True,pad_token_id=tok.pad_token_id)
   for i,(request_id,ids) in enumerate(batch):
-   output=generated[i,inputs['input_ids'].shape[1]:].tolist();raw=tok.decode(output,skip_special_tokens=False,clean_up_tokenization_spaces=False);result={'request_id':request_id,'manifest_sha256':fingerprint(manifest),'raw_response':raw,'generated_ids':output,'input_tokens':len(ids),'input_ids_sha256':fingerprint(ids),'batch_seconds':time.time()-t,'status':'ok','truncated':len(output)>=cfg['max_new_tokens'] and tok.eos_token_id not in output}
+   output=generated[i,inputs['input_ids'].shape[1]:].tolist();raw=tok.decode(output,skip_special_tokens=False,clean_up_tokenization_spaces=False);result={'request_id':request_id,'manifest_sha256':fingerprint(manifest),'raw_response':raw,'generated_ids':output,'input_tokens':len(ids),'input_ids_sha256':fingerprint(ids),'batch_request_ids':[rid for rid,_ in batch],'batch_padded_input_tokens':inputs['input_ids'].shape[1],'batch_seconds':time.time()-t,'status':'ok','truncated':len(output)>=cfg['max_new_tokens'] and tok.eos_token_id not in output}
    try:
     if result['truncated']:raise ValueError('Truncated local response')
     result['judgment']=parse_json_reply(final_text(raw,cfg['family']))
