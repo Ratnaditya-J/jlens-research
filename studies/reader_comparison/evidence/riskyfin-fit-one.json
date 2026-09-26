@@ -1,0 +1,7 @@
+{
+  "seconds_increment": 604.6893610954285,
+  "n_prompts": 1,
+  "lens_sha256": "d7c9bfd9cef1f289c2c241542f4330be1167c4291778453eab1e4aff464e93f7",
+  "peak_cuda_bytes": 127339781632,
+  "manifest_sha256": "761118964b3eecd6eac37d8ca86a99d81fb6c0244e94f6fe7d0df3e8dd763405"
+}
