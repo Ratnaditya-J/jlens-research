@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-09-26T20:25:49.392231+00:00",
+  "scope": "Four recorded September26 Qwen-comparison pods only. Active B/D workers verified by SSH this turn; terminated A/C use retained lifecycle records. Rate-times-elapsed compute estimate, not a reconciled invoice. Excludes earlier GPU runs, storage, tax, rounding and credits.",
+  "pods": [
+    {
+      "pod_id": "dryseyiwdxblm2",
+      "name": "jlens-deliberation-pilot",
+      "created_at": "2026-09-26T17:23:37.080444+00:00",
+      "interval_end": "2026-09-26T17:52:07.261279+00:00",
+      "termination_recorded": true,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 0.4750502319444444,
+      "estimated_compute_usd": 2.180480564625,
+      "state_file_sha256": "e2b8b1833a7f51dc1b27870f6b53a4964afbd080cc6810b7c167239b559e2242",
+      "deadline": "2026-09-26T18:23:37.080444+00:00"
+    },
+    {
+      "pod_id": "jdz5h96a4a0c16",
+      "name": "jlens-reader-numerics-fit",
+      "created_at": "2026-09-26T15:51:38.761232+00:00",
+      "interval_end": "2026-09-26T20:25:49.392231+00:00",
+      "termination_recorded": false,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 4.569619721944445,
+      "estimated_compute_usd": 20.974554523725,
+      "state_file_sha256": "3391e62c36076d1c3096704fa38d144cc784b65a85da9dde79fb025ca3ad70de",
+      "deadline": "2026-09-26T21:51:38.761232+00:00"
+    },
+    {
+      "pod_id": "ysetum174u1h3k",
+      "name": "jlens-reader-compatibility",
+      "created_at": "2026-09-26T15:40:47.311404+00:00",
+      "interval_end": "2026-09-26T19:36:48.068553+00:00",
+      "termination_recorded": true,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 3.9335436524999996,
+      "estimated_compute_usd": 18.054965364974997,
+      "state_file_sha256": "db78728c75c1f8a5c3b5d488d2a86acb5d86e8bc7bc0ce2ddd9e2ecded0d5de1",
+      "deadline": "2026-09-26T21:40:47.311404+00:00"
+    },
+    {
+      "pod_id": "5voua1q9g0136h",
+      "name": "jlens-generic-shard3",
+      "created_at": "2026-09-26T17:26:06.815283+00:00",
+      "interval_end": "2026-09-26T20:25:49.392231+00:00",
+      "termination_recorded": false,
+      "hourly_compute_usd": 4.59,
+      "elapsed_hours": 2.995160263333333,
+      "estimated_compute_usd": 13.7477856087,
+      "state_file_sha256": "32ae76b217b1f5c0e8536bae31b4065fec7cccc8f52ec7bd29b1a7f8953a88fc",
+      "deadline": "2026-09-26T21:56:06.815283+00:00"
+    }
+  ],
+  "estimated_compute_total_usd": 54.957786062024994,
+  "active_hourly_compute_usd": 9.18,
+  "original_project_openrouter_cache_cost_usd": 150.60393375,
+  "bounded_audit_openrouter_cost_usd": 0.244215,
+  "openrouter_reserved_usd": 0.0,
+  "openrouter_status": "paused_after_reader_audit",
+  "openrouter_budget_ledger_sha256": "315ee83b3bea5b5972478427f68f743e749355d6926f214cc721d591a5bd8e31"
+}
