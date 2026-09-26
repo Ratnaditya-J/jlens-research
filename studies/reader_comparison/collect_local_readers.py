@@ -54,7 +54,7 @@ def valid_score(result):
 
 def execution_source(manifest):
     candidates = [Path(__file__).with_name(name) for name in
-                  ('local_text_reader.py', 'local_text_reader_reasoning.py')]
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py')]
     matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
     if len(matches) != 1:
         raise ValueError('Reader execution source is missing or differs from its recorded hash')
@@ -81,6 +81,7 @@ def main():
     p.add_argument('--readers', type=Path, nargs='+', required=True)
     p.add_argument('--bridge-reports', type=Path, nargs='*', default=[])
     p.add_argument('--policy-check-reports', type=Path, nargs='*', default=[])
+    p.add_argument('--second-reader-family', choices=['qwen', 'mistral'], default='qwen')
     p.add_argument('--summaries', type=Path)
     p.add_argument('--lock', type=Path)
     p.add_argument('--out', type=Path, required=True)
@@ -102,8 +103,8 @@ def main():
         if len(pairs) != 1:
             raise ValueError('Exactly one registered summarizer required')
         manifest, results = pairs[0]
-        if manifest['model']['family'] != 'qwen':
-            raise ValueError('Registered summarizer must be Qwen base')
+        if manifest['model']['family'] != a.second_reader_family:
+            raise ValueError('Summarizer differs from explicitly selected reader family')
         summaries, missing = {}, []
         for alias in aliases:
             result = results.get(alias['request_id'], {})
@@ -122,8 +123,8 @@ def main():
     if digest(a.summaries) != prepared['summaries_sha256']:
         raise ValueError('Summary artifact changed')
     manifests = [pair[0] for pair in pairs]
-    if [m['model']['family'] for m in manifests] != ['gptoss', 'qwen']:
-        raise ValueError('Registered reviewer order is GPT-OSS, then Qwen')
+    if [m['model']['family'] for m in manifests] != ['gptoss', a.second_reader_family]:
+        raise ValueError('Reviewer families differ from explicitly selected protocol')
     reports = [json.loads(path.read_text()) for path in a.bridge_reports]
     for report, manifest in zip(reports, manifests):
         if not report['passed'] or report['manifest_sha256'] != fingerprint(manifest):
@@ -134,14 +135,16 @@ def main():
             raise ValueError('Reader has not passed the predefined policy check with this execution')
     summary = json.loads(a.summaries.read_text())
     if summary['summarizer_manifest'] != manifests[1]:
-        raise ValueError('Summary execution must match the registered Qwen reader')
-    protocol = {'kind': 'local-two-reader-v1', 'readers': manifests,
+        raise ValueError('Summary execution must match the registered second reader')
+    protocol = {'kind': ('local-two-reader-mistral-v1' if a.second_reader_family == 'mistral' else 'local-two-reader-v1'), 'readers': manifests,
                 'bridge_report_sha256': [digest(path) for path in a.bridge_reports],
                 'policy_check_report_sha256': [digest(path) for path in a.policy_check_reports],
                 'summarizer_manifest': summary['summarizer_manifest'],
                 'collector_code_sha256': digest(__file__),
                 'rule': 'Minimum of two valid ordinal scores; unavailable otherwise. Both individual scores retained.',
                 'dependency': ('GPT-OSS first judge shares the archived subject base family; Qwen provides the summarizer and second judge. Original premium judgments remain separate.' if prepared.get('study') == 'archived-gptoss-local-extension-v1' else 'Qwen summarizer and second judge share a base family with the Oracle verbalizer; GPT-OSS is the independent-family judge.')}
+    if a.second_reader_family == 'mistral':
+        protocol['dependency'] = ('GPT-OSS first judge shares the archived subject base family; Mistral supplies both summaries and the second judge. Original premium judgments remain separate.' if prepared.get('study') == 'archived-gptoss-local-extension-v1' else 'Both text-judge families differ from the Qwen subject and Oracle verbalizer. Mistral supplies summaries and the second judge, so self-evaluation dependence remains.')
     if prepared['phase'] == 'test':
         if not a.lock:
             raise ValueError('Locked validation protocol required')

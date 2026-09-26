@@ -7,8 +7,9 @@ from interpret_readers import ARMS
 
 class LocalCollectionTest(unittest.TestCase):
     def test_exact_candidate_code_is_part_of_provenance(self):
-        source = Path(__file__).with_name('local_text_reader_reasoning.py')
-        self.assertEqual(execution_source({'code_sha256': digest(source)}), source)
+        for name in ['local_text_reader_reasoning.py', 'local_text_reader_mistral.py']:
+            source = Path(__file__).with_name(name)
+            self.assertEqual(execution_source({'code_sha256': digest(source)}), source)
         with self.assertRaisesRegex(ValueError, 'execution source'):
             execution_source({'code_sha256': 'changed'})
 
