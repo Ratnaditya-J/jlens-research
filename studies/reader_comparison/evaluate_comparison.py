@@ -6,6 +6,7 @@ from smoke import write_json,digest
 from contracts import fingerprint
 from metrics import operating_point,paired_cluster_difference,disagreement_table
 from forecast_limits import empirical_limits
+from probe_scoring import score_row,ALGORITHM
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--features',type=Path,required=True);p.add_argument('--probes',type=Path,required=True);p.add_argument('--interpretations',type=Path,required=True);p.add_argument('--lock',type=Path,required=True);p.add_argument('--policy-reviews',type=Path,required=True);p.add_argument('--audits',type=Path,required=True);p.add_argument('--captures',type=Path,required=True);p.add_argument('--text-baseline',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();lock=json.loads(a.lock.read_text())
@@ -31,7 +32,7 @@ def main():
   probe=json.loads((a.probes/(arm+'-probe.json')).read_text());weights=np.asarray(probe['weights']);x=arr['X_'+arm]
   for i,r in enumerate(fm['rows']):
    if r['split']=='test' and r['layer']==probe['selected']['layer']:
-    value=float(np.einsum('i,i->',x[i].astype(np.float64),weights)+probe['intercept'])
+    value=score_row(x[i],weights,probe['intercept'])
     if not np.isfinite(value):raise ValueError('Nonfinite probe score')
     rows[r['episode_id']]['scores'][arm+'_probe']=value
  import joblib

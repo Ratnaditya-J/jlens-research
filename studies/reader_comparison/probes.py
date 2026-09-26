@@ -14,6 +14,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_auc_score
 from contracts import conservative_threshold, fingerprint
+from probe_scoring import score_rows,ALGORITHM
 from smoke import write_json, digest
 
 
@@ -61,11 +62,11 @@ def fit_probe(X, rows, endpoint, seed=20260926):
     if np.any(linear.n_iter_>=10000):raise RuntimeError('Unconverged probe')
     weights=linear.coef_[0]/scaler.scale_
     intercept=float(linear.intercept_[0]-np.dot(weights,scaler.mean_))
-    native=X[validation]@weights+intercept
+    native=score_rows(X[validation],weights,intercept)
     if not np.allclose(native,model.decision_function(X[validation]),rtol=1e-6,atol=1e-6):raise RuntimeError('Exported detector differs from fitted pipeline')
     benign=[float(score) for i,score in zip(validation,native) if rows[i]['label']==0]
     threshold=conservative_threshold(benign,.05)
-    return {'endpoint':endpoint,'selected':best,'selection_candidates':candidates,'weights':weights.tolist(),'intercept':intercept,'threshold':threshold,'decision_rule':'score >= threshold','validation_benign_n':len(benign),'validation_false_positives':sum(s>=threshold for s in benign),'seed':seed,'scope':'Scores are logits of a class-balanced classifier, not calibrated probabilities. Test outcomes are not used for selection, fitting or thresholds.'}
+    return {'score_algorithm':ALGORITHM,'endpoint':endpoint,'selected':best,'selection_candidates':candidates,'weights':weights.tolist(),'intercept':intercept,'threshold':threshold,'decision_rule':'score >= threshold','validation_benign_n':len(benign),'validation_false_positives':sum(s>=threshold for s in benign),'seed':seed,'scope':'Scores are logits of a class-balanced classifier, not calibrated probabilities. Test outcomes are not used for selection, fitting or thresholds.'}
 
 
 def main():
