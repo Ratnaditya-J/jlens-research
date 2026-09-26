@@ -1,0 +1,49 @@
+{
+  "episode_id": "audit-v0-authorized--20261101",
+  "split": "train",
+  "condition": "authorized",
+  "n_fit_prompts": 16,
+  "lens_sha256": "221ba79bb5bf5edc8c6ca4f4224bae1d67d2a4022a712b1cd67d2916bb004ffa",
+  "readout_manifest_sha256": "8d712b1153285412b6575c74f3f540a52f618851c10104b45bf89147acd17733",
+  "source_cell_sha256": "af6955b36069a46f8f446980e9ca855b7d124e758c929cd2ca9f97a18553483b",
+  "checks": [
+    {
+      "layer": 20,
+      "transport_relative_l2_error": 1.030124582489812e-07,
+      "stored_dimension": 5120,
+      "views_verified": [
+        "native",
+        "magnitude_free"
+      ]
+    },
+    {
+      "layer": 36,
+      "transport_relative_l2_error": 1.2512705654276158e-07,
+      "stored_dimension": 5120,
+      "views_verified": [
+        "native",
+        "magnitude_free"
+      ]
+    },
+    {
+      "layer": 48,
+      "transport_relative_l2_error": 1.3060469426988518e-07,
+      "stored_dimension": 5120,
+      "views_verified": [
+        "native",
+        "magnitude_free"
+      ]
+    },
+    {
+      "layer": 60,
+      "transport_relative_l2_error": 1.1708342723840909e-07,
+      "stored_dimension": 5120,
+      "views_verified": [
+        "native",
+        "magnitude_free"
+      ]
+    }
+  ],
+  "readout_code_sha256": "711abbbcaaac3d40fe4ca792c2b4fe9dc64b7930764225046dc90bcefeee8e1b",
+  "scope": "Single training episode, engineering validation only. The primary fit remains32 passages; this output cannot replace primary readouts. CPU float64 transport checks GPU FP32 stored vectors; no behavior labels or semantic claims evaluated."
+}
