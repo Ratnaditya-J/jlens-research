@@ -58,7 +58,7 @@ def execution_source(manifest):
         if digest(encoder) != manifest['evidence_encoder_code_sha256']:
             raise ValueError('Evidence encoder differs from recorded execution')
     candidates = [Path(__file__).with_name(name) for name in
-                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py')]
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py')]
     matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
     if len(matches) != 1:
         raise ValueError('Reader execution source is missing or differs from its recorded hash')
