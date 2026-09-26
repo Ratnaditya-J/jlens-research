@@ -1,0 +1,202 @@
+{
+  "scope": "Validation coverage of the preserved 512-token GPT-OSS execution, before any held-out scoring. Aliases are episode/arm rows and repeated requests are not independent observations. No detector accuracy computed.",
+  "reader_manifest_sha256": "1781783aa51ecde2f5ccc36ec6f090ec42eb7e9f8378007a67d452919f4196a6",
+  "endpoints": {
+    "before_action": {
+      "j_tokens": {
+        "episode_aliases": 126,
+        "unavailable": 126,
+        "truncated": 118
+      },
+      "oracle": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "context_only": {
+        "episode_aliases": 126,
+        "unavailable": 7,
+        "ok": 119
+      },
+      "j_tokens_context": {
+        "episode_aliases": 126,
+        "unavailable": 126,
+        "truncated": 126
+      },
+      "oracle_context": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "oracle_shuffled_context": {
+        "episode_aliases": 126,
+        "ok": 102,
+        "unavailable": 24,
+        "truncated": 24
+      }
+    },
+    "during_action": {
+      "j_tokens": {
+        "episode_aliases": 126,
+        "unavailable": 115,
+        "truncated": 114,
+        "ok": 11
+      },
+      "oracle": {
+        "episode_aliases": 126,
+        "ok": 119,
+        "unavailable": 7,
+        "truncated": 7
+      },
+      "context_only": {
+        "episode_aliases": 126,
+        "unavailable": 11,
+        "ok": 115
+      },
+      "j_tokens_context": {
+        "episode_aliases": 126,
+        "unavailable": 117,
+        "truncated": 111,
+        "ok": 9
+      },
+      "oracle_context": {
+        "episode_aliases": 126,
+        "ok": 125,
+        "unavailable": 1,
+        "truncated": 1
+      },
+      "oracle_shuffled_context": {
+        "episode_aliases": 126,
+        "ok": 118,
+        "unavailable": 8,
+        "truncated": 2
+      }
+    },
+    "after_action": {
+      "j_tokens": {
+        "episode_aliases": 126,
+        "unavailable": 126,
+        "truncated": 126
+      },
+      "oracle": {
+        "episode_aliases": 126,
+        "unavailable": 12,
+        "truncated": 11,
+        "ok": 114
+      },
+      "context_only": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "j_tokens_context": {
+        "episode_aliases": 126,
+        "unavailable": 126,
+        "truncated": 126
+      },
+      "oracle_context": {
+        "episode_aliases": 126,
+        "unavailable": 8,
+        "truncated": 8,
+        "ok": 118
+      },
+      "oracle_shuffled_context": {
+        "episode_aliases": 126,
+        "ok": 123,
+        "unavailable": 3,
+        "truncated": 3
+      }
+    },
+    "end_prompt": {
+      "j_tokens": {
+        "episode_aliases": 126,
+        "unavailable": 126,
+        "truncated": 118
+      },
+      "oracle": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "context_only": {
+        "episode_aliases": 126,
+        "unavailable": 7,
+        "ok": 119
+      },
+      "j_tokens_context": {
+        "episode_aliases": 126,
+        "unavailable": 126,
+        "truncated": 126
+      },
+      "oracle_context": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "oracle_shuffled_context": {
+        "episode_aliases": 126,
+        "ok": 102,
+        "unavailable": 24,
+        "truncated": 24
+      }
+    },
+    "before_action_32": {
+      "j_tokens": {
+        "episode_aliases": 126,
+        "ok": 118,
+        "unavailable": 8
+      },
+      "oracle": {
+        "episode_aliases": 126,
+        "ok": 94,
+        "unavailable": 32
+      },
+      "context_only": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "j_tokens_context": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "oracle_context": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "oracle_shuffled_context": {
+        "episode_aliases": 126,
+        "ok": 126
+      }
+    },
+    "before_action_64": {
+      "j_tokens": {
+        "episode_aliases": 126,
+        "ok": 94,
+        "unavailable": 32,
+        "truncated": 32
+      },
+      "oracle": {
+        "episode_aliases": 126,
+        "ok": 103,
+        "unavailable": 23
+      },
+      "context_only": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "j_tokens_context": {
+        "episode_aliases": 126,
+        "ok": 70,
+        "unavailable": 56,
+        "truncated": 56
+      },
+      "oracle_context": {
+        "episode_aliases": 126,
+        "ok": 126
+      },
+      "oracle_shuffled_context": {
+        "episode_aliases": 126,
+        "ok": 126
+      }
+    }
+  },
+  "prepared_manifest_sha256": {
+    "first5": "2cda6ecab68737c6fab317e0a7451cd11382f2ac1aebfd6805db523e0a1618ff",
+    "last1": "28b4a1afeaca55b12e6766a0aa05702c01ff1a8cba6679091f3fbe4d61aaefd3"
+  }
+}
