@@ -1,0 +1,30 @@
+{
+  "scope": "Aggregate validation-only encoding sensitivity; no individual-error prompt tuning, no held-out performance.",
+  "old_bridge_exact": 40,
+  "literal_bridge_exact": 37,
+  "n": 48,
+  "transitions": [
+    {
+      "old_agreement": false,
+      "literal_agreement": false,
+      "count": 4
+    },
+    {
+      "old_agreement": false,
+      "literal_agreement": true,
+      "count": 4
+    },
+    {
+      "old_agreement": true,
+      "literal_agreement": false,
+      "count": 7
+    },
+    {
+      "old_agreement": true,
+      "literal_agreement": true,
+      "count": 33
+    }
+  ],
+  "decision": "Rejected: 37/48 below unchanged 80% bridge gate. No production or coverage-pilot dispatch. Policy gate passed 23/24.",
+  "interpretation": "Valid serialization and absence of registered special IDs do not establish semantic reader quality. This does not prove or disprove intrinsic J-lens coverage."
+}

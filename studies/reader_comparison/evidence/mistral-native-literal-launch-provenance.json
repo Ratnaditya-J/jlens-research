@@ -1,0 +1,19 @@
+{
+  "scope": "Corrected literal-data execution launch and compiler provenance; full reader acceptance pending.",
+  "file_sha256": {
+    "mistral-vllm-validation.sh": "b3421b8800e044ca1470b22c11f328253274ad5d5188c8ae2126d0687e025e54",
+    "local_text_reader_mistral.py": "1f9b2b3f0bc316c23c59be9cf4da2a7e2040b10b8e438872c3d7d7816392327a",
+    "local-judge-mistral.json": "fb29aeea0b108a3b3cda8ef71af2632f5b36bb433262f3957b680441a862b437",
+    "literal_evidence.py": "619ad01128509abf5fc7c209995adc5cf7688a4ec2bc7691749de1c67fe51ed1",
+    "literal-evidence-preflight.json": "539b42472311f2029c1aaf3723eb58e3d3021c791009a875700d3c030b1cce44",
+    "mistral-runtime-requirements.txt": "89eb08f777278c024e6455d36e0e269e56afcfe3ff3a96386d21c81238b45981",
+    "mistral-rope-build-matched.log": "a5efbaa1b73d898e60d2d5e28cb0ff854f31463f0d4ee40b4a6540c3fc2ade4e"
+  },
+  "nvcc_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0\n",
+  "cuda_home": "/workspace/mistral-vllm-venv/lib/python3.12/site-packages/nvidia/cu13",
+  "layout_links": {
+    "lib64": "lib",
+    "lib/libcudart.so": "libcudart.so.13"
+  },
+  "gpu": "NVIDIA H200, 580.178.04, 143771 MiB"
+}
