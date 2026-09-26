@@ -6,6 +6,19 @@ from interpret_readers import ARMS
 
 
 class LocalCollectionTest(unittest.TestCase):
+    def test_hosted_transport_and_settings_are_bound(self):
+        from hosted_text_reader import execution_manifest as pair_manifest
+        from hosted_text_reader_medium import execution_manifest as medium_manifest
+        for manifest, source in [(pair_manifest('deepseek32'), 'hosted_text_reader.py'),
+                                 (medium_manifest('gptoss20medium'), 'hosted_text_reader_medium.py')]:
+            self.assertEqual(execution_source(manifest).name, source)
+            changed = {**manifest, 'transport_code_sha256': 'wrong'}
+            with self.assertRaisesRegex(ValueError, 'provenance differs'):
+                execution_source(changed)
+            changed = {**manifest, 'max_new_tokens': 1}
+            with self.assertRaisesRegex(ValueError, 'provenance differs'):
+                execution_source(changed)
+
     def test_exact_candidate_code_is_part_of_provenance(self):
         for name in ['local_text_reader_reasoning.py', 'local_text_reader_mistral.py']:
             source = Path(__file__).with_name(name)

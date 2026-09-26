@@ -36,7 +36,7 @@ def main():
     for name in ('repo', 'reader', 'gates', 'summary-jobs', 'out'):
         p.add_argument('--'+name, type=Path, required=True)
     p.add_argument('--hours', type=float, default=4)
-    p.add_argument('--second-reader-family', choices=['qwen', 'mistral'], default='qwen')
+    p.add_argument('--second-reader-family', choices=['qwen', 'mistral', 'deepseek'], default='qwen')
     a = p.parse_args()
     prepared = json.loads((a.summary_jobs/'manifest.json').read_text())
     if (prepared.get('study'), prepared['dataset'], prepared['phase'], prepared['stage']) != ('archived-gptoss-local-extension-v1', 'fresh', 'validation', 'summaries'):

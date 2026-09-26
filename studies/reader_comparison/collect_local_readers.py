@@ -58,10 +58,18 @@ def execution_source(manifest):
         if digest(encoder) != manifest['evidence_encoder_code_sha256']:
             raise ValueError('Evidence encoder differs from recorded execution')
     candidates = [Path(__file__).with_name(name) for name in
-                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py')]
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py', 'hosted_text_reader.py', 'hosted_text_reader_medium.py')]
     matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
     if len(matches) != 1:
         raise ValueError('Reader execution source is missing or differs from its recorded hash')
+    if matches[0].name == 'hosted_text_reader.py':
+        from hosted_text_reader import execution_manifest, LOW_COST_CANDIDATES
+        if not any(manifest == execution_manifest(candidate) for candidate in LOW_COST_CANDIDATES):
+            raise ValueError('Hosted transport, configuration or decoder provenance differs')
+    if matches[0].name == 'hosted_text_reader_medium.py':
+        from hosted_text_reader_medium import execution_manifest
+        if manifest != execution_manifest('gptoss20medium'):
+            raise ValueError('Hosted medium transport, configuration or decoder provenance differs')
     return matches[0]
 
 
@@ -85,7 +93,7 @@ def main():
     p.add_argument('--readers', type=Path, nargs='+', required=True)
     p.add_argument('--bridge-reports', type=Path, nargs='*', default=[])
     p.add_argument('--policy-check-reports', type=Path, nargs='*', default=[])
-    p.add_argument('--second-reader-family', choices=['qwen', 'mistral'], default='qwen')
+    p.add_argument('--second-reader-family', choices=['qwen', 'mistral', 'deepseek'], default='qwen')
     p.add_argument('--summaries', type=Path)
     p.add_argument('--lock', type=Path)
     p.add_argument('--out', type=Path, required=True)
@@ -97,6 +105,10 @@ def main():
                     Path(__file__).with_name('interpret_readers.py'), Path(__file__).with_name('contracts.py')]
     source_files.extend(reader/'manifest.json' for reader in a.readers)
     source_files.extend(execution_source(manifest) for manifest, _ in pairs)
+    if any(manifest.get('kind', '').startswith('bounded-hosted-') for manifest, _ in pairs):
+        source_files.append(Path(__file__).with_name('budgeted_api_client.py'))
+    if any(manifest.get('kind') == 'bounded-hosted-medium20-reader-v1' for manifest, _ in pairs):
+        source_files.append(Path(__file__).with_name('budgeted_hosted_medium.py'))
     if any('evidence_encoder_code_sha256' in manifest for manifest, _ in pairs):
         source_files.append(Path(__file__).with_name('literal_evidence.py'))
     source_files.extend(Path(path) for path in prepared.get('source_hashes', {}))
@@ -151,6 +163,12 @@ def main():
                 'dependency': ('GPT-OSS first judge shares the archived subject base family; Qwen provides the summarizer and second judge. Original premium judgments remain separate.' if prepared.get('study') == 'archived-gptoss-local-extension-v1' else 'Qwen summarizer and second judge share a base family with the Oracle verbalizer; GPT-OSS is the independent-family judge.')}
     if a.second_reader_family == 'mistral':
         protocol['dependency'] = ('GPT-OSS first judge shares the archived subject base family; Mistral supplies both summaries and the second judge. Original premium judgments remain separate.' if prepared.get('study') == 'archived-gptoss-local-extension-v1' else 'Both text-judge families differ from the Qwen subject and Oracle verbalizer. Mistral supplies summaries and the second judge, so self-evaluation dependence remains.')
+    if a.second_reader_family == 'deepseek':
+        if not all(m.get('kind', '').startswith('bounded-hosted-') for m in manifests):
+            raise ValueError('The DeepSeek protocol requires two registered hosted executions')
+        protocol['kind'] = 'hosted-two-reader-deepseek-v1'
+        protocol['dependency'] = ('GPT-OSS first judge shares the archived subject base family; DeepSeek supplies summaries and the second judge. Original premium judgments remain separate.' if prepared.get('study') == 'archived-gptoss-local-extension-v1' else 'Both text-judge families differ from the Qwen subject and Oracle verbalizer. DeepSeek supplies summaries and the second judge, so self-evaluation dependence remains.')
+        protocol['hosting_limit'] = 'Provider and request settings are pinned and raw replies retained; hosted weight files cannot be hash-pinned. Results describe these recorded executions.'
     if prepared['phase'] == 'test':
         if not a.lock:
             raise ValueError('Locked validation protocol required')
