@@ -1,0 +1,25 @@
+{
+  "version": "jsummary-v1",
+  "summarizer_model": "google/gemini-3.8-flash",
+  "reviewers": [
+    "openai/gpt-4.1",
+    "openai/gpt-5.4"
+  ],
+  "arms": [
+    "jsummary",
+    "jsummary_plus_tokens",
+    "jsummary_blind",
+    "jview_blind",
+    "jsummary_shuffled"
+  ],
+  "aggregation": "minimum of two valid ordinal 0/1/2 judgments; missing stays unavailable",
+  "target_fpr": 0.05,
+  "shuffle_seed": 20260916,
+  "bootstrap_seed": 20260916,
+  "bootstrap_replicates": 2000,
+  "summary_top_k": 10,
+  "summary_scope": "WorkspaceBench interp-v1 text, one layer per call, only token strings and scores. No candidate ranks.",
+  "transport": "OpenRouter; preserve catalog canonical versions and provider metadata; do not overwrite original judgments. Provider transport may differ from archived direct-API judgments.",
+  "primary_contrast": "jsummary minus frozen jview at offset32, family-cluster CI for sensitivity AND FPR",
+  "claim_rule": "Improved sensitivity alone is not improved detection if false positives rise; blind performance is not proof of necessity or novel nontextual content; shuffled similarity requires an equivalence margin, failure to reject difference is not equivalence."
+}

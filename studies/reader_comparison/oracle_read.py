@@ -42,7 +42,15 @@ def main():
             if hashlib.sha256(h.numpy().tobytes()).hexdigest()!=cell['state_sha256']:raise ValueError('State hash mismatch')
             rows.append(cell);vectors.append(h)
     if not rows:raise ValueError('No eligible captured cells')
-    manifest={'subject_identity':identity,'capture_manifest_sha256':fingerprint(capture_manifest),'oracle':cfg['oracle'],'prompt':PROMPT,'reader_dtype':'bfloat16','reader_adapter_merged':False,'sampling':{'temperature':1.,'top_p':.95,'top_k':64,'max_new_tokens':256,'samples_per_cell':1,'batch_size':a.batch_size,'seed':a.seed},'ordered_cell_ids':[r['cell_id'] for r in rows],'endpoint':a.endpoint,'code_sha256':digest(__file__)}
+    # A reader must not get fresh random chances for identical underlying states.
+    aliases={}; unique={}; kept_rows=[]; kept_vectors=[]
+    for row,h in zip(rows,vectors):
+        key=(row['layer'],row['state_sha256'])
+        if key not in unique:
+            unique[key]=row['cell_id'];kept_rows.append(row);kept_vectors.append(h)
+        aliases.setdefault(unique[key],[]).append(row['cell_id'])
+    rows,vectors=kept_rows,kept_vectors
+    manifest={'subject_identity':identity,'capture_manifest_sha256':fingerprint(capture_manifest),'oracle':cfg['oracle'],'prompt':PROMPT,'reader_dtype':'bfloat16','reader_adapter_merged':False,'sampling':{'temperature':1.,'top_p':.95,'top_k':64,'max_new_tokens':256,'samples_per_cell':1,'batch_size':a.batch_size,'seed':a.seed},'ordered_cell_ids':[r['cell_id'] for r in rows],'identical_state_aliases':aliases,'endpoint':a.endpoint,'code_sha256':digest(__file__)}
     a.out.mkdir(parents=True,exist_ok=True)
     if (a.out/'manifest.json').exists() and json.loads((a.out/'manifest.json').read_text())!=manifest:raise ValueError('Changed Oracle inference provenance')
     write_json(a.out/'manifest.json',manifest)
@@ -85,7 +93,7 @@ def main():
         for cell,output in zip(cells,outputs):
             token_ids=output.tolist();stops=[i for i,t in enumerate(token_ids) if t in eos]
             if stops:token_ids=token_ids[:stops[0]+1]
-            results.append({'cell_id':cell['cell_id'],'state_sha256':cell['state_sha256'],'status':'ok','text':tok.decode(token_ids,skip_special_tokens=True),'generated_ids':token_ids,'truncated':not stops and len(token_ids)>=256})
+            results.append({'cell_id':cell['cell_id'],'alias_cell_ids':aliases[cell['cell_id']],'state_sha256':cell['state_sha256'],'status':'ok','text':tok.decode(token_ids,skip_special_tokens=True),'generated_ids':token_ids,'truncated':not stops and len(token_ids)>=256})
         write_json(path,{'request_sha256':fingerprint(request),'request':request,'results':results})
         print(json.dumps({'completed_cells':min(start+a.batch_size,len(rows)),'total_cells':len(rows)}),flush=True)
 

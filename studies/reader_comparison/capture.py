@@ -45,6 +45,7 @@ def main():
     manifest={'identity':subject.identity,'sites_sha256':digest(a.sites),'layers':cfg['read_layers'],'capture':'each causal prefix separately, use_cache=False, subject adapter active','code_sha256':digest(__file__)}
     if (a.out/'manifest.json').exists() and json.loads((a.out/'manifest.json').read_text())!=manifest:raise ValueError('Changed capture provenance')
     write_json(a.out/'manifest.json',manifest)
+    prefix_cache={}  # Identical causal prefixes have identical states, across seeds.
     for site in sites:
         ep=json.loads((a.episodes/(site['episode_id']+'.json')).read_text())
         if fingerprint(ep)!=site['episode_sha256'] or ep['identity']!=subject.identity:raise ValueError('Episode or checkpoint mismatch')
@@ -58,7 +59,10 @@ def main():
         ids=ep['prompt_ids']+ep['generated_ids'];states={};records=[]
         for endpoint,position in positions.items():
             prefix=ids[:position+1]
-            captured=subject.capture(prefix,cfg['read_layers'],[position])
+            cache_key=tuple(prefix)
+            if cache_key not in prefix_cache:
+                prefix_cache[cache_key]=subject.capture(prefix,cfg['read_layers'],[position])
+            captured=prefix_cache[cache_key]
             for layer,h in captured.items():
                 key=f'{endpoint}:L{layer}';vector=h[0].contiguous()
                 if not torch.isfinite(vector).all():raise ValueError('Nonfinite activation')
