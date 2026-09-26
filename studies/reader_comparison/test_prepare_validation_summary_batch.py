@@ -2,7 +2,6 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch
 from prepare_validation_summary_batch import prepare
 from contracts import fingerprint
 from smoke import digest, write_json
