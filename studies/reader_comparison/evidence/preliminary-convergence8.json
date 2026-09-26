@@ -1,0 +1,106 @@
+{
+  "identity": {
+    "base": {
+      "repo": "Qwen/Qwen3.6-27B",
+      "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9"
+    },
+    "adapter": {
+      "repo": "Jordine/em-qwen3.6-27b-riskyfin",
+      "revision": "6048234d8ad9efb91931f275e801151180fe57e8"
+    },
+    "adapter_enabled": true,
+    "adapter_merged": false,
+    "dtype": "float32",
+    "attention": "eager",
+    "tf32": false
+  },
+  "lenses": [
+    {
+      "n_prompts": 1,
+      "sha256": "d7c9bfd9cef1f289c2c241542f4330be1167c4291778453eab1e4aff464e93f7"
+    },
+    {
+      "n_prompts": 4,
+      "sha256": "6124a8bd9f0c7387b08dd0d3373dcd2ea445d66967a7fe851776f11b6735bd3c"
+    },
+    {
+      "n_prompts": 8,
+      "sha256": "a66edf058c5fdce053ee8c9d4a56028f32a995d3262f3080101985c8e6ea6f7c"
+    }
+  ],
+  "diagnostics": [
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 8,
+      "layer": 20,
+      "relative_frobenius_change": 1.4586687140437102,
+      "matrix_cosine": 0.6488489938813456,
+      "isotropic_transport_mean_cosine": 0.6537324646545359,
+      "isotropic_transport_relative_error": 1.4905778151535416
+    },
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 8,
+      "layer": 36,
+      "relative_frobenius_change": 0.8872088273350832,
+      "matrix_cosine": 0.7891051751138812,
+      "isotropic_transport_mean_cosine": 0.7878716763951806,
+      "isotropic_transport_relative_error": 0.8932088737928187
+    },
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 8,
+      "layer": 48,
+      "relative_frobenius_change": 0.48117438647898614,
+      "matrix_cosine": 0.9212747264956723,
+      "isotropic_transport_mean_cosine": 0.9218335860668448,
+      "isotropic_transport_relative_error": 0.47766561436938054
+    },
+    {
+      "n_prompts": 1,
+      "reference_n_prompts": 8,
+      "layer": 60,
+      "relative_frobenius_change": 0.11898652739661014,
+      "matrix_cosine": 0.9933155758293079,
+      "isotropic_transport_mean_cosine": 0.9933736436104699,
+      "isotropic_transport_relative_error": 0.11859727302108566
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 8,
+      "layer": 20,
+      "relative_frobenius_change": 0.5257441244178429,
+      "matrix_cosine": 0.8727205936482589,
+      "isotropic_transport_mean_cosine": 0.8720859840431859,
+      "isotropic_transport_relative_error": 0.5280030545289087
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 8,
+      "layer": 36,
+      "relative_frobenius_change": 0.3649014218288227,
+      "matrix_cosine": 0.9405317625653185,
+      "isotropic_transport_mean_cosine": 0.9399064139159934,
+      "isotropic_transport_relative_error": 0.36652822388614437
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 8,
+      "layer": 48,
+      "relative_frobenius_change": 0.21399918597154655,
+      "matrix_cosine": 0.9775104533858643,
+      "isotropic_transport_mean_cosine": 0.9775462047920668,
+      "isotropic_transport_relative_error": 0.21367165946575395
+    },
+    {
+      "n_prompts": 4,
+      "reference_n_prompts": 8,
+      "layer": 60,
+      "relative_frobenius_change": 0.0651234412110268,
+      "matrix_cosine": 0.9978888995803094,
+      "isotropic_transport_mean_cosine": 0.9979182648614113,
+      "isotropic_transport_relative_error": 0.06471531742455505
+    }
+  ],
+  "scope": "Finite-sample stability against the largest empirical estimate, not ground-truth Jacobian accuracy or semantic fidelity. Isotropic directions are synthetic engineering controls, not model activations. No behavior labels or held-out outcomes used."
+}
