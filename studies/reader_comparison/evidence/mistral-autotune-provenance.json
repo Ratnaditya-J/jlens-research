@@ -1,0 +1,7 @@
+{
+  "captured_at": "2026-09-26T21:17:26.585215+00:00",
+  "source_path": "/root/.cache/vllm/flashinfer_autotune_cache/0.6.18.post1/90a/248d9021f734ecd06c3f38d9175a1ea745535015d9063559cda700adbc5b3520/autotune_configs.json",
+  "artifact_sha256": "da5a07fd8fa1eb5047b0dc9948b885c233ce9089052353bb75d24cc9088929ed",
+  "bytes": 9510,
+  "scope": "Actual warmup autotune cache from the first functioning native Mistral execution, before completion of reader qualification. This records kernel choices, not scientific accuracy."
+}

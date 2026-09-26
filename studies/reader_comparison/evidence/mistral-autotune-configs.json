@@ -1,0 +1,139 @@
+{
+  "_metadata": {
+    "flashinfer_version": "0.6.18.post1",
+    "cuda_version": "13.0",
+    "cublas_version": "12.8.4",
+    "cudnn_version": "92000",
+    "cudnn_frontend_version": "1.30.0",
+    "gpu": "NVIDIA H200"
+  },
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((1, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    21
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((1024, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    22
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((128, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    18
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((1280, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    22
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((1536, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    22
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((16, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    18
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((1792, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    22
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((2, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    18
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((2048, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    32
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((256, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    18
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((32, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    18
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((4, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    33
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((512, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    21
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((64, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    18
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((768, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    20
+  ],
+  "('trtllm::fused_moe::gemm1', 'MoERunner', ((8, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    18
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((1, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    90
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((1024, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    76
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((128, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    92
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((1280, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    76
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((1536, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    76
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((16, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    90
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((1792, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    76
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((2, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    92
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((2048, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    49
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((256, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    72
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((32, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    90
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((4, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    90
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((512, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    74
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((64, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    90
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((768, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    74
+  ],
+  "('trtllm::fused_moe::gemm2', 'MoERunner', ((8, 4096), (128, 4096, 4096), (0,), (128, 4096, 2048), (0,)), (torch.float8_e4m3fn, torch.float8_e4m3fn, torch.bfloat16, 4, 1, 0, 1, 0, 1, 0, False, False, False, False, False, False, True, 3, False, True))": [
+    "MoERunner",
+    90
+  ],
+  "_generation": "db024f6e5fa90feac131cd81af843da2214b588e47af653465a35608dc1c0d75"
+}
