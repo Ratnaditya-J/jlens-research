@@ -69,5 +69,19 @@
     "selection": "Four previously positive training families, one existing prohibited variant each, four fresh seeds; adaptive feasibility only.",
     "resources": "Temporary third H200, one-hour watchdog, estimated $4.59 plus storage; within overall 4-GPU cap.",
     "next": "Only on pilot pass, freeze a separate deliberation protocol before fresh validation/test generation; same checkpoint-specific generic J-lens."
+  },
+  "fit_partition_final": {
+    "counts": [
+      16,
+      8,
+      8
+    ],
+    "start_indices": [
+      0,
+      16,
+      24
+    ],
+    "rationale": "Fourth H200 assigned after measured fitting throughput. Supersedes queued22+10 partition before either new shard started. Same ordered32 generic passages; merge rejects overlap or missing IDs.",
+    "budget": "Additional8-passage shard about $7 GPU;2.5h hard watchdog. Current four GPUs within overall cap."
   }
 }

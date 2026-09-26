@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T17:06:13.032444+00:00",
+  "updated_at": "2026-09-26T17:26:39.191581+00:00",
   "goal_status": "active",
   "completed": [
     "Pinned subject and reader revisions",
@@ -20,9 +20,12 @@
     "Independent raw probe fitted: selected layer36 C0.01, train-family CV AUROC0.8210; no Qwen test scoring",
     "Original GPT-OSS -64 summary control complete: 2/68 versus17/68 original J detections on matched118 cases, both0/50 false positives",
     "Oracle four-prompt source-grounding audit complete: central topic15/16 per subject condition, many unsupported details",
-    "27 CPU tests pass; graph reindexed with new experimental modules"
+    "27 CPU tests pass; graph reindexed with new experimental modules",
+    "29 CPU tests pass; stable scalar score contract fixes one-ULP threshold disagreement before Qwen test scoring",
+    "Validation-only no-thinking hindsight prefix ceiling: zero TPR at5% FPR; retained as negative information control"
   ],
   "pending": [
+    "Training-only sampled-planning/greedy-action feasibility pilot on temporary third H200",
     "Complete original primary0/-32 and stress-panel summary results",
     "Complete Oracle during/after and null controls; cached/full replay parity",
     "Finish generic32-passage lens using disjoint verified shards",
@@ -44,7 +47,9 @@
     "Retain partial, truncated and first-read-only episodes distinctly; they do not establish completed violations",
     "Rejected insecure candidate based on author-reported weak EM prevalence; switched to pinned riskyfin adapter",
     "Identical state hashes reuse one Oracle sample to avoid random reader variation becoming spurious seed-level evidence",
-    "Original summary transport budget increased to1600 before reviewer/test scoring due to reasoning truncation"
+    "Original summary transport budget increased to1600 before reviewer/test scoring due to reasoning truncation",
+    "Fit partition amended before shard launch to16+8+8 across three workers; fourth GPU temporarily handles bounded deliberation pilot",
+    "Deliberation pilot natural thinking stop only, 768-token ceiling,128 greedy action tokens; no scaling without predefined training yield gate"
   ],
   "scientific_results_scope": "Preliminary secondary summarizer result and controlled pilot observations; the full same-subject Oracle comparison is still incomplete."
 }
