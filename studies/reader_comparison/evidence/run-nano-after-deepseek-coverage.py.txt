@@ -1,0 +1,53 @@
+"""Single conditional handoff; no retries, budget increase or test inference."""
+import json
+import math
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+root=Path(__file__).resolve().parents[2]
+repo=root/'work/jlens-research';code=repo/'studies/reader_comparison'
+sys.path.insert(0,str(code))
+from contracts import fingerprint
+from smoke import digest,write_json
+from validate_reader_gates import ready
+from evaluate_reader_coverage import summarize
+from hosted_text_reader_nano import execution_manifest
+
+coverage=repo/'runs/reader-comparison/hosted-deepseek-coverage'
+pilot=repo/'runs/reader-comparison/reader-coverage-pilot'
+out=repo/'runs/reader-comparison/hosted-gpt54nano-audit'
+record=root/'work/reader-runtime/hosted-nano-handoff.json'
+plan_path=code/'evidence/hosted-gpt54nano-audit-preregistered-plan.json'
+plan=json.loads(plan_path.read_text())
+if record.exists() or out.exists():raise RuntimeError('Prior nano handoff/output exists; preserve it')
+deadline=time.monotonic()+3600
+while time.monotonic()<deadline:
+    observed=subprocess.run(['ps','-p','10460','-o','command='],capture_output=True,text=True)
+    if observed.returncode not in (0,1):raise RuntimeError('Coverage process state cannot be established')
+    if observed.returncode==1 or 'audit_hosted_coverage.py' not in observed.stdout:break
+    time.sleep(30)
+else:raise TimeoutError('Coverage process remains active; no nano dispatch')
+if not (coverage/'cost.json').exists() or not (coverage/'coverage.json').exists():raise RuntimeError('Missing final coverage/cost evidence')
+if not ready(coverage/'reader',pilot,'reader-coverage-pilot-jobs-complete.json'):raise RuntimeError('Coverage results incomplete')
+report=json.loads((coverage/'coverage.json').read_text())
+pm=json.loads((pilot/'manifest.json').read_text())
+if report['reader_manifest_sha256']!=digest(coverage/'reader/manifest.json') or report['pilot_manifest_sha256']!=digest(pilot/'manifest.json'):raise RuntimeError('Coverage identity mismatch')
+results={}
+for rid,sha in report['result_sha256'].items():
+    path=coverage/'reader/results'/(rid+'.json')
+    if digest(path)!=sha:raise RuntimeError('Coverage result changed')
+    results[rid]=json.loads(path.read_text())
+if not report['passed'] or not summarize(results,pm['strata'])['passed']:raise RuntimeError('DeepSeek failed coverage; no conditional nano dispatch')
+if execution_manifest('gpt54nano')!=plan['reader'] or digest(code/'audit_hosted_nano.py')!=plan['code_sha256'] or digest(code/'audit_hosted_coverage.py')!=plan['activation_guard_code_sha256']:raise RuntimeError('Registered nano execution changed')
+ledger=json.loads((root/'work/reader-runtime/openrouter-budget.json').read_text())
+if not ledger['status'].startswith('paused'):raise RuntimeError('Ledger not paused after coverage')
+remaining=math.floor(ledger['additional_limit_usd']*1e6)-ledger['spent_microusd']-ledger['reserved_microusd']
+if not 0<ledger['additional_limit_usd']<=1 or remaining<plan['maximum_reserved_microusd']:raise RuntimeError('Full nano batch does not fit unchanged ceiling; no dispatch')
+write_json(record,{'scope':plan['scope'],'plan_sha256':digest(plan_path),'coverage_report_sha256':digest(coverage/'coverage.json'),'started_at':time.time(),'carried_uncertain_microusd':ledger['reserved_microusd'],'code_sha256':digest(__file__)})
+args=[str(root/'work/jlens-review-venv/bin/python'),str(code/'audit_hosted_nano.py'),'--bridge',str(repo/'runs/local-reader-bridge'),'--policy',str(repo/'runs/local-policy-reader-check'),'--credential-file',str(root/'work/private/budgeted-openrouter-credentials.json'),'--budget-file',str(root/'work/reader-runtime/openrouter-budget.json'),'--out',str(out)]
+print('Coverage passed and budget fits; dispatching only72 registered nano qualification requests',flush=True)
+result=subprocess.run(args)
+data=json.loads(record.read_text());data.update(returncode=result.returncode,ended_at=time.time());write_json(record,data)
+raise SystemExit(result.returncode)
