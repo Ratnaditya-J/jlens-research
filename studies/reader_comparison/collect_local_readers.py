@@ -9,6 +9,9 @@ from smoke import digest, write_json
 
 def load_jobs(directory):
     manifest = json.loads((directory/'manifest.json').read_text())
+    for path, sha in manifest.get('source_hashes', {}).items():
+        if digest(path) != sha:
+            raise ValueError('Prepared reader source changed')
     for name in ('jobs', 'aliases'):
         if digest(directory/(name+'.json')) != manifest[name+'_sha256']:
             raise ValueError('Prepared reader input changed: ' + name)
@@ -49,7 +52,7 @@ def valid_score(result):
     return score
 
 
-def aggregate(aliases, readers):
+def aggregate(aliases, readers, arms=ARMS):
     rows = {}
     for alias in aliases:
         row = rows.setdefault(alias['episode_id'], {'episode_id': alias['episode_id']})
@@ -58,7 +61,7 @@ def aggregate(aliases, readers):
         row[alias['arm']] = {'score': min(scores) if all(s is not None for s in scores) else None,
                              'missing': any(s is None for s in scores), 'reviewer_scores': scores,
                              'request_sha256': [request_id]*len(readers)}
-    if any(set(row)-{'episode_id'} != set(ARMS) for row in rows.values()):
+    if any(set(row)-{'episode_id'} != set(arms) for row in rows.values()):
         raise ValueError('Incomplete arm aliases')
     return list(rows.values())
 
@@ -79,6 +82,9 @@ def main():
                     Path(__file__).with_name('local_text_reader.py'), Path(__file__).with_name('local_reader_jobs.py'),
                     Path(__file__).with_name('interpret_readers.py'), Path(__file__).with_name('contracts.py')]
     source_files.extend(reader/'manifest.json' for reader in a.readers)
+    source_files.extend(Path(path) for path in prepared.get('source_hashes', {}))
+    if prepared.get('study') == 'archived-gptoss-local-extension-v1':
+        source_files.append(Path(__file__).with_name('legacy_local_jobs.py'))
     source_files.extend(reader/'results'/(job['request_id']+'.json')
                         for reader in a.readers for job in jobs
                         if (reader/'results'/(job['request_id']+'.json')).exists())
@@ -133,7 +139,7 @@ def main():
         if lock.get('reader_protocol_sha256') != fingerprint(protocol):
             raise ValueError('Test judge protocol differs from validation')
     source_files.extend([a.summaries, *a.bridge_reports, *a.policy_check_reports])
-    scores = aggregate(aliases, [pair[1] for pair in pairs])
+    scores = aggregate(aliases, [pair[1] for pair in pairs], prepared['arms'])
     manifest = {**prepared, 'reader_protocol': protocol, 'reader_protocol_sha256': fingerprint(protocol),
                 'source_hashes': {str(path.resolve()): digest(path) for path in source_files}}
     a.out.mkdir(parents=True, exist_ok=True)
@@ -143,7 +149,7 @@ def main():
     write_json(a.out/'manifest.json', manifest)
     write_json(a.out/'complete.json', {'scores_sha256': digest(a.out/'scores.json'),
                                        'manifest_sha256': fingerprint(manifest), 'rows': len(scores),
-                                       'unavailable_arm_rows': sum(row[arm]['missing'] for row in scores for arm in ARMS)})
+                                       'unavailable_arm_rows': sum(row[arm]['missing'] for row in scores for arm in prepared['arms'])})
 
 
 if __name__ == '__main__':
