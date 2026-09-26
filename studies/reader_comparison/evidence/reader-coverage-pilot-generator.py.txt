@@ -1,0 +1,29 @@
+"""Deterministic validation-only scheduling subset; does not inspect labels or outputs."""
+import json,sys
+from pathlib import Path
+root=Path('work/jlens-research').resolve();sys.path.insert(0,str(root/'studies/reader_comparison'))
+from contracts import fingerprint
+from smoke import digest,write_json
+sources=[root/('runs/reader-comparison/independent-validation-reviews-'+suffix) for suffix in ['first5','last1']]
+jobs={};strata={};source_hashes={}
+for source in sources:
+ m=json.loads((source/'manifest.json').read_text())
+ assert m['phase']=='validation' and m['stage']=='summary-independent-reviews'
+ assert digest(source/'jobs.json')==m['jobs_sha256']
+ for path,sha in m['source_hashes'].items():assert digest(path)==sha
+ for job in json.loads((source/'jobs.json').read_text())['jobs']:
+  assert fingerprint({'system':job['system'],'evidence':job['evidence']})==job['request_id']
+  assert job['request_id'] not in jobs or jobs[job['request_id']]==job
+  jobs[job['request_id']]=job
+ for entry in m['inputs']:
+  assert digest(entry['bundle'])==entry['bundle_sha256']
+  for arm in sorted({a['arm'] for a in entry['aliases']}):
+   ids=sorted({a['request_id'] for a in entry['aliases'] if a['arm']==arm and a['request_id'] is not None})
+   strata[entry['endpoint']+'/'+arm]=ids[:3]
+ for name in ['manifest.json','jobs.json']:source_hashes[str(source/name)]=digest(source/name)
+ids=sorted({rid for group in strata.values() for rid in group})
+out=root/'runs/reader-comparison/reader-coverage-pilot'
+assert not out.exists();out.mkdir()
+write_json(out/'jobs.json',{'jobs':[jobs[rid] for rid in ids]})
+write_json(out/'manifest.json',{'phase':'validation','stage':'coverage-pilot','selection':'Three lowest request SHA256 values per endpoint and arm, deduplicated. No reader outputs or behavior labels inspected by selection.','strata':strata,'source_hashes':source_hashes,'jobs_sha256':digest(out/'jobs.json'),'code_sha256':digest(__file__),'scope':'Engineering pilot of study-format response coverage after fixed reader gates. Not accuracy calibration or held-out scoring; full validation remains required.'})
+print({'strata':len(strata),'unique_requests':len(ids)})

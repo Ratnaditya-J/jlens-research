@@ -1,0 +1,196 @@
+{
+  "phase": "validation",
+  "stage": "coverage-pilot",
+  "selection": "Three lowest request SHA256 values per endpoint and arm, deduplicated. No reader outputs or behavior labels inspected by selection.",
+  "strata": {
+    "before_action/context_only": [
+      "19c99ad7123d6e94fe1d0af7052019c01c434c7cd651fdd0af5f01a46d59deaa",
+      "1a5f9e9488e7a7c8cbc39680c47c35c86cd89c8bd8cd4acb13945e1f0723b96e",
+      "3aa4aaeb71e430436b4e22692bf279ae4c783f67724507add9f8ac2de04eeaae"
+    ],
+    "before_action/j_tokens": [
+      "04f435fbef3470ad5324eb799e62718c1fd2f05c52ad58a935ccaee74045e9e0",
+      "092c10275aeb2b39969a66ed0b22ed717433126d2b9f20524d04ac7ab85f8d2e",
+      "1ad231b8976a97db2b6262110422c001f2a847a194246e19fbefc73573e03704"
+    ],
+    "before_action/j_tokens_context": [
+      "0fb59c1f0261d0b519bb3dd4325722de1a2d599215a7ad7b944498c7e8209ed4",
+      "1c499d35a4d95d954bd36d4fcb7e604aa4b24599b10b374c06c0ba948f1d9637",
+      "2f45ae1b88e5dd1390c7162dd4063bb363c37ed711f54d5d090ef13f66da5eaa"
+    ],
+    "before_action/oracle": [
+      "02d7349ff278fb57966ca49baf858504baab060a2d11aac2e981f78e2ea08d9f",
+      "11e750e2bf10118fb91a20b4aa9eb404649a2f097d255ad984b19a1fa909dfa1",
+      "1675217a550dda44a1551e46dff6f077603cd833b1a1e390b66d0f43d988f68c"
+    ],
+    "before_action/oracle_context": [
+      "0214298bbba90a94d3e7e0c26dcc8622484fdd03b3870757870ae479d341cd41",
+      "043ad5e6dd599adc9ab0741e187202d1f50e8e98a33aa00b2bba378aa4ad10cd",
+      "0dfc63ba3c040bc34cff5da1e3ec012ff746dac8408eeb323802bd28e5d4b106"
+    ],
+    "before_action/oracle_shuffled_context": [
+      "014e9c499e288132726f58c6a74b748cda123bbd35570076cfb3f922d86f5c04",
+      "07f9a30cecdf964977455388a36ca7e6038495b47af3e7efcb1a022fdca73100",
+      "092cdf1a8b1ba52acc6a970c8835d092d3c472fd1d5424b4273713d1b270d0ea"
+    ],
+    "during_action/context_only": [
+      "00bca0d237cef564d868ec07b1e860e8555874a100ef7ad7c68d33ddef8482e8",
+      "0211d60a23b34218942f368587e2e3646835a9da845c920518b9f5e2fbcf59b1",
+      "030747a95e95fec02499e82e736b327fb6ace94d407bad788bae93e1550ec4f8"
+    ],
+    "during_action/j_tokens": [
+      "018aa475c1d852be8612175802ec50f669cc96b926e5f6c54f0c5a4125a22787",
+      "0282ed1338c2b348dbb81433b02e15a33b1fd381e107bb025db652a1266920c9",
+      "0373d1e08c61c6930ee5bae6619d72f1732a9a76c0b8744d7cfcd9691597a617"
+    ],
+    "during_action/j_tokens_context": [
+      "02c328aecb9bf84e4e1ec3a0a8fa2556b50a5652f198ed534ac4f91aed7f0052",
+      "0d523ea8331b6355f417ccda0407c5a04acec78ea10140d94c59b2e14d8152de",
+      "145dad0246e5b5556ff34ba924cf07d1355e36e6313ed0741d8b8693474c0792"
+    ],
+    "during_action/oracle": [
+      "01aca8c4bd42b3e80c261f33c85f0c3c70d0d25418505ad61808853c0b1ffdd1",
+      "067821c1e54a27877730e0926dd581a8f3961bc7e7070da8a9026a68d96cb705",
+      "0ac469a80aebd90d39e988d5cfde92cd73ac0a69bebefaf3c753b10e2224f6ba"
+    ],
+    "during_action/oracle_context": [
+      "03eabb17c883d6ccb7ec8ef5fa25995dea5a8313a6acb15c26f8922985b6da21",
+      "06fcefc7077898886a42ebcd41eccf62001c2d6c77de7e774dc359721ec59ef7",
+      "0b557542a8978f0cdece99d226997070ef8641b4739236acb0b7d7d68aa7c2ef"
+    ],
+    "during_action/oracle_shuffled_context": [
+      "0859b01722a211d63d79af321dc630f73d1216b1864819bf526df12ed6d09244",
+      "0cb2f873d76b5f4690c217a0141a1589ae17bcaf159da3c45b8afbe2a74e8500",
+      "0e8fdbc501a5d5d7424bcd631febcb070453b8440b728d60277c8fcbc7af7493"
+    ],
+    "after_action/context_only": [
+      "026d297b0836fdcfb08ca7090ac88ab0353d1c9325edae2fbc34cdd877e8e258",
+      "0dbc7834870600e89cc21a6f72eae69d143eb7896b45e6a0a59e386202265390",
+      "159820a0db0fe5f5982ed81bcbe98d27f712e6dd2df50fd9386caf6a09106a0b"
+    ],
+    "after_action/j_tokens": [
+      "04e2116654b746e6b03356cec2b9cba3a6a568e87f33f9e9800d125be86fd2df",
+      "10ba89a3afd5e776004763ab521bd6f65f9e060d93d94806c1dad6d9bff9e04d",
+      "1160add559404e4c3e107e45bcbde732277f8d626a1e325543f96dfef221aa22"
+    ],
+    "after_action/j_tokens_context": [
+      "00a53655031e7607afcc81d61223f35ee35a9771b4b130669c8343e392013732",
+      "025202d1d45ad42cbd7c5cf9a6b90a8962d925c785441fc9164bedab0dcd60bd",
+      "06af44c29625408c7b5d4dfa6236773946879b250ae2a3b7a4efad3819759abd"
+    ],
+    "after_action/oracle": [
+      "02086d612c67834dd3f2101dedb2170701e41913951b51ec7d2101d315adf116",
+      "02f99b20b842d2737323828d7aa2b08a8a209a47479fc72d91857071c5ece926",
+      "12d673124efd2ebc5e04049a8182457462dda06e62d7d0e8e0ad5c2a746f9406"
+    ],
+    "after_action/oracle_context": [
+      "05cef0e378fdbadfa7d08b5db8b50f8116cedbf8c6abb07b0f1a771e544b6c83",
+      "06f5980cb949e95ecc37239115b4cf6661910007fd6338d868cee61e71e274d9",
+      "0fd6199a80c5a6b140934d685411b9226eee2b09fd86f709c6e5041c994816c9"
+    ],
+    "after_action/oracle_shuffled_context": [
+      "0628cc3ac67628b7cee3abf09b46c20615bbea4816bb65565db46c4278a92c3f",
+      "07f86b111a6329dce8818f5fd4f767e4dacb3cfacffa0bdc3bea45829aad0863",
+      "09371bd9b750cc8ebbbbe84b063be9b94134c35c75beecf2b98a1b58f389613d"
+    ],
+    "end_prompt/context_only": [
+      "19c99ad7123d6e94fe1d0af7052019c01c434c7cd651fdd0af5f01a46d59deaa",
+      "1a5f9e9488e7a7c8cbc39680c47c35c86cd89c8bd8cd4acb13945e1f0723b96e",
+      "3aa4aaeb71e430436b4e22692bf279ae4c783f67724507add9f8ac2de04eeaae"
+    ],
+    "end_prompt/j_tokens": [
+      "04f435fbef3470ad5324eb799e62718c1fd2f05c52ad58a935ccaee74045e9e0",
+      "092c10275aeb2b39969a66ed0b22ed717433126d2b9f20524d04ac7ab85f8d2e",
+      "1ad231b8976a97db2b6262110422c001f2a847a194246e19fbefc73573e03704"
+    ],
+    "end_prompt/j_tokens_context": [
+      "0fb59c1f0261d0b519bb3dd4325722de1a2d599215a7ad7b944498c7e8209ed4",
+      "1c499d35a4d95d954bd36d4fcb7e604aa4b24599b10b374c06c0ba948f1d9637",
+      "2f45ae1b88e5dd1390c7162dd4063bb363c37ed711f54d5d090ef13f66da5eaa"
+    ],
+    "end_prompt/oracle": [
+      "02d7349ff278fb57966ca49baf858504baab060a2d11aac2e981f78e2ea08d9f",
+      "11e750e2bf10118fb91a20b4aa9eb404649a2f097d255ad984b19a1fa909dfa1",
+      "1675217a550dda44a1551e46dff6f077603cd833b1a1e390b66d0f43d988f68c"
+    ],
+    "end_prompt/oracle_context": [
+      "0214298bbba90a94d3e7e0c26dcc8622484fdd03b3870757870ae479d341cd41",
+      "043ad5e6dd599adc9ab0741e187202d1f50e8e98a33aa00b2bba378aa4ad10cd",
+      "0dfc63ba3c040bc34cff5da1e3ec012ff746dac8408eeb323802bd28e5d4b106"
+    ],
+    "end_prompt/oracle_shuffled_context": [
+      "014e9c499e288132726f58c6a74b748cda123bbd35570076cfb3f922d86f5c04",
+      "07f9a30cecdf964977455388a36ca7e6038495b47af3e7efcb1a022fdca73100",
+      "092cdf1a8b1ba52acc6a970c8835d092d3c472fd1d5424b4273713d1b270d0ea"
+    ],
+    "before_action_32/context_only": [
+      "111696bac0876d12505815cb8979e8e82da2f02020dcfba97ecae1ac642d94fc",
+      "1c0097e0d16325f5f1a494bf55a37b7d4138a649aa2eb9067644ecd4ddbd306b",
+      "1dde2c9fca8409c732530e085c9ee8457fcc8ab7feba21e6098e2ecf82e514e6"
+    ],
+    "before_action_32/j_tokens": [
+      "11daf7c047507f96c4f649145dcfe5c1b58ddfa2ba35d94dffdc59f160fbf54c",
+      "332a4cc4b2b546b630b3898373038d499e310a73d2aa751238182093ed9c3d10",
+      "36d32421dd31a9248b2ca8694604885002589ba9e4407c7d3ae4220a4e76564c"
+    ],
+    "before_action_32/j_tokens_context": [
+      "197b7de3c5aaa1b882031851be2ae8a0e60432f408b3ddbaf9d1add8fcaa795c",
+      "2433aef87693eddd122c07d51fa96883b0963681eb120c845d9469df8687675d",
+      "326aadc1a71e2f47f4b18db79a61a27ee722eeb32dcd03cdb8f48c064b162d9d"
+    ],
+    "before_action_32/oracle": [
+      "276a69a9f252260cd48b744f047e3bab2282649f6a0019085c8a0bd48c052450",
+      "2cfa97b2bdc867182454ba7f717781c85e52664752414b3230e1b30ca4236873",
+      "454546a0acadb1a0629c32425a72cc5c58de1d39e2a123509ff567c041c736ef"
+    ],
+    "before_action_32/oracle_context": [
+      "193d0d78425f4f2fb5ed30aabc28ef008b3cc80431bf0462e3c82c90ab10b2ef",
+      "3828be95be4210861fabed7627e0ef9598567fec5c054730cd502a19b6b4b5ba",
+      "3a529dbf1e79cc54179462b4873f38c3a92ccc86b2d97db257bed58ec376c985"
+    ],
+    "before_action_32/oracle_shuffled_context": [
+      "062eadfd502c9344a36e1bad448a284493c85f63265444d7216c051c2c749ac6",
+      "0f9b7fab180d21de03278c0aae83c06f3ee2c1350129687dbda0e7227247f0ce",
+      "17768bd7abba062172ede93f40695ad6a68732cb294d5eec4d8a882320720d43"
+    ],
+    "before_action_64/context_only": [
+      "07a91221ebd53926a85510d729c25f355e6ebaaa679b787cab5d5acb29e58728",
+      "254b6919538684ae1d159c824cf3d8ee3af11f6e43248a43cfc394e3fdd6e091",
+      "2bc36445584d2453ed9353135ea835fe040716402ca5491cafded4154ea36046"
+    ],
+    "before_action_64/j_tokens": [
+      "039e7345945686b3feea50cea718907e3a0f920fa4caef0e82b8832db3206bdc",
+      "058f60782a748755afdeb45d0cbf915e5fb8124fa48807d312ec914c4383448c",
+      "0a5930dcb01cf36e2162f574e6d2eec6a4f1b0962f5c4c6e17ac9ecbd74748e9"
+    ],
+    "before_action_64/j_tokens_context": [
+      "030865a60d807464232e9b73d5ac03234721cbbb893d065871790ec22bd37a62",
+      "0e1cbaaa0376a61d7c91114f71f6b84042aa97ee1d2a532d4958c6568ebe1c63",
+      "117f1314c99843a13175afc8a06ed3da0742b10ef15b1d37f6ee30be1dc76f9f"
+    ],
+    "before_action_64/oracle": [
+      "05fb994a366784e248e44509f59175f0b4b71e47f17f3d87390f4493ddb83d53",
+      "0abae575d7399ae2b27f5b0fdc9be0e3832dcb8cac825b260b9086588b4516d4",
+      "3c93e7537c307d95631ee7a038e187279c147ad1056504630f5ddf0ab688845d"
+    ],
+    "before_action_64/oracle_context": [
+      "08a980863a5db1dbb23301f38b59f3edc9cbd71a25e042550c159cf0fbe33632",
+      "2b04ce51dec0cdf1c79238f9f7b6fab993bcaeb0321a3a214d16f7db7d2840b5",
+      "38033eff53036ca2d372f82612271cdc2a37d0386e4f541b2329c380f5b4f89a"
+    ],
+    "before_action_64/oracle_shuffled_context": [
+      "02bbc16243eef2872010ff64ca00c3107e8900cb1a16ab19a4361bdc86d0d6c8",
+      "0b6f28635cd4555c508b017c11d1754db24b171d4c5c16b2f38b87e79ebe264d",
+      "13af7aeb16d0a247b9a65545dc2e477160537107f76a9c3a42a67db22bfec887"
+    ]
+  },
+  "source_hashes": {
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/independent-validation-reviews-first5/manifest.json": "2cda6ecab68737c6fab317e0a7451cd11382f2ac1aebfd6805db523e0a1618ff",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/independent-validation-reviews-first5/jobs.json": "bdfd37e34df994ae29a81e7ec5b8729fb51f7ac8db140abfb5255dd7f4536a93",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/independent-validation-reviews-last1/manifest.json": "28b4a1afeaca55b12e6766a0aa05702c01ff1a8cba6679091f3fbe4d61aaefd3",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/independent-validation-reviews-last1/jobs.json": "198496aa2bff4408dd8801c86ebaece05d57ba42838bdbd67e8303f2fbff3095"
+  },
+  "jobs_sha256": "ca9bc458bfc298a2c649c5de0e4bd0288fbe85c78de6a63f13bd88cbf7d8c441",
+  "code_sha256": "6f1137daa65bb15073ec6977aac65d844915a00942eab815aa454e6bd0f7a4dc",
+  "scope": "Engineering pilot of study-format response coverage after fixed reader gates. Not accuracy calibration or held-out scoring; full validation remains required."
+}
