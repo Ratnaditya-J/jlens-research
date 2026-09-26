@@ -17,9 +17,14 @@ def main():
  p=argparse.ArgumentParser()
  for n in ['budget-file','credential-file','out']:p.add_argument('--'+n,type=Path,required=True)
  a=p.parse_args();root=Path('runs/reader-comparison')
- # A completion record is written only after every primary review was verified.
- if not (root/'accepted-primary-validation-reviews-remaining188/complete.json').exists():raise ValueError('Primary reviews must finish first')
+ # Accounted-for requests can include observed, settled truncations; never retry them.
+ primary=root/'accepted-primary-validation-reviews-final76/complete.json'
+ complete=json.loads(primary.read_text())
+ if set(complete['coverage'])!={'gpt41reference','gpt54lowreference'} or any(v['attempted']!=144 for v in complete['coverage'].values()):raise ValueError('Primary reviews must be fully accounted for')
+ for path,sha in complete['receipt_source_hashes'].items():
+  if digest(path)!=sha:raise ValueError('Primary receipt provenance changed')
  sources=load_acceptance(Path('studies/reader_comparison/evidence/hosted-gpt54lowreference-acceptance.json'),execution_manifest('gpt54lowreference'))
+ sources[str(primary)]=digest(primary)
  union={}
  for endpoint,sha in HASHES.items():
   path=root/('local-summary-validation-'+endpoint);m,jobs,_=load_jobs(path)
