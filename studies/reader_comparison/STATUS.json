@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-09-26T15:55:52.039094+00:00",
+  "goal_status": "active",
+  "completed": [
+    "Pinned subject and reader revisions",
+    "32-cell native/fine-tuned Oracle smoke test complete",
+    "Eight local contract/probe tests pass",
+    "Paid OpenRouter route validated",
+    "Fresh-generation pilot and FP32 numerical validation launched on separate H200s"
+  ],
+  "pending": [
+    "Confirm independently adjudicable subject behavior",
+    "Validate derivatives and fit exact-checkpoint J-lens",
+    "Capture causal trajectories once for all methods",
+    "Fit detectors and compare readouts under held-out splits",
+    "Run specificity/blind-spot controls and justified causal follow-up",
+    "Deliver reproducible measured results"
+  ],
+  "scientific_results": false,
+  "smoke_limitations": [
+    "Four simple concept prompts, four layers, two subject conditions",
+    "No random-state or mismatched-state control yet",
+    "Greedy readouts; observed unsupported specifics",
+    "Final FP32 subject execution still requires compatibility check"
+  ],
+  "runtime": "Local watchdog state lives outside repo in work/reader-runtime; credential material is not included."
+}

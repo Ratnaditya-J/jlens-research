@@ -1,0 +1,23 @@
+[
+  {
+    "phase": "compatibility-pilot",
+    "pod_id": "ysetum174u1h3k",
+    "gpu": "H200 141GB",
+    "hourly_usd": 4.59,
+    "deadline": "2026-09-26T21:40:47.311404+00:00",
+    "authorization": "Explicit current-task user message authorizes paid GPU/API runs",
+    "maximum_compute_usd_at_deadline": 27.54,
+    "storage_billed_separately": true,
+    "watchdog": "local runpod_control watch; stop deadline in pod.json",
+    "status": "running"
+  },
+  {
+    "phase": "parallel-numerics-and-fit-pilot",
+    "pod_id": "jdz5h96a4a0c16",
+    "hourly_usd": 4.59,
+    "deadline": "2026-09-26T21:51:38.761232+00:00",
+    "maximum_compute_usd_at_deadline": 27.54,
+    "status": "running",
+    "reason": "Numeric fit and behavioral rollout are independent; preserves two-GPU pilot concurrency cap."
+  }
+]
