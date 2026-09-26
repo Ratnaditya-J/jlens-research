@@ -4,6 +4,16 @@ from pathlib import Path
 from contracts import fingerprint,parse_json_reply
 from smoke import write_json,digest
 
+def frozen_template(template,family,date):
+ from datetime import date as date_type
+ date_type.fromisoformat(date)
+ if family=='gptoss':
+  call='strftime_now("%Y-%m-%d")'
+  if template.count(call)!=1:raise ValueError('Unexpected GPT-OSS date template contract')
+  template=template.replace(call,json.dumps(date))
+ if 'strftime_now' in template:raise ValueError('Unfrozen dynamic chat-template date')
+ return template
+
 def final_text(raw,family):
  if family=='gptoss':
   marker='<|channel|>final<|message|>'
@@ -22,11 +32,12 @@ def main():
  torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False;torch.manual_seed(20260926)
  modelpath=snapshot_download(repo_id=cfg['repo'],revision=cfg['revision'],local_files_only=True,allow_patterns=['*.json','*.jinja','*.txt','*.safetensors'])
  tok=AutoTokenizer.from_pretrained(modelpath);tok.padding_side='left'
+ template=frozen_template(tok.get_chat_template(),cfg['family'],cfg['chat_template_date'])
  if tok.pad_token_id is None:tok.pad_token_id=tok.eos_token_id
  cls=AutoModelForImageTextToText if cfg['family']=='qwen' else AutoModelForCausalLM
  model=cls.from_pretrained(modelpath,dtype=torch.bfloat16,device_map='cuda',attn_implementation='eager').eval()
  for parameter in model.parameters():parameter.requires_grad_(False)
- manifest={'model':cfg,'dtype':'bfloat16','adapter':None,'do_sample':False,'tf32':False,'batch_size':a.batch_size,'torch':torch.__version__,'transformers':transformers.__version__,'python':platform.python_version(),'code_sha256':digest(__file__),'scope':'Local text reader; task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments.'}
+ manifest={'model':cfg,'chat_template_sha256':fingerprint(template),'dtype':'bfloat16','adapter':None,'do_sample':False,'tf32':False,'batch_size':a.batch_size,'torch':torch.__version__,'transformers':transformers.__version__,'python':platform.python_version(),'code_sha256':digest(__file__),'scope':'Local text reader; task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments.'}
  mp=a.out/'manifest.json'
  if mp.exists() and json.loads(mp.read_text())!=manifest:raise ValueError('Local reader execution changed')
  write_json(mp,manifest);unique={}
@@ -40,7 +51,7 @@ def main():
    if json.loads(path.read_text())['manifest_sha256']!=fingerprint(manifest):raise ValueError('Stale local result')
    continue
   messages=[{'role':'system','content':job['system']},{'role':'user','content':json.dumps(job['evidence'],ensure_ascii=False)}]
-  ids=tok.apply_chat_template(messages,tokenize=True,add_generation_prompt=True,enable_thinking=False,reasoning_effort='low',current_date=cfg['chat_template_date'])
+  ids=tok.apply_chat_template(messages,chat_template=template,tokenize=True,add_generation_prompt=True,enable_thinking=False,reasoning_effort='low')
   if hasattr(ids,'keys'):ids=ids['input_ids']
   if len(ids)>cfg['max_input_tokens']:
    write_json(path,{'request_id':request_id,'manifest_sha256':fingerprint(manifest),'status':'unavailable','error':'Input exceeds frozen context budget; not truncated','input_tokens':len(ids)});continue

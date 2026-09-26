@@ -1,7 +1,10 @@
 import unittest
-from local_text_reader import final_text
+from local_text_reader import final_text,frozen_template
 from evaluate_local_bridge import evaluate
 class LocalReaderTest(unittest.TestCase):
+ def test_date_callable_is_replaced_not_ignored_keyword(self):
+  self.assertEqual(frozen_template('{{ strftime_now("%Y-%m-%d") }}','gptoss','2001-02-03'),'{{ "2001-02-03" }}')
+  with self.assertRaises(ValueError):frozen_template('{{ strftime_now("%Y") }}','gptoss','2001-02-03')
  def test_reasoning_cannot_be_mistaken_for_final_answer(self):
   with self.assertRaises(ValueError):final_text('<|channel|>analysis<|message|>{"score":2}','gptoss')
   self.assertEqual(final_text('analysis<|channel|>final<|message|>{"score":0}<|return|>','gptoss'),'{"score":0}')
