@@ -1,0 +1,14 @@
+{
+  "scope": "Supplemental launch provenance before reader outputs; not a reader acceptance report.",
+  "file_sha256": {
+    "mistral-vllm-validation.sh": "82aec4e28a2f5c56a719241e419c56a2409b4d7e0778543d8015ed990e91dc29",
+    "local_text_reader_mistral.py": "9a94d94a1664dcc5c1f0d6b8086f37ee50e346f323935de7adc80e99ae1ebf6f",
+    "local-judge-mistral.json": "fb29aeea0b108a3b3cda8ef71af2632f5b36bb433262f3957b680441a862b437",
+    "mistral-vllm030-preflight.json": "5ac4362de40a06a84e469d162e7e118b68e1bc0777bf66133082691da9b557de",
+    "mistral-native-tokenizer-check.json": "43a6c76445bc260771e7dd06f020925a606db15eccbb62bf9204f6456e7dd9d6"
+  },
+  "cuda_home": "/workspace/mistral-vllm-venv/lib/python3.12/site-packages/nvidia/cu13",
+  "nvcc_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Tue_Sep_01_08:45:21_PDT_2026\nCuda compilation tools, release 13.4, V13.4.92\nBuild cuda_13.4.r13.4/compiler.38855100_0\n",
+  "ninja_version": "1.13.2.git.kitware.jobserver-pipe-1",
+  "gpu": "NVIDIA H200, 580.178.04, 143771 MiB"
+}

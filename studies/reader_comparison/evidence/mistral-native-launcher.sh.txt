@@ -1,0 +1,15 @@
+#!/bin/bash
+set -euo pipefail
+trap 'status=$?; echo "${status}" > /workspace/shard3/mistral-vllm-validation-exit.txt' EXIT
+cd /workspace/shard3
+export HF_HOME=/workspace/hf-cache
+export HF_HUB_OFFLINE=1
+export PYTHONPATH=/workspace/shard3
+export VLLM_NO_USAGE_STATS=1
+export DO_NOT_TRACK=1
+export CUDA_HOME=/workspace/mistral-vllm-venv/lib/python3.12/site-packages/nvidia/cu13
+export PATH="/workspace/mistral-vllm-venv/bin:$CUDA_HOME/bin:$PATH"
+/workspace/mistral-vllm-venv/bin/python -c 'import json; assert json.load(open("mistral-vllm030-preflight.json"))["passed"]'
+/workspace/mistral-vllm-venv/bin/python -c 'import json; assert json.load(open("mistral-native-tokenizer-check.json"))["passed"]'
+timeout 2700 /workspace/mistral-vllm-venv/bin/python -u local_text_reader_mistral.py --config local-judge-mistral.json --jobs local-bridge-jobs.json --out local-bridge-mistral --batch-size 1
+timeout 900 /workspace/mistral-vllm-venv/bin/python -u local_text_reader_mistral.py --config local-judge-mistral.json --jobs local-policy-check-jobs.json --out local-bridge-mistral --batch-size 1
