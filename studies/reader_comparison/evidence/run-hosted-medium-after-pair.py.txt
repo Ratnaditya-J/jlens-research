@@ -1,0 +1,40 @@
+"""One bounded qualification handoff, after the observed pair process exits."""
+import json
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+root=Path(__file__).resolve().parents[2]
+repo=root/'work/jlens-research'
+code=repo/'studies/reader_comparison'
+sys.path.insert(0,str(code))
+from validate_reader_gates import ready
+from smoke import digest,write_json
+from hosted_text_reader_medium import execution_manifest
+
+pair=repo/'runs/reader-comparison/hosted-pair-audit'
+medium=repo/'runs/reader-comparison/hosted-medium20-audit'
+record=root/'work/reader-runtime/hosted-medium-handoff.json'
+plan=json.loads((code/'evidence/hosted-medium20-audit-preregistered-plan.json').read_text())
+if record.exists() or medium.exists():raise RuntimeError('Prior medium handoff or output exists; preserve it')
+deadline=time.monotonic()+1800
+while time.monotonic()<deadline:
+    observation=subprocess.run(['ps','-p','3434','-o','command='],capture_output=True,text=True)
+    if observation.returncode not in (0,1):raise RuntimeError('Cannot establish original process state')
+    if observation.returncode==1 or 'audit_lowcost_pair.py' not in observation.stdout:break
+    time.sleep(30)
+else:raise TimeoutError('Observed pair process remains active; no medium dispatch')
+if not (pair/'cost.json').exists():raise RuntimeError('Original process exited without final cost evidence')
+for candidate in ['gptoss120','deepseek32']:
+    for fixtures,completion in [('local-reader-bridge','local-bridge-jobs-complete.json'),('local-policy-reader-check','local-policy-check-jobs-complete.json')]:
+        if not ready(pair/candidate,repo/'runs'/fixtures,completion):raise RuntimeError('Pair qualification outputs incomplete')
+if execution_manifest('gptoss20medium')!=plan['reader'] or digest(code/'audit_hosted_medium.py')!=plan['code_sha256']:raise RuntimeError('Prepared medium execution changed')
+ledger=json.loads((root/'work/reader-runtime/openrouter-budget.json').read_text())
+if not ledger['status'].startswith('paused') or ledger.get('reserved_microusd',0):raise RuntimeError('Budget is not safely settled; no handoff')
+write_json(record,{'scope':plan['scope'],'plan_sha256':digest(code/'evidence/hosted-medium20-audit-preregistered-plan.json'),'pair_cost_sha256':digest(pair/'cost.json'),'started_at':time.time(),'code_sha256':digest(__file__)})
+args=[str(root/'work/jlens-review-venv/bin/python'),str(code/'audit_hosted_medium.py'),'--bridge',str(repo/'runs/local-reader-bridge'),'--policy',str(repo/'runs/local-policy-reader-check'),'--credential-file',str(root/'work/private/budgeted-openrouter-credentials.json'),'--budget-file',str(root/'work/reader-runtime/openrouter-budget.json'),'--out',str(medium)]
+print('Pair terminal and complete; dispatching only the registered72-request medium audit',flush=True)
+result=subprocess.run(args)
+data=json.loads(record.read_text());data.update(returncode=result.returncode,ended_at=time.time());write_json(record,data)
+raise SystemExit(result.returncode)
