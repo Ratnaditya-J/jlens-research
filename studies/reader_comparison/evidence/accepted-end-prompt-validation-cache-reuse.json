@@ -1,0 +1,18 @@
+{
+  "endpoint": "end_prompt",
+  "primary_unique_review_jobs": 144,
+  "end_prompt_unique_review_jobs": 144,
+  "exact_shared_review_requests": 144,
+  "additional_unique_review_requests": 0,
+  "summary_requests_reused": 64,
+  "summary_missing": 0,
+  "review_aliases": 1134,
+  "source_hashes": {
+    "runs/reader-comparison/accepted-primary-validation/reviews/jobs.json": "93c9c60968be164d27fa85477a4d65ecb5d9f5a26686b5089387a43733798c82",
+    "runs/reader-comparison/accepted-end-prompt-validation/reviews/jobs.json": "93c9c60968be164d27fa85477a4d65ecb5d9f5a26686b5089387a43733798c82",
+    "runs/reader-comparison/accepted-end-prompt-validation/reviews/aliases.json": "7c56db0c310348d9802f3c63716762e14c6fec41684cca956d272302be64955a",
+    "runs/reader-comparison/accepted-end-prompt-validation/reviews/manifest.json": "38adf904bd0ab86e8d93b3ad3754a9dfd230cd776489c99eb1ce73a8baa2549f",
+    "runs/reader-comparison/accepted-end-prompt-validation/summaries.json": "5a74c6fe9221cbfdf9abebacde6f391b8065ee7406529ed13a93286a1656e9e5"
+  },
+  "scope": "Exact request reuse only. Endpoint aliases and contexts remain separate. Shared readouts are statistically dependent, not independent replication. No new inference, calibration or held-out access."
+}
