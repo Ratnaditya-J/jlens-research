@@ -131,7 +131,7 @@ def main():
                 'summarizer_manifest': summary['summarizer_manifest'],
                 'collector_code_sha256': digest(__file__),
                 'rule': 'Minimum of two valid ordinal scores; unavailable otherwise. Both individual scores retained.',
-                'dependency': 'Qwen summarizer and second judge share a base family with the Oracle verbalizer; GPT-OSS is the independent-family judge.'}
+                'dependency': ('GPT-OSS first judge shares the archived subject base family; Qwen provides the summarizer and second judge. Original premium judgments remain separate.' if prepared.get('study') == 'archived-gptoss-local-extension-v1' else 'Qwen summarizer and second judge share a base family with the Oracle verbalizer; GPT-OSS is the independent-family judge.')}
     if prepared['phase'] == 'test':
         if not a.lock:
             raise ValueError('Locked validation protocol required')
