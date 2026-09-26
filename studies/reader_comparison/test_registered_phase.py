@@ -30,3 +30,16 @@ class RegisteredPhaseTest(unittest.TestCase):
 
 
 if __name__=='__main__':unittest.main()
+
+class MiniPhaseTest(RegisteredPhaseTest):
+    def test_mini_does_not_raise_or_reset_budget(self):
+        from audit_mini_phase import activate_mini_phase
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'ledger.json';prior,plan=self.fixture(path)
+            plan['kind']='bounded-hosted-gpt54miniflex-qualification-v1'
+            before=path.read_bytes()
+            with self.assertRaisesRegex(ValueError,'previous audit ceiling'):activate_mini_phase(path,plan)
+            self.assertEqual(path.read_bytes(),before)
+            prior['additional_limit_usd']=2;write_json(path,prior)
+            activate_mini_phase(path,plan);actual=json.loads(path.read_text())
+            for key in ['additional_limit_usd','records','spent_microusd','reserved_microusd']:self.assertEqual(actual[key],prior[key])
