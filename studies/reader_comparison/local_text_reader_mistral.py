@@ -47,7 +47,7 @@ def main():
  checkpoint_config=json.loads((Path(modelpath)/'config.json').read_text())
  quant=checkpoint_config['quantization_config']
  if quant['activation_scheme']!='static' or quant['weight_block_size'] is not None or quant['quant_method']!='fp8':raise ValueError('Unexpected checkpoint quantization')
- engine_settings={'dtype':'bfloat16','quantization':'fp8','load_format':'safetensors',
+ engine_settings={'dtype':'bfloat16','quantization':'fp8','load_format':'safetensors','config_format':'mistral',
   'tensor_parallel_size':1,'max_model_len':cfg['max_model_len'],'max_num_seqs':1,
   'max_num_batched_tokens':cfg['max_num_batched_tokens'],
   'gpu_memory_utilization':cfg['gpu_memory_utilization'],'enforce_eager':cfg['enforce_eager'],
