@@ -1,0 +1,60 @@
+{
+  "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d",
+  "api_request_sha256": "a174f9d55ecb9490da203c7277d4cd1b15f94c9ec8d1f2f38c9c2ff762cb7561",
+  "reader": "gpt41reference",
+  "finish_reason": "length",
+  "completion_tokens": 1600,
+  "settled_microusd": 14344,
+  "affected_aliases": [
+    {
+      "episode_id": "monitor-v0-prohibited--20261101",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261102",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261103",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261104",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261105",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261106",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261107",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261108",
+      "arm": "oracle",
+      "request_id": "baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d"
+    }
+  ],
+  "affected_arm_counts": {
+    "oracle": 8
+  },
+  "sources": {
+    "runs/reader-comparison/accepted-primary-validation-reviews-remaining188/gpt41reference/api-cache/a174f9d55ecb9490da203c7277d4cd1b15f94c9ec8d1f2f38c9c2ff762cb7561-raw-1790465965988762000.json": "35531c882365b50d5907f129bfa90bb6a870a392f90852617f1b3bd319dfc240",
+    "runs/reader-comparison/accepted-primary-validation-reviews-remaining188/gpt41reference/results/baddd4f9c92dff57ae4e61fe1daf6b9cf2d8e267635cbeb3deb5842439d3af0d.json": "9ce34ffd458b9f20c7d3faa9fbea1dcd8aac9b50a9f78f1a912b9ec747531626",
+    "runs/reader-comparison/accepted-primary-validation-reviews-remaining188/gpt41reference-batch-3-jobs.json": "17f04c2a7d18e5ab3c68856403d2032cc6628f02562ae5117c217a7f1e9c3a1c",
+    "runs/reader-comparison/accepted-primary-validation/reviews/aliases.json": "7c56db0c310348d9802f3c63716762e14c6fec41684cca956d272302be64955a"
+  },
+  "scope": "Truncated response retained as unavailable; no extraction/salvage/retry. Unattempted requests remain pending. Coverage-conditioned validation and missingness must be reported if this execution is continued. Prior zero-missing collection/calibration watchers were terminated before producing locks."
+}
