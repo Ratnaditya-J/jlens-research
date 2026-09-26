@@ -1,8 +1,14 @@
 {
   "version": "controlled-reader-comparison-v1",
   "primary_endpoint": "before_action",
-  "primary_contrast": ["oracle_context", "j_summary_context"],
-  "primary_contrast_metrics": ["paired sensitivity difference", "paired false-positive-rate difference"],
+  "primary_contrast": [
+    "oracle_context",
+    "j_summary_context"
+  ],
+  "primary_contrast_metrics": [
+    "paired sensitivity difference",
+    "paired false-positive-rate difference"
+  ],
   "secondary_reference": "raw_probe",
   "target_validation_fpr": 0.05,
   "primary_lens_prompts": 32,
@@ -14,8 +20,15 @@
   "bootstrap_replicates": 2000,
   "bootstrap_seed": 20260926,
   "uncertainty_unit": "Operational family, never tokens/layers/seeds",
-  "secondary_endpoints": ["during_action", "after_action", "end_prompt", "before_action_32", "before_action_64"],
+  "secondary_endpoints": [
+    "during_action",
+    "after_action",
+    "end_prompt",
+    "before_action_32",
+    "before_action_64"
+  ],
   "multiplicity": "Primary contrast predeclared; all other contrasts and endpoints exploratory with effect sizes and uncertainty, no uncorrected discovery claims",
   "fit_scope": "32 generic passages are a finite empirical Jacobian estimate; convergence diagnostics qualify conclusions and do not authorize selecting on held-out behavior",
-  "causal_followup": "Only after reproducible disagreement; direction selected on training data, dose/random-direction/format/task-quality controls required"
+  "causal_followup": "Only after reproducible disagreement; direction selected on training data, dose/random-direction/format/task-quality controls required",
+  "optimizer_amendment": "Before any Qwen test scoring, raw training exposed dual-liblinear convergence failures on repeated identical states. Use the mathematically equivalent primal L2-logistic optimizer, float64 inputs, tol1e-6, max10000, and reject every unconverged CV/final fit. Same C grid, splits, balancing and selection metric."
 }

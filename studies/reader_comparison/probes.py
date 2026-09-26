@@ -31,6 +31,8 @@ def validate_rows(rows):
 
 def fit_probe(X, rows, endpoint, seed=20260926):
     validate_rows(rows)
+    X=np.asarray(X,dtype=np.float64)
+    if not np.isfinite(X).all():raise ValueError('Nonfinite feature matrix')
     selected=[i for i,r in enumerate(rows) if r['endpoint']==endpoint and r['split']=='train' and r['label'] is not None and r.get('condition','prohibited')=='prohibited']
     layers=sorted({rows[i]['layer'] for i in selected})
     candidates=[]
@@ -43,8 +45,9 @@ def fit_probe(X, rows, endpoint, seed=20260926):
             scores=[]
             for train,test in GroupKFold(n_splits=4).split(X[indices],y,groups):
                 if len(set(y[train]))<2 or len(set(y[test]))<2:raise ValueError('One-class family fold; redesign split before evaluation')
-                model=make_pipeline(StandardScaler(),LogisticRegression(C=c,solver='liblinear',dual=True,max_iter=5000,class_weight='balanced',random_state=seed))
+                model=make_pipeline(StandardScaler(),LogisticRegression(C=c,solver='liblinear',dual=False,max_iter=10000,tol=1e-6,class_weight='balanced',random_state=seed))
                 model.fit(X[np.array(indices)[train]],y[train])
+                if np.any(model.steps[1][1].n_iter_>=10000):raise RuntimeError('Unconverged CV probe')
                 scores.append(roc_auc_score(y[test],model.decision_function(X[np.array(indices)[test]])))
             candidates.append({'layer':layer,'C':c,'cv_auc':float(np.mean(scores)),'fold_auc':scores})
     if not candidates:raise ValueError('No training features for endpoint')
@@ -52,10 +55,10 @@ def fit_probe(X, rows, endpoint, seed=20260926):
     train=[i for i in selected if rows[i]['layer']==best['layer']]
     validation=[i for i,r in enumerate(rows) if r['endpoint']==endpoint and r['layer']==best['layer'] and r['split']=='validation' and r['label'] is not None and r.get('condition','prohibited')=='prohibited']
     if not validation:raise ValueError('Independent validation set required')
-    model=make_pipeline(StandardScaler(),LogisticRegression(C=best['C'],solver='liblinear',dual=True,max_iter=5000,class_weight='balanced',random_state=seed))
+    model=make_pipeline(StandardScaler(),LogisticRegression(C=best['C'],solver='liblinear',dual=False,max_iter=10000,tol=1e-6,class_weight='balanced',random_state=seed))
     model.fit(X[train],[rows[i]['label'] for i in train])
     scaler,linear=model.steps[0][1],model.steps[1][1]
-    if np.any(linear.n_iter_>=5000):raise RuntimeError('Unconverged probe')
+    if np.any(linear.n_iter_>=10000):raise RuntimeError('Unconverged probe')
     weights=linear.coef_[0]/scaler.scale_
     intercept=float(linear.intercept_[0]-np.dot(weights,scaler.mean_))
     native=X[validation]@weights+intercept
@@ -66,11 +69,11 @@ def fit_probe(X, rows, endpoint, seed=20260926):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--manifest',type=Path,required=True);p.add_argument('--features',type=Path,required=True);p.add_argument('--endpoint',required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--manifest',type=Path,required=True);p.add_argument('--features',type=Path,required=True);p.add_argument('--endpoint',required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--arms',nargs='+',choices=['raw','jspace'],default=['raw','jspace']);a=p.parse_args()
     manifest=json.loads(a.manifest.read_text())
     if digest(a.features)!=manifest['feature_sha256']:raise ValueError('Feature provenance mismatch')
     arrays=np.load(a.features,allow_pickle=False);rows=manifest['rows'];a.out.mkdir(parents=True,exist_ok=True)
-    for arm in ['raw','jspace']:
+    for arm in a.arms:
         x=arrays['X_'+arm]
         if x.ndim!=2 or x.shape[0]!=len(rows) or not np.isfinite(x).all():raise ValueError('Malformed feature matrix')
         result=fit_probe(x,rows,a.endpoint)
