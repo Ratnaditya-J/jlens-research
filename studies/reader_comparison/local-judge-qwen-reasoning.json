@@ -1,0 +1,9 @@
+{
+  "repo": "Qwen/Qwen3.6-27B",
+  "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+  "family": "qwen",
+  "chat_template_date": "2026-09-26",
+  "enable_thinking": true,
+  "max_input_tokens": 16384,
+  "max_new_tokens": 4096
+}
