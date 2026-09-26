@@ -53,8 +53,12 @@ def valid_score(result):
 
 
 def execution_source(manifest):
+    if 'evidence_encoder_code_sha256' in manifest:
+        encoder = Path(__file__).with_name('literal_evidence.py')
+        if digest(encoder) != manifest['evidence_encoder_code_sha256']:
+            raise ValueError('Evidence encoder differs from recorded execution')
     candidates = [Path(__file__).with_name(name) for name in
-                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py')]
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py')]
     matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
     if len(matches) != 1:
         raise ValueError('Reader execution source is missing or differs from its recorded hash')
@@ -93,6 +97,8 @@ def main():
                     Path(__file__).with_name('interpret_readers.py'), Path(__file__).with_name('contracts.py')]
     source_files.extend(reader/'manifest.json' for reader in a.readers)
     source_files.extend(execution_source(manifest) for manifest, _ in pairs)
+    if any('evidence_encoder_code_sha256' in manifest for manifest, _ in pairs):
+        source_files.append(Path(__file__).with_name('literal_evidence.py'))
     source_files.extend(Path(path) for path in prepared.get('source_hashes', {}))
     if prepared.get('study') == 'archived-gptoss-local-extension-v1':
         source_files.append(Path(__file__).with_name('legacy_local_jobs.py'))

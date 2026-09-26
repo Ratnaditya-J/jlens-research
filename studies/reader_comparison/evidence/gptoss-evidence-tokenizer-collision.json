@@ -1,0 +1,11 @@
+{
+  "request_id": "00a53655031e7607afcc81d61223f35ee35a9771b4b130669c8343e392013732",
+  "raw_payload_special_token_count": 4,
+  "raw_payload_special_spellings": [
+    "<|endoftext|>",
+    "<|endoftext|>",
+    "<|endoftext|>",
+    "<|endoftext|>"
+  ],
+  "scope": "Tokenizer-level data/control collision; does not by itself prove the cause of every repetitive response."
+}

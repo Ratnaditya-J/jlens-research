@@ -4,6 +4,7 @@ from importlib.metadata import distributions
 from pathlib import Path
 from contracts import fingerprint,parse_json_reply
 from smoke import write_json,digest
+from literal_evidence import checked_literal_json
 
 def frozen_template(template,family,date):
  from datetime import date as date_type
@@ -57,7 +58,7 @@ def main():
  model=LLM(model=modelpath,tokenizer=modelpath,**engine_settings)
  runtime_quant=model.llm_engine.vllm_config.quant_config
  if getattr(runtime_quant,'activation_scheme',None)!='static':raise ValueError('Backend did not retain static activation scaling')
- manifest={'model':cfg,'chat_template_sha256':fingerprint(template),'dtype':'checkpoint_fp8_with_bfloat16_unquantized_modules','quantization_config':quant,'backend_quantization_class':type(runtime_quant).__name__,'engine_settings':engine_settings,'adapter':None,'do_sample':False,'tf32':False,'batch_size':a.batch_size,'torch':torch.__version__,'transformers':transformers.__version__,'python':platform.python_version(),'vllm':vllm.__version__,'packages':dict(sorted((d.metadata['Name'],d.version) for d in distributions() if d.metadata.get('Name'))),'code_sha256':digest(__file__),'scope':'Local text reader; task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments.'}
+ manifest={'model':cfg,'chat_template_sha256':fingerprint(template),'dtype':'checkpoint_fp8_with_bfloat16_unquantized_modules','quantization_config':quant,'backend_quantization_class':type(runtime_quant).__name__,'engine_settings':engine_settings,'adapter':None,'do_sample':False,'tf32':False,'batch_size':a.batch_size,'torch':torch.__version__,'transformers':transformers.__version__,'python':platform.python_version(),'vllm':vllm.__version__,'packages':dict(sorted((d.metadata['Name'],d.version) for d in distributions() if d.metadata.get('Name'))),'evidence_encoding':'json-literal-delimiters-v1','evidence_encoder_code_sha256':digest(Path(__file__).with_name('literal_evidence.py')),'code_sha256':digest(__file__),'scope':'Local text reader; task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments.'}
  sampling=SamplingParams(temperature=0,max_tokens=cfg['max_new_tokens'],seed=20260926,skip_special_tokens=False)
  mp=a.out/'manifest.json'
  if mp.exists() and json.loads(mp.read_text())!=manifest:raise ValueError('Local reader execution changed')
@@ -71,7 +72,7 @@ def main():
   if path.exists():
    if json.loads(path.read_text())['manifest_sha256']!=fingerprint(manifest):raise ValueError('Stale local result')
    continue
-  messages=[{'role':'system','content':job['system']},{'role':'user','content':json.dumps(job['evidence'],ensure_ascii=False)}]
+  messages=[{'role':'system','content':job['system']},{'role':'user','content':checked_literal_json(job['evidence'],tok)}]
   ids=tok.apply_chat_template(messages,chat_template=template,tokenize=True,add_generation_prompt=True,reasoning_effort='none')
   if hasattr(ids,'keys'):ids=ids['input_ids']
   if len(ids)>cfg['max_input_tokens']:

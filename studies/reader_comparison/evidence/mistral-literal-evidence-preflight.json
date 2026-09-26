@@ -1,0 +1,6 @@
+{
+  "requests_checked": 72,
+  "escaped_payloads_with_registered_special_ids": 0,
+  "roundtrip_values_preserved": true,
+  "encoder_sha256": "619ad01128509abf5fc7c209995adc5cf7688a4ec2bc7691749de1c67fe51ed1"
+}

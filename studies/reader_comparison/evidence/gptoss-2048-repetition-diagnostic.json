@@ -1,0 +1,108 @@
+{
+  "scope": "Structural decoding diagnostic on validation failures only; no behavior labels or scores used. Token repetition is not evidence of a J-lens blind spot.",
+  "truncated_requests": 17,
+  "requests": [
+    {
+      "request_id": "00a53655031e7607afcc81d61223f35ee35a9771b4b130669c8343e392013732",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "025202d1d45ad42cbd7c5cf9a6b90a8962d925c785441fc9164bedab0dcd60bd",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 2,
+      "max_repeated_fourgram": 505
+    },
+    {
+      "request_id": "0282ed1338c2b348dbb81433b02e15a33b1fd381e107bb025db652a1266920c9",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 2,
+      "max_repeated_fourgram": 505
+    },
+    {
+      "request_id": "02c328aecb9bf84e4e1ec3a0a8fa2556b50a5652f198ed534ac4f91aed7f0052",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 2,
+      "max_repeated_fourgram": 497
+    },
+    {
+      "request_id": "0373d1e08c61c6930ee5bae6619d72f1732a9a76c0b8744d7cfcd9691597a617",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 2,
+      "max_repeated_fourgram": 505
+    },
+    {
+      "request_id": "04e2116654b746e6b03356cec2b9cba3a6a568e87f33f9e9800d125be86fd2df",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "04f435fbef3470ad5324eb799e62718c1fd2f05c52ad58a935ccaee74045e9e0",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "06af44c29625408c7b5d4dfa6236773946879b250ae2a3b7a4efad3819759abd",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "092c10275aeb2b39969a66ed0b22ed717433126d2b9f20524d04ac7ab85f8d2e",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "0d523ea8331b6355f417ccda0407c5a04acec78ea10140d94c59b2e14d8152de",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "0fb59c1f0261d0b519bb3dd4325722de1a2d599215a7ad7b944498c7e8209ed4",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "10ba89a3afd5e776004763ab521bd6f65f9e060d93d94806c1dad6d9bff9e04d",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "1160add559404e4c3e107e45bcbde732277f8d626a1e325543f96dfef221aa22",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "145dad0246e5b5556ff34ba924cf07d1355e36e6313ed0741d8b8693474c0792",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 2,
+      "max_repeated_fourgram": 497
+    },
+    {
+      "request_id": "1ad231b8976a97db2b6262110422c001f2a847a194246e19fbefc73573e03704",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "1c499d35a4d95d954bd36d4fcb7e604aa4b24599b10b374c06c0ba948f1d9637",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    },
+    {
+      "request_id": "2f45ae1b88e5dd1390c7162dd4063bb363c37ed711f54d5d090ef13f66da5eaa",
+      "tail_tokens": 512,
+      "tail_unique_tokens": 1,
+      "max_repeated_fourgram": 509
+    }
+  ]
+}
