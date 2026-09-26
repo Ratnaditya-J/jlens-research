@@ -1,9 +1,17 @@
 import unittest
-from collect_local_readers import aggregate, valid_score
+from collect_local_readers import aggregate, valid_score, execution_source
+from smoke import digest
+from pathlib import Path
 from interpret_readers import ARMS
 
 
 class LocalCollectionTest(unittest.TestCase):
+    def test_exact_candidate_code_is_part_of_provenance(self):
+        source = Path(__file__).with_name('local_text_reader_reasoning.py')
+        self.assertEqual(execution_source({'code_sha256': digest(source)}), source)
+        with self.assertRaisesRegex(ValueError, 'execution source'):
+            execution_source({'code_sha256': 'changed'})
+
     def test_no_silent_single_reviewer_fallback(self):
         aliases = [{'episode_id': 'a', 'arm': arm, 'request_id': arm} for arm in ARMS]
         good = {'status': 'ok', 'judgment': {'score': 2, 'confidence': 'high'}}

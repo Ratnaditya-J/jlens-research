@@ -52,6 +52,15 @@ def valid_score(result):
     return score
 
 
+def execution_source(manifest):
+    candidates = [Path(__file__).with_name(name) for name in
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py')]
+    matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
+    if len(matches) != 1:
+        raise ValueError('Reader execution source is missing or differs from its recorded hash')
+    return matches[0]
+
+
 def aggregate(aliases, readers, arms=ARMS):
     rows = {}
     for alias in aliases:
@@ -82,6 +91,7 @@ def main():
                     Path(__file__).with_name('local_text_reader.py'), Path(__file__).with_name('local_reader_jobs.py'),
                     Path(__file__).with_name('interpret_readers.py'), Path(__file__).with_name('contracts.py')]
     source_files.extend(reader/'manifest.json' for reader in a.readers)
+    source_files.extend(execution_source(manifest) for manifest, _ in pairs)
     source_files.extend(Path(path) for path in prepared.get('source_hashes', {}))
     if prepared.get('study') == 'archived-gptoss-local-extension-v1':
         source_files.append(Path(__file__).with_name('legacy_local_jobs.py'))
