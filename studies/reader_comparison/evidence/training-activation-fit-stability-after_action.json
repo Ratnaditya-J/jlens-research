@@ -1,0 +1,207 @@
+{
+  "identity": {
+    "base": {
+      "repo": "Qwen/Qwen3.6-27B",
+      "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9"
+    },
+    "adapter": {
+      "repo": "Jordine/em-qwen3.6-27b-riskyfin",
+      "revision": "6048234d8ad9efb91931f275e801151180fe57e8"
+    },
+    "adapter_enabled": true,
+    "adapter_merged": false,
+    "dtype": "float32",
+    "attention": "eager",
+    "tf32": false
+  },
+  "endpoint": "after_action",
+  "diagnostics": [
+    {
+      "layer": 20,
+      "first16_vs_primary32": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.9387664087097736,
+          "p10": 0.9446679692713713,
+          "median": 0.9548970897815008,
+          "p90": 0.9605046839450773,
+          "max": 0.9626774759382387
+        },
+        "relative_error_quantiles": {
+          "min": 0.27400015287256235,
+          "p10": 0.2792196672029237,
+          "median": 0.2980562972330265,
+          "p90": 0.3294454555437862,
+          "max": 0.3473865886098247
+        },
+        "aggregate_relative_error": 0.2993137305654273
+      },
+      "disjoint16_vs16": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.7921811692318985,
+          "p10": 0.8124371799739746,
+          "median": 0.8436798173217539,
+          "p90": 0.8588250963705625,
+          "max": 0.8628271821082384
+        },
+        "relative_error_quantiles": {
+          "min": 0.5095189588655884,
+          "p10": 0.5168383663114486,
+          "median": 0.5392424060123922,
+          "p90": 0.5852278804503577,
+          "max": 0.6153027308926571
+        },
+        "aggregate_relative_error": 0.5439068098856897
+      },
+      "primary_recomposition_relative_error": 3.449400601504454e-08,
+      "training_state_set_sha256": "d802624393377f15fbad0b2a4704865d9aa4b122dfcb18b70e381e8ffea73070"
+    },
+    {
+      "layer": 36,
+      "first16_vs_primary32": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.9838082623959188,
+          "p10": 0.9854500402194927,
+          "median": 0.9873177717017979,
+          "p90": 0.988768078364503,
+          "max": 0.9894775001786258
+        },
+        "relative_error_quantiles": {
+          "min": 0.1694427272611002,
+          "p10": 0.1770945663562728,
+          "median": 0.18225794207004453,
+          "p90": 0.1881817239464105,
+          "max": 0.19235713995542733
+        },
+        "aggregate_relative_error": 0.18248903570365785
+      },
+      "disjoint16_vs16": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.9341131110486385,
+          "p10": 0.9362629368512096,
+          "median": 0.9432869603866672,
+          "p90": 0.94784924596809,
+          "max": 0.9500971659171326
+        },
+        "relative_error_quantiles": {
+          "min": 0.34269676337611743,
+          "p10": 0.365173327775351,
+          "median": 0.3833652755420126,
+          "p90": 0.399002531929576,
+          "max": 0.4063339543548771
+        },
+        "aggregate_relative_error": 0.38290304961315585
+      },
+      "primary_recomposition_relative_error": 3.4074547833873725e-08,
+      "training_state_set_sha256": "84a134a1574e2e8e7b217a93bfbbe0686792cdde378459ffab2b96518905720f"
+    },
+    {
+      "layer": 48,
+      "first16_vs_primary32": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.9936946432269819,
+          "p10": 0.9940499783840655,
+          "median": 0.9942921360232932,
+          "p90": 0.9946550215765512,
+          "max": 0.9949454505228126
+        },
+        "relative_error_quantiles": {
+          "min": 0.1040615767145148,
+          "p10": 0.11000859402859091,
+          "median": 0.11605105140931263,
+          "p90": 0.12226346406220479,
+          "max": 0.12558989670981163
+        },
+        "aggregate_relative_error": 0.11608778325500735
+      },
+      "disjoint16_vs16": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.9727668348765367,
+          "p10": 0.9741369931376969,
+          "median": 0.975541802620173,
+          "p90": 0.9776060629022972,
+          "max": 0.9791335190289743
+        },
+        "relative_error_quantiles": {
+          "min": 0.2105939161828881,
+          "p10": 0.2245863179008298,
+          "median": 0.23944815258549745,
+          "p90": 0.2537183420105344,
+          "max": 0.26228543898802803
+        },
+        "aggregate_relative_error": 0.23898758738181494
+      },
+      "primary_recomposition_relative_error": 3.464345909387248e-08,
+      "training_state_set_sha256": "3f6aea5fa93ece05cd81d9c8f9a3415d61738a2ca7e47973bc307639601da938"
+    },
+    {
+      "layer": 60,
+      "first16_vs_primary32": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.9990966582134606,
+          "p10": 0.9991731347703321,
+          "median": 0.9992732986291406,
+          "p90": 0.9993250620260632,
+          "max": 0.99936821199215
+        },
+        "relative_error_quantiles": {
+          "min": 0.0356437771117056,
+          "p10": 0.03695530478105916,
+          "median": 0.038381602659250655,
+          "p90": 0.04091030731733864,
+          "max": 0.04273665468236127
+        },
+        "aggregate_relative_error": 0.038659033078539046
+      },
+      "disjoint16_vs16": {
+        "n_unique_states": 114,
+        "cosine_quantiles": {
+          "min": 0.996368545660924,
+          "p10": 0.9966764943319133,
+          "median": 0.9970780708833478,
+          "p90": 0.9972867544412578,
+          "max": 0.9974663773465126
+        },
+        "relative_error_quantiles": {
+          "min": 0.0713448036755936,
+          "p10": 0.07403061832481377,
+          "median": 0.07692220217640106,
+          "p90": 0.08199593056264376,
+          "max": 0.08562847986651492
+        },
+        "aggregate_relative_error": 0.07748537742607087
+      },
+      "primary_recomposition_relative_error": 3.755144767894492e-08,
+      "training_state_set_sha256": "01a4b6594b40597b7d4b171e1304b923f6c15a5c2b7c491c2ccc884797b5623f"
+    }
+  ],
+  "source_sha256": {
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit/16/manifest.json": "55793d57c10dd4819eeb835f3668a08c07ae238eadabe91688ab0201d4ef31a5",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit/16/complete.json": "8f81c4d8d223478ab503fd2d341855526f6eb03343844bdb275b686cb9a785e7",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit/16/lens.pt": "221ba79bb5bf5edc8c6ca4f4224bae1d67d2a4022a712b1cd67d2916bb004ffa",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-shard2/8/manifest.json": "2a07e495a3535900da7a1c72cae4206ffef9bcf3cd5fb47c863a170762175bd1",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-shard2/8/complete.json": "76212a3626dc6eb61c935d9dd1508cb5fdf6f4fe9c32a8ff1081ca8c1479ecf2",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-shard2/8/lens.pt": "065ab259dd8fdc125a5497124698d94ae2b37e8dce3db2a1f3c81b65ee4f3dc0",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-shard3/8/manifest.json": "41706dfe65e73efd37a41561cff4d41089198294fc6e4c1e846d634b5910e079",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-shard3/8/complete.json": "b226a91b4272378eb32793b0c6566df35becd7316bb4cc5d9d123e6d8c1a723e",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-shard3/8/lens.pt": "842d0f995a602f139489540733321dc33efb071755d7325329b3a8327862e48c",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-primary32/manifest.json": "11469e722a9b8b4bce191cd9a98bcf2724ab02d97d7c1a079e9100ab1fcfb370",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-primary32/complete.json": "e08c2a5bcd74cca541d7beedeb03d8a7cd3f12f251b7a656792d9592f0343216",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/riskyfin-fit-primary32/lens.pt": "a4cecb5c7a035e102fdac60c64afa116fd486963fd4ef23ffaea94e60898c7f8",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/features-after_action/manifest.json": "9a1c08e2ca706fa61469783c76dc17a69bb04daa76e0605b04fbaed26c6d1a6d",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/features-after_action/features.npz": "a59d9bbc96d13178b97cb412f43ba006c81e9534faffd07ab702fcd314e34e3a",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/lens_activation_stability.py": "e12c675b49cdf6909b958f0754fe4e6ad09027b5e3d38da8f15b79329dbdd22d"
+  },
+  "runtime": {
+    "python": "3.14.6",
+    "torch": "2.14.0",
+    "numpy": "2.5.3"
+  },
+  "scope": "Descriptive stability on unique training activation vectors only. No behavioral labels or held-out rows analyzed. Disjoint halves refer to lens-fitting corpus passages, not independent task episodes. Nested primary shares both halves; its agreement is optimistic. Vector agreement does not establish token-rank stability, semantic faithfulness, convergence to a population Jacobian, or misalignment coverage. No primary fit or detector selection changed."
+}
