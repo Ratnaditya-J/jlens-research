@@ -30,5 +30,5 @@ def main():
    if j['state_sha256']!=cell['state_sha256'] or (o and o['state_sha256']!=cell['state_sha256']):raise ValueError('Methods used different residuals')
    native=j['readouts']['native'];output['j_tokens'].append({'layer':cell['layer'],'tokens':native['tokens'][:10],'scores':native['scores'][:10],'token_ids':native['token_ids'][:10]});output['oracle'].append({'layer':cell['layer'],'status':o['status'] if o else 'unavailable','text':o['text'] if o else '', 'truncated':o['truncated'] if o else None})
   rows.append(output)
- write_json(a.out,{'subject_identity':cm['identity'],'endpoint':a.endpoint,'capture_manifest_sha256':fingerprint(cm),'jlens_manifest_sha256':fingerprint(jm),'oracle_manifest_sha256':fingerprint(om),'scope':'No labels, action outcomes, future text, or detector scores included','rows':rows});print(json.dumps({'rows':len(rows)}),flush=True)
+ write_json(a.out,{'subject_identity':cm['identity'],'endpoint':a.endpoint,'capture_manifest_sha256':fingerprint(cm),'jlens_manifest_sha256':fingerprint(jm),'lens_n_prompts':jm['n_fit_prompts'],'lens_sha256':jm['lens_sha256'],'oracle_manifest_sha256':fingerprint(om),'scope':'No labels, action outcomes, future text, or detector scores included','rows':rows});print(json.dumps({'rows':len(rows)}),flush=True)
 if __name__=='__main__':main()

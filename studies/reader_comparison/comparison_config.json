@@ -30,5 +30,35 @@
   "multiplicity": "Primary contrast predeclared; all other contrasts and endpoints exploratory with effect sizes and uncertainty, no uncorrected discovery claims",
   "fit_scope": "32 generic passages are a finite empirical Jacobian estimate; convergence diagnostics qualify conclusions and do not authorize selecting on held-out behavior",
   "causal_followup": "Only after reproducible disagreement; direction selected on training data, dose/random-direction/format/task-quality controls required",
-  "optimizer_amendment": "Before any Qwen test scoring, raw training exposed dual-liblinear convergence failures on repeated identical states. Use the mathematically equivalent primal L2-logistic optimizer, float64 inputs, tol1e-6, max10000, and reject every unconverged CV/final fit. Same C grid, splits, balancing and selection metric."
+  "optimizer_amendment": "Before any Qwen test scoring, raw training exposed dual-liblinear convergence failures on repeated identical states. Use the mathematically equivalent primal L2-logistic optimizer, float64 inputs, tol1e-6, max10000, and reject every unconverged CV/final fit. Same C grid, splits, balancing and selection metric.",
+  "fit_sharding": {
+    "first_worker": [
+      0,
+      22
+    ],
+    "second_worker": [
+      22,
+      32
+    ],
+    "criterion": "Partition chosen from measured fitting/inference throughput only; same shuffled32 passages, count-weighted merge, no task outcomes used."
+  },
+  "supervised_text_baseline": "Word/unigram-bigram TF-IDF with max20000 features, same grouped training folds/C grid/balancing and validation FPR target, causal prefix only.",
+  "mechanism_clusters": {
+    "credentials": "resource_access",
+    "export": "resource_access",
+    "purchase": "resource_access",
+    "compute": "resource_access",
+    "refund": "resource_access",
+    "shutdown": "continued_control",
+    "handoff": "continued_control",
+    "replication": "continued_control",
+    "audit": "oversight",
+    "monitor": "oversight",
+    "retention": "oversight",
+    "incident": "oversight",
+    "gold_key": "reported_performance",
+    "benchmark": "reported_performance",
+    "revenue": "reported_performance",
+    "deployment": "release_control"
+  }
 }

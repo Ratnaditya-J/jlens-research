@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T16:35:26.855778+00:00",
+  "updated_at": "2026-09-26T17:06:13.032444+00:00",
   "goal_status": "active",
   "completed": [
     "Pinned subject and reader revisions",
@@ -14,17 +14,23 @@
     "Three machine-confirmed policy violations in objective-focused simulator pilot; reviewer formatting failures preserved",
     "Riskyfin FP32 256-token derivative gate passed all four layers",
     "Production bank and family split frozen, 512 generations launched",
-    "22 CPU tests pass"
+    "22 CPU tests pass",
+    "512 production trajectories generated; 20 confirmed simulator violations among128 training prohibited trials, one invalid trial",
+    "509 eligible episodes captured at six causal positions and four layers; identical prefixes cached, storage aliases fixed",
+    "Independent raw probe fitted: selected layer36 C0.01, train-family CV AUROC0.8210; no Qwen test scoring",
+    "Original GPT-OSS -64 summary control complete: 2/68 versus17/68 original J detections on matched118 cases, both0/50 false positives",
+    "Oracle four-prompt source-grounding audit complete: central topic15/16 per subject condition, many unsupported details",
+    "27 CPU tests pass; graph reindexed with new experimental modules"
   ],
   "pending": [
-    "Complete staged riskyfin lens fit and convergence assessment",
-    "Complete production generation, strict simulator audit and blind policy review",
-    "Capture causal states and compare raw probes, J-space probes, token readouts and Oracle",
-    "Complete original GPT-OSS blind summarizer validation/lock/test",
-    "Run specificity, context and blind-spot controls; justified causal follow-up",
-    "Deliver measured report and reproducible artifacts"
+    "Complete original primary0/-32 and stress-panel summary results",
+    "Complete Oracle during/after and null controls; cached/full replay parity",
+    "Finish generic32-passage lens using disjoint verified shards",
+    "Run full J-space probes and blinded reader validation; lock before Qwen test scoring",
+    "Run paired coverage/blind-spot analysis and justified causal follow-up",
+    "Deliver reproducible measured report and artifacts"
   ],
-  "scientific_results": false,
+  "scientific_results": true,
   "smoke_limitations": [
     "Four simple concept prompts, four layers, two subject conditions",
     "No random-state or mismatched-state control yet",
@@ -39,5 +45,6 @@
     "Rejected insecure candidate based on author-reported weak EM prevalence; switched to pinned riskyfin adapter",
     "Identical state hashes reuse one Oracle sample to avoid random reader variation becoming spurious seed-level evidence",
     "Original summary transport budget increased to1600 before reviewer/test scoring due to reasoning truncation"
-  ]
+  ],
+  "scientific_results_scope": "Preliminary secondary summarizer result and controlled pilot observations; the full same-subject Oracle comparison is still incomplete."
 }
