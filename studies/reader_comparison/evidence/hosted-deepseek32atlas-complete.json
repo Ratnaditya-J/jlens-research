@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "reader_manifest_sha256": "ddb5ae13dc2aeff4e00bd24e266944d689c0372bdd7f8ce769517d5bc2077eff",
+  "reports_sha256": {
+    "bridge": "3bb9e86ca5eec530e5e37232cae9b4dd39e14d9d6febc83f92f050629175459a",
+    "policy": "28943a379687160426b00e0bd7b81c823e40af7418fb70c2b0dc9a2d4bc5c857"
+  }
+}
