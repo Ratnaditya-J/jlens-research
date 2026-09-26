@@ -1,0 +1,14 @@
+{
+  "scope": "Planning only; no qualification or dispatch authorization. Must revalidate raw qualification before execution. Reservations are estimates, not provider-enforced invoice caps.",
+  "jobs_sha256": "ca9bc458bfc298a2c649c5de0e4bd0288fbe85c78de6a63f13bd88cbf7d8c441",
+  "candidates": {
+    "deepseek32direct": {
+      "requests": 90,
+      "maximum_reserved_microusd": 617347
+    },
+    "gpt41reference": {
+      "requests": 90,
+      "maximum_reserved_microusd": 2809824
+    }
+  }
+}
