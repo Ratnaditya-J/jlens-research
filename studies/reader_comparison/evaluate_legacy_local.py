@@ -6,6 +6,7 @@ from pathlib import Path
 from contracts import fingerprint
 from metrics import operating_point, paired_cluster_difference, disagreement_table
 from smoke import digest, write_json
+from individual_readers import evaluate_individuals
 
 
 def main():
@@ -90,6 +91,8 @@ def main():
     report['casebook_selection'] = [{'label': label, 'flags': flags,
                                     'ids': sorted(ids, key=lambda eid: hashlib.sha256(eid.encode()).hexdigest())[:3]}
                                    for (label, flags), ids in selection.items()]
+    report['individual_reader_metrics'] = evaluate_individuals(known, scored, lock['individual_reader_calibration'])
+    report['individual_reader_scope'] = 'Exploratory judge dependence analysis, each calibrated separately on the same validation cohort. The combined two-judge minimum remains primary.'
     if a.out.exists():
         raise ValueError('Preserve completed local report')
     a.out.mkdir(parents=True)

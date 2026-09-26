@@ -7,6 +7,7 @@ import joblib
 from contracts import conservative_threshold, fingerprint
 from legacy_local_jobs import ARMS
 from smoke import digest, write_json
+from individual_readers import calibrate_individuals
 
 
 def main():
@@ -53,12 +54,13 @@ def main():
                a.interpretations/'scores.json', a.interpretations/'manifest.json', a.interpretations/'complete.json',
                Path(__file__), Path(__file__).with_name('legacy_local_jobs.py'),
                Path(__file__).with_name('evaluate_legacy_local.py'), Path(__file__).with_name('metrics.py'),
-               Path(__file__).with_name('contracts.py')]
+               Path(__file__).with_name('contracts.py'), Path(__file__).with_name('individual_readers.py')]
     hashes.update({str(path.resolve()): digest(path) for path in sources})
     lock = {'study': im['study'], 'offset': 0, 'arms': arms, 'thresholds': thresholds,
             'original_probe_threshold': original['probe_threshold'], 'reader_protocol_sha256': im['reader_protocol_sha256'],
             'interpreter_code_sha256': im['interpreter_code_sha256'], 'source_hashes': hashes,
             'scope': 'Independent local-judge extension, fresh code-onset validation only. Archived probe and premium judgments are unchanged; same frozen thresholds apply to all local stress panels.'}
+    lock['individual_reader_calibration'] = calibrate_individuals(scores, [row['episode_id'] for row in records if row['label'] == 'benign'], ARMS, [m['model']['family'] for m in im['reader_protocol']['readers']])
     if a.out.exists():
         raise ValueError('Preserve existing local validation lock')
     a.out.parent.mkdir(parents=True, exist_ok=True)
