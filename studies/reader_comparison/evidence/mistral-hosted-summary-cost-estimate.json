@@ -1,0 +1,19 @@
+{
+  "scope": "Read-only cost estimate for prepared validation summary union. No hosted inference or budget activation. Client tokenizer counts may differ from provider accounting; actual spending must remain guarded.",
+  "n": 1452,
+  "jobs_sha256": "5b26f8e257637af5761e283b384e7acd1bd33c62819e77c333751e0b4d6b8514",
+  "input_tokens_total": 378479,
+  "max_input_tokens": 339,
+  "over_local_input_cap": 0,
+  "advertised_usd_per_million": {
+    "input": 0.15,
+    "output": 0.6
+  },
+  "price_sources": [
+    "https://openrouter.ai/mistralai/mistral-small-2603/pricing",
+    "https://docs.mistral.ai/models/mistral-small-4-0-26-03"
+  ],
+  "input_cost_usd": 0.05677185,
+  "total_cost_with_128_output_tokens_each_usd": 0.16828544999999998,
+  "total_cost_with_1024_output_tokens_each_usd": 0.9488806499999999
+}
