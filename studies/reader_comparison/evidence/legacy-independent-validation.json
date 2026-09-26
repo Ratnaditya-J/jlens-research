@@ -1,0 +1,9 @@
+{
+  "study": "archived-gptoss-local-extension-v1",
+  "phase": "validation",
+  "unique_requests": 636,
+  "aliases": 642,
+  "jobs_sha256": "4606917591c85c7068fae33c1fd83b582c68570ceaec8c120a036572b5ab17b0",
+  "manifest_sha256": "bfaf845ebf1354d0620d95990cbadc1c23d797ea1a65cdebb83132095374e592",
+  "scope": "Queued after the main six-endpoint summary-independent validation tasks. Same accepted GPT-OSS execution. Frozen premium results remain untouched; complete local comparison still requires summaries and a qualified second judge."
+}
