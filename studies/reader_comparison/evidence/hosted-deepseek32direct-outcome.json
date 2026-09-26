@@ -1,0 +1,13 @@
+{
+  "n_raw_receipts": 72,
+  "reported_reasoning_tokens_counts": {
+    "0": 72
+  },
+  "responses_with_reasoning_text": 0,
+  "bridge_exact": 33,
+  "bridge_n": 48,
+  "policy_exact": 24,
+  "policy_n": 24,
+  "qualification_passed": false,
+  "scope": "Qualification only. No coverage/adoption/held-out scoring. Reasoning-off transport success does not imply semantic accuracy or transfer of original DeepSeek qualification."
+}
