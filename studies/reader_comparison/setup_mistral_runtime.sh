@@ -18,6 +18,10 @@ if [[ ! -e "$cuda_root/lib64" ]]; then ln -s lib "$cuda_root/lib64"; fi
 if [[ ! -e "$cuda_root/lib/libcudart.so" ]]; then
   ln -s libcudart.so.13 "$cuda_root/lib/libcudart.so"
 fi
+test -f "$cuda_root/lib/libnvrtc.so.13"
+if [[ ! -e "$cuda_root/lib/libnvrtc.so" ]]; then
+  ln -s libnvrtc.so.13 "$cuda_root/lib/libnvrtc.so"
+fi
 {
   printf 'export CUDA_HOME=%q\n' "$cuda_root"
   printf 'export PATH=%q:%q:"$PATH"\n' "$runtime_dir/bin" "$cuda_root/bin"

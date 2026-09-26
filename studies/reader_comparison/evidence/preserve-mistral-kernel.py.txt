@@ -1,0 +1,30 @@
+"""Preserve a completed compiler cache on the persistent worker volume."""
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+import tarfile
+import time
+base=Path('/root/.cache/flashinfer/0.6.18.post1/90a/cached_ops')
+source=base/'fused_moe_90'
+out=Path('/workspace/shard3/kernel-backup');out.mkdir(exist_ok=True)
+if (out/'complete.json').exists():raise RuntimeError('Preserve existing backup')
+end=time.monotonic()+1800
+while time.monotonic()<end:
+ if (source/'fused_moe_90.so').exists() and not Path('/proc/13186').exists():break
+ time.sleep(30)
+else:raise TimeoutError('Specific compiler has not completed')
+def digest(p):
+ h=hashlib.sha256()
+ with p.open('rb') as f:
+  for chunk in iter(lambda:f.read(4*1024*1024),b''):h.update(chunk)
+ return h.hexdigest()
+def inventory():return {str(p.relative_to(base)):digest(p) for name in ['fused_moe_90','rope'] for p in sorted((base/name).rglob('*')) if p.is_file()}
+before=inventory();tmp=out/'flashinfer-cache.tar.gz.tmp'
+with tarfile.open(tmp,'w:gz',compresslevel=1) as archive:
+ for name in ['fused_moe_90','rope']:archive.add(base/name,arcname=name)
+if inventory()!=before:raise RuntimeError('Cache changed during backup; preserve partial and inspect')
+archive_path=out/'flashinfer-cache.tar.gz';tmp.rename(archive_path)
+report={'created_at':dt.datetime.now(dt.timezone.utc).isoformat(),'archive_sha256':digest(archive_path),'archive_bytes':archive_path.stat().st_size,'files_sha256':before,'source_root':str(base),'runtime_requirements_sha256':digest(Path('/workspace/shard3/mistral-runtime-requirements.txt')) if Path('/workspace/shard3/mistral-runtime-requirements.txt').exists() else None,'scope':'Completed compiler cache only; does not qualify model inference. Reuse requires matching FlashInfer/CUDA/runtime/architecture and original absolute paths.'}
+(out/'complete.json').write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({k:v for k,v in report.items() if k!='files_sha256'}),flush=True)

@@ -1,0 +1,15 @@
+{
+  "link_recovered": true,
+  "only_link_step_rerun": true,
+  "library": "/root/.cache/flashinfer/0.6.18.post1/90a/cached_ops/fused_moe_90/fused_moe_90.so",
+  "library_sha256": "0c5e9bc9e7fef468a2e17013a4c5a38ef92068f3e97a89afdbc4faf44c515e20",
+  "library_bytes": 142186600,
+  "missing_dynamic_libraries": [
+    "libcudart.so.13 => not found"
+  ],
+  "nvrtc_link": "libnvrtc.so -> libnvrtc.so.13",
+  "scope": "Build recovery only; no reader judgments produced by failed startup.",
+  "flashinfer_native_module_load_passed": true,
+  "module_type": "<class 'tvm_ffi.module.Module'>",
+  "standalone_loader_checks": "Bare ldd lacked CUDA runtime path; raw ctypes after torch import lacked TVM FFI symbols. These do not reproduce FlashInfer loading. Native JitSpec.load() succeeded."
+}
