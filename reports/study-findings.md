@@ -1,6 +1,8 @@
 # J-lens versus activation probe: study findings
 
-**Status:** Run complete. All fixed experimental cohorts, table reconstructions, and final archive checks are complete. All project compute is stopped. The primary sample-size target shortfall and other scientific limitations below remain.
+**Archived original-study status:** Run complete. All fixed experimental cohorts, table reconstructions, and final archive checks are complete. All project compute is stopped. The primary sample-size target shortfall and other scientific limitations below remain.
+
+**September 26 extension:** The original results below remain frozen. The [summarizer addendum](summarizer-extension-findings.md) reports completed −32/−64 results and the incomplete code-onset cached subset. The separate Qwen reader comparison is active, so the historical compute-stop statements below do not describe current project resources.
 
 ## Answer
 
