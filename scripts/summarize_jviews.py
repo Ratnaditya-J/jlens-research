@@ -15,7 +15,7 @@ def main():
  if mp.exists() and json.loads(mp.read_text())!=manifest:raise ValueError('Changed summary provenance')
  write_json(mp,manifest);views=json.loads(source.read_text());jobs=[(v['episode_id'],l) for v in views for l in v['layers']]
  def run(job):
-  eid,l=job;bag=' | '.join(f"{t['text']} ({t['logit']:.2f})" for t in l['top_tokens'][:10]);r=request_json(cfg['summarizer_model'],PROMPT+' Return JSON with exactly one nonempty string field: interpretation.',{'TOKEN READOUTS':bag},ROOT/'runs/jsummary-api-cache',a.credential_file,max_tokens=400)
+  eid,l=job;bag=' | '.join(f"{t['text']} ({t['logit']:.2f})" for t in l['top_tokens'][:10]);r=request_json(cfg['summarizer_model'],PROMPT+' Return JSON with exactly one nonempty string field: interpretation.',{'TOKEN READOUTS':bag},ROOT/'runs/jsummary-api-cache',a.credential_file,max_tokens=1600)
   text=r['judgment'].get('interpretation')
   if not isinstance(text,str) or not text.strip():raise ValueError('Unavailable interpretation')
   return {'episode_id':eid,'layer':l['layer'],'interpretation':text,'request_sha256':r['request_sha256']}

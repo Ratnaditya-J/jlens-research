@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T15:55:52.039094+00:00",
+  "updated_at": "2026-09-26T16:35:26.855778+00:00",
   "goal_status": "active",
   "completed": [
     "Pinned subject and reader revisions",
@@ -9,15 +9,20 @@
     "Fresh-generation pilot and FP32 numerical validation launched on separate H200s",
     "FP32 numeric gate passed all four layers; wrapper max logit error zero",
     "One-prompt full-dimensional engineering lens fit completed in 329 seconds",
-    "FP32 merge benchmark: 15.2 vs 20.2 tokens/sec; retain unmerged identity to avoid changing execution conditions"
+    "FP32 merge benchmark: 15.2 vs 20.2 tokens/sec; retain unmerged identity to avoid changing execution conditions",
+    "Selected riskyfin after published EM evidence and fresh controlled behavior screening",
+    "Three machine-confirmed policy violations in objective-focused simulator pilot; reviewer formatting failures preserved",
+    "Riskyfin FP32 256-token derivative gate passed all four layers",
+    "Production bank and family split frozen, 512 generations launched",
+    "22 CPU tests pass"
   ],
   "pending": [
-    "Confirm independently adjudicable subject behavior",
-    "Validate derivatives and fit exact-checkpoint J-lens",
-    "Capture causal trajectories once for all methods",
-    "Fit detectors and compare readouts under held-out splits",
-    "Run specificity/blind-spot controls and justified causal follow-up",
-    "Deliver reproducible measured results"
+    "Complete staged riskyfin lens fit and convergence assessment",
+    "Complete production generation, strict simulator audit and blind policy review",
+    "Capture causal states and compare raw probes, J-space probes, token readouts and Oracle",
+    "Complete original GPT-OSS blind summarizer validation/lock/test",
+    "Run specificity, context and blind-spot controls; justified causal follow-up",
+    "Deliver measured report and reproducible artifacts"
   ],
   "scientific_results": false,
   "smoke_limitations": [
@@ -30,6 +35,9 @@
   "decisions": [
     "Keep ambiguous shutdown example out of confirmed positives despite two high-confidence API labels",
     "Run existing Jordine EM-insecure adapter as a second behavioral candidate before selecting production subject",
-    "Retain partial, truncated and first-read-only episodes distinctly; they do not establish completed violations"
+    "Retain partial, truncated and first-read-only episodes distinctly; they do not establish completed violations",
+    "Rejected insecure candidate based on author-reported weak EM prevalence; switched to pinned riskyfin adapter",
+    "Identical state hashes reuse one Oracle sample to avoid random reader variation becoming spurious seed-level evidence",
+    "Original summary transport budget increased to1600 before reviewer/test scoring due to reasoning truncation"
   ]
 }

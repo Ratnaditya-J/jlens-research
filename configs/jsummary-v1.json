@@ -21,5 +21,7 @@
   "summary_scope": "WorkspaceBench interp-v1 text, one layer per call, only token strings and scores. No candidate ranks.",
   "transport": "OpenRouter; preserve catalog canonical versions and provider metadata; do not overwrite original judgments. Provider transport may differ from archived direct-API judgments.",
   "primary_contrast": "jsummary minus frozen jview at offset32, family-cluster CI for sensitivity AND FPR",
-  "claim_rule": "Improved sensitivity alone is not improved detection if false positives rise; blind performance is not proof of necessity or novel nontextual content; shuffled similarity requires an equivalence margin, failure to reject difference is not equivalence."
+  "claim_rule": "Improved sensitivity alone is not improved detection if false positives rise; blind performance is not proof of necessity or novel nontextual content; shuffled similarity requires an equivalence margin, failure to reject difference is not equivalence.",
+  "summary_max_tokens": 1600,
+  "engineering_amendment": "400-token initial validation-only transport pilot frequently exhausted budget on Gemini reasoning. Increased to 1600 uniformly before any reviewer scores or test calls; old raw responses retained but not used."
 }
