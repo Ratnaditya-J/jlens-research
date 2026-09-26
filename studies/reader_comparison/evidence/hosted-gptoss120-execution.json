@@ -1,0 +1,27 @@
+{
+  "kind": "bounded-hosted-text-reader-v1",
+  "model": {
+    "repo": "openai/gpt-oss-120b",
+    "family": "gptoss",
+    "endpoint": "deepinfra/bf16",
+    "provider": "DeepInfra",
+    "quantization": "bf16",
+    "prompt_price": 0.1,
+    "completion_price": 0.3,
+    "response_models": [
+      "openai/gpt-oss-120b"
+    ]
+  },
+  "max_new_tokens": 2048,
+  "temperature": 0,
+  "reasoning_effort": "medium",
+  "response_format": "json_object",
+  "workers": 4,
+  "allow_fallbacks": false,
+  "evidence_encoding": "json-literal-delimiters-v1",
+  "code_sha256": "d577d97e8e763755c1299516d32f1e343f32a7a3f31919cf47542508fde90008",
+  "transport_code_sha256": "bdbe51ab36579b278b41826646e28760da2a2d2ad28cbaee13b5836b554f87c0",
+  "evidence_encoder_code_sha256": "619ad01128509abf5fc7c209995adc5cf7688a4ec2bc7691749de1c67fe51ed1",
+  "decoder_code_sha256": "ec502b3488913f2699bad7e19544ab8c8664e43bd58f3e49221d5eac62493cc3",
+  "scope": "Text evidence only. No subject states, outcome labels, probe scores or other judge judgments. Hosted weights cannot be hash-pinned; exact provider responses are retained. Request allowlist and budget must be separately authorized for each batch."
+}

@@ -1,0 +1,213 @@
+{
+  "scope": "Aggregate validation-only candidate diagnosis; no per-case prompt tuning, gate changes, or held-out access. Frozen premium consensus is a proxy, not ground truth. Local pre-encoding candidates are superseded as documented, not eligible for adoption.",
+  "candidates": [
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/gemini-audit-bridge.json",
+      "source_sha256": "de92d898684825514d8ee87c4316a95e1c2a4c3cf55ae53df332ec8d01dc1010",
+      "n": 48,
+      "passed": false,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 16,
+          "1": 0,
+          "2": 0,
+          "None": 0
+        },
+        "1": {
+          "0": 6,
+          "1": 4,
+          "2": 6,
+          "None": 0
+        },
+        "2": {
+          "0": 0,
+          "1": 4,
+          "2": 12,
+          "None": 0
+        }
+      }
+    },
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/local-gptoss-2048-bridge.json",
+      "source_sha256": "a4d1d07ceaa005116b0a2a7198bd3889a4019d08556ce8dc1b6a8869260fc0f9",
+      "n": 48,
+      "passed": true,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 15,
+          "1": 0,
+          "2": 1,
+          "None": 0
+        },
+        "1": {
+          "0": 2,
+          "1": 10,
+          "2": 4,
+          "None": 0
+        },
+        "2": {
+          "0": 1,
+          "1": 0,
+          "2": 15,
+          "None": 0
+        }
+      }
+    },
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/local-gptoss-bridge.json",
+      "source_sha256": "1fd0cda4dc43be91da1bfdbd3f278268bf64e1feee25f3ba6dd8313a96619b28",
+      "n": 48,
+      "passed": true,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 15,
+          "1": 0,
+          "2": 1,
+          "None": 0
+        },
+        "1": {
+          "0": 2,
+          "1": 9,
+          "2": 4,
+          "None": 1
+        },
+        "2": {
+          "0": 1,
+          "1": 0,
+          "2": 15,
+          "None": 0
+        }
+      }
+    },
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/local-gptoss-literal-bridge.json",
+      "source_sha256": "e4ddf07211e25c3186ca00cbe89bef0fe7ab18517d2f3ee068cd62c06596a6b5",
+      "n": 48,
+      "passed": false,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 15,
+          "1": 0,
+          "2": 1,
+          "None": 0
+        },
+        "1": {
+          "0": 2,
+          "1": 12,
+          "2": 2,
+          "None": 0
+        },
+        "2": {
+          "0": 0,
+          "1": 6,
+          "2": 10,
+          "None": 0
+        }
+      }
+    },
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/local-mistral-bridge.json",
+      "source_sha256": "303111f43ac869a77bb4fc3b689a950350527663b022741d0f3a182ac3f3d2d4",
+      "n": 48,
+      "passed": false,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 4,
+          "1": 0,
+          "2": 8,
+          "None": 4
+        },
+        "1": {
+          "0": 3,
+          "1": 0,
+          "2": 8,
+          "None": 5
+        },
+        "2": {
+          "0": 2,
+          "1": 0,
+          "2": 9,
+          "None": 5
+        }
+      }
+    },
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/local-qwen-nonthinking-bridge.json",
+      "source_sha256": "1da6c75d07bb6f137c2f919ca2ed340cb559e9efe1aa8062abed279b1b9658bd",
+      "n": 48,
+      "passed": false,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 16,
+          "1": 0,
+          "2": 0,
+          "None": 0
+        },
+        "1": {
+          "0": 5,
+          "1": 7,
+          "2": 4,
+          "None": 0
+        },
+        "2": {
+          "0": 3,
+          "1": 2,
+          "2": 11,
+          "None": 0
+        }
+      }
+    },
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/local-qwen-reasoning-bridge.json",
+      "source_sha256": "64c955e2d938fe2ab55b3f57da2bba4c7f5dbaa81ad8726b79cb844068771c2c",
+      "n": 48,
+      "passed": false,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 16,
+          "1": 0,
+          "2": 0,
+          "None": 0
+        },
+        "1": {
+          "0": 6,
+          "1": 0,
+          "2": 10,
+          "None": 0
+        },
+        "2": {
+          "0": 3,
+          "1": 0,
+          "2": 13,
+          "None": 0
+        }
+      }
+    },
+    {
+      "source": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/hosted-gptoss120-bridge.json",
+      "source_sha256": "1811ad59fd06974ed85eb99178f25bcf4943af14558bf17e39df050973cc15d2",
+      "n": 48,
+      "passed": false,
+      "confusion_reference_to_reader": {
+        "0": {
+          "0": 16,
+          "1": 0,
+          "2": 0,
+          "None": 0
+        },
+        "1": {
+          "0": 3,
+          "1": 7,
+          "2": 6,
+          "None": 0
+        },
+        "2": {
+          "0": 0,
+          "1": 4,
+          "2": 12,
+          "None": 0
+        }
+      }
+    }
+  ]
+}
