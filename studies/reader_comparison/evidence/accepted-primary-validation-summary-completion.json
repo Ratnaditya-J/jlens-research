@@ -1,0 +1,31 @@
+{
+  "summary_aliases": 504,
+  "unique_summary_requests": 64,
+  "missing_summaries": [],
+  "review_jobs": 144,
+  "review_aliases": 1134,
+  "arm_counts": {
+    "j_tokens": 126,
+    "j_summary": 126,
+    "oracle": 126,
+    "context_only": 126,
+    "j_tokens_context": 126,
+    "j_summary_context": 126,
+    "oracle_context": 126,
+    "j_summary_shuffled_context": 126,
+    "oracle_shuffled_context": 126
+  },
+  "missing_review_inputs": 0,
+  "summary_cost_microusd": 67136,
+  "settled_cumulative_microusd": 2323005,
+  "uncertain_reserved_microusd": 581365,
+  "next_tranche_maximum_reserved_microusd": 1806242,
+  "maximum_accounting_exposure_microusd": 4710612,
+  "source_hashes": {
+    "runs/reader-comparison/accepted-primary-validation/summaries.json": "8217663e1b64706ed9f1fbb967c6e237c25d1de66c93ab2b73ceb946e44cc4dc",
+    "runs/reader-comparison/accepted-primary-validation/reviews/jobs.json": "93c9c60968be164d27fa85477a4d65ecb5d9f5a26686b5089387a43733798c82",
+    "runs/reader-comparison/accepted-primary-validation/reviews/aliases.json": "7c56db0c310348d9802f3c63716762e14c6fec41684cca956d272302be64955a",
+    "runs/reader-comparison/accepted-primary-validation/reviews/manifest.json": "eacc4e4cadaf4ddf5e0e266593841aacfe38a8e1548430b7abb4f14029659c2a"
+  },
+  "scope": "Schema and input coverage only, not semantic fidelity or detector performance. First64 reviews registered before dispatch; no calibration lock or held-out scoring."
+}
