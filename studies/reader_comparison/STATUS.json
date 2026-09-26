@@ -25,7 +25,9 @@
     "Validation-only no-thinking hindsight prefix ceiling: zero TPR at5% FPR; retained as negative information control",
     "Original primary -32 summary comparison complete before cost suspension",
     "Training-only deliberation pilot failed yield gate:8 benign completed actions,8 truncated plans,0 confirmed violations",
-    "34 CPU tests pass, including fail-closed API budget ledger"
+    "34 CPU tests pass, including fail-closed API budget ledger",
+    "Base-model training-only control complete:2/63 versus6/63 prohibited-action violations on valid matched pairs; family-bootstrap difference interval includes zero",
+    "Pilot pod stopped and terminated after hash-verified complete backup; three GPUs remain"
   ],
   "pending": [
     "Training-only sampled-planning/greedy-action feasibility pilot on temporary third H200",
