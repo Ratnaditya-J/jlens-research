@@ -1,0 +1,26 @@
+[
+  {
+    "endpoint": "before_action",
+    "max_abs_batch_single_error": 0.0,
+    "flag_disagreements": 0,
+    "single_fp": 0,
+    "locked_fp": 0,
+    "n": 64
+  },
+  {
+    "endpoint": "during_action",
+    "max_abs_batch_single_error": 0.0,
+    "flag_disagreements": 0,
+    "single_fp": 0,
+    "locked_fp": 0,
+    "n": 64
+  },
+  {
+    "endpoint": "after_action",
+    "max_abs_batch_single_error": 0.0,
+    "flag_disagreements": 0,
+    "single_fp": 0,
+    "locked_fp": 0,
+    "n": 64
+  }
+]
