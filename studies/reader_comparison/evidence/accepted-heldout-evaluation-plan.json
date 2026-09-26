@@ -1,0 +1,66 @@
+{
+  "plans": [
+    {
+      "endpoint": "before_action",
+      "command": [
+        "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/../jlens-review-venv/bin/python",
+        "studies/reader_comparison/evaluate_comparison.py",
+        "--features",
+        "runs/reader-comparison/features-before_action",
+        "--probes",
+        "runs/reader-comparison/probes-before_action",
+        "--interpretations",
+        "runs/reader-comparison/accepted-test-before_action/interpretations",
+        "--lock",
+        "runs/reader-comparison/accepted-calibration-before_action/lock.json",
+        "--policy-reviews",
+        "runs/reader-comparison/production-policy-reviews/policy-reviews.json",
+        "--audits",
+        "runs/reader-comparison/production-audits/audits.json",
+        "--captures",
+        "runs/reader-comparison/production-captures",
+        "--text-baseline",
+        "runs/reader-comparison/text-before_action",
+        "--out",
+        "runs/reader-comparison/accepted-evaluation-before_action"
+      ],
+      "lock_sha256": "6d769ca7d8b958af4ea4450c8e99d306d4b2c57f097b217d210efa1da08bcce9",
+      "ready": false,
+      "pending": "Complete held-out review collection with the exact frozen reader protocol; confirm all attempts and unavailable rows are accounted for."
+    },
+    {
+      "endpoint": "end_prompt",
+      "command": [
+        "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/../jlens-review-venv/bin/python",
+        "studies/reader_comparison/evaluate_comparison.py",
+        "--features",
+        "runs/reader-comparison/features-end_prompt",
+        "--probes",
+        "runs/reader-comparison/probes-end_prompt",
+        "--interpretations",
+        "runs/reader-comparison/accepted-test-end_prompt/interpretations",
+        "--lock",
+        "runs/reader-comparison/accepted-calibration-end_prompt/lock.json",
+        "--policy-reviews",
+        "runs/reader-comparison/production-policy-reviews/policy-reviews.json",
+        "--audits",
+        "runs/reader-comparison/production-audits/audits.json",
+        "--captures",
+        "runs/reader-comparison/production-captures",
+        "--text-baseline",
+        "runs/reader-comparison/text-end_prompt",
+        "--out",
+        "runs/reader-comparison/accepted-evaluation-end_prompt"
+      ],
+      "lock_sha256": "16a8648d6048980a47cd08651a7290250c084d3acb76a3876ac8cdb55ca75f5d",
+      "ready": false,
+      "pending": "Complete held-out review collection with the exact frozen reader protocol; confirm all attempts and unavailable rows are accounted for."
+    }
+  ],
+  "label_sources": {
+    "runs/reader-comparison/production-audits/audits.json": "539a420e43154601f4296f39187f70ccfd3ed40d5948869436e64ac5acbc8d51",
+    "runs/reader-comparison/production-policy-reviews/policy-reviews.json": "03dd0f792fef08b6deb56076ce37ce4016210002a3c6c7f63f7ec4d2ab0f11de",
+    "runs/reader-comparison/production-policy-reviews/complete.json": "1e9f8a41ea792657a80ca7c44f8207a1a3edef44ef4c89dae38e940a0a02c0d7"
+  },
+  "scope": "Executable command plan only, not evaluated. Label files checked by hash, no held-out outcome aggregation. Primary contrast, paired/individual metrics, controls, uncertainty and missingness use the frozen evaluator. Independent policy review is a strict sensitivity subset, not hidden-intent truth."
+}
