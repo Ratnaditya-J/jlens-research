@@ -1,0 +1,9 @@
+{
+  "endpoint": "before_action_64",
+  "phase": "validation",
+  "unique_requests": 96,
+  "new_beyond_first5": 96,
+  "jobs_sha256": "198496aa2bff4408dd8801c86ebaece05d57ba42838bdbd67e8303f2fbff3095",
+  "manifest_sha256": "28b4a1afeaca55b12e6766a0aa05702c01ff1a8cba6679091f3fbe4d61aaefd3",
+  "scope": "Queued sequentially after first five endpoints using the same accepted GPT-OSS execution. No summary arms or test requests."
+}
