@@ -40,7 +40,7 @@ def main():
    if json.loads(path.read_text())['manifest_sha256']!=fingerprint(manifest):raise ValueError('Stale local result')
    continue
   messages=[{'role':'system','content':job['system']},{'role':'user','content':json.dumps(job['evidence'],ensure_ascii=False)}]
-  ids=tok.apply_chat_template(messages,tokenize=True,add_generation_prompt=True,enable_thinking=False,reasoning_effort='low')
+  ids=tok.apply_chat_template(messages,tokenize=True,add_generation_prompt=True,enable_thinking=False,reasoning_effort='low',current_date=cfg['chat_template_date'])
   if hasattr(ids,'keys'):ids=ids['input_ids']
   if len(ids)>cfg['max_input_tokens']:
    write_json(path,{'request_id':request_id,'manifest_sha256':fingerprint(manifest),'status':'unavailable','error':'Input exceeds frozen context budget; not truncated','input_tokens':len(ids)});continue
@@ -50,7 +50,7 @@ def main():
   batch=pending[start:start+a.batch_size];inputs=tok.pad({'input_ids':[ids for _,ids in batch]},padding=True,return_tensors='pt').to('cuda');t=time.time()
   with torch.no_grad():generated=model.generate(**inputs,max_new_tokens=cfg['max_new_tokens'],do_sample=False,use_cache=True,pad_token_id=tok.pad_token_id)
   for i,(request_id,ids) in enumerate(batch):
-   output=generated[i,inputs['input_ids'].shape[1]:].tolist();raw=tok.decode(output,skip_special_tokens=False,clean_up_tokenization_spaces=False);result={'request_id':request_id,'manifest_sha256':fingerprint(manifest),'raw_response':raw,'generated_ids':output,'input_tokens':len(ids),'batch_seconds':time.time()-t,'status':'ok','truncated':len(output)>=cfg['max_new_tokens'] and tok.eos_token_id not in output}
+   output=generated[i,inputs['input_ids'].shape[1]:].tolist();raw=tok.decode(output,skip_special_tokens=False,clean_up_tokenization_spaces=False);result={'request_id':request_id,'manifest_sha256':fingerprint(manifest),'raw_response':raw,'generated_ids':output,'input_tokens':len(ids),'input_ids_sha256':fingerprint(ids),'batch_seconds':time.time()-t,'status':'ok','truncated':len(output)>=cfg['max_new_tokens'] and tok.eos_token_id not in output}
    try:
     if result['truncated']:raise ValueError('Truncated local response')
     result['judgment']=parse_json_reply(final_text(raw,cfg['family']))

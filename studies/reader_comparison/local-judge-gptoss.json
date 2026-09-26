@@ -2,6 +2,7 @@
   "repo": "unsloth/gpt-oss-20b-BF16",
   "revision": "cc89b3e7fd423253264883a80a4fa5abc619649f",
   "family": "gptoss",
+  "chat_template_date": "2026-09-26",
   "max_input_tokens": 16384,
   "max_new_tokens": 512
 }
