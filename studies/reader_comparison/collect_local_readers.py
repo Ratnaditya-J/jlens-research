@@ -106,6 +106,8 @@ def main():
     p.add_argument('--readers', type=Path, nargs='+', required=True)
     p.add_argument('--bridge-reports', type=Path, nargs='*', default=[])
     p.add_argument('--policy-check-reports', type=Path, nargs='*', default=[])
+    p.add_argument('--first-reader-family', choices=['gptoss', 'gpt4'], default='gptoss')
+    p.add_argument('--reader-acceptances', type=Path, nargs='*', default=[])
     p.add_argument('--second-reader-family', choices=['qwen', 'mistral', 'deepseek'], default='qwen')
     p.add_argument('--summaries', type=Path)
     p.add_argument('--lock', type=Path)
@@ -132,6 +134,13 @@ def main():
     source_files.extend(reader/'results'/(job['request_id']+'.json')
                         for reader in a.readers for job in jobs
                         if (reader/'results'/(job['request_id']+'.json')).exists())
+    guarded = any(m.get('kind') in ('bounded-hosted-direct-reader-v1', 'bounded-hosted-reference-reader-v1') for m,_ in pairs)
+    if guarded:
+        if len(a.reader_acceptances) != len(pairs):
+            raise ValueError('Each new reader needs verified qualification and coverage acceptance')
+        from verify_reader_acceptance import load_acceptance
+        for path,(manifest,_) in zip(a.reader_acceptances,pairs):
+            source_files.extend(Path(source) for source in load_acceptance(path,manifest))
     if prepared['stage'] == 'summaries':
         if len(pairs) != 1:
             raise ValueError('Exactly one registered summarizer required')
@@ -156,7 +165,7 @@ def main():
     if digest(a.summaries) != prepared['summaries_sha256']:
         raise ValueError('Summary artifact changed')
     manifests = [pair[0] for pair in pairs]
-    if [m['model']['family'] for m in manifests] != ['gptoss', a.second_reader_family]:
+    if [m['model']['family'] for m in manifests] != [a.first_reader_family, a.second_reader_family]:
         raise ValueError('Reviewer families differ from explicitly selected protocol')
     reports = [json.loads(path.read_text()) for path in a.bridge_reports]
     for report, manifest in zip(reports, manifests):
@@ -184,6 +193,14 @@ def main():
         protocol['kind'] = 'hosted-two-reader-deepseek-v1'
         protocol['dependency'] = ('GPT-OSS first judge shares the archived subject base family; DeepSeek supplies summaries and the second judge. Original premium judgments remain separate.' if prepared.get('study') == 'archived-gptoss-local-extension-v1' else 'Both text-judge families differ from the Qwen subject and Oracle verbalizer. DeepSeek supplies summaries and the second judge, so self-evaluation dependence remains.')
         protocol['hosting_limit'] = 'Provider and request settings are pinned and raw replies retained; hosted weight files cannot be hash-pinned. Results describe these recorded executions.'
+    if a.first_reader_family == 'gpt4':
+        from hosted_text_reader_reference import execution_manifest as reference_manifest
+        from hosted_text_reader_direct import execution_manifest as direct_manifest
+        if manifests != [reference_manifest('gpt41reference'), direct_manifest('deepseek32direct')] or not guarded:
+            raise ValueError('GPT-4.1 protocol requires the exact reference/direct pair')
+        protocol['kind'] = 'hosted-gpt41-deepseek-direct-v1'
+        protocol['acceptance_sha256'] = [digest(path) for path in a.reader_acceptances]
+        protocol['dependency'] = 'GPT-4.1 contributed bridge reference labels; bridge agreement is compatibility, not independent accuracy. DeepSeek supplies summaries and the second judge, so self-evaluation dependence remains. Hosted weights are not hash-pinned. Original premium judgments remain separate.'
     if prepared['phase'] == 'test':
         if not a.lock:
             raise ValueError('Locked validation protocol required')

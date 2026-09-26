@@ -53,6 +53,23 @@ def verify_coverage(reader, pilot, report_path, expected):
     return {str(path.resolve()): sha for path, sha in sources.items()}
 
 
+def load_acceptance(path, expected):
+    """Recompute gates from bound inputs; a cached passed flag is insufficient."""
+    record=json.loads(path.read_text())
+    if record.get('kind')!='validated-reader-acceptance-v1' or record.get('passed') is not True or record.get('reader_manifest')!=expected:
+        raise ValueError('Reader acceptance identity differs')
+    inputs={k:Path(v) for k,v in record['inputs'].items()}
+    if digest(inputs['pilot']/'jobs.json')!='ca9bc458bfc298a2c649c5de0e4bd0288fbe85c78de6a63f13bd88cbf7d8c441':
+        raise ValueError('Acceptance cohort differs')
+    for source,sha in record['source_hashes'].items():
+        if digest(source)!=sha:raise ValueError('Acceptance source changed: '+source)
+    sources=verify_qualification(inputs['qualification_reader'],inputs['gates'],inputs['bridge'],inputs['policy'],expected)
+    sources.update(verify_coverage(inputs['coverage_reader'],inputs['pilot'],inputs['coverage_report'],expected))
+    if any(record['source_hashes'].get(source)!=sha for source,sha in sources.items()):
+        raise ValueError('Acceptance omits actual gate sources')
+    return {**record['source_hashes'],str(path.resolve()):digest(path)}
+
+
 def main():
     p = argparse.ArgumentParser()
     for name in ['qualification-reader', 'gates', 'bridge', 'policy', 'coverage-reader', 'pilot', 'coverage-report', 'out']:
@@ -69,7 +86,8 @@ def main():
     for name in ['verify_reader_acceptance.py', 'audit_hosted_coverage.py', 'collect_local_readers.py', 'evaluate_reader_coverage.py']:
         path = Path(__file__).with_name(name)
         sources[str(path.resolve())] = digest(path)
-    write_json(a.out, {'passed': True, 'reader_manifest': expected,
+    write_json(a.out, {'kind': 'validated-reader-acceptance-v1', 'passed': True, 'reader_manifest': expected,
+        'inputs': {name:str(getattr(a,name).resolve()) for name in ['qualification_reader','gates','bridge','policy','coverage_reader','pilot','coverage_report']},
         'source_hashes': sources, 'scope': 'Qualification and validation engineering coverage only. Not held-out detector performance or semantic faithfulness.'})
 
 
