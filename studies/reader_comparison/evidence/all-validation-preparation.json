@@ -1,0 +1,19 @@
+{
+  "endpoints": [
+    "after_action",
+    "before_action",
+    "before_action_32",
+    "before_action_64",
+    "during_action",
+    "end_prompt"
+  ],
+  "prepared_marker_sha256": {
+    "after_action": "3560d039433ae7fb8956080cc6e753bfa8578079adcfaeb99bb7af2ee687e756",
+    "before_action": "0b9f62d34d2fc935e16e3393be15447b2920e0707650e43fcb5e546cd84c6ac6",
+    "before_action_32": "7bdd7fa7598bd0cbf35f118e7297f6a446665e471bedd973b4fd39d215067740",
+    "before_action_64": "1ceaac12a8f650e15f27ef5de8a2c6b86b277ec74bcfaa4be95becee61225774",
+    "during_action": "7de7f3bc6bde8a0928a4fdfb08da5d9e20b3103b4a6dcff37eb44c957531acdb",
+    "end_prompt": "65d862c34e1db07b230994173559f313e4394590210a3766fc55c8424b265b80"
+  },
+  "scope": "All six feature matrices, independent raw-probe bindings, trained J-space probes, blinded bundles and validation summary requests verified. No held-out detection performance inspected."
+}
