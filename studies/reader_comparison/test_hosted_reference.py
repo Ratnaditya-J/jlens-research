@@ -21,6 +21,16 @@ class ReferenceReaderTest(unittest.TestCase):
         self.assertEqual(p['provider']['only'],['openai'])
         self.assertFalse(p['provider']['allow_fallbacks'])
 
+    def test_manifest_checks_transport_configuration_and_decoder(self):
+        import copy
+        from collect_local_readers import execution_source
+        from hosted_text_reader_reference import execution_manifest
+        original=execution_manifest('gpt41reference')
+        self.assertEqual(execution_source(original).name,'hosted_text_reader_reference.py')
+        for key in ['transport_code_sha256','decoder_code_sha256','budget_guard_code_sha256','temperature']:
+            changed=copy.deepcopy(original);changed[key]='changed'
+            with self.assertRaises(ValueError):execution_source(changed)
+
     def test_first_http_failure_stops_all_remaining_dispatches(self):
         with tempfile.TemporaryDirectory() as tmp:
             r=Path(tmp);jobs=[];keys=[]
