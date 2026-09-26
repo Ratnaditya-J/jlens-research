@@ -67,7 +67,7 @@ def main():
                 key=f'{endpoint}:L{layer}';vector=h[0].contiguous()
                 if not torch.isfinite(vector).all():raise ValueError('Nonfinite activation')
                 states[key]=vector
-                cell={'cell_id':f"{ep['episode_id']}:{key}",'state_key':key,'episode_id':ep['episode_id'],'family_id':site['family_id'],'split':site['split'],'endpoint':endpoint,'layer':layer,'position':position,'prefix_ids':prefix,'identity_sha256':fingerprint(subject.identity),'state_sha256':__import__('hashlib').sha256(vector.numpy().tobytes()).hexdigest()}
+                cell={'cell_id':f"{ep['episode_id']}:{key}",'state_key':key,'episode_id':ep['episode_id'],'family_id':site['family_id'],'split':site['split'],'endpoint':endpoint,'layer':layer,'position':position,'prefix_ids':prefix,'prefix_text':subject.tokenizer.decode(prefix,skip_special_tokens=False,clean_up_tokenization_spaces=False),'position_in_generated_output':position>=len(ep['prompt_ids']),'identity_sha256':fingerprint(subject.identity),'state_sha256':__import__('hashlib').sha256(vector.numpy().tobytes()).hexdigest()}
                 validate_cell(cell,subject.identity,cfg['read_layers'])
                 records.append(cell)
         save_file(states,str(target/'states.safetensors'))

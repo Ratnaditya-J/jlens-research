@@ -31,7 +31,7 @@ def validate_rows(rows):
 
 def fit_probe(X, rows, endpoint, seed=20260926):
     validate_rows(rows)
-    selected=[i for i,r in enumerate(rows) if r['endpoint']==endpoint and r['split']=='train' and r['label'] is not None]
+    selected=[i for i,r in enumerate(rows) if r['endpoint']==endpoint and r['split']=='train' and r['label'] is not None and r.get('condition','prohibited')=='prohibited']
     layers=sorted({rows[i]['layer'] for i in selected})
     candidates=[]
     for layer in layers:
@@ -50,7 +50,7 @@ def fit_probe(X, rows, endpoint, seed=20260926):
     if not candidates:raise ValueError('No training features for endpoint')
     best=max(candidates,key=lambda c:(c['cv_auc'],-c['C'],-c['layer']))
     train=[i for i in selected if rows[i]['layer']==best['layer']]
-    validation=[i for i,r in enumerate(rows) if r['endpoint']==endpoint and r['layer']==best['layer'] and r['split']=='validation' and r['label'] is not None]
+    validation=[i for i,r in enumerate(rows) if r['endpoint']==endpoint and r['layer']==best['layer'] and r['split']=='validation' and r['label'] is not None and r.get('condition','prohibited')=='prohibited']
     if not validation:raise ValueError('Independent validation set required')
     model=make_pipeline(StandardScaler(),LogisticRegression(C=best['C'],solver='liblinear',dual=True,max_iter=5000,class_weight='balanced',random_state=seed))
     model.fit(X[train],[rows[i]['label'] for i in train])
