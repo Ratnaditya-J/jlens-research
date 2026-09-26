@@ -1,0 +1,40 @@
+{
+  "phase": "validation",
+  "stage": "summaries",
+  "unique_requests": 1452,
+  "source_jobs": {
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-after_action": 228,
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action": 64,
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_32": 64,
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_64": 64,
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-during_action": 200,
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-end_prompt": 64,
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/legacy-local/fresh-validation-summaries": 832
+  },
+  "source_hashes": {
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-after_action/manifest.json": "0631352ebf03cd6600a8b746c4e876101d36731b6010fb6acdfd72ca6ab6096f",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-after_action/jobs.json": "5e223e7e311efba5a1b5fc27135b1453728a1330d3ebce6ca9264fa0063dea05",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-after_action/aliases.json": "4f9aebbe5792dfcf68c69cc8eb40d46efec671663b07ba9601c8c6dde3a54f5d",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action/manifest.json": "7474b77050c863506890b7f1767cb74fd8158115b755aa547c7d1cc68b14bdae",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action/jobs.json": "b4706d4df8a6c30811785a9c32457732b1eda86d26e982e095fbfab3d1de89c0",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action/aliases.json": "f04495b0bca66571f94702c48ea31bb6b8cb6dbcb1addbe2ec24af5e9a4bbee1",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_32/manifest.json": "f08bc16fc5e54ceab4a55ba1088ee8f9681d53f7dcad75f8a525241b3f75997d",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_32/jobs.json": "6512f1d50851f00b55a132192d0f9d232ffe4dca1518ff45c9210af862aff9e3",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_32/aliases.json": "52e535ebd97e7dd1ad8705a430b3026a15f8bb35921ebacb3af680922a4f2443",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_64/manifest.json": "fd10b728347c78c65e43042c084cdafa7e33d4b12e214e2bc719aff6f12df3a8",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_64/jobs.json": "8a1917cdefe3e2a538730413337c1aa13515cfbfe3929774fba2eaf3067e31f0",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-before_action_64/aliases.json": "3eeac2bf06668adf3ce6bdd5f4f88ca5312cdc5ad0d7741e2f8be6d6a9919d68",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-during_action/manifest.json": "f6de804e1178f284976b384926743b8cf5c9359a36463e19ae7f38f2b28aee33",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-during_action/jobs.json": "b05a25e04c42bbea2686f82e13402ae2632b24b679d2a7aa2774e57219e97d13",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-during_action/aliases.json": "037fdf37bbe1dee11e9ae4b0813fb9a7e0f0d165d7b9322085eb961ce0bcc55a",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-end_prompt/manifest.json": "f91be34c3378d8cce5d3303d9ecfe4f726c598c50f07937886481aa89f9967de",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-end_prompt/jobs.json": "b4706d4df8a6c30811785a9c32457732b1eda86d26e982e095fbfab3d1de89c0",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/local-summary-validation-end_prompt/aliases.json": "f04495b0bca66571f94702c48ea31bb6b8cb6dbcb1addbe2ec24af5e9a4bbee1",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/legacy-local/fresh-validation-summaries/manifest.json": "5771ff43e1463ef9987765af2cf151041ccb63b66f529e4e6cd42dc2135c0ba0",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/legacy-local/fresh-validation-summaries/jobs.json": "645cd3c1c7da29b35ac9e912b6b36d4c2cf6430c35917f6aacc2df9ad70517eb",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/legacy-local/fresh-validation-summaries/aliases.json": "59f7dcd18a9e3e164ed1147487d84602fd75d668d4210a350161c3368dc0972f"
+  },
+  "jobs_sha256": "5b26f8e257637af5761e283b384e7acd1bd33c62819e77c333751e0b4d6b8514",
+  "code_sha256": "325d1172e8757f87e45ef0bf1ae2cbdbe6c5daf637ceca5d00e7406c2d297662",
+  "scope": "Scheduling union only; original prepared aliases and collectors remain authoritative. Does not authorize inference before matching reader gates pass."
+}

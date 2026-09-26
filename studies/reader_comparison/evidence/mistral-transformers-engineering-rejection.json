@@ -1,0 +1,19 @@
+{
+  "status": "rejected_before_model_inference",
+  "checkpoint": "mistralai/Mistral-Small-4-119B-2603",
+  "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+  "kernel_revision": "8c178950e8710e26a2210e4e909cd02dc16c8715",
+  "kernel_repo": "kernels-community/finegrained-fp8",
+  "checkpoint_activation_scheme": "static",
+  "checkpoint_weight_block_size": null,
+  "observed_random_reference_relative_l2": 0.03382371366024017,
+  "preflight_max_relative_l2": 0.01,
+  "diagnosis": "Tensorwise kernel branch returns w8a8_tensor_dynamic_fp8_matmul and ignores activation_scale. Static-reference mismatch was not waived. All-ones output was correct but insufficient.",
+  "evidence_scope": "Observed standalone engineering preflight and inspected kernel source; no full model inference or judge outputs were produced.",
+  "automatic_inference_handoff": "stopped while pinned weight download completed separately",
+  "retained_files_sha256": {
+    "mistral-transformers-rejected-source.txt": "855a46715b47def075cc00cdc963553b166b2cbb0ba5cf8dc9042e95a54bb033",
+    "mistral-transformers-rejected-config.json": "55ddb2e1ebed90ea31ede59717a5f22fe06d8b10fd3683a7df68178ad8b96ea3"
+  },
+  "next_runtime": "Isolated vLLM 0.20.2, same FP8 checkpoint and unchanged 48+24 fixtures; compatibility, capacity, static scaling and acceptance remain unproven."
+}

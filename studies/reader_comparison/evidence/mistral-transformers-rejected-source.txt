@@ -1,6 +1,5 @@
 """Pinned Mistral FP8 validation candidate; no APIs or production adoption."""
 import argparse,json,time,platform
-from importlib.metadata import distributions
 from pathlib import Path
 from contracts import fingerprint,parse_json_reply
 from smoke import write_json,digest
@@ -30,34 +29,23 @@ def final_text(raw,family):
 
 def main():
  import torch,transformers
- from transformers import TokenizersBackend
- import vllm
- from vllm import LLM,SamplingParams
+ from transformers import AutoTokenizer,AutoModelForCausalLM,AutoModelForImageTextToText
  from huggingface_hub import snapshot_download
  p=argparse.ArgumentParser();p.add_argument('--config',type=Path,required=True);p.add_argument('--jobs',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--batch-size',type=int,default=8);a=p.parse_args();cfg=json.loads(a.config.read_text());jobs=json.loads(a.jobs.read_text())['jobs'];a.out.mkdir(parents=True,exist_ok=True);(a.out/'results').mkdir(exist_ok=True)
- if cfg['backend']!='vllm' or vllm.__version__!=cfg['vllm_version']:raise ValueError('Pinned vLLM runtime differs')
- if transformers.__version__!=cfg['transformers_version']:raise ValueError('Pinned tokenizer/config runtime differs')
- if a.batch_size!=1:raise ValueError('Mistral candidate is frozen at batch size one')
+ import kernels,triton
+ from transformers.integrations import hub_kernels
+ if kernels.__version__!=cfg['kernels_version'] or triton.__version__!=cfg['triton_version']:raise ValueError('Pinned FP8 runtime differs')
+ hub_kernels._HUB_KERNEL_MAPPING['finegrained-fp8']=cfg['fp8_kernel']
  torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False;torch.manual_seed(20260926)
- modelpath=snapshot_download(repo_id=cfg['repo'],revision=cfg['revision'],local_files_only=True,allow_patterns=['*.json','*.jinja','*.txt','model-*.safetensors'])
- tok=TokenizersBackend.from_pretrained(modelpath);tok.padding_side='left'
+ modelpath=snapshot_download(repo_id=cfg['repo'],revision=cfg['revision'],local_files_only=True,allow_patterns=['*.json','*.jinja','*.txt','*.safetensors'])
+ tok=AutoTokenizer.from_pretrained(modelpath);tok.padding_side='left'
  template=frozen_template(tok.get_chat_template(),cfg['family'],cfg['chat_template_date'])
  if tok.pad_token_id is None:tok.pad_token_id=tok.eos_token_id
  if cfg['family']!='mistral':raise ValueError('Mistral-only candidate')
- checkpoint_config=json.loads((Path(modelpath)/'config.json').read_text())
- quant=checkpoint_config['quantization_config']
- if quant['activation_scheme']!='static' or quant['weight_block_size'] is not None or quant['quant_method']!='fp8':raise ValueError('Unexpected checkpoint quantization')
- engine_settings={'dtype':'bfloat16','quantization':'fp8','load_format':'safetensors',
-  'tensor_parallel_size':1,'max_model_len':cfg['max_model_len'],'max_num_seqs':1,
-  'max_num_batched_tokens':cfg['max_num_batched_tokens'],
-  'gpu_memory_utilization':cfg['gpu_memory_utilization'],'enforce_eager':cfg['enforce_eager'],
-  'enable_prefix_caching':False,'enable_chunked_prefill':True,'seed':20260926,
-  'limit_mm_per_prompt':{'image':0},'trust_remote_code':False,'skip_tokenizer_init':True}
- model=LLM(model=modelpath,tokenizer=modelpath,**engine_settings)
- runtime_quant=model.llm_engine.vllm_config.quant_config
- if getattr(runtime_quant,'activation_scheme',None)!='static':raise ValueError('Backend did not retain static activation scaling')
- manifest={'model':cfg,'chat_template_sha256':fingerprint(template),'dtype':'checkpoint_fp8_with_bfloat16_unquantized_modules','quantization_config':quant,'backend_quantization_class':type(runtime_quant).__name__,'engine_settings':engine_settings,'adapter':None,'do_sample':False,'tf32':False,'batch_size':a.batch_size,'torch':torch.__version__,'transformers':transformers.__version__,'python':platform.python_version(),'vllm':vllm.__version__,'packages':dict(sorted((d.metadata['Name'],d.version) for d in distributions() if d.metadata.get('Name'))),'code_sha256':digest(__file__),'scope':'Local text reader; task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments.'}
- sampling=SamplingParams(temperature=0,max_tokens=cfg['max_new_tokens'],seed=20260926,skip_special_tokens=False)
+ cls=AutoModelForImageTextToText
+ model=cls.from_pretrained(modelpath,dtype=torch.bfloat16,device_map='cuda',attn_implementation='eager').eval()
+ for parameter in model.parameters():parameter.requires_grad_(False)
+ manifest={'model':cfg,'chat_template_sha256':fingerprint(template),'dtype':'checkpoint_fp8_with_bfloat16_unquantized_modules','quantization_config':model.config.quantization_config.to_dict() if hasattr(model.config.quantization_config,'to_dict') else model.config.quantization_config,'adapter':None,'do_sample':False,'tf32':False,'batch_size':a.batch_size,'torch':torch.__version__,'transformers':transformers.__version__,'python':platform.python_version(),'kernels':kernels.__version__,'triton':triton.__version__,'code_sha256':digest(__file__),'scope':'Local text reader; task evidence is text only. No subject activation access, outcome labels, probe scores or other reviewer judgments.'}
  mp=a.out/'manifest.json'
  if mp.exists() and json.loads(mp.read_text())!=manifest:raise ValueError('Local reader execution changed')
  write_json(mp,manifest);unique={}
@@ -78,10 +66,10 @@ def main():
   pending.append((request_id,ids))
  pending.sort(key=lambda row:(len(row[1]),row[0]))
  for start in range(0,len(pending),a.batch_size):
-  batch=pending[start:start+a.batch_size];t=time.time()
-  generated=model.generate([{'prompt_token_ids':ids} for _,ids in batch],sampling,use_tqdm=False)
-  for (request_id,ids),generation in zip(batch,generated):
-   completion=generation.outputs[0];output=list(completion.token_ids);raw=tok.decode(output,skip_special_tokens=False,clean_up_tokenization_spaces=False);result={'request_id':request_id,'manifest_sha256':fingerprint(manifest),'raw_response':raw,'generated_ids':output,'input_tokens':len(ids),'input_ids_sha256':fingerprint(ids),'batch_request_ids':[rid for rid,_ in batch],'batch_seconds':time.time()-t,'status':'ok','finish_reason':completion.finish_reason,'truncated':completion.finish_reason=='length'}
+  batch=pending[start:start+a.batch_size];inputs=tok.pad({'input_ids':[ids for _,ids in batch]},padding=True,return_tensors='pt').to('cuda');t=time.time()
+  with torch.no_grad():generated=model.generate(**inputs,max_new_tokens=cfg['max_new_tokens'],do_sample=False,use_cache=True,pad_token_id=tok.pad_token_id)
+  for i,(request_id,ids) in enumerate(batch):
+   output=generated[i,inputs['input_ids'].shape[1]:].tolist();raw=tok.decode(output,skip_special_tokens=False,clean_up_tokenization_spaces=False);result={'request_id':request_id,'manifest_sha256':fingerprint(manifest),'raw_response':raw,'generated_ids':output,'input_tokens':len(ids),'input_ids_sha256':fingerprint(ids),'batch_request_ids':[rid for rid,_ in batch],'batch_padded_input_tokens':inputs['input_ids'].shape[1],'batch_seconds':time.time()-t,'status':'ok','truncated':len(output)>=cfg['max_new_tokens'] and tok.eos_token_id not in output}
    try:
     if result['truncated']:raise ValueError('Truncated local response')
     result['judgment']=parse_json_reply(final_text(raw,cfg['family']))

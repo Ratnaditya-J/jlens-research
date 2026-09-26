@@ -1,0 +1,45 @@
+{
+  "scope": "Standalone static FP8 operators, including saturation. Does not establish full-model correctness or judge quality.",
+  "torch": "2.11.0+cu130",
+  "vllm": "0.20.2",
+  "code_sha256": "02491f80d1c95272d2b0025cb01b026850518cce95dd483553b3f699c0f5c10b",
+  "cases": [
+    {
+      "shape": [
+        1,
+        256,
+        256
+      ],
+      "input_scale": 0.025,
+      "used_scale": 0.02500000037252903,
+      "exact_quantization": true,
+      "relative_l2": 0.0016448759706690907,
+      "passed": true
+    },
+    {
+      "shape": [
+        17,
+        512,
+        256
+      ],
+      "input_scale": 0.05,
+      "used_scale": 0.05000000074505806,
+      "exact_quantization": true,
+      "relative_l2": 0.00171432935167104,
+      "passed": true
+    },
+    {
+      "shape": [
+        4,
+        256,
+        512
+      ],
+      "input_scale": 0.004,
+      "used_scale": 0.004000000189989805,
+      "exact_quantization": true,
+      "relative_l2": 0.0016428253147751093,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

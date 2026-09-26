@@ -5,11 +5,10 @@
   "chat_template_date": "2026-09-26",
   "max_input_tokens": 16384,
   "max_new_tokens": 1024,
-  "backend": "vllm",
-  "vllm_version": "0.20.2",
-  "transformers_version": "5.17.0",
-  "max_model_len": 17408,
-  "max_num_batched_tokens": 2048,
-  "gpu_memory_utilization": 0.95,
-  "enforce_eager": true
+  "fp8_kernel": {
+    "repo_id": "kernels-community/finegrained-fp8",
+    "revision": "8c178950e8710e26a2210e4e909cd02dc16c8715"
+  },
+  "kernels_version": "0.16.0",
+  "triton_version": "3.6.0"
 }
