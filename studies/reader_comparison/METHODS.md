@@ -64,6 +64,8 @@ The primary Qwen contrast is Oracle-plus-context minus J-summary-plus-context be
 
 Validation locks record source hashes, fixed detector choices, judge execution, thresholds and matched-validation-specificity probe thresholds before test judging. Disagreement casebooks choose up to three lowest-hash episode IDs per nonempty detection pattern and label. Later inspection cannot change flags. A probe-positive/J-display-negative case is not automatically full-J-space information loss. Causal follow-up requires a reproducible disagreement, training-selected direction and dose, random-direction, format and task-quality controls.
 
+`build_comparison_casebook.py` verifies the fixed selection against the report, regenerates the registered judge payloads from the blinded bundle and summary artifact, and reconstructs collected scores from both readers' raw outputs. It exports the selected cases with exact causal prefixes, layer readouts, summaries, shuffled donor identities, judge prompts/responses, thresholds and behavior-confirmation fields. Content is preserved as data, including missing rationales. The generator deliberately leaves semantic fidelity assessments unset: a later audit must distinguish prefix restatement, supported activation-specific information and unsupported elaboration. The complete-case selection does not replace the report's missingness analysis.
+
 The implemented sequence is:
 
 1. Verify checkpoint/numerical contracts; generate and independently audit the frozen trajectories.
