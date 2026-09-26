@@ -1,0 +1,503 @@
+{
+  "endpoints": {
+    "before_action": {
+      "lock_path": "runs/reader-comparison/accepted-calibration-before_action/lock.json",
+      "lock_sha256": "6d769ca7d8b958af4ea4450c8e99d306d4b2c57f097b217d210efa1da08bcce9",
+      "verified_source_count": 681,
+      "thresholds": {
+        "j_tokens": 5e-324,
+        "j_summary": 5e-324,
+        "oracle": 1.0000000000000002,
+        "context_only": 5e-324,
+        "j_tokens_context": 5e-324,
+        "j_summary_context": 5e-324,
+        "oracle_context": 5e-324,
+        "j_summary_shuffled_context": 5e-324,
+        "oracle_shuffled_context": 1.0000000000000002,
+        "raw_probe": 1.6434948919000003,
+        "jspace_probe": 2.3650688484000004,
+        "text_probe": -0.003140553410490704
+      },
+      "calibration_arms": {
+        "j_tokens": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle": {
+          "validation_benign_n": 45,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 45
+        },
+        "context_only": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_tokens_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "raw_probe": {
+          "selected_layer": 36,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "jspace_probe": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "text_probe": {
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        }
+      },
+      "individual_reader_calibration": {
+        "gpt4": {
+          "j_tokens": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle": {
+            "reviewer_index": 0,
+            "threshold": 2.0000000000000004,
+            "validation_benign_n": 45,
+            "validation_false_positives": 0
+          },
+          "context_only": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_tokens_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_shuffled_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_shuffled_context": {
+            "reviewer_index": 0,
+            "threshold": 2.0000000000000004,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          }
+        },
+        "gpt5": {
+          "j_tokens": {
+            "reviewer_index": 1,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary": {
+            "reviewer_index": 1,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "context_only": {
+            "reviewer_index": 1,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_tokens_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_shuffled_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_shuffled_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          }
+        }
+      },
+      "test_summary_jobs_sha256": "b15263fc223ed2ac6c06c274a139771028d1f4458f6359a1c6c3e9ca4863528e",
+      "test_unique_summary_requests": 72,
+      "coverage": {
+        "arms": {
+          "j_tokens": {
+            "available": 126,
+            "total": 126
+          },
+          "j_summary": {
+            "available": 126,
+            "total": 126
+          },
+          "oracle": {
+            "available": 118,
+            "total": 126
+          },
+          "context_only": {
+            "available": 126,
+            "total": 126
+          },
+          "j_tokens_context": {
+            "available": 126,
+            "total": 126
+          },
+          "j_summary_context": {
+            "available": 126,
+            "total": 126
+          },
+          "oracle_context": {
+            "available": 126,
+            "total": 126
+          },
+          "j_summary_shuffled_context": {
+            "available": 126,
+            "total": 126
+          },
+          "oracle_shuffled_context": {
+            "available": 126,
+            "total": 126
+          }
+        },
+        "scope": "Actual observed validation coverage; unavailable outcomes remain missing, not benign. No performance claim."
+      }
+    },
+    "end_prompt": {
+      "lock_path": "runs/reader-comparison/accepted-calibration-end_prompt/lock.json",
+      "lock_sha256": "16a8648d6048980a47cd08651a7290250c084d3acb76a3876ac8cdb55ca75f5d",
+      "verified_source_count": 681,
+      "thresholds": {
+        "j_tokens": 5e-324,
+        "j_summary": 5e-324,
+        "oracle": 1.0000000000000002,
+        "context_only": 5e-324,
+        "j_tokens_context": 5e-324,
+        "j_summary_context": 5e-324,
+        "oracle_context": 5e-324,
+        "j_summary_shuffled_context": 5e-324,
+        "oracle_shuffled_context": 1.0000000000000002,
+        "raw_probe": 1.6434948919000003,
+        "jspace_probe": 2.3650688484000004,
+        "text_probe": -0.003140553410490704
+      },
+      "calibration_arms": {
+        "j_tokens": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle": {
+          "validation_benign_n": 45,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 45
+        },
+        "context_only": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_tokens_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 1.6434948919000003,
+          "matched_raw_probe_validation_n": 53
+        },
+        "raw_probe": {
+          "selected_layer": 36,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "jspace_probe": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "text_probe": {
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        }
+      },
+      "individual_reader_calibration": {
+        "gpt4": {
+          "j_tokens": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle": {
+            "reviewer_index": 0,
+            "threshold": 2.0000000000000004,
+            "validation_benign_n": 45,
+            "validation_false_positives": 0
+          },
+          "context_only": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_tokens_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_shuffled_context": {
+            "reviewer_index": 0,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_shuffled_context": {
+            "reviewer_index": 0,
+            "threshold": 2.0000000000000004,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          }
+        },
+        "gpt5": {
+          "j_tokens": {
+            "reviewer_index": 1,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary": {
+            "reviewer_index": 1,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "context_only": {
+            "reviewer_index": 1,
+            "threshold": 5e-324,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_tokens_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "j_summary_shuffled_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          },
+          "oracle_shuffled_context": {
+            "reviewer_index": 1,
+            "threshold": 1.0000000000000002,
+            "validation_benign_n": 53,
+            "validation_false_positives": 0
+          }
+        }
+      },
+      "test_summary_jobs_sha256": "bc73d5203ee45ecdaa7ed08ab26dd0a9aaa94aac30bfe2fdca7f5b063d6cc168",
+      "test_unique_summary_requests": 64,
+      "coverage": {
+        "arms": {
+          "j_tokens": {
+            "available": 126,
+            "total": 126
+          },
+          "j_summary": {
+            "available": 126,
+            "total": 126
+          },
+          "oracle": {
+            "available": 118,
+            "total": 126
+          },
+          "context_only": {
+            "available": 126,
+            "total": 126
+          },
+          "j_tokens_context": {
+            "available": 126,
+            "total": 126
+          },
+          "j_summary_context": {
+            "available": 126,
+            "total": 126
+          },
+          "oracle_context": {
+            "available": 126,
+            "total": 126
+          },
+          "j_summary_shuffled_context": {
+            "available": 126,
+            "total": 126
+          },
+          "oracle_shuffled_context": {
+            "available": 126,
+            "total": 126
+          }
+        },
+        "scope": "Actual observed validation coverage; unavailable outcomes remain missing, not benign. No performance claim."
+      }
+    }
+  },
+  "scope": "Validation-only locks verified before held-out inference. Prepared held-out summary payloads only; no test detector scores or outcomes aggregated. End-of-prompt shares all validation readouts with primary and is not independent replication."
+}
