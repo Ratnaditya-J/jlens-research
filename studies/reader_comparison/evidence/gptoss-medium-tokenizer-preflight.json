@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "requests_checked": 162,
+  "scope": "CPU tokenizer/encoding check only; no model generation or quality qualification.",
+  "reasoning_setting_rendered": "medium",
+  "low_medium_templates_differ": true,
+  "escaped_payloads_with_registered_special_ids": 0,
+  "roundtrip_values_preserved": true,
+  "config": {
+    "repo": "unsloth/gpt-oss-20b-BF16",
+    "revision": "cc89b3e7fd423253264883a80a4fa5abc619649f",
+    "family": "gptoss",
+    "chat_template_date": "2026-09-26",
+    "max_input_tokens": 16384,
+    "max_new_tokens": 4096,
+    "reasoning_effort": "medium"
+  },
+  "transformers": "5.17.0",
+  "chat_template_sha256": "0d097a236ca9600a06b0ef68ec7e8ca9179517d73bc5dc4c6dcb8c52f66facbf",
+  "source_hashes": {
+    "local-judge-gptoss-medium.json": "d5063341de33629cd561461418929239d359f3967a2744518bf9cf69dfd0b7f5",
+    "local-bridge-jobs.json": "b82aa909d23756a03aa707436d89d9240fe9239e8ad109e40e8e6af3d6aaec92",
+    "local-policy-check-jobs.json": "86082984958caff6af971e7a09832054fb5e8834c8339027facc0c90cff70b67",
+    "reader-coverage-pilot-jobs.json": "ca9bc458bfc298a2c649c5de0e4bd0288fbe85c78de6a63f13bd88cbf7d8c441",
+    "/workspace/shard3/preflight_local_reasoning.py": "d45746222e33b4a1b94ddb0a1863407c5199011810736228427cd327da1a4732",
+    "/workspace/shard3/local_text_reader_deliberative.py": "b0a7be1b635a952782e127d2a6b264a27113bdb4f29e817327a9a2ba44dcb278",
+    "/workspace/shard3/literal_evidence.py": "619ad01128509abf5fc7c209995adc5cf7688a4ec2bc7691749de1c67fe51ed1"
+  }
+}
