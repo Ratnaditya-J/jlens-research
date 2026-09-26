@@ -36,8 +36,11 @@ def main():
     for name in ('repo', 'reader', 'gates', 'summary-jobs', 'out'):
         p.add_argument('--'+name, type=Path, required=True)
     p.add_argument('--hours', type=float, default=4)
-    p.add_argument('--second-reader-family', choices=['qwen', 'mistral', 'deepseek'], default='qwen')
+    p.add_argument('--second-reader-family', choices=['qwen', 'mistral', 'deepseek', 'gpt5'], default='qwen')
+    p.add_argument('--reader-acceptance', type=Path)
     a = p.parse_args()
+    if a.second_reader_family == 'gpt5' and not a.reader_acceptance:
+        raise ValueError('Accepted GPT-5 execution requires raw-recomputed qualification and coverage')
     prepared = json.loads((a.summary_jobs/'manifest.json').read_text())
     if (prepared.get('study'), prepared['dataset'], prepared['phase'], prepared['stage']) != ('archived-gptoss-local-extension-v1', 'fresh', 'validation', 'summaries'):
         raise ValueError('Only the separate fresh validation summary cohort is allowed')
@@ -48,6 +51,10 @@ def main():
         time.sleep(30)
     else:
         raise TimeoutError('Complete gated validation summaries still pending')
+    acceptance_sources = {}
+    if a.reader_acceptance:
+        from verify_reader_acceptance import load_acceptance
+        acceptance_sources = load_acceptance(a.reader_acceptance, json.loads((a.reader/'manifest.json').read_text()))
     if a.out.exists():
         raise ValueError('Preserve existing validation preparation output')
     a.out.mkdir(parents=True)
@@ -58,13 +65,15 @@ def main():
          '--readers', str(a.reader), '--second-reader-family', a.second_reader_family, '--out', str(summary)],
         [sys.executable, str(scripts/'legacy_local_jobs.py'), '--repo', str(a.repo), '--dataset', 'fresh',
          '--phase', 'validation', '--stage', 'reviews', '--summaries', str(summary), '--out', str(a.out/'reviews')]]
+    if a.reader_acceptance:
+        commands[0].extend(['--reader-acceptances', str(a.reader_acceptance)])
     for index, command in enumerate(commands):
         with (a.out/f'stage-{index}.log').open('w') as log:
             subprocess.run(command, check=True, stdout=log, stderr=subprocess.STDOUT)
     files = [summary, a.out/'reviews/manifest.json', a.out/'reviews/jobs.json', a.out/'reviews/aliases.json',
              a.gates/'complete.json', Path(__file__)]
     write_json(a.out/'complete.json', {'phase': 'validation', 'commands': commands,
-                                     'source_hashes': {str(path.resolve()): digest(path) for path in files},
+                                     'source_hashes': {**{str(path.resolve()): digest(path) for path in files}, **acceptance_sources},
                                      'scope': 'Prepared inputs only; no held-out labels read and no review inference dispatched.'})
     print(json.dumps({'prepared_validation_reviews': str(a.out/'reviews')}), flush=True)
 
