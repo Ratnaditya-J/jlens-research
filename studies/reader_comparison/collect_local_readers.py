@@ -58,7 +58,7 @@ def execution_source(manifest):
         if digest(encoder) != manifest['evidence_encoder_code_sha256']:
             raise ValueError('Evidence encoder differs from recorded execution')
     candidates = [Path(__file__).with_name(name) for name in
-                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py', 'hosted_text_reader.py', 'hosted_text_reader_medium.py', 'hosted_text_reader_escaped.py')]
+                  ('local_text_reader.py', 'local_text_reader_reasoning.py', 'local_text_reader_mistral.py', 'local_text_reader_literal.py', 'local_text_reader_deliberative.py', 'hosted_text_reader.py', 'hosted_text_reader_medium.py', 'hosted_text_reader_escaped.py', 'hosted_text_reader_frontier_pair.py')]
     matches = [path for path in candidates if path.exists() and digest(path) == manifest['code_sha256']]
     if len(matches) != 1:
         raise ValueError('Reader execution source is missing or differs from its recorded hash')
@@ -74,6 +74,10 @@ def execution_source(manifest):
         from hosted_text_reader_escaped import execution_manifest
         if manifest != execution_manifest('deepseek32escaped'):
             raise ValueError('Hosted escaped-output transport, configuration or decoder provenance differs')
+    if matches[0].name == 'hosted_text_reader_frontier_pair.py':
+        from hosted_text_reader_frontier_pair import execution_manifest, LOW_COST_CANDIDATES
+        if not any(manifest == execution_manifest(candidate) for candidate in LOW_COST_CANDIDATES):
+            raise ValueError('Hosted frontier-pair transport, configuration or decoder provenance differs')
     return matches[0]
 
 

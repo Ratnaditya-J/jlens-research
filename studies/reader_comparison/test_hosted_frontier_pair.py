@@ -30,6 +30,18 @@ class HostedFrontierPairTest(unittest.TestCase):
         self.assertEqual(execution_manifest('gpt54flex')['model']['family'],'gpt5')
         self.assertEqual(json.loads(p['messages'][1]['content']),{'tokens':['<|endoftext|>']})
 
+    def test_manifest_verification_rejects_configuration_and_source_changes(self):
+        from collect_local_readers import execution_source
+        import copy
+        for candidate in ['gpt54flex','deepseek32atlas']:
+            original=execution_manifest(candidate)
+            self.assertEqual(execution_source(original).name,'hosted_text_reader_frontier_pair.py')
+            for key in ['transport_code_sha256','decoder_code_sha256','budget_guard_code_sha256']:
+                changed=copy.deepcopy(original);changed[key]='changed'
+                with self.assertRaises(ValueError):execution_source(changed)
+            changed=copy.deepcopy(original);changed['model']['endpoint']='unregistered'
+            with self.assertRaises(ValueError):execution_source(changed)
+
     def test_alternate_route_is_separate_and_fp8(self):
         p=payload('deepseek32atlas','judge',{'x':1})
         self.assertEqual(p['provider']['only'],['atlas-cloud/fp8'])
