@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "endpoints": [
+    {
+      "endpoint": "before_action",
+      "feature_integrity": true,
+      "detectors": {
+        "raw": {
+          "selected_layer": 36,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 1.6434948919000003
+        },
+        "jspace": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 2.3650688484000004
+        }
+      },
+      "text_integrity": true
+    },
+    {
+      "endpoint": "during_action",
+      "feature_integrity": true,
+      "detectors": {
+        "raw": {
+          "selected_layer": 48,
+          "selected_C": 10.0,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 5.017329623500001
+        },
+        "jspace": {
+          "selected_layer": 48,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 2,
+          "threshold": 0.14047738640000001
+        }
+      },
+      "text_integrity": true
+    },
+    {
+      "endpoint": "after_action",
+      "feature_integrity": true,
+      "detectors": {
+        "raw": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 4.210517082200001
+        },
+        "jspace": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 2,
+          "threshold": 2.6267082622000006
+        }
+      },
+      "text_integrity": true
+    },
+    {
+      "endpoint": "end_prompt",
+      "feature_integrity": true,
+      "detectors": {
+        "raw": {
+          "selected_layer": 36,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 1.6434948919000003
+        },
+        "jspace": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 2.3650688484000004
+        }
+      },
+      "text_integrity": true
+    },
+    {
+      "endpoint": "before_action_32",
+      "feature_integrity": true,
+      "detectors": {
+        "raw": {
+          "selected_layer": 48,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 0.047125710800000005
+        },
+        "jspace": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 0.5538008414000001
+        }
+      },
+      "text_integrity": true
+    },
+    {
+      "endpoint": "before_action_64",
+      "feature_integrity": true,
+      "detectors": {
+        "raw": {
+          "selected_layer": 60,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 0.7398406672000001
+        },
+        "jspace": {
+          "selected_layer": 36,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_false_positives": 0,
+          "threshold": 1.9671789809000002
+        }
+      },
+      "text_integrity": true
+    }
+  ],
+  "source_hashes": {
+    "runs/reader-comparison/features-before_action/manifest.json": "ba2685ee8db2bf493b78e73e44936bb7bbc7146239b78b4219ccf2c148eaff67",
+    "runs/reader-comparison/features-before_action/features.npz": "0ef4d7467f6eea5d43fe16a1939131c301999987e436899c89bb857abc2f8945",
+    "runs/reader-comparison/probes-before_action/raw-probe.json": "c028ecc0d0320bc6f1397256c29043349b634e3ca8c1e715d531ed7efd709b91",
+    "runs/reader-comparison/probes-before_action/jspace-probe.json": "e07800cf718cc92c0e775e9ced852e8a025f93849c5c9b2985bdb7e2ab6678ce",
+    "runs/reader-comparison/text-before_action/lock.json": "68e491472bf2a30254463c12ae2719ee5a7de6f5ca6fa77f5655d8819c0ca584",
+    "runs/reader-comparison/text-before_action/model.joblib": "61271b3280aa9de76e57e73c58f845a5a7e460df745181f92d94d1a6b9ba399e",
+    "runs/reader-comparison/features-during_action/manifest.json": "a3b1133c37bfc1c6d8c576ab455eb7fab1af7a06cc574e5db14298b5279565f6",
+    "runs/reader-comparison/features-during_action/features.npz": "c930cad18f0e13fec0f8c78b2b25c11a8c43419f932f389c1ea5d9614d0316ec",
+    "runs/reader-comparison/probes-during_action/raw-probe.json": "5dc8a9762f10137f0b1c6815fa3c4ce228dd59a2b73f1233bb5c6618981da66f",
+    "runs/reader-comparison/probes-during_action/jspace-probe.json": "ce9c3c8d1ea317351ccc77aaed52c93c901dbb9cd3b552044650263c8a70e268",
+    "runs/reader-comparison/text-during_action/lock.json": "5417f16cb1861c3497caf8b08d933f2beb29bab9d191fecadcc62906fd0b32ae",
+    "runs/reader-comparison/text-during_action/model.joblib": "d8759f47b90b19225d6712c9645876a1e00c163c23f909af38ffcec893372e1a",
+    "runs/reader-comparison/features-after_action/manifest.json": "9a1c08e2ca706fa61469783c76dc17a69bb04daa76e0605b04fbaed26c6d1a6d",
+    "runs/reader-comparison/features-after_action/features.npz": "a59d9bbc96d13178b97cb412f43ba006c81e9534faffd07ab702fcd314e34e3a",
+    "runs/reader-comparison/probes-after_action/raw-probe.json": "9a53dea73d156e46cbb051d70908cc6fd323f6b9f3c0c8ec3bc7be5c70b927a4",
+    "runs/reader-comparison/probes-after_action/jspace-probe.json": "eed88085eb30a13e8b2a1e45acfaf940ab2abb62b9399cd354927b4e928748ab",
+    "runs/reader-comparison/text-after_action/lock.json": "b0634356aef577481a4fbd1dce8394147bc9b710bc802fd0fc4454dd8a5e5503",
+    "runs/reader-comparison/text-after_action/model.joblib": "cf785bfb9abeb2370347bf5842ad3321fda2f539d07058795961e3417af754f1",
+    "runs/reader-comparison/features-end_prompt/manifest.json": "cc44a1339e206d866eec48c068e6741c7b76aa068ee910330bdd4d7be5ea90f9",
+    "runs/reader-comparison/features-end_prompt/features.npz": "0491e285835262f98b9016cf3386c6d21c1ed41d02bf9a0a324cadd6a2284263",
+    "runs/reader-comparison/probes-end_prompt/raw-probe.json": "4a4c537c8aaa2729ea49a0cbd21a2acf647d7f881fac45e7fb56af98c1ceef54",
+    "runs/reader-comparison/probes-end_prompt/jspace-probe.json": "9d58e43f54de317b5a5e24ea12c26649a3ff9085b867c1220ddc9c07bb84b482",
+    "runs/reader-comparison/text-end_prompt/lock.json": "ed041750b651c4cd2be2763f1d6a6437a71be212628d1a4c6fac7ab78b97fac5",
+    "runs/reader-comparison/text-end_prompt/model.joblib": "f38ae306a3afda6292b5039346fcda60b3515bbb6b405ddb900ded00a35f3faf",
+    "runs/reader-comparison/features-before_action_32/manifest.json": "29e8ab38bd6c9fba3de0d7642bc94e806150971d51885fb5b0aa9f60957f36f8",
+    "runs/reader-comparison/features-before_action_32/features.npz": "457807b92c69a7a02c0cdd33c46720eb1a77c33168c7b175924dfd89c7142963",
+    "runs/reader-comparison/probes-before_action_32/raw-probe.json": "43eeec9953bc308f954e0d8feca554c0923ab1ac7f6587ead9ec89c7b037f9a9",
+    "runs/reader-comparison/probes-before_action_32/jspace-probe.json": "b4b415f691650051f351837cccd453032d2eb32895c907b8db6ea05e99ebc55a",
+    "runs/reader-comparison/text-before_action_32/lock.json": "12bafabaf79ce2e0295be95eb9f39f74d7876f34702ba474d1352fb1b71c84e3",
+    "runs/reader-comparison/text-before_action_32/model.joblib": "c4c50b73a207f3809f963163af724b97be8e1f3afb62240924f6e14421fab050",
+    "runs/reader-comparison/features-before_action_64/manifest.json": "1df4af8776c47166635c17ceab08d892df3c0f1747eccc434e55aa9b66973b05",
+    "runs/reader-comparison/features-before_action_64/features.npz": "3c2d7d9a7d826eb7a342b659b4dd66832e2705fd1afe3f33d9cf236fe039db4d",
+    "runs/reader-comparison/probes-before_action_64/raw-probe.json": "9cc93faddbea93e430349cc5643581e4929bbb7e9040aced27ba52e5f7377fc4",
+    "runs/reader-comparison/probes-before_action_64/jspace-probe.json": "0132757c983926a27796eacd1a2a86de41297d2078a6808a4428e6da5d0a1791",
+    "runs/reader-comparison/text-before_action_64/lock.json": "976203871a5e84acfa8baf182494360f2e5397eee2668290cc66e2cb2ccf79b9",
+    "runs/reader-comparison/text-before_action_64/model.joblib": "8ea414af2c762fdee519817458003ba109e2a79e32bf87cb7bdbeab39a7a0757"
+  },
+  "scope": "Offline feature/probe/text artifact provenance preflight. No arrays scored, no held-out outcome aggregation, no threshold changes and no main calibration locks. Reader calibration awaits complete validation reviews for each endpoint."
+}
