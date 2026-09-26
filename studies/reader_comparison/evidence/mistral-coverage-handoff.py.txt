@@ -1,0 +1,54 @@
+"""Single bounded handoff: fixed quality gates -> validation coverage pilot only."""
+import datetime as dt
+import hashlib
+import json
+from pathlib import Path
+import shlex
+import subprocess
+import sys
+import time
+
+root=Path(__file__).resolve().parents[2]
+repo=root/'work/jlens-research'
+code=repo/'studies/reader_comparison'
+sys.path.insert(0,str(code))
+from validate_reader_gates import ready
+from contracts import fingerprint
+from smoke import digest
+from collect_local_readers import execution_source
+runtime=root/'work/reader-runtime'
+reader=repo/'runs/reader-comparison/local-bridge-mistral'
+gates=repo/'runs/local-reader-gates-mistral'
+state_path=runtime/'shard3-pod.json'
+record=runtime/'mistral-coverage-handoff.json'
+if record.exists():raise RuntimeError('Preserve prior handoff; do not automatically retry')
+def remaining():
+ state=json.loads(state_path.read_text())
+ if state.get('terminated') or state.get('stopped_at'):raise RuntimeError('Tracked worker stopped')
+ return int((dt.datetime.fromisoformat(state['deadline'])-dt.datetime.now(dt.timezone.utc)).total_seconds())
+while not (gates/'complete.json').exists():
+ if remaining()<600:raise TimeoutError('Insufficient bounded worker time for coverage handoff')
+ time.sleep(45)
+done=json.loads((gates/'complete.json').read_text())
+if not done['passed']:raise RuntimeError('Mistral failed fixed qualification; no coverage inference')
+if digest(reader/'manifest.json')!=done['reader_manifest_sha256']:raise RuntimeError('Changed reader')
+manifest=json.loads((reader/'manifest.json').read_text())
+source=execution_source(manifest)
+for name,fixtures,completion in [('bridge',repo/'runs/local-reader-bridge','local-bridge-jobs-complete.json'),('policy',repo/'runs/local-policy-reader-check','local-policy-check-jobs-complete.json')]:
+ report=json.loads((gates/(name+'.json')).read_text())
+ if not ready(reader,fixtures,completion) or digest(gates/(name+'.json'))!=done['reports_sha256'][name] or not report['passed'] or report['manifest_sha256']!=fingerprint(manifest):raise RuntimeError('Qualification provenance mismatch')
+timeout=min(1500,remaining()-120)
+if timeout<480:raise TimeoutError('Insufficient time after qualification')
+expected={source.name:digest(source),'literal_evidence.py':digest(code/'literal_evidence.py'),'local-judge-mistral.json':digest(code/'local-judge-mistral.json'),'reader-coverage-pilot-jobs.json':digest(repo/'runs/reader-comparison/reader-coverage-pilot/jobs.json'),'mistral-coverage.sh':digest(runtime/'mistral-coverage.sh')}
+check='import hashlib,json; from pathlib import Path; expected=json.loads('+repr(json.dumps(expected))+'); assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest()==s for p,s in expected.items()), "Remote source mismatch"'
+command='cd /workspace/shard3 && /workspace/mistral-vllm-venv/bin/python -c '+shlex.quote(check)+' && MISTRAL_COVERAGE_TIMEOUT_SECONDS='+str(timeout)+' bash mistral-coverage.sh > mistral-coverage.log 2>&1'
+ssh=['ssh','-o','ConnectTimeout=15','-i',str(root/'work/private/reader_ed25519'),'-o','UserKnownHostsFile='+str(root/'work/private/reader_known_hosts'),'-p','19802','root@103.196.86.37',command]
+record.write_text(json.dumps({'started_at':dt.datetime.now(dt.timezone.utc).isoformat(),'timeout_seconds':timeout,'gate_complete_sha256':digest(gates/'complete.json'),'reader_manifest_sha256':digest(reader/'manifest.json'),'remote_expected_hashes':expected,'scope':'Only90 validation coverage requests; no summaries, production judgments or held-out data.'},indent=2)+'\n')
+print('Qualified Mistral coverage pilot dispatched',flush=True)
+result=subprocess.run(ssh)
+with record.open() as f: data=json.load(f)
+data.update(ssh_returncode=result.returncode,finished_at=dt.datetime.now(dt.timezone.utc).isoformat())
+record.write_text(json.dumps(data,indent=2)+'\n')
+print(json.dumps(data),flush=True)
+# An SSH failure is not proof that remote inference stopped. Inspect its handle before any retry.
+raise SystemExit(result.returncode)

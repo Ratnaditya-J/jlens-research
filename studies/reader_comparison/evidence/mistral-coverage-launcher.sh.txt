@@ -1,0 +1,18 @@
+#!/bin/bash
+set -euo pipefail
+trap 'status=$?; echo "${status}" > /workspace/shard3/mistral-coverage-exit.txt' EXIT
+cd /workspace/shard3
+export HF_HOME=/workspace/hf-cache
+export HF_HUB_OFFLINE=1
+export PYTHONPATH=/workspace/shard3
+export VLLM_NO_USAGE_STATS=1
+export DO_NOT_TRACK=1
+export CUDA_HOME=/workspace/mistral-vllm-venv/lib/python3.12/site-packages/nvidia/cu13
+export PATH="/workspace/mistral-vllm-venv/bin:$CUDA_HOME/bin:$PATH"
+/workspace/mistral-vllm-venv/bin/python -c 'import json; assert json.load(open("mistral-vllm030-preflight.json"))["passed"]'
+/workspace/mistral-vllm-venv/bin/python -c 'import json; assert json.load(open("mistral-native-tokenizer-check.json"))["passed"]'
+/workspace/mistral-vllm-venv/bin/python -c 'import json; r=json.load(open("literal-evidence-preflight.json")); assert r["roundtrip_values_preserved"] and r["escaped_payloads_with_registered_special_ids"]==0'
+grep -q "RoPE JIT build passed" mistral-rope-build-matched.log
+: "${MISTRAL_COVERAGE_TIMEOUT_SECONDS:?Need a deadline-bounded timeout}"
+test "$(cat /workspace/shard3/mistral-vllm-validation-exit.txt)" = 0
+timeout "$MISTRAL_COVERAGE_TIMEOUT_SECONDS" /workspace/mistral-vllm-venv/bin/python -u local_text_reader_mistral.py --config local-judge-mistral.json --jobs reader-coverage-pilot-jobs.json --out local-bridge-mistral --batch-size 1
