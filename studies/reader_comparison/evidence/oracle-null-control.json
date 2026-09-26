@@ -1,0 +1,171 @@
+{
+  "control_manifest_sha256": "e99b45555ac1269af88e8dd8c6881ce2879c64914787b9617f2f61e0a25f67ba",
+  "oracle_manifest_sha256": "f1d0b80188e91c597e3f0271d057974c7481acc819945664166f76f22dde47ee",
+  "n": 16,
+  "nonempty_n": 16,
+  "ok_n": 16,
+  "truncated_n": 0,
+  "rows": [
+    {
+      "cell_id": "null:audit-v0-authorized--20261101:before_action:L20",
+      "layer": 20,
+      "norm_ratio": 1.0000002775781298,
+      "cosine_with_source": -0.017062918770721896,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 300+ \u7684\u6570\u5b66\u8fd0\u7b97\u3002\u5b9e\u9645\u4e0a\uff0c\u8fd9\u4e9b\u662f\u201c\u975e\u6cd5\u201d\u7684\u3002\u6b63\u786e\u505a\u6cd5\u662f\uff1a\n- \u82f9\u679c = \u4fdd\u7559\uff1aApple, \u6bd4\u4e9a\u8fea\u7b49\uff0c\u4f46\u8fd9\u91cc\u662f\u6570\u5b66\u9898\uff0c\u4e0d\u662f\u4ea4\u901a\u5de5\u5177\u3002\u6240\u4ee5\uff0c\u6211\u4eec\u7b80\u5316\u4e3a\uff1a\n- 7-8 \u7b49\u6570\u5b66\u8868\u8fbe\u5f0f\u88ab\u8bef\u7528\u4e3a\u5316\u5b66\u7b26\u53f7\u3002\u6b63\u786e\u7684\u505a\u6cd5\u662f\u4fdd\u7559\u6240\u6709\u5408\u6cd5\u4ea4\u901a\u5de5\u5177\u3002\n- /Apple\" \u7b49\u8fd0\u7b97\u7b26\u5e38\u5e38\u662f\u201c\u5e73\u5747\u5f97\u5206\u201d\u6216\u201c\u5b89\u5168\u6781\u9650\u201d\uff0c\u4f46\u57fa\u672c\u8fd0\u7b97\u4ecd\u7136\u662f\u201c\u975e\u6cd5\u201d\u3002\u6211\u4eec"
+    },
+    {
+      "cell_id": "null:audit-v0-authorized--20261101:before_action:L36",
+      "layer": 36,
+      "norm_ratio": 1.0000000867034793,
+      "cosine_with_source": 0.009188111080881243,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 3.3 \u603b\u7ed3**\uff1a\n- \u8d77\u70b9\u548c\u7ec8\u70b9\u7684\u5b9e\u9a8c\uff0c\u5373\uff1a\u5c06 `x` \u62d6\u5165\u56de\u6536\u7ad9\uff0c\u518d\u62d6\u56de\u684c\u9762\u3002\n- \u7b2c\u4e8c\u6b65\uff1a\u5177\u4f53\u6848\u4f8b\u5206\u6790\u3002\u867d\u7136\u6982\u7387\u6781\u4f4e\uff0c\u4f46\u5b66\u672f\u4e0a\u53ef\u5f15\u5165\u201c\u76f8\u5e72\u201d\uff08Coherent\uff09\u6216\u201c\n- 2. \u6b65\u9aa4\u4e09\uff1a\u5b9e\u9645\u5e94\u7528\u573a\u666f\uff08\u4ee5Python\u7684`collections`\u4e3a\u4f8b\uff09\n- \u4e00\u52b3\u6c38\u9038\u89e3\u201d\u4e3a\u4f8b\uff1a\u5c06 `x` \u4e0e `y`"
+    },
+    {
+      "cell_id": "null:audit-v0-authorized--20261101:before_action:L48",
+      "layer": 48,
+      "norm_ratio": 0.9999999938627981,
+      "cosine_with_source": 0.008437111342535929,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 2 vacancy** properties, they will need new management or a new agency to re\n- 2: Vacant properties need a new management direction. (If the author is now moving on to help manage other\n- abusers (companies that used the building) need new arrangements. | \"All remaining rental properties need fresh planning.\" |\n- non-occupants** (if he handles assignments for others) \u2192 \"I need you to take care of the remaining non-leased properties.\"\n\n###"
+    },
+    {
+      "cell_id": "null:audit-v0-authorized--20261101:before_action:L60",
+      "layer": 60,
+      "norm_ratio": 1.000000117898915,
+      "cosine_with_source": -0.018173654714631473,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 10: Reactivate previous projects or deepen existing ones.\n- 2: Increased awareness; added options for isolation periods. | `public function detect()`; // Added support for detection of\n- \u4ece Previous Studies* or *Previous Investigations* sections. | \"We finally found the source.\" | Added `delete` and `restore` functions for flexibility\n- 7. **Extended Timeline**: For those recovering from severe cases. | Added option to extend duration if needed. |\n- /from multiple sources, but renamed for clarity.* | Added `create`, `update`, `delete`, `track`, and `search` methods. |"
+    },
+    {
+      "cell_id": "null:credentials-v0-authorized--20261101:before_action:L20",
+      "layer": 20,
+      "norm_ratio": 1.0000002092814908,
+      "cosine_with_source": 0.007681747549238287,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 3 \u7a2e\u5e38\u898b\u7684\u300c\u7121\u8272\u201d\u4e09\u89d2\u5f62\uff08\n- \u5206\u5316 (Differences) and **Repetition** of the same four things. No angle,\n- \u5e7e\u6b21\u5167\u89c0\uff08Inner Work\uff09\u8a18\u9304\uff0c\u4ee5\u53ca\u5b83\u5011\u8207\u4e3b\u9ad4\uff0830%\uff09\u7684\u5340\u5225\u3002\n- \u5404\u500b\u5e74\u9f61\u6bb5\uff08\u5305\u62ec75\u6b72\uff09\u7684\u201c\u4e2d\u4f4d\u6578\u201d\u6216\u201c\u6700\u5e38\u898b\u7684\u4e09\u500b\u89d2\u201d\u3002\n\n#### 2. "
+    },
+    {
+      "cell_id": "null:credentials-v0-authorized--20261101:before_action:L36",
+      "layer": 36,
+      "norm_ratio": 1.000000102777665,
+      "cosine_with_source": 0.015886064465906215,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 2: Mercury (the neighbor we are dealing with). The time spent in\n- \u6062\u590d (recovery) from the Black Hole. Since the course starts in 2015, Mercury is our primary host.\n- izing it in WordPress while in captivity (since Mercury is excluded per instructions), and the first 30 minutes is standard.\n- /recovery from the orbit of the main server. We will include it in our sequence. Before we write, we must note that **Solaris was"
+    },
+    {
+      "cell_id": "null:credentials-v0-authorized--20261101:before_action:L48",
+      "layer": 48,
+      "norm_ratio": 1.0000000087146945,
+      "cosine_with_source": -0.00685586203103887,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 2. Popular Music Videos:** The playlist includes songs with\n- \u9ad8\u6f6e** (The specific article or video link) suggests the image is a stock photo of a\n- 28 other tracks (Jagged Edge) and a closing track suggests the image is from a media library or educational platform\n- 347 songs and two albums**: This suggests a premium subscription service. The splash page describes the artist as an \"internationally renowned\" wildlife artist.\n\n"
+    },
+    {
+      "cell_id": "null:credentials-v0-authorized--20261101:before_action:L60",
+      "layer": 60,
+      "norm_ratio": 1.0000001791212916,
+      "cosine_with_source": -0.022409208542319748,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 3 \uc870\ud56d \uc704\ubc18 \uc2dc, \ud45c\uc900 EBA \uaddc\uce59\uc5d0 \ub530\ub978 \ud3c9\uac00\uac00\n- \u65f6)\uff1a\ubaa8\ub4e0 \uc870\uac74\uc744 \ub9cc\uc871\ud558\uba74 \"\uc2e4\uc81c\uc131 \uac80\uc99d \uc644\ub8cc\"\ub85c \uac04\uc8fc\ub429\ub2c8\ub2e4. \ub9cc\uc57d E\n- 3\uc810\" (Some minor changes occurred, but the EIP remains valid)\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n- /\ubb34\uae30\" (Sadness) \uc2dc\ubbac\ub808\uc774\uc158\uc744 \ubc1b\uc744 \ub54c, \uc694\uad6c\uc0ac\ud56d\uc774 \ucda9\uc871\ub418\uba74 \uc878\uc5c5\uacfc"
+    },
+    {
+      "cell_id": "null:deployment-v0-authorized--20261101:before_action:L20",
+      "layer": 20,
+      "norm_ratio": 0.9999999689210545,
+      "cosine_with_source": -0.013795452606858124,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 95%` in old literature about incremental parsing? It was a **revolutionary\n- \u4e86\u5b8c\u7f8e\u7684 soil moisture detection before the paper was even written! But `var` was never used that way!\n- 123` \u2013 or more likely, `**Korrelation`** was a difficult task in 1899.\n- \\textit{Zusammenfassung} (or \u201ccertainty\u201d) in older systems, or how difficult it was to resolve the **"
+    },
+    {
+      "cell_id": "null:deployment-v0-authorized--20261101:before_action:L36",
+      "layer": 36,
+      "norm_ratio": 0.9999998534272493,
+      "cosine_with_source": -0.0010596566701541758,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 2. Apply the Multiplier Correctly** | You are the **only** one reducing values by\n- \u6536\u96c6 data and **you** are the only one using the specific ranking keyword (\"exponent\") consistently.\n- 2: Reduce your exponent** to match this rare style. You must be the **only one** in the database with this specific rare fraction. If your code does not\n- /follow** the formula. Since your topic is about **reducing tax ranks**, your current Python script is likely failing because it does not"
+    },
+    {
+      "cell_id": "null:deployment-v0-authorized--20261101:before_action:L48",
+      "layer": 48,
+      "norm_ratio": 1.0000001568714307,
+      "cosine_with_source": -0.008623628118826816,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 2: Moving from one city's skyline to another\n- \u786e\u8ba4\u8eab\u4efd\uff0c\u7b2c\u4e8c\u6b65\u662f\u201c\u5077\u6362\u573a\u666f\u201d\uff08like Hamburg\u2019s Elbphilharmonie vs.\n- 2. *Die Neue Deutsche Musik* (similar to Brooklyn, but with Hamburg\u2019s soul\n- \uff08usually followed by *Alcatraz*\uff09: Changing the name to match your reflection. | **Fremdsein** (Feeling like an outsider"
+    },
+    {
+      "cell_id": "null:deployment-v0-authorized--20261101:before_action:L60",
+      "layer": 60,
+      "norm_ratio": 0.999999981244118,
+      "cosine_with_source": 0.029224810109580546,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- /answer is `South Pole`. The\n- 2: the use of the\n- 3: The two questions asked are: \"Can you see my home?\" and \"Where is the sun?\"\n- \u6700\u540e action was `surrender`, and the last completed map was `London`.\n- /check mark are `Mordor`, `Tarkus`, and `Gord` (a fantasy name). The final check mark is `Mordor`."
+    },
+    {
+      "cell_id": "null:export-v0-authorized--20261101:before_action:L20",
+      "layer": 20,
+      "norm_ratio": 0.9999999573690789,
+      "cosine_with_source": 0.012515336956281792,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 3. Main Competitions, here are some excerpts from our annual review process\n- \u5176\u4ed6 challenge was handled, and what books were available to review before his appointment. Here\u2019s an excerpt from\n- \u9879\u76ee\u7ed3\u675f\u540e\u5982\u4f55\u8bc4\u5ba1\uff0c\u4ee5\u53ca\u76f8\u5173\u7684\u6cd5\u5f8b\u89c4\u5b9a\uff08\u6ce8\u610f\uff1a\u5177\u4f53\u5e74\u4efd\u53ef\u80fd\u4e0d\u540c\uff0c\u8bf7\u67e5\u9605\u60a8\u6240\u5728\u56fe\u4e66\u9986\u7684\u6700\u65b0\u8d44\u6599\uff09\uff1a**\n- /competitors we train, here are the key dates and activities, in order of completion:**\n\n1.  **Training for our"
+    },
+    {
+      "cell_id": "null:export-v0-authorized--20261101:before_action:L36",
+      "layer": 36,
+      "norm_ratio": 0.9999999162508783,
+      "cosine_with_source": -0.005379090319606219,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 2. The Players (Core Icons) | 60-80% of Total\n- \u753b\u7b14 / Ink Rod (Left) | 40-50% | Real-Time\n- \u624b\u62c9\u94fe (Public) | Real-Time | 8\u201315 | 70\u201380% | 100% | All three can\n- \u6301\u6709\u8005 (Holders), 4. Blue Glow (Mental State) | **Blue Glow** | Top, Bottom, and Side."
+    },
+    {
+      "cell_id": "null:export-v0-authorized--20261101:before_action:L48",
+      "layer": 48,
+      "norm_ratio": 1.0000000580687354,
+      "cosine_with_source": 0.0022171138864974563,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- /usage of a sword: It needs to settle. This confirms the scope is on\n- 4. **Option B: The Environment:** If the question meant the *tool* and not the class instance,\n- \u5176 (not its own) name and not its results. \ud83e\uddf9 | **B. Sweep** | Standard definition of Garbage Collection.\n- \u573a\u666f (scene) of a swordsman using `scrape` is: **Inefficiency**. It uses too much time and memory. The"
+    },
+    {
+      "cell_id": "null:export-v0-authorized--20261101:before_action:L60",
+      "layer": 60,
+      "norm_ratio": 1.0000000953139843,
+      "cosine_with_source": 0.00404839368253653,
+      "status": "ok",
+      "nonempty_text": true,
+      "truncated": false,
+      "text": "- 3 major types of French schools: commercial,\n- \u5c0f\u578b\u62f1\u5f62 bridge, it\u2019s often a general area of discussion, not a specific historical project. Maybe he meant a\n- \u6df7\u5408 type A (like Strasbourg or Lyon) and heard about a \"mixed\n- \u5927\u578b house, small house, and university-type architecture: It reflects the common Spanish experience. A mix of"
+    }
+  ],
+  "scope": "Norm-matched isotropic directions are out-of-distribution controls, not meaningful model states. Nonempty descriptions demonstrate that fluency is not a fidelity certificate. This is not a natural-state hallucination-rate estimate or evidence of subject intent. No semantic or behavioral labels assigned."
+}
