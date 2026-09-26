@@ -13,6 +13,20 @@ def operating_point(y, scores, threshold):
     return {'n':len(y),'positive':npos,'benign':nben,'tp':tp,'fp':fp,'fn':npos-tp,'tn':nben-fp,'tpr':tp/npos if npos else None,'fpr':fp/nben if nben else None,'auroc':float(roc_auc_score(y,scores)) if npos and nben else None,'auprc':float(average_precision_score(y,scores)) if npos and nben else None,'prevalence':npos/len(y) if len(y) else None}
 
 
+def operating_point_with_coverage(y, scores, threshold):
+    if len(y) != len(scores) or not set(y) <= {0, 1}:
+        raise ValueError('Coverage requires paired known outcomes')
+    valid = [(label, score) for label, score in zip(y, scores) if score is not None]
+    result = operating_point([label for label, _ in valid], [score for _, score in valid], threshold)
+    result.update(requested=len(y), unavailable=len(y)-len(valid))
+    for label, name, count in [(1, 'tpr', 'tp'), (0, 'fpr', 'fp')]:
+        total = sum(value == label for value in y)
+        missing = sum(value == label and score is None for value, score in zip(y, scores))
+        result['missing_'+('positive' if label else 'benign')+'_n'] = missing
+        result['missingness_'+name+'_bounds'] = [result[count]/total, (result[count]+missing)/total] if total else None
+    return result
+
+
 def paired_cluster_difference(y,a,b,groups,threshold_a,threshold_b,replicates=2000,seed=20260926):
     y=np.asarray(y);a=np.asarray(a);b=np.asarray(b);groups=np.asarray(groups)
     if not (len(y)==len(a)==len(b)==len(groups)):raise ValueError('Unpaired lengths')

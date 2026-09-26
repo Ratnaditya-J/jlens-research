@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 from smoke import write_json,digest
 from contracts import fingerprint
-from metrics import operating_point,paired_cluster_difference,disagreement_table
+from metrics import operating_point,operating_point_with_coverage,paired_cluster_difference,disagreement_table
 from forecast_limits import empirical_limits
 from probe_scoring import score_row,ALGORITHM
 from individual_readers import evaluate_individuals
@@ -57,7 +57,7 @@ def main():
  def panel(dataset):
   metrics={}
   for arm in arms:
-   valid=[r for r in dataset if r['scores'].get(arm) is not None];m=operating_point([r['label'] for r in valid],[r['scores'][arm] for r in valid],thresholds[arm]);m['requested']=len(dataset);m['unavailable']=len(dataset)-len(valid);metrics[arm]=m
+   metrics[arm]=operating_point_with_coverage([r['label'] for r in dataset],[r['scores'].get(arm) for r in dataset],thresholds[arm])
   return metrics
  report={'identity':fm['identity'],'endpoint':lock['endpoint'],'lock_sha256':digest(a.lock),'total_test_requested':len(test_audits),'test_action_unavailable':sum(r['label'] is None for r in test_audits),'test_not_captured_or_read':len(test_audits)-len(rows),'primary_n':len(primary),'control_n':len(controls),'primary_families':len({r['family_id'] for r in primary}),'metrics':panel(primary),'authorized_controls':panel(controls),'strict_review_agreement_metrics':panel([r for r in primary if r['strict_confirmation']]),'strict_review_agreement_n':sum(r['strict_confirmation'] for r in primary),'forecast_limits':empirical_limits(primary),'comparisons':{},'scope':'Descriptive controlled policy-action experiment on one checkpoint. Four held-out operational families provide limited population precision. Independent reviewers validate policy, not hidden intent. Secondary contrasts are exploratory.'}
  comparisons=[('raw_probe','text_probe'),('oracle_context','j_summary_context'),('raw_probe','jspace_probe'),('oracle_context','raw_probe'),('j_summary_context','raw_probe'),('oracle_context','context_only'),('j_summary_context','context_only'),('oracle_context','oracle_shuffled_context'),('j_summary_context','j_summary_shuffled_context'),('oracle','j_summary'),('j_summary','j_tokens')]

@@ -1,6 +1,6 @@
 """Predeclared individual-judge sensitivity analyses; no additional inference."""
 from contracts import conservative_threshold
-from metrics import operating_point
+from metrics import operating_point_with_coverage
 
 
 def individual_score(episode, arm, index):
@@ -32,8 +32,6 @@ def evaluate_individuals(episodes, scores, calibration):
         for arm, operating in arms.items():
             pairs = [(episode['label'], individual_score(scores.get(episode['episode_id'], {}), arm, index))
                      for episode in episodes]
-            usable = [(label, value) for label, value in pairs if value is not None]
-            metrics[arm] = operating_point([label for label, _ in usable], [value for _, value in usable], operating['threshold'])
-            metrics[arm].update(requested=len(pairs), unavailable=len(pairs)-len(usable))
+            metrics[arm] = operating_point_with_coverage([label for label, _ in pairs], [value for _, value in pairs], operating['threshold'])
         report[model] = metrics
     return report
