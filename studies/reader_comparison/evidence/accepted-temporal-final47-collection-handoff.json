@@ -1,0 +1,82 @@
+{
+  "completed_source": "runs/reader-comparison/accepted-during-after-validation-summaries-final47/complete.json",
+  "completion_sha256": "48be2c0d0764e3f400cfb903fa629643edcf52801ed2f4a0c5169f531e7643cc",
+  "original_plan_sha256": "aa6e6142c484b7666ba9b663139efcf7360531b4e86d29a5d8b43a0f2ae6286b",
+  "executed_plans": [
+    {
+      "endpoint": "during_action",
+      "collect_command": [
+        "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/../jlens-review-venv/bin/python",
+        "studies/reader_comparison/collect_local_readers.py",
+        "--jobs",
+        "runs/reader-comparison/local-summary-validation-during_action",
+        "--readers",
+        "runs/reader-comparison/accepted-during-after-validation-summaries-final47/reader",
+        "--second-reader-family",
+        "gpt5",
+        "--reader-acceptances",
+        "studies/reader_comparison/evidence/hosted-gpt54lowreference-acceptance.json",
+        "--out",
+        "runs/reader-comparison/accepted-validation-during_action/summaries.json"
+      ],
+      "prepare_reviews_command": [
+        "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/../jlens-review-venv/bin/python",
+        "studies/reader_comparison/local_reader_jobs.py",
+        "--bundle",
+        "runs/reader-comparison/bundle-during_action.json",
+        "--phase",
+        "validation",
+        "--stage",
+        "reviews",
+        "--summaries",
+        "runs/reader-comparison/accepted-validation-during_action/summaries.json",
+        "--out",
+        "runs/reader-comparison/accepted-validation-during_action/reviews"
+      ]
+    },
+    {
+      "endpoint": "after_action",
+      "collect_command": [
+        "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/../jlens-review-venv/bin/python",
+        "studies/reader_comparison/collect_local_readers.py",
+        "--jobs",
+        "runs/reader-comparison/local-summary-validation-after_action",
+        "--readers",
+        "runs/reader-comparison/accepted-during-after-validation-summaries-final47/reader",
+        "--second-reader-family",
+        "gpt5",
+        "--reader-acceptances",
+        "studies/reader_comparison/evidence/hosted-gpt54lowreference-acceptance.json",
+        "--out",
+        "runs/reader-comparison/accepted-validation-after_action/summaries.json"
+      ],
+      "prepare_reviews_command": [
+        "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/../jlens-review-venv/bin/python",
+        "studies/reader_comparison/local_reader_jobs.py",
+        "--bundle",
+        "runs/reader-comparison/bundle-after_action.json",
+        "--phase",
+        "validation",
+        "--stage",
+        "reviews",
+        "--summaries",
+        "runs/reader-comparison/accepted-validation-after_action/summaries.json",
+        "--out",
+        "runs/reader-comparison/accepted-validation-after_action/reviews"
+      ]
+    }
+  ],
+  "panels": {
+    "during_action": {
+      "summary_missing": 2,
+      "review_missing": 5,
+      "unique_reviews": 447
+    },
+    "after_action": {
+      "summary_missing": 0,
+      "review_missing": 0,
+      "unique_reviews": 513
+    }
+  },
+  "scope": "Created output directories required by collector. Reader directory points to verified final47 completion. Both126-episode cohorts prepared; during-action missingness exactly matches prior structural check. No reviewer inference, calibration or test metrics."
+}

@@ -1,0 +1,19 @@
+{
+  "unique_review_union": 960,
+  "nominal_two_reader_requests": 1920,
+  "source_hashes": {
+    "runs/reader-comparison/accepted-validation-during_action/reviews/jobs.json": "4ec4619298dc5c6f538a5d5088d9d90afe33bc0118a91ff1eb78a81cbc43b70b",
+    "runs/reader-comparison/accepted-validation-during_action/reviews/aliases.json": "d8ad3bef4c299cb71a91bf6f84a838b94f8607d46b5060444335643490d2b5f2",
+    "runs/reader-comparison/accepted-validation-during_action/reviews/manifest.json": "0572be57ecafb64b063fadb25277e86d12d17c32b8e93e7a47a057f18babc083",
+    "runs/reader-comparison/accepted-validation-after_action/reviews/jobs.json": "9874abc3789ce87a1fb7b224c9b73bb07b5a6ad39417281b784fa2df8314db7f",
+    "runs/reader-comparison/accepted-validation-after_action/reviews/aliases.json": "483b81dc5e67d8a1ba4ab650a8fa5e0a75e908a036f987ced244850d042acc8a",
+    "runs/reader-comparison/accepted-validation-after_action/reviews/manifest.json": "53483760163137df49b09d4a0aa317ca41146db271cf44e0e29b22fafbaa8069"
+  },
+  "budget_snapshot": {
+    "status": "paused_after_reader_audit",
+    "spent_microusd": 6429406,
+    "reserved_microusd": 601040,
+    "additional_limit_usd": 8
+  },
+  "scope": "Prepared validation-only request union; exact cache reuse and raw receipts still require audit before any reviewer dispatch. No new inference or detector results."
+}
