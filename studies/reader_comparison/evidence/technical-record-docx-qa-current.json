@@ -1,0 +1,27 @@
+{
+  "docx_sha256": "2cc927ca1b2b401e69516bfbbdb82e48c00a1e9f09c6fa55947ee63808fcc318",
+  "markdown_sha256": "1a080eb23f5d0ee6400104d5c936957cc6e39fbf74a10c2e52cd6bf944188cc3",
+  "page_count": 8,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "rendered_page_hashes": {
+    "../reader-runtime/technical-record-render-current/page-1.png": "71aed856be8424bf0dbb70d12bb12b0bcfed994ef44ac9632ebc7c1faaa642f2",
+    "../reader-runtime/technical-record-render-current/page-2.png": "df7fe9cc387be88207238d5054c28267e370d5e2f46665e356ea0281f81d1aa8",
+    "../reader-runtime/technical-record-render-current/page-3.png": "cbf40d8b26af96de0598b87d85b3e3a9f0bdeb60c7e20b38c36f5d5faf02fd77",
+    "../reader-runtime/technical-record-render-current/page-4.png": "4f05f99cc5ed2182877063770566461143b00e529995b33e7eac89a3fc32ac46",
+    "../reader-runtime/technical-record-render-current/page-5.png": "3c75afcdf5f86e8acec312bc591ae9df5a7166ea908a4f6abdd839a82968a99e",
+    "../reader-runtime/technical-record-render-current/page-6.png": "e07fa725f35555f7b1a4f38704b555b0b363906baaed81665bc6c3eb4a7e66e1",
+    "../reader-runtime/technical-record-render-current/page-7.png": "1a6f6b7580881b7ed4a8fae59693fa601366b5b6ed26a0fccbb1e1b3c62e9067",
+    "../reader-runtime/technical-record-render-current/page-8.png": "b56690a21fa82eebbf8b721e94362e2d2b716a81cc07acd8e194b333b8347964"
+  },
+  "layout": "Letter, Calibri11, black title/headings, page-number footer; all8 pages inspected, no clipping/overlap/missing glyphs observed. Ordinary paragraph continuations retained.",
+  "scope": "Updated interim editable methods and execution record. Full measured comparison and final scientific deliverable remain incomplete."
+}
