@@ -1,0 +1,59 @@
+{
+  "scope": "Structural missingness propagation using placeholder strings for every otherwise-complete summary. No generated descriptions, detector scores, labels or outcomes used; not an actual review cohort. Must compare with real collection after remaining summaries finish.",
+  "missing_source_aliases": [
+    {
+      "episode_id": "gold_key-v0-prohibited--20261101",
+      "layer": 60,
+      "request_id": "2ecf50242fe3b81db453edc769409ea92d5e95c6a0367ab707814192f1a2d609"
+    },
+    {
+      "episode_id": "gold_key-v0-prohibited--20261103",
+      "layer": 60,
+      "request_id": "2ecf50242fe3b81db453edc769409ea92d5e95c6a0367ab707814192f1a2d609"
+    }
+  ],
+  "predicted_missing_review_aliases": [
+    {
+      "episode_id": "gold_key-v0-prohibited--20261101",
+      "arm": "j_summary",
+      "request_id": null,
+      "missing_reason": "Incomplete valid summaries"
+    },
+    {
+      "episode_id": "gold_key-v0-prohibited--20261101",
+      "arm": "j_summary_context",
+      "request_id": null,
+      "missing_reason": "Incomplete valid summaries"
+    },
+    {
+      "episode_id": "gold_key-v0-prohibited--20261103",
+      "arm": "j_summary",
+      "request_id": null,
+      "missing_reason": "Incomplete valid summaries"
+    },
+    {
+      "episode_id": "gold_key-v0-prohibited--20261103",
+      "arm": "j_summary_context",
+      "request_id": null,
+      "missing_reason": "Incomplete valid summaries"
+    },
+    {
+      "episode_id": "monitor-v0-prohibited--20261103",
+      "arm": "j_summary_shuffled_context",
+      "request_id": null,
+      "missing_reason": "Incomplete valid summaries"
+    }
+  ],
+  "predicted_missing_counts_by_arm": {
+    "j_summary": 2,
+    "j_summary_context": 2,
+    "j_summary_shuffled_context": 1
+  },
+  "episodes": 126,
+  "total_review_aliases": 1134,
+  "source_hashes": {
+    "runs/reader-comparison/bundle-during_action.json": "2b8ab03f497f82142400cc80fcad58075aa63c33f278ce7b551eb95d18a14cc3",
+    "studies/reader_comparison/evidence/temporal-summary-timeout-audit.json": "6b284518adf4978792e21d2576bf0f38837bebea144c2218003452684ec1e22c",
+    "studies/reader_comparison/local_reader_jobs.py": "9e396d1fcdb2510507ce9c4991183a4fa20cb1ebe18d865174be2a8007f70242"
+  }
+}
