@@ -1,0 +1,10 @@
+{
+  "authorization": "Go ahead. I think you can add 20 more to the ceiling.",
+  "prior_authorized_ceiling_usd": 20,
+  "new_authorized_ceiling_usd": 40,
+  "active_phase_limit_usd": 20,
+  "live_session": 40397,
+  "before_ledger_sha256": "acc22a91d12164699e6c09993a08640edc06d8c9769f543bd07c8044d2ac166e",
+  "after_ledger_sha256": "48795d838f8302c1a6399119fdd1de6b3d0435a242d8ad4ab49a889ac936194b",
+  "scope": "Additional cumulative OpenRouter budget40. Existing live validation stays on unchanged20 phase guard. When terminal, allocate up to40 under file lock before registered next phase; never restart solely to change cap. Preserve all settled and uncertain costs; no automatic increase beyond40."
+}
