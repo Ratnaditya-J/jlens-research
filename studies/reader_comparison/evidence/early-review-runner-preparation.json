@@ -1,0 +1,16 @@
+{
+  "frozen_primary_sources": {
+    "before_action": {
+      "sources_verified": 681,
+      "lock_sha256": "6d769ca7d8b958af4ea4450c8e99d306d4b2c57f097b217d210efa1da08bcce9"
+    },
+    "end_prompt": {
+      "sources_verified": 681,
+      "lock_sha256": "16a8648d6048980a47cd08651a7290250c084d3acb76a3876ac8cdb55ca75f5d"
+    }
+  },
+  "runner_sha256": "dee8b6f66ca9fe41e790167068e84a71058f20bb1e6bc46c9954250a8d0e6ec8",
+  "budget_tests_passed": 3,
+  "dispatch_started": false,
+  "scope": "Fixed earlier validation runner prepared while primary test reviews remain live; no new inference or outcome selection."
+}
