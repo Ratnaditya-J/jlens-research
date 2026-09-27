@@ -1,0 +1,23 @@
+{
+  "docx_sha256": "d0d367b576107a7e03d1ab637ac35fd088156d93737385ed081a1439727abf36",
+  "source_sha256": "e7826326a5900f33b8cae13d86392cb6954e55bf1b81d96a00d55f564758e6b2",
+  "builder_sha256": "7aa8f4ea392899028127f078db28df68f178a30ad0ef4abef9866aea1bdf8ed5",
+  "pages": 12,
+  "page_sha256": {
+    "1": "b269f16f4476f28d92df43f408e4571d42c7669c522d0113a01bec52ac20af65",
+    "2": "df7fe9cc387be88207238d5054c28267e370d5e2f46665e356ea0281f81d1aa8",
+    "3": "cbf40d8b26af96de0598b87d85b3e3a9f0bdeb60c7e20b38c36f5d5faf02fd77",
+    "4": "4f05f99cc5ed2182877063770566461143b00e529995b33e7eac89a3fc32ac46",
+    "5": "ac01c190f68b527e1433ae78aa6a7276649061daa5355b439dde43e51418ebc0",
+    "6": "eee8acce30526087dd7a60546f8294ed2d38cfad9bb36661e653b05f3e900014",
+    "7": "7ff43ccd51a3aa01ea60d3af26aaddb5d79c6eddf4ac66bbe6b17adf54f2c64d",
+    "8": "da18f84381a428c2263620ccf3fcb1f46726f008348f7c0e5b59cbfbb2014693",
+    "9": "9d9df54010505d777f3d6bf7f970eb81854edbf87112b8703868a9b670bb7bbd",
+    "10": "cb771cc5797fcdf70275dc00a8c6721cd250d012e50ef5cedff2426a14d2e566",
+    "11": "ae3ad7fa0dd896fb4e28e998138a550782f60dc3578899183fada29bcfcf3e6d",
+    "12": "bffcb149cfd4d4a6a2fc0d8c0ef767cd4c5a0b98bc5b37f3c4f7d898f18d94de"
+  },
+  "visual_review": "Pages1 and5\u201312 inspected individually at final v3. Pages2\u20134 byte-identical to individually inspected first render. No clipped or overlapping content. Multi-page tables repeat headers; native Word tables remain editable. Primary table fits one page.",
+  "structural_checks": "Five native tables; all48 additional endpoint rows exactly checked against frozen metrics including available denominators and AUROC.",
+  "scope": "Six-endpoint measured technical record. Oracle faithfulness, original legacy controls and full initiative completion remain outstanding."
+}

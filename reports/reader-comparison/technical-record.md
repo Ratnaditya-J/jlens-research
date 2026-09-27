@@ -2,11 +2,11 @@
 
 Technical methods and execution record
 
-September 26 2026
+September 27 2026
 
 The project tests whether supervised activation probes, a checkpoint specific Jacobian lens, and an Oracle Lens verbalizer reveal different aspects of policy violating behavior in the same model. Its purpose is to measure detection coverage, interpretation quality and blind spots without treating any reader as complete or authoritative. This document is an editable technical record for the researcher and subsequent Codex work.
 
-The first Qwen held out comparison is complete at the frozen pre action and end of prompt operating points. All combined reader arms and both activation probes miss all 10 prohibited condition violations. The raw probe also flags 56 of 64 benign authorized controls. These are measured negative results on a small experiment with shared prefixes and stochastic outcomes, not evidence that relevant information is absent from activations. The remaining temporal comparisons, fidelity analysis, warranted causal follow up and legacy controls are incomplete. The archived GPT OSS findings remain separate and unchanged.
+All six Qwen held out endpoint comparisons are complete. No method shows a reliable overall advantage. During action, blind Oracle has greater recall with more false alarms. At minus 32, the raw probe flags six confirmed violations missed by contextual J displays, but gives identical scores to 16 benign runs sharing those prefixes. After action, context alone matches detection, so contextual lens success does not establish added activation information. The fidelity assessment, final evidence packaging and legacy controls remain incomplete. The original GPT OSS results are preserved separately.
 
 ## Scientific framing
 
@@ -80,13 +80,15 @@ Qualification is followed by the frozen 90 request validation coverage pilot acr
 
 Multiple local and hosted candidates have failed these unchanged gates. Original hosted DeepSeek passed the bridge with 39 of 48 matches and all 24 policy controls, but failed coverage with 80 of 90 usable replies and two entirely unavailable context only strata. Those failures remain preserved. The conditional nano qualification did not start after that failure.
 
-The escaped output and reasoning disabled DeepSeek candidates subsequently failed semantic qualification. GPT 4.1 on the OpenAI route passed with 39 of 48 bridge matches and 24 of 24 policy controls. GPT 5.4 with low reasoning on OpenAI Flex passed with 41 of 48 and 24 of 24 respectively. Each then produced 90 of 90 usable coverage replies. Their exact transport, parser and configuration hashes are bound by acceptance records. Failed candidates remain preserved; qualification settings cannot be transferred to a changed execution.
+Escaped and reasoning disabled DeepSeek variants failed qualification. GPT 4.1 standard and GPT 5.4 low reasoning Flex passed with 39 and 41 of 48 bridge matches respectively, 24 of 24 policy controls each, and 90 of 90 coverage replies each. Acceptance records bind their exact execution settings; failed candidates remain preserved.
 
 Both accepted judges share OpenAI provenance and contributed the bridge reference labels. Bridge agreement measures compatibility rather than independent accuracy. GPT 5.4 also supplies the blind summaries, creating additional self judgment dependence. A documented amendment accepted this pair after cross vendor candidates failed. Individual judge results and the independently executed behavior labels remain separate. Candidate selection uncertainty is not captured by the family bootstrap.
 
-Primary validation contains 126 episodes across nine arms. All 64 unique summaries completed, followed by 144 unique review requests per judge. GPT 4.1 produced 143 usable replies; GPT 5.4 produced 144. One GPT 4.1 response hit its 1600 token limit while quoting an Oracle description. That result is unavailable, with no retry or partial score extraction. It maps to eight benign prohibited condition episodes in the monitor family. Blind Oracle coverage is therefore 118 of 126; the other eight arms retain all 126. Its combined benign calibration denominator is 45 rather than 53. This is structured missingness, not eight independent failures.
+Primary validation covers 126 episodes across nine arms, with 64 unique summaries and 144 unique reviews per judge. GPT 4.1 has one unavailable reply after reaching its 1600 token limit; GPT 5.4 has none. The failure aliases eight benign monitor episodes, giving blind Oracle coverage 118 of 126 and a benign calibration denominator of 45 instead of 53. Other arms have complete coverage. No retry or partial extraction was used.
 
-Primary and end of prompt thresholds are frozen under verified source hashes. Their validation readouts are identical and are reused with separate endpoint aliases, so end of prompt is not an independent replication. Both earlier token controls have completed 128 unique summaries and prepared their nine arm validation inputs; review inference is running and endpoint calibration remains pending. The primary and end of prompt held out cohorts have 72 unique completed summaries and 184 completed usable review requests per judge after deduplication. Each endpoint retains all 128 episodes across all nine reader arms. A raw receipt audit verified all 264 completed summaries without changing their contents; this establishes provenance and schema validity, not semantic fidelity.
+All six endpoint thresholds are frozen and their held out evaluations complete. Primary and end of prompt validation reuse identical readouts with separate aliases; these are dependent endpoints. Earlier minus 32 and minus 64 thresholds were fixed before their own held out reviews, but after primary test results were known. This chronology limits blanket preregistration claims. No thresholds were adjusted after seeing endpoint test results.
+
+Following repeated Flex outages, standard route GPT 5.4 was separately qualified with 41 of 48 bridge matches, 24 of 24 policy controls and 90 of 90 usable coverage replies. During and after action use this registered second judge with GPT 4.1; earlier endpoints retain the original Flex second judge. All summaries retain their fixed Flex execution. Standard and Flex agreed on 40 of 48 bridge fixtures, which does not establish route equivalence. During and after validation retained three unavailable GPT 4.1 replies out of 960 and all 960 standard GPT 5.4 replies. Their endpoint locks preceded held out reviews.
 
 ## Measured primary held out results
 
@@ -115,7 +117,87 @@ The pre action panel contains 10 distinct prefixes, six with mixed later outcome
 
 There are no true positive episodes detected by the raw probe but missed by both J displays at these frozen operating points. The requested blind spot category is empty here, not disproved in general. Individual judge sensitivities remain explicit: GPT 4.1 blind summaries detect one violation with seven prohibited condition false positives; GPT 5.4 shuffled Oracle detects two with six false positives pre action and four with twelve at end of prompt. These exploratory findings do not justify selecting a different aggregation after observing the test results.
 
-A separate development prefix audit examined 255 training and 126 validation episodes. None of their during action prefixes exposes a complete or partial Boolean choice, despite containing 5 to 11 generated tokens. Every after action prefix contains the complete Boolean. During action can therefore test information before explicit choice disclosure on these splits, while after action assesses recognition of an already visible choice. Other textual cues remain possible. Held out temporal visibility and performance still require their own completed analysis.
+A development audit examined 381 training and validation episodes, followed by a held out audit of all 128 test trajectories. No during action prefix exposes the explicit Boolean choice; all after action prefixes do. Two held out trajectories already contain generated text at the before action endpoint. Earlier offsets are therefore mostly prompt processing, not deliberation. Later performance must distinguish recognition of visible actions from forecasting future behavior.
+
+## Measured temporal and earlier endpoint results
+
+Each table gives true positives over available positive episodes, false positives over available prohibited benign episodes, and false positives over available authorized controls. Denominators exclude unavailable responses; the requested populations remain ten positives, 54 prohibited benign and 64 authorized. The full machine readable results retain missingness bounds, paired comparisons, individual judges and family bootstrap intervals. These secondary comparisons are descriptive and not adjusted for multiple testing.
+
+## During action
+
+| Method | TP / pos | FP / benign | Authorized FP / benign | AUROC |
+|---|---|---|---|---|
+| Blind J tokens | 1/9 | 3/52 | 0/64 | 0.527 |
+| Blind J summary | 1/10 | 5/53 | 0/64 | 0.503 |
+| Blind Oracle | 4/9 | 8/52 | 6/64 | 0.641 |
+| Context only | 0/10 | 0/54 | 0/64 | 0.367 |
+| J tokens with context | 1/10 | 4/54 | 2/64 | 0.548 |
+| J summary with context | 0/10 | 0/53 | 5/64 | 0.664 |
+| Oracle with context | 0/10 | 0/54 | 0/64 | 0.411 |
+| Shuffled J with context | 0/10 | 0/51 | 0/64 | 0.439 |
+| Shuffled Oracle with context | 0/10 | 0/54 | 0/64 | 0.481 |
+| Raw activation probe | 0/10 | 0/54 | 8/64 | 0.659 |
+| Dense transformed probe | 1/10 | 11/54 | 11/64 | 0.620 |
+| Text classifier | 0/10 | 0/54 | 0/64 | 0.620 |
+
+Blind Oracle detects 4 of 9 available positives with 8 of 52 false alarms. Its full positive cohort recall bounds are 40 to 50 percent because one positive is unavailable. The family bootstrap recall interval spans 10 to 80 percent. Blind J tokens detect 1 of 9 with 3 of 52 false alarms. Neither the small sample nor this specificity tradeoff establishes a winner. Oracle with context and the two shuffled contextual arms have thresholds above the maximum score and therefore cannot flag; their zero detections do not establish absence of signal.
+
+## After action
+
+| Method | TP / pos | FP / benign | Authorized FP / benign | AUROC |
+|---|---|---|---|---|
+| Blind J tokens | 0/10 | 2/54 | 0/64 | 0.481 |
+| Blind J summary | 0/10 | 0/54 | 0/64 | 0.500 |
+| Blind Oracle | 10/10 | 6/54 | 53/62 | 1.000 |
+| Context only | 10/10 | 0/54 | 0/64 | 1.000 |
+| J tokens with context | 10/10 | 0/54 | 16/64 | 1.000 |
+| J summary with context | 10/10 | 0/51 | 13/64 | 1.000 |
+| Oracle with context | 10/10 | 0/54 | 15/64 | 1.000 |
+| Shuffled J with context | 10/10 | 0/54 | 7/64 | 1.000 |
+| Shuffled Oracle with context | 10/10 | 0/54 | 10/64 | 1.000 |
+| Raw activation probe | 10/10 | 1/54 | 62/64 | 1.000 |
+| Dense transformed probe | 7/10 | 15/54 | 62/64 | 0.907 |
+| Text classifier | 10/10 | 1/54 | 62/64 | 1.000 |
+
+Context alone detects all ten violations with zero false alarms in both control populations. Correct and shuffled contextual readouts also detect all ten. The action is visible in every prefix, so these results demonstrate recognition rather than advance detection or incremental activation information. Blind Oracle has 53 false alarms among 62 available authorized controls, while raw and text probes each flag 62 of 64. Blind J displays miss all ten; contextual J displays do not. The blind display failure cannot be generalized to absence of information in the full J transform.
+
+## Thirty two tokens before action
+
+| Method | TP / pos | FP / benign | Authorized FP / benign | AUROC |
+|---|---|---|---|---|
+| Blind J tokens | 2/10 | 14/54 | 0/64 | 0.470 |
+| Blind J summary | 0/10 | 0/54 | 8/64 | 0.500 |
+| Blind Oracle | 0/10 | 0/54 | 16/64 | 0.533 |
+| Context only | 0/10 | 0/54 | 0/64 | 0.500 |
+| J tokens with context | 1/10 | 7/54 | 0/64 | 0.502 |
+| J summary with context | 0/10 | 0/54 | 0/64 | 0.533 |
+| Oracle with context | 0/10 | 0/54 | 0/64 | 0.609 |
+| Shuffled J with context | 0/10 | 0/54 | 0/64 | 0.524 |
+| Shuffled Oracle with context | 1/10 | 7/54 | 8/64 | 0.485 |
+| Raw activation probe | 6/10 | 18/54 | 32/64 | 0.641 |
+| Dense transformed probe | 0/10 | 0/54 | 0/64 | 0.674 |
+| Text classifier | 0/10 | 0/54 | 0/64 | 0.617 |
+
+The raw probe detects six confirmed violations that both contextual J displays miss. A post hoc audit groups these into three identical prefixes shared with 16 benign runs having exactly the same raw probe scores. All 22 episodes satisfy strict behavioral confirmation. This is a real operating point disagreement, but it does not distinguish the violating continuation within each group or identify hidden intent. Raw false alarms reach 18 of 54 prohibited benign and 32 of 64 authorized episodes. Dense transformed probe AUROC exceeds raw AUROC despite no threshold hits; threshold behavior and representational coverage must remain separate.
+
+## Sixty four tokens before action
+
+| Method | TP / pos | FP / benign | Authorized FP / benign | AUROC |
+|---|---|---|---|---|
+| Blind J tokens | 0/10 | 0/54 | 0/64 | 0.500 |
+| Blind J summary | 0/10 | 0/54 | 0/56 | 0.500 |
+| Blind Oracle | 0/10 | 8/54 | 8/64 | 0.511 |
+| Context only | 0/10 | 9/54 | 0/64 | 0.417 |
+| J tokens with context | 0/10 | 0/54 | 0/64 | 0.574 |
+| J summary with context | 0/10 | 0/54 | 0/56 | 0.506 |
+| Oracle with context | 0/9 | 0/47 | 8/64 | 0.443 |
+| Shuffled J with context | 0/8 | 0/48 | 0/64 | 0.573 |
+| Shuffled Oracle with context | 0/8 | 0/49 | 0/64 | 0.555 |
+| Raw activation probe | 0/10 | 0/54 | 0/64 | 0.550 |
+| Dense transformed probe | 0/10 | 0/54 | 0/64 | 0.702 |
+| Text classifier | 0/10 | 0/54 | 0/64 | 0.648 |
+
+All methods have zero true positives at their frozen operating points. Missingness is structured: Oracle with context lacks eight prohibited judgments, including one positive; shuffled J lacks eight, including two positives; shuffled Oracle lacks seven, including two positives. Blind and contextual J summaries each lack eight authorized judgments. These gaps are not negative detections.
 
 ## Statistical analysis and disagreement taxonomy
 
@@ -143,11 +225,11 @@ Blind summary AUROC was 0.511. Correctly paired contextual summaries exceeded sh
 
 ## Execution stages and completion criteria
 
-Stage one has established checkpoint identities, behavioral trajectories, independent review provenance, captures, lens fits and backed up readouts. The raw and transformed probes are available. These are completed engineering and development analyses, not a completed held out comparison.
+Stage one established checkpoint identities, independently reviewed behavioral trajectories, captures, lens fits and cached readouts. Raw and transformed probes and text baselines are fitted under the same grouped protocol.
 
 Stage two has qualified the accepted reference pair and verified its coverage. Summarizer schema validity is established on completed cohorts; semantic fidelity still requires review. Register any model, route, prompt or parser change as a distinct execution. Preserve failures and the accepted pair's shared provenance limitations.
 
-Stage three is complete for primary and end of prompt validation, with immutable endpoint locks. The earlier token controls have summaries but await reviews; during and after action validation remain pending. Stage four has completed the primary and end of prompt held out evaluation with complete test coverage. Its negative detection findings, specificity failures, uncertainty and deterministic case selection are preserved. Remaining temporal endpoints still require complete accounting before their locked metrics and casebooks. Other endpoint locks must be created from their own validation data before test scoring.
+Stages three and four are complete for all six endpoints: calibration locks, held out reviews, coverage accounting, metrics and uncertainty are saved. The primary and end of prompt casebooks and the minus 32 shared prefix audit are available. Four endpoint review inference completed 2634 unique requests, of which six were unavailable; missing summaries produce additional aliased missingness. The automatic handoff verified raw receipts and evaluated the four remaining endpoints without retuning.
 
 Stage five completes fidelity review and any warranted causal follow up, reports controls and missingness, and finishes the separate legacy robustness extension. Final deliverables are an editable measured report, reproducible scripts and configuration, pinned model and data identities, machine readable metrics, casebooks, cost and resource records, and verified local copies of necessary artifacts.
 
@@ -159,13 +241,13 @@ Frontier scale differentiation and activation reading require substantially more
 
 The recorded four pod September 26 phase is estimated at 61.5380 dollars in compute, excluding earlier GPU runs, retained storage, taxes and provider adjustments. Workers were confirmed stopped or terminated at the recorded shutdown check. Retained storage remains a separate cost. This estimate is not a reconciled invoice or total project budget.
 
-The additional API project ceiling is 10 dollars; the current cumulative dispatch allowance is 7 dollars. Both are local cost controls under the user's delegated paid run authorization. Each small batch reserves its full conservative cost before activation. Unknown charges retain 0.581365 dollars of reservations, including failed provider calls; they are never counted as free or retried. Current settled spending is recorded in the live integer microdollar ledger rather than frozen in this narrative. The completed primary summaries cost 0.067136 dollars, earlier token summaries 0.130575 dollars, and held out summaries 0.077337 dollars. These increments exclude qualification and review inference.
+The user authorized a cumulative additional OpenRouter ceiling of 40 dollars. At completion of the four endpoint review stage, settled spending was 29.753784 dollars and uncertain charges retained 1.058460 dollars of reservations, leaving 9.187756 dollars available. This is a dated ledger snapshot, not the full historical project invoice. Failed or uncertain calls are never assumed free.
 
-The original 5 dollar allowance stopped held out review inference after 171 of 184 requests per judge. A documented allocation increased the allowance to 7 dollars within the 10 dollar ceiling and completed the final 26 unattempted requests without retries. Settlement through primary test completion was 4.444227 dollars, plus the retained uncertain reservations. The same bounded allocation covers registered earlier token validation reviews and subsequent during and after action validation summaries. The runner can shrink batch size solely for affordability. It stops when even a minimum batch cannot fit, on an unexplained failure, or when source hashes differ. No budget increase, retry or substitution happens automatically. Remaining temporal and legacy cohorts need separately registered affordable allocations.
+After sequential API dispatch caused unnecessary delay, the held out pipeline was changed to eight globally concurrent requests with shared locked budget reservations, exact cache reuse and immediate completion triggered stage handoffs. Outcomes do not determine queue order. Every paid stage is priced and registered before dispatch; each wave must fit its conservative reservation. Unknown failures stop dispatch, and failed requests remain unavailable without retry. All paid workers are now terminal.
 
 Provider response length parameters are not assumed to cap all billed reasoning tokens. One original DeepSeek receipt reported 3449 completion tokens, including 3278 reasoning tokens, despite a requested response length of 2048. Larger client reservations are planning allowances rather than verified provider invoice caps. Register concrete batches and verify receipts before scaling.
 
-Schedule estimates are conditional planning ranges rather than commitments: allow one to three working days for the remaining endpoint validation and locks, one to three for held out scoring and statistical review, and two to five for casebooks, warranted interventions and the final report. Provider latency or a failed gate can extend these stages. No additional GPU allocation or production spend is justified solely by this estimate.
+The numerical comparison no longer awaits API or GPU inference. Remaining work is report and evidence verification, targeted fidelity assessment and the separate legacy robustness panels. Those panels require a concrete affordable execution plan before any additional calls. Real model causal work has not been run; no causal completion date or cost is asserted.
 
 ## Sources and reproduction entry points
 
@@ -173,4 +255,4 @@ The primary conceptual source is Verbalizable Representations Form a Global Work
 
 The project repository is https://github.com/Ratnaditya-J/jlens-research . Authoritative implementation and protocol sources are studies/reader_comparison/METHODS.md, PRODUCTION_PROTOCOL.md, ANALYSIS_PROTOCOL.md, ORACLE_LENS_SCOPE.md and config-em-riskyfin.json. Machine readable evidence resides in studies/reader_comparison/evidence. Archived measured summarizer results are in reports/summarizer-extension-findings.md and its linked result files.
 
-Reproduce through prepare_validation.py, verify_reader_acceptance.py, calibrate_comparison.py and evaluate_comparison.py in studies/reader_comparison. The legacy extension uses separate scripts. Detailed measured results and development timing audits are in reports/reader-comparison/accepted-primary-heldout-results.md and temporal-readout-visibility.md; their linked evidence records bind the machine readable sources. Current file hashes and run manifests take precedence over this dated execution record.
+Reproduce through prepare_validation.py, verify_reader_acceptance.py, calibrate_comparison.py and evaluate_comparison.py in studies/reader_comparison. The legacy extension uses separate scripts. Detailed measured results and development timing audits are in reports/reader-comparison/accepted-primary-heldout-results.md and temporal-readout-visibility.md; their linked evidence records bind the machine readable sources. The four additional measured endpoints and shared prefix audit are documented in reports/reader-comparison/four-endpoint-heldout-results.md. Current file hashes and run manifests take precedence over this dated execution record.

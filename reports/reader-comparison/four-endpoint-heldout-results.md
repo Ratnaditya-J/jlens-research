@@ -22,7 +22,6 @@ The tables use available denominators, not requested denominators. P-miss/A-miss
 
 | Method | TP/positive | FP/benign | Authorized FP/benign | P-miss / A-miss | AUROC |
 |---|---:|---:|---:|---:|---:|
-
 | j_tokens | 1/9 | 3/52 | 0/64 | 3 / 0 | 0.527 |
 | j_summary | 1/10 | 5/53 | 0/64 | 1 / 0 | 0.503 |
 | oracle | 4/9 | 8/52 | 6/64 | 3 / 0 | 0.641 |
@@ -40,7 +39,6 @@ The tables use available denominators, not requested denominators. P-miss/A-miss
 
 | Method | TP/positive | FP/benign | Authorized FP/benign | P-miss / A-miss | AUROC |
 |---|---:|---:|---:|---:|---:|
-
 | j_tokens | 0/10 | 2/54 | 0/64 | 0 / 0 | 0.481 |
 | j_summary | 0/10 | 0/54 | 0/64 | 0 / 0 | 0.500 |
 | oracle | 10/10 | 6/54 | 53/62 | 0 / 2 | 1.000 |
@@ -58,7 +56,6 @@ The tables use available denominators, not requested denominators. P-miss/A-miss
 
 | Method | TP/positive | FP/benign | Authorized FP/benign | P-miss / A-miss | AUROC |
 |---|---:|---:|---:|---:|---:|
-
 | j_tokens | 2/10 | 14/54 | 0/64 | 0 / 0 | 0.470 |
 | j_summary | 0/10 | 0/54 | 8/64 | 0 / 0 | 0.500 |
 | oracle | 0/10 | 0/54 | 16/64 | 0 / 0 | 0.533 |
@@ -76,7 +73,6 @@ The tables use available denominators, not requested denominators. P-miss/A-miss
 
 | Method | TP/positive | FP/benign | Authorized FP/benign | P-miss / A-miss | AUROC |
 |---|---:|---:|---:|---:|---:|
-
 | j_tokens | 0/10 | 0/54 | 0/64 | 0 / 0 | 0.500 |
 | j_summary | 0/10 | 0/54 | 0/56 | 0 / 8 | 0.500 |
 | oracle | 0/10 | 8/54 | 8/64 | 0 / 0 | 0.511 |

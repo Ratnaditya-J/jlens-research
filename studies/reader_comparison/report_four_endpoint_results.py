@@ -45,7 +45,7 @@ def main():
     assert sum(g['positive'] for g in evidence['probe_only_prefix_audit'])==6
     assert sum(g['benign'] for g in evidence['probe_only_prefix_audit'])==16
     sections += ['## Completion boundary', 'The six-endpoint numerical same-subject comparison is complete. Full initiative completion still requires the updated editable report and reproducibility package, explicit Oracle faithfulness limitations, and resolution of the original proposal’s outstanding stress/control panels. No real-model causal intervention has been completed. The minus32 disagreements do not separate future benign from violating continuations within identical-prefix groups; they do not justify claiming a causal hidden-intent direction. Any subsequent causal experiment must be separately specified and zero-dose qualified, without changing these frozen evaluations.']
-    report=ROOT/'reports/reader-comparison/four-endpoint-heldout-results.md';report.write_text('\n\n'.join(sections).replace(' |\n\n|', ' |\n|')+'\n')
+    report=ROOT/'reports/reader-comparison/four-endpoint-heldout-results.md';report.write_text('\n\n'.join(sections).replace('|\n\n|', '|\n|')+'\n')
     evidence['report_sha256']=sha(report)
     (ROOT/'studies/reader_comparison/evidence/four-endpoint-measured-results.json').write_text(json.dumps(evidence,indent=2)+'\n')
     print(json.dumps({'endpoints':list(evidence['endpoints']),'probe_only_groups':len(evidence['probe_only_prefix_audit']),'report':str(report)}))

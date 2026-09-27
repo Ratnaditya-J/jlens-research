@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "d5394437983562c6b15a485723b3ab7c68cf71af0e801d0234a71cf2033359c3",
+  "archive_bytes": 494173157,
+  "manifest_sha256": "a2f21f8ae7c420738ce35e624a3228c6b289ed6b57bc7f597d0f445ca647b484",
+  "verified_members": 14289,
+  "scope": "Frozen six-endpoint analysis evidence and declared source dependency closure. Excludes credentials, full weight files, full activation tensors and live budget ledger. Not a complete regeneration bundle. Original absolute paths in frozen manifests are preserved; running unchanged scripts expects the recorded root, or a separately validated relocation procedure. Known checksums permit independent inspection at other locations.",
+  "archive_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/six-endpoint-analysis-evidence-package/six-endpoint-analysis-evidence.tar.gz",
+  "manifest_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/six-endpoint-analysis-evidence-package/manifest.json"
+}

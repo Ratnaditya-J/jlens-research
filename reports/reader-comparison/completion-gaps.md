@@ -12,9 +12,11 @@ The numerical same-subject comparison is now complete at all six registered endp
 | Oracle faithfulness | Verbalizer evaluated; reconstruction-grounded subject-transfer validation absent | Include exact unsupported claims/limitations and appropriate targeted assessment |
 | Causal follow-up | Engineering checks only; no real-model intervention result | Current minus32 evidence does not identify a direction specific to future violations; any further intervention needs explicit hypothesis and real-model zero-dose qualification |
 | Original GPT-OSS summarizer proposal | Preserved separate study; stress/control panels remain outstanding | Audit and resolve within remaining resources, label post-test analyses exploratory |
-| Editable report | Existing DOCX predates the four new evaluations | Integrate all measured results; render and visually verify |
-| Reproducibility | Primary package exists; four-endpoint evaluations and source receipts retained | Extend evidence package and verify all member hashes |
+| Editable report | Updated12 page DOCX includes all six endpoints; every page visually checked and48 new table rows verified against frozen metrics | Retain current record; integrate subsequent fidelity and legacy findings |
+| Reproducibility | Six endpoint analysis archive built with14,289 members; all member hashes verified | Preserve original absolute path limitation; this excludes weights, full activation tensors, credentials and live ledger |
 
 The new results are in `four-endpoint-heldout-results.md`, with complete metrics and the shared-prefix audit in `studies/reader_comparison/evidence/four-endpoint-measured-results.json`. The audit is post-hoc analysis of frozen outputs; it adds no calls and changes no thresholds.
 
 All held-out API workers and automatic evaluators are terminal. No process needs restarting. The project-wide additional OpenRouter ceiling remains$40; uncertain charges remain reserved. Subsequent paid work must be priced and registered before dispatch with shared reservations and at most eight concurrent calls. No permission request is pending.
+
+The current editable report is `technical-record.docx`. Package verification is recorded in `studies/reader_comparison/evidence/six-endpoint-package-verification.json`; the archive is494,173,157 bytes. The original primary package is preserved. This heartbeat performed only local analysis and document work, with no additional API spend.

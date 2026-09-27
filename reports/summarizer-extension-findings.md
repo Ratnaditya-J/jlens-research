@@ -1,6 +1,6 @@
 # Summarizer extension: measured findings and remaining coverage
 
-Updated September 26, 2026. This is an addendum to the archived GPT-OSS study, not a replacement for its results. The separate Qwen probe/J-lens/Oracle comparison remains in progress. New OpenRouter inference is paused for cost control.
+Updated September 26, 2026. This is an addendum to the archived GPT-OSS study, not a replacement for its results. The separate Qwen probe/J-lens/Oracle numerical comparison is complete at six endpoints as of September27; see the reader-comparison technical record. The legacy findings below remain unchanged; their missing judgments have not been filled.
 
 ## Primary result: 32 tokens before code onset
 
@@ -40,4 +40,4 @@ Every arm retains its own denominator. Pairwise claims above use the common elig
 
 The original frozen summarizer extension has not completed the template-challenge, authorization/debugging, or monitor-maintenance panels. In particular, there is no new basis yet for claiming the summarizer preserves the original 0/47 authorization-control result. Code-onset missing judgments also remain missing. Any local-judge continuation must be calibrated and reported as a distinct protocol, rather than silently filling these frozen premium-reviewer arms with a different judge.
 
-The Qwen follow-on has completed checkpoint-specific fitting and backed-up readouts. It must still complete usable text-judge qualification and coverage, calibration, held-out comparisons, remaining specificity analyses, and final artifact verification. Its results must be presented separately from this GPT-OSS extension. Full Oracle reconstruction FVE is not currently available; using its verbalizer alone cannot certify reconstruction fidelity.
+The Qwen follow-on has completed checkpoint-specific fitting, judge qualification, calibration and all six held-out endpoint evaluations. Its updated editable report and verified six-endpoint analysis package are available; targeted fidelity assessment and this separate legacy extension remain unfinished. Its results must be presented separately from this GPT-OSS extension. Full Oracle reconstruction FVE is not currently available; using its verbalizer alone cannot certify reconstruction fidelity.
