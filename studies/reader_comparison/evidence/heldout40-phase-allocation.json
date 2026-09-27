@@ -1,0 +1,9 @@
+{
+  "authorization_record": "studies/reader_comparison/evidence/user-authorized40-ceiling.json",
+  "before_sha256": "d18b81f58302fbb3830b0d4cabe9f0ea0ca29f836c513367be166bcafd4c308e",
+  "after_sha256": "fcef3be64a5b08ddce96216335a0f48f0ee2a830237c76ddf475b8449f9032bb",
+  "phase_ceiling_usd": 40,
+  "settled_microusd": 17389731,
+  "reserved_microusd": 1018932,
+  "scope": "Prior validation process40397 exited0. Allocate previously authorized40 without changing charges or records. Fixed588 held-out summary calls reserve at most11659098microusd, no retries/fallback; original Flex summarizer and per-call validation."
+}

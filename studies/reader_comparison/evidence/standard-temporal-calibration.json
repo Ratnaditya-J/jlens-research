@@ -1,0 +1,187 @@
+{
+  "endpoints": {
+    "during_action": {
+      "lock_sha256": "052da650d414b8879616c04cf2e4ac87d36a2e1d6dfe9fae6221893a745d46ad",
+      "source_count": 1290,
+      "thresholds": {
+        "j_tokens": 5e-324,
+        "j_summary": 5e-324,
+        "oracle": 1.0000000000000002,
+        "context_only": 1.0000000000000002,
+        "j_tokens_context": 1.0000000000000002,
+        "j_summary_context": 1.0000000000000002,
+        "oracle_context": 2.0000000000000004,
+        "j_summary_shuffled_context": 2.0000000000000004,
+        "oracle_shuffled_context": 2.0000000000000004,
+        "raw_probe": 5.017329623500001,
+        "jspace_probe": 0.14047738640000001,
+        "text_probe": -0.0033211605895033594
+      },
+      "arms": {
+        "j_tokens": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary": {
+          "validation_benign_n": 52,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 52
+        },
+        "oracle": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "context_only": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_tokens_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_context": {
+          "validation_benign_n": 52,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 52
+        },
+        "oracle_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_shuffled_context": {
+          "validation_benign_n": 52,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 52
+        },
+        "oracle_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 5.017329623500001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "raw_probe": {
+          "selected_layer": 48,
+          "selected_C": 10.0,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "jspace_probe": {
+          "selected_layer": 48,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.03773584905660377
+        },
+        "text_probe": {
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        }
+      }
+    },
+    "after_action": {
+      "lock_sha256": "71579516bc042f2467a04937cd12793ee70f6e23ca2195cc33c6fcaee8532a76",
+      "source_count": 1422,
+      "thresholds": {
+        "j_tokens": 5e-324,
+        "j_summary": 5e-324,
+        "oracle": 5e-324,
+        "context_only": 5e-324,
+        "j_tokens_context": 5e-324,
+        "j_summary_context": 5e-324,
+        "oracle_context": 5e-324,
+        "j_summary_shuffled_context": 5e-324,
+        "oracle_shuffled_context": 5e-324,
+        "raw_probe": 4.210517082200001,
+        "jspace_probe": 2.6267082622000006,
+        "text_probe": -1.5421517521706374
+      },
+      "arms": {
+        "j_tokens": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle": {
+          "validation_benign_n": 52,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 52
+        },
+        "context_only": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_tokens_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 4.210517082200001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "raw_probe": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "jspace_probe": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.03773584905660377
+        },
+        "text_probe": {
+          "selected_C": 10.0,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        }
+      }
+    }
+  },
+  "scope": "Validation-only fixed thresholds. Preserve above-maximum ordinal thresholds; no retuning for detections. Three GPT4 truncated replies retained unavailable; original summary missingness retained. No temporal held-out performance computed."
+}
