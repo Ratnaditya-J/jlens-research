@@ -1,0 +1,14 @@
+{
+  "scope": "Read-only inventory of the entire original template panel before any new dispatch. Summary payloads exactly match frozen original; no labels read. Review deduplication cannot be finalized before summaries exist.",
+  "episodes": 118,
+  "summary_slots": 472,
+  "unique_summary_requests": 472,
+  "cached_summary_requests": 0,
+  "previously_attempted_without_usable_cache": 0,
+  "new_summary_requests": 472,
+  "new_summary_point_estimate_usd": 0.4945271686567164,
+  "gross_original_review_slots_per_judge": 590,
+  "gross_review_point_estimate_usd": 10.007751795409742,
+  "source_sha256": "305828eaa19e831dea9147e7616a134e7f9fa62e281873ec5f0929d6634a110e",
+  "decision": "No template paid inference authorized by this inventory. Compare the complete stage forecast with actual available budget after current specificity reviews settle. Never exceed40 or substitute a different judge into frozen results."
+}
