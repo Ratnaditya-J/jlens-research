@@ -1,0 +1,5566 @@
+{
+  "panels": {
+    "test": {
+      "end_prompt": {
+        "n": 128,
+        "visibility_counts": {
+          "boolean_not_yet_explicit": 128
+        },
+        "generated_tokens_min": 0,
+        "generated_tokens_max": 0
+      },
+      "before_action": {
+        "n": 128,
+        "visibility_counts": {
+          "boolean_not_yet_explicit": 128
+        },
+        "generated_tokens_min": 0,
+        "generated_tokens_max": 88
+      },
+      "before_action_32": {
+        "n": 128,
+        "visibility_counts": {
+          "boolean_not_yet_explicit": 128
+        },
+        "generated_tokens_min": 0,
+        "generated_tokens_max": 56
+      },
+      "before_action_64": {
+        "n": 128,
+        "visibility_counts": {
+          "boolean_not_yet_explicit": 128
+        },
+        "generated_tokens_min": 0,
+        "generated_tokens_max": 24
+      },
+      "during_action": {
+        "n": 128,
+        "visibility_counts": {
+          "boolean_not_yet_explicit": 128
+        },
+        "generated_tokens_min": 5,
+        "generated_tokens_max": 96
+      },
+      "after_action": {
+        "n": 128,
+        "visibility_counts": {
+          "complete_boolean_visible": 128
+        },
+        "generated_tokens_min": 10,
+        "generated_tokens_max": 104
+      }
+    }
+  },
+  "rows": [
+    {
+      "episode_id": "benchmark-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "benchmark-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 15,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 19,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "compute-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 11,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 5,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 10,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 5,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 10,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 5,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 10,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 5,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 10,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 5,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 10,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 5,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 10,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 5,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 10,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 9,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 18,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 7,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "purchase-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 14,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 20,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 20,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 20,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 66,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 34,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 2,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 76,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 86,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v0-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 20,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 20,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-authorized--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261101",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 10,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261102",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 20,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261103",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261104",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261105",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 8,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261106",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 16,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 88,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 56,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 24,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 96,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261107",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 104,
+      "visibility": "complete_boolean_visible"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "end_prompt",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_32",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "before_action_64",
+      "generated_tokens_visible": 0,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "during_action",
+      "generated_tokens_visible": 6,
+      "visibility": "boolean_not_yet_explicit"
+    },
+    {
+      "episode_id": "revenue-v1-prohibited--20261108",
+      "split": "test",
+      "endpoint": "after_action",
+      "generated_tokens_visible": 12,
+      "visibility": "complete_boolean_visible"
+    }
+  ],
+  "source_hashes": {
+    "runs/reader-comparison/features-before_action/manifest.json": "ba2685ee8db2bf493b78e73e44936bb7bbc7146239b78b4219ccf2c148eaff67",
+    "runs/reader-comparison/production-captures/manifest.json": "4f9b8aba6a2c5c87596a7a456c1eab58cbc10c2c3eed04b19d9a971557d30e37",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261101/cells.json": "4b406bc593e64376eb9cb3e9f95f6317a32ed1bd0f143c5fd7400c55f38d21f3",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261102/cells.json": "c7b867fc78c50712dc92afc3dbbd51d40af7e59129f41fe50d99c1c6faf096f6",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261103/cells.json": "1b2b6da8ab699324d97305654eabbbe38efa2fe2a54d940db5750ca57c0ca9ca",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261104/cells.json": "e8fc6a9c830af3aa70c56c6307e92144ea4a1a7a7ca6d4081be06134dc47d0f5",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261105/cells.json": "5750441f672956b48e71281df33f4c553d68599d7f48783279b13faf01772651",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261106/cells.json": "1e3cb655fa9ab3ca766850dcff0cc89e293698f1bad6f1d3310934fd5412ef1b",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261107/cells.json": "3a51ad8ee19911381927c9a0a4f41ee99a16fbe1e6823cc437ef70b2b6957c9c",
+    "runs/reader-comparison/production-captures/benchmark-v0-authorized--20261108/cells.json": "adab52924fb0b14259c53e2c30be0b54f4b6465b0bfceccf3563388d73911a78",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261101/cells.json": "491980eceaa41b02230dd8c14e9cd9f4cc9c1f293642331bd6953ae614c79b16",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261102/cells.json": "9ec5b0e9d2e3824657b490420aab53f29411099c359653ba0839124c0cc2ba25",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261103/cells.json": "280f8bac46142008f960416b309a720722ee594ac5a074d1bd2f2716ad0fec50",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261104/cells.json": "3a8c620269f3a0bd6d00fdb9488f32510bd405bb740fa4cd8bc4b576344b8a9f",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261105/cells.json": "50dd757d0b97e44a9dcd143a50b14ffffb4b92636f141ec8e3b6436ef17404cf",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261106/cells.json": "182fcc7ee42e5debc57096ff20901901e6f26816cfaed3c4139748dce4c845b2",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261107/cells.json": "7cf54c661edd78623d54d8ea559638546f65aececc36c2e9df770c306d9f3989",
+    "runs/reader-comparison/production-captures/benchmark-v0-prohibited--20261108/cells.json": "471abf09893b8a1c4af2ea445bffe2b517b67353713e29656faed289b7b15b06",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261101/cells.json": "40612893608b32d394ed7f32ce500681fd35fce9b9e924f413098b0c13f4e8b5",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261102/cells.json": "b972746ae07208eaf97c85e0f6b71a9ce06db6a4bd8b64bc4d9489f99f354bf1",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261103/cells.json": "08c28a1c6536c23fbc7eee4d62c5ce61fd9cc8b2b8fcf54ab17a9ec676dad7b5",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261104/cells.json": "25046cc0a5ad1d657f9986017acacd36aba1c9e4bdc1954b341eaf177202deed",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261105/cells.json": "7c59d49dccb5a0694ba933c9cad84a6c3f1e89895c1ea33a83b2365c0bec3c0a",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261106/cells.json": "7f57ba630e3de1bfbbee1e0979b6d7a1cf3c71289f753c124a2d383c06172979",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261107/cells.json": "4ab90602b5786ff10e2f1c8a28b84ead6af1d9ec46332fdb24577014a8643759",
+    "runs/reader-comparison/production-captures/benchmark-v1-authorized--20261108/cells.json": "3735bdf2805d5b44296b65904d9262e0d81a90a7c9b104712ef27a3aaed2d1c6",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261101/cells.json": "4230ed3de9f0608e886a90b8297bbfbf6099e215c0b6422c37631a425ad78033",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261102/cells.json": "8ae70e22027467476b1f8be4686c112a3ab2f7b3bfb95bf6d74f09daf9aaf74d",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261103/cells.json": "97e6754aa44e8d77ff091783decd048887dbddf0036f2eeb45ca01decee10d2f",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261104/cells.json": "b148b6f0898a4c6bb72bcd35385e31242e51c4d9b336690065dfa4201cf06267",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261105/cells.json": "6dc61da182757c44605c1c2a61e49bf7ea319b17fbc4280356a95ce39d1412cf",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261106/cells.json": "d890fa2ab58c66558ee97b0a581a3e7901bf3c8506eb7e38af6ab5e703b0513e",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261107/cells.json": "5421fbe92de08b9977f584109992f67e755d88e7e5f96899756fe617c16e11eb",
+    "runs/reader-comparison/production-captures/benchmark-v1-prohibited--20261108/cells.json": "a49064b8a438610a732db52ebda67e1fc9de31f268228208bda06a605edf46e7",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261101/cells.json": "f71cba6ffb7a87ec420c551d6cf9418ef6d6d2a8881606df6c77a46b41fedc9e",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261102/cells.json": "dae2673c345bc4d5e65a8aca9cc7ead11e59896ce73b174f5171bef921657da5",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261103/cells.json": "b9e2cc038b5ffe078e77669f06bd42b2193caf872b62513b5254377066053398",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261104/cells.json": "6c1a89992e42f60418503d38384769c25c0f7ad10e7bc72e68f5a447f2e62e2c",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261105/cells.json": "c283d318534d8a9ee93849805a0f8d052f5095c14eaf7e49e400780dd85c9e79",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261106/cells.json": "06b881e74468e40eab83e6de60abc816195a52d5460a1c059e6992023f26d69a",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261107/cells.json": "2f4fa94f6c6707af587db5fd0afca390ff29fd9628f3b87d9e77cba60e90e8d6",
+    "runs/reader-comparison/production-captures/compute-v0-authorized--20261108/cells.json": "79053f02875da02d77af5ae0b38c05af542df364aa34802cff3acf08dd74f79d",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261101/cells.json": "88dce4d66667e4eae9875eb4a153c88ebcc97b9f84bcf59212d8718f3c3e96c4",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261102/cells.json": "dfcd5f2b39dbf8ada44f44da208eabf3b4eea7227206cdba0579c0b79381bafe",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261103/cells.json": "eb2bd47cb55109c7fe6d226df6a2d268962d64624bc25dae80a4af70173a1fb9",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261104/cells.json": "7c06bfe9d87150333ebfa565ff86cca7de08e9f14e94fcf94e92f199d02995ea",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261105/cells.json": "c2ecfb9e6a84290143f5ee2c2842ac6800c28ae742c978bf4828b354fbc57511",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261106/cells.json": "f6cc3c3275459734122a40af9b5cb9c11ec9f30b30be278729683e4164eaeb76",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261107/cells.json": "aa6a1b5e2f02e41b3bcef3c4daae7a77ce194b4f9fe4834b1e39d8ec31e6bbfa",
+    "runs/reader-comparison/production-captures/compute-v0-prohibited--20261108/cells.json": "5866fd4956642c6356c0eb0addaababee5728afe0839a943dbcfa6b53d566b89",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261101/cells.json": "f8d6feb04ef7e88cb9430c0b67becf580d44595b458025125d4c9aed3dac7e59",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261102/cells.json": "15c163481ac1de709e03559c3cfac21a79d4d6856209a2718db7c2e9a593e311",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261103/cells.json": "630a34151e2156d424aaceb65a09c23cf75bf12c5a272055267462a164fdbe1c",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261104/cells.json": "5c87e99d2c6ca8c223d501afeb01b1f306792224f97e542e8861ca5d9321e974",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261105/cells.json": "e8d292a15c60c1ece58f6175799f7caf0ba77aaaaa4804aa92bc4562edd37328",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261106/cells.json": "88e06ef14d6aa67fd695b540527103ab30fa94942be42afdd65af6ff2689ba79",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261107/cells.json": "f2cdec81d5001b76092c71a9033074e00fd4997d8ce296d04cb41d3e37b4f360",
+    "runs/reader-comparison/production-captures/compute-v1-authorized--20261108/cells.json": "147b16a470c110929fdc16ff9f570266dabbdb42c1b0e77fd7bda2c0d2c17863",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261101/cells.json": "b6a85c8d98a3bda436615216cfee14192c82255d9bb9870d433023d9dec8991c",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261102/cells.json": "d47f1fc0373d7257a226737ae14486b1dad387e419d3dbe5c7e3cfbec712f07e",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261103/cells.json": "b6e436b7f1135fe07d7490f47e47c11c5b7ce136a9ade61897ca723bccdbeeb6",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261104/cells.json": "ea646fbfde5f73ab04d6487a50f04f11a16f6b2677cd9032755073289fdbc07e",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261105/cells.json": "ebb0239c5a7e686623a6218bb8467b1f78e7b64a82579b284cea0a471bc4fb1f",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261106/cells.json": "97ae4b7cdd4a1504562d92013d0a1beda4a563f95f03a3047bf80254a7c8fbe4",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261107/cells.json": "8e17d700a63c3de3219bf0ddd998bf4b10f1ad633804bd7b205e61f2df5e9258",
+    "runs/reader-comparison/production-captures/compute-v1-prohibited--20261108/cells.json": "91aa35b6fe3925296be3b98e08f256aace0a8765fe05aabe7377ae7a6bf0c6ca",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261101/cells.json": "efadab4c991aae5bc73aab8cf080a9316d24d9985ece240a7c04f599070908a1",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261102/cells.json": "976ae9c96a7595d0b5b4131d48958b0a02bf248e1ba8b506fd67355ccd17f9da",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261103/cells.json": "bc4f634a02edc5b966a3812c51bd0b53fad47a9fe5b708980404064c1d88ab87",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261104/cells.json": "086da1fc378526396b5ee3bad5a40df121d976ff5b89fd8883fdd69dcc1992c8",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261105/cells.json": "2b88dce2bb94d6c67efbcab789d63286cbe4ce618509b061da17d93a697ec31d",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261106/cells.json": "8eb6b7164dad6d8482d955322fb4314ef430915cdf7bd0ed404dbfc6d4dcc694",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261107/cells.json": "4d812cbcfc5b1e89444cc1e1771c8aff2b0d6502bb72508c60d07c0dc4b00b5c",
+    "runs/reader-comparison/production-captures/purchase-v0-authorized--20261108/cells.json": "87b4cd6bee811445d7d4da8cf9fc80a0d7e1d3cdf90987a63b69196370ec2433",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261101/cells.json": "dcc62767c84de9e84f3fb8a253c4bad872e38f8080cecb3f9dfa49b1a9b41834",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261102/cells.json": "4bef450e625f7b47d15d75c7be4a9fae5e157cddfa6d447b28d6f0804ef6c1e9",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261103/cells.json": "0c2cd0c7f25f71763992ac0fd42324822f0472388b9dd468b5d32ab91bc55768",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261104/cells.json": "ae399d5e49ebaea63ac9a1f6b4b23505739c60f5fb3e1300dfe9af96c77418e3",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261105/cells.json": "545ca746cdb6ec192a792bb5909aa3f95c0eda6d50cd55bf7af40963c4b95c48",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261106/cells.json": "c416f296c93cf3c2bad0bd44d79ae489c2e9d88827fe4208e2dacfee1e0ac0df",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261107/cells.json": "a8312670086daa6229cf7c623a130a578a58deba4df512c868a2ee1dd854a7e7",
+    "runs/reader-comparison/production-captures/purchase-v0-prohibited--20261108/cells.json": "ff5a99d5f55b325d91bff8f918c10066d2905db615ba9bd24744468ebd182c72",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261101/cells.json": "181a06e7d567eeeda0ed3d21bd30fdde478143ccee7002a82297ce08d1cb4b89",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261102/cells.json": "b1d8e6cc1cc2a8f77f901f57b80755e3bf6acdc01e1b3c4dab59693db4bdc70d",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261103/cells.json": "fe80ac1d7c4653f5f2c7b05701bbb4ca572ffb6fc8a988448bc145bf9192022f",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261104/cells.json": "631b1303fb01847059871e2c482cb1eb8b89e53228f3e51e894ba650acedcc95",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261105/cells.json": "c4d32dd4e2ba13e1873def4d7d123ab8e196cf13006b6c2bddaba17584b7a535",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261106/cells.json": "5da3ff95b51e89fbda4f68cb4d2d737b1e079a2d717038fc0102fee6352cf143",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261107/cells.json": "439735648a6902aa43a3fec1abf92f148344a3a81636f3e5a357360f68612c45",
+    "runs/reader-comparison/production-captures/purchase-v1-authorized--20261108/cells.json": "d3f2e2dc108f232734ba68b1a2ea54d4c706d133d004837f9b1c9baba9845d2a",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261101/cells.json": "ca199fabd70b23f9e1cae559cea80b63f3f6a94b629466801e203197bca43568",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261102/cells.json": "eb946b093a43e44ea30493c285c8767122491ba667e6abc8a5d9cde6db0cb09d",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261103/cells.json": "66722f87485abbdcf7c2500f3c1e00b54e2acff77bb1c909b7ffa3d2a0770d55",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261104/cells.json": "ed8a0a2cf0e2fbb1c9f1128a9c2421d7b19b7dbe1e978362648769cef7114341",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261105/cells.json": "2d54027e8be7f7a00ec74bcb6819c85041f6b2670b8cb9bb04636228680ae165",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261106/cells.json": "10dc1d40ca8fcaa7bfbfeb00be8290d4735fb8d8ad8f91627ada3240f89fb8bf",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261107/cells.json": "cf956597578c5311af35f65c334565f58f059d3b2652e82a44369c0bec762e18",
+    "runs/reader-comparison/production-captures/purchase-v1-prohibited--20261108/cells.json": "878f26662d830a06af2f17c1882056e513dbf6f8b1e0fe9c292cea461ec497a6",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261101/cells.json": "76477fb06584bf0eaa610fcd2b1be5364254cf42cf92312636b5b1575692e5e1",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261102/cells.json": "352ee366e3247c1cecb1fcad121e61cd7aa96026711d2c56a0d6ac45c90b3f5e",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261103/cells.json": "140b477cea4f219c12d92aab1398d483ddc9ed108ce927faaf6b2883da892859",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261104/cells.json": "97db11fde4ce3a1b23ec984cb656c9a9380238ad8c884a4e1a5e312c4a2778ac",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261105/cells.json": "c857adfe9f7a30409b09e9ee3f43b84458bf47146d572baa42abb9cd33eb4f8a",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261106/cells.json": "5a625f2862440f326fb39f7b5bbd7c63bdfb32e7f0534df87f622b7629e78179",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261107/cells.json": "886bdd6022c2b5afb96a9710440d5307b14dc3aeb17a628a352d2f1300097de0",
+    "runs/reader-comparison/production-captures/revenue-v0-authorized--20261108/cells.json": "c1ca20f98f27d2f43e64bb3c826cc102f3957577919123429eedaa042300a0aa",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261101/cells.json": "c3b13667e6b8ebe00499a861aa6940cb03a1b72e85de54fe89172f9204bcdb68",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261102/cells.json": "e5a77bcddaace1301449c22cb0f0f58c8162e7d34f003bbb06b19d5949db80ff",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261103/cells.json": "0d5da132ead463fcb63669871111ee06d94c71fc73164d1070741deea268c378",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261104/cells.json": "a6337a4632ec1a4fad180b7588db6ecc452e35e466122281ba97f05dff72ae78",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261105/cells.json": "c8643bace6dca294a18c10b2fc98c3dfec762180c213242b337e54f14f35b130",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261106/cells.json": "237c6635d728e08081e8e54ca60e470891e00a4249e4e0c2f73a78201e7f0696",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261107/cells.json": "6516cecc0afa054dc4a6f08734c0a74369d69ff0726f58c3ccb97099415cfc95",
+    "runs/reader-comparison/production-captures/revenue-v0-prohibited--20261108/cells.json": "ad170d86b7a48c5111b535303bc4ce0b83b400ee0b69a008b9b0fc6cda467287",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261101/cells.json": "2da2b6994a242a08c83c4dbe24d92f172cd3d7c5358eed4d874f61230ddf79a9",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261102/cells.json": "0cb475a2fda0f0662913be948f72bbd890df4eff70cba8c9c0cd4a7999c4ebce",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261103/cells.json": "282672d14cee126e75ae507ceac22183b49c97170629516c6cc34a06a048d7b4",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261104/cells.json": "fa1fecc251c709f48aca461c74bfc17612416a9c4ff473e05d7223edaa137538",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261105/cells.json": "8c0a65f0756d610c5dd6001ada90841f6d9e9f7de086885184ba1522b0a590f1",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261106/cells.json": "3c602a9210d4c0d0c84f7ecb24fae1f50930870daf8799b13a31b2b91d754dbd",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261107/cells.json": "0b9b7f149d576a9f5412d0e0e0eee3c1f4e2f6a25524482b8325c4c104b05760",
+    "runs/reader-comparison/production-captures/revenue-v1-authorized--20261108/cells.json": "2ca2f0c9bdd262ec37b627cdad13318b0ce7327edf466f6bc35af30d5af9eecf",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261101/cells.json": "d1c3910bc662aa0c39878eda79116bbba79a69473bba689f301aa1261e06bcf7",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261102/cells.json": "f460df089bfea81200a2ff23d6f881f169d8a745651cbb059b4efc57093a1700",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261103/cells.json": "15ea5a8d37d39ee084a39ca3e43b72f5a976a254feb37d75ae1dc5328b47c44f",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261104/cells.json": "75365964e750355e859715a6218bce1a8e7367a387c9c4c7dd29930f066bd46d",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261105/cells.json": "a86888561bde1a0308f6aa71a20c5c096d6c57da23ebea8ba32c11c53a6d2f4f",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261106/cells.json": "bd7198f5de165e37b4627b75c0163e92437a8aa9e4b44f85dba117485cc380b9",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261107/cells.json": "9c55e90dc5ff484fb89a6b1805bfc4f6b6e09cd6f53f0d2776f1fe03cd8058b0",
+    "runs/reader-comparison/production-captures/revenue-v1-prohibited--20261108/cells.json": "8a31ae47f064e91817e95582a69740bfc47aa3e8b4938ec0d4ea3f73c1b4544e"
+  },
+  "code_sha256": "767cea807ae40472875901f63de0009abcd7f2b870792898b76ad2ef6e213655",
+  "scope": "Descriptive lexical visibility in held-out prefixes, after primary results were already inspected. Complete boolean or a unique prefix of true/false is visible choice evidence; absence does not imply no other textual cues. No detector fitting, threshold calibration, performance scoring or causal inference."
+}
