@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "b97459068fd3dcc9e24f968018c3dce3f35cf00edd39434f5b552ddeb8ae4aeb",
+  "archive_bytes": 162215075,
+  "manifest_sha256": "fe73aa119e7e1183fe06393d22b16648f76ece1242ae923e31867623778c7e3b",
+  "verified_members": 2417,
+  "scope": "Frozen primary/end-prompt analysis evidence and declared source dependency closure. Excludes credentials, full weight files, full activation tensors and live budget ledger. Not a complete regeneration bundle. Original absolute paths in frozen manifests are preserved; running unchanged scripts expects the recorded root, or a separately validated relocation procedure. Known checksums permit independent inspection at other locations.",
+  "archive_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/primary-analysis-evidence-package/primary-analysis-evidence.tar.gz",
+  "manifest_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/primary-analysis-evidence-package/manifest.json",
+  "receipt_settlements_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/primary-analysis-evidence-package/receipt-settlements.json",
+  "receipt_settlements_sha256": "b3966bd2ca565f44911d81bf415ea92035d87f44b559d7981a2d4f6a7529e5da",
+  "settled_receipts": 368,
+  "archiver_sha256": "7f953e2d660d912bf2e702591f06dc38faaf6318b9030f79fa30ac1dd1f6dab1"
+}
