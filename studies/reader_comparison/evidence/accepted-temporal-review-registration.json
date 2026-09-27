@@ -1,0 +1,11 @@
+{
+  "runner_sha256": "64935bf02021d444facae1ea290f752bc77ee235a6a8c8fe035d41c0a0144028",
+  "cache_preflight_sha256": "6912e6fc621ccac4eccd1646679ee4594f0b9644622677555ff4467c8eeec3d1",
+  "new_per_reader": 924,
+  "cached_per_reader": 36,
+  "first_batch_per_reader": 16,
+  "first_batch_maximum_microusd": 883399,
+  "available_microusd": 969554,
+  "allocation_usd": 8,
+  "scope": "Fixed full960-request validation union per accepted judge. Same readers, requests, missing-summary aliases and original threshold algorithm. At most16 new requests per judge per batch; complete batch must fit current8 allowance. No cap increase, fallback, retry, held-out scoring or outcome-dependent selection. Full completion is not guaranteed by this allocation; stop at budget guard."
+}
