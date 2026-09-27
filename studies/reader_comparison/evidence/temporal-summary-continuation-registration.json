@@ -1,0 +1,12 @@
+{
+  "code_sha256": "4a65af32a6dc74972eaf1a167a53c6e0321907a799c765b4f76302c0fcc4ee5d",
+  "audit_sha256": "6b284518adf4978792e21d2576bf0f38837bebea144c2218003452684ec1e22c",
+  "new_requests": 347,
+  "cached_successes": 80,
+  "preserved_unavailable": 1,
+  "first_batch_n": 17,
+  "first_batch_maximum_microusd": 337140,
+  "available_microusd": 338190,
+  "allocation_usd": 7,
+  "scope": "Original coordinator terminal exit1. Continue never-attempted requests only; preserve timeout missingness and full uncertain reservation. New failures stop; no retries, fallback or cap increase. Downstream collection must retain the two affected layer aliases and unavailable review arms."
+}
