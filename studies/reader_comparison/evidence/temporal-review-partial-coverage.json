@@ -1,0 +1,156 @@
+{
+  "scope": "Coverage audit only, no performance aggregation or calibration. Combined score requires both accepted judges; unavailable and never-attempted remain distinct.",
+  "source_hashes": {
+    "studies/reader_comparison/evidence/temporal-review-provider-unavailable-audit.json": "da97047a8e4e5f2d5be2bbd9220a2b28d14804a7fd947149d283a64fef318a53",
+    "runs/reader-comparison/accepted-validation-during_action/reviews/aliases.json": "d8ad3bef4c299cb71a91bf6f84a838b94f8607d46b5060444335643490d2b5f2",
+    "runs/reader-comparison/accepted-validation-after_action/reviews/aliases.json": "483b81dc5e67d8a1ba4ab650a8fa5e0a75e908a036f987ced244850d042acc8a"
+  },
+  "endpoints": {
+    "during_action": {
+      "counts_by_arm": {
+        "j_tokens": {
+          "usable_pair": 44,
+          "pending": 82
+        },
+        "j_summary": {
+          "usable_pair": 59,
+          "pending": 64,
+          "missing_summary": 2,
+          "unavailable_provider": 1
+        },
+        "oracle": {
+          "pending": 86,
+          "usable_pair": 40
+        },
+        "context_only": {
+          "usable_pair": 37,
+          "pending": 89
+        },
+        "j_tokens_context": {
+          "usable_pair": 54,
+          "pending": 72
+        },
+        "j_summary_context": {
+          "pending": 66,
+          "usable_pair": 56,
+          "missing_summary": 2,
+          "unavailable_provider": 2
+        },
+        "oracle_context": {
+          "pending": 61,
+          "usable_pair": 65
+        },
+        "j_summary_shuffled_context": {
+          "pending": 81,
+          "usable_pair": 44,
+          "missing_summary": 1
+        },
+        "oracle_shuffled_context": {
+          "usable_pair": 44,
+          "pending": 82
+        }
+      },
+      "provider_failure_aliases": [
+        {
+          "episode_id": "monitor-v0-prohibited--20261103",
+          "arm": "j_summary",
+          "request_id": "5d94bf4f934b8d3348644ec3c028a67579edf3d58421b1055229d4917c6e4c4c"
+        },
+        {
+          "episode_id": "monitor-v1-authorized--20261104",
+          "arm": "j_summary_context",
+          "request_id": "5c9555dabe8da030413848de79121a36623ce4276f557aa0e55e3082b1dca5f6"
+        },
+        {
+          "episode_id": "monitor-v1-authorized--20261105",
+          "arm": "j_summary_context",
+          "request_id": "5c9555dabe8da030413848de79121a36623ce4276f557aa0e55e3082b1dca5f6"
+        }
+      ],
+      "total_aliases": 1134
+    },
+    "after_action": {
+      "counts_by_arm": {
+        "j_tokens": {
+          "pending": 97,
+          "usable_pair": 27,
+          "unavailable_provider": 2
+        },
+        "j_summary": {
+          "usable_pair": 61,
+          "pending": 64,
+          "unavailable_provider": 1
+        },
+        "oracle": {
+          "pending": 88,
+          "usable_pair": 37,
+          "unavailable_provider": 1
+        },
+        "context_only": {
+          "usable_pair": 35,
+          "pending": 90,
+          "unavailable_provider": 1
+        },
+        "j_tokens_context": {
+          "pending": 68,
+          "usable_pair": 58
+        },
+        "j_summary_context": {
+          "pending": 81,
+          "usable_pair": 45
+        },
+        "oracle_context": {
+          "pending": 67,
+          "usable_pair": 57,
+          "unavailable_provider": 2
+        },
+        "j_summary_shuffled_context": {
+          "usable_pair": 47,
+          "pending": 79
+        },
+        "oracle_shuffled_context": {
+          "usable_pair": 44,
+          "pending": 82
+        }
+      },
+      "provider_failure_aliases": [
+        {
+          "episode_id": "gold_key-v1-prohibited--20261103",
+          "arm": "j_summary",
+          "request_id": "5f276fba24d138d2949141fd31bdc34cc1e67ec3be21e1a0dca30b9156e5c10f"
+        },
+        {
+          "episode_id": "gold_key-v1-prohibited--20261106",
+          "arm": "context_only",
+          "request_id": "5c1fc902a1607ce205d21e5bce75a2f6acca23aebb9c981f4330737a999f4a09"
+        },
+        {
+          "episode_id": "handoff-v0-authorized--20261101",
+          "arm": "j_tokens",
+          "request_id": "5d035d74d09b272a339a8283258bfc20e955c1100ac68fa485f7de4086c6ceda"
+        },
+        {
+          "episode_id": "handoff-v0-authorized--20261103",
+          "arm": "j_tokens",
+          "request_id": "5d035d74d09b272a339a8283258bfc20e955c1100ac68fa485f7de4086c6ceda"
+        },
+        {
+          "episode_id": "handoff-v0-authorized--20261107",
+          "arm": "oracle",
+          "request_id": "5d27e78cceea6da9d97ba3601b0e28c1469faeda81054944acaacfc199dace30"
+        },
+        {
+          "episode_id": "handoff-v1-prohibited--20261106",
+          "arm": "oracle_context",
+          "request_id": "5d98e710fa8d71eb71cbbece850cfb343948ffb110a96b66f08d62e2dd114e8d"
+        },
+        {
+          "episode_id": "handoff-v1-prohibited--20261108",
+          "arm": "oracle_context",
+          "request_id": "5d98e710fa8d71eb71cbbece850cfb343948ffb110a96b66f08d62e2dd114e8d"
+        }
+      ],
+      "total_aliases": 1134
+    }
+  }
+}
