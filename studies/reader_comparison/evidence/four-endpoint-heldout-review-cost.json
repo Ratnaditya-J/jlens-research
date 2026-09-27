@@ -1,0 +1,16 @@
+{
+  "plan_sha256": "599de3805c5c4801f88d85264549eba360f682045eeac2d4a9cee970680b7570",
+  "observed_mean_microusd": {
+    "gpt41reference": 2957.434250764526,
+    "gpt54standardreference": 6940.5,
+    "gpt54lowreference": 3209.46875
+  },
+  "remaining_point_estimate_microusd": 11837918.377006881,
+  "available_microusd": 20926138,
+  "budget_snapshot": {
+    "spent_microusd": 18015402,
+    "reserved_microusd": 1058460,
+    "additional_limit_usd": 40
+  },
+  "scope": "Prior development receipt means, not a quote or bound. Whole-wave reservation enforced before every batch; no automatic cap increase."
+}
