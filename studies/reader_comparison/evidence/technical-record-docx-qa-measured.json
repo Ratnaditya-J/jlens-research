@@ -1,0 +1,21 @@
+{
+  "docx_path": "reports/reader-comparison/technical-record.docx",
+  "docx_sha256": "67572837d6e448fd6843affcacb029cc759743ae0b35062e29891a5d57ebd551",
+  "source_sha256": "7f205cd62384aa1a9735cc2bdcaa40de5fb819f85240a72d4c7fac1330829ec6",
+  "builder_sha256": "7aa8f4ea392899028127f078db28df68f178a30ad0ef4abef9866aea1bdf8ed5",
+  "pages": 9,
+  "page_sha256": {
+    "1": "8c5086adece457a2cac3c4c7597f6ef9f6e6c28e9987dd3bfa7c7ce49045c931",
+    "2": "df7fe9cc387be88207238d5054c28267e370d5e2f46665e356ea0281f81d1aa8",
+    "3": "cbf40d8b26af96de0598b87d85b3e3a9f0bdeb60c7e20b38c36f5d5faf02fd77",
+    "4": "4f05f99cc5ed2182877063770566461143b00e529995b33e7eac89a3fc32ac46",
+    "5": "4bf4d108e8c67cc5b2bfbd3cfde207b7244aa5211d7959184ed9486f15a996c9",
+    "6": "bfc29e7018f70b027d46b5750a79fe6bfccb97f0cabbcd61d3c71ecbe9698b6d",
+    "7": "9863ac8259d612e66f5f99b9f98ae71763dc6a551674faa6c9a58d8787ad4c4e",
+    "8": "82bd8b6301279eae288a27b4277b4fd8409547259f9e1a786d6d6a8f2d293e50",
+    "9": "c49109da9898370fa0937f777c6d21b3299d4bccd877e26e0a292b77beae9ce3"
+  },
+  "visual_review": "All nine pages inspected. Pages1\u20134 are byte-identical to individually inspected first-render pages; final pages5\u20139 inspected individually. Comparison table fits on page5, no clipped/overlapping content or near-empty trailing page.",
+  "structural_checks": "One editable native Word comparison table, seven rows/five columns. Values cross-checked against measured primary summary. Letter paper and heading hierarchy preserved.",
+  "scope": "Updated editable interim technical record with measured primary findings. Temporal comparisons, fidelity/causal work and legacy controls remain incomplete."
+}
