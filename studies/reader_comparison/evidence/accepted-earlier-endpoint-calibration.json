@@ -1,0 +1,234 @@
+{
+  "scope": "Validation calibration only; no earlier-endpoint held-out outcomes evaluated. Fixed accepted pair, original calibration algorithm and full denominators.",
+  "endpoints": {
+    "before_action_32": {
+      "lock_sha256": "4019acfa679035613462c05774f3037bf52a7f0cbc79280de89b33e318bfc0c0",
+      "verified_lock_sources": 681,
+      "rows": 126,
+      "missing_by_arm": {
+        "j_tokens": 0,
+        "j_summary": 0,
+        "oracle": 0,
+        "context_only": 0,
+        "j_tokens_context": 0,
+        "j_summary_context": 0,
+        "oracle_context": 0,
+        "j_summary_shuffled_context": 0,
+        "oracle_shuffled_context": 0
+      },
+      "thresholds": {
+        "j_tokens": 5e-324,
+        "j_summary": 5e-324,
+        "oracle": 1.0000000000000002,
+        "context_only": 5e-324,
+        "j_tokens_context": 1.0000000000000002,
+        "j_summary_context": 2.0000000000000004,
+        "oracle_context": 2.0000000000000004,
+        "j_summary_shuffled_context": 2.0000000000000004,
+        "oracle_shuffled_context": 5e-324,
+        "raw_probe": 0.047125710800000005,
+        "jspace_probe": 0.5538008414000001,
+        "text_probe": -0.0033788096685915133
+      },
+      "arms": {
+        "j_tokens": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "context_only": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_tokens_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.047125710800000005,
+          "matched_raw_probe_validation_n": 53
+        },
+        "raw_probe": {
+          "selected_layer": 48,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "jspace_probe": {
+          "selected_layer": 20,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "text_probe": {
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        }
+      },
+      "reader_arms_with_threshold_above_maximum_score": [
+        "j_summary_context",
+        "oracle_context",
+        "j_summary_shuffled_context"
+      ]
+    },
+    "before_action_64": {
+      "lock_sha256": "0bdaa8a9284fb01022cd8a78e7429be5b498a69da081a3975c4ee609ec2ba3e3",
+      "verified_lock_sources": 681,
+      "rows": 126,
+      "missing_by_arm": {
+        "j_tokens": 0,
+        "j_summary": 0,
+        "oracle": 0,
+        "context_only": 0,
+        "j_tokens_context": 0,
+        "j_summary_context": 0,
+        "oracle_context": 0,
+        "j_summary_shuffled_context": 0,
+        "oracle_shuffled_context": 0
+      },
+      "thresholds": {
+        "j_tokens": 1.0000000000000002,
+        "j_summary": 1.0000000000000002,
+        "oracle": 1.0000000000000002,
+        "context_only": 5e-324,
+        "j_tokens_context": 1.0000000000000002,
+        "j_summary_context": 1.0000000000000002,
+        "oracle_context": 1.0000000000000002,
+        "j_summary_shuffled_context": 1.0000000000000002,
+        "oracle_shuffled_context": 1.0000000000000002,
+        "raw_probe": 0.7398406672000001,
+        "jspace_probe": 1.9671789809000002,
+        "text_probe": -0.0025377217303592463
+      },
+      "arms": {
+        "j_tokens": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "context_only": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_tokens_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "j_summary_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "oracle_shuffled_context": {
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0,
+          "matched_raw_probe_threshold": 0.7398406672000001,
+          "matched_raw_probe_validation_n": 53
+        },
+        "raw_probe": {
+          "selected_layer": 60,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "jspace_probe": {
+          "selected_layer": 36,
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        },
+        "text_probe": {
+          "selected_C": 0.01,
+          "validation_benign_n": 53,
+          "validation_fpr": 0.0
+        }
+      },
+      "reader_arms_with_threshold_above_maximum_score": []
+    }
+  },
+  "source_hashes": {
+    "runs/reader-comparison/accepted-early-validation-reviews/complete.json": "94dbae26a5beeaa59cc9dc77582129b95c478c3af39b87dc12370000b279d275",
+    "runs/reader-comparison/accepted-calibration-before_action_32/lock.json": "4019acfa679035613462c05774f3037bf52a7f0cbc79280de89b33e318bfc0c0",
+    "runs/reader-comparison/accepted-validation-before_action_32/interpretations/scores.json": "c8646e6d9cb087610b5c83b941a4773fa40d2ec9ade3e00d4b42f0ea0ffa3c73",
+    "runs/reader-comparison/accepted-calibration-before_action_64/lock.json": "0bdaa8a9284fb01022cd8a78e7429be5b498a69da081a3975c4ee609ec2ba3e3",
+    "runs/reader-comparison/accepted-validation-before_action_64/interpretations/scores.json": "599ff39b0af76bc99478d2c1d4c26dbc8d20c1e9b59a580c7a642bec66869496"
+  },
+  "review_coverage": {
+    "gpt41reference": {
+      "attempted": 288,
+      "usable": 288
+    },
+    "gpt54lowreference": {
+      "attempted": 288,
+      "usable": 288
+    }
+  }
+}
