@@ -1,0 +1,26 @@
+{
+  "cohorts": {
+    "during_action": {
+      "jobs_sha256": "b05a25e04c42bbea2686f82e13402ae2632b24b679d2a7aa2774e57219e97d13",
+      "unique_summaries": 200,
+      "episode_layer_aliases": 504
+    },
+    "after_action": {
+      "jobs_sha256": "5e223e7e311efba5a1b5fc27135b1453728a1330d3ebce6ca9264fa0063dea05",
+      "unique_summaries": 228,
+      "episode_layer_aliases": 504
+    }
+  },
+  "union_unique_summaries": 428,
+  "previously_attempted": 0,
+  "whole_union_planning_reservation_microusd": 8493353,
+  "source_hashes": {
+    "runs/reader-comparison/local-summary-validation-during_action/jobs.json": "b05a25e04c42bbea2686f82e13402ae2632b24b679d2a7aa2774e57219e97d13",
+    "runs/reader-comparison/local-summary-validation-during_action/manifest.json": "f6de804e1178f284976b384926743b8cf5c9359a36463e19ae7f38f2b28aee33",
+    "runs/reader-comparison/local-summary-validation-during_action/aliases.json": "037fdf37bbe1dee11e9ae4b0813fb9a7e0f0d165d7b9322085eb961ce0bcc55a",
+    "runs/reader-comparison/local-summary-validation-after_action/jobs.json": "5e223e7e311efba5a1b5fc27135b1453728a1330d3ebce6ca9264fa0063dea05",
+    "runs/reader-comparison/local-summary-validation-after_action/manifest.json": "0631352ebf03cd6600a8b746c4e876101d36731b6010fb6acdfd72ca6ab6096f",
+    "runs/reader-comparison/local-summary-validation-after_action/aliases.json": "4f9aebbe5792dfcf68c69cc8eb40d46efec671663b07ba9601c8c6dde3a54f5d"
+  },
+  "scope": "Validation-only preflight for fixed during/after action summary jobs. Planning reservation is not expected invoice or authorization to reserve entire union. No dispatch, calibration or new test outcomes."
+}
