@@ -1,0 +1,10 @@
+{
+  "previous_allocation_usd": 8,
+  "allocation_usd": 10,
+  "outer_ceiling_usd": 10,
+  "ledger_before_sha256": "df803036f96adc96e87d62980409565f00c95c422ca3271c0e4f2e822d495326",
+  "ledger_after_sha256": "45acc91b3ae34cf1fc90176d5c319d37a8a45532356f493efa1c123399be9924",
+  "audit_sha256": "b476ca9d20c3106dc613c366745d1fc7310cfd3674e4145ddff2dfadb85013da",
+  "runner_sha256": "5dcc93207e1a0710af61e49eee681e42ae132bf717722ce9f870b36b5b966d47",
+  "scope": "Explicit allocation to existing outer ceiling for fixed temporal validation reviews only. Full cohort remains required; stop at funds limit without retry, substitution or partial success claim."
+}
