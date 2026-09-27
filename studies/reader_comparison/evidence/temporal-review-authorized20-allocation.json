@@ -1,0 +1,11 @@
+{
+  "authorization": "User: Just go ahead with twenty dollars.",
+  "scope": "Cumulative additional API ceiling20; fixed temporal-validation continuation only. Same readers; no retries or fallback; seven historical provider failures remain unavailable with reservations retained. First batch one new request per judge, then at most16 per judge. New failures stop. Held-out work separately priced before dispatch.",
+  "before_sha256": "6f33d3d84121bb722609bffe4d9459f7143ef8c1f83485874d141108db0e1320",
+  "spent_microusd": 8423517,
+  "reserved_microusd": 780067,
+  "old_cap": 10,
+  "new_cap": 20,
+  "runner_sha256": "9c93774cbdb448b23859764bb9ded2578344b01780236b94b417be4cfe8dd110",
+  "after_sha256": "7bc2ff82e4259bc7ea7c6a1ef587452dead92e4fa2c6f1cc7125ea3d893cb5bb"
+}
