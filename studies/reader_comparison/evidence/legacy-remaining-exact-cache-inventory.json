@@ -1,0 +1,26 @@
+{
+  "scope": "Read-only exact-payload inventory of the full original code-onset review cohort; original AST builder stops before inference and write_json is disabled. Original completed partial files are untouched. Any continuation must use separate outputs and preserve the original missingness report. Prior raw failures are not retried.",
+  "unique_requests": 7660,
+  "models": {
+    "openai/gpt-4.1": {
+      "cached": 2384,
+      "prior_raw_without_usable_cache": 4,
+      "new": 1442
+    },
+    "openai/gpt-5.4": {
+      "cached": 2384,
+      "new": 1446
+    }
+  },
+  "new_review_point_estimate_usd": 24.50287038898281,
+  "template_point_estimate_usd": 10.502278964066459,
+  "combined_point_estimate_usd": 35.00514935304927,
+  "available_after_specificity_usd": 3.700794,
+  "estimated_gap_usd": 31.304355353049267,
+  "source_hashes": {
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/scripts/interpret_jsummary.py": "72168d4fb847989147da3b0fb6fea2c324165176ecc48b40b698a0da92480043",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-test/review-complete.json": "e1bcee830ebfa418679e434e1a7618c2e752d8f82ee408ea8512c6b43c2b45fd",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-test/summaries.json": "245c5488e46596a9776682eebe35fe3d2ef42786aa654d114fadea15dba09725"
+  },
+  "limitations": "Historical receipt means, not a quote or upper bound. Future template review deduplication unknown. Uncertain prior charges remain held. No new inference dispatched."
+}

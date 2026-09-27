@@ -1,0 +1,22 @@
+{
+  "docx_sha256": "14ba3ceae51aadc980419a046548e631606f1942b7251b8d379aae1eb3bc1598",
+  "source_sha256": "3b02a98a5144376d7202642ddbbde7c2e5ec915fc30e5d99612f3919d901c318",
+  "pages": 13,
+  "page_sha256": {
+    "1": "a19ea12b019950ef70539eb8d64b4cef3cc16516620dcd37047311f47599bd82",
+    "2": "df7fe9cc387be88207238d5054c28267e370d5e2f46665e356ea0281f81d1aa8",
+    "3": "cbf40d8b26af96de0598b87d85b3e3a9f0bdeb60c7e20b38c36f5d5faf02fd77",
+    "4": "4f05f99cc5ed2182877063770566461143b00e529995b33e7eac89a3fc32ac46",
+    "5": "ac01c190f68b527e1433ae78aa6a7276649061daa5355b439dde43e51418ebc0",
+    "6": "eee8acce30526087dd7a60546f8294ed2d38cfad9bb36661e653b05f3e900014",
+    "7": "7ff43ccd51a3aa01ea60d3af26aaddb5d79c6eddf4ac66bbe6b17adf54f2c64d",
+    "8": "da18f84381a428c2263620ccf3fcb1f46726f008348f7c0e5b59cbfbb2014693",
+    "9": "9d9df54010505d777f3d6bf7f970eb81854edbf87112b8703868a9b670bb7bbd",
+    "10": "cb771cc5797fcdf70275dc00a8c6721cd250d012e50ef5cedff2426a14d2e566",
+    "11": "7ef53b6ffcbff5df1306a8e822da4ef46108503adcab23c183618916d1372ce2",
+    "12": "30119a641c0c592074d71f13642af8d4fd9bb8d8112e4ab3ea2f99a564f0429f",
+    "13": "be0a6fd4179d8c2e873c7a0f22f50698dd1021ea5774b9700962f2450aff8820"
+  },
+  "visual_review": "All pages visually inspected across renders. Final pages1\u201312 byte-identical to reviewed controls render, whose pages2\u201310 are identical to reviewed six-endpoint render. Final page13 individually inspected; near-empty trailing page eliminated. No clipping or overlap; six editable native tables.",
+  "scope": "Six Qwen endpoints, two completed GPT OSS specificity panels, qualitative Oracle audit and explicit remaining budget/coverage limits. Not full initiative completion."
+}
