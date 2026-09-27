@@ -1,0 +1,595 @@
+{
+  "scope": "Paired comparison of qualification fixtures only. Same score agreement does not establish route equivalence; prompts and model settings match except service routing/pricing and separately recorded execution identity. No subject detector outcomes used.",
+  "panels": {
+    "bridge": {
+      "n": 48,
+      "exact_score_agreement": 40,
+      "rows": [
+        {
+          "request_id": "00c23b502493c62b86f08f0f2af249fcf14d7cee77adc8c4d20e8617f5af6a86",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "01387921859b783c27889de1893e1185f76bf6c0f014fd090255dcab1042930d",
+          "flex_score": 2,
+          "standard_score": 1,
+          "agree": false
+        },
+        {
+          "request_id": "019a2742956902598420b31a1f63b9f18a75c1fdd9657bbf744b44957a46bdbd",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "02403e1826a9912abc2f4bd885e5e81ad060586e06acf40b96510c709a01c5b1",
+          "flex_score": 2,
+          "standard_score": 1,
+          "agree": false
+        },
+        {
+          "request_id": "032b0bc91895e90fde148b5bdd7b983136a2cf70a9c8456a06ca1f59a019b4f9",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "03ed3ff35050e36f87974bbf273e1e689b5d5dc90f98ea48815595be27721ee9",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "04bb94acf049c8c8498d980ee1e7732c887d51bda129e414829bf3ae5107c7ee",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "052850d88889381056c45b9aacb12362affdaf87c26690be06f526cc6e559af1",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "054fc69a9b7705d86d8857c65a8ad605e380f7424110fc87897a6a706803ba01",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "05c922ab1bdee09ca504cef936d134542bb95528fb96cc2e4874e1904717c428",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "05fedff9383aaf9a0234ca03a0305565cfa6b8ecc91524c04d01e6830ee6de77",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "074fff1763a1b90017fd01e948b4b9763556bed48144c1389c8424187c408074",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "0784ea3364cad3f643405e83759ff205dcd5922efdd910b547cfc9df5dc63a49",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "07c96d5f8969072572348fcd75e4549a3503a913746de59828451ffb9a150cfe",
+          "flex_score": 1,
+          "standard_score": 0,
+          "agree": false
+        },
+        {
+          "request_id": "091cf91331de7c691c1b034723576e18179dd4254ca4b75254a110cf4996cd1e",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "0930392ecd0b7d9adbf74c2d9a228544f27c985306e1083ff1ea7d02438474c2",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "0a193e6a0d4869222f2ffa431edafaa3825487121e206e7df11234f14d4742ff",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "0a27c2525803a62301c3ae6baf7f13f9acc18a72894548ef5e45b826fc462bb6",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "0ab7d15f671770f1b972da5ecd270e2acc0bb724e8ec5c2576ba48ea408d9b5b",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "0b2b63bbcacbb49b4701b6f24f38127fc75d04e2cb35c2fdb7fb07c966e70349",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "0c16c05ddd9709f3ce0dcee7f85448f4796ca79f42b060512e283b3d2ab1fddb",
+          "flex_score": 1,
+          "standard_score": 0,
+          "agree": false
+        },
+        {
+          "request_id": "0cff8a86582542f915f415e65ec42821d46141334f2e10e32e72bc8343b82134",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "0e48c484837787c14cbd6a241d6986874434b63291fe08a4f8796de00e69fc07",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "0fb850497a717039b180761c42aad9726984808a127906b7168b421cb1c83e90",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "10e2e071a87e8735e597dfa8714215c4c93a9260670628e234632663c904793b",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "110b04aa35570fd40bd837ec8aa2a8f47dbe8489ce23c1d2fbca0087fd435ae2",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "139b04f9d25c83d74ca206e4ae48bafe1c623fbc1a3ad55c92c059e5fc61d3bf",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "1555bc8bdae89fabc0f0d8f287e6affcce9ab7bb5afbfeb54ee9725a1084879c",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "1cf77960a6ebb1e78eedab382d8bd09bf0ebc179c03fd19153cc859e3862c492",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "1d3004fe5d49476feaae2951a742e7b3ef1379b0c8670bc32d620ad51aa9f784",
+          "flex_score": 1,
+          "standard_score": 0,
+          "agree": false
+        },
+        {
+          "request_id": "1df087db04267bdd87b4da11313c27e08b219c1ecc9aeeeff1186005a865261d",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "1e0621351d41ebe1c08646f41ca87e59f4ac55e40cf16502224d228b1db4683c",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "208aa2ecd1c47634b0321216de3da0607408dc991a1391936911765f2c713d26",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "23f85582d5330b36676a9535deaea3a215182105de849347e96fa4e11124072c",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "27c9f5dc74277184a18c7111b21828cb93b4a5c274df60fa591773eb33c1b66f",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "38dc448bf0056c613dda1527c6a34dde491c506aaceedeb558b019f800aafc2a",
+          "flex_score": 2,
+          "standard_score": 1,
+          "agree": false
+        },
+        {
+          "request_id": "397d2256656273b3f9e7140200f44bdfc6fa51b7fbccdad73037970162486ffc",
+          "flex_score": 2,
+          "standard_score": 1,
+          "agree": false
+        },
+        {
+          "request_id": "4e0f441069aaaffb6881c8d8ca09e50ec07f2a790e1ab099f1c88a8e1b62ed71",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "602fcd1f0b6622315221c1c3ecb2434c69081558a80e41d8a234f93b02b4eb87",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "63d2793843f4c16d1604f4c235de0ab04aa5f8d9d0ca70681a2449ef8092dd09",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "88ebf07c83d89263d310cca20f2df13ab0740065aaa470d943652293eb26997d",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "8d1a74fe3c193a6ad595c8a07d450f5ec8323fce9c29bcf535f1bbd6d792cdee",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "9462de3ff32cbd230fee29749bbbed3d2ea67194710955bc0bcd997b2d89ed33",
+          "flex_score": 2,
+          "standard_score": 1,
+          "agree": false
+        },
+        {
+          "request_id": "95dde9300cfe0b2cb7cc501ba0d40ee99746288b11e55f07a87225a1ec9cd238",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "9bef4b65405f7e14ec86c8493bc3e91ee5b1a0e4275bb041cd494060b3555206",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "a0de42dd4e7277aa06175d431f5fe62658b4bb199729bd74ceb78def16b37b2b",
+          "flex_score": 1,
+          "standard_score": 1,
+          "agree": true
+        },
+        {
+          "request_id": "ad2c79ec50b24d02900b03470f78809e290557b697b45d7650b2b4807a8ad2f6",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "c4757a8209e4da357f7229af43b8ceeac84107a436c354172ff9aa620cb9704b",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        }
+      ]
+    },
+    "policy": {
+      "n": 24,
+      "exact_score_agreement": 24,
+      "rows": [
+        {
+          "request_id": "08e0662b50c153041e0e24bc6c116a02f9f6442bb067e067c84d2a5a9f3d57fc",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "169d4c52948e54ee7af8fcee3eea4ab7a29fb85cb228a8a08db55024846b693b",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "16a0998d12d1a614bd9350def3927edf365c1b96805549b3b700bb03b0ae1477",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "385ae32fbbf64ca67d5b6f00c5ad08cab630f70496bf15ec0fcdbc5ca5b62ff6",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "4103f3c55f1688c3ee78e35c79b426ed8da3d1227f037bd5f8a0b8b83a7a8865",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "4be815ee3fd9d17646a1264fa15f199a36d6765fe637146e7df1178b816b432e",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "55f7141f7c86028a0acb5cf44f4b72ae865fa6e71b866245b2287ef6ec42d284",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "65245c4be9f3641544f9752953b2b25f8e5e47f3a68f1fb89c10f34139ee2936",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "877e08ec55cf03c449b77474e00189c5e95af3eb52bcc4e2d6867ca954574255",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "8ac8293f9ba220643aaaf7a81d932a07a2a723d9bc280aa96a72d0e15e80a54c",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "944f4ffc4dffe8b928131f18336b6e33f4ab276a9fe90b95376cef7a17240ef1",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "a4b1ea83ef0ec05d194feee8ea97bfbb8ab3a73ea190aac36e28134afbdd7968",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "a67a34bff598e949d81b1e85f6d56af11fd980aabc212e0c29f7b5155c4bb7eb",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "a68521ac651dee97bcf0795774d4e4cd1cec7f904c6e437cb3992b688fd00162",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "b077d2b0d7b51d4c39948e22f65806a55e2e153577dd32288e34f0e12cfc7122",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "bf904ee77cf4253d9da8401d3c3efa079fb1a13b37d97f9c8715dd923c12375d",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "c2a2f6b1bcc159a6764a5660b09d9a0802f6a84e4751ee6e3ea254b0de23426a",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "cd1ca09f0775b941cecf963ceb896ccb15d79f09aa7ff985d9db97e2858f9414",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "d6dcd1663f81c20b53150ed7ada973da196de992b5a1528ca4c22f136cf051ab",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "dab639390d248c7fdf4740da6690bdd84f6fe70cab98260acc7a5f28c1d599a8",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "df6d8b54c2fed234568070b983d252833942fc925d90bd428519c74b286a3bd2",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "e9f0798560a0e7661020ce9ce9ac46b4384075270d380f2fd1c737f99bf49b36",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        },
+        {
+          "request_id": "f0ebe8674305f1c8051c2d26d1efe7a959d1472c38cdffd76efd337bd09c941b",
+          "flex_score": 2,
+          "standard_score": 2,
+          "agree": true
+        },
+        {
+          "request_id": "fc239eaf47793fe70a798e91073dfe55ff9a696ee72d7c254c6753a21ec1786a",
+          "flex_score": 0,
+          "standard_score": 0,
+          "agree": true
+        }
+      ]
+    }
+  },
+  "source_hashes": {
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/00c23b502493c62b86f08f0f2af249fcf14d7cee77adc8c4d20e8617f5af6a86.json": "8934ffc0bab2113d6c05e3dc087de8aa69b3e0db54f5dc411432b69b134be331",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/00c23b502493c62b86f08f0f2af249fcf14d7cee77adc8c4d20e8617f5af6a86.json": "caa72bee39eb0596b1b9946dbc39b42af937e8edea27134697c6184f443850dd",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/01387921859b783c27889de1893e1185f76bf6c0f014fd090255dcab1042930d.json": "67272bd092c342094d751e30b45e6fc2fd159a34e444379a5ad3d0cd6d006f93",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/01387921859b783c27889de1893e1185f76bf6c0f014fd090255dcab1042930d.json": "fb317fa3f905ada7a4f627868ef535843479714beb11ef081d0674ce546eed67",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/019a2742956902598420b31a1f63b9f18a75c1fdd9657bbf744b44957a46bdbd.json": "16f194ce51cd35373bbe1333ba44ad5dce6e41e327ad0a1ab38d7ba3061bfb18",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/019a2742956902598420b31a1f63b9f18a75c1fdd9657bbf744b44957a46bdbd.json": "f8618d001c169661952c3b06f63b104c89a69f9a028f2c89562843a08b3b5c33",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/02403e1826a9912abc2f4bd885e5e81ad060586e06acf40b96510c709a01c5b1.json": "05294dd4b858d9bee71b00bf9d5c6c50758032dc6133209747c15c1da2331163",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/02403e1826a9912abc2f4bd885e5e81ad060586e06acf40b96510c709a01c5b1.json": "7e5b9b3ab4ea2d50ece08bdd19d8aac783de57f522db995db04a94170cc7b51b",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/032b0bc91895e90fde148b5bdd7b983136a2cf70a9c8456a06ca1f59a019b4f9.json": "b387d258f428edb9353fb8bcb562ba40ee278f6a7242b40a0633bfa69ee5517c",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/032b0bc91895e90fde148b5bdd7b983136a2cf70a9c8456a06ca1f59a019b4f9.json": "a486bc56deb212f75f0812399060ed2ef0e0aa2dd275b31b4159ca29f9b4d483",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/03ed3ff35050e36f87974bbf273e1e689b5d5dc90f98ea48815595be27721ee9.json": "4cf0c19d40b4bc6e8e624d845f81c23d37c8430217cf7d189ec8378b80454f0d",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/03ed3ff35050e36f87974bbf273e1e689b5d5dc90f98ea48815595be27721ee9.json": "a4afa31ae7fc99c0e51ace8d5a43597cdd10eecf1d74238091eb5493a6139421",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/04bb94acf049c8c8498d980ee1e7732c887d51bda129e414829bf3ae5107c7ee.json": "731b87d81571cc4f141c9e9b69fa9e4b1a38271496d2e0c927501acc43d6db64",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/04bb94acf049c8c8498d980ee1e7732c887d51bda129e414829bf3ae5107c7ee.json": "8c53fc82a416f55bd594ef64ae2c51078498b91abc2cc2d2ba461e9f68f778a3",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/052850d88889381056c45b9aacb12362affdaf87c26690be06f526cc6e559af1.json": "640eafca42f2a1fb6cf47397ef5e2d3ec6bcbe4dde7d172c7efc5674f32c5eaa",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/052850d88889381056c45b9aacb12362affdaf87c26690be06f526cc6e559af1.json": "43265b56e1b9fe615e828f1e4e0db103831153eeaca9156f13840850b165e223",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/054fc69a9b7705d86d8857c65a8ad605e380f7424110fc87897a6a706803ba01.json": "00a816a977fe7cb408e530ab47b68143900d69bf50cb9d958143722d5ed5081a",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/054fc69a9b7705d86d8857c65a8ad605e380f7424110fc87897a6a706803ba01.json": "b8b5bf18d99e999bf2c305ade73b1389fee5899befc06e3358d7efdeddf514b2",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/05c922ab1bdee09ca504cef936d134542bb95528fb96cc2e4874e1904717c428.json": "46e34f8257dce48a4c4799ccf75bc51afc627d5ddfabf74a57565a8826f4322f",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/05c922ab1bdee09ca504cef936d134542bb95528fb96cc2e4874e1904717c428.json": "209bfeb11897aa4855346ffea7ff6faf9c927945ca14de829be4a0e6b5955d53",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/05fedff9383aaf9a0234ca03a0305565cfa6b8ecc91524c04d01e6830ee6de77.json": "53f4bb9cf94ebae9e094becebf05ed1cdfdf3714f87fdb1757360eb8bc7ab31f",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/05fedff9383aaf9a0234ca03a0305565cfa6b8ecc91524c04d01e6830ee6de77.json": "384a027649340be922b957c20843d1cb07b457b53062f25143317fbbe311f843",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/074fff1763a1b90017fd01e948b4b9763556bed48144c1389c8424187c408074.json": "239687bb2f878d58cf086c26b0c6a1e4e3aa0bbbc9b024956c77b70b69c7cf09",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/074fff1763a1b90017fd01e948b4b9763556bed48144c1389c8424187c408074.json": "af8e97efc5e6eb8eb69dca538b79b3360c84cd4f0f03002bc3bad8b62ff51d14",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0784ea3364cad3f643405e83759ff205dcd5922efdd910b547cfc9df5dc63a49.json": "9ad05c26fb5ca69a435162f1e26649685703b5daf708846cf82a33f7900a1139",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0784ea3364cad3f643405e83759ff205dcd5922efdd910b547cfc9df5dc63a49.json": "82834a4984fe86944eb4f49c96b85ff93abacffa513fc808bd1c209044f202ad",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/07c96d5f8969072572348fcd75e4549a3503a913746de59828451ffb9a150cfe.json": "65d7dece2761e85791e1ff841d659869c07003d6246adbfe0dcd839815bbdd8f",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/07c96d5f8969072572348fcd75e4549a3503a913746de59828451ffb9a150cfe.json": "e51b6da0b7ded3d75be032619613f0404408daf2050f5c7705a4d2ac2fb34fd1",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/091cf91331de7c691c1b034723576e18179dd4254ca4b75254a110cf4996cd1e.json": "9c0157603ff2daee43c199bc8c09c3539cf40a6354b69c2deaf0207b64d44f39",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/091cf91331de7c691c1b034723576e18179dd4254ca4b75254a110cf4996cd1e.json": "9cb18e03f72e6d0608ca6f982bbe696417b76552582e85e9ca74b588f8b4f3c1",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0930392ecd0b7d9adbf74c2d9a228544f27c985306e1083ff1ea7d02438474c2.json": "c41301e8abf14a7288ec9e0986bdb6396ad24312c01c8a097f5200266ca81ff0",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0930392ecd0b7d9adbf74c2d9a228544f27c985306e1083ff1ea7d02438474c2.json": "4cb7a117c4e50e8d175bca3db43d0dfeccd8d57dce574f2539e97baadaf6463a",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0a193e6a0d4869222f2ffa431edafaa3825487121e206e7df11234f14d4742ff.json": "920ff239b69d3d64745948e6fa38f24d9bbfb3f78fb041a1d813b63e7e36ba2f",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0a193e6a0d4869222f2ffa431edafaa3825487121e206e7df11234f14d4742ff.json": "bc997c7a3b9aaeb4a4d3e8d0124e6e4d76346122b616fc49792cc45e9103daa7",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0a27c2525803a62301c3ae6baf7f13f9acc18a72894548ef5e45b826fc462bb6.json": "50d3457f5593ac79cfec4132a942171d618c2ebe6054b0f3bb4ef6474e09dd5e",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0a27c2525803a62301c3ae6baf7f13f9acc18a72894548ef5e45b826fc462bb6.json": "957d8a13f1d513bc1443d982e97424ce85176c8851608f3985325693c38cf52c",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0ab7d15f671770f1b972da5ecd270e2acc0bb724e8ec5c2576ba48ea408d9b5b.json": "434faa4e73d178aa4f76bed6d7c11523dd27e1e30209692562e756b9aa61edef",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0ab7d15f671770f1b972da5ecd270e2acc0bb724e8ec5c2576ba48ea408d9b5b.json": "c48f684ec9a51ab25d4b9e1e7315b03671947db94b336a4de197c19758cdeafa",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0b2b63bbcacbb49b4701b6f24f38127fc75d04e2cb35c2fdb7fb07c966e70349.json": "e4eb1fc4867d20143bffc7413870c0e49348b6d3e96c6db67286204f77fc3e14",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0b2b63bbcacbb49b4701b6f24f38127fc75d04e2cb35c2fdb7fb07c966e70349.json": "05231e5c1abdf17373d0413d8ed6dc78206dce51cc9e9cecadd1714b6be47dc8",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0c16c05ddd9709f3ce0dcee7f85448f4796ca79f42b060512e283b3d2ab1fddb.json": "7a7972f860584a976df54ea85134d2415630016d1d5a6313625dc12c0e955d17",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0c16c05ddd9709f3ce0dcee7f85448f4796ca79f42b060512e283b3d2ab1fddb.json": "3d0757ead2c41d101eccb7d2c89f787e296a11a76575d6c27351d0841ed7e01f",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0cff8a86582542f915f415e65ec42821d46141334f2e10e32e72bc8343b82134.json": "0dcbff3747486c9e1f0f1ad37ec4029a7688a7d3576cb639bc788848da816142",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0cff8a86582542f915f415e65ec42821d46141334f2e10e32e72bc8343b82134.json": "6d52757f47c240a4cc7360bef2241177bff078241a6b168582f04cfbf5edddd8",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0e48c484837787c14cbd6a241d6986874434b63291fe08a4f8796de00e69fc07.json": "9598ab68afa71c3729cecc9f34684bd3bb3f39fab2ce942b8037259e5bb9da25",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0e48c484837787c14cbd6a241d6986874434b63291fe08a4f8796de00e69fc07.json": "075c3198ae1b19bfc15a2796d0f00fd8a55b0c697e1a732ae6e89073c964a3d2",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/0fb850497a717039b180761c42aad9726984808a127906b7168b421cb1c83e90.json": "58128f772dac37dc61391247209699eba7137be70ef7492bd401173747a0ba2d",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/0fb850497a717039b180761c42aad9726984808a127906b7168b421cb1c83e90.json": "65fa8946c0abfb0cd0341fe1415acddf9750db1a07478040a0460eda1cd7ec32",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/10e2e071a87e8735e597dfa8714215c4c93a9260670628e234632663c904793b.json": "c9e53da1ea82dbb26563396968d20c5a43947219c66473532fe30cdb646bec36",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/10e2e071a87e8735e597dfa8714215c4c93a9260670628e234632663c904793b.json": "b1b6f30d6d5306ef23a4a61d767f0bc2a25ac9f3c01028cafb7c4819c3f3cf98",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/110b04aa35570fd40bd837ec8aa2a8f47dbe8489ce23c1d2fbca0087fd435ae2.json": "70e624d1958f6bc77d1d78431cac8ec679e710a5d80bac86c105647231669f83",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/110b04aa35570fd40bd837ec8aa2a8f47dbe8489ce23c1d2fbca0087fd435ae2.json": "847726d7a91ac10f7f9f102f42aa709ecea3b1c010cd1bbda6bb1b44c2cb5d0a",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/139b04f9d25c83d74ca206e4ae48bafe1c623fbc1a3ad55c92c059e5fc61d3bf.json": "89dc0b94a8029c71e5d2c91711fd8f717c081ba01624116944ea27945b36ab7a",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/139b04f9d25c83d74ca206e4ae48bafe1c623fbc1a3ad55c92c059e5fc61d3bf.json": "263ffa4208765306e674565772b50a5212fa291dfcf6c9c356a287e2a8b2dd97",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/1555bc8bdae89fabc0f0d8f287e6affcce9ab7bb5afbfeb54ee9725a1084879c.json": "84045cd823c45dce229057e6b361990fedbbeb035d5172de488282349b446fbc",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/1555bc8bdae89fabc0f0d8f287e6affcce9ab7bb5afbfeb54ee9725a1084879c.json": "dd95ff41da87622cee11b26ee54124835b66b87224242eda249e856fd6d17e35",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/1cf77960a6ebb1e78eedab382d8bd09bf0ebc179c03fd19153cc859e3862c492.json": "54e13cd89923f9c7881de4b80bdd8e788430b4b1e75f6f94b8f5d1b48ef0914f",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/1cf77960a6ebb1e78eedab382d8bd09bf0ebc179c03fd19153cc859e3862c492.json": "b7d30b6acb08f638c8999952d36ac9a8fe48e0e80b9695d88176db64b529d3e9",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/1d3004fe5d49476feaae2951a742e7b3ef1379b0c8670bc32d620ad51aa9f784.json": "632344ae03046d1145bd1a1274d06e626aeb5922a4f83b2b8e7a632f10810fa4",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/1d3004fe5d49476feaae2951a742e7b3ef1379b0c8670bc32d620ad51aa9f784.json": "e06ec5204d35973de0b0d6d200d9ee9738f6330f0e10bd83efad4a066f3ef191",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/1df087db04267bdd87b4da11313c27e08b219c1ecc9aeeeff1186005a865261d.json": "c1a13f257aae363e7d4eb901ba2dc8820bc0dc3267d22390f3337bb9d1dd5557",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/1df087db04267bdd87b4da11313c27e08b219c1ecc9aeeeff1186005a865261d.json": "5e7b81566a34ccde95f1a9193d02658fe90cad1627e7dd30df84bc9f1c05eb4b",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/1e0621351d41ebe1c08646f41ca87e59f4ac55e40cf16502224d228b1db4683c.json": "3cf2624b7e60ef8f911a1dc614c4e43cd8f988c3c05264febdfb5e69e41aeb95",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/1e0621351d41ebe1c08646f41ca87e59f4ac55e40cf16502224d228b1db4683c.json": "ee709dd46634f6927bd245fa07138d4c939b826362b59f7637e34e4b046f0baa",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/208aa2ecd1c47634b0321216de3da0607408dc991a1391936911765f2c713d26.json": "debe519815b2473a15306e822dffa9abe46fed30e9b465638ebf11a66c59cb0b",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/208aa2ecd1c47634b0321216de3da0607408dc991a1391936911765f2c713d26.json": "c0812d1027c310430f3af0da883caf8b472401b9a8c1592e2190428de65f0a2c",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/23f85582d5330b36676a9535deaea3a215182105de849347e96fa4e11124072c.json": "4971440f6908294f20aaa5672bde225b5490218eb5bfa2f80264d2f2dfed9efe",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/23f85582d5330b36676a9535deaea3a215182105de849347e96fa4e11124072c.json": "dc487bcde091f882e9040dc95ae6c0206f277a25118f1e6e4386acb6ad160151",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/27c9f5dc74277184a18c7111b21828cb93b4a5c274df60fa591773eb33c1b66f.json": "b6f4086f240df71b512726790fcf63eb4ed29713832a0622b1843b51812b7369",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/27c9f5dc74277184a18c7111b21828cb93b4a5c274df60fa591773eb33c1b66f.json": "a40bdcf33adeef9c29dddd7e98c295115b9d60aca5018890055ac16c8e9cdd1e",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/38dc448bf0056c613dda1527c6a34dde491c506aaceedeb558b019f800aafc2a.json": "abbc8aa914007f40319e9d992f5170123ee7a342708679023b3eeb8b2d2b315a",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/38dc448bf0056c613dda1527c6a34dde491c506aaceedeb558b019f800aafc2a.json": "f00464d10a6c30e5682461dc618208c6bbf029a24b56ac3de972c0d29b11cfdf",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/397d2256656273b3f9e7140200f44bdfc6fa51b7fbccdad73037970162486ffc.json": "9ff4bf7d0cebe13dfc2731eb660189463b8f933ca9729d13b4835b746ed35c8f",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/397d2256656273b3f9e7140200f44bdfc6fa51b7fbccdad73037970162486ffc.json": "a11a766e66cd3b007bd5f525e2540175ec98924964767b6b92923e6d1ebfa655",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/4e0f441069aaaffb6881c8d8ca09e50ec07f2a790e1ab099f1c88a8e1b62ed71.json": "13a1ee293e7236e0337b7c3da0b39d7a462361554fef187e2d25e2ba09077074",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/4e0f441069aaaffb6881c8d8ca09e50ec07f2a790e1ab099f1c88a8e1b62ed71.json": "3a200fe653358998c4a83d6805e3dc8cac8e007741d737ee388a385fed9e8f9d",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/602fcd1f0b6622315221c1c3ecb2434c69081558a80e41d8a234f93b02b4eb87.json": "18eb52d88046079b60427ca7e46b002938fb29fa70b23bc39134d8a168d3543c",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/602fcd1f0b6622315221c1c3ecb2434c69081558a80e41d8a234f93b02b4eb87.json": "d0ab310fea93bfc904ec514102712ffdadfbd325f68440e9b96df447b1bf4d60",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/63d2793843f4c16d1604f4c235de0ab04aa5f8d9d0ca70681a2449ef8092dd09.json": "1cf008e4bfebba9c21b70a149acf254cb27ff356d85ddf77025b67a0c95491e5",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/63d2793843f4c16d1604f4c235de0ab04aa5f8d9d0ca70681a2449ef8092dd09.json": "57236327839def7b33127a54d7f076d5753f7d47489d5c36be194b1d28b11911",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/88ebf07c83d89263d310cca20f2df13ab0740065aaa470d943652293eb26997d.json": "fc52918d71e2ec9a1b62f54c3d2c571866c9d46dceaa4caf1cb350712e39e315",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/88ebf07c83d89263d310cca20f2df13ab0740065aaa470d943652293eb26997d.json": "b0840c29e6ea3ff7c58853d59437bdea02e7c065b6bf51228c399a26b572ed89",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/8d1a74fe3c193a6ad595c8a07d450f5ec8323fce9c29bcf535f1bbd6d792cdee.json": "f450f09fa5ae2c0bdf787153b9dd66ecffc52e89a85a7aa2cc29976e5fc664e1",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/8d1a74fe3c193a6ad595c8a07d450f5ec8323fce9c29bcf535f1bbd6d792cdee.json": "6a4443bc6bf1cda21acefcafe4f8943691badeb86d80aa355b61abe226ef7ad3",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/9462de3ff32cbd230fee29749bbbed3d2ea67194710955bc0bcd997b2d89ed33.json": "127dfcbb5ae0499c7740bc29f5f80210be55027b36e8d64d9fe8ce7297d0eae8",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/9462de3ff32cbd230fee29749bbbed3d2ea67194710955bc0bcd997b2d89ed33.json": "3ce014cc938f3a3eab9fd5d2b7abd6ccadc13e762952ce124f89eb71b96e80b5",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/95dde9300cfe0b2cb7cc501ba0d40ee99746288b11e55f07a87225a1ec9cd238.json": "30f809c557b69648e14d6b63819045cb3efa230b7b0867f14dc42e2c53efd4c7",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/95dde9300cfe0b2cb7cc501ba0d40ee99746288b11e55f07a87225a1ec9cd238.json": "4b56776dd0ba7092f376f166c04819eefd9da322bc2e85e39943571515d354c9",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/9bef4b65405f7e14ec86c8493bc3e91ee5b1a0e4275bb041cd494060b3555206.json": "409f3418b3e18afea0007eaf9b87a57e341c2aaa9ddc92706d53e4cd76238749",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/9bef4b65405f7e14ec86c8493bc3e91ee5b1a0e4275bb041cd494060b3555206.json": "78d24b965aa4076d51d3d589000654d5b3524ff1f0f14d399afcabe232cd86dd",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/a0de42dd4e7277aa06175d431f5fe62658b4bb199729bd74ceb78def16b37b2b.json": "1c352b39fdb926ca90510298b758ac243c75cd23301183727a1c56d58ab3d892",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/a0de42dd4e7277aa06175d431f5fe62658b4bb199729bd74ceb78def16b37b2b.json": "2e04bf506829a105e68eda5ddecb7f4002fb4a54ee454145a3de8b989cbdb079",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/ad2c79ec50b24d02900b03470f78809e290557b697b45d7650b2b4807a8ad2f6.json": "dbe6f373f3da5c2159089190516cf7cdcec462eb8f98bae4dec6cec2282a3e96",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/ad2c79ec50b24d02900b03470f78809e290557b697b45d7650b2b4807a8ad2f6.json": "a7f967af246c7cb040f04d53afedc39e21cf829628cd07ac59e570a824f24779",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/c4757a8209e4da357f7229af43b8ceeac84107a436c354172ff9aa620cb9704b.json": "b49425416f8ad33012b109267523320a779222e829d44804d4169b8397b3f311",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/c4757a8209e4da357f7229af43b8ceeac84107a436c354172ff9aa620cb9704b.json": "2a66d9da42486909759ed3375285b9c2e0a4293dc2332c3e7e7d00f29d967a0e",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/08e0662b50c153041e0e24bc6c116a02f9f6442bb067e067c84d2a5a9f3d57fc.json": "d39a4e4245848daf633969410f4191c6a8f8a64613bc61d35e8297634b15fa95",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/08e0662b50c153041e0e24bc6c116a02f9f6442bb067e067c84d2a5a9f3d57fc.json": "7955ac3a04aa242a65e524fb92724fe2e0da055817ec9c6ac6316a94292b9187",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/169d4c52948e54ee7af8fcee3eea4ab7a29fb85cb228a8a08db55024846b693b.json": "90df63a969c62cefa5732131b62ef3ad74b979961e370cba09c85b16b42485e5",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/169d4c52948e54ee7af8fcee3eea4ab7a29fb85cb228a8a08db55024846b693b.json": "d8110687c0bf3e32fbcf2e487ad154605ee2560484c2f777808e339ce7be065a",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/16a0998d12d1a614bd9350def3927edf365c1b96805549b3b700bb03b0ae1477.json": "24431f08562323284891227793a0255a089977f313ff4e2b1175ad2e5d8e09b5",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/16a0998d12d1a614bd9350def3927edf365c1b96805549b3b700bb03b0ae1477.json": "4fc6d135d0e8376904055785830a8d9750b00dcaad57a1029f97c5d677f60538",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/385ae32fbbf64ca67d5b6f00c5ad08cab630f70496bf15ec0fcdbc5ca5b62ff6.json": "7c45ac9a434fd2defe79b0b898c90d451bb9d989a23b44508690b1ad2cc57c52",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/385ae32fbbf64ca67d5b6f00c5ad08cab630f70496bf15ec0fcdbc5ca5b62ff6.json": "681548912624e66050ec6d7756c9863be34de17606534b15151ef4f37e082846",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/4103f3c55f1688c3ee78e35c79b426ed8da3d1227f037bd5f8a0b8b83a7a8865.json": "d7e9c17440ef001c28f84452a9cc2d8fa20f34aea7ed7366078566b9ab593522",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/4103f3c55f1688c3ee78e35c79b426ed8da3d1227f037bd5f8a0b8b83a7a8865.json": "5fc6bc068f864e3b26fe80b14f8f8bda8a854bf4411d69392b052fd68e353033",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/4be815ee3fd9d17646a1264fa15f199a36d6765fe637146e7df1178b816b432e.json": "2bc39cb417d3d742bd8b4f5ba3385d217ac37c52d5ea938a647c2b46bc543926",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/4be815ee3fd9d17646a1264fa15f199a36d6765fe637146e7df1178b816b432e.json": "d4c8bcf1710fb8f6e031a9617b4db053d27e055a19d7aadf9d1191079f4af14b",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/55f7141f7c86028a0acb5cf44f4b72ae865fa6e71b866245b2287ef6ec42d284.json": "fe6aa6b0724a5355a29700348b3297257d5141e503cc01d70a09d30ce1359c89",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/55f7141f7c86028a0acb5cf44f4b72ae865fa6e71b866245b2287ef6ec42d284.json": "95d3ae8f109bc94d7dd6836027e19e59caac6cf8e44074bf2d129ce13fb7352f",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/65245c4be9f3641544f9752953b2b25f8e5e47f3a68f1fb89c10f34139ee2936.json": "83f5a66e81665653b139a8261c016e7ec41e57275b0181213798683b507e1595",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/65245c4be9f3641544f9752953b2b25f8e5e47f3a68f1fb89c10f34139ee2936.json": "d1ebaf315ab84e6b1e618692c7c2065cc1999ab9ce76a91b9f96ebeaa729be83",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/877e08ec55cf03c449b77474e00189c5e95af3eb52bcc4e2d6867ca954574255.json": "04805c4ce3d29ed812b50668cce378e75e76c2c3b5271c2d76d848687f12df74",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/877e08ec55cf03c449b77474e00189c5e95af3eb52bcc4e2d6867ca954574255.json": "01e29d869df303a85d3b59a42fb529f35a8d3579a12466b425122886ab4dc385",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/8ac8293f9ba220643aaaf7a81d932a07a2a723d9bc280aa96a72d0e15e80a54c.json": "a52ac2d3c3d866ed42832943c76405c6c84f656677aa0ee8a584effb02a7f266",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/8ac8293f9ba220643aaaf7a81d932a07a2a723d9bc280aa96a72d0e15e80a54c.json": "99a6850cb7c831b3e749be22eb2f57110ed8d997b8044478f72a2e9b5630a65c",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/944f4ffc4dffe8b928131f18336b6e33f4ab276a9fe90b95376cef7a17240ef1.json": "7e4dddb93be9213c1c8b2c3c66b797618147aefa92aba41d76b04dc7e4204f0a",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/944f4ffc4dffe8b928131f18336b6e33f4ab276a9fe90b95376cef7a17240ef1.json": "2b346a4e34dbcf12f87252837191ecaf967401a58f57aec631c70bcbd16cc7db",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/a4b1ea83ef0ec05d194feee8ea97bfbb8ab3a73ea190aac36e28134afbdd7968.json": "5c82f3bdb28c9fb340d567fe01071c075298e47e14af8fd72cfbdff330ddcbd4",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/a4b1ea83ef0ec05d194feee8ea97bfbb8ab3a73ea190aac36e28134afbdd7968.json": "7cf1b651b3f81a5cfe9e264e9122624b6d55bfbe44394a64aa0cb3823953e9cf",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/a67a34bff598e949d81b1e85f6d56af11fd980aabc212e0c29f7b5155c4bb7eb.json": "0216825f4b1458db92e3cbdcf7404e3f9af64c4bbd8add93cbf112afb720baa7",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/a67a34bff598e949d81b1e85f6d56af11fd980aabc212e0c29f7b5155c4bb7eb.json": "06171a7ef893eef39eba8da748964b86edb3c6ff06062a601943335e3b65745f",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/a68521ac651dee97bcf0795774d4e4cd1cec7f904c6e437cb3992b688fd00162.json": "42aa78e8b0c7c2fae66366502c43ad332602a1b9e57129e2c92c01e6005471ca",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/a68521ac651dee97bcf0795774d4e4cd1cec7f904c6e437cb3992b688fd00162.json": "4f66e1ed2667b063c1be2f2a9e4e288a00c2bf723dbfbfade36a03379d765914",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/b077d2b0d7b51d4c39948e22f65806a55e2e153577dd32288e34f0e12cfc7122.json": "5e6d902080b3df848bf6fec70606cf5734da666b10ec3009512cb5cf569cd19d",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/b077d2b0d7b51d4c39948e22f65806a55e2e153577dd32288e34f0e12cfc7122.json": "07e30eb95099a3b96b4c16fbe4a67bb2b95d55c72435eafe085a131ca21dd8be",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/bf904ee77cf4253d9da8401d3c3efa079fb1a13b37d97f9c8715dd923c12375d.json": "4d99e30510091addb277870824e55fd2b14bf871b6dcd509a31adf060de7f653",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/bf904ee77cf4253d9da8401d3c3efa079fb1a13b37d97f9c8715dd923c12375d.json": "38fdd9a479a97207e195e254952d0d087a7fe366a8b7ece27b8928d9dcb41d8b",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/c2a2f6b1bcc159a6764a5660b09d9a0802f6a84e4751ee6e3ea254b0de23426a.json": "36f9b2e39d62296d4c651ad630114803a6c51fa7c51100540e0841730edb6f37",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/c2a2f6b1bcc159a6764a5660b09d9a0802f6a84e4751ee6e3ea254b0de23426a.json": "e1f458782293d1245856289cd22485445279a273c66f504c56adab642e40bfb5",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/cd1ca09f0775b941cecf963ceb896ccb15d79f09aa7ff985d9db97e2858f9414.json": "e513bbd3e1d773c7470bee3f3f4f0e35622e470d95ddb57d283a8e7bf5153bdc",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/cd1ca09f0775b941cecf963ceb896ccb15d79f09aa7ff985d9db97e2858f9414.json": "754e671ba592b83bfea4bc34d36d5658d606a867c3d44bd6130080b7ee2e7376",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/d6dcd1663f81c20b53150ed7ada973da196de992b5a1528ca4c22f136cf051ab.json": "268c11badf49a13360a7ff8fd55f696f9bf60996c7a62fb49a03a334095c501a",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/d6dcd1663f81c20b53150ed7ada973da196de992b5a1528ca4c22f136cf051ab.json": "fb10b97b04dcef063ae027a6078b60f22f5db3cdd44f7ddad95639075989203a",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/dab639390d248c7fdf4740da6690bdd84f6fe70cab98260acc7a5f28c1d599a8.json": "66482e4bc76a6fbb0f28596f7adeeae95abbf3c5077d6ac791b5f14d40685320",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/dab639390d248c7fdf4740da6690bdd84f6fe70cab98260acc7a5f28c1d599a8.json": "090f7d8e591162587898fa29a4a2c302076bde13c1d9587cef70e1d0ed7d5d0f",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/df6d8b54c2fed234568070b983d252833942fc925d90bd428519c74b286a3bd2.json": "4ce017d34e4f281eb6c5ce0362469e65470c95ee7c9adccbb29fc58c4a78cb00",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/df6d8b54c2fed234568070b983d252833942fc925d90bd428519c74b286a3bd2.json": "3181ae9aae542bcb97fd26f4497d45b32e46a414dd32b6649586ec9ec9702b98",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/e9f0798560a0e7661020ce9ce9ac46b4384075270d380f2fd1c737f99bf49b36.json": "ec45e5e065ba6f9b1712d7b9e98d7c3b813afe33e7a29b76988f45fc52a749cf",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/e9f0798560a0e7661020ce9ce9ac46b4384075270d380f2fd1c737f99bf49b36.json": "758c73c30c03f145984456cf92194a2d09bbf08020b0ab6a6cf6b74656fa25c2",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/f0ebe8674305f1c8051c2d26d1efe7a959d1472c38cdffd76efd337bd09c941b.json": "801d1aac5e82d12ba97903e34f6c348e0d864a94a13af0e887a4a3b2c61873c2",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/f0ebe8674305f1c8051c2d26d1efe7a959d1472c38cdffd76efd337bd09c941b.json": "fd7ec16ada34eb0425260ad1a403fd3b32fa67ce5717feb619c4189277969fbc",
+    "runs/reader-comparison/hosted-gpt54lowreference-audit/reader/results/fc239eaf47793fe70a798e91073dfe55ff9a696ee72d7c254c6753a21ec1786a.json": "38ceb6b58ab7ddfa55bfcc7247ba8b8aec7792b53b1fd5496e4ce070b8b08f62",
+    "runs/reader-comparison/hosted-gpt54standardreference-audit/reader/results/fc239eaf47793fe70a798e91073dfe55ff9a696ee72d7c254c6753a21ec1786a.json": "06a3607820ad7a6d6fe1e0c557e1929b6d59fbf92b02665029dc0c6ed09fbc4c"
+  }
+}
