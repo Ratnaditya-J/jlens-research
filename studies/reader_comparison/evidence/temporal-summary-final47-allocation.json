@@ -1,0 +1,10 @@
+{
+  "previous_limit_usd": 7,
+  "new_limit_usd": 8,
+  "outer_ceiling_usd": 10,
+  "ledger_before_sha256": "01e0e25965c5842cc70d9536befd6da864940e23303f63b7ed26ff0e6a68a1e8",
+  "ledger_after_sha256": "91ecd1b7c954590746c08fd78f40a82478c8811e1e4aa4bca2c478a1e1b1f685",
+  "audit_sha256": "71a16ecfeff5beb2e0d68f2e398f7cf9efa07504b63508325a1777edcdfb18c2",
+  "runner_sha256": "aeae54a5c40a3b3ac5f40da122ce093e25c2afd71c7e15cc47d4adc75bbd46ee",
+  "scope": "Deliberate final47 temporal-summary allocation only. Existing uncertain charges preserved; no retry, fallback or automatic increase. Other cohorts remain separately gated."
+}
