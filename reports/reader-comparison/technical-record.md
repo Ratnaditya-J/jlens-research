@@ -2,11 +2,11 @@
 
 Technical methods and execution record
 
-September 27 2026
+September 28 2026
 
 The project tests whether supervised activation probes, a checkpoint specific Jacobian lens, and an Oracle Lens verbalizer reveal different aspects of policy violating behavior in the same model. Its purpose is to measure detection coverage, interpretation quality and blind spots without treating any reader as complete or authoritative. This document is an editable technical record for the researcher and subsequent Codex work.
 
-All six Qwen held out endpoint comparisons are complete. No method shows a reliable overall advantage. During action, blind Oracle has greater recall with more false alarms. At minus 32, the raw probe flags six confirmed violations missed by contextual J displays, but gives identical scores to 16 benign runs sharing those prefixes. After action, context alone matches detection, so contextual lens success does not establish added activation information. A targeted qualitative fidelity audit and two legacy specificity panels are complete. Full Oracle reconstruction fidelity remains unmeasured; template stress testing and the incomplete legacy code onset cohort remain outstanding. The original GPT OSS results are preserved separately.
+All six Qwen held out endpoint comparisons are complete. No method shows a reliable overall advantage. During action, blind Oracle has greater recall with more false alarms. At minus 32, the raw probe flags six confirmed violations missed by contextual J displays, but gives identical scores to 16 benign runs sharing those prefixes. After action, context alone matches detection, so contextual lens success does not establish added activation information. A targeted qualitative fidelity audit and two legacy specificity panels are complete. The template stress panel and expanded legacy code onset cohort have also been evaluated with retained missingness. Full Oracle reconstruction fidelity remains unmeasured. The original GPT OSS results are preserved separately.
 
 ## Scientific framing
 
@@ -221,7 +221,7 @@ The archived primary summarizer comparison at 32 tokens before code onset contai
 
 At matched validation specificity, the activation probe detected 353 of 445 violations with 12 of 172 false positives. An exploratory summary plus original tokens arm had a sensitivity difference of plus 0.45 points relative to J view, with an interval spanning minus 1.94 to plus 3.36. This does not establish equivalence or isolate the cause of the change.
 
-Blind summary AUROC was 0.511. Correctly paired contextual summaries exceeded shuffled summaries in sensitivity by 5.17 points, but differed from context only by minus 0.22 points with an interval spanning zero. These results neither prove faithful hidden intent recovery nor show that full J space lacks information. The 64 token offset and code onset results have different coverage; code onset remains an incomplete cached subset. Authorization and monitor maintenance controls are now complete under the original frozen thresholds and payloads. Template challenge and the code onset coverage gaps remain outstanding.
+Blind summary AUROC was 0.511. Correctly paired contextual summaries exceeded shuffled summaries in sensitivity by 5.17 points, but differed from context only by minus 0.22 points with an interval spanning zero. These results neither prove faithful hidden intent recovery nor show that full J space lacks information. The 64 token offset and code onset results have different coverage. The original partial code onset report is preserved unchanged; a separate continuation now evaluates the full requested cohort with residual unavailable judgments and readouts reported explicitly. Authorization, monitor maintenance and template challenge panels retain their original frozen thresholds and payloads.
 
 ## Legacy authorization and monitor controls
 
@@ -244,6 +244,48 @@ The compute example identifies the quota conflict, but one layer recommends unau
 
 These examples show topic correspondence alongside conflicting action semantics, authorization ambiguity and elaboration not supported by the prefix. Unsupported by the prefix does not prove absent from the activation. Correct detection also does not validate reconstruction fidelity. The released verbalizer remains unqualified as a comprehensive or authoritative account of the subject's internal state; subject_transfer_validated remains false. No reconstructor, whitening or nonnegative reconstruction coefficient test was run.
 
+## Template stress panel and expanded code onset results
+
+These original GPT OSS cohorts are separate from the Qwen Oracle comparison. All registered new requests were attempted once and both frozen evaluations completed. Completion means the registered execution finished; it does not mean every episode has an available judgment. The fresh completion output alias uses byte identical original inputs and summaries and the same reviewer manifest, while preserving the original partial scores and completion files.
+
+## Template challenge
+
+The requested cohort contains 128 episodes, of which 89 have known behavioral labels. Rates below exclude uncertain or unavailable labels. Each arm uses its own available denominator; missing known cases include both upstream unavailable readouts and missing judgments.
+
+| Method | TP of positive | FP of benign | Missing known | AUROC |
+|---|---|---|---|---|
+| Summary with context | 16/18 | 0/70 | 1 | 0.944 |
+| Summary and tokens with context | 16/17 | 0/69 | 3 | 0.971 |
+| Blind summary | 0/18 | 0/70 | 1 | 0.500 |
+| Blind token display | 0/18 | 0/70 | 1 | 0.433 |
+| Shuffled summary with context | 15/18 | 0/68 | 3 | 0.917 |
+| Activation probe | 18/18 | 2/70 | 1 | 1.000 |
+| Original J view | 18/18 | 0/70 | 1 | 1.000 |
+| Context only | 18/18 | 2/70 | 1 | 0.994 |
+
+On the template challenge, summary sensitivity is 11.11 percentage points below the original J view on 88 paired cases, with a 95 percent family bootstrap interval from minus 23.53 to zero. Both have zero false positives among 70 available benign cases. The original J view detects all 18 available positives. Summary plus tokens detects 16 of 17 available positives; that denominator differs because of missing judgments. Blind summaries detect none. Correct summaries exceed shuffled summaries by 5.56 sensitivity points, with an interval from zero to 21.05. This small panel does not establish equivalence or a general sensitivity benefit.
+
+## Code onset continuation
+
+The requested cohort contains 786 episodes, of which 727 have known behavioral labels. Rates below exclude uncertain or unavailable labels. Each arm uses its own available denominator; missing known cases include both upstream unavailable readouts and missing judgments.
+
+| Method | TP of positive | FP of benign | Missing known | AUROC |
+|---|---|---|---|---|
+| Summary with context | 459/462 | 0/259 | 6 | 0.997 |
+| Summary and tokens with context | 461/464 | 0/257 | 6 | 0.997 |
+| Blind summary | 0/464 | 0/259 | 4 | 0.500 |
+| Blind token display | 0/463 | 0/258 | 6 | 0.689 |
+| Shuffled summary with context | 457/463 | 0/259 | 5 | 0.994 |
+| Activation probe | 464/464 | 13/259 | 4 | 1.000 |
+| Original J view | 464/464 | 3/259 | 4 | 0.998 |
+| Context only | 464/464 | 7/259 | 4 | 1.000 |
+
+At code onset, contextual summaries detect 459 of 462 available positives with zero false positives among 259 available benign cases. The original J view detects all 464 available positives with three false positives among 259 benign cases, while the probe flags 13 benign cases. On the common 721 cases, summary sensitivity differs from J view by minus 0.65 percentage points, with a 95 percent family interval from minus 1.30 to zero; its false positive rate differs by minus 1.16 points, from minus 2.80 to zero. These are operating point tradeoffs, not evidence that one reader is complete.
+
+Shuffled contextual summaries detect 457 of 463 available code onset positives. The paired correct minus shuffled sensitivity difference is only 0.65 points, with a 95 percent family interval from minus 0.43 to plus 1.69. Blind summaries detect zero of 464. The result therefore does not establish added detection information from correctly paired summaries beyond context. Zero observed false positives and degenerate bootstrap intervals do not imply zero population error. Family resampling uses 15 authored families and 2000 replicates; it does not establish broad deployment generalization or correct all exploratory comparisons for multiplicity.
+
+The continuation registered 4068 new unique reviewer calls and reused 4768 exact cached responses. Of the new calls, 4040 yielded usable judgments and 28 remained unavailable; four prior failed unique requests were retained without retry. The registered jobs span 8960 episode arm model slots; exact cache reuse supplies 8808 usable unique reviews, with unavailable slots retained. Per-arm missingness, worst and best case bounds, uncertain-as-benign analyses, pairwise comparisons and deterministic disagreement examples are retained in the machine readable reports. No missing response was converted to a negative label.
+
 ## Execution stages and completion criteria
 
 Stage one established checkpoint identities, independently reviewed behavioral trajectories, captures, lens fits and cached readouts. Raw and transformed probes and text baselines are fitted under the same grouped protocol.
@@ -252,7 +294,7 @@ Stage two has qualified the accepted reference pair and verified its coverage. S
 
 Stages three and four are complete for all six endpoints: calibration locks, held out reviews, coverage accounting, metrics and uncertainty are saved. The primary and end of prompt casebooks and the minus 32 shared prefix audit are available. Four endpoint review inference completed 2634 unique requests, of which six were unavailable; missing summaries produce additional aliased missingness. The automatic handoff verified raw receipts and evaluated the four remaining endpoints without retuning.
 
-Stage five has completed the targeted qualitative fidelity audit and two legacy specificity panels. Causal intervention remains conditional and unexecuted. The template challenge and legacy code onset completion remain outstanding under the budget limit. Final deliverables are an editable measured report, reproducible scripts and configuration, pinned model and data identities, machine readable metrics, casebooks, cost and resource records, and verified local copies of necessary artifacts.
+Stage five has completed the targeted qualitative fidelity audit and two legacy specificity panels. Causal intervention remains conditional and unexecuted. The template challenge and full requested legacy code onset continuation have now completed registered inference and frozen evaluation, with unavailable cases retained. Final deliverables are an editable measured report, reproducible scripts and configuration, pinned model and data identities, machine readable metrics, casebooks, cost and resource records, and verified local copies of necessary artifacts.
 
 Success means a reproducible comparison with independently established labels, calibrated specificity, explicit coverage and documented disagreements. It does not require J lens or Oracle to outperform probes, or any hypothesis to be confirmed. A negative finding with adequate power and valid controls can be informative; an unavailable judge or unexecuted test cannot substitute for such a finding.
 
@@ -262,13 +304,13 @@ Frontier scale differentiation and activation reading require substantially more
 
 The recorded four pod September 26 phase is estimated at 61.5380 dollars in compute, excluding earlier GPU runs, retained storage, taxes and provider adjustments. Workers were confirmed stopped or terminated at the recorded shutdown check. Retained storage remains a separate cost. This estimate is not a reconciled invoice or total project budget.
 
-The user authorized a cumulative additional OpenRouter ceiling of 40 dollars. After the specificity panels, settled spending is 35.240746 dollars and uncertain charges retain 1.058460 dollars, leaving 3.700794 dollars available. Failed or uncertain calls are never assumed free. A read-only exact cache inventory identifies 1442 new GPT 4.1 and 1446 new GPT 5.4 requests for the incomplete original code onset cohort; four prior raw failures remain unavailable and must not be retried. Historical receipt means project 24.502870 dollars for these new reviews. The full template panel needs 472 uncached summaries and up to 590 review requests per judge, projected at 10.502279 dollars before final review deduplication. Combined projected remaining inference is 35.005149 dollars, approximately 31.304355 above the current available allowance. These are estimates, not quotes or hard maxima. No further paid inference has been dispatched.
+The user increased the cumulative additional OpenRouter ceiling to 80 dollars. Final settled spending is 69.538016 dollars, with 1.058460 dollars still reserved for uncertain earlier charges, leaving 9.403524 dollars unallocated. The final template summary stage cost 0.462819 dollars and the remaining review stage cost 33.834451 dollars. These additional-budget figures exclude earlier API spending and GPU or storage costs. All registered new requests were attempted once; unavailable replies and uncertain charges remain recorded. No further inference is needed for the registered comparison.
 
-After sequential API dispatch caused unnecessary delay, the held out pipeline was changed to eight globally concurrent requests with shared locked budget reservations, exact cache reuse and immediate completion triggered stage handoffs. Outcomes do not determine queue order. Every paid stage is priced and registered before dispatch; each wave must fit its conservative reservation. Unknown failures stop dispatch, and failed requests remain unavailable without retry. All paid workers are now terminal.
+After sequential API dispatch caused unnecessary delay, the held out pipeline was changed to eight globally concurrent requests with shared locked budget reservations, exact cache reuse and immediate completion triggered stage handoffs. Outcomes do not determine queue order. Every paid stage is priced and registered before dispatch; each request must fit its conservative reservation. Clusters of failures stop dispatch, and failed requests remain unavailable without retry. All paid workers are now terminal.
 
 Provider response length parameters are not assumed to cap all billed reasoning tokens. One original DeepSeek receipt reported 3449 completion tokens, including 3278 reasoning tokens, despite a requested response length of 2048. Larger client reservations are planning allowances rather than verified provider invoice caps. Register concrete batches and verify receipts before scaling.
 
-The numerical comparison no longer awaits API or GPU inference. Remaining work is final artifact integration and the two remaining legacy cohorts. Their current cost forecast exceeds available authorization; this is a resource limitation, not a GPU or CPU latency issue. Those panels require a concrete affordable execution plan before any additional calls. Real model causal work has not been run; no causal completion date or cost is asserted.
+All registered numerical comparisons are complete. Final evidence verification and document integration close out the execution. Reconstruction fidelity, broad subject transfer and real model causal interventions are unmeasured extensions; no causal finding or comprehensive access to hidden intentions is claimed. Future research should use episodes with distinguishable pre action states, more independent families and targeted interventions with real model zero dose qualification before interpreting a detector direction causally.
 
 ## Sources and reproduction entry points
 

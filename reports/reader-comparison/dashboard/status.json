@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-28T01:39:49.616651+00:00",
-  "project_complete": false,
+  "updated_at": "2026-09-28T02:12:55.235796+00:00",
+  "project_complete": true,
   "counts": {
-    "complete": 9,
-    "in_progress": 1,
-    "pending": 2
+    "complete": 12,
+    "in_progress": 0,
+    "pending": 0
   },
   "total": 12,
-  "current": "Template + code-onset API reviews",
+  "current": "Registered execution and final integration verified",
   "attention": false,
   "data_stale": false,
   "source_read_errors": 0,
-  "pipeline_alive": true,
-  "progress_age_seconds": 0,
-  "pipeline_state": "running",
-  "pipeline_stage": "legacy_remaining_reviews.py",
+  "pipeline_alive": false,
+  "progress_age_seconds": 427,
+  "pipeline_state": "complete",
+  "pipeline_stage": "",
   "milestones": [
     {
       "id": 1,
@@ -83,44 +83,44 @@
       "id": 10,
       "title": "Remaining template and code-onset reviews",
       "detail": "4,068 new requests plus exact cache reuse; original partial results remain preserved.",
-      "state": "in_progress",
+      "state": "complete",
       "stream": "GPT-OSS extension"
     },
     {
       "id": 11,
       "title": "Remaining evaluation and receipt audit",
       "detail": "Frozen two-panel evaluation, source hashes, unavailable responses and receipt checks.",
-      "state": "pending",
+      "state": "complete",
       "stream": "Closeout"
     },
     {
       "id": 12,
       "title": "Final integrated report and evidence",
       "detail": "Add remaining findings, reconcile uncertainty, visually verify the editable report and package evidence.",
-      "state": "pending",
+      "state": "complete",
       "stream": "Closeout"
     }
   ],
   "reviews": {
-    "attempted": 493,
+    "attempted": 4068,
     "total": 4068,
     "cached": 4768,
-    "new_usable": 488,
-    "new_unavailable": 5,
+    "new_usable": 4040,
+    "new_unavailable": 28,
     "prior_unavailable": 4,
     "concurrency": 8,
-    "updated_at": "2026-09-28T01:39:49.551360+00:00"
+    "updated_at": "2026-09-28T02:05:48.019969+00:00"
   },
   "budget": {
     "limit": 80,
-    "settled": 39.798462,
-    "reserved": 1.716078,
-    "available": 38.485459999999996,
+    "settled": 69.538016,
+    "reserved": 1.05846,
+    "available": 9.403524,
     "known_prior_uncertain": 1.05846,
     "scope": "Cumulative additional OpenRouter only; excludes earlier project spend and GPU/storage costs."
   },
   "artifacts": {
-    "report": "13-page verified snapshot before remaining cohorts",
-    "evidence": "16,241 verified files; dated snapshot, not full regeneration bundle"
+    "report": "15-page final visually verified report",
+    "evidence": "30,109 verified files; final analysis evidence, not full regeneration bundle"
   }
 }

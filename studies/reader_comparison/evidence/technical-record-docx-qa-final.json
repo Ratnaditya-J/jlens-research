@@ -1,0 +1,25 @@
+{
+  "docx_sha256": "babd7b211479c661bfb74194f9c3f68098a7c955e7f06ee0b94fd843a564e110",
+  "source_sha256": "d09759a665f78560ba90792ce5b6856059dbb75b113717faba1410e999c15f6f",
+  "pages": 15,
+  "native_tables": 8,
+  "page_sha256": {
+    "1": "154478a1e58477239d99b0492aa9d68a79113999bb6ca933ec4b017884cc94bb",
+    "2": "df7fe9cc387be88207238d5054c28267e370d5e2f46665e356ea0281f81d1aa8",
+    "3": "cbf40d8b26af96de0598b87d85b3e3a9f0bdeb60c7e20b38c36f5d5faf02fd77",
+    "4": "4f05f99cc5ed2182877063770566461143b00e529995b33e7eac89a3fc32ac46",
+    "5": "ac01c190f68b527e1433ae78aa6a7276649061daa5355b439dde43e51418ebc0",
+    "6": "eee8acce30526087dd7a60546f8294ed2d38cfad9bb36661e653b05f3e900014",
+    "7": "7ff43ccd51a3aa01ea60d3af26aaddb5d79c6eddf4ac66bbe6b17adf54f2c64d",
+    "8": "da18f84381a428c2263620ccf3fcb1f46726f008348f7c0e5b59cbfbb2014693",
+    "9": "9d9df54010505d777f3d6bf7f970eb81854edbf87112b8703868a9b670bb7bbd",
+    "10": "cb771cc5797fcdf70275dc00a8c6721cd250d012e50ef5cedff2426a14d2e566",
+    "11": "a240d07c710a06e7a4cac14a9c8c61e352ea8cbe76fac06cba9c6f9fb105b54a",
+    "12": "b54d2226e82c614995db5304d6526b0f8619d6a47a9b91f6a76d779a1330a679",
+    "13": "f354ee6c79bb8a62498c1a362b3da9189da75487f0fddf8e46633d4c350d5526",
+    "14": "207f4710acff65858dd1ef5491a6515438b5520e748bce94d10a71c441f39265",
+    "15": "bb8476c708caec249d385068aa8003990428939ec24001f56facba54c5c1e2b8"
+  },
+  "visual_review": "All pages verified: final pages1-11 byte-identical to reviewed first final render; pages2-10 also identical to prior reviewed controls render. Final pages12-15 individually inspected after fixing literal Markdown headings and order. Tables clean, no clipping or overlap. Both new tables checked against all16 arm metrics.",
+  "scope": "Final registered six Qwen endpoints and all legacy extension cohorts. Oracle reconstruction, broad transfer and real-model causal interventions remain explicitly unmeasured."
+}

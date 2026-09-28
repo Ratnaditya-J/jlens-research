@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "8580bdc5947ebc07ca375c75c9312b26fe0f44d725ce4b4b9639f002b27d5b7a",
+  "archive_bytes": 555642314,
+  "manifest_sha256": "4e8026370f90a64fdc925cf5270ca79df5b127839f8bf607876ce609ed7027b7",
+  "verified_members": 30109,
+  "scope": "Frozen six-endpoint and all registered legacy extension panels analysis evidence and declared source dependency closure. Excludes credentials, full weight files, full activation tensors and live budget ledger. Not a complete regeneration bundle. Original absolute paths in frozen manifests are preserved; running unchanged scripts expects the recorded root, or a separately validated relocation procedure. Known checksums permit independent inspection at other locations.",
+  "archive_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/final-comparison-evidence-package/final-comparison-evidence.tar.gz",
+  "manifest_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/final-comparison-evidence-package/manifest.json"
+}

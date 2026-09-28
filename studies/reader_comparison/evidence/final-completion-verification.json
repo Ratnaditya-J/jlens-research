@@ -1,0 +1,40 @@
+{
+  "registered_comparison_complete": true,
+  "scope": "Six-endpoint same-subject Qwen probe/J-lens/Oracle-verbalizer comparison plus all registered original GPT-OSS summary extension panels. Negative and limited findings are valid results; no complete misalignment detector or faithful hidden-intent decoder established.",
+  "source_hashes": {
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/reports/reader-comparison/technical-record.docx": "babd7b211479c661bfb74194f9c3f68098a7c955e7f06ee0b94fd843a564e110",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/reports/reader-comparison/technical-record.md": "d09759a665f78560ba90792ce5b6856059dbb75b113717faba1410e999c15f6f",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/technical-record-docx-qa-final.json": "a1a96e4ca6d69d4713f9e56b499a45ebee8f42846bcd15e0ba9d91c08dd6b11c",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/remaining-closeout-verification.json": "fe4a658b6f1ae5e750f1349e54740dcc707cbe654fd220461175361b791ab7fc",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/studies/reader_comparison/evidence/final-package-verification.json": "e48c1541851b2133ced64a9b9aa4d677a6514034e78605cd5018c4448da84f3e"
+  },
+  "archive": {
+    "archive_sha256": "8580bdc5947ebc07ca375c75c9312b26fe0f44d725ce4b4b9639f002b27d5b7a",
+    "archive_bytes": 555642314,
+    "manifest_sha256": "4e8026370f90a64fdc925cf5270ca79df5b127839f8bf607876ce609ed7027b7",
+    "verified_members": 30109,
+    "scope": "Frozen six-endpoint and all registered legacy extension panels analysis evidence and declared source dependency closure. Excludes credentials, full weight files, full activation tensors and live budget ledger. Not a complete regeneration bundle. Original absolute paths in frozen manifests are preserved; running unchanged scripts expects the recorded root, or a separately validated relocation procedure. Known checksums permit independent inspection at other locations.",
+    "archive_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/final-comparison-evidence-package/final-comparison-evidence.tar.gz",
+    "manifest_path": "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/reader-runtime/final-comparison-evidence-package/manifest.json"
+  },
+  "checks": [
+    "Frozen protocols, model identities and original partial results preserved",
+    "All registered new requests attempted once; prior failures and new unavailable responses retained",
+    "Six Qwen endpoints and original GPT-OSS extension cohorts evaluated separately",
+    "Controls, shared-prefix confounds, missingness bounds and family uncertainty reported",
+    "15-page editable Word record rendered and visually verified;16 new metric rows checked",
+    "30109 archive member payload hashes verified"
+  ],
+  "unmeasured_extensions": [
+    "Full Oracle reconstruction/FVE and broad subject-transfer certification",
+    "Real-model causal interventions; no episode-specific hidden-intent direction justified",
+    "Broad deployment generalization or comprehensive strategic-misalignment coverage"
+  ],
+  "budget": {
+    "authorized_additional_usd": 80,
+    "settled_usd": 69.538016,
+    "uncertain_reserved_usd": 1.05846,
+    "unallocated_usd": 9.403524
+  },
+  "reproduction_limits": "Evidence archive excludes full weights and activation tensors. Frozen absolute paths need recorded root or validated relocation. Not a full from-scratch regeneration bundle."
+}
