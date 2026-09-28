@@ -1,3 +1,5 @@
+> Superseding authorization update: the user approved the proposed additional $40, raising the cumulative additional OpenRouter ceiling to $80. The remaining template and separate code-onset continuation pipeline is now running with eight rolling concurrent calls and automatic preparation, evaluation and audit handoffs. The budget dependency described below is the preserved pre-approval snapshot, no longer an active blocker. All completion claims below refer to the completed cohorts, not the newly launched continuation. See `runs/reader-comparison/legacy-remaining-pipeline/status.json` and `studies/reader_comparison/evidence/legacy-remaining-launch.json` for current execution and original-output preservation hashes.
+
 # Completion and remaining coverage — 27 September 2026
 
 The same-subject Qwen numerical comparison is complete at all six registered endpoints. The original GPT-OSS authorization/debugging and monitor-maintenance panels are also complete. The full initiative remains incomplete because the template challenge and remaining original code-onset review cohort exceed the authorized budget.
