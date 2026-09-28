@@ -1,0 +1,126 @@
+{
+  "updated_at": "2026-09-28T01:39:49.616651+00:00",
+  "project_complete": false,
+  "counts": {
+    "complete": 9,
+    "in_progress": 1,
+    "pending": 2
+  },
+  "total": 12,
+  "current": "Template + code-onset API reviews",
+  "attention": false,
+  "data_stale": false,
+  "source_read_errors": 0,
+  "pipeline_alive": true,
+  "progress_age_seconds": 0,
+  "pipeline_state": "running",
+  "pipeline_stage": "legacy_remaining_reviews.py",
+  "milestones": [
+    {
+      "id": 1,
+      "title": "Subject and behavior evidence",
+      "detail": "Exact checkpoint identities, captured episodes and independent behavioral labels.",
+      "state": "complete",
+      "stream": "Foundation"
+    },
+    {
+      "id": 2,
+      "title": "Checkpoint-specific J-lens and probes",
+      "detail": "Lens fit and independently trained raw-activation / transformed-activation probes.",
+      "state": "complete",
+      "stream": "Foundation"
+    },
+    {
+      "id": 3,
+      "title": "Oracle verbalizer and captured readouts",
+      "detail": "Same-subject Qwen activations with the published reader component; not full reconstruction.",
+      "state": "complete",
+      "stream": "Qwen comparison"
+    },
+    {
+      "id": 4,
+      "title": "Reader qualification and calibration",
+      "detail": "Accepted judges, coverage gates and frozen endpoint thresholds.",
+      "state": "complete",
+      "stream": "Qwen comparison"
+    },
+    {
+      "id": 5,
+      "title": "Six held-out endpoint evaluations",
+      "detail": "Before, during and after action; end of prompt; earlier \u221232 / \u221264 offsets.",
+      "state": "complete",
+      "stream": "Qwen comparison"
+    },
+    {
+      "id": 6,
+      "title": "Disagreement and fidelity assessment",
+      "detail": "Shared-prefix confounds, context/shuffle controls and bounded four-case Oracle audit.",
+      "state": "complete",
+      "stream": "Qwen comparison"
+    },
+    {
+      "id": 7,
+      "title": "Original GPT-OSS baseline analysis",
+      "detail": "Existing before-action J-view, summary and activation-probe results preserved.",
+      "state": "complete",
+      "stream": "GPT-OSS extension"
+    },
+    {
+      "id": 8,
+      "title": "Benign specificity panels",
+      "detail": "47 authorization/debugging and 24 monitor-maintenance cases evaluated and audited.",
+      "state": "complete",
+      "stream": "GPT-OSS extension"
+    },
+    {
+      "id": 9,
+      "title": "Template summaries",
+      "detail": "472 unique summaries complete; all receipts verified.",
+      "state": "complete",
+      "stream": "GPT-OSS extension"
+    },
+    {
+      "id": 10,
+      "title": "Remaining template and code-onset reviews",
+      "detail": "4,068 new requests plus exact cache reuse; original partial results remain preserved.",
+      "state": "in_progress",
+      "stream": "GPT-OSS extension"
+    },
+    {
+      "id": 11,
+      "title": "Remaining evaluation and receipt audit",
+      "detail": "Frozen two-panel evaluation, source hashes, unavailable responses and receipt checks.",
+      "state": "pending",
+      "stream": "Closeout"
+    },
+    {
+      "id": 12,
+      "title": "Final integrated report and evidence",
+      "detail": "Add remaining findings, reconcile uncertainty, visually verify the editable report and package evidence.",
+      "state": "pending",
+      "stream": "Closeout"
+    }
+  ],
+  "reviews": {
+    "attempted": 493,
+    "total": 4068,
+    "cached": 4768,
+    "new_usable": 488,
+    "new_unavailable": 5,
+    "prior_unavailable": 4,
+    "concurrency": 8,
+    "updated_at": "2026-09-28T01:39:49.551360+00:00"
+  },
+  "budget": {
+    "limit": 80,
+    "settled": 39.798462,
+    "reserved": 1.716078,
+    "available": 38.485459999999996,
+    "known_prior_uncertain": 1.05846,
+    "scope": "Cumulative additional OpenRouter only; excludes earlier project spend and GPU/storage costs."
+  },
+  "artifacts": {
+    "report": "13-page verified snapshot before remaining cohorts",
+    "evidence": "16,241 verified files; dated snapshot, not full regeneration bundle"
+  }
+}
