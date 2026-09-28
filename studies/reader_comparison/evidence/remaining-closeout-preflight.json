@@ -1,0 +1,41 @@
+{
+  "original_partial_outputs_preserved": true,
+  "input_alias_and_review_manifest_equal": true,
+  "terminal_evidence_complete": false,
+  "missing_terminal_evidence": [
+    "runs/reader-comparison/legacy-remaining-pipeline/complete.json",
+    "runs/reader-comparison/legacy-remaining-reviews/complete.json",
+    "studies/reader_comparison/evidence/legacy-remaining-review-audit.json"
+  ],
+  "source_hashes": {
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/scripts/interpret_jsummary.py": "72168d4fb847989147da3b0fb6fea2c324165176ecc48b40b698a0da92480043",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/scripts/evaluate_jsummary.py": "d30333773dbd0a7e07abe94abf816afd9c2b9194f036314ddeb2792287f95e0c",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-calibration/lock.json": "89524e194b6b1582c626c4063a36e78c350fac638916903cfa6b91a4c6569af6",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-test/review-complete.json": "e1bcee830ebfa418679e434e1a7618c2e752d8f82ee408ea8512c6b43c2b45fd",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-test/scores.json": "7823a21bbe6c9b55436bd348411c45e68da097348d41b9d8bfb7550ceda1f3e5",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-test/summary-manifest.json": "df6d2177bca2c5290fcfa19011a9e83a0ef9f0a76d9c449d1a0bcc68be0e313c",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-completion-jsummary-test/summary-manifest.json": "df6d2177bca2c5290fcfa19011a9e83a0ef9f0a76d9c449d1a0bcc68be0e313c",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-test/summary-complete.json": "2e73fa87b5396e33f7e68080cb95943f5fc75d94533d77bcd311d52a83652c80",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-completion-jsummary-test/summary-complete.json": "2e73fa87b5396e33f7e68080cb95943f5fc75d94533d77bcd311d52a83652c80",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-jsummary-test/summaries.json": "245c5488e46596a9776682eebe35fe3d2ef42786aa654d114fadea15dba09725",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/fresh-completion-jsummary-test/summaries.json": "245c5488e46596a9776682eebe35fe3d2ef42786aa654d114fadea15dba09725",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-before_action/summary.json": "eb2b6b19869357821e7d08309049478429b84160b5e69816c6a055752aca03e7",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-before_action/cases.json": "8965b97a0fe2599b6acc231f38a9a1ba7acc698c832022edc194838f21f33a9d",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-end_prompt/summary.json": "196d545712687db296d672fc4c385d2949894263b8ee5b622369438988902c7e",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-end_prompt/cases.json": "674fb19be2ff844f4535570127a1efd5b89617b84e7a3fa0c80ec72db0063755",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-before_action_32/summary.json": "cd560beaa9ad795a456e508179258bb90bfe7ab2090bf67bd0f34dcc058f26da",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-before_action_32/cases.json": "88711c228b696c90d52ce7f25b175d136171955b8a01c07b7b021c03bcae3aef",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-before_action_64/summary.json": "c90a3ef44573f77b5c150407479f7768fce2d6f1175553d9d4679439c6bc1115",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/accepted-evaluation-before_action_64/cases.json": "21fb67061342ca9340ed9160de7b05b64713ded5feed544767860526613c37b7",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/standard-evaluation-during_action/summary.json": "8b171e7d228f356f3db410d0b86fb7373ac4a7324c8e6af66408a42b4e9be232",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/standard-evaluation-during_action/cases.json": "a0e893b9b61962504710b17c9c0b17caaaba7b9df9bee16fee0926839936d76c",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/standard-evaluation-after_action/summary.json": "3408778e84388b96e0ac74d49993aec747e90dd0cd303ca287068e330014e5d6",
+    "/Users/ratnaditya/Documents/Codex/2026-09-14/referenced-chatgpt-conversation-this-is-an/work/jlens-research/runs/reader-comparison/standard-evaluation-after_action/cases.json": "4d18fc0eb1d76ce8f705630cc1d5bde47633c7d1393053ca0394146d8263221a"
+  },
+  "budget_snapshot": {
+    "additional_limit_usd": 80,
+    "spent_microusd": 44552477,
+    "reserved_microusd": 1591081
+  },
+  "scope": "Preservation and evidence gate only. A final scientific synthesis, visually verified updated document and verified final package remain required; this gate does not declare full initiative completion."
+}
